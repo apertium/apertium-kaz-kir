@@ -1,0 +1,156 @@
+
+# ========== #
+# Delimiters #
+# ========== #
+
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+SOFT-DELIMITERS = "<,>" ;
+
+# ============= #
+# Tags and sets #
+# ============= #
+
+SETS
+
+LIST BOS = (>>>) ;
+LIST EOS = (<<<) ;
+
+# Parts of speech
+# ---------------
+
+LIST A = adj ;
+LIST Adv = adv ;
+LIST Pron = prn ; 
+LIST N = n ; 
+LIST V = v ;
+LIST Vaux = vaux ;
+LIST Det = det ; 
+LIST CC = cnjcoo ;
+LIST CS = cnjsub ;
+LIST Interj = ij ;
+LIST Num = num ; 
+LIST Post = post ; 
+LIST Postadv = postadv ; 
+LIST Cm = cm ; 
+
+# POS sub-categories
+# ------------------
+
+LIST Pers = pers ;
+LIST Interr = itg ;
+
+# "Syntactic" tags
+# ----------------
+
+LIST Advl = advl ;
+LIST Pred = pred ;
+LIST Attr = attr ;
+LIST Subst = subst ;
+
+# Morphosyntactic properties
+# --------------------------
+
+LIST Sg = sg ;
+LIST Pl = pl ;
+
+LIST PX = px px1sg px2sg px3sp px1pl px2pl ; 
+
+# Verbal Properties 
+# -----------------
+
+LIST Pres = pres ;
+LIST Prc = prc_perf prc_impf prc_cond prc_vol ;
+LIST Prc-Impf = prc_impf ;
+LIST Inf = inf ;
+LIST Ger6 = ger6 ;
+
+# Semantic lists 
+# --------------
+
+LIST MOVEMENT-V = "йөгер" ; 
+
+LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ; 
+
+# All possible word categories
+# ----------------------------
+
+SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
+
+SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ; 
+
+SET MARK =  Cm | ("\\") | ("\;") ;
+
+SET WORDMARK = WORD | MARK ;
+
+SET N-MOD = A | Det | Num | (n gen) | (prn gen) ;
+
+SET ADJ-MOD = Postadv | Adv ;
+
+SET NPMARK = N-MOD | ADJ-MOD ;
+
+# Categories which cannot be part of a noun phrase 
+# ------------------------------------------------
+
+SET NPNH = WORDMARK - PRE-N ;
+SET NPNHA = WORDMARK - PRE-N - Adv ;
+SET NOT-ADV = WORDMARK - Adv ;
+
+
+# Barriers 
+# --------
+
+SET S-BOUNDARY = CS | Interr | EOS; 
+
+SECTION
+
+SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
+SELECT A IF (0C A OR Adv) (1* N BARRIER NPNHA); 
+
+# Determiners 
+# -----------
+
+REMOVE Det IF (NOT 1/-1 NPMARK OR N OR Pron); 
+    #! Әхмәтнең кечкенә бер эте ^бар/бар<adj>/бар<adj><subst><nom>/бар<det><qnt>/бар<v><iv><imp><p2><sg>$ ,
+    #! әлегә эт дә бакчада .
+    ## FIXME:CHECK; 'Pron' was needed because 'нәрсә' is tagged as prn. Maybe we should consider it noun (as in Kazakh)'
+
+SELECT Det IF (0C V OR Det OR A OR N) (1 NPMARK OR N) ;
+    #! пример : Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+    #! Акча бармы? Бар<adj>.
+    #! Акча бармы? Бар<adj>, ләкин бик аз!
+
+SELECT Det IF (-1C A) (1 N); 
+    #! Әхмәт тиз генә иске зур бер агачка йөгерә.
+    #! Әхмәт акрын гына иске зур бер агачка йөгерә.
+
+# Nouns 
+# -----
+
+REMOVE Attr IF (NOT 1 N); 
+
+# Verbs 
+# -----
+
+REMOVE Prc IF (NOT 1 V OR Vaux);
+
+SELECT Pres IF (0 Pres OR Prc-Impf) (-1C V);
+    #! Эт бу ике бала белән уйнарга ^ярата/ярат<v><tv><prc_impf>/ярат<v><tv><pres><p3><sg>$ .
+
+# Wordform specific    # Adding new stuff here is discouraged.  
+# -----------------    # Try to generalize, if possible, existing rules.
+
+SELECT A IF (0 ("бар")) (-1 PX );
+    #! Әхмәтнең кечкенә бер эте ^бар/бар<adj>/бар<adj><subst><nom>/бар<det><qnt>/бар<v><iv><imp><p2><sg>$ .
+    ## FIXME:CHECK
+
+# RISKY
+SELECT Det IF (0 ("берәр")) (1/-1 PX OR Pron);
+    #! Ул берәр хайванныкы да кошныкы да түгел.
+    ## FIXME:CHECK:# 'Pron' was needed because 'нәрсә' is tagged as prn (e.g. "берәр нәрсә").
+
+###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
+###################   SOME SHOULD BE REWRITTEN/REMOVED LATER        ####################
+
+SELECT Inf IF (0 Inf OR Ger6) (1 ("ярат") OR ("тырыш"));
+    #! Әхмәт һәм Гөлнара ^уйнарга/уйна<v><tv><ger6><dat>/уйна<v><tv><inf>$ яраталар .
+    #! Һаман Әхмәтне ^табарга/тап<v><tv><ger6><dat>/тап<v><tv><inf>$ тырыша .

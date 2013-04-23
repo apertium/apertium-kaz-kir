@@ -1,0 +1,93 @@
+Kazakh and Tatar
+
+                            apertium-kaz-tat
+===============================================================================
+
+This is an Apertium language pair for translating between Kazakh and 
+Tatar. What you can use this language package for:
+
+* Translating between Kazakh and Tatar
+* Morphological analysis of Kazakh and Tatar
+* Part-of-speech tagging of Kazakh and Tatar
+
+For information on the latter two points, see subheading "For more 
+information" below
+
+Requirements
+===============================================================================
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.1.2)
+* apertium (>= 3.1.1)
+* vislcg3 (>= 0.9.7.5129)
+
+If this does not make any sense, we recommend you look at: www.apertium.org
+
+Compiling
+===============================================================================
+
+Given the requirements being installed, you should be able to just run:
+
+$ ./configure
+$ make
+# make install
+
+You can use ./autogen.sh instead of ./configure you're compiling from
+SVN. If you're using a --prefix to ./configure, make sure it's the
+same one you used to install apertium itself.
+
+Testing
+===============================================================================
+
+If you are in the source directory after running make, the following
+commands should work:
+
+$  echo "Қазақшадан татаршаға аударам." | apertium -d . kaz-tat
+Казакъчадан татарчага аударам.
+
+After installing somewhere in $PATH, you should be able to do eg.
+
+$  echo "Қазақшадан татаршаға аударам." | apertium kaz-tat
+Казакъчадан татарчага аударам.
+
+The following command runs tests which are on the Apertium wiki page:
+
+$ ./regression-tests.sh 
+
+Files and data
+===============================================================================
+
+* apertium-kaz-tat.kaz.lexc            - Monolingual dictionary for Kazakh
+* apertium-kaz-tat.kaz-tat.rlx         - Constraint Grammar for Kazakh
+* apertium-kaz-tat.kaz-tat.lrx         - Lexical selection rules for translating into Tatar
+* apertium-kaz-tat.kaz-tat.t1x         - Transfer rules for translating into Tatar (first pass)
+* apertium-kaz-tat.kaz-tat.t2x         - Transfer rules for  translating into Tatar (second pass)
+
+* apertium-kaz-tat.kaz-tat.dix         - Bilingual dictionary 
+
+* apertium-kaz-tat.tat.lexc            - Monolingual dictionary for Tatar
+* apertium-kaz-tat.tat-kaz.rlx         - Constraint Grammar for Tatar
+* apertium-kaz-tat.tat-kaz.lrx         - Lexical selection rules for translating into Kazakh
+* apertium-kaz-tat.tat-kaz.t1x         - Transfer rules for translating into Kazakh (first pass)
+* apertium-kaz-tat.tat-kaz.t2x         - Transfer rules for  translating into Kazakh (second pass)
+
+* modes.xml                            - Translation modes
+
+For more information
+===============================================================================
+
+* http://wiki.apertium.org/wiki/Installation
+* http://wiki.apertium.org/wiki/Kazakh_and_Tatar
+* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
+* http://wiki.apertium.org/wiki/Constraint_Grammar
+
+Help and support
+===============================================================================
+
+If you need help using this language pair or data, you can contact:
+
+* Mailing list: apertium-turkic@lists.sourceforge.net
+* IRC: #apertium on irc.freenode.net
+
+See also the file AUTHORS included in this distribution.

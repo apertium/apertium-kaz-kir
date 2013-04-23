@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Some of the example sentences in comments were taken
+     from kaz-tili.kz -->
+
+<transfer>
+  <section-def-cats>
+
+<!-- POS categories -->
+
+    <def-cat n="nom">
+      <cat-item tags="n"/>
+      <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="adj.subst.*"/>
+      <cat-item tags="post.subst.*.*"/>
+    </def-cat>
+
+    <def-cat n="noun_nominative">
+      <cat-item tags="n.nom"/>
+      <cat-item tags="n.pl.nom"/>
+    </def-cat>
+
+    <def-cat n="pron-dem-sim">
+      <cat-item tags="prn.dem.sim.*.*.*"/>
+      <cat-item tags="prn.itg.sim.*.*.*"/>
+    </def-cat>
+
+    <def-cat n="pron-pers_ref">
+      <cat-item tags="prn.pers.*"/>
+      <cat-item tags="prn.ref.*"/>
+    </def-cat>
+
+    <def-cat n="pron">
+      <cat-item tags="prn.*"/>
+    </def-cat>
+
+    <def-cat n="num">
+      <cat-item tags="num"/>
+      <cat-item tags="num.*"/>
+    </def-cat>
+
+    <def-cat n="adj">
+      <cat-item tags="adj"/>
+    </def-cat>
+
+    <def-cat n="v">
+      <cat-item tags="v.*"/>
+      <cat-item tags="vaux.*"/>
+      <cat-item tags="cop.*"/>
+    </def-cat>
+
+    <def-cat n="gerund">
+      <cat-item tags="v.*.*.ger.*"/>
+      <cat-item tags="v.*.*.ger_past.*"/>
+      <cat-item tags="v.*.*.ger_perf.*"/>
+      <cat-item tags="v.*.*.ger_ppot.*"/>
+      <cat-item tags="v.*.*.ger_abs.*"/>
+      <cat-item tags="v.*.*.ger_fut.*"/>
+      <cat-item tags="v.*.*.ger_impf.*"/>
+
+      <cat-item tags="cop.ger_past.*"/>
+      <cat-item tags="cop.ger_perf.*"/>
+
+    </def-cat>
+
+    <def-cat n="gpr-subst">
+      <cat-item tags="v.*.*.gpr_past.subst.*"/>
+      <cat-item tags="v.*.*.gpr_impf.subst.*"/>
+      <cat-item tags="v.*.*.gpr_pot.subst.*"/>
+      <cat-item tags="v.*.*.gpr_ppot.subst.*"/>
+      <cat-item tags="v.*.*.gpr_fut.subst.*"/>
+      <cat-item tags="v.*.*.gpr_fut2.subst.*"/>
+      <cat-item tags="v.*.*.gpr_fut3.subst.*"/>
+    </def-cat>
+
+    <def-cat n="day-or-year">
+      <cat-item lemma="күн" tags="n.px3sp.nom"/>
+      <cat-item lemma="жыл" tags="n.px3sp.nom"/>
+      <cat-item lemma="жыл" tags="n.pl.px3sp.nom"/>
+    </def-cat>
+
+    <def-cat n="month">
+      <!-- FIXME: add all monthes here -->
+      <cat-item lemma="тамыз" tags="n.*"/>
+    </def-cat>
+
+    <def-cat n="day">
+      <cat-item lemma="күн" tags="n.px3sp.nom"/>
+    </def-cat>
+  
+  </section-def-cats>
+  
+  <section-def-attrs>
+  
+    <def-attr n="a_nom">
+      <attr-item tags="n"/>
+      <attr-item tags="n.attr"/>
+      <attr-item tags="np"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="np.top"/>
+      <attr-item tags="np.top.attr"/>
+      <attr-item tags="np.org"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="adj.subst"/>
+      <attr-item tags="post.subst"/>
+      <attr-item tags="v.iv.ger"/>
+      <attr-item tags="v.tv.ger"/>
+    </def-attr>
+
+    <def-attr n="a_pron-dem-sim">
+      <attr-item tags="prn.dem.sim"/>
+      <attr-item tags="prn.itg.sim"/>
+    </def-attr>
+
+    <def-attr n="a_pron-pers_ref">
+      <attr-item tags="prn.pers"/>
+      <attr-item tags="prn.ref"/>
+    </def-attr>
+
+    <def-attr n="a_pron">
+      <attr-item tags="prn.pers"/>
+      <attr-item tags="prn.ref"/>
+      <attr-item tags="prn.recip"/>
+      <attr-item tags="prn.dem"/>
+      <attr-item tags="prn.dem.qnt"/>   <!-- e.g. "мұнша". No inflection, no other tags -->
+      <attr-item tags="prn.dem.reas.abl"/>   <!-- "сондықтан" and "осындықтан". No inflection, no further tags -->
+      <attr-item tags="prn.ind"/>
+      <attr-item tags="prn.itg"/>
+      <!-- қашан(prn.itg) is translated with неше(num.itg.subst). The former is
+      matched by rule 4, so we need num.itg.subst tag here -->
+      <attr-item tags="num.itg.subst"/>
+      <attr-item tags="prn.qnt"/>
+      <attr-item tags="prn.neg"/>
+    </def-attr>
+
+    <def-attr n="a_num">
+      <attr-item tags="num"/>
+      <attr-item tags="num.itg"/>
+    </def-attr>
+
+    <def-attr n="a_adj">
+      <attr-item tags="adj"/>
+      <attr-item tags="n.attr"/>
+    </def-attr>
+
+    <def-attr n="a_verb">
+      <attr-item tags="v"/>
+      <attr-item tags="vaux"/>
+      <attr-item tags="cop"/>
+    </def-attr>
+
+    <def-attr n="a_gpr-subst">
+      <attr-item tags="gpr_past.subst"/>
+      <attr-item tags="gpr_impf.subst"/>
+      <attr-item tags="gpr_pot.subst"/>
+      <attr-item tags="gpr_ppot.subst"/>
+      <attr-item tags="gpr_fut.subst"/>
+      <attr-item tags="gpr_fut2.subst"/>
+      <attr-item tags="gpr_fut2.subst"/>
+      <attr-item tags="gpr_fut3.subst"/>
+    </def-attr>
+
+    <def-attr n="a_adv">
+      <attr-item tags="adv"/>
+    </def-attr>
+
+    <def-attr n="a_gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="mf"/>
+    </def-attr>
+
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+       
+    <def-attr n="a_poss">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px3sp"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+    </def-attr>
+
+    <def-attr n="a_genposs">
+      <attr-item tags="px"/>
+<!--      <attr-item tags="loc.attr"/> -->
+      <attr-item tags="loc.subst"/>
+      <attr-item tags="sim"/>
+    </def-attr>
+
+    <def-attr n="a_case_noloc">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="ins"/>
+    </def-attr>
+
+    <def-attr n="a_case">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="loc.attr"/>
+      <attr-item tags="ins"/>
+    </def-attr>
+
+    <def-attr n="a_trans">
+      <attr-item tags="tv"/>
+      <attr-item tags="iv"/>
+      <attr-item tags="TD"/>
+    </def-attr>
+
+    <def-attr n="a_tns">
+      <attr-item tags="pres"/>
+      <attr-item tags="cont"/>
+      <attr-item tags="aor"/>
+      <attr-item tags="past"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="ifi"/>
+      <attr-item tags="ifi_evid"/>
+      <attr-item tags="fut"/>
+      <attr-item tags="fut_plan"/>
+      <attr-item tags="fut2"/> 
+    </def-attr>
+
+    <def-attr n="a_nonfin">
+      <attr-item tags="prc_impf"/>
+      <attr-item tags="prc_perf"/>
+      <attr-item tags="prc_plan"/>
+
+      <attr-item tags="gpr_past"/>
+      <attr-item tags="gpr_impf"/>
+      <attr-item tags="gpr_pot"/>
+      <attr-item tags="gpr_ppot"/>
+      <attr-item tags="gpr_fut"/>
+      <attr-item tags="gpr_fut2"/>
+      <attr-item tags="gpr_fut3"/>
+
+      <attr-item tags="inf"/>
+      <attr-item tags="ger1"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="ger_past"/>
+      <attr-item tags="ger_perf"/>
+      <attr-item tags="ger_ppot"/>
+      <attr-item tags="ger_abs"/>
+      <attr-item tags="ger_fut"/>
+      <attr-item tags="ger_fut2"/>
+      <attr-item tags="ger_fut3"/>
+      <attr-item tags="ger_impf"/>
+      <attr-item tags="ger_abs"/>
+    </def-attr>
+           
+    <def-attr n="a_deriv">
+      <attr-item tags="pass"/>
+      <attr-item tags="caus"/>
+      <attr-item tags="coop"/>
+    </def-attr>
+
+    <def-attr n="a_neg">
+      <attr-item tags="neg"/>
+    </def-attr>
+
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+
+    <def-attr n="a_frm">
+      <attr-item tags="frm"/>
+    </def-attr>
+
+    <def-attr n="a_numtype">
+      <attr-item tags="ord"/>
+      <attr-item tags="part"/>
+      <attr-item tags="subst"/>
+      <attr-item tags="coll"/>
+      <attr-item tags="coll.subst"/>
+      <attr-item tags="coll.advl"/>
+    </def-attr>
+
+  </section-def-attrs>
+ 
+  <section-def-vars>
+    <def-var n="case"/>
+    <def-var n="number"/>
+    <def-var n="postposition"/>
+  </section-def-vars>  
+
+  <section-def-macros>
+
+    <def-macro n="case1" npar="1">
+      <let><var n="case"/><lit v=""/></let>
+      <let><var n="postposition"/><lit v=""/></let>
+      <choose> <!-- Converts instrumental case to nominative+белән<post> -->
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal>
+          </test>
+          <let><var n="postposition"/><concat><lit v=" ^белән"/><lit-tag v="post"/><lit v="$"/></concat></let>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+        </when>
+      </choose>
+    </def-macro> 
+
+    <def-macro n="case2" npar="1">
+      <let><var n="case"/><clip pos="1" side="tl" part="a_case"/></let>
+      <choose> <!-- Takes care of loc.subst thing -->
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="loc.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="nom"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="loc.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="gen"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="gen"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="loc.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="dat"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="dat"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="loc.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="acc"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="acc"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="loc.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="abl"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="abl"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="loc.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="ins"/></equal>
+            </and>
+          </test>
+          <let><var n="postposition"/><concat><lit v=" ^белән"/><lit-tag v="post"/><lit v="$"/></concat></let>
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+      </choose>
+    </def-macro>
+
+    <def-macro n="tense1" npar="1">
+      <choose>
+        <when>
+          <test>
+              <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="aor"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="pres"/></let>
+        </when>
+        <when>
+          <!-- Ол өзінің досымен _кездесіпті_. – Он со своим другом встречался, оказывается.
+               Ул үзенең дусты белән _очрашкан_. -->
+          <test>
+              <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="ifi_evid"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="past"/></let>
+          <!-- /past+икән/ might be a better translation sometimes, but mere /past/ should work
+          in most cases, while the former won't. /IS/ -->
+        </when>
+      </choose>
+    </def-macro>
+
+    <def-macro n="nonfin1" npar="1">
+      <choose>
+        <when>
+          <!-- Мен _сөйлескелі_ келдім. (Я пришел поговорить.)
+               Мин _сөйләшергә_ килдем. -->
+          <test>
+              <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="prc_plan"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="inf"/></let>
+        </when>
+        <when>
+          <!-- Білетініңіз рас.            Менің білмейтінім көп.  Сенің ешкімді ескертпейтініңді білмедім.       
+               Белгәнегез дөрес.           Минем белмәгәнем күп.   Синең беркемне дә кисәтмәгәнеңне белмәдем.
+               (То, что вы знаете, верно.) (Я много чего не знаю.) (Я не знал, что ты никого не предупредишь.) -->
+          <test>
+              <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger_impf"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_past"/></let>
+          <!-- This won't work in some cases (e.g. in "Менің айтатыным жоқ" it will even lead to
+               a mistake; but it should work for a lot of cases :). /ger_past/ is the most "time-
+               independent" gerund in Tatar (it's actual meaning depends on the tense of the main
+               verb, so it is a good choise atm -->
+        </when>
+        <when>
+          <!-- ...бірақ белгісіз  заң  _бұзушылықтарға_ байланысты тергеу ісі жүріп жатқандықтан...
+               ...әмма билгесез хокук _бозуларга_ бәйле............................................ -->
+          <test>
+              <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger_abs"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger"/></let>
+        </when>
+      </choose>
+    </def-macro>
+
+    <def-macro n="numtype1" npar="1">
+      <choose>
+        <when>
+          <test>
+              <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="coll.subst"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_numtype"/><lit-tag v="subst"/></let>
+        </when>
+        <when>
+          <test>
+              <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="coll.advl"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_numtype"/><lit-tag v="coll"/></let>
+        </when>
+      </choose>
+    </def-macro>
+
+  </section-def-macros>
+
+  <section-rules>
+
+    <rule comment="REGLA: nouns and quasi-nouns">
+      <pattern>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+белән -->
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">   <!-- take care of loc.subst thing -->
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_nom"/>
+            <clip pos="1" side="tl" part="a_gen"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+            <clip pos="1" side="tl" part="a_genposs"/>
+            <var n="case"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: pronoun demonstrative similative">
+      <!-- Were put into a separate category because they can have
+      possessives *ater* genposs-etc thing (=sim) and with intentinon to
+      keep things simple /IS/ -->
+      <pattern>
+        <pattern-item n="pron-dem-sim"/>
+      </pattern>
+      <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+белән -->
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">   <!-- take care of loc.subst thing -->
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_pron-dem-sim"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+            <var n="case"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: personal and reflexive pronouns">
+      <!-- They have frm tag after person and number tags, and they don't take
+      possessive suffixes and e.g. px2pl.frm tag. Handled with a separate rule
+      because having them in REGLA:pronouns leads to incorrect sequences like:
+      prn.itg.frm.px2sg.frm /IS/ -->
+      <pattern>
+        <pattern-item n="pron-pers_ref"/>
+      </pattern>
+      <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+белән -->
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">   <!-- take care of loc.subst thing -->
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_pron-pers_ref"/>
+            <clip pos="1" side="tl" part="a_pers"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_frm"/>
+            <clip pos="1" side="tl" part="a_adv"/>
+            <clip pos="1" side="tl" part="a_genposs"/>
+            <var n="case"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: other pronouns">
+      <pattern>
+        <pattern-item n="pron"/>
+      </pattern>
+      <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+белән -->
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">   <!-- take care of loc.subst thing -->
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_pron"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_adv"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+            <clip pos="1" side="tl" part="a_genposs"/>
+            <var n="case"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: Gerunds">
+      <pattern>
+        <pattern-item n="gerund"/>
+      </pattern>
+      <action>
+        <call-macro n="nonfin1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="a_trans"/>
+            <clip pos="1" side="tl" part="a_deriv"/>
+            <clip pos="1" side="tl" part="a_neg"/>
+            <clip pos="1" side="tl" part="a_nonfin"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+            <clip pos="1" side="tl" part="a_genposs"/>
+            <var n="case"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: Substantivized verbal adjectives">
+      <pattern>
+        <pattern-item n="gpr-subst"/>
+      </pattern>
+      <action>
+        <call-macro n="nonfin1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="a_trans"/>
+            <clip pos="1" side="tl" part="a_deriv"/>
+            <clip pos="1" side="tl" part="a_neg"/>
+            <clip pos="1" side="tl" part="a_gpr-subst"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+            <clip pos="1" side="tl" part="a_genposs"/>
+            <var n="case"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: Match verb's tences and non-finite forms">
+      <pattern>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <call-macro n="tense1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="nonfin1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: Numerals">
+      <pattern>
+        <pattern-item n="num"/>
+      </pattern>
+      <action>
+        <!-- Both Kazakh and Tatar have collective numerals, but in Tatar they
+        don't take case endings. So there is no *дүртәве in Tatar. >>
+        Kaz. num.coll.subst is translated with tat. num.subst -->
+        <call-macro n="numtype1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+белән -->
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case2">   <!-- take care of loc.subst thing -->
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_num"/>
+            <clip pos="1" side="tl" part="a_numtype"/>
+            <clip pos="1" side="tl" part="a_nbr"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+            <clip pos="1" side="tl" part="a_genposs"/>
+            <var n="case"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="postposition"/>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: NUM жылы/жылдары/күні">
+                     <!--NUM елны/елларны/көнне-->
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="day-or-year"/>
+      </pattern>
+      <action>
+        <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b/>
+          <lu>
+            <clip pos="2" side="tl" part="lem"/>
+            <clip pos="2" side="tl" part="a_nom"/>
+            <clip pos="2" side="tl" part="a_nbr"/>
+            <clip pos="2" side="tl" part="a_case"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: NUM MONTH күні
+                          NUM MONTH көнне">
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="month"/>
+        <pattern-item n="day"/>
+      </pattern>
+      <action>
+        <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b/>
+          <lu>
+            <clip pos="3" side="tl" part="lem"/>
+            <clip pos="3" side="tl" part="a_nom"/>
+            <clip pos="3" side="tl" part="a_nbr"/>
+            <clip pos="3" side="tl" part="a_case"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: when [adj(A4 mostly)+noun] is translated with [n.attr+noun]">
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="noun_nominative"/>
+      </pattern>
+      <action>
+        <choose>
+          <when>
+            <test>
+              <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="n.attr"/></equal>
+            </test>
+            <out>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="lem"/>
+                <clip pos="2" side="tl" part="a_nom"/>
+                <clip pos="2" side="tl" part="a_nbr"/>
+                <lit-tag v="px3sp"/>
+                <clip pos="2" side="tl" part="a_case"/>
+              </lu>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            </out>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
+
+  </section-rules>
+
+</transfer>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+  <mode name="kir-kaz" install="yes">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kir-kaz.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kir-kaz.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="kir-kaz.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kir-kaz.kir-kaz.t2x"/>
+        <file name="kir-kaz.t2x.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="kir-kaz.autogen.hfst"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="kir-kaz.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kir-kaz-debug" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kir-kaz.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="kir-kaz.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kir-kaz.kir-kaz.t2x"/>
+        <file name="kir-kaz.t2x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="kir-kaz.autogen.hfst"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="kir-kaz.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
+  
+  <mode name="kir-kaz-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kir-kaz-tagger" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="kir-kaz-biltrans" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kir-kaz.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kir-kaz-lex" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kir-kaz.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -t">
+        <file name="kir-kaz.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="kir-kaz-transfer" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kir-kaz.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kir-kaz.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="kir-kaz.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kir-kaz-transfer2" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -n -w -1">
+        <file name="kir-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kir-kaz.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kir-kaz.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="kir-kaz.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kir-kaz.kir-kaz.t2x"/>
+        <file name="kir-kaz.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  
+  <mode name="kaz-kir" install="yes">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kaz-kir.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="kaz-kir.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kir-kaz.kaz-kir.t2x"/>
+        <file name="kaz-kir.t2x.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="kaz-kir.autogen.hfst"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="kaz-kir.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-kir-debug" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="kaz-kir.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kir-kaz.kaz-kir.t2x"/>
+        <file name="kaz-kir.t2x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="kaz-kir.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
+  
+  <mode name="kaz-kir-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-kir-tagger" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-kir-biltrans" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-kir-lex" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -t">
+        <file name="kaz-kir.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="kaz-kir-transfer" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kaz-kir.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="kaz-kir.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-kir-transfer2" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kaz-kir.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="kaz-kir.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kir-kaz.kaz-kir.t2x"/>
+        <file name="kaz-kir.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+</modes>
+
+

@@ -1,0 +1,34 @@
+* text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/NEWS -text
+/README -text
+/apertium-kaz-kir.kaz-kir.dix -text
+/apertium-kaz-kir.kaz-kir.lrx -text
+/apertium-kaz-kir.kaz-kir.rlx -text
+/apertium-kaz-kir.kaz-kir.t1x -text
+/apertium-kaz-kir.kaz-kir.t2x -text
+/apertium-kaz-kir.kaz.lexc -text
+/apertium-kaz-kir.kaz.twol -text
+/apertium-kaz-kir.kir-kaz.lrx -text
+/apertium-kaz-kir.kir-kaz.rlx -text
+/apertium-kaz-kir.kir-kaz.t1x -text
+/apertium-kaz-kir.kir-kaz.t2x -text
+/apertium-kaz-kir.kir.lexc -text
+/apertium-kaz-kir.kir.twol -text
+/apertium-kaz-kir.post-kaz.dix -text
+/apertium-kaz-kir.post-kir.dix -text
+/apertium-view.sh -text
+/autogen.sh -text
+/configure.ac -text
+/copystuffover.sh -text
+/kaz-kir.prob -text svneol=unset#unset
+/kir-kaz.prob -text svneol=unset#unset
+/modes.xml -text
+/pending-tests.sh -text
+/regression-tests.sh -text
+/testcorpus_kaz-kir.sh -text
+/update-morphs.bash -text
+/wiki-tests.sh -text
