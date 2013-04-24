@@ -197,31 +197,31 @@
     <!-- A4 adj. -->
 
 <!-- <e>       <p><l>@<s n="n"/><s n="px"/></l><r>заманча<s n="adj"/><s n="advl"/></r></p></e> -->        <!-- is A1 3. (kaz) trimm                                                     -->
-<e>       <p><l>сайхан<s n="adj"/></l>             <r>жақсы<s n="adj"/></r></p></e> <!-- "good"-->
-<e>       <p><l>ариун<s n="adj"/></l>             <r>ару<s n="adj"/></r></p></e> <!-- "pure"-->
-<e>       <p><l>муу<s n="adj"/></l>             <r>жаман<s n="adj"/></r></p></e> <!-- "bad"-->
-<e>       <p><l>зөв<s n="adj"/></l>             <r>дұрыс<s n="adj"/></r></p></e> <!-- "correct"-->
-<e>       <p><l>хэрэгтэй<s n="adj"/></l>             <r>керек<s n="adj"/></r></p></e> <!-- "necessary"-->
-<e>       <p><l>хэрэгтэй<s n="adj"/></l>             <r>керекті<s n="adj"/></r></p></e> <!-- "~needed"-->
-<e>       <p><l>шинэ<s n="adj"/></l>             <r>жаңа<s n="adj"/></r></p></e> <!-- "~new"-->
+<e>       <p><l>жақсы<s n="adj"/></l>             <r>жакшы<s n="adj"/></r></p></e> <!-- "good"-->
+<e>       <p><l>ару<s n="adj"/></l>               <r>аруу<s n="adj"/></r></p></e> <!-- "pure"-->
+<e>       <p><l>жаман<s n="adj"/></l>             <r>жаман<s n="adj"/></r></p></e> <!-- "bad"-->
+<e>       <p><l>дұрыс<s n="adj"/></l>             <r>туура<s n="adj"/></r></p></e> <!-- "correct"-->
+<e>       <p><l>керек<s n="adj"/></l>             <r>керек<s n="adj"/></r></p></e> <!-- "necessary"-->
+<e>       <p><l>керекті<s n="adj"/></l>           <r>керектүү<s n="adj"/></r></p></e> <!-- "~needed"-->
+<e>       <p><l>жаңа<s n="adj"/></l>              <r>жаңы<s n="adj"/></r></p></e> <!-- "~new"-->
 
 <!-- SECTION: Adverbs -->
 
-<e>       <p><l>сайн<s n="adv"/></l>              <r>жақсы<s n="adv"/></r></p></e> <!--"well"-->
-<e>       <p><l>их<s n="adv"/></l>              <r>өте<s n="adv"/></r></p></e> <!--"well"-->
-<e>       <p><l>дахин<s n="adv"/></l>              <r>қайта<s n="adv"/></r></p></e> <!--"again"-->
-<e>       <p><l>одоо<s n="adv"/></l>              <r>қазір<s n="adv"/></r></p></e> <!--"now"-->
-<e>       <p><l>сая<s n="adv"/></l>              <r>жаңа<s n="adv"/></r></p></e> <!--"just now"-->
-<e>       <p><l>ягаад<s n="adv"/></l>              <r>неге<s n="adv"/></r></p></e> <!--"why"-->
-<e>       <p><l>тийм<s n="adv"/></l>              <r>солай<s n="adv"/></r></p></e> <!--"in such a way"-->
-<e>       <p><l>илүү<s n="adv"/></l>              <r>әбден<s n="adv"/></r></p></e> <!--"rather"-->
+<e>       <p><l>жақсы<s n="adv"/></l>              <r>жакшы<s n="adv"/></r></p></e> <!--"well"-->
+<e>       <p><l>өте<s n="adv"/></l>                <r>өтө<s n="adv"/></r></p></e> <!--"well"-->
+<e>       <p><l>қайта<s n="adv"/></l>              <r>кайра<s n="adv"/></r></p></e> <!--"again"-->
+<e>       <p><l>қазір<s n="adv"/></l>              <r>азыр<s n="adv"/></r></p></e> <!--"now"-->
+<e>       <p><l>жаңа<s n="adv"/></l>               <r>жаңы<b/>эле<s n="postadv"/></r></p></e> <!--"just now"-->
+<e>       <p><l>неге<s n="adv"/></l>               <r>эмнеге<s n="adv"/></r></p></e> <!--"why"-->
+<e>       <p><l>солай<s n="adv"/></l>              <r>ошондой<s n="adv"/></r></p></e> <!--"in such a way"-->
+<e>       <p><l>әбден<s n="adv"/></l>              <r>абдан<s n="adv"/></r></p></e> <!--"rather"-->
 
 
 <!-- SECTION: Verbs -->
 
 <e>       <p><l>бол<s n="v"/><s n="iv"/></l>      <r>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "1. быть" -->
-<e>       <p><l>үз<s n="v"/><s n="tv"/></l>      <r>көр<s n="v"/><s n="tv"/></r></p></e> <!-- "see" -->
-<e>       <p><l>хар<s n="v"/><s n="tv"/></l>  <r>қара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
+<e>       <p><l>көр<s n="v"/><s n="tv"/></l>      <r>көр<s n="v"/><s n="tv"/></r></p></e> <!-- "see" -->
+<e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
 
 <!-- SECTION: Interjections -->
 
