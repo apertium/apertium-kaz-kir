@@ -88,30 +88,28 @@
 <!-- SECTION: Copula -->
 
 
-<e>       <p><l>а<s n="cop"/></l>                 <r>е<s n="cop"/></r></p></e>
+<e>       <p><l>э<s n="cop"/></l>                 <r>е<s n="cop"/></r></p></e>
 
 
 <!-- SECTION: Modal/discourse particles (Clitics) -->
 
 
-<e>       <p><l>уу<s n="qst"/></l>                <r>ма<s n="qst"/></r></p></e>
-<e>       <p><l>шүү<s n="mod_ass"/></l>           <r>ғой<s n="mod_ass"/></r></p></e>
+<e>       <p><l>ма<s n="qst"/></l>                <r>бы<s n="qst"/></r></p></e>
+<e>       <p><l>ғой<s n="mod_ass"/></l>           <r>го<s n="mod_ass"/></r></p></e>
 
 <!-- SECTION: Co-ordinating conjunctions -->
 
     <!-- Соединительные -->
 
-<e>       <p><l>ба<s n="cnjcoo"/></l>             <r>және<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>бас<s n="cnjcoo"/></l>             <r>және<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>бөгөөд<s n="cnjcoo"/></l>             <r>қоса<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>харин<s n="cnjcoo"/></l>             <r>бірақ<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>гэвч<s n="cnjcoo"/></l>             <r>бірақ<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>эсвэл<s n="cnjcoo"/></l>             <r>бірақ<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>және<s n="cnjcoo"/></l>             <r>жана<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>қоса<s n="cnjcoo"/></l>             <r>кошо<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>бірақ<s n="cnjcoo"/></l>             <r>бирок<s n="cnjcoo"/></r></p></e>
 <!-- SECTION: Postadverbs -->
 
 
-<e>       <p><l>л<s n="postadv"/></l>          <r>ғана<s n="postadv"/></r></p></e>
-<e>       <p><l>бас<s n="postadv"/></l>            <r>да<s n="postadv"/></r></p></e>
+<e>       <p><l>ғана<s n="postadv"/></l>          <r>гана<s n="postadv"/></r></p></e>
+<e>       <p><l>ғана<s n="postadv"/></l>          <r>эле<s n="postadv"/></r></p></e>
+<e>       <p><l>да<s n="postadv"/></l>            <r>да<s n="postadv"/></r></p></e>
 
 <!-- SECTION: Postadverbs -->
 <e>       <p><l>хүртэл<s n="post"/></l>          <r>дейін<s n="post"/></r></p></e>
@@ -119,19 +117,20 @@
 <!-- SECTION: Numerals -->
 
 
-<e>       <p><l>тиг<s n="num"/></l>               <r>нөл<s n="num"/></r></p></e>
-<e>       <p><l>нэг<s n="num"/></l>               <r>бір<s n="num"/></r></p></e>
-<e>       <p><l>хоёр<s n="num"/></l>               <r>екі<s n="num"/></r></p></e>
-<e>       <p><l>гурав<s n="num"/></l>                <r>үш<s n="num"/></r></p></e>
-<e>       <p><l>дөрөв<s n="num"/></l>              <r>төрт<s n="num"/></r></p></e>
-<e>       <p><l>тав<s n="num"/></l>               <r>бес<s n="num"/></r></p></e>
-<e>       <p><l>зургаа<s n="num"/></l>              <r>алты<s n="num"/></r></p></e>
-<e>       <p><l>долоо<s n="num"/></l>              <r>жеті<s n="num"/></r></p></e>
-<e>       <p><l>найм<s n="num"/></l>             <r>сегіз<s n="num"/></r></p></e>
-<e>       <p><l>ес<s n="num"/></l>             <r>тоғыз<s n="num"/></r></p></e>
-<e>       <p><l>арван<s n="num"/></l>                <r>он<s n="num"/></r></p></e>
+<e>       <p><l>нөл<s n="num"/></l>               <r>ноль<s n="num"/></r></p></e>
+<e>       <p><l>бір<s n="num"/></l>               <r>бир<s n="num"/></r></p></e>
+<e>       <p><l>екі<s n="num"/></l>               <r>эки<s n="num"/></r></p></e>
+<e>       <p><l>үш<s n="num"/></l>                <r>үч<s n="num"/></r></p></e>
+<e>       <p><l>төрт<s n="num"/></l>              <r>төрт<s n="num"/></r></p></e>
+<e>       <p><l>бес<s n="num"/></l>               <r>беш<s n="num"/></r></p></e>
+<e>       <p><l>алты<s n="num"/></l>              <r>алты<s n="num"/></r></p></e>
+<e>       <p><l>жеті<s n="num"/></l>              <r>жети<s n="num"/></r></p></e>
+<e>       <p><l>сегіз<s n="num"/></l>             <r>сегиз<s n="num"/></r></p></e>
+<e>       <p><l>тоғыз<s n="num"/></l>             <r>тогуз<s n="num"/></r></p></e>
+<e>       <p><l>он<s n="num"/></l>                <r>он<s n="num"/></r></p></e>
 
-<e>       <p><l>хэд<s n="num"/></l>              <r>неше<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>неше<s n="num"/></l>              <r>нече<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>қанша<s n="num"/></l>             <r>канча<s n="num"/></r></p></e> <!-- "" -->
 
 
 <!-- SECTION: Pronouns -->
@@ -139,48 +138,48 @@
 
     <!-- Personal pronouns --> <!-- FIXME:CHECK: JNW, please have a look -->
 
-<e>       <p><l>би<s n="prn"/><s n="pers"/></l>  <r>мен<s n="prn"/><s n="pers"/></r></p></e>
-<e>       <p><l>чи<s n="prn"/><s n="pers"/></l>  <r>сен<s n="prn"/><s n="pers"/></r></p></e>
-<e>       <p><l>тэр<s n="prn"/><s n="pers"/></l>   <r>ол<s n="prn"/><s n="pers"/></r></p></e>
-<e>       <p><l>бид<s n="prn"/><s n="pers"/></l>  <r>біз<s n="prn"/><s n="pers"/></r></p></e>
-<e>       <p><l>та<s n="prn"/><s n="pers"/></l><r>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></r></p></e>
-<e>       <p><l>тэд<s n="prn"/><s n="pers"/></l> <r>олар<s n="prn"/><s n="pers"/></r></p></e>
+<e>       <p><l>мен<s n="prn"/><s n="pers"/></l>  <r>мен<s n="prn"/><s n="pers"/></r></p></e>
+<e>       <p><l>сен<s n="prn"/><s n="pers"/></l>  <r>сен<s n="prn"/><s n="pers"/></r></p></e>
+<e>       <p><l>ол<s n="prn"/><s n="pers"/></l>   <r>ал<s n="prn"/><s n="pers"/></r></p></e>
+<e>       <p><l>біз<s n="prn"/><s n="pers"/></l>  <r>биз<s n="prn"/><s n="pers"/></r></p></e>
+<e>       <p><l>сіз<s n="prn"/><s n="pers"/></l>  <r>сиз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></r></p></e>
+<e>       <p><l>олар<s n="prn"/><s n="pers"/></l> <r>алар<s n="prn"/><s n="pers"/></r></p></e>
 
 
     <!-- Demonstrative pronouns -->
 
-<e>       <p><l>энэ<s n="prn"/><s n="dem"/></l>   <r>бұл<s n="prn"/><s n="dem"/></r></p></e>
-<e>       <p><l>тэр<s n="prn"/><s n="dem"/></l>   <r>ол<s n="prn"/><s n="dem"/></r></p></e>
+<e>       <p><l>бұл<s n="prn"/><s n="dem"/></l>   <r>бул<s n="prn"/><s n="dem"/></r></p></e>
+<e>       <p><l>ол<s n="prn"/><s n="dem"/></l>    <r>ал<s n="prn"/><s n="dem"/></r></p></e>
 
     <!-- Interrogative pronouns -->
 
-<e>       <p><l>юу<s n="prn"/><s n="itg"/></l> <r>не<s n="prn"/><s n="itg"/></r></p></e> <!-- "thing" FIXME: noun in Kazakh?-->
-<e>       <p><l>хэн<s n="prn"/><s n="itg"/></l>   <r>кім<s n="prn"/><s n="itg"/></r></p></e> <!-- who -->
-<e>       <p><l>ямар<s n="prn"/><s n="itg"/></l> <r>қайсы<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>не<s n="prn"/><s n="itg"/></l>   <r>эмне<s n="prn"/><s n="itg"/></r></p></e> <!-- "thing" FIXME: noun in Kazakh?-->
+<e>       <p><l>кім<s n="prn"/><s n="itg"/></l>  <r>ким<s n="prn"/><s n="itg"/></r></p></e> <!-- who -->
+<e>       <p><l>қайсы<s n="prn"/><s n="itg"/></l><r>кайсы<s n="prn"/><s n="itg"/></r></p></e>
 
     <!-- Reflexive pronouns -->
 
-<e>       <p><l>өөр<s n="prn"/><s n="ref"/></l>    <r>өз<s n="prn"/><s n="ref"/></r></p></e>
+<e>       <p><l>өз<s n="prn"/><s n="ref"/></l>    <r>өз<s n="prn"/><s n="ref"/></r></p></e>
 
 
 <!-- SECTION: Determiners -->
-<e>       <p><l>энэ<s n="det"/></l>           <r>бұл<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>ямар<s n="det"/></l>          <r>қайсы<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>бүх<s n="det"/></l>           <r>бүкіл<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>бұл<s n="det"/></l>           <r>бул<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>қайсы<s n="det"/></l>          <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>бүкіл<s n="det"/></l>           <r>бүт<s n="det"/><s n="dem"/></r></p></e>
 
 
 
 <!-- SECTION: Nouns -->
 
 
-<e>       <p><l>цаг<s n="n"/></l>              <r>сағат<s n="n"/></r></p></e> <!--"hour, watch"-->
-<e>       <p><l>гар<s n="n"/></l>              <r>қол<s n="n"/></r></p></e> <!--"hand"-->
-<e>       <p><l>нас<s n="n"/></l>              <r>жас<s n="n"/></r></p></e> <!--"age"-->
-<e>       <p><l>байр<s n="n"/></l>             <r>пәтір<s n="n"/></r></p></e> <!--"apartment"-->
+<e>       <p><l>сағат<s n="n"/></l>            <r>саат<s n="n"/></r></p></e> <!--"hour, watch"-->
+<e>       <p><l>қол<s n="n"/></l>              <r>кол<s n="n"/></r></p></e> <!--"hand"-->
+<e>       <p><l>жас<s n="n"/></l>              <r>жаш<s n="n"/></r></p></e> <!--"age"-->
+<e>       <p><l>пәтір<s n="n"/></l>            <r>квартира<s n="n"/></r></p></e> <!--"apartment"-->
 <e>       <p><l>банк<s n="n"/></l>             <r>банк<s n="n"/></r></p></e> <!--"bank"-->
-<e>       <p><l>ном<s n="n"/></l>              <r>кітап<s n="n"/></r></p></e> <!--"book"-->
-<e>       <p><l>гутал<s n="n"/></l>            <r>өтік<s n="n"/></r></p></e> <!--"boot(s)"-->
-<e>       <p><l>дарга<s n="n"/></l>            <r>бастық<s n="n"/></r></p></e> <!--"boss"-->
+<e>       <p><l>кітап<s n="n"/></l>            <r>китеп<s n="n"/></r></p></e> <!--"book"-->
+<e>       <p><l>өтік<s n="n"/></l>             <r>өтүк<s n="n"/></r></p></e> <!--"boot(s)"-->
+<e>       <p><l>бастық<s n="n"/></l>            <r>башчы<s n="n"/></r></p></e> <!--"boss"-->
 
     <!-- Nationalities -->
     <!-- Languages -->
