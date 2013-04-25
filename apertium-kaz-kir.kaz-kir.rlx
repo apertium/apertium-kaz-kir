@@ -56,12 +56,15 @@ LIST Sg = sg ;
 LIST Pl = pl ;
 
 LIST Nom = nom ;
+LIST Gen = gen ;
 LIST Dat = dat ;
 LIST Acc = acc ;
 LIST Abl = abl ;
 LIST Loc = loc ;
 LIST Ins = ins ;
 LIST P3 = p3 ;
+
+LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
 # Semantic lists
 # --------------
@@ -100,11 +103,6 @@ SET NOT-ADV = WORDMARK - Adv ;
 LIST N-SG-NOM = (n sg nom) ;
 LIST N-PL-NOM = (n pl nom) ;
 
-# Pronoun sets
-# ------------
-
-SET PRN-PERS = (prn pers) ;
-
 # Adjective sets
 # --------------
 
@@ -125,7 +123,7 @@ LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 
 SET V-NotGerund = V - Gerund ;
 
-LIST Participle = prc_perf prc_impf prc_cond prc_vol ;
+LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
 
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
 
@@ -175,8 +173,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 EOS OR ("де"i))               # FIXME s/де/SentenceBoundary/
         (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
 ;
-## 40 . Мүмкін бұл Азамат [0]шығар?
-##  13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
+## (!) 40 . Мүмкін бұл Азамат [0]шығар?
+##  (!) 13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
 ## Мағынасы төңкеріліп [0]кетті деп ойламағаным үшін ғафу етіңіз.
 
 
@@ -216,6 +214,22 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #! Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
 #! Акча бармы? Бар<adj>.
 #! Акча бармы? Бар<adj>, ләкин бик аз!
+
+
+# FIXME removes determiner even when there is a noun 1 to the right
+#REMOVE Det IF
+#       ((NEGATE 1 N OR Subst) OR (NEGATE 1 A LINK 1 N OR Subst))
+#;
+## 44 . Ол енді ол дыбысты анығырақ ести бастады.
+## (!) 34 . Ол Азаматтың қайда екенін білсе де айтқысы келген жоқ.
+
+
+#
+ SELECT Pron IF
+        (0C Det OR Pron)
+        (1 Adv)
+;
+##
 
 
 
@@ -304,6 +318,13 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ##
 
 
+#
+ "<бері>" SELECT Post IF
+        (-1 Abl)
+;
+##
+
+
 
 # Verbs
 # =====
@@ -373,6 +394,8 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ##  172 . Сот арқылы немесе өзгеде осындай құзыреті бар мемлекеттік органдардың
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе [0]жекелеген заттардың есебінен;
+
+
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
 # =============================   # Try to generalize, if possible, existing rules.
@@ -447,8 +470,9 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 #
- "<Енді>" SELECT Adv IF
-        (-1 BOS)
+ "<енді>" SELECT Adv IF
+        (1* Acc BARRIER EOS)
+        (1* V BARRIER EOS)
 ;
 ##
 
@@ -518,19 +542,32 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ## 76 . Қазақстандық құрама «А» тобында соңғы орында қалып қойды.
 
-###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
-###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
-REMOVE N IF (0 ("ақырын"));
-    ## Айгүл оны _ақырын_ тыңдайды.
+#
+ SELECT N IF
+        (0 ("қор"))
+        (-1 N)
+;
+## 169. Музей [0]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
-SELECT A/Advl IF (0 ("ақырын"));
-    ## Айгүл оны _ақырын_ тыңдайды.
 
-REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
-    #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
+#
+ SELECT A IF
+        (0 ("құрама"))
+        (-1 (np top))
+;
+## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
+
+
+#
+ "<жинағы>" SELECT N IF
+            (-1 N + Pl)
+;
+## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
+## Қазақстан заңдарының жинағы
 
 ###################   TO BE DONE   ####################
+
 
 # Deciding about the number of a verb or copula in the 3 person
 # Basic idea is to remove plural reading if subject is not in plural,
@@ -548,30 +585,8 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 ##
 
+
 ###################################### TO BE SORTED ############################
-
-#
- SELECT A IF
-        (0 ("құрама"))
-        (-1 (np top))
-;
-## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
-
-
-# FIXME: I wanted to refer "жәдігер" as a lemma, but it didn't work
-# (because it has cop p3 subreding I guess)
- "<жинағы>" SELECT N IF
-        (-1 ("<жәдігерлер>"))
-;
-## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
-
-
-#
- SELECT N IF
-        (0 ("қор"))
-        (-1 N)
-;
-## 169. Музей [1]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
 
 # An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
@@ -608,3 +623,36 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 Prop)
         (0 ("[:upper:][:upper:]+"r))
 ## АЗАМАТ ҚАЙДА?
+
+
+###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
+###################   SOME SHOULD BE REWRITTEN LATER                ####################
+
+
+REMOVE N IF (0 ("ақырын"));
+    ## Айгүл оны _ақырын_ тыңдайды.
+
+SELECT A/Advl IF (0 ("ақырын"));
+    ## Айгүл оны _ақырын_ тыңдайды.
+
+REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
+    #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
+
+
+# ======= #
+  SECTION     # experimental (or "CG is awesome!")
+# ======= #
+
+
+# FIXME
+ SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger) + PersonalPossessives LINK 1 ("керек") BARRIER EOS) ;
+## [0]Мен үйге қайтуым керек. >> [0]Миңа өйгә кайтырга кирәк.
+## [0]Сен үйге қайтуың керек. >> [0]Сиңа өйгә кайтырга кирәк.
+
+
+#
+ SUBSTITUTE (dat) (nom) TARGET (prn pers) IF (1* (ger_past) + Nom LINK 1 ("ұна") + (aor) BARRIER EOS) ;
+ SUBSTITUTE (ger_past) (inf) TARGET (ger_past nom) IF (1 ("ұна") + (aor)) ;
+ SUBSTITUTE (nom) (*) TARGET (inf nom) IF (1 ("ұна") + (aor)) ;
+ SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (p1)) ;
+## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.

@@ -1581,14 +1581,6 @@ LEXICON ModalParticles
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
 
  LEXICON Postadverbs
-!===================!
-
-
-%-ақ:%-ақ POSTADV ; ! ""
-
-ғана:%~ғана POSTADV ; ! Dir/RL
-ғана:ғана POSTADV ;   ! "only" Dir/LR
-ғана:қана POSTADV ;   ! "only" Dir/LR
 
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
@@ -1596,11 +1588,6 @@ LEXICON ModalParticles
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
-тегіс POSTADV ; ! "entirely/all/all together"
-
-
-!================!
  LEXICON Pronouns
 !================!
 
