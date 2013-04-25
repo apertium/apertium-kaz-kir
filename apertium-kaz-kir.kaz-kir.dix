@@ -117,6 +117,7 @@
 <e>       <p><l>арқылы<s n="post"/></l>           <r>аркылуу<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>дейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
+<e r="RL"><p><l></l>                              <r>менен<s n="post"/></r></p></e> <!-- "with"  / ins-->
 
 <!-- SECTION: Numerals -->
 

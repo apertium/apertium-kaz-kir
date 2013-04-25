@@ -1141,10 +1141,12 @@ LEXICON Conjunctions
 
 LEXICON Postpositions
 
+менен:менен POST ; ! "with"
 чейин:чейин POST ; ! "up to, until"
 үчүн:үчүн POST-DECL ; ! "for" +nom
 аркылуу:аркылуу POST ; ! "through" +nom
 үчүн:үчүн POST ; ! "for" + nom
+менен:менен POST ;
 
 LEXICON Determiners
 
@@ -1508,3 +1510,4 @@ LEXICON Punctuation
 !=============================================================================!
 ! To be checked and moved to the correct continuation lexica
 !=============================================================================!
+
