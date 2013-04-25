@@ -1575,13 +1575,23 @@ LEXICON ModalParticles
 !====================!
  LEXICON Conjunctions
 
+және:және CC ; ! "and"
+және:жөне CC ; ! "and" Dir/LR FIXME CHECK
+ал:ал CC ; ! "contrastive and"
+бірақ:бірақ CC ; ! "but"
 
  LEXICON Postpositions
 
+арқылы:арқылы POST ; ! "through, via, by means of" + NOM
+үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
+шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
 
  LEXICON Postadverbs
 
+ғана:%~ғана POSTADV ; ! Dir/RL
+ғана:ғана POSTADV ;   ! "only" Dir/LR
+ғана:қана POSTADV ;   ! "only" Dir/LR
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
@@ -1754,6 +1764,11 @@ XXI NUM-ROMAN ; ! ""
  LEXICON Nouns
 
 банк:банк N5 ; ! "bank"
+бастық:бастық N1 ; ! "head,chief"
+жас:жас N1 ; ! "age"
+кітап:кітап N1 ; ! "book"
+қол:қол N1 ; ! "hand"
+сағат:сағат N1 ; ! "hour"
 
  LEXICON ProperNouns
 
@@ -1761,17 +1776,27 @@ XXI NUM-ROMAN ; ! ""
 
  LEXICON Adjectives
 
+дұрыс:дұрыс A1 ; ! "correct"
+жақсы:жақсы A1 ; ! "good"
 жаман:жаман A1 ; ! "bad"
+жаңа:жаңа A1 ; ! "new"
 керек:керек A1 ; ! ""
 
  LEXICON Adverbs
 
+әбден:әбден ADV ; ! "extremely"
+қайта:қайта ADV ; ! "again"
+өте:өте ADV ; ! "very"
+қазір:қазір ADV ; ! ""
+жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
+қазір:қазір ADV-WITH-KI ; ! "now > the one now"
 
  LEXICON Verbs
 
 бол:бол V-IV ; ! "1. быть"
 бол:бол V-IV ; ! "be/become"
 көр:көр V-TV ; ! "see"
+қара:қара V-TV ; ! "look at"
 бол:бол Vinfl-AUX ; !
 
  LEXICON Interjections
