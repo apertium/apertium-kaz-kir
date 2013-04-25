@@ -16,11 +16,11 @@
         <file name="kir-kaz.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t1x"/>
         <file name="kir-kaz.t1x.bin"/>
       </program>
       <program name="apertium-transfer -n">
-        <file name="apertium-kir-kaz.kir-kaz.t2x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
       </program>
       <program name="hfst-proc $1">
@@ -45,11 +45,11 @@
         <file name="kir-kaz.autobil.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t1x"/>
         <file name="kir-kaz.t1x.bin"/>
       </program>
       <program name="apertium-transfer -n">
-        <file name="apertium-kir-kaz.kir-kaz.t2x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
       </program>
       <program name="hfst-proc -d">
@@ -132,7 +132,7 @@
         <file name="kir-kaz.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t1x"/>
         <file name="kir-kaz.t1x.bin"/>
       </program>
     </pipeline>
@@ -154,11 +154,11 @@
         <file name="kir-kaz.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kir-kaz.t1x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t1x"/>
         <file name="kir-kaz.t1x.bin"/>
       </program>
       <program name="apertium-transfer -n">
-        <file name="apertium-kir-kaz.kir-kaz.t2x"/>
+        <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
       </program>
     </pipeline>
@@ -181,11 +181,11 @@
         <file name="kaz-kir.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t1x"/>
         <file name="kaz-kir.t1x.bin"/>
       </program>
       <program name="apertium-transfer -n">
-        <file name="apertium-kir-kaz.kaz-kir.t2x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t2x"/>
         <file name="kaz-kir.t2x.bin"/>
       </program>
       <program name="hfst-proc $1">
@@ -210,11 +210,11 @@
         <file name="kaz-kir.autobil.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t1x"/>
         <file name="kaz-kir.t1x.bin"/>
       </program>
       <program name="apertium-transfer -n">
-        <file name="apertium-kir-kaz.kaz-kir.t2x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t2x"/>
         <file name="kaz-kir.t2x.bin"/>
       </program>
       <program name="hfst-proc -d">
@@ -294,7 +294,7 @@
         <file name="kaz-kir.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t1x"/>
         <file name="kaz-kir.t1x.bin"/>
       </program>
     </pipeline>
@@ -316,11 +316,11 @@
         <file name="kaz-kir.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-kir-kaz.kaz-kir.t1x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t1x"/>
         <file name="kaz-kir.t1x.bin"/>
       </program>
       <program name="apertium-transfer -n">
-        <file name="apertium-kir-kaz.kaz-kir.t2x"/>
+        <file name="apertium-kaz-kir.kaz-kir.t2x"/>
         <file name="kaz-kir.t2x.bin"/>
       </program>
     </pipeline>
