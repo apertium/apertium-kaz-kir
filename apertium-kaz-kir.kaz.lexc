@@ -1763,6 +1763,7 @@ XXI NUM-ROMAN ; ! ""
 !=============!
  LEXICON Nouns
 
+бақша:бақша N1 ; ! "garden house"
 банк:банк N5 ; ! "bank"
 бастық:бастық N1 ; ! "head,chief"
 жас:жас N1 ; ! "age"
@@ -1774,6 +1775,7 @@ XXI NUM-ROMAN ; ! ""
  LEXICON ProperNouns
 
 Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
+Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 
  LEXICON Adjectives
 
@@ -1803,6 +1805,7 @@ XXI NUM-ROMAN ; ! ""
 кел:кел V-IV ; ! "come"
 көр:көр V-TV ; ! "see"
 қара:қара V-TV ; ! "look at"
+ойна:ойна V-TV ; ! "play"
 бол:бол Vinfl-AUX ; !
 кел:кел Vinfl-AUX ; !
 

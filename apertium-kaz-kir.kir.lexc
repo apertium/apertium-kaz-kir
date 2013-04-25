@@ -1336,6 +1336,7 @@ LEXICON Nouns
 кол:кол N-INFL ; 
 кол:кол N-INFL ; 
 саат:саат N-INFL ; 
+бакча:бакча N-INFL ; 
 башчы:башчы N-INFL ; 
 кол:кол N-INFL ; 
 жаш:жаш N-INFL ; 
@@ -1346,6 +1347,7 @@ LEXICON Nouns
 LEXICON ProperNouns
 
 Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
+Айгүл:Айгүл NP-ANT-F ;
 
 LEXICON Adjectives
 
@@ -1383,6 +1385,8 @@ LEXICON Verbs
 кел:кел V-INFL-IV-NO-CAUS ; ! "come"
 кел:келтир V-INFL-IV-IRREG-CAUS ; ! "make come"
 көр:көр V-INFL-TV ; ! "see"
+ойно:ойно V-INFL-IV ; ! "play"
+ойно:ойно V-INFL-TV ; ! "play"
 кара:кара V-INFL-TV ;
 
 LEXICON Abbreviations

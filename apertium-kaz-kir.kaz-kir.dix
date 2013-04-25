@@ -184,14 +184,16 @@
 <e>       <p><l>банк<s n="n"/></l>             <r>банк<s n="n"/></r></p></e> <!--"bank"-->
 <e>       <p><l>кітап<s n="n"/></l>            <r>китеп<s n="n"/></r></p></e> <!--"book"-->
 <e>       <p><l>өтік<s n="n"/></l>             <r>өтүк<s n="n"/></r></p></e> <!--"boot(s)"-->
-<e>       <p><l>бастық<s n="n"/></l>            <r>башчы<s n="n"/></r></p></e> <!--"boss"-->
+<e>       <p><l>бастық<s n="n"/></l>           <r>башчы<s n="n"/></r></p></e> <!--"boss"-->
 <e>       <p><l>шелек<s n="n"/></l>            <r>челек<s n="n"/></r></p></e> <!--"barrel"-->
 <e>       <p><l>шелек<s n="n"/></l>            <r>чака<s n="n"/></r></p></e> <!--"bucket"-->
 <e>       <p><l>сыра<s n="n"/></l>             <r>пиво<s n="n"/></r></p></e> <!--"beer"-->
+<e>       <p><l>бақша<s n="n"/></l>            <r>бакча<s n="n"/></r></p></e> <!--"beer"-->
 
     <!-- Nationalities -->
     <!-- Languages -->
     <!-- Anthroponyms -->
+<e>       <p><l>Айгүл<s n="np"/><s n="ant"/><s n="f"/></l>      <r>Айгүл<s n="np"/><s n="ant"/><s n="f"/></r></p></e> <!--"Aygül"-->
     <!-- Patronyms -->
     <!-- Cognoms -->
     <!-- Other toponyms-->
@@ -230,6 +232,7 @@
 
 <e>       <p><l>бол<s n="v"/><s n="iv"/></l>      <r>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "1. быть" -->
 <e>       <p><l>кел<s n="v"/><s n="iv"/></l>      <r>кел<s n="v"/><s n="iv"/></r></p></e> <!-- "come" -->
+<e>       <p><l>ойна<s n="v"/><s n="iv"/></l>     <r>ойно<s n="v"/><s n="iv"/></r></p></e> <!-- "come" -->
 <e>       <p><l>көр<s n="v"/><s n="tv"/></l>      <r>көр<s n="v"/><s n="tv"/></r></p></e> <!-- "see" -->
 <e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
 <e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->
