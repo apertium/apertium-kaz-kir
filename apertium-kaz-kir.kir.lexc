@@ -1326,8 +1326,13 @@ LEXICON Nouns
 китеп:китеп N-INFL ; ! "book"
 кол:кол N-INFL ; ! "hand"
 саат:саат N-INFL ; ! "watch"
+чака:чака N-INFL ; ! "bucket"
+челек:челек N-INFL ; ! "bucket"
 өтүк:өтүк N-INFL ; ! "shoe"
 банк:банк N-INFL ; ! "bank"
+пиво:пиво N-INFL ; ! "industry"
+чака:чака N-INFL ; ! "bucket"
+пиво:пиво N-INFL ; ! "beer"
 кол:кол N-INFL ; 
 кол:кол N-INFL ; 
 саат:саат N-INFL ; 
@@ -1357,6 +1362,7 @@ LEXICON Adverbs
 
 эмнеге:эмнеге ADV-ITG ; ! "why"
 өтө:өтө ADV ; ! "very"
+эртең:эртең ADV ; ! "tomorrow"
 абдан:абдан ADV ; ! "really"
 ошондой:ошондой ADV ; ! FIXME: compositional
 ошондой:ошондой ADV ; ! FIXME: compositional
@@ -1367,9 +1373,15 @@ LEXICON Adverbs
 LEXICON Verbs
 
 бол:бол VAUX-INFL ; !
+кел:кел VAUX-INFL ; !
 бол:бол V-INFL-IV ; ! "be"
+бил:бил V-INFL-IV ; ! "know"
+бил:бил V-INFL-TV ; ! "know"
+ич:ич V-INFL-TV ; ! "drink"
 кара:кара V-INFL-IV ; 
 кара:кара V-INFL-TV ;
+кел:кел V-INFL-IV-NO-CAUS ; ! "come"
+кел:келтир V-INFL-IV-IRREG-CAUS ; ! "make come"
 көр:көр V-INFL-TV ; ! "see"
 кара:кара V-INFL-TV ;
 

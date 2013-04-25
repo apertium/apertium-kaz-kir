@@ -1769,6 +1769,7 @@ XXI NUM-ROMAN ; ! ""
 кітап:кітап N1 ; ! "book"
 қол:қол N1 ; ! "hand"
 сағат:сағат N1 ; ! "hour"
+сыра:сыра N1 ; ! "beer"
 
  LEXICON ProperNouns
 
@@ -1787,17 +1788,23 @@ XXI NUM-ROMAN ; ! ""
 әбден:әбден ADV ; ! "extremely"
 қайта:қайта ADV ; ! "again"
 өте:өте ADV ; ! "very"
+ертең:ертең ADV ; ! ""
 қазір:қазір ADV ; ! ""
 жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
 
  LEXICON Verbs
 
+біл:біл V-TV ; ! "know,understand,learn"
+біл:біл V-TV ; ! "знать,понимать,полагать"
 бол:бол V-IV ; ! "1. быть"
 бол:бол V-IV ; ! "be/become"
+іш:іш V-TV ; ! "drink"
+кел:кел V-IV ; ! "come"
 көр:көр V-TV ; ! "see"
 қара:қара V-TV ; ! "look at"
 бол:бол Vinfl-AUX ; !
+кел:кел Vinfl-AUX ; !
 
  LEXICON Interjections
 !=====================!

@@ -168,6 +168,7 @@
 
 <!-- SECTION: Determiners -->
 <e>       <p><l>бұл<s n="det"/></l>           <r>бул<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>сол<s n="det"/></l>           <r>ошол<s n="det"/><s n="dem"/></r></p></e>
 <e>       <p><l>қайсы<s n="det"/></l>          <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
 <e>       <p><l>бүкіл<s n="det"/></l>           <r>бүт<s n="det"/><s n="dem"/></r></p></e>
 
@@ -184,6 +185,9 @@
 <e>       <p><l>кітап<s n="n"/></l>            <r>китеп<s n="n"/></r></p></e> <!--"book"-->
 <e>       <p><l>өтік<s n="n"/></l>             <r>өтүк<s n="n"/></r></p></e> <!--"boot(s)"-->
 <e>       <p><l>бастық<s n="n"/></l>            <r>башчы<s n="n"/></r></p></e> <!--"boss"-->
+<e>       <p><l>шелек<s n="n"/></l>            <r>челек<s n="n"/></r></p></e> <!--"barrel"-->
+<e>       <p><l>шелек<s n="n"/></l>            <r>чака<s n="n"/></r></p></e> <!--"bucket"-->
+<e>       <p><l>сыра<s n="n"/></l>             <r>пиво<s n="n"/></r></p></e> <!--"beer"-->
 
     <!-- Nationalities -->
     <!-- Languages -->
@@ -219,13 +223,17 @@
 <e>       <p><l>неге<s n="adv"/></l>               <r>эмнеге<s n="adv"/></r></p></e> <!--"why"-->
 <e>       <p><l>солай<s n="adv"/></l>              <r>ошондой<s n="adv"/></r></p></e> <!--"in such a way"-->
 <e>       <p><l>әбден<s n="adv"/></l>              <r>абдан<s n="adv"/></r></p></e> <!--"rather"-->
+<e>       <p><l>ертең<s n="adv"/></l>              <r>эртең<s n="adv"/></r></p></e> <!--"tomorrow"-->
 
 
 <!-- SECTION: Verbs -->
 
 <e>       <p><l>бол<s n="v"/><s n="iv"/></l>      <r>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "1. быть" -->
+<e>       <p><l>кел<s n="v"/><s n="iv"/></l>      <r>кел<s n="v"/><s n="iv"/></r></p></e> <!-- "come" -->
 <e>       <p><l>көр<s n="v"/><s n="tv"/></l>      <r>көр<s n="v"/><s n="tv"/></r></p></e> <!-- "see" -->
 <e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
+<e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->
+<e>       <p><l>біл<s n="v"/><s n="tv"/></l>      <r>бил<s n="v"/><s n="tv"/></r></p></e> <!--"know"  -->
 
 <!-- SECTION: Interjections -->
 
