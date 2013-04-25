@@ -103,7 +103,8 @@
 
 <e>       <p><l>және<s n="cnjcoo"/></l>             <r>жана<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>қоса<s n="cnjcoo"/></l>             <r>кошо<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>бірақ<s n="cnjcoo"/></l>             <r>бирок<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>бірақ<s n="cnjcoo"/></l>            <r>бирок<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>ал<s n="cnjcoo"/></l>               <r>а<s n="cnjcoo"/></r></p></e>
 <!-- SECTION: Postadverbs -->
 
 
@@ -111,8 +112,11 @@
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>эле<s n="postadv"/></r></p></e>
 <e>       <p><l>да<s n="postadv"/></l>            <r>да<s n="postadv"/></r></p></e>
 
-<!-- SECTION: Postadverbs -->
-<e>       <p><l>хүртэл<s n="post"/></l>          <r>дейін<s n="post"/></r></p></e>
+<!-- SECTION: Postpositions -->
+<e>       <p><l>хүртэл<s n="post"/></l>           <r>дейін<s n="post"/></r></p></e>
+<e>       <p><l>арқылы<s n="post"/></l>           <r>аркылуу<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>дейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
 
 <!-- SECTION: Numerals -->
 
