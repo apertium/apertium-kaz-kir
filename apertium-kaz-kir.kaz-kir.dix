@@ -167,10 +167,10 @@
 
 
 <!-- SECTION: Determiners -->
-<e>       <p><l>бұл<s n="det"/></l>           <r>бул<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>сол<s n="det"/></l>           <r>ошол<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>қайсы<s n="det"/></l>          <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>бүкіл<s n="det"/></l>           <r>бүт<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>бұл<s n="det"/><s n="dem"/></l>           <r>бул<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>сол<s n="det"/><s n="dem"/></l>           <r>ошол<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>қайсы<s n="det"/><s n="dem"/></l>          <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>бүкіл<s n="det"/><s n="dem"/></l>           <r>бүт<s n="det"/><s n="dem"/></r></p></e>
 
 
 

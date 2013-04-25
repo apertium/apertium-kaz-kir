@@ -14,7 +14,7 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 	$(PREFIX1).automorf.hfst $(PREFIX1).autopgen.bin $(PREFIX1).autogen.hfst $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin \
 	$(PREFIX2).automorf.hfst $(PREFIX2).autopgen.bin $(PREFIX2).autogen.hfst $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin \
         $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
-        $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
+        $(PREFIX1).autolex.bin $(PREFIX2).autolex.bin \
 	$(PREFIX1).mode $(PREFIX2).mode modes 
 
 ###############################################################################
@@ -128,10 +128,10 @@ $(PREFIX2).rlx.bin: $(BASENAME).$(PREFIX2).rlx
 ## Lexical selection rules
 ###############################################################################
 
-$(PREFIX1).lrx.bin: $(BASENAME).$(PREFIX1).lrx
+$(PREFIX1).autolex.bin: $(BASENAME).$(PREFIX1).lrx
 	lrx-comp $< $@
 
-$(PREFIX2).lrx.bin: $(BASENAME).$(PREFIX2).lrx
+$(PREFIX2).autolex.bin: $(BASENAME).$(PREFIX2).lrx
 	lrx-comp $< $@
 
 ###############################################################################
@@ -204,7 +204,7 @@ apertium_kaz_kir_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 		    $(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
 		    $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
-		    $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
+		    $(PREFIX1).autolex.bin $(PREFIX2).autolex.bin \
 		    $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX2).t1x \
 		    $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX2).t2x \
 		    modes.xml
