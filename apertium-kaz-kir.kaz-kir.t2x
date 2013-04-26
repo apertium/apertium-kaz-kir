@@ -54,7 +54,7 @@
       <list-item v="ла"/>
       <list-item v="дыр"/>
       <list-item v="гына"/>
-      <list-item v="да"/>
+      <!--<list-item v="да"/>-->
       <list-item v="ук"/>
     </def-list>
   </section-def-lists>
