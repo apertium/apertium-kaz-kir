@@ -296,6 +296,7 @@ LEXICON VOL-ENDINGS
 
 LEXICON EXI
 
+%<adj%>: # ;
 %<adj%>: ATTR ;
 %<adj%>%<subst%>: POSSESSION ;
 
@@ -318,7 +319,8 @@ LEXICON N-INFL-SG  ! nouns with no/irregular plural
 
 LEXICON N-INFL      ! Nouns that have a LUU attributive form
 
-%<n%>%<attr%>:%>%{L%}%{U%}%{U%} ATTR ;
+!%<n%>%<attr%>:%>%{L%}%{U%}%{U%} ATTR ;
+%<n%>%<attr%>: ATTR ;
 %<n%>: SUBST-COMMON ;
 
 LEXICON N-INFL-KI   ! Nouns that have a KI attributive form
@@ -1138,7 +1140,7 @@ LEXICON Conjunctions
 
 жана:жана CC ; ! "and"
 да:да CC ; ! <s>"and"</s> "also", "both ... and ..."
-а:а CA ; ! "but/and"
+а:а CC ; ! "but/and"
 бирок:бирок CC ; ! "but"
 жана:жана CA ; ! Dir/RL "but"  ! Eh?? 
 да:да CA ;
@@ -1337,6 +1339,7 @@ LEXICON Nouns
 китеп:китеп N-INFL ; ! "book"
 кол:кол N-INFL ; ! "hand"
 кыз:кыз N-INFL ; ! "girl"
+көз:көз N-INFL ; ! "eye"
 саат:саат N-INFL ; ! "watch"
 үй:үй N-INFL ; ! "house"
 чака:чака N-INFL ; ! "bucket"
@@ -1351,6 +1354,7 @@ LEXICON Nouns
 пиво:пиво N-INFL ; ! "beer"
 кол:кол N-INFL ; 
 эшик:эшик N-INFL ; 
+көз:көз N-INFL ; 
 кол:кол N-INFL ; 
 саат:саат N-INFL ; 
 себеп:себеп N-INFL ; 
@@ -1364,6 +1368,7 @@ LEXICON Nouns
 кол:кол N-INFL ; 
 эшик:эшик N-INFL ; 
 жаш:жаш N-INFL ; 
+көз:көз N-INFL ; 
 башчы:башчы N-INFL ; 
 терезе:терезе N-INFL ; 
 таала:таала N-INFL ;
@@ -1394,10 +1399,14 @@ LEXICON ProperNouns
 
 LEXICON Adjectives
 
+бар:бар EXI ;
+жок:жок EXI ;
+эски:эски ADJ ;
 керектүү:керектүү ADJ ;
 жаман:жаман ADJ ; ! "bad"
 суук:суук ADJ ; 
 жаңы:жаңы ADJ ; 
+эски:эски ADJ ; 
 чоң:чоң ADJ ; 
 жакшы:жакшы ADJ ; 
 кичинекей:кичинекей ADJ ; 
@@ -1411,6 +1420,7 @@ LEXICON Adjectives
 кичинекей:кичинекей ADJ ;
 жылуу:жылуу ADJ ;
 кубанычтуу:кубанычтуу ADJ ;
+жашаар:жашаар ADJ ; ! "X year-old"
 
 LEXICON Adverbs
 
@@ -1449,15 +1459,20 @@ LEXICON Verbs
 кара:кара V-INFL-TV ;
 кел:кел V-INFL-IV-NO-CAUS ; ! "come"
 кел:келтир V-INFL-IV-IRREG-CAUS ; ! "make come"
-жаша:жаша V-INFL-IV ; 
+сана:сана V-INFL-TV ; ! "count/consider"
+укта:укта V-INFL-IV ; ! "sleep"
 көр:көр V-INFL-TV ; ! "see"
 ойно:ойно V-INFL-IV ; ! "play"
 ойно:ойно V-INFL-IV ; ! "play"
 ойно:ойно V-INFL-TV ; ! "play"
 ойно:ойно V-INFL-TV ; ! "play"
+чурка:чурка V-INFL-IV ;
 кара:кара V-INFL-TV ;
 ал:ал V-INFL-TV ;
 ал:ал V-INFL-TV ;
+укта:укта V-INFL-IV ;
+ошент:ошент V-INFL-IV ;
+ошент:ошент V-INFL-TV ;
 
 LEXICON Abbreviations
 

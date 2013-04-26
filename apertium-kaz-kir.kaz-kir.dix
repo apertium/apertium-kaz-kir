@@ -113,7 +113,7 @@
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>эле<s n="postadv"/></r></p></e>
 
 <!-- SECTION: Postpositions -->
-<e>       <p><l>мен<s n="post"/></l>                <r>менен<s n="post"/></r></p></e>
+<e>       <p><l>мен<s n="post"/></l>              <r>менен<s n="post"/></r></p></e>
 <e>       <p><l>үшін<s n="post"/></l>             <r>үчүн<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>арқылы<s n="post"/></l>           <r>аркылуу<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
@@ -216,6 +216,8 @@
 <e>       <p><l>бала<s n="n"/></l>             <r>бала<s n="n"/></r></p></e> <!--"kid, boy"-->
 <e>       <p><l>қыз<s n="n"/></l>              <r>кыз<s n="n"/></r></p></e> <!--"girl"-->
 <e>       <p><l>қарындас<s n="n"/></l>         <r>карындаш<s n="n"/></r></p></e> <!--"younger sister (for a guy)"-->
+<e>       <p><l>көз<s n="n"/></l>              <r>көз<s n="n"/></r></p></e> <!--"eye"-->
+<e>       <p><l>қол<s n="n"/></l>              <r>кол<s n="n"/></r></p></e> <!--"arm/hand"-->
 
     <!-- Nationalities -->
     <!-- Languages -->
@@ -247,6 +249,12 @@
 <e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
 <e>       <p><l>кішкентай<s n="adj"/></l>         <r>кичинекей<s n="adj"/></r></p></e> <!-- "small"-->
 <e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "happy"-->
+<e>       <p><l>бар<s n="adj"/></l>               <r>бар<s n="adj"/></r></p></e> <!-- "exists"-->
+<e>       <p><l>жоқ<s n="adj"/></l>               <r>жок<s n="adj"/></r></p></e> <!-- "doesn't exist"-->
+<e>       <p><l>ескі<s n="adj"/></l>              <r>эски<s n="adj"/></r></p></e> <!-- "old (things)"-->
+<e>       <p><l>кәрі<s n="adj"/></l>              <r>картаң<s n="adj"/></r></p></e> <!-- "old (people)"-->
+<e>       <p><l>жасар<s n="adj"/></l>             <r>жашаар<s n="adj"/></r></p></e> <!-- "X year-old"-->
+
 
 <!-- SECTION: Adverbs -->
 
@@ -263,6 +271,7 @@
 <e>       <p><l>бүгін<s n="adv"/></l>              <r>бүгүн<s n="adv"/></r></p></e> <!--"today"-->
 <e>       <p><l>әрдайым<s n="adv"/></l>            <r>дайыма<s n="adv"/></r></p></e> <!--"always"-->
 <e>       <p><l>бирге<s n="adv"/></l>              <r>чогуу<s n="adv"/></r></p></e> <!--"always"-->
+<e>       <p><l>катты<s n="adv"/></l>              <r>катуу<s n="adv"/></r></p></e> <!--"really [hard]"-->
 
 
 <!-- SECTION: Verbs -->
@@ -276,7 +285,12 @@
 <e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->
 <e>       <p><l>біл<s n="v"/><s n="tv"/></l>      <r>бил<s n="v"/><s n="tv"/></r></p></e> <!--"know"  -->
 <e>       <p><l>ал<s n="v"/><s n="tv"/></l>       <r>ал<s n="v"/><s n="tv"/></r></p></e> <!--"take"  -->
-<e>       <p><l>жаса<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e> <!--"live, to be __ years old"  -->
+<!-- e>       <p><l>жаса<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e--> <!--"live, to be __ years old"  -->
+<e>       <p><l>ұйықта<s n="v"/><s n="iv"/></l>   <r>укта<s n="v"/><s n="iv"/></r></p></e> <!--"sleep"  -->
+<e>       <p><l>бүйт<s n="v"/><s n="iv"/></l>     <r>минт<s n="v"/><s n="iv"/></r></p></e> <!--"do like this"  -->
+<e>       <p><l>сөйт<s n="v"/><s n="iv"/></l>     <r>ошент<s n="v"/><s n="iv"/></r></p></e> <!--"do like that"  -->
+<e>       <p><l>жүгір<s n="v"/><s n="iv"/></l>    <r>чурка<s n="v"/><s n="iv"/></r></p></e> <!--"run"  -->
+<e>       <p><l>сана<s n="v"/><s n="tv"/></l>     <r>сана<s n="v"/><s n="tv"/></r></p></e> <!--"count"  -->
 
 
 <!-- SECTION: Auxiliaries -->
