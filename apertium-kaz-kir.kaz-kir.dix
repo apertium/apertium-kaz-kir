@@ -88,7 +88,7 @@
 <!-- SECTION: Copula -->
 
 
-<e>       <p><l>э<s n="cop"/></l>                 <r>е<s n="cop"/></r></p></e>
+<e>       <p><l>е<s n="cop"/></l>                 <r>э<s n="cop"/></r></p></e>
 
 
 <!-- SECTION: Modal/discourse particles (Clitics) -->
@@ -254,15 +254,16 @@
 <e>       <p><l>әбден<s n="adv"/></l>              <r>абдан<s n="adv"/></r></p></e> <!--"rather"-->
 <e>       <p><l>ертең<s n="adv"/></l>              <r>эртең<s n="adv"/></r></p></e> <!--"tomorrow"-->
 <e>       <p><l>кеше<s n="adv"/></l>               <r>кече<s n="adv"/></r></p></e> <!--"yesterday"-->
-<e>       <p><l>бүгін<s n="adv"/></l>              <r>бүгүн<s n="adv"/></r></p></e> <!--"yesterday"-->
-<e>       <p><l>әрдайым<s n="adv"/></l>            <r>дайыма<s n="adv"/></r></p></e> <!--"yesterday"-->
+<e>       <p><l>бүгін<s n="adv"/></l>              <r>бүгүн<s n="adv"/></r></p></e> <!--"today"-->
+<e>       <p><l>әрдайым<s n="adv"/></l>            <r>дайыма<s n="adv"/></r></p></e> <!--"always"-->
 
 
 <!-- SECTION: Verbs -->
 
 <e>       <p><l>бол<s n="v"/><s n="iv"/></l>      <r>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "1. быть" -->
 <e>       <p><l>кел<s n="v"/><s n="iv"/></l>      <r>кел<s n="v"/><s n="iv"/></r></p></e> <!-- "come" -->
-<e>       <p><l>ойна<s n="v"/><s n="iv"/></l>     <r>ойно<s n="v"/><s n="iv"/></r></p></e> <!-- "come" -->
+<e>       <p><l>ойна<s n="v"/><s n="iv"/></l>     <r>ойно<s n="v"/><s n="iv"/></r></p></e> <!-- "play" -->
+<e>       <p><l>ойна<s n="v"/><s n="tv"/></l>     <r>ойно<s n="v"/><s n="tv"/></r></p></e> <!-- "play" -->
 <e>       <p><l>көр<s n="v"/><s n="tv"/></l>      <r>көр<s n="v"/><s n="tv"/></r></p></e> <!-- "see" -->
 <e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
 <e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->

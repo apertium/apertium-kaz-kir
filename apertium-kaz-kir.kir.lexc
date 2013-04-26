@@ -400,7 +400,8 @@ LEXICON NP-AL
 
 LEXICON ADJ-LEVELS
 
-%<pst%>: # ;
+! %<pst%>: # ;
+# ;
 %<comp%>:%>%{I%}р%{A%}%{A%}к # ;
 %<comp%>:%>%{I%}р%{A%}к # ;        ! Dir/LR
 
@@ -1113,6 +1114,7 @@ LEXICON Copula
 
 э%<cop%>%<ger%>:экен POSSESSION ;
 э%<cop%>%<ger_perf%>:экен%>%{L%}%{I%}к POSSESSION ;
+э%<cop%>%<ifi%>:эле V-PERS-PAST ;
 
 LEXICON Particles 
 
@@ -1434,6 +1436,8 @@ LEXICON Verbs
 кел:келтир V-INFL-IV-IRREG-CAUS ; ! "make come"
 көр:көр V-INFL-TV ; ! "see"
 ойно:ойно V-INFL-IV ; ! "play"
+ойно:ойно V-INFL-IV ; ! "play"
+ойно:ойно V-INFL-TV ; ! "play"
 ойно:ойно V-INFL-TV ; ! "play"
 кара:кара V-INFL-TV ;
 ал:ал V-INFL-TV ;
