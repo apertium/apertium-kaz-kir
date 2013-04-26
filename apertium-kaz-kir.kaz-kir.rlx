@@ -62,16 +62,10 @@ LIST Acc = acc ;
 LIST Abl = abl ;
 LIST Loc = loc ;
 LIST Ins = ins ;
+
 LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
-
-# Semantic lists
-# --------------
-
-LIST MOVEMENT-V = "жүгір" ;
-
-LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ;
 
 # All possible word categories
 # ----------------------------
@@ -178,9 +172,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Мағынасы төңкеріліп [0]кетті деп ойламағаным үшін ғафу етіңіз.
 
 
-SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
-
-
 #
  SELECT Interj IF
          (-1 BOS)
@@ -201,19 +192,21 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # ===========
 
 
-
+#
 "<бір>" SELECT Det IF (-1C A) (1 N);
-    #! Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
-    #! Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
+## Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
+## Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
 
+
+#
 "<бар>" SELECT V IF (-1 Dat) ;
 "<бар>" SELECT A IF (-1 (px3sp)) ;
 "<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
-# 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
-# шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
-#! Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
-#! Акча бармы? Бар<adj>.
-#! Акча бармы? Бар<adj>, ләкин бик аз!
+## 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
+## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
+## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+## Акча бармы? Бар<adj>.
+## Акча бармы? Бар<adj>, ләкин бик аз!
 
 
 # FIXME removes determiner even when there is a noun 1 to the right
@@ -229,7 +222,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (0C Det OR Pron)
         (1 Adv)
 ;
-##
+## 44 . [0]Ол енді ол дыбысты анығырақ ести бастады.
 
 
 
@@ -238,6 +231,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 
+#
  REMOVE Attr IF
        (0 N OR Prop)
        (NOT 0 Loc)
@@ -254,7 +248,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (1 N OR Prop OR Subst)
         (1 (px3sp))
 ;
-# 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
+## 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
 
 
 # If a former gerund or verbal adjective was lexicalized as a noun, select noun
@@ -262,7 +256,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (0 N)
         (0 Gerund  OR (gpr_pot))
 ;
-# professions, such as "оқушы"; -U gerunds , in theory other gerunds too
+## professions, such as "оқушы"; -U gerunds , in theory other gerunds too
 
 
 
@@ -272,12 +266,14 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 # select adverbial reading of adjectives if any verbal form except gerund follows
+# FIXME CHECK it might be a gerund as well
  SELECT Advl IF
          (1C V-NotGerund)
 ;
-#
+##
 
-# select pure adjective reading ("predicative" as it is called) of adjective if sentence ends
+
+# select pure adjective reading ("predicative" in this case) of an adjective if sentence ends
  REMOVE Advl IF
         (0 A1)
         (1 EOS)
@@ -286,7 +282,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
          (0 A1)
          (1 EOS)
 ;
-#
+##
 
 
 
@@ -367,7 +363,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (-1 (prc_perf))
         (-1* (prn nom) BARRIER BOS)
 ;
-#* 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
+## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
 
 
 # 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
@@ -376,15 +372,15 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
 ## [0]Бар деп айттым мен оған.
- REMOVE (imp) IF
+ REMOVE (imp) IF # FIXME check this
         (-1* Adv OR Advl OR Loc BARRIER BOS)
         (@1 Nom LINK NOT @2 Cm)
 ;
-## 35 . Айгүл бақшаның ішінде ақырын басып жүр.
-## 35*. Айгүл, бақшаның ішінде ақырын басып жүр.
-## Сен, бақшаның ішінде ақырын басып жүр.
-## Сен үйде тұр.
-## Кітап ал.
+## 35 . Айгүл бақшаның ішінде ақырын басып [0]жүр.
+## (!) Айгүл, бақшаның ішінде ақырын басып жүр.
+## (!) Сен, бақшаның ішінде ақырын басып жүр.
+## (!) Сен үйде тұр.
+## (!) Кітап ал.
 
 
 # FIXME extend/generalize
@@ -394,6 +390,67 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ##  172 . Сот арқылы немесе өзгеде осындай құзыреті бар мемлекеттік органдардың
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе [0]жекелеген заттардың есебінен;
+
+
+###################   TO BE DONE   ####################
+
+
+# Deciding about the number of a verb or copula in the 3 person
+# Basic idea is to remove plural reading if subject is not in plural,
+# but there a lot of corner cases, which lead to lots of mispredictions.
+# So let's just delete plural reading for now.
+#
+# In Tatar, when the subject indicates the number, this LAR affix for the verbs
+# in 3 person is kind of optional too, so singular reading will work/is right for
+# the majority of the cases.
+#
+# Selecting plural reading might be a more productive approach.
+ REMOVE Pl IF
+        (0 V OR Vaux OR Cop)
+        (0 P3)
+;
+##
+
+
+###################################### TO BE SORTED ############################
+
+
+# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
+# accusative, and 2) with  a verb in <ifi> form.
+ REMOVE Acc IF
+        (0 (n acc) OR (adj subst acc))
+        (0 A)
+        (NOT 1 V)
+;
+ REMOVE V IF
+        (0 A)
+        (0 (ifi))
+        (NOT 1 EOS OR Cm)
+;
+ "<атты>" SELECT A IF
+                 (1 N)
+;
+## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
+## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
+
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:]+[:lower:]*"r))
+        (NOT -1 BOS)  ;
+## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:][:upper:]+"r))
+## АЗАМАТ ҚАЙДА?
+
+################################################################################
 
 
 
@@ -496,7 +553,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # I don't think that сый<imp> is ever used
  "<сый>" SELECT N
 ;
-# 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
+## 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
 
 
 # imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
@@ -504,7 +561,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
  "<іс>" SELECT N IF
         (-1 A)
 ;
-# 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
+## 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
 
 
 # FIXME: could be achieved with a more general rule I think
@@ -521,6 +578,8 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ## 24 . Ол "Азамат қай [0]жерге кетті?  Оны көрдіңдер ме?" деп іздеп жатыр.
 
+
+#
 "<қарайды>" SELECT ("қара") IF
                    (-1 Dat)
 ;
@@ -566,63 +625,24 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
 ## Қазақстан заңдарының жинағы
 
-###################   TO BE DONE   ####################
 
-
-# Deciding about the number of a verb or copula in the 3 person
-# Basic idea is to remove plural reading if subject is not in plural,
-# but there a lot of corner cases, which lead to lots of mispredictions.
-# So let's just delete plural reading for now.
 #
-# In Tatar, when the subject indicates the number, this LAR affix for the verbs
-# in 3 person is kind of optional too, so singular reading will work/is right for
-# the majority of the cases.
-#
-# Selecting plural reading might be more productive.
- REMOVE Pl IF
-        (0 V OR Vaux OR Cop)
-        (0 P3)
+ "<Ертең>" SELECT Adv
 ;
-##
-
-
-###################################### TO BE SORTED ############################
-
-
-# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
-# accusative, and 2) with  a verb in <ifi> form.
- REMOVE Acc IF
-        (0 (n acc) OR (adj subst acc))
-        (0 A)
-        (NOT 1 V)
+ "<ертең>" SELECT Adv IF
+           (1 V)
 ;
- REMOVE V IF
-        (0 A)
-        (0 (ifi))
-        (NOT 1 EOS OR Cm)
-;
- "<атты>" SELECT A IF
-                 (1 N)
-;
-## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
-## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
+## Ертең келесің бе?
+## Ертең Елбасы Нұрсұлтан Назарбаев Қазақстанның 2050 жылға дейінгі даму бағдарламасын жариялайды.
+## Оны ертең еститін боласыздар.
 
 
 #
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:]+[:lower:]*"r))
-        (NOT -1 BOS)  ;
-## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
-
-
-#
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:][:upper:]+"r))
-## АЗАМАТ ҚАЙДА?
+ SELECT N IF
+        (0 ("сыра"i))
+        (1 ("іш") + V)
+;
+## Шелекпен сыра ішемін.
 
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
@@ -640,8 +660,8 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 
 
 # ======= #
-  SECTION     # experimental (or "CG is awesome!")
-# ======= #
+  SECTION     # experimental
+# ======= #   # The following rules are for _translating_, therefore shouldn't be here (i.e. in apertium-kaz.kaz.rlx)
 
 
 # FIXME
