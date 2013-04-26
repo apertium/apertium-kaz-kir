@@ -610,15 +610,19 @@ LEXICON NUM-ONE
 
 NUM-COMMON ;
 
+LEXICON NUM-ORDINAL
 
-LEXICON NUM-COMMON
-
-%<num%>: POSSESSION ;
-! %<num%>%<sim%>:%>%{D%}%{A%}й POSSESSION ;  ! WTF is this?
+! FIXME: This should look more like in kaz.lexc probably
 %<num%>%<ord%>:%>%{I%}нч%{I%} # ;
 %<num%>%<ord%>%<advl%>:%>%{I%}нч%{I%} ADVL ;
 %<num%>%<ord%>%<subst%>:%>%{I%}нч%{I%} SUBST-COMMON ;  ! yes, they can be plural
 
+LEXICON NUM-COMMON
+
+%<num%>: # ;
+%<num%>%<subst%>: SUBST-COMMON ;
+! %<num%>%<sim%>:%>%{D%}%{A%}й POSSESSION ;  ! WTF is this?
+NUM-ORDINAL ;
 
 LEXICON PRON-DEM-BUL
 
@@ -1132,7 +1136,6 @@ LEXICON Postadverbs
 LEXICON Conjunctions 
 
 жана:жана CC ; ! "and"
-менен:менен CC ; ! "and" / "including"
 а:а CA ; ! "but/and"
 бирок:бирок CC ; ! "but"
 жана:жана CA ; ! Dir/RL "but"  ! Eh?? 
@@ -1144,7 +1147,6 @@ LEXICON Postpositions
 үчүн:үчүн POST-DECL ; ! "for" +nom
 аркылуу:аркылуу POST ; ! "through" +nom
 үчүн:үчүн POST ; ! "for" + nom
-менен:менен POST ;
 
 LEXICON Determiners
 
@@ -1375,6 +1377,8 @@ LEXICON Nouns
 терезе:терезе N-INFL ;
 өтүк:өтүк N-INFL ;
 себеп:себеп N-INFL ;
+алд:алд N-INFL-NKI ; ! "front/forward", "forward"
+арт:арт N-INFL-NKI ; ! "back", "rear"
 
 LEXICON ProperNouns
 
@@ -1408,6 +1412,7 @@ LEXICON Adverbs
 эртең:эртең ADV ; ! "tomorrow"
 дайыма:дайыма ADV ; 
 абдан:абдан ADV ; ! "really"
+чогуу:чогуу ADV ; ! "together"
 ошондой:ошондой ADV ; ! FIXME: compositional
 дайыма:дайыма ADV ; ! "always"
 ошондой:ошондой ADV ; ! FIXME: compositional
@@ -1415,6 +1420,9 @@ LEXICON Adverbs
 жакшы:жакшы ADV ;
 дайыма:дайыма ADV ;
 эмнеге:эмнеге ADV ;
+бүгүн:бүгүн ADV-WITH-KI-ABL ; ! "today's"
+азыр:азыр ADV-WITH-KI-ABL ; ! "present"
+кече:кече ADV ; ! "yesterday"
 
 LEXICON Verbs
 

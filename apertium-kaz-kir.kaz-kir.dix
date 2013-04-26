@@ -105,7 +105,6 @@
 <e>       <p><l>қоса<s n="cnjcoo"/></l>             <r>кошо<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>бірақ<s n="cnjcoo"/></l>            <r>бирок<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>ал<s n="cnjcoo"/></l>               <r>а<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>мен<s n="cnjcoo"/></l>              <r>менен<s n="cnjcoo"/></r></p></e>
 <!-- SECTION: Postadverbs -->
 
 
@@ -114,6 +113,7 @@
 <e>       <p><l>да<s n="postadv"/></l>            <r>да<s n="postadv"/></r></p></e>
 
 <!-- SECTION: Postpositions -->
+<e>       <p><l>мен<s n="post"/></l>                <r>менен<s n="post"/></r></p></e>
 <e>       <p><l>үшін<s n="post"/></l>             <r>үчүн<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>арқылы<s n="post"/></l>           <r>аркылуу<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
@@ -256,6 +256,7 @@
 <e>       <p><l>кеше<s n="adv"/></l>               <r>кече<s n="adv"/></r></p></e> <!--"yesterday"-->
 <e>       <p><l>бүгін<s n="adv"/></l>              <r>бүгүн<s n="adv"/></r></p></e> <!--"today"-->
 <e>       <p><l>әрдайым<s n="adv"/></l>            <r>дайыма<s n="adv"/></r></p></e> <!--"always"-->
+<e>       <p><l>бирге<s n="adv"/></l>              <r>чогуу<s n="adv"/></r></p></e> <!--"always"-->
 
 
 <!-- SECTION: Verbs -->

@@ -1583,6 +1583,11 @@ LEXICON ModalParticles
  LEXICON Postpositions
 
 арқылы:арқылы POST ; ! "through, via, by means of" + NOM
+мен:%{M%}ен POST ; ! "with" + NOM
+мен:%{M%}енен POST ; ! "with" + NOM ! Dir/LR
+мен:бен POST ; ! "with" + NOM       ! Dir/LR
+мен:мен POST ; ! "with" + NOM       ! Dir/LR
+мен:пен POST ; ! "with" + NOM       ! Dir/LR
 үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
 шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
