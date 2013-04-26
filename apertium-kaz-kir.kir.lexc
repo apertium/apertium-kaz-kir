@@ -1127,16 +1127,12 @@ LEXICON Postadverbs
 
 гана:гана POSTADV ; ! "only"
 эле:эле POSTADV ; ! "only"
-деле:деле POSTADV ; ! "even"
-дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
-ашуун:ашуун POSTADV ; ! "more than"
-ашык:ашык POSTADV ; ! "more than"
 
 LEXICON Conjunctions 
 
 жана:жана CC ; ! "and"
 а:а CA ; ! "but/and"
-бирок:бирок CA ; ! "but"
+бирок:бирок CC ; ! "but"
 жана:жана CA ; ! Dir/RL "but"  ! Eh?? 
 
 LEXICON Postpositions
@@ -1510,4 +1506,70 @@ LEXICON Punctuation
 !=============================================================================!
 ! To be checked and moved to the correct continuation lexica
 !=============================================================================!
+
+LEXICON TO-REMOVE 
+
+ошентип:ошентип ADV ; ! Dir/RL
+
+эчки:эчки ADJ ; ! Dir/RL
+эскирген:эскирген ADJ ; ! Dir/RL
+эң% чоң ADJ ; ! Dir/RL
+экспресс:экспресс ADJ ; ! Dir/RL
+эклектик:эклектик ADJ ; ! Dir/RL
+эврей:эврей ADJ ; ! Dir/RL
+ченемдүү:ченемдүү ADJ ; ! Dir/RL
+сезгич:сезгич ADJ ; ! Dir/RL
+резерв:резерв ADJ ; ! Dir/RL
+жалгыз:жалгыз ADJ ; ! Dir/RL
+беркиси:беркиси ADJ ; ! Dir/RL
+бактылуу:бактылуу ADJ ; ! Dir/RL
+
+этникалык:этникалык N-INFL ; ! Dir/RL
+эрте:эрте N-INFL ; ! Dir/RL
+эпископ:эпископ N-INFL ; ! Dir/RL
+эң% жогорку:эң% жогорку N-INFL ; ! Dir/RL
+экологиялык:экологиялык N-INFL ; ! Dir/RL
+экмек:экмек N-INFL ; ! Dir/RL
+эгемендик:эгемендик N-INFL ; ! Dir/RL
+эге:эге N-INFL ; ! Dir/RL
+эволюэия:эволюэия N-INFL ; ! Dir/RL
+эвалютсия:эвалютсия N-INFL ; ! Dir/RL
+ыйгарымдуу% элчи:ыйгарымдуу% элчи N-INFL ; ! Dir/RL
+чоңдук:чоңдук N-INFL ; ! Dir/RL
+чейин:чейин N-INFL ; ! Dir/RL
+тышкары:тышкары N-INFL ; ! Dir/RL
+түз:түз N-INFL ; ! Dir/RL
+! соңку N-INFL ; ! Dir/RL  ! FIXME: compositional
+! сөзү N-INFL ; ! Dir/RL  ! FIXME: compositional
+! оор N-INFL ; ! Dir/RL   ! FIXME: ADJ
+! негизги N-INFL ; ! Dir/RL  ! FIXME: ADJ
+мурун:мурун N-INFL ; ! Dir/RL
+мом:мом N-INFL ; ! Dir/RL
+! кыска N-INFL ; ! Dir/RL  ! FIXME: ADJ
+! күчү N-INFL ; ! Dir/RL   ! FIXME: compositional
+котор:котор N-INFL ; ! Dir/RL
+коңгуроо:коңгуроо N-INFL ; ! Dir/RL
+көзөмөл% тобу:көзөмөл% тобу N-INFL ; ! Dir/RL
+керектүү:керектүү N-INFL ; ! Dir/RL
+! иши N-INFL ; ! Dir/RL    ! FIXME: compositional
+жол% багыты:жол% багыты N-INFL ; ! Dir/RL
+жан% сакчы:жан% сакчы N-INFL ; ! Dir/RL
+! жаман N-INFL ; ! Dir/RL  ! FIXME: ADJ
+! жалпы N-INFL ; ! Dir/RL  ! FIXME: ADJ
+документалдуу% тасма:документалдуу% тасма N-INFL ; ! Dir/RL
+гелин:гелин N-INFL ; ! Dir/RL
+! бүтүн N-INFL ; ! Dir/RL
+бири-бир N-INFL ; ! Dir/RL
+бирдей:бирдей N-INFL ; ! Dir/RL
+башкы% эпископ:башкы% эпископ N-INFL ; ! Dir/RL ! FIXME: compositional
+байланыштуу:байланыштуу N-INFL ; ! Dir/RL
+байкалган:байкалган N-INFL ; ! Dir/RL
+! айуу N-INFL ; ! Dir/RL  ! FIXME: spelled аюу
+аз:аз N-INFL ; ! Dir/RL
+! адабий N-INFL ; ! Dir/RL  ! FIXME: ADJ
+! автономиялуу N-INFL ; ! Dir/RL  ! FIXME: regular adjectival form
+
+
+бы%<qst%>:бы V-PERS-COP ; ! Dir/RL ! CHECK
+бы%<qst%>:бы # ; ! Dir/RL ! CHECK
 

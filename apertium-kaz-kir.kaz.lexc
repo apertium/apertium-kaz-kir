@@ -141,8 +141,8 @@ Multichar_Symbols
 %<prc_plan%>  ! -{G}{A}л{I}             ! plan participle
               !# мен сөйлескелі келдім;
 !%<prc_irre%> ! -{E}{T}{I}н             ! irrealis participle
-              ! (This form is analyzed as <grp_impf> and <ger_impf>)
-              ! (FIXME this might be wrong)
+              ! (This form is analyzed as <grp_impf> and <ger_impf> /IS/)
+              ! (this might be wrong)
 
 !!! Verbal adverbs - Глагольные наречия
 %<gna_perf%>  ! -{I}п
@@ -1588,26 +1588,16 @@ LEXICON ModalParticles
 шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
 
  LEXICON Postadverbs
-!===================!
-
-
-%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
-
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
-тегіс POSTADV ; ! "entirely/all/all together"
-
-
-!================!
  LEXICON Pronouns
 !================!
 
@@ -1781,7 +1771,6 @@ XXI NUM-ROMAN ; ! ""
 қол:қол N1 ; ! "hand"
 сағат:сағат N1 ; ! "hour"
 сыра:сыра N1 ; ! "beer"
-шелек:шелек N1 ; ! "bucket"
 
  LEXICON ProperNouns
 
@@ -1996,9 +1985,9 @@ EITI:EITI ABBR ; ! ""
 !===================!
 
 
-%.%<sent%>:%. # ;
-%.%.%<sent%>:%.%. # ;
-%.%.%.%<sent%>:%.%.%. # ;
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
