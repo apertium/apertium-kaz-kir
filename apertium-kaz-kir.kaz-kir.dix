@@ -105,12 +105,12 @@
 <e>       <p><l>қоса<s n="cnjcoo"/></l>             <r>кошо<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>бірақ<s n="cnjcoo"/></l>            <r>бирок<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>ал<s n="cnjcoo"/></l>               <r>а<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>да<s n="cnjcoo"/></l>               <r>да<s n="cnjcoo"/></r></p></e>
 <!-- SECTION: Postadverbs -->
 
 
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>гана<s n="postadv"/></r></p></e>
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>эле<s n="postadv"/></r></p></e>
-<e>       <p><l>да<s n="postadv"/></l>            <r>да<s n="postadv"/></r></p></e>
 
 <!-- SECTION: Postpositions -->
 <e>       <p><l>мен<s n="post"/></l>                <r>менен<s n="post"/></r></p></e>
@@ -175,6 +175,8 @@
 <e>       <p><l>осы<s n="det"/><s n="dem"/></l>           <r>ушул<s n="det"/><s n="dem"/></r></p></e>
 <e>       <p><l>қайсы<s n="det"/><s n="dem"/></l>         <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
 <e>       <p><l>бүкіл<s n="det"/><s n="dem"/></l>         <r>бүт<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>ол<s n="det"/><s n="dem"/></l>            <r>ал<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>бір<s n="det"/><s n="ind"/></l>           <r>бир<s n="det"/><s n="ind"/></r></p></e>
 
 
 
@@ -211,6 +213,9 @@
 <e>       <p><l>дауыс<s n="n"/></l>            <r>добуш<s n="n"/></r></p></e> <!--"voice"-->
 <e>       <p><l>ауа<b/>райы<s n="n"/></l>      <r>аба<b/>ырайы<s n="n"/></r></p></e> <!--"weather"-->
 <e>       <p><l>себеп<s n="n"/></l>            <r>себеп<s n="n"/></r></p></e> <!--"reason, cause"-->
+<e>       <p><l>бала<s n="n"/></l>             <r>бала<s n="n"/></r></p></e> <!--"kid, boy"-->
+<e>       <p><l>қыз<s n="n"/></l>              <r>кыз<s n="n"/></r></p></e> <!--"girl"-->
+<e>       <p><l>қарындас<s n="n"/></l>         <r>карындаш<s n="n"/></r></p></e> <!--"younger sister (for a guy)"-->
 
     <!-- Nationalities -->
     <!-- Languages -->
@@ -241,6 +246,7 @@
 <e>       <p><l>жылы<s n="adj"/></l>              <r>жылуу<s n="adj"/></r></p></e> <!-- "warm"-->
 <e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
 <e>       <p><l>кішкентай<s n="adj"/></l>         <r>кичинекей<s n="adj"/></r></p></e> <!-- "small"-->
+<e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "happy"-->
 
 <!-- SECTION: Adverbs -->
 
@@ -270,6 +276,7 @@
 <e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->
 <e>       <p><l>біл<s n="v"/><s n="tv"/></l>      <r>бил<s n="v"/><s n="tv"/></r></p></e> <!--"know"  -->
 <e>       <p><l>ал<s n="v"/><s n="tv"/></l>       <r>ал<s n="v"/><s n="tv"/></r></p></e> <!--"take"  -->
+<e>       <p><l>жаса<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e> <!--"live, to be __ years old"  -->
 
 
 <!-- SECTION: Auxiliaries -->

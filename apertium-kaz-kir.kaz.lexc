@@ -1575,6 +1575,11 @@ LEXICON ModalParticles
 !====================!
  LEXICON Conjunctions
 
+да:%~да CC ; ! "also" Dir/RL
+да:да CC ; ! ""       Dir/LR
+да:де CC ; ! ""       Dir/LR
+да:та CC ; ! ""       Dir/LR
+да:те CC ; ! ""       Dir/LR
 және:және CC ; ! "and"
 және:жөне CC ; ! "and" Dir/LR FIXME CHECK
 ал:ал CC ; ! "contrastive and"
@@ -1597,11 +1602,6 @@ LEXICON ModalParticles
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
-да:%~да POSTADV ; ! "1. even if"     Dir/RL
-да:да POSTADV ; ! ""       Dir/LR
-да:де POSTADV ; ! ""       Dir/LR
-да:та POSTADV ; ! ""       Dir/LR
-да:те POSTADV ; ! ""       Dir/LR
 
  LEXICON Pronouns
 !================!
@@ -1774,6 +1774,7 @@ XXI NUM-ROMAN ; ! ""
 арт:арт N1 ; ! "back side"
 ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
 бақша:бақша N1 ; ! "garden house"
+бала:бала N1 ; ! "child"
 банк:банк N5 ; ! "bank"
 бастық:бастық N1 ; ! "head,chief"
 дала:дала N1 ; ! "field"
@@ -1784,7 +1785,9 @@ XXI NUM-ROMAN ; ! ""
 жер:жер N1 ; ! "land,earth"
 кітап:кітап N1 ; ! "book"
 күшік:күшік N1 ; ! "pup"
+қарындас:қарындас N1 ; ! "younger sister"
 қол:қол N1 ; ! "hand"
+қыз:қыз N1 ; ! "girl,daughter,virgin"
 мысық:мысық N1 ; ! "cat,copper"
 ойын:ойын N1 ; ! "play, game"
 сағат:сағат N1 ; ! "hour"
@@ -1812,6 +1815,7 @@ XXI NUM-ROMAN ; ! ""
 жылы:жылы A1 ; ! "warm"
 керек:керек A1 ; ! ""
 кішкентай:кішкентай A1 ; ! "small, little"
+қуанышты:қуанышты A1 ; ! "glad"
 суық:суық A1 ; ! "cold"
 үлкен:үлкен A1 ; ! "big"
 
@@ -1835,6 +1839,7 @@ XXI NUM-ROMAN ; ! ""
 біл:біл V-TV ; ! "know,understand"
 бол:бол V-IV ; ! "1. быть"
 бол:бол V-IV ; ! "be/become"
+жаса:жаса V-TV ; ! "do,make"
 іш:іш V-TV ; ! "drink"
 кел:кел V-IV ; ! "come"
 көр:көр V-TV ; ! "see"

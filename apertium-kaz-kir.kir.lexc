@@ -312,7 +312,8 @@ POSSESSION ;
 LEXICON N-INFL-SG  ! nouns with no/irregular plural
 
 !%<n%>: N-INFL-COMMON ;
-%<n%>%<attr%>:%>%{L%}%{U%}%{U%} ATTR ;
+!%<n%>%<attr%>:%>%{L%}%{U%}%{U%} ATTR ;
+%<n%>%<attr%>: ATTR ;
 %<n%>: POSSESSION ;
 
 LEXICON N-INFL      ! Nouns that have a LUU attributive form
@@ -1136,9 +1137,11 @@ LEXICON Postadverbs
 LEXICON Conjunctions 
 
 жана:жана CC ; ! "and"
+да:да CC ; ! <s>"and"</s> "also", "both ... and ..."
 а:а CA ; ! "but/and"
 бирок:бирок CC ; ! "but"
 жана:жана CA ; ! Dir/RL "but"  ! Eh?? 
+да:да CA ;
 
 LEXICON Postpositions
 
@@ -1329,9 +1332,11 @@ XIX NUM-ROMAN ; ! ""
 
 LEXICON Nouns
 
+бала:бала N-INFL-SG ; ! "child"
 дарак:дарак N-INFL ; 
 китеп:китеп N-INFL ; ! "book"
 кол:кол N-INFL ; ! "hand"
+кыз:кыз N-INFL ; ! "girl"
 саат:саат N-INFL ; ! "watch"
 үй:үй N-INFL ; ! "house"
 чака:чака N-INFL ; ! "bucket"
@@ -1364,6 +1369,7 @@ LEXICON Nouns
 таала:таала N-INFL ;
 мышык:мышык N-INFL ; ! "cat"
 күчүк:күчүк N-INFL ; ! "small dog / puppy"
+карындаш:карындаш N-INFL ; ! "younger sister (for male)"
 аба% ырайы:аба% ырай N-INFL-3PX-COMPOUND ; ! "weather"   ! FIXME: is ырай<px3>, so takes cases after <px3>
 себеп:себеп N-INFL ;
 добуш:добуш N-INFL ;
@@ -1404,6 +1410,7 @@ LEXICON Adjectives
 чоң:чоң ADJ ;
 кичинекей:кичинекей ADJ ;
 жылуу:жылуу ADJ ;
+кубанычтуу:кубанычтуу ADJ ;
 
 LEXICON Adverbs
 
@@ -1442,6 +1449,7 @@ LEXICON Verbs
 кара:кара V-INFL-TV ;
 кел:кел V-INFL-IV-NO-CAUS ; ! "come"
 кел:келтир V-INFL-IV-IRREG-CAUS ; ! "make come"
+жаша:жаша V-INFL-IV ; 
 көр:көр V-INFL-TV ; ! "see"
 ойно:ойно V-INFL-IV ; ! "play"
 ойно:ойно V-INFL-IV ; ! "play"
