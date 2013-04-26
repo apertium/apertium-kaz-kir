@@ -1130,6 +1130,7 @@ LEXICON Postadverbs
 LEXICON Conjunctions 
 
 жана:жана CC ; ! "and"
+менен:менен CC ; ! "and" / "including"
 а:а CA ; ! "but/and"
 бирок:бирок CC ; ! "but"
 жана:жана CA ; ! Dir/RL "but"  ! Eh?? 
@@ -1324,60 +1325,106 @@ XIX NUM-ROMAN ; ! ""
 
 LEXICON Nouns
 
+дарак:дарак N-INFL ; 
 китеп:китеп N-INFL ; ! "book"
 кол:кол N-INFL ; ! "hand"
 саат:саат N-INFL ; ! "watch"
+үй:үй N-INFL ; ! "house"
 чака:чака N-INFL ; ! "bucket"
 челек:челек N-INFL ; ! "bucket"
+эне:эне N-INFL ; 
+үй:үй N-INFL ; ! "house, home"
 өтүк:өтүк N-INFL ; ! "shoe"
 банк:банк N-INFL ; ! "bank"
 пиво:пиво N-INFL ; ! "industry"
+дарак:дарак N-INFL ; 
 чака:чака N-INFL ; ! "bucket"
 пиво:пиво N-INFL ; ! "beer"
 кол:кол N-INFL ; 
+эшик:эшик N-INFL ; 
 кол:кол N-INFL ; 
 саат:саат N-INFL ; 
+себеп:себеп N-INFL ; 
+оюн:оюн N-INFL ;
+үн:үн N-INFL ; 
+үй:үй N-INFL ; 
+жер:жер N-INFL ; 
+жер:жер N-INFL ; ! "land"
 бакча:бакча N-INFL ; 
 башчы:башчы N-INFL ; 
 кол:кол N-INFL ; 
+эшик:эшик N-INFL ; 
 жаш:жаш N-INFL ; 
 башчы:башчы N-INFL ; 
+терезе:терезе N-INFL ; 
+таала:таала N-INFL ;
+мышык:мышык N-INFL ; ! "cat"
+күчүк:күчүк N-INFL ; ! "small dog / puppy"
+аба% ырайы:аба% ырай N-INFL-3PX-COMPOUND ; ! "weather"   ! FIXME: is ырай<px3>, so takes cases after <px3>
+себеп:себеп N-INFL ;
+добуш:добуш N-INFL ;
 жаш:жаш N-INFL ;
+оюн:оюн N-INFL ;
+оюн:оюн N-INFL ;
+үн:үн N-INFL ;
+оюн:оюн N-INFL ;
+оюн:оюн N-INFL ;
+себеп:себеп N-INFL ;
+терезе:терезе N-INFL ;
 өтүк:өтүк N-INFL ;
+себеп:себеп N-INFL ;
 
 LEXICON ProperNouns
 
 Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
+Азамат:Азамат NP-ANT-M ;
 Айгүл:Айгүл NP-ANT-F ;
 
 LEXICON Adjectives
 
 керектүү:керектүү ADJ ;
 жаман:жаман ADJ ; ! "bad"
+суук:суук ADJ ; 
 жаңы:жаңы ADJ ; 
+чоң:чоң ADJ ; 
 жакшы:жакшы ADJ ; 
+кичинекей:кичинекей ADJ ; 
 туура:туура ADJ ; 
 жаңы:жаңы ADJ ;
 керек:керек ADJ ;
+чоң:чоң ADJ ;
+чоң:чоң ADJ ;
 туура:туура ADJ ;
+чоң:чоң ADJ ;
+кичинекей:кичинекей ADJ ;
+жылуу:жылуу ADJ ;
 
 LEXICON Adverbs
 
 эмнеге:эмнеге ADV-ITG ; ! "why"
 өтө:өтө ADV ; ! "very"
 эртең:эртең ADV ; ! "tomorrow"
+дайыма:дайыма ADV ; 
 абдан:абдан ADV ; ! "really"
 ошондой:ошондой ADV ; ! FIXME: compositional
+дайыма:дайыма ADV ; ! "always"
 ошондой:ошондой ADV ; ! FIXME: compositional
 кайра:кайра ADV ; 
 жакшы:жакшы ADV ;
+дайыма:дайыма ADV ;
 эмнеге:эмнеге ADV ;
 
 LEXICON Verbs
 
+ал:ал VAUX-INFL ; ! 
+ал:ал VAUX-INFL ; ! 
 бол:бол VAUX-INFL ; !
 кел:кел VAUX-INFL ; !
 бол:бол V-INFL-IV ; ! "be"
+ал:ал V-INFL-TV ; ! "take"
+ал:ал V-INFL-TV ; ! "take"
+ал:ал V-INFL-IV ; ! "take"
+ал:ал V-INFL-IV ; ! "take"
 бил:бил V-INFL-IV ; ! "know"
 бил:бил V-INFL-TV ; ! "know"
 ич:ич V-INFL-TV ; ! "drink"
@@ -1389,6 +1436,8 @@ LEXICON Verbs
 ойно:ойно V-INFL-IV ; ! "play"
 ойно:ойно V-INFL-TV ; ! "play"
 кара:кара V-INFL-TV ;
+ал:ал V-INFL-TV ;
+ал:ал V-INFL-TV ;
 
 LEXICON Abbreviations
 

@@ -105,6 +105,7 @@
 <e>       <p><l>қоса<s n="cnjcoo"/></l>             <r>кошо<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>бірақ<s n="cnjcoo"/></l>            <r>бирок<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>ал<s n="cnjcoo"/></l>               <r>а<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>мен<s n="cnjcoo"/></l>              <r>менен<s n="cnjcoo"/></r></p></e>
 <!-- SECTION: Postadverbs -->
 
 
@@ -170,8 +171,10 @@
 <!-- SECTION: Determiners -->
 <e>       <p><l>бұл<s n="det"/><s n="dem"/></l>           <r>бул<s n="det"/><s n="dem"/></r></p></e>
 <e>       <p><l>сол<s n="det"/><s n="dem"/></l>           <r>ошол<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>қайсы<s n="det"/><s n="dem"/></l>          <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>бүкіл<s n="det"/><s n="dem"/></l>           <r>бүт<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>сол<s n="det"/><s n="dem"/></l>           <r>тиги<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>осы<s n="det"/><s n="dem"/></l>           <r>ушул<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>қайсы<s n="det"/><s n="dem"/></l>         <r>кайсы<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>бүкіл<s n="det"/><s n="dem"/></l>         <r>бүт<s n="det"/><s n="dem"/></r></p></e>
 
 
 
@@ -190,11 +193,30 @@
 <e>       <p><l>шелек<s n="n"/></l>            <r>чака<s n="n"/></r></p></e> <!--"bucket"-->
 <e>       <p><l>сыра<s n="n"/></l>             <r>пиво<s n="n"/></r></p></e> <!--"beer"-->
 <e>       <p><l>бақша<s n="n"/></l>            <r>бакча<s n="n"/></r></p></e> <!--"beer"-->
+<e>       <p><l>дала<s n="n"/></l>             <r>эшик<s n="n"/></r></p></e> <!--"outside"-->
+<e>       <p><l>дала<s n="n"/></l>             <r>таала<s n="n"/></r></p></e> <!--"field"-->
+<e>       <p><l>үй<s n="n"/></l>               <r>үй<s n="n"/></r></p></e> <!--"house"-->
+<e>       <p><l>терезе<s n="n"/></l>           <r>терезе<s n="n"/></r></p></e> <!--"window"-->
+<e>       <p><l>ағаш<s n="n"/></l>             <r>дарак<s n="n"/></r></p></e> <!--"tree"-->
+<e>       <p><l>мысық<s n="n"/></l>            <r>мышык<s n="n"/></r></p></e> <!--"cat"-->
+<e>       <p><l>ойын<s n="n"/></l>             <r>оюн<s n="n"/></r></p></e> <!--"game"-->
+<e>       <p><l>арт<s n="n"/></l>              <r>арт<s n="n"/></r></p></e> <!--"behind/back"-->
+<e>       <p><l>алд<s n="n"/></l>              <r>алд<s n="n"/></r></p></e> <!--"in front/front"-->
+<e>       <p><l>күшік<s n="n"/></l>            <r>күчүк<s n="n"/></r></p></e> <!--"small dog, puppy"-->
+<e>       <p><l>жер<s n="n"/></l>              <r>жер<s n="n"/></r></p></e> <!--"land, place"-->
+<e>       <p><l>ана<s n="n"/></l>              <r>эне<s n="n"/></r></p></e> <!--"mother"-->
+<e>       <p><l>дыбыс<s n="n"/></l>            <r>үн<s n="n"/></r></p></e> <!--"sound"-->
+<e>       <p><l>үн<s n="n"/></l>               <r>үн<s n="n"/></r></p></e> <!--"voice, sound"-->
+<e>       <p><l>дыбыс<s n="n"/></l>            <r>тыбыш<s n="n"/></r></p></e> <!--"sound"-->
+<e>       <p><l>дауыс<s n="n"/></l>            <r>добуш<s n="n"/></r></p></e> <!--"voice"-->
+<e>       <p><l>ауа<b/>райы<s n="n"/></l>      <r>аба<b/>ырайы<s n="n"/></r></p></e> <!--"weather"-->
+<e>       <p><l>себеп<s n="n"/></l>            <r>себеп<s n="n"/></r></p></e> <!--"reason, cause"-->
 
     <!-- Nationalities -->
     <!-- Languages -->
     <!-- Anthroponyms -->
 <e>       <p><l>Айгүл<s n="np"/><s n="ant"/><s n="f"/></l>      <r>Айгүл<s n="np"/><s n="ant"/><s n="f"/></r></p></e> <!--"Aygül"-->
+<e>       <p><l>Азамат<s n="np"/><s n="ant"/><s n="m"/></l>     <r>Азамат<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Azamat"-->
     <!-- Patronyms -->
     <!-- Cognoms -->
     <!-- Other toponyms-->
@@ -215,6 +237,10 @@
 <e>       <p><l>керек<s n="adj"/></l>             <r>керек<s n="adj"/></r></p></e> <!-- "necessary"-->
 <e>       <p><l>керекті<s n="adj"/></l>           <r>керектүү<s n="adj"/></r></p></e> <!-- "~needed"-->
 <e>       <p><l>жаңа<s n="adj"/></l>              <r>жаңы<s n="adj"/></r></p></e> <!-- "~new"-->
+<e>       <p><l>суық<s n="adj"/></l>              <r>суук<s n="adj"/></r></p></e> <!-- "cold"-->
+<e>       <p><l>жылы<s n="adj"/></l>              <r>жылуу<s n="adj"/></r></p></e> <!-- "warm"-->
+<e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
+<e>       <p><l>кішкентай<s n="adj"/></l>         <r>кичинекей<s n="adj"/></r></p></e> <!-- "small"-->
 
 <!-- SECTION: Adverbs -->
 
@@ -227,6 +253,9 @@
 <e>       <p><l>солай<s n="adv"/></l>              <r>ошондой<s n="adv"/></r></p></e> <!--"in such a way"-->
 <e>       <p><l>әбден<s n="adv"/></l>              <r>абдан<s n="adv"/></r></p></e> <!--"rather"-->
 <e>       <p><l>ертең<s n="adv"/></l>              <r>эртең<s n="adv"/></r></p></e> <!--"tomorrow"-->
+<e>       <p><l>кеше<s n="adv"/></l>               <r>кече<s n="adv"/></r></p></e> <!--"yesterday"-->
+<e>       <p><l>бүгін<s n="adv"/></l>              <r>бүгүн<s n="adv"/></r></p></e> <!--"yesterday"-->
+<e>       <p><l>әрдайым<s n="adv"/></l>            <r>дайыма<s n="adv"/></r></p></e> <!--"yesterday"-->
 
 
 <!-- SECTION: Verbs -->
@@ -238,6 +267,11 @@
 <e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
 <e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->
 <e>       <p><l>біл<s n="v"/><s n="tv"/></l>      <r>бил<s n="v"/><s n="tv"/></r></p></e> <!--"know"  -->
+<e>       <p><l>ал<s n="v"/><s n="tv"/></l>       <r>ал<s n="v"/><s n="tv"/></r></p></e> <!--"take"  -->
+
+
+<!-- SECTION: Auxiliaries -->
+<e>       <p><l>ал<s n="vaux"/></l>               <r>ал<s n="vaux"/></r></p></e>
 
 <!-- SECTION: Interjections -->
 

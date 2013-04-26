@@ -1763,19 +1763,39 @@ XXI NUM-ROMAN ; ! ""
 !=============!
  LEXICON Nouns
 
+ағаш:ағаш N1 ; ! "tree"
+алд:ал%{д%} N1 ; ! "front"
+ана:ана N1 ; ! "mother"
+арт:арт N1 ; ! "back side"
+ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
 бақша:бақша N1 ; ! "garden house"
 банк:банк N5 ; ! "bank"
 бастық:бастық N1 ; ! "head,chief"
+дала:дала N1 ; ! "field"
+дауыс:дау%{y%}с N1 ; ! "sound, voice" (similar to халық) Dir/LR
+дауыс:дауыс N1 ; ! "sound, voice"
+дыбыс:дыбыс N1 ; ! "sound,noise"
 жас:жас N1 ; ! "age"
+жер:жер N1 ; ! "land,earth"
 кітап:кітап N1 ; ! "book"
+күшік:күшік N1 ; ! "pup"
 қол:қол N1 ; ! "hand"
+мысық:мысық N1 ; ! "cat,copper"
+ойын:ойын N1 ; ! "play, game"
 сағат:сағат N1 ; ! "hour"
+себеп:себеп N1 ; ! "reason"
 сыра:сыра N1 ; ! "beer"
+терезе:терезе N1 ; ! "window"
+үй:үй N1 ; ! "home,house"
+үн:үн N1 ; ! "voice,call"
 шелек:шелек N1 ; ! "bucket"
+алд:ал%{д%} N1 ; ! "front"
+арт:арт N1 ; ! "back"
 
  LEXICON ProperNouns
 
 Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
+Азамат:Азамат NP-ANT-M; ! "Azamat" (Arabic)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 
  LEXICON Adjectives
@@ -1784,20 +1804,29 @@ XXI NUM-ROMAN ; ! ""
 жақсы:жақсы A1 ; ! "good"
 жаман:жаман A1 ; ! "bad"
 жаңа:жаңа A1 ; ! "new"
+жылы:жылы A1 ; ! "warm"
 керек:керек A1 ; ! ""
+кішкентай:кішкентай A1 ; ! "small, little"
+суық:суық A1 ; ! "cold"
+үлкен:үлкен A1 ; ! "big"
 
  LEXICON Adverbs
 
 әбден:әбден ADV ; ! "extremely"
+әрдайым:әрдайым ADV ; ! "always"
 қайта:қайта ADV ; ! "again"
 өте:өте ADV ; ! "very"
 ертең:ертең ADV ; ! ""
 қазір:қазір ADV ; ! ""
+бүгін:бүгін ADV-WITH-KI ; ! "today > today's"   FIXME: takes abl, dat, ...
 жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
+кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
 
  LEXICON Verbs
 
+ал:ал V-TV ; ! "take,recieve,buy,collect,"
+ал:ал V-TV ; ! "take,recieve,buy,collect,"
 біл:біл V-TV ; ! "know,understand"
 бол:бол V-IV ; ! "1. быть"
 бол:бол V-IV ; ! "be/become"
@@ -1806,6 +1835,8 @@ XXI NUM-ROMAN ; ! ""
 көр:көр V-TV ; ! "see"
 қара:қара V-TV ; ! "look at"
 ойна:ойна V-TV ; ! "play"
+ал:ал Vinfl-AUX ; ! 
+ал:ал Vinfl-AUX ; ! 
 бол:бол Vinfl-AUX ; !
 кел:кел Vinfl-AUX ; !
 
