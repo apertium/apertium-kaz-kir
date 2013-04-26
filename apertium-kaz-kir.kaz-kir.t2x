@@ -48,6 +48,7 @@
     <def-list n="tat_clitics"> <!-- Tatar clitics -->
       <list-item v="чы"/>
       <list-item v="сана"/>
+      <list-item v="бы"/>
       <list-item v="мы"/>
       <list-item v="мыни"/>
       <list-item v="ла"/>
