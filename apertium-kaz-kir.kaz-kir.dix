@@ -291,6 +291,8 @@
 <e>       <p><l>сөйт<s n="v"/><s n="iv"/></l>     <r>ошент<s n="v"/><s n="iv"/></r></p></e> <!--"do like that"  -->
 <e>       <p><l>жүгір<s n="v"/><s n="iv"/></l>    <r>чурка<s n="v"/><s n="iv"/></r></p></e> <!--"run"  -->
 <e>       <p><l>сана<s n="v"/><s n="tv"/></l>     <r>сана<s n="v"/><s n="tv"/></r></p></e> <!--"count"  -->
+<e>       <p><l>істе<s n="v"/><s n="tv"/></l>     <r>кыл<s n="v"/><s n="tv"/></r></p></e> <!--"do [something]"  -->
+<e>       <p><l>істе<s n="v"/><s n="iv"/></l>     <r>иште<s n="v"/><s n="tv"/></r></p></e> <!--"work"  -->
 
 
 <!-- SECTION: Auxiliaries -->
