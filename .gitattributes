@@ -29,5 +29,7 @@
 /pending-tests.sh -text
 /regression-tests.sh -text
 /testcorpus_kaz-kir.sh -text
+texts/story.kaz.txt -text svneol=unset#application/octet-stream
+texts/story.kir.txt -text svneol=unset#application/octet-stream
 /update-morphs.bash -text
 /wiki-tests.sh -text
