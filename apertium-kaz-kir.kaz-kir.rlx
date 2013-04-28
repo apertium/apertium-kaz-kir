@@ -202,12 +202,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 "<бар>" SELECT V IF (-1 Dat) ;
 "<бар>" SELECT A IF (-1 (px3sp)) ;
 "<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
+"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
 ## 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
 ## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
 ## Акча бармы? Бар<adj>.
 ## Акча бармы? Бар<adj>, ләкин бик аз!
-"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
 
 
 # FIXME removes determiner even when there is a noun 1 to the right
@@ -318,6 +318,20 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #
  "<бері>" SELECT Post IF
         (-1 Abl)
+;
+##
+
+
+#
+ "<бірге>" SELECT Post IF
+        (-1 Ins)
+;
+##
+
+
+#
+ "<қоса>" SELECT Post IF
+        (-1 Dat)
 ;
 ##
 
@@ -644,6 +658,23 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 ("іш") + V)
 ;
 ## Шелекпен сыра ішемін.
+
+
+# да<postadv/conj>
+ SELECT Postadv IF
+        (0 (gna_cond))
+;
+## 34 . Ол Азаматтың қайда екенін білсе+[0/1 or -1]де айтқысы келген жоқ.
+
+
+#
+ SELECT Adv IF
+        (0 ("бірге"))
+        (NOT -1 Ins)
+        (1 V)
+;
+## 6 . Азамат пен Айгүл ойнағанды жақсы көреді, олар әрдайым үлкен үйдің алдындағы бақшада [0]бірге ойнайды.
+## (!) Ол Азаматпен бірге келді.
 
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################

@@ -1567,9 +1567,11 @@ LEXICON ModalParticles
 ғой:қой MOD-ASS ; ! "" Dir/LR
 
 шығар:шығар MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
+                  !   ... more like <vaux><pres> than like a full verb -JNW
                   ! requires some transfer rules as e.g. in the following:
-                  !# Олар мүмкiн көп кiтап оқыған шығар.
-                  !# Алар бәлки күп китап укыганнардыр.
+                  !# (kaz) Олар мүмкiн көп кiтап оқыған шығар.
+                  !# (tat) Алар бәлки күп китап укыганнардыр.
+                  !# (kir) Алар мүмкүн көп китеп окугандыр.
 
 
 !====================!
@@ -1596,12 +1598,18 @@ LEXICON ModalParticles
 үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
 шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
+кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+да:%~да POSTADV ; ! "1. even if"     Dir/RL
+да:да POSTADV ; ! ""       Dir/LR
+да:де POSTADV ; ! ""       Dir/LR
+да:та POSTADV ; ! ""       Dir/LR
+да:те POSTADV ; ! ""       Dir/LR
 
  LEXICON Pronouns
 !================!
@@ -1769,37 +1777,57 @@ XXI NUM-ROMAN ; ! ""
  LEXICON Nouns
 
 ағаш:ағаш N1 ; ! "tree"
+адам:адам N1 ; ! "man"
+айнала:айнала N1 ; ! "around"
 алд:ал%{д%} N1 ; ! "front"
 ана:ана N1 ; ! "mother"
+аң:аң  N1 ; ! "beast"
 арт:арт N1 ; ! "back side"
+аст:ас%{т%} N1 ; ! "down side"
 ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
 бақша:бақша N1 ; ! "garden house"
 бала:бала N1 ; ! "child"
 банк:банк N5 ; ! "bank"
+бас:бас N1 ; ! "head,begining,start"
 бастық:бастық N1 ; ! "head,chief"
 дала:дала N1 ; ! "field"
 дауыс:дау%{y%}с N1 ; ! "sound, voice" (similar to халық) Dir/LR
 дауыс:дауыс N1 ; ! "sound, voice"
 дыбыс:дыбыс N1 ; ! "sound,noise"
+жан:жан N1 ; ! "soul"
+жануар:жануар N1 ; ! "biest"
 жас:жас N1 ; ! "age"
+жауап:жауап N1 ; ! "answer"
 жер:жер N1 ; ! "land,earth"
+заман:заман N1 ; ! "time,age"
+зат:зат N1 ; ! "thing"
+ит:ит N1 ; ! "dog"
+іш:іш N1 ; ! "inside,stomach"
 кітап:кітап N1 ; ! "book"
 көз:көз N1 ; ! "eye"
 күшік:күшік N1 ; ! "pup"
 қарындас:қарындас N1 ; ! "younger sister"
 қол:қол N1 ; ! "hand"
+құс:құс N1 ; ! "bird"
 қыз:қыз N1 ; ! "girl,daughter,virgin"
 мысық:мысық N1 ; ! "cat,copper"
 ойын:ойын N1 ; ! "play, game"
+орындық:орындық N1 ; ! "chair"
 сағат:сағат N1 ; ! "hour"
 себеп:себеп N1 ; ! "reason"
+су:су N1 ; ! "water"
+сұрақ:сұрақ N1 ; ! "question"
 сыра:сыра N1 ; ! "beer"
 терезе:терезе N1 ; ! "window"
+уақыт:уақыт N1 ; ! "time"
 үй:үй N1 ; ! "home,house"
 үн:үн N1 ; ! "voice,call"
+үстел:үстел N1 ; ! "table"
 шелек:шелек N1 ; ! "bucket"
 алд:ал%{д%} N1 ; ! "front"
 арт:арт N1 ; ! "back"
+аст:аст N1 ; ! "under"
+жан:жан N1 ; ! "next to"
 
  LEXICON ProperNouns
 
@@ -1812,55 +1840,128 @@ XXI NUM-ROMAN ; ! ""
 бар:бар A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
 жоқ:жоқ A3 ;
+мүмкін:мүмкін A1 ; ! "possible"  ! A1 not A3 because мүмкін can be used as adv ("possibly"), and can even be comparative -JNW
+ақырын:ақырын A1 ; ! "slow"
+анық:анық A1 ; ! "clear;clearly"
 дұрыс:дұрыс A1 ; ! "correct"
 ескі:ескі A1 ; ! "old"
 жақсы:жақсы A1 ; ! "good"
+жақын:жақын A1 ; ! "close"
 жаман:жаман A1 ; ! "bad"
 жаңа:жаңа A1 ; ! "new"
 жылы:жылы A1 ; ! "warm"
 кәрі:кәрі A1 ; ! "old (person)"
 керек:керек A1 ; ! ""
 кішкентай:кішкентай A1 ; ! "small, little"
+көңілді:көңілді A1 ; ! "happy"
+қатты:қатты A1 ; ! "hard,fast"
 қуанышты:қуанышты A1 ; ! "glad"
 суық:суық A1 ; ! "cold"
 үлкен:үлкен A1 ; ! "big"
 
  LEXICON Adverbs
 
+қайда:қайда ADVITG ; ! "where (где;куда)"
+еш% қашан:еш% қашан ADV ; ! "never" Use/MT
 әбден:әбден ADV ; ! "extremely"
+әлі:әлі ADV ; ! "now" !FIXME:CHECK
 әрдайым:әрдайым ADV ; ! "always"
+бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
 қайта:қайта ADV ; ! "again"
 өте:өте ADV ; ! "very"
 ертең:ертең ADV ; ! ""
 қазір:қазір ADV ; ! ""
 бүгін:бүгін ADV-WITH-KI ; ! "today > today's"   FIXME: takes abl, dat, ...
+енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
 жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
 кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
 
  LEXICON Verbs
 
+абай% бол:абай% бол V-IV ; ! "cautious,attentive,beware"
+айт:айт V-TV ; ! "say,tell/сказать,говорить,рассказывать"  ! basically TV...
 ал:ал V-TV ; ! "take,recieve,buy,collect,"
 ал:ал V-TV ; ! "take,recieve,buy,collect,"
+бар:бар V-IV ; ! ""
+бас:бас V-IV ; ! "вставать"
+бас:бас V-IV ; ! "вставать"
+бас:бас V-TV ; ! "давить;печатать"
+бас:бас V-TV ; ! "давить;печатать"
+баста:баста V-TV ; ! "start,begin"
+баста:баста V-TV ; ! "start,begin"
+баста:баста V-TV ; ! "начинать,приступать"
+баста:баста V-TV ; ! "начинать,приступать"
+бер:бер V-TV ; ! "give"
+бер:бер V-TV ; ! "давать,отдавать,сдавать"
 біл:біл V-TV ; ! "know,understand"
+біт:біт V-IV ; ! "terminate"
+біт:біт V-IV ; ! "terminate"
+біт:біт V-IV ; ! "кончаться,заканчиваться"
+біт:біт V-IV ; ! "кончаться,заканчиваться"
 бол:бол V-IV ; ! "1. быть"
 бол:бол V-IV ; ! "be/become"
 бүйт:бүйт V-TV ; ! ""
+бүйт:бүйт V-TV ; ! ""
 бүйт:бүйт V-TV ; ! "do that way"
+бүйт:бүйт V-TV ; ! "do that way"
+де:де V-TV-NOPASS ; ! "speak"
+де:делін V-TV-PASS ; ! "speak"
+есті:есті V-TV ; ! "hear"
+жап:жап V-TV ; ! "close"
+жасырын:жасырын V-IV ; ! "hide oneself" (kaz tat) refl
+жат:жат V-IV ; ! "lie"
+же:же V-TV ; ! "eat"
 жүгір:жүгір V-IV ; ! "run"
+жүр:жүр V-IV ; ! "move"
+жыми:жыми V-IV ; ! "to smile"
+ізде:ізде V-TV ; ! "seek,look for"
+істе:істе V-TV ; ! "do,make"
+істе:істе V-TV ; ! "do,make"
 іш:іш V-TV ; ! "drink"
 кел:кел V-IV ; ! "come"
-көр:көр V-TV ; ! "see"
+кет:кет V-IV ; ! "leave"
+көр:көрін V-TV-PASS ; ! "be seen"
+көр:көр V-TV-NOPASS ; ! "see"
+күл:күл V-IV ; ! "laugh"
 қара:қара V-TV ; ! "look at"
+ойла:ойла V-TV ; ! "think"
 ойна:ойна V-TV ; ! "play"
 ойна:ойна V-TV ; ! "play"
+отыр:отыр V-IV ; ! "sit,board"
 сана:сана V-TV ; ! "count"
+сөйле:сөйле V-TV ; ! "say,speak"
+сөйле:сөйле V-TV ; ! "say,speak"
 сөйт:сөйт V-IV ; ! ""
+сұра:сұра V-TV ; ! "request/ask for"
+тап:тап V-TV ; ! ""
+тұр:тұр V-IV ; ! "rise,stand"
+тыңда:тыңда V-TV ; ! "listen"
 ұйықта:ұйықта V-IV ; ! "sleep"
+шық:шық V-IV ; ! "leave"
+ізде:ізде V-TV ; ! ""
+ұқ:ұқ V-TV ; ! ""
+әрекет% жаса:әрекет% жаса V-IV ; ! "to try"
+әрекет% ет:әрекет% ет V-IV ; ! "to try"
+жат:жатыр Vinfl-AUX-IMPF ; ! 
+жүр:жүр Vinfl-AUX-IMPF ; ! 
+отыр:отыр Vinfl-AUX-IMPF ; ! 
+тұр:тұр Vinfl-AUX-IMPF ; ! 
 ал:ал Vinfl-AUX ; ! 
 ал:ал Vinfl-AUX ; ! 
+баста:баста Vinfl-AUX ; !
+баста:баста Vinfl-AUX ; !
+бер:бер Vinfl-AUX ; !
+біт:біт Vinfl-AUX ; !
+біт:біт Vinfl-AUX ; !
 бол:бол Vinfl-AUX ; !
+жат:жат Vinfl-AUX ; ! 
+жүр:жүр Vinfl-AUX ; ! 
 кел:кел Vinfl-AUX ; !
+кет:кет Vinfl-AUX ; ! 
+отыр:отыр Vinfl-AUX ; ! 
+тұр:тұр Vinfl-AUX ; ! 
+шық:шық Vinfl-AUX ; !
 
  LEXICON Interjections
 !=====================!
