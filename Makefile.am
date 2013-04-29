@@ -23,7 +23,7 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -f openfst-tropical $< -o $@
+	hfst-twolc -f foma $< -o $@
  
 .deps/$(LANG1).RL.lexc: $(BASENAME).$(LANG1).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -34,10 +34,10 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 	cat $< | grep -v 'Dir/RL' > $@
 
 .deps/$(LANG1).RL.lexc.hfst: .deps/$(LANG1).RL.lexc
-	hfst-lexc -f openfst-tropical $< -o $@
+	hfst-lexc -f foma $< -o $@
 
 .deps/$(LANG1).LR.lexc.hfst: .deps/$(LANG1).LR.lexc
-	hfst-lexc -f openfst-tropical $< -o $@
+	hfst-lexc -f foma $< -o $@
 
 .deps/$(LANG1).RL.hfst: .deps/$(LANG1).RL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).RL.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
@@ -57,7 +57,7 @@ $(PREFIX1).automorf.hfst: .deps/$(LANG1).LR.hfst
 
 .deps/$(LANG2).twol.hfst: $(BASENAME).$(LANG2).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -f openfst-tropical $< -o $@
+	hfst-twolc -f foma $< -o $@
  
 .deps/$(LANG2).RL.lexc: $(BASENAME).$(LANG2).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -68,10 +68,10 @@ $(PREFIX1).automorf.hfst: .deps/$(LANG1).LR.hfst
 	cat $< | grep -v 'Dir/RL' > $@
 
 .deps/$(LANG2).RL.lexc.hfst: .deps/$(LANG2).RL.lexc
-	hfst-lexc -f openfst-tropical $< -o $@
+	hfst-lexc -f foma $< -o $@
 
 .deps/$(LANG2).LR.lexc.hfst: .deps/$(LANG2).LR.lexc
-	hfst-lexc -f openfst-tropical $< -o $@
+	hfst-lexc -f foma $< -o $@
 
 .deps/$(LANG2).RL.hfst: .deps/$(LANG2).RL.lexc.hfst .deps/$(LANG2).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG2).RL.lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
@@ -92,13 +92,13 @@ $(PREFIX2).automorf.hfst: .deps/$(LANG2).LR.hfst
 .deps/kir.LR-debug.hfst: $(BASENAME).$(LANG1).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG1).LR-debug.lexc
-	hfst-lexc -f openfst-tropical .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst
+	hfst-lexc -f foma .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).LR-debug.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
 
 .deps/kaz.LR-debug.hfst: $(BASENAME).$(LANG2).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG2).LR-debug.lexc
-	hfst-lexc -f openfst-tropical .deps/$(LANG2).LR-debug.lexc -o .deps/$(LANG2).LR-debug.lexc.hfst
+	hfst-lexc -f foma .deps/$(LANG2).LR-debug.lexc -o .deps/$(LANG2).LR-debug.lexc.hfst
 	hfst-compose-intersect -1 .deps/$(LANG2).LR-debug.lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
 
 ###############################################################################
