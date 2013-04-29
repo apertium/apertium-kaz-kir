@@ -376,14 +376,12 @@
 
     <def-macro n="tense1" npar="1">
       <choose>
-<!--
         <when>
           <test>
-              <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="aor"/></equal>
+              <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="pres"/></let>
+          <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="aor"/></let>
         </when>
--->
         <when>
           <!-- Ол өзінің досымен _кездесіпті_. – Он со своим другом встречался, оказывается.
                Ул үзенең дусты белән _очрашкан_. -->
@@ -649,22 +647,22 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: Numerals">
+    <!-- rule comment="REGLA: Numerals">
       <pattern>
         <pattern-item n="num"/>
       </pattern>
-      <action>
+      <action -->
         <!-- Both Kazakh and Tatar have collective numerals, but in Tatar they
         don't take case endings. So there is no *дүртәве in Tatar. >>
         Kaz. num.coll.subst is translated with tat. num.subst -->
-        <call-macro n="numtype1">
+        <!-- call-macro n="numtype1">
           <with-param pos="1"/>
         </call-macro>
-        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+белән -->
-          <with-param pos="1"/>
+        <call-macro n="case1" -->   <!-- translate kaz. <inst> with <nom>+белән -->
+          <!-- with-param pos="1"/>
         </call-macro>
-        <call-macro n="case2">   <!-- take care of loc.subst thing -->
-          <with-param pos="1"/>
+        <call-macro n="case2" -->   <!-- take care of loc.subst thing -->
+          <!-- with-param pos="1"/>
         </call-macro>
         <out>
           <lu>
@@ -680,7 +678,7 @@
           <var n="postposition"/>
         </out>
       </action>
-    </rule>
+    </rule -->
 
     <rule comment="REGLA: NUM жылы/жылдары/күні">
                      <!--NUM елны/елларны/көнне-->

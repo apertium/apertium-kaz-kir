@@ -141,6 +141,8 @@
 
 <e>       <p><l>неше<s n="num"/></l>              <r>нече<s n="num"/></r></p></e> <!-- "" -->
 <e>       <p><l>қанша<s n="num"/></l>             <r>канча<s n="num"/></r></p></e> <!-- "" -->
+<!-- e>       <p><l>біреу<s n="num"/><s n="coll"/></l>     <r>бирөө<s n="num"/><s n="coll"/></r></p></e -->
+<!-- e>       <p><l>екеу<s n="num"/><s n="coll"/></l>      <r>экөө<s n="num"/><s n="coll"/></r></p></e -->
 
 
 <!-- SECTION: Pronouns -->
