@@ -194,7 +194,7 @@
 <e>       <p><l>бір<s n="det"/><s n="ind"/></l>           <r>бир<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>өз<s n="det"/><s n="ref"/></l>            <r>өз<s n="det"/><s n="ref"/></r></p></e>
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>        <r>бардык<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>қай<s n="det"/><s n="itg"/></l>         <r>кай<s n="det"/><s n="itg"/></r></p></e>
+<e>       <p><l>қай<s n="det"/><s n="itg"/></l>         <r>кай<s n="det"/><s n="dem"/></r></p></e>
 
 
 
