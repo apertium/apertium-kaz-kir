@@ -8,6 +8,11 @@
 
 <!-- POS categories -->
 
+    <def-cat n="v-gpr-impf">
+      <cat-item tags="v.*.gpr_impf"/>
+    </def-cat>
+
+
     <def-cat n="nom">
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
@@ -636,6 +641,35 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: v-gpr-impf">
+      <pattern>
+        <pattern-item n="v-gpr-impf"/>
+      </pattern>
+      <action>
+        <call-macro n="tense1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="nonfin1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_trans"/>
+              <lit-tag v="prc_perf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="тур"/>
+              <lit-tag v="vaux.gpr_past"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: Match verb's tences and non-finite forms">
       <pattern>
