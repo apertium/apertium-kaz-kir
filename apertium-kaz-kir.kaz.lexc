@@ -1911,8 +1911,10 @@ XXI NUM-ROMAN ; ! ""
 жап:жап V-TV ; ! "close"
 жасырын:жасырын V-IV ; ! "hide oneself" (kaz tat) refl
 жат:жат V-IV ; ! "lie"
+жат:жат V-IV ; ! "lie"
 же:же V-TV ; ! "eat"
 жүгір:жүгір V-IV ; ! "run"
+жүр:жүр V-IV ; ! "move"
 жүр:жүр V-IV ; ! "move"
 жыми:жыми V-IV ; ! "to smile"
 ізде:ізде V-TV ; ! "seek,look for"
@@ -1929,12 +1931,14 @@ XXI NUM-ROMAN ; ! ""
 ойна:ойна V-TV ; ! "play"
 ойна:ойна V-TV ; ! "play"
 отыр:отыр V-IV ; ! "sit,board"
+отыр:отыр V-IV ; ! "sit,board"
 сана:сана V-TV ; ! "count"
 сөйле:сөйле V-TV ; ! "say,speak"
 сөйле:сөйле V-TV ; ! "say,speak"
 сөйт:сөйт V-IV ; ! ""
 сұра:сұра V-TV ; ! "request/ask for"
 тап:тап V-TV ; ! ""
+тұр:тұр V-IV ; ! "rise,stand"
 тұр:тұр V-IV ; ! "rise,stand"
 тыңда:тыңда V-TV ; ! "listen"
 ұйықта:ұйықта V-IV ; ! "sleep"
@@ -1944,8 +1948,12 @@ XXI NUM-ROMAN ; ! ""
 әрекет% жаса:әрекет% жаса V-IV ; ! "to try"
 әрекет% ет:әрекет% ет V-IV ; ! "to try"
 жат:жатыр Vinfl-AUX-IMPF ; ! 
+жат:жатыр Vinfl-AUX-IMPF ; ! 
+жүр:жүр Vinfl-AUX-IMPF ; ! 
 жүр:жүр Vinfl-AUX-IMPF ; ! 
 отыр:отыр Vinfl-AUX-IMPF ; ! 
+отыр:отыр Vinfl-AUX-IMPF ; ! 
+тұр:тұр Vinfl-AUX-IMPF ; ! 
 тұр:тұр Vinfl-AUX-IMPF ; ! 
 ал:ал Vinfl-AUX ; ! 
 ал:ал Vinfl-AUX ; ! 
@@ -1956,10 +1964,14 @@ XXI NUM-ROMAN ; ! ""
 біт:біт Vinfl-AUX ; !
 бол:бол Vinfl-AUX ; !
 жат:жат Vinfl-AUX ; ! 
+жат:жат Vinfl-AUX ; ! 
+жүр:жүр Vinfl-AUX ; ! 
 жүр:жүр Vinfl-AUX ; ! 
 кел:кел Vinfl-AUX ; !
 кет:кет Vinfl-AUX ; ! 
 отыр:отыр Vinfl-AUX ; ! 
+отыр:отыр Vinfl-AUX ; ! 
+тұр:тұр Vinfl-AUX ; ! 
 тұр:тұр Vinfl-AUX ; ! 
 шық:шық Vinfl-AUX ; !
 

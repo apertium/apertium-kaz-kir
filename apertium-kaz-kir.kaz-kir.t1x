@@ -53,6 +53,7 @@
     <def-cat n="gerund">
       <cat-item tags="v.*.*.ger.*"/>
       <cat-item tags="v.*.*.ger_past.*"/>
+      <cat-item tags="v.*.*.ger_pres.*"/>
       <cat-item tags="v.*.*.ger_perf.*"/>
       <cat-item tags="v.*.*.ger_ppot.*"/>
       <cat-item tags="v.*.*.ger_abs.*"/>
@@ -251,6 +252,7 @@
       <attr-item tags="ger"/>
       <attr-item tags="ger_past"/>
       <attr-item tags="ger_perf"/>
+      <attr-item tags="ger_pres"/>
       <attr-item tags="ger_ppot"/>
       <attr-item tags="ger_abs"/>
       <attr-item tags="ger_fut"/>
@@ -418,6 +420,13 @@
                independent" gerund in Tatar (it's actual meaning depends on the tense of the main
                verb, so it is a good choise atm -->
         </when>
+        <when>
+          <test>
+              <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_pres"/></let>
+        </when>
+
         <when>
           <!-- ...бірақ белгісіз  заң  _бұзушылықтарға_ байланысты тергеу ісі жүріп жатқандықтан...
                ...әмма билгесез хокук _бозуларга_ бәйле............................................ -->
