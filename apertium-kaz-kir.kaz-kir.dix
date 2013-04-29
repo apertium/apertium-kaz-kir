@@ -171,6 +171,7 @@
 <e>       <p><l>не<s n="prn"/><s n="itg"/></l>   <r>эмне<s n="prn"/><s n="itg"/></r></p></e> <!-- "thing" FIXME: noun in Kazakh?-->
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>  <r>ким<s n="prn"/><s n="itg"/></r></p></e> <!-- who -->
 <e>       <p><l>қайсы<s n="prn"/><s n="itg"/></l><r>кайсы<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>нәрсе<s n="prn"/><s n="itg"/></l>   <r>нерсе<s n="prn"/><s n="itg"/></r></p></e>
 
     <!-- Reflexive pronouns -->
 
@@ -192,6 +193,7 @@
 <e>       <p><l>бір<s n="det"/><s n="ind"/></l>           <r>бир<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>өз<s n="det"/><s n="ref"/></l>            <r>өз<s n="det"/><s n="ref"/></r></p></e>
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>        <r>бардык<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>қай<s n="det"/><s n="itg"/></l>         <r>кай<s n="det"/><s n="itg"/></r></p></e>
 
 
 
@@ -369,15 +371,16 @@
 <e>       <p><l>тұр<s n="v"/><s n="iv"/></l>      <r>тур<s n="v"/><s n="iv"/></r></p></e><!-- "stand" -->
 <e>       <p><l>отыр<s n="v"/><s n="iv"/></l>     <r>отур<s n="v"/><s n="iv"/></r></p></e><!-- "sit" -->
 <e>       <p><l>жүр<s n="v"/><s n="iv"/></l>      <r>жүр<s n="v"/><s n="iv"/></r></p></e><!-- "go about" -->
+<e>       <p><l>де<s n="v"/><s n="tv"/></l>     <r>де<s n="v"/><s n="tv"/></r></p></e> <!--"work"  -->
 
 
 
 <!-- SECTION: Auxiliaries -->
 <e>       <p><l>ал<s n="vaux"/></l>               <r>ал<s n="vaux"/></r></p></e>
-<e>       <p><l>жатыр<s n="vaux"/><s n="pres"/></l><r>жат<s n="vaux"/></r></p></e>
-<e>       <p><l>тұр<s n="vaux"/><s n="pres"/></l>  <r>тур<s n="vaux"/></r></p></e>
-<e>       <p><l>отыр<s n="vaux"/><s n="pres"/></l> <r>отур<s n="vaux"/></r></p></e>
-<e>       <p><l>жүр<s n="vaux"/><s n="pres"/></l>  <r>жүр<s n="vaux"/></r></p></e>
+<e>       <p><l>жат<s n="vaux"/></l><r>жат<s n="vaux"/></r></p></e>
+<e>       <p><l>тұр<s n="vaux"/></l>  <r>тур<s n="vaux"/></r></p></e>
+<e>       <p><l>отыр<s n="vaux"/></l> <r>отур<s n="vaux"/></r></p></e>
+<e>       <p><l>жүр<s n="vaux"/></l>  <r>жүр<s n="vaux"/></r></p></e>
 <e>       <p><l>біт<s n="vaux"/></l>              <r>бүт<s n="vaux"/></r></p></e> <!--"finish"  -->
 <e>       <p><l>баста<s n="vaux"/></l>            <r>башта<s n="vaux"/></r></p></e> <!--"start"  -->
 
