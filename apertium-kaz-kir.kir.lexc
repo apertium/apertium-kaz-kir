@@ -412,6 +412,25 @@ LEXICON ADJ-LEVELS
 %<comp%>:%>%{I%}р%{A%}%{A%}к # ;
 %<comp%>:%>%{I%}р%{A%}к # ;        ! Dir/LR
 
+LEXICON A1
+
+%<adj%>: CLIT ;                                       !# жақсы адам
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# жақсырақ іс
+
+%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым
+%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# жақсырақты таптым
+
+%<adj%>%<advl%>: CLIT ;                               !# жақсы білемін
+%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+
+LEXICON CLIT
+
+V-CLIT ;
+
+LEXICON SUBST
+
+SUBST-COMMON ;
+
 LEXICON ADJ-COMMON
 
 %<adj%>%<pst%>: # ;
@@ -1476,7 +1495,7 @@ LEXICON Adjectives
 туура:туура ADJ ; 
 катуу:катуу ADJ ; 
 жакын:жакын ADJ ; 
-анык:анык ADJ ;
+анык:анык A1 ;
 жакын:жакын ADJ ;
 жаңы:жаңы ADJ ;
 мүмкүн:мүмкүн ADJ ;
@@ -1578,8 +1597,8 @@ LEXICON Verbs
 жат:жаткыз V-INFL-IV-IRREG-CAUS ; ! "lie down"
 де:де V-INFL-TV-SHORT ; ! "say"
 же:же V-INFL-TV-SHORT ; ! "eat"
-жүр:жүр V-INFL-TV ;
-жүр:жүр V-INFL-TV ;
+жүр:жүр V-INFL-IV ;
+жүр:жүр V-INFL-IV ;
 ич:ич V-INFL-TV ; ! "drink"
 кара:кара V-INFL-IV ; 
 кара:кара V-INFL-TV ;
