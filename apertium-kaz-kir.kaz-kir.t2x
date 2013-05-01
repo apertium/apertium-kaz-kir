@@ -23,9 +23,9 @@
       <!-- Every other thing in Kazakh which most likely will be translated
            with a clitic. Can appear after cat="čast1" -->
       <cat-item tags="qst"/>
+      <cat-item tags="emph"/>
       <cat-item tags="mod_ass"/>
       <cat-item tags="mod_ind"/>
-      <cat-item tags="mod_foc"/>
       <cat-item tags="mod"/>
       <cat-item tags="postadv"/>
       <cat-item lemma="да" tags="postadv"/>

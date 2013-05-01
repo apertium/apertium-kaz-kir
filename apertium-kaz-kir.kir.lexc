@@ -80,11 +80,12 @@ Multichar_Symbols
 %<neg%>     ! Negative
 %<exi%>     ! Existential
 
-%<qst%>     ! Question modal particle
-%<mod_foc%> ! "what about ..." question particle
+%<qst%>     ! Question modal particle and "what about" focus particle
+!%<mod_foc%> ! "what about ..." question particle
 %<mod_ass%> ! assumption-that-interlocutor-knows-something modal particle
 %<mod_tru%> ! assumption-that-statement-is-true modal particle
 %<mod_ind%> ! Indefinite modal particle (expresses doubt)
+%<emph%>    ! Polite emphatic particle used with imperatives
 
 %<pst%>     ! Positive level of comparison
 %<comp%>    ! Comparative level of comparison 
@@ -850,12 +851,14 @@ LEXICON V-CLIT-BI
 !! Modal/discourse particles
 !!!!! %+бы%<qst%>:%>%{B%}%{I%} V-PERS-COP ; ! CHECK  !! CAUSING LOOPS!
 %+бы%<qst%>:%>%{B%}%{I%} # ;
+%+чы%<qst%>:%>ч%{I%} # ;
 
 LEXICON V-CLIT-OTHER
 
 %+беле%<qst%>:% беле # ;
 %+бекен%<qst%>:% бекен # ;
-%+чы%<mod_foc%>:%>ч%{I%} # ;
+!%+чы%<mod_foc%>:%>ч%{I%} # ;
+%+чы%<qst%>:%>ч%{I%} # ;
 %+го%<mod_ass%>:% го # ;
 %+да%<mod_tru%>:% да # ;
 %+дыр%<mod_ind%>:%>%{D%}%{I%}р # ;   ! FIXME: twol size acts like this is causative
@@ -1001,6 +1004,12 @@ LEXICON V-INFL-NON-FINITE-IRREG
 %<neg%>%<gpr_fut%>:%>%{B%}%{A%}%>%{A%}с V-ADJ ;              ! Dir/LR
 %<neg%>%<gpr_pot2%>:%>%{G%}%{I%}с V-ADJ ;
 
+LEXICON IMP
+!!! Stuff that can come after imperative forms !!!
+
+%+чы%<emph%>:%>ч%{I%} # ;
+# ;
+
 
 LEXICON V-INFL-NON-FINITE-REG
 
@@ -1033,24 +1042,24 @@ LEXICON V-INFL-NON-FINITE-REG
 
 !  Imperatives
 
-%<imp%>%<p2%>%<sg%>: # ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з # ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң # ;                      ! Dir/LR
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р # ;
+%<imp%>%<p2%>%<sg%>: IMP ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з IMP ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң IMP ;                      ! Dir/LR
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р IMP ;
 
 !  Optative/jussive forms
 
-%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н # ;
+%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н V-CLIT ;
 %<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н # ;
 %<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} # ;
-%<opt%>%<p3%>%<sg%>:%>с%{I%}н # ;
-%<opt%>%<p1%>%<pl%>:%>%{E%}л%{I%} # ;
-%<opt%>%<p1%>%<pl%>:%>%{A%}йл%{I%} # ; ! Dir/LR
-%<opt%>%<p1%>%<pl%>:%>%{E%}л%{I%}к # ; ! Dir/LR  
-%<opt%>%<p1%>%<pl%>:%>%{A%}йл%{I%}к # ; ! Dir/LR
+%<opt%>%<p3%>%<sg%>:%>с%{I%}н V-CLIT ;
+%<opt%>%<p1%>%<pl%>:%>%{E%}л%{I%} V-CLIT ;
+%<opt%>%<p1%>%<pl%>:%>%{A%}йл%{I%} V-CLIT ; ! Dir/LR
+%<opt%>%<p1%>%<pl%>:%>%{E%}л%{I%}к V-CLIT ; ! Dir/LR  
+%<opt%>%<p1%>%<pl%>:%>%{A%}йл%{I%}к V-CLIT ; ! Dir/LR
 %<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;
 %<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;
-%<opt%>%<p3%>%<pl%>:%>с%{I%}н # ;
+%<opt%>%<p3%>%<pl%>:%>с%{I%}н V-CLIT ;
 
 
 LEXICON V-INFL-FINITE
@@ -1389,6 +1398,7 @@ LEXICON Nouns
 бала:бала N-INFL-SG ; ! "child"
 бала:балдар N-INFL-PL ; ! "children"
 баш:баш N-INFL ; ! "head"
+бет:бет N-INFL ; 
 дарак:дарак N-INFL ; 
 жан:жан N-INFL ; ! "jan"
 китеп:китеп N-INFL ; ! "book"
@@ -1396,12 +1406,11 @@ LEXICON Nouns
 кыз:кыз N-INFL ; ! "girl"
 көз:көз N-INFL ; ! "eye"
 саат:саат N-INFL ; ! "watch"
-үй:үй N-INFL ; ! "house"
-чака:чака N-INFL ; ! "bucket"
-челек:челек N-INFL ; ! "bucket"
+төө:төө N-INFL ; ! "camel" 
+челек:челек N-INFL ; ! "barrel"
 эне:эне N-INFL ; 
 үй:үй N-INFL ; ! "house, home"
-өтүк:өтүк N-INFL ; ! "shoe"
+өтүк:өтүк N-INFL ; ! "boot"
 банк:банк N-INFL ; ! "bank"
 пиво:пиво N-INFL ; ! "industry"
 ит:ит N-INFL ; ! "dog"
@@ -1409,6 +1418,10 @@ LEXICON Nouns
 чака:чака N-INFL ; ! "bucket"
 пиво:пиво N-INFL ; ! "beer"
 аң:аң N-INFL ; ! "beast"
+бакыт:бакыт N-INFL ; ! "happiness"
+бет:бет N-INFL ; ! "page, face"
+жүз:жүз N-INFL ; ! "face"
+булут:булут N-INFL ; 
 жаныбар:жаныбар N-INFL ; 
 жооп:жооп N-INFL ; 
 кол:кол N-INFL ; 
@@ -1421,23 +1434,27 @@ LEXICON Nouns
 себеп:себеп N-INFL ; 
 суроо:суроо N-INFL ; 
 суу:суу N-INFL ; 
+сөз:сөз N-INFL ; 
+жак:жак N-INFL ; 
 заман:заман N-INFL ; 
 зат:зат N-INFL ; 
 оюн:оюн N-INFL ;
 үн:үн N-INFL ; 
 адам:адам N-INFL ; 
-үй:үй N-INFL ; 
 жер:жер N-INFL ; 
+ата:ата N-INFL ; 
 аң:аң N-INFL ; 
 жер:жер N-INFL ; ! "land"
 нерсе:нерсе N-INFL ; ! "thing"
 бакча:бакча N-INFL ; 
 башчы:башчы N-INFL ; 
+булут:булут N-INFL ; 
 кол:кол N-INFL ; 
 эшик:эшик N-INFL ; 
 айлана:айлана N-INFL ; 
 жаш:жаш N-INFL ; 
 көз:көз N-INFL ; 
+кой:кой N-INFL ; ! "sheep"
 башчы:башчы N-INFL ; 
 терезе:терезе N-INFL ; 
 таала:таала N-INFL ;
@@ -1446,6 +1463,8 @@ LEXICON Nouns
 карындаш:карындаш N-INFL ; ! "younger sister (for male)"
 үстөл:үстөл N-INFL ; ! "table"
 аба% ырайы:аба% ырай N-INFL-3PX-COMPOUND ; ! "weather"   ! FIXME: is ырай<px3>, so takes cases after <px3>
+жүз:жүз N-INFL ;
+бет:бет N-INFL ;
 себеп:себеп N-INFL ;
 добуш:добуш N-INFL ;
 жаш:жаш N-INFL ;
@@ -1459,13 +1478,15 @@ LEXICON Nouns
 оюн:оюн N-INFL ;
 айлана:айлана N-INFL ;
 себеп:себеп N-INFL ;
+бет:бет N-INFL ;
 баш:баш N-INFL ;
+сөз:сөз N-INFL ;
 ит:ит N-INFL ;
 терезе:терезе N-INFL ;
 ит:ит N-INFL ;
 айлана:айлана N-INFL ;
-өтүк:өтүк N-INFL ;
 себеп:себеп N-INFL ;
+эчки:эчки N-INFL ; ! "goat"
 тыбыш:тыбыш N-INFL ; ! "speech sound"
 ич:ич N-INFL-KI ; ! "inside"/"inner"
 аст:аст N-INFL-NKI ; ! "bottom", "lower"
@@ -1484,6 +1505,7 @@ LEXICON Adjectives
 жок:жок EXI ;
 эски:эски ADJ ;
 керектүү:керектүү ADJ ;
+ысык:ысык ADJ ; ! "hot"
 жаман:жаман ADJ ; ! "bad"
 суук:суук ADJ ; 
 жаңы:жаңы ADJ ; 
@@ -1494,11 +1516,15 @@ LEXICON Adjectives
 кичинекей:кичинекей ADJ ; 
 мүмкүн:мүмкүн ADJ ; 
 туура:туура ADJ ; 
+оң:оң ADJ ; 
 катуу:катуу ADJ ; 
 жакын:жакын ADJ ; 
 анык:анык A1 ;
 жакын:жакын ADJ ;
+сол:сол ADJ ;
+ысык:ысык ADJ ;
 жаңы:жаңы ADJ ;
+ысык:ысык ADJ ;
 мүмкүн:мүмкүн ADJ ;
 керек:керек ADJ ;
 чоң:чоң ADJ ;
@@ -1506,6 +1532,7 @@ LEXICON Adjectives
 туура:туура ADJ ;
 чоң:чоң ADJ ;
 кичинекей:кичинекей ADJ ;
+оң:оң ADJ ;
 жылуу:жылуу ADJ ;
 акырын:акырын ADJ ;
 кубанычтуу:кубанычтуу ADJ ;
@@ -1564,6 +1591,7 @@ LEXICON Verbs
 отур:отур VAUX-INFL ; ! 
 тур:тур VAUX-INFL ; ! 
 тур:тур VAUX-INFL ; ! 
+сал:сал VAUX-INFL ; ! 
 кет:кет VAUX-INFL ; ! 
 чык:чык VAUX-INFL ; !
 бер:бер VAUX-INFL ; !
@@ -1607,8 +1635,10 @@ LEXICON Verbs
 кел:келтир V-INFL-IV-IRREG-CAUS ; ! "make come"
 кет:кет V-INFL-IV-NO-CAUS ; ! "go away / leave"
 кет:кетир V-INFL-IV-IRREG-CAUS ; ! "to make leave"
+кой:кой V-INFL-TV ; ! "put, place" 
 кыл:кыл V-INFL-TV ; ! "do, make"
 күл:күл V-INFL-IV ; ! "smile, laugh"
+сал:сал V-INFL-TV ;
 сана:сана V-INFL-TV ; ! "count/consider"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"
@@ -1626,6 +1656,7 @@ LEXICON Verbs
 башта:башта V-INFL-TV ; 
 башта:башта V-INFL-TV ; 
 же:же V-INFL-TV ; 
+кес:кес V-INFL-TV ; ! "cut"
 көр:көр V-INFL-TV-NOPASS ; ! "see"
 көр:көрүн V-INFL-TV-PASS ; ! "be seen"
 ойно:ойно V-INFL-IV ; ! "play"
@@ -1637,8 +1668,11 @@ LEXICON Verbs
 сүйлө:сүйлө V-INFL-TV ; ! "speak on [topic]"
 сүйлө:сүйлө V-INFL-TV ; ! "speak on [topic]"
 тап:тап V-INFL-TV ; ! "find"
+түш:түш V-INFL-IV-NO-CAUS ; ! "fall"
+түш:түшүр V-INFL-IV-IRREG-CAUS ; ! "to make fall"
 чык:чык V-INFL-IV-NO-CAUS ; ! "to exit/leave"
 чык:чыгар V-INFL-IV-IRREG-CAUS ; ! "to take/put/move [object] out"
+уч:уч V-INFL-IV ;
 жылмай:жылмай V-INFL-IV ;
 ойло:ойло V-INFL-TV ;
 иште:иште V-INFL-IV ;  ! "work"
@@ -1655,6 +1689,7 @@ LEXICON Verbs
 жап:жап V-INFL-TV ;
 укта:укта V-INFL-IV ;
 ойло:ойло V-INFL-IV ;
+уч:уч V-INFL-TV ;
 бас:бас V-INFL-TV ;
 бас:бас V-INFL-TV ;
 ошент:ошент V-INFL-IV ;

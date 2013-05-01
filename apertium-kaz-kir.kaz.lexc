@@ -195,11 +195,10 @@ Multichar_Symbols
 
 ! Modal particles
 %<qst%>       ! Modal question particle
-%<mod_foc%>   ! "Particles of politeness and ardent desire"
-              ! (as in [N. Poppe. Tatar Manual]) or
-              ! "what about ..." question particles" :)
-              ! (as in kir.lexc)
+%<emph%>      ! Emphasizing modal particle (for imperative and jussive/optative forms)
+              !# -шы/-ші
 %<mod_ass%>   ! Assertive modal particle
+              !# -ғой/-қой
 %<mod%>       ! Modal verbs (шығар, сияқты etc)
 
 ! Punctuation
@@ -460,9 +459,9 @@ N-INFL-COMMON ;
 
 ! Modal/discourse particles
 
-LEXICON CLIT-MODFOC
+LEXICON CLIT-EMPH
 
-%+шы%<mod_foc%>:%>ш%{I%} # ;
+%+шы%<emph%>:%>ш%{I%} # ;
 # ;
 
 LEXICON CLIT-QST-MA
@@ -884,11 +883,11 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_impf%>:%>%{E%}т%{I%}н GER-POSS-REAL ;
 
 ! Imperatives
-%<imp%>%<p2%>%<sg%>: CLIT-MODFOC ;
-%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-MODFOC ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-MODFOC ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-MODFOC ;     ! Dir/LR FIXME CHECK
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-MODFOC ;
+%<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
+%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
 %<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLIT ;
@@ -1146,14 +1145,12 @@ PRON-DEM-ANA ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
 
-! FIXME DISCUSS: Since <reas><abl> is a feature only of "ol" and "sol",
-! below were going to be lexicalised and added as subordinative
-! conjunctions. /IS/
-! This is a bad idea though, because -ндықтан affix is a feature of verbs
-! as well, so we'll have to consider it a productive derivation anyway /IS/
+! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
+! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
+! productive derivation.
 
-ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
-сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
+!ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
+!сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
 
 
 !!!!!!!   I N T E R R O G A T I V E
@@ -1327,7 +1324,10 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 %<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
-%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
+%<n%>%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASE-ETC ; ! (e.g. чик сакчылары=пограничники)
+                                                         !  FIXME CHECK: Is {S} needed here ?
+%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
+                       ! which should have a <px3sp> analysis
 
 LEXICON N3
 ! Singularia tantum
@@ -1520,7 +1520,7 @@ LEXICON CS
 
 LEXICON CA
 
-%<cnjadv%>: # ; 
+%<cnjadv%>: CLIT-GHANA-ETC ;
 
 LEXICON QST
 
@@ -1561,6 +1561,7 @@ LEXICON ModalParticles
 ма:ме QST ; ! "" Dir/LR
 ма:бе QST ; ! "" Dir/LR
 ма:пе QST ; ! "" Dir/LR
+ше:ше QST ; ! ""
 
 ғой:%~ғой MOD-ASS ; ! "" Dir/RL
 ғой:ғой MOD-ASS ; ! "" Dir/LR
@@ -1621,7 +1622,7 @@ DemonstrativePronouns ;
 InterrogativePronouns ;
 
 бірдеме:бірдеме PRON-IND ; ! "something"
-бір% нәрсе:бір% нәрсе PRON-IND ; ! "something"
+бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
 басқа:басқа PRON-IND ; ! "other"
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 бәрі:бәр PRON-IND-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
@@ -1786,20 +1787,28 @@ XXI NUM-ROMAN ; ! ""
 арт:арт N1 ; ! "back side"
 аст:ас%{т%} N1 ; ! "down side"
 ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
+әке:әке N1 ; ! "father"
 бақша:бақша N1 ; ! "garden house"
+бақыт:бақыт N1 ; ! "luck"
 бала:бала N1 ; ! "child"
 банк:банк N5 ; ! "bank"
 бас:бас N1 ; ! "head,begining,start"
 бастық:бастық N1 ; ! "head,chief"
+бет:бет N1 ; ! "face"
+бұлт:бұлт N1 ; ! "cloud"
 дала:дала N1 ; ! "field"
 дауыс:дау%{y%}с N1 ; ! "sound, voice" (similar to халық) Dir/LR
 дауыс:дауыс N1 ; ! "sound, voice"
 дыбыс:дыбыс N1 ; ! "sound,noise"
+есік:есік N1 ; ! "door"
+ешкі:ешкі N1 ; ! "goat"
+жақ:жақ N1 ; ! "side,cheeck"
 жан:жан N1 ; ! "soul"
 жануар:жануар N1 ; ! "biest"
 жас:жас N1 ; ! "age"
 жауап:жауап N1 ; ! "answer"
 жер:жер N1 ; ! "land,earth"
+жүз:жүз N1 ; ! "face"
 заман:заман N1 ; ! "time,age"
 зат:зат N1 ; ! "thing"
 ит:ит N1 ; ! "dog"
@@ -1808,18 +1817,23 @@ XXI NUM-ROMAN ; ! ""
 көз:көз N1 ; ! "eye"
 күшік:күшік N1 ; ! "pup"
 қарындас:қарындас N1 ; ! "younger sister"
+қой:қой N1 ; ! "ram,sheep"
 қол:қол N1 ; ! "hand"
 құс:құс N1 ; ! "bird"
 қыз:қыз N1 ; ! "girl,daughter,virgin"
 мысық:мысық N1 ; ! "cat,copper"
 ойын:ойын N1 ; ! "play, game"
 орындық:орындық N1 ; ! "chair"
+өң:өң N1 ; ! "appearance"
 сағат:сағат N1 ; ! "hour"
 себеп:себеп N1 ; ! "reason"
+сөз:сөз N1 ; ! "word"
 су:су N1 ; ! "water"
 сұрақ:сұрақ N1 ; ! "question"
 сыра:сыра N1 ; ! "beer"
 терезе:терезе N1 ; ! "window"
+түйе:түйе N1 ; ! "camel" FIXME CHECK
+түс:түс N1 ; ! "noon"
 уақыт:уақыт N1 ; ! "time"
 үй:үй N1 ; ! "home,house"
 үн:үн N1 ; ! "voice,call"
@@ -1857,8 +1871,13 @@ XXI NUM-ROMAN ; ! ""
 көңілді:көңілді A1 ; ! "happy"
 қатты:қатты A1 ; ! "hard,fast"
 қуанышты:қуанышты A1 ; ! "glad"
+оң:оң A1 ; ! "right"
+сол:сол A1 ; ! "left"
 суық:суық A1 ; ! "cold"
+тура:тура A1 ; ! "straight"
 үлкен:үлкен A1 ; ! "big"
+ыссы:ыссы A1 ; ! "hot"
+ыстық:ыстық A1 ; ! "hot"
 
  LEXICON Adverbs
 
@@ -1923,26 +1942,31 @@ XXI NUM-ROMAN ; ! ""
 істе:істе V-TV ; ! "do,make"
 іш:іш V-TV ; ! "drink"
 кел:кел V-IV ; ! "come"
+кес:кес V-TV ; ! "cut"
 кет:кет V-IV ; ! "leave"
 көр:көрін V-TV-PASS ; ! "be seen"
 көр:көр V-TV-NOPASS ; ! "see"
 күл:күл V-IV ; ! "laugh"
 қара:қара V-TV ; ! "look at"
+қой:қой V-TV ; ! "release" put
 ойла:ойла V-TV ; ! "think"
 ойна:ойна V-TV ; ! "play"
 ойна:ойна V-TV ; ! "play"
 отыр:отыр V-IV ; ! "sit,board"
 отыр:отыр V-IV ; ! "sit,board"
+сал:сал V-TV ; ! ""
 сана:сана V-TV ; ! "count"
 сөйле:сөйле V-TV ; ! "say,speak"
 сөйле:сөйле V-TV ; ! "say,speak"
 сөйт:сөйт V-IV ; ! ""
 сұра:сұра V-TV ; ! "request/ask for"
 тап:тап V-TV ; ! ""
+түс:түс V-IV ; ! ""
 тұр:тұр V-IV ; ! "rise,stand"
 тұр:тұр V-IV ; ! "rise,stand"
 тыңда:тыңда V-TV ; ! "listen"
 ұйықта:ұйықта V-IV ; ! "sleep"
+ұш:ұш V-IV ; ! "fly"
 шық:шық V-IV ; ! "leave"
 ізде:ізде V-TV ; ! ""
 ұқ:ұқ V-TV ; ! ""
@@ -1972,6 +1996,7 @@ XXI NUM-ROMAN ; ! ""
 кет:кет Vinfl-AUX ; ! 
 отыр:отыр Vinfl-AUX ; ! 
 отыр:отыр Vinfl-AUX ; ! 
+сал:сал Vinfl-AUX ; ! 
 тұр:тұр Vinfl-AUX ; ! 
 тұр:тұр Vinfl-AUX ; ! 
 шық:шық Vinfl-AUX ; !
