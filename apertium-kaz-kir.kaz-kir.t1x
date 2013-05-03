@@ -8,10 +8,17 @@
 
 <!-- POS categories -->
 
+    <def-cat n="v-әрекет-ет">
+      <cat-item lemma="әрекет ет" tags="v.iv.*"/>
+    </def-cat>
+
+    <def-cat n="v-ger-dat">
+      <cat-item tags="v.*.ger.dat"/>
+    </def-cat>
+
     <def-cat n="v-gpr-impf">
       <cat-item tags="v.*.gpr_impf"/>
     </def-cat>
-
 
     <def-cat n="nom">
       <cat-item tags="n"/>
@@ -576,6 +583,31 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: v-ger-dat v-әрекет-ет">
+      <pattern>
+        <pattern-item n="v-ger-dat"/>
+        <pattern-item n="v-әрекет-ет"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_past"/></let>
+        <call-macro n="tense1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="nonfin1">
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: Gerunds">
       <pattern>
         <pattern-item n="gerund"/>
@@ -669,6 +701,8 @@
         </out>
       </action>
     </rule>
+
+
 
 
     <rule comment="REGLA: Match verb's tences and non-finite forms">
