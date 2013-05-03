@@ -32,7 +32,6 @@
     <sdef n="qst" 	c="Question modal particle (cltic)"/> 
     <sdef n="emph" 	c="Polite emphatic particle used with imperatives (cltic)"/> 
     <sdef n="mod_ass" 	c="Assertive modal particle (clitic)"/> 
-    <sdef n="mod_foc" 	c="Focus modal particle (clitic)"/> 
     <sdef n="mod_ind" 	c="Indefinite modal particle (clitic)"/> 
     <sdef n="mod" 	c="Modal verbs"/> 
     <sdef n="pers" 	c="Personal - Зат (алмашлыгы) - Личное (местоимение)"/> 
@@ -100,7 +99,6 @@
 <e>       <p><l>ше<s n="qst"/></l>                <r>чы<s n="qst"/></r></p></e>
 <e>       <p><l>шы<s n="emph"/></l>               <r>чы<s n="emph"/></r></p></e>
 <e>       <p><l>ғой<s n="mod_ass"/></l>           <r>го<s n="mod_ass"/></r></p></e>
-<e>       <p><l>шы<s n="mod_foc"/></l>           <r>чы<s n="mod_foc"/></r></p></e>
 <e>       <p><l>шығар<s n="mod"/></l>             <r>дыр<s n="mod_ind"/></r></p></e>
 
 <!-- SECTION: Co-ordinating conjunctions -->
@@ -322,6 +320,7 @@
 <e>       <p><l>мүмкін<s n="adj"/></l>            <r>мүмкүн<s n="adj"/></r></p></e> <!--"possible, possibly"-->
 <e>       <p><l>оң<s n="adj"/></l>                <r>оң<s n="adj"/></r></p></e> <!-- "right"-->
 <e>       <p><l>сол<s n="adj"/></l>               <r>сол<s n="adj"/></r></p></e> <!-- "left"-->
+<e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!--"a lot"-->
 
 
 <!-- SECTION: Adverbs -->
@@ -402,6 +401,8 @@
 <e>       <p><l>ұш<s n="v"/><s n="iv"/></l>       <r>уч<s n="v"/><s n="iv"/></r></p></e> <!--"fly"  -->
 <e>       <p><l>түс<s n="v"/><s n="iv"/></l>      <r>түш<s n="v"/><s n="iv"/></r></p></e> <!--"fly"  -->
 <e>       <p><l>кес<s n="v"/><s n="tv"/></l>      <r>кес<s n="v"/><s n="tv"/></r></p></e> <!--"cut"  -->
+<e>       <p><l>оқы<s n="v"/><s n="iv"/></l>      <r>оку<s n="v"/><s n="iv"/></r></p></e> <!--"study"  -->
+<e>       <p><l>оқы<s n="v"/><s n="tv"/></l>      <r>оку<s n="v"/><s n="tv"/></r></p></e> <!--"read"  -->
 
 
 

@@ -426,6 +426,7 @@ LEXICON A1
 
 LEXICON CLIT
 
+# ;
 V-CLIT ;
 
 LEXICON SUBST
@@ -1399,6 +1400,7 @@ LEXICON Nouns
 бала:балдар N-INFL-PL ; ! "children"
 баш:баш N-INFL ; ! "head"
 бет:бет N-INFL ; 
+гүл:гүл N-INFL ; "flower"
 дарак:дарак N-INFL ; 
 жан:жан N-INFL ; ! "jan"
 китеп:китеп N-INFL ; ! "book"
@@ -1519,6 +1521,7 @@ LEXICON Adjectives
 оң:оң ADJ ; 
 катуу:катуу ADJ ; 
 жакын:жакын ADJ ; 
+көп:көп A1 ; 
 анык:анык A1 ;
 жакын:жакын ADJ ;
 сол:сол ADJ ;
@@ -1638,6 +1641,10 @@ LEXICON Verbs
 кой:кой V-INFL-TV ; ! "put, place" 
 кыл:кыл V-INFL-TV ; ! "do, make"
 күл:күл V-INFL-IV ; ! "smile, laugh"
+оку:оку V-INFL-IV ; ! "read"
+оку:оку V-INFL-IV ; ! "read"
+оку:оку V-INFL-TV ; ! "read"
+оку:оку V-INFL-TV ; ! "read"
 сал:сал V-INFL-TV ;
 сана:сана V-INFL-TV ; ! "count/consider"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"
