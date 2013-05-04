@@ -285,6 +285,7 @@
     <!-- Other toponyms-->
 <e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>            <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
     <!-- Organizations -->
+<e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>  <r>Түркия<b/>Абажолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
     <!-- Other proper names -->
 
 <!--SECTION: Adjectives -->
