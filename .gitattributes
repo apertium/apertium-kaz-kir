@@ -28,6 +28,7 @@
 /modes.xml -text
 /pending-tests.sh -text
 /regression-tests.sh -text
+/test.txt -text
 /testcorpus_kaz-kir.sh -text
 texts/diff.sh -text
 texts/story.kaz.txt -text svneol=unset#application/octet-stream
