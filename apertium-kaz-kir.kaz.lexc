@@ -1612,26 +1612,16 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
-!===================!
-
-
-%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
-
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
-тегіс POSTADV ; ! "entirely/all/all together"
-
-
-!================!
  LEXICON Pronouns
 !================!
 
@@ -1872,7 +1862,7 @@ XXI NUM-ROMAN ; ! ""
 Азамат:Азамат NP-ANT-M; ! "Azamat" (Arabic)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 Түрік% Әуежолдары:Түрік% Әуежолдар NP-ORG-COMPOUND ; ! "Turkish Airways"
-Боруссия% Дортмунд:Боруссия% Дортмунд NP-ORG ; ! "Borussia Dortmund"
+Боруссия% Дортмунд:Боруссия% Дортмунд%{☭%} NP-ORG ; ! "Borussia Dortmund"
 
  LEXICON Adjectives
 

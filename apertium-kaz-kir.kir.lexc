@@ -1201,9 +1201,6 @@ LEXICON Postadverbs
 гана:гана POSTADV ; ! "only"
 эле:эле POSTADV ; ! "only"
 деле:деле POSTADV ; ! "even"
-дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
-ашуун:ашуун POSTADV ; ! "more than"
-ашык:ашык POSTADV ; ! "more than"
 
 LEXICON Conjunctions 
 
@@ -1446,6 +1443,7 @@ LEXICON Nouns
 көз:көз N-INFL ; 
 кол:кол N-INFL ; 
 куш:куш N-INFL ; 
+маал:маал N-INFL ; 
 убакыт:убакыт N-INFL ; 
 саат:саат N-INFL ; 
 себеп:себеп N-INFL ; 
@@ -1543,12 +1541,14 @@ LEXICON Adjectives
 жакын:жакын ADJ ;
 сол:сол ADJ ;
 ысык:ысык ADJ ;
+тунук:тунук ADJ ;
 жаңы:жаңы ADJ ;
 ысык:ысык ADJ ;
 мүмкүн:мүмкүн ADJ ;
 керек:керек ADJ ;
 чоң:чоң ADJ ;
 чоң:чоң ADJ ;
+тунук:тунук ADJ ;
 туура:туура ADJ ;
 чоң:чоң ADJ ;
 кичинекей:кичинекей ADJ ;
@@ -1585,7 +1585,7 @@ LEXICON Adverbs
 эми:эм ADV-KI ; ! "next/soon-to-be"
 эми:эмди ADV-WITH-KI ; ! dialectal form    ! Dir/LR
 эми:эмди ADV-ABL-REG ; ! dialectal form    ! Dir/LR
-кече:кече ADV ; ! "yesterday"
+кечээ:кечээ ADV ; ! "yesterday"
 
 LEXICON Copula
 

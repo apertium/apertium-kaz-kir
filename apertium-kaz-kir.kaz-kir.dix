@@ -235,6 +235,7 @@
 <e>       <p><l>дыбыс<s n="n"/></l>            <r>үн<s n="n"/></r></p></e> <!--"sound"-->
 <e>       <p><l>үн<s n="n"/></l>               <r>үн<s n="n"/></r></p></e> <!--"voice, sound"-->
 <e>       <p><l>дыбыс<s n="n"/></l>            <r>тыбыш<s n="n"/></r></p></e> <!--"speech sound"-->
+<e>       <p><l>дыбыс<s n="n"/></l>            <r>добуш<s n="n"/></r></p></e> <!--"sound"-->
 <e>       <p><l>дауыс<s n="n"/></l>            <r>добуш<s n="n"/></r></p></e> <!--"voice"-->
 <e>       <p><l>ауа<b/>райы<s n="n"/></l>      <r>аба<b/>ырайы<s n="n"/></r></p></e> <!--"weather"-->
 <e>       <p><l>себеп<s n="n"/></l>            <r>себеп<s n="n"/></r></p></e> <!--"reason, cause"-->
@@ -248,12 +249,14 @@
 <e>       <p><l>ит<s n="n"/></l>               <r>ит<s n="n"/></r></p></e> <!--"dog"-->
 <e>       <p><l>жан<s n="n"/></l>              <r>жан<s n="n"/></r></p></e> <!--"near/nearby, soul"-->
 <e>       <p><l>адам<s n="n"/></l>             <r>адам<s n="n"/></r></p></e> <!--"person"-->
-<e>       <p><l>уақыт<s n="n"/></l>            <r>убакыт<s n="n"/></r></p></e> <!--"time"-->
 <e>       <p><l>бақыт<s n="n"/></l>            <r>бакыт<s n="n"/></r></p></e> <!--"happiness"-->
+<e>       <p><l>уақыт<s n="n"/></l>            <r>убакыт<s n="n"/></r></p></e> <!--"time"-->
+<e>       <p><l>уақыт<s n="n"/></l>            <r>маал<s n="n"/></r></p></e> <!--"time"-->
 <e>       <p><l>заман<s n="n"/></l>            <r>заман<s n="n"/></r></p></e> <!--"time"-->
 <e>       <p><l>су<s n="n"/></l>               <r>суу<s n="n"/></r></p></e> <!--"water"-->
 <e>       <p><l>құс<s n="n"/></l>              <r>чымчык<s n="n"/></r></p></e> <!--"small bird"-->
 <e>       <p><l>құс<s n="n"/></l>              <r>куш<s n="n"/></r></p></e> <!--"large bird"-->
+<e>       <p><l>аң<s n="n"/></l>               <r>жаныбар<s n="n"/></r></p></e> <!--"animal, beast"-->
 <e>       <p><l>аң<s n="n"/></l>               <r>аң<s n="n"/></r></p></e> <!--"animal, beast"-->
 <e>       <p><l>жануар<s n="n"/></l>           <r>жаныбар<s n="n"/></r></p></e> <!--"animal"-->
 <e>       <p><l>орындық<s n="n"/></l>          <r>отургуч<s n="n"/></r></p></e> <!--"chair"-->
@@ -318,6 +321,7 @@
 <e>       <p><l>кәрі<s n="adj"/></l>              <r>картаң<s n="adj"/></r></p></e> <!-- "old (people)"-->
 <e>       <p><l>жасар<s n="adj"/></l>             <r>жашаар<s n="adj"/></r></p></e> <!-- "X year-old"-->
 <e>       <p><l>қатты<s n="adj"/></l>             <r>катуу<s n="adj"/></r></p></e> <!--"hard, really [hard]"-->
+<e>       <p><l>анық<s n="adj"/></l>              <r>тунук<s n="adj"/></r></p></e> <!--"clear"-->
 <e>       <p><l>анық<s n="adj"/></l>              <r>анык<s n="adj"/></r></p></e> <!--"clear"-->
 <e>       <p><l>ақырын<s n="adj"/></l>            <r>акырын<s n="adj"/></r></p></e> <!--"quitely, carefully"-->
 <e>       <p><l>жақын<s n="adj"/></l>             <r>жакын<s n="adj"/></r></p></e> <!--"quitely, carefully"-->
@@ -339,7 +343,7 @@
 <e>       <p><l>солай<s n="adv"/></l>              <r>ошондой<s n="adv"/></r></p></e> <!--"in such a way"-->
 <e>       <p><l>әбден<s n="adv"/></l>              <r>абдан<s n="adv"/></r></p></e> <!--"rather"-->
 <e>       <p><l>ертең<s n="adv"/></l>              <r>эртең<s n="adv"/></r></p></e> <!--"tomorrow"-->
-<e>       <p><l>кеше<s n="adv"/></l>               <r>кече<s n="adv"/></r></p></e> <!--"yesterday"-->
+<e>       <p><l>кеше<s n="adv"/></l>               <r>кечээ<s n="adv"/></r></p></e> <!--"yesterday"-->
 <e>       <p><l>бүгін<s n="adv"/></l>              <r>бүгүн<s n="adv"/></r></p></e> <!--"today"-->
 <e>       <p><l>әрдайым<s n="adv"/></l>            <r>дайыма<s n="adv"/></r></p></e> <!--"always"-->
 <e>       <p><l>бірге<s n="adv"/></l>              <r>чогуу<s n="adv"/></r></p></e> <!--"together"-->
