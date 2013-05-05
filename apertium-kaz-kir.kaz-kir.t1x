@@ -12,6 +12,7 @@
     </def-cat>
 
     <def-cat n="subst-dat">
+      <cat-item tags="n.dat"/>
       <cat-item tags="n.*.dat"/>
       <cat-item tags="np.*.dat"/>
       <cat-item tags="prn.*.dat"/>
@@ -624,7 +625,7 @@
         <pattern-item n="v-қара"/>
       </pattern>
       <action>
-        <let><clip pos="1" side="tl" part="subst-dat"/><lit-tag v="acc"/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
         <call-macro n="tense1">
           <with-param pos="2"/>
         </call-macro>
