@@ -23,6 +23,7 @@
 /apertium-view.sh -text
 /autogen.sh -text
 /configure.ac -text
+dev/lexical_selection_rules_needed.txt -text
 /kaz-kir.prob -text svneol=unset#unset
 /kir-kaz.prob -text svneol=unset#unset
 /modes.xml -text

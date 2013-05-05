@@ -1703,8 +1703,8 @@ LEXICON Verbs
 иште:иште V-INFL-TV ;  ! "conduct"
 изде:изде V-INFL-TV ;
 жап:жап V-INFL-TV ;
-жашырын:жашырын V-INFL-IV ;
 чурка:чурка V-INFL-IV ;
+жашын:жашын V-INFL-IV ;
 сура:сура V-INFL-TV ;
 кара:кара V-INFL-TV ;
 же:же V-INFL-TV ; ! "eat"
@@ -1716,6 +1716,7 @@ LEXICON Verbs
 уч:уч V-INFL-TV ;
 бас:бас V-INFL-TV ;
 бас:бас V-INFL-TV ;
+жашын:жашын V-INFL-IV ;
 ошент:ошент V-INFL-IV ;
 ошент:ошент V-INFL-TV ;
 минт:минт V-INFL-IV ;
