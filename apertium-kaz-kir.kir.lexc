@@ -1201,6 +1201,9 @@ LEXICON Postadverbs
 гана:гана POSTADV ; ! "only"
 эле:эле POSTADV ; ! "only"
 деле:деле POSTADV ; ! "even"
+дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
+ашуун:ашуун POSTADV ; ! "more than"
+ашык:ашык POSTADV ; ! "more than"
 
 LEXICON Conjunctions 
 
@@ -1510,7 +1513,8 @@ LEXICON Nouns
 LEXICON ProperNouns
 
 Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
-Түркия% Абажолдору:Түркия% Абажолдор NP-ORG-COMPOUND ; ! "Turkish Airlines"
+Түрк% Аба% Жолдору:Түрк% Аба% Жолдор NP-ORG-COMPOUND ; ! "Turkish Airlines"
+Боруссия% Дортмунд:Боруссия% Дортмунд NP-ORG ; ! "Borussia Dortmund"
 Азамат:Азамат NP-ANT-M ;
 Айгүл:Айгүл NP-ANT-F ;
 
