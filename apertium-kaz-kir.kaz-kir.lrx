@@ -1,13 +1,19 @@
 <rules>
 
-  <rule> 
-    <match lemma="уақыт" tags="n.*"><select lemma="убакыт" tags="n.*"/></match>
-  </rule>
-  <rule> 
-    <match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
-  </rule>
-  <rule> 
-    <match lemma="аң" tags="n.*"><select lemma="жаныбар" tags="n.*"/></match>
-  </rule>
-
+	<rule> 
+		<match lemma="уақыт" tags="n.*"><select lemma="убакыт" tags="n.*"/></match>
+	</rule>
+	<rule> 
+		<match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
+	</rule>
+	<rule> 
+		<match lemma="аң" tags="n.*"><select lemma="жаныбар" tags="n.*"/></match>
+	</rule>
+	<rule> 
+		<match lemma="да" tags="cnjcoo"><select lemma="да" tags="cnjcoo"/></match>
+	</rule>
+	<rule> 
+		<match lemma="екі" tags="num.coll.subst.px3sp.*"/>
+		<match lemma="да" tags="cnjcoo"><select lemma="тең" tags="postadv"/></match>
+	</rule>
 </rules>

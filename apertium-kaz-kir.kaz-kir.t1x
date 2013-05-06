@@ -7,6 +7,14 @@
   <section-def-cats>
 
 <!-- POS categories -->
+    <def-cat n="екеуі">
+      <cat-item lemma="екі" tags="num.coll.subst.px3sp.*"/>
+    </def-cat>
+
+    <def-cat n="да-cnjcoo">
+      <cat-item lemma="да" tags="cnjcoo"/>
+    </def-cat>
+
     <def-cat n="v-қара">
       <cat-item lemma="қара" tags="v.tv.*"/>
     </def-cat>
@@ -484,7 +492,6 @@
   </section-def-macros>
 
   <section-rules>
-
     <rule comment="REGLA: nouns and quasi-nouns">
       <pattern>
         <pattern-item n="nom"/>
@@ -647,6 +654,25 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: no px3sp in экөө-case тең">
+      <pattern>
+        <pattern-item n="екеуі"/>
+        <pattern-item n="да-cnjcoo"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v=""/></let>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: Gerunds">
       <pattern>
         <pattern-item n="gerund"/>
@@ -744,7 +770,7 @@
 
 
 
-    <rule comment="REGLA: Match verb's tences and non-finite forms">
+    <rule comment="REGLA: Match verb's tenses and non-finite forms">
       <pattern>
         <pattern-item n="v"/>
       </pattern>
