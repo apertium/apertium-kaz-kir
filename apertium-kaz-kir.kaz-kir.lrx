@@ -6,5 +6,8 @@
   <rule> 
     <match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
   </rule>
+  <rule> 
+    <match lemma="аң" tags="n.*"><select lemma="жаныбар" tags="n.*"/></match>
+  </rule>
 
 </rules>
