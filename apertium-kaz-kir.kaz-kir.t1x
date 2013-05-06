@@ -14,9 +14,12 @@
     <def-cat n="subst-dat">
       <cat-item tags="n.dat"/>
       <cat-item tags="n.*.dat"/>
+      <cat-item tags="np.dat"/>
       <cat-item tags="np.*.dat"/>
       <cat-item tags="prn.*.dat"/>
+      <cat-item tags="adj.subst.dat"/>
       <cat-item tags="adj.subst.*.dat"/>
+      <cat-item tags="v.*.dat"/>  <!-- dat should only appear after various ger -->
     </def-cat>
 
     <def-cat n="v-әрекет-ет">
