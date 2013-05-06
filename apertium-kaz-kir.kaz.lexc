@@ -1900,6 +1900,7 @@ XXI NUM-ROMAN ; ! ""
 еш% қашан:еш% қашан ADV ; ! "never" Use/MT
 әбден:әбден ADV ; ! "extremely"
 әлі:әлі ADV ; ! "now" !FIXME:CHECK
+әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
 әрдайым:әрдайым ADV ; ! "always"
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
 қайта:қайта ADV ; ! "again"

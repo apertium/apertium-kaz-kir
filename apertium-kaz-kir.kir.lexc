@@ -1564,12 +1564,15 @@ LEXICON Adverbs
 эмнеге:эмнеге ADV-ITG ; ! "why"
 кайда:кайда ADV-ITG ; ! "where"
 али:али ADV ; ! "still"
+дагы% эле:дагы% эле ADV ; ! "still"
 өтө:өтө ADV ; ! "very"
 эртең:эртең ADV ; ! "tomorrow"
 эми:эми ADV ; ! "now"
 эч% качан:эч% качан ADV ; ! Use/MT
+дагы% эле:дагы% эле ADV ; ! maybe this should be seen as compositional
 эми:эми ADV ; 
 дайыма:дайыма ADV ; 
+дагы% эле:дагы% эле ADV ; ! FIXME: compositional
 абдан:абдан ADV ; ! "really"
 чогуу:чогуу ADV ; ! "together"
 ошондой:ошондой ADV ; ! FIXME: compositional
