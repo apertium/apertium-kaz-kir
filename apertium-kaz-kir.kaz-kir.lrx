@@ -3,5 +3,8 @@
   <rule> 
     <match lemma="уақыт" tags="n.*"><select lemma="убакыт" tags="n.*"/></match>
   </rule>
+  <rule> 
+    <match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
+  </rule>
 
 </rules>
