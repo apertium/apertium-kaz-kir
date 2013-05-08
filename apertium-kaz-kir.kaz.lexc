@@ -1918,7 +1918,7 @@ XXI NUM-ROMAN ; ! ""
 еш% қашан:еш% қашан ADV ; ! "never" Use/MT
 әбден:әбден ADV ; ! "extremely"
 әлі:әлі ADV ; ! "now" !FIXME:CHECK
-әлі% де% болса:әлі% де% болса ADV ; ! "stil" ! Use/MT
+әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
 әрдайым:әрдайым ADV ; ! "always"
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
 қайта:қайта ADV ; ! "again"
@@ -1937,6 +1937,7 @@ XXI NUM-ROMAN ; ! ""
 айт:айт V-TV ; ! "say,tell/сказать,говорить,рассказывать"  ! basically TV...
 ал:ал V-TV ; ! "take,recieve,buy,collect,"
 ал:ал V-TV ; ! "take,recieve,buy,collect,"
+арттыр:арттыр V-TV ; ! "to enlarge" NOTE caus
 бар:бар V-IV ; ! ""
 бас:бас V-IV ; ! "вставать"
 бас:бас V-IV ; ! "вставать"
