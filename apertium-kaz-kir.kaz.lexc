@@ -1459,6 +1459,7 @@ LEXICON NUM-COMMON
 LEXICON NUM
 
 NUM-COMMON ;
+%<num%>%<ord%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
 
 LEXICON NUM-TWENTY
@@ -1612,26 +1613,16 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
-!===================!
-
-
-%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
-
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
-тегіс POSTADV ; ! "entirely/all/all together"
-
-
-!================!
  LEXICON Pronouns
 !================!
 
