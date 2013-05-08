@@ -435,7 +435,9 @@
 <e>       <p><l>жат<s n="vaux"/></l>              <r>жат<s n="vaux"/></r></p></e>
 <e>       <p><l>тұр<s n="vaux"/></l>              <r>тур<s n="vaux"/></r></p></e>
 <e>       <p><l>отыр<s n="vaux"/></l>             <r>отур<s n="vaux"/></r></p></e>
+<e>       <p><l>отыр<s n="vaux"/></l>             <r>жат<s n="vaux"/></r></p></e>
 <e>       <p><l>жүр<s n="vaux"/></l>              <r>жүр<s n="vaux"/></r></p></e>
+<e>       <p><l>жүр<s n="vaux"/></l>              <r>жат<s n="vaux"/></r></p></e>
 <e>       <p><l>біт<s n="vaux"/></l>              <r>бүт<s n="vaux"/></r></p></e> <!--"finish"  -->
 <e>       <p><l>баста<s n="vaux"/></l>            <r>башта<s n="vaux"/></r></p></e> <!--"start"  -->
 

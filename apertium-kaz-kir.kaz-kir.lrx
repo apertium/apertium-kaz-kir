@@ -20,4 +20,14 @@
 		<match lemma="екі" tags="num.coll.subst.px3sp.*"/>
 		<match lemma="да" tags="cnjcoo"><select lemma="тең" tags="postadv"/></match>
 	</rule>
+	<rule> 
+		<!-- жат- will be a more frequent translation of отыр- than отур- -->
+		<match lemma="отыр" tags="vaux.*"><select lemma="жат" tags="vaux.*"/></match>
+	</rule>
+	<rule> 
+		<!-- жат- will be a more frequent translation of жүр- than жүр- -->
+		<match lemma="жүр" tags="vaux.*"><select lemma="жат" tags="vaux.*"/></match>
+	</rule>
+
+
 </rules>
