@@ -283,7 +283,10 @@
 <e>       <p><l>команда<s n="n"/></l>          <r>команда<s n="n"/></r></p></e> <!--"sports team"-->
 <e>       <p><l>ынтымақ<s n="n"/></l>          <r>ынтымак<s n="n"/></r></p></e> <!--"unity"-->
 <e>	  <p><l>ынтымақтастық<s n="n"/></l>    <r>ынтымакташтык<s n="n"/></r></p></e> <!--"commonweal"-->
+<e>	  <p><l>лига<s n="n"/></l>             <r>лига<s n="n"/></r></p></e> <!--"league"-->
+
     <!-- Nationalities -->
+<e>	  <p><l>неміс<s n="n"/></l>             <r>немис<s n="n"/></r></p></e> <!--"German"-->
     <!-- Languages -->
     <!-- Anthroponyms -->
 <e>       <p><l>Айгүл<s n="np"/><s n="ant"/><s n="f"/></l>      <r>Айгүл<s n="np"/><s n="ant"/><s n="f"/></r></p></e> <!--"Aygül"-->
@@ -293,12 +296,15 @@
     <!-- Patronyms -->
     <!-- Cognoms -->
     <!-- Other toponyms-->
-<e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>            <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
-<e>       <p><l>Алмания<s n="np"/><s n="top"/></l>             <r>Германия<s n="np"/><s n="top"/></r></p></e> <!--"Germany"-->
-<e>       <p><l>Еуропа<s n="np"/><s n="top"/></l>               <r>Европа<s n="np"/><s n="top"/></r></p></e> <!--"Europe"-->
+<e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>             <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
+<e>       <p><l>Алмания<s n="np"/><s n="top"/></l>               <r>Германия<s n="np"/><s n="top"/></r></p></e> <!--"Germany"-->
+<e>       <p><l>Еуропа<s n="np"/><s n="top"/></l>                <r>Европа<s n="np"/><s n="top"/></r></p></e> <!--"Europe"-->
     <!-- Organizations -->
-<e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>  <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
+<e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>   <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
 <e>       <p><l>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></l>  <r>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></r></p></e> <!--"Borussia Dortmund"-->
+<e>       <p><l>Барселона<s n="np"/><s n="org"/></l>  		 <r>Барселона<s n="np"/><s n="org"/></r></p></e> <!--"Futbol Club Barcelona"-->
+<e>       <p><l>Манчестер<b/>Юнайтед<s n="np"/><s n="org"/></l>  <r>Манчестер<b/>Юнайтед<s n="np"/><s n="org"/></r></p></e> <!--"Manchester United Football Club"-->
+<e>       <p><l>Бундеслига<s n="np"/><s n="org"/></l>  		 <r>Бундеслига<s n="np"/><s n="org"/></r></p></e> <!--"Bundesliga"-->
     <!-- Other proper names -->
 
 <!--SECTION: Adjectives -->

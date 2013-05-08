@@ -1844,6 +1844,7 @@ XXI NUM-ROMAN ; ! ""
 қол:қол N1 ; ! "hand"
 құс:құс N1 ; ! "bird"
 қыз:қыз N1 ; ! "girl,daughter,virgin"
+лига:лига N1 ; ! "league"
 мысық:мысық N1 ; ! "cat,copper"
 ойын:ойын N1 ; ! "play, game"
 орындық:орындық N1 ; ! "chair"
@@ -1869,6 +1870,7 @@ XXI NUM-ROMAN ; ! ""
 арт:арт N1 ; ! "back"
 аст:аст N1 ; ! "under"
 жан:жан N1 ; ! "next to"
+неміс:неміс N1 ; ! "German"
 спонсор:спонсор N1 ;
 
  LEXICON ProperNouns
@@ -1880,6 +1882,9 @@ XXI NUM-ROMAN ; ! ""
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 Түрік% Әуежолдары:Түрік% Әуежолдар NP-ORG-COMPOUND ; ! "Turkish Airways"
 Боруссия% Дортмунд:Боруссия% Дортмунд%{☭%} NP-ORG ; ! "Borussia Dortmund"
+Барселона:Барселона NP-ORG; ! "Futbol Club Barcelona"
+Манчестер% Юнайтед:Манчестер% Юнайтед NP-ORG; ! "Manchester United Football Club"
+Бундеслига:Бундеслига NP-ORG; ! "Bundesliga"
 
  LEXICON Adjectives
 
