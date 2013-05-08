@@ -278,7 +278,11 @@
 <e>       <p><l>жүз<s n="n"/></l>              <r>жүз<s n="n"/></r></p></e> <!--"face"-->
 <e>       <p><l>гүл<s n="n"/></l>              <r>гүл<s n="n"/></r></p></e> <!--"flower"-->
 <e>       <p><l>спонсор<s n="n"/></l>          <r>спонсор<s n="n"/></r></p></e> <!--"sponsor"-->
-
+<e>       <p><l>келісім<s n="n"/></l>          <r>келишим<s n="n"/></r></p></e> <!--"agreement"-->
+<e>       <p><l>футбол<s n="n"/></l>           <r>футбол<s n="n"/></r></p></e> <!--"football"-->
+<e>       <p><l>команда<s n="n"/></l>          <r>команда<s n="n"/></r></p></e> <!--"sports team"-->
+<e>       <p><l>ынтымақ<s n="n"/></l>          <r>ынтымак<s n="n"/></r></p></e> <!--"unity"-->
+<e>	  <p><l>ынтымақтастық<s n="n"/></l>    <r>ынтымакташтык<s n="n"/></r></p></e> <!--"commonweal"-->
     <!-- Nationalities -->
     <!-- Languages -->
     <!-- Anthroponyms -->
@@ -290,6 +294,8 @@
     <!-- Cognoms -->
     <!-- Other toponyms-->
 <e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>            <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
+<e>       <p><l>Алмания<s n="np"/><s n="top"/></l>             <r>Германия<s n="np"/><s n="top"/></r></p></e> <!--"Germany"-->
+<e>       <p><l>Еуропа<s n="np"/><s n="top"/></l>               <r>Европа<s n="np"/><s n="top"/></r></p></e> <!--"Europe"-->
     <!-- Organizations -->
 <e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>  <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
 <e>       <p><l>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></l>  <r>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></r></p></e> <!--"Borussia Dortmund"-->
@@ -331,6 +337,7 @@
 <e>       <p><l>оң<s n="adj"/></l>                <r>оң<s n="adj"/></r></p></e> <!-- "right"-->
 <e>       <p><l>сол<s n="adj"/></l>               <r>сол<s n="adj"/></r></p></e> <!-- "left"-->
 <e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!--"a lot"-->
+<e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
 
 
 <!-- SECTION: Adverbs -->

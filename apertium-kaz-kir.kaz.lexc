@@ -1612,16 +1612,26 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
+!===================!
+
+
+%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1824,7 +1834,9 @@ XXI NUM-ROMAN ; ! ""
 зат:зат N1 ; ! "thing"
 ит:ит N1 ; ! "dog"
 іш:іш N1 ; ! "inside,stomach"
+келісім:келісім N1 ; ! "agreement"
 кітап:кітап N1 ; ! "book"
+команда:команда N1 ; ! "sports team"
 көз:көз N1 ; ! "eye"
 күшік:күшік N1 ; ! "pup"
 қарындас:қарындас N1 ; ! "younger sister"
@@ -1849,7 +1861,10 @@ XXI NUM-ROMAN ; ! ""
 үй:үй N1 ; ! "home,house"
 үн:үн N1 ; ! "voice,call"
 үстел:үстел N1 ; ! "table"
+футбол:футбол N1 ; ! "football"
 шелек:шелек N1 ; ! "bucket"
+ынтымақтастық:ынтымақтастық N1 ; ! ""
+ынтымақ:ынтымақ N1 ; ! "unity"
 алд:ал%{д%} N1 ; ! "front"
 арт:арт N1 ; ! "back"
 аст:аст N1 ; ! "under"
@@ -1859,6 +1874,8 @@ XXI NUM-ROMAN ; ! ""
  LEXICON ProperNouns
 
 Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
+Алмания:Алмания NP-TOP ; ! "Germany"
+Еуропа:Еуропа NP-TOP ; ! "Europe"
 Азамат:Азамат NP-ANT-M; ! "Azamat" (Arabic)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 Түрік% Әуежолдары:Түрік% Әуежолдар NP-ORG-COMPOUND ; ! "Turkish Airways"
@@ -1886,6 +1903,7 @@ XXI NUM-ROMAN ; ! ""
 көп:көп A1 ; ! "many, much"
 қатты:қатты A1 ; ! "hard,fast"
 қуанышты:қуанышты A1 ; ! "glad"
+мықты:мықты A1 ; ! "strong/fast"
 оң:оң A1 ; ! "right"
 сол:сол A1 ; ! "left"
 суық:суық A1 ; ! "cold"
@@ -1900,7 +1918,7 @@ XXI NUM-ROMAN ; ! ""
 еш% қашан:еш% қашан ADV ; ! "never" Use/MT
 әбден:әбден ADV ; ! "extremely"
 әлі:әлі ADV ; ! "now" !FIXME:CHECK
-әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
+әлі% де% болса:әлі% де% болса ADV ; ! "stil" ! Use/MT
 әрдайым:әрдайым ADV ; ! "always"
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
 қайта:қайта ADV ; ! "again"

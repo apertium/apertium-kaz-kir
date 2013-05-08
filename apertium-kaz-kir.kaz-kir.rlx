@@ -6,8 +6,6 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 SOFT-DELIMITERS = "<,>" ;
 
-SUBREADINGS = LTR ; # Alternate, left-to-right
-
 # ============= #
 # Tags and sets #
 # ============= #
@@ -93,6 +91,12 @@ SET NPNH = WORDMARK - PRE-N ;
 SET NPNHA = WORDMARK - PRE-N - Adv ;
 SET NOT-ADV = WORDMARK - Adv ;
 
+# Noun sets
+# ---------
+
+LIST N-SG-NOM = (n sg nom) ;
+LIST N-PL-NOM = (n pl nom) ;
+
 # Adjective sets
 # --------------
 
@@ -119,7 +123,7 @@ LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
 
 LIST Copula = (cop p3 sg) (cop p3 pl) ;
 
-LIST FourAuxiliaries = "<тұр>" "<жүр>" "<отыр>" "<жатыр>" ;
+LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жатыр" ;
 
 # Barriers
 # --------
@@ -361,18 +365,20 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## кезеңдерді қамтитын, ... орталықтың экспозициясы негізгі сегіз ірі бөлімнен тұрады.
 
 
-# Imperative or not?
-# ------------------
-
-
-# <Vaux p3> is more common, so let's set it as default
-# Rules for selecting imperative reading of these three (if any) must be placed before this rule
+# [0] is auxilliary, because a participle preceedes, and [0] is not in imperative,
+# because there is a subject (i.e. something in nominative closest to the
+# beginning of the sentence)
  SELECT (vaux p3) IF
+        (0 FourAuxiliaries)
         (-1 (prc_perf))
-        (0 FourAuxiliaries - ("<жатыр>"))
+        (@1 Nom)
+;
+ SELECT (vaux p3) IF
+        (0 FourAuxiliaries)
+        (-1 (prc_perf))
+        (-1* (prn nom) BARRIER BOS)
 ;
 ## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
-## 36 . Әлі де болса Азаматты табуға әрекет етіп [0]жүр.
 
 
 # 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
@@ -381,12 +387,18 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
 ## [0]Бар деп айттым мен оған.
+ REMOVE (imp) IF # FIXME check this
+        (-1* Adv OR Advl OR Loc BARRIER BOS)
+        (@1 Nom LINK NOT @2 Cm)
+;
+## 35 . Айгүл бақшаның ішінде ақырын басып [0]жүр.
+## (!) Айгүл, бақшаның ішінде ақырын басып жүр.
+## (!) Сен, бақшаның ішінде ақырын басып жүр.
+## (!) Сен үйде тұр.
+## (!) Кітап ал.
 
 
-# ----------
-
-
-#
+# FIXME extend/generalize
  SELECT (gpr_past) IF
         (0C (ger_past) + Nom)
         (1 N)
@@ -649,15 +661,11 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 # да<postadv/conj>
- SELECT SUB:1 Postadv IF
+ SELECT Postadv IF
         (0 (gna_cond))
 ;
-## 34 . Ол Азаматтың қайда екенін [0]білсе+[0/1_or_-1]де айтқысы келген жоқ.  # with SUBREADINGS = LTR ; option
-## Ол Азаматтың қайла екенін [0]білсе+[0/1]де+[0/2_or_-1]мі?                  # with SUBREADINGS = LTR ; option
+## 34 . Ол Азаматтың қайда екенін білсе+[0/1 or -1]де айтқысы келген жоқ.
 
-# <prc_cond> vs. <gna_cond>
- REMOVE (prc_cond) IF
-        (NOT 1 ("бол") + V)
 
 #
  SELECT Adv IF
@@ -667,13 +675,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ## 6 . Азамат пен Айгүл ойнағанды жақсы көреді, олар әрдайым үлкен үйдің алдындағы бақшада [0]бірге ойнайды.
 ## (!) Ол Азаматпен бірге келді.
-
-
-#
- "<жасар>" SELECT A IF
-            (-1 Num)
-;
-## 7 . Азамат алты жасар кішкентай бала.
 
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
