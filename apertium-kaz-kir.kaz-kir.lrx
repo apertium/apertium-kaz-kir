@@ -7,6 +7,10 @@
 		<match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
 	</rule>
 	<rule> 
+		<match lemma="анық" tags="adj.*"><select lemma="тунук" tags="adj.*"/></match>
+		<or><match lemma="есті" tags="v.*"/><match lemma="тыңда" tags="v.*"/></or>
+	</rule>
+	<rule> 
 		<match lemma="аң" tags="n.*"><select lemma="жаныбар" tags="n.*"/></match>
 	</rule>
 	<rule> 
