@@ -6,6 +6,8 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 SOFT-DELIMITERS = "<,>" ;
 
+SUBREADINGS = LTR ; # Alternate, left-to-right
+
 # ============= #
 # Tags and sets #
 # ============= #
@@ -90,12 +92,6 @@ SET NPMARK = N-MOD | ADJ-MOD ;
 SET NPNH = WORDMARK - PRE-N ;
 SET NPNHA = WORDMARK - PRE-N - Adv ;
 SET NOT-ADV = WORDMARK - Adv ;
-
-# Noun sets
-# ---------
-
-LIST N-SG-NOM = (n sg nom) ;
-LIST N-PL-NOM = (n pl nom) ;
 
 # Adjective sets
 # --------------
@@ -653,11 +649,15 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 # да<postadv/conj>
- SELECT Postadv IF
+ SELECT SUB:1 Postadv IF
         (0 (gna_cond))
 ;
-## 34 . Ол Азаматтың қайда екенін білсе+[0/1 or -1]де айтқысы келген жоқ.
+## 34 . Ол Азаматтың қайда екенін [0]білсе+[0/1_or_-1]де айтқысы келген жоқ.  # with SUBREADINGS = LTR ; option
+## Ол Азаматтың қайла екенін [0]білсе+[0/1]де+[0/2_or_-1]мі?                  # with SUBREADINGS = LTR ; option
 
+# <prc_cond> vs. <gna_cond>
+ REMOVE (prc_cond) IF
+        (NOT 1 ("бол") + V)
 
 #
  SELECT Adv IF
@@ -667,6 +667,13 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ## 6 . Азамат пен Айгүл ойнағанды жақсы көреді, олар әрдайым үлкен үйдің алдындағы бақшада [0]бірге ойнайды.
 ## (!) Ол Азаматпен бірге келді.
+
+
+#
+ "<жасар>" SELECT A IF
+            (-1 Num)
+;
+## 7 . Азамат алты жасар кішкентай бала.
 
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
