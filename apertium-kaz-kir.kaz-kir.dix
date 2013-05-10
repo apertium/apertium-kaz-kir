@@ -284,6 +284,13 @@
 <e>       <p><l>ынтымақ<s n="n"/></l>          <r>ынтымак<s n="n"/></r></p></e> <!--"unity"-->
 <e>	  <p><l>ынтымақтастық<s n="n"/></l>    <r>ынтымакташтык<s n="n"/></r></p></e> <!--"commonweal"-->
 <e>	  <p><l>лига<s n="n"/></l>             <r>лига<s n="n"/></r></p></e> <!--"league"-->
+<e>	  <p><l>жыл<s n="n"/></l>              <r>жыл<s n="n"/></r></p></e> <!--"year"-->
+<e>	  <p><l>матч<s n="n"/></l>             <r>матч<s n="n"/></r></p></e> <!--"match"-->
+<e>	  <p><l>директор<s n="n"/></l>         <r>директор<s n="n"/></r></p></e> <!--"director"-->
+<e>	  <p><l>жаттықтырушы<s n="n"/></l>     <r>машыктыруучу<s n="n"/></r></p></e> <!--"coach"-->
+<e>	  <p><l>мерәсім<s n="n"/></l>          <r>азем<s n="n"/></r></p></e> <!--"ceremony"-->
+<e>	  <p><l>басқарушы<s n="n"/></l>        <r>башкаруучу<s n="n"/></r></p></e> <!--"manager"-->
+
 
     <!-- Nationalities -->
 <e>	  <p><l>неміс<s n="n"/></l>             <r>немис<s n="n"/></r></p></e> <!--"German"-->
@@ -291,14 +298,22 @@
     <!-- Anthroponyms -->
 <e>       <p><l>Айгүл<s n="np"/><s n="ant"/><s n="f"/></l>      <r>Айгүл<s n="np"/><s n="ant"/><s n="f"/></r></p></e> <!--"Aygül"-->
 <e>       <p><l>Азамат<s n="np"/><s n="ant"/><s n="m"/></l>     <r>Азамат<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Azamat"-->
+<e>       <p><l>Темел<s n="np"/><s n="ant"/><s n="m"/></l>      <r>Темел<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Темел"-->
+<e>       <p><l>Юрген<s n="np"/><s n="ant"/><s n="m"/></l>      <r>Юрген<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Jürgen"-->
+<e>       <p><l>Ханс<s n="np"/><s n="ant"/><s n="m"/></l>       <r>Ханс<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Hans"-->	
+<e>       <p><l>Иохим<s n="np"/><s n="ant"/><s n="m"/></l>      <r>Иохим<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Joachim"-->
 
-	
     <!-- Patronyms -->
     <!-- Cognoms -->
+<e>       <p><l>Котил<s n="np"/><s n="cog"/><s n="m"/></l>      <r>Котил<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Kotil"-->
+<e>       <p><l>Клоп<s n="np"/><s n="cog"/><s n="m"/></l>       <r>Клоп<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Kotil"-->
+<e>       <p><l>Ватзке<s n="np"/><s n="cog"/><s n="m"/></l>     <r>Ватзке<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Watzke"-->
+
     <!-- Other toponyms-->
 <e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>             <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
 <e>       <p><l>Алмания<s n="np"/><s n="top"/></l>               <r>Германия<s n="np"/><s n="top"/></r></p></e> <!--"Germany"-->
 <e>       <p><l>Еуропа<s n="np"/><s n="top"/></l>                <r>Европа<s n="np"/><s n="top"/></r></p></e> <!--"Europe"-->
+<e>       <p><l>Сигнал<b/>Идуна<b/>Парк<s n="np"/><s n="top"/></l>  <r>Сигнал<b/>Идуна<b/>Парк<s n="np"/><s n="top"/></r></p></e> <!--"Signal Iduna Park"-->
     <!-- Organizations -->
 <e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>   <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
 <e>       <p><l>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></l>  <r>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></r></p></e> <!--"Borussia Dortmund"-->
@@ -344,6 +359,7 @@
 <e>       <p><l>сол<s n="adj"/></l>               <r>сол<s n="adj"/></r></p></e> <!-- "left"-->
 <e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!--"a lot"-->
 <e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
+<e>       <p><l>техникалық<s n="adj"/></l>        <r>техникалык<s n="adj"/></r></p></e> <!--"technical"-->
 
 
 <!-- SECTION: Adverbs -->
@@ -428,6 +444,8 @@
 <e>       <p><l>оқы<s n="v"/><s n="iv"/></l>      <r>оку<s n="v"/><s n="iv"/></r></p></e> <!--"study"  -->
 <e>       <p><l>оқы<s n="v"/><s n="tv"/></l>      <r>оку<s n="v"/><s n="tv"/></r></p></e> <!--"read"  -->
 <e>       <p><l>арттыр<s n="v"/><s n="tv"/></l>   <r>арттыр<s n="v"/><s n="tv"/></r></p></e> <!--"to enlarge"  -->
+<e>       <p><l>ұйымдастыр<s n="v"/><s n="tv"/></l>   <r>уюштур<s n="v"/><s n="tv"/></r></p></e> <!--"to organize"  -->
+<e>       <p><l>қатыс<s n="v"/><s n="iv"/></l>      <r>катыш<s n="v"/><s n="iv"/></r></p></e> <!--"participate"  -->
 
 
 <!-- SECTION: Auxiliaries -->

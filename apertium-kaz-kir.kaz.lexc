@@ -1613,16 +1613,26 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
+!===================!
+
+
+%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1811,6 +1821,7 @@ XXI NUM-ROMAN ; ! ""
 дала:дала N1 ; ! "field"
 дауыс:дау%{y%}с N1 ; ! "sound, voice" (similar to халық) Dir/LR
 дауыс:дауыс N1 ; ! "sound, voice"
+директор:директор N1 ; ! "director"
 дыбыс:дыбыс N1 ; ! "sound,noise"
 есік:есік N1 ; ! "door"
 ешкі:ешкі N1 ; ! "goat"
@@ -1821,6 +1832,7 @@ XXI NUM-ROMAN ; ! ""
 жауап:жауап N1 ; ! "answer"
 жер:жер N1 ; ! "land,earth"
 жүз:жүз N1 ; ! "face"
+жыл:жыл N1 ; ! "year"
 заман:заман N1 ; ! "time,age"
 зат:зат N1 ; ! "thing"
 ит:ит N1 ; ! "dog"
@@ -1836,6 +1848,7 @@ XXI NUM-ROMAN ; ! ""
 құс:құс N1 ; ! "bird"
 қыз:қыз N1 ; ! "girl,daughter,virgin"
 лига:лига N1 ; ! "league"
+матч:матч N1 ; ! ""
 мысық:мысық N1 ; ! "cat,copper"
 ойын:ойын N1 ; ! "play, game"
 орындық:орындық N1 ; ! "chair"
@@ -1857,6 +1870,9 @@ XXI NUM-ROMAN ; ! ""
 шелек:шелек N1 ; ! "bucket"
 ынтымақтастық:ынтымақтастық N1 ; ! ""
 ынтымақ:ынтымақ N1 ; ! "unity"
+жаттықтырушы:жаттықтырушы N1 ; ! "coach"
+мерәсім:мерәсім N1 ; ! "ceremony"
+басқарушы:басқарушы N1; ! "manager"
 алд:ал%{д%} N1 ; ! "front"
 арт:арт N1 ; ! "back"
 аст:аст N1 ; ! "under"
@@ -1869,8 +1885,16 @@ XXI NUM-ROMAN ; ! ""
 Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
 Алмания:Алмания NP-TOP ; ! "Germany"
 Еуропа:Еуропа NP-TOP ; ! "Europe"
+Сигнал% Идуна% Парк:Сигнал% Идуна% Парк NP-TOP; ! "Signal Iduna Park football stadium"
 Азамат:Азамат NP-ANT-M; ! "Azamat" (Arabic)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
+Темел:Темел NP-ANT-M ; ! "Temel (Turkish name)"
+Юрген:Юрген NP-ANT-M; ! "Jürgen (German name)"
+Ханс:Ханс NP-ANT-M; ! "Hans (German name)"
+Иохим:Иохим NP-ANT-M; ! "Joachim (German name)"
+Котил:Котил NP-COG-M ; ! "Kotil (Turkish surname)"
+Клоп:Клоп NP-COG-M ; ! "Klopp (German surmame)"
+Ватзке:Ватзке NP-COG-M; ! "Watzke (German surname)"
 Түрік% Әуежолдары:Түрік% Әуежолдар NP-ORG-COMPOUND ; ! "Turkish Airways"
 Боруссия% Дортмунд:Боруссия% Дортмунд%{☭%} NP-ORG ; ! "Borussia Dortmund"
 Барселона:Барселона NP-ORG; ! "Futbol Club Barcelona"
@@ -1879,6 +1903,7 @@ XXI NUM-ROMAN ; ! ""
 
  LEXICON Adjectives
 
+техникалық:техникалық A4 ; ! ""
 бар:бар A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
 жоқ:жоқ A3 ;
@@ -1979,6 +2004,7 @@ XXI NUM-ROMAN ; ! ""
 көр:көр V-TV-NOPASS ; ! "see"
 күл:күл V-IV ; ! "laugh"
 қара:қара V-TV ; ! "look at"
+қатыс:қатыс V-IV ; ! "participate"
 қой:қой V-TV ; ! "release" put
 ойла:ойла V-TV ; ! "think"
 ойна:ойна V-TV ; ! "play"
@@ -2001,6 +2027,7 @@ XXI NUM-ROMAN ; ! ""
 тұр:тұр V-IV ; ! "rise,stand"
 тыңда:тыңда V-TV ; ! "listen"
 ұйықта:ұйықта V-IV ; ! "sleep"
+ұйымдастыр:ұйымдастыр V-TV ; ! "организовать"
 ұш:ұш V-IV ; ! "fly"
 шық:шық V-IV ; ! "leave"
 ізде:ізде V-TV ; ! ""
