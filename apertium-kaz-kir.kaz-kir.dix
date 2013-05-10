@@ -307,7 +307,7 @@
     <!-- Cognoms -->
 <e>       <p><l>Котил<s n="np"/><s n="cog"/><s n="m"/></l>      <r>Котил<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Kotil"-->
 <e>       <p><l>Клоп<s n="np"/><s n="cog"/><s n="m"/></l>       <r>Клоп<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Kotil"-->
-<e>       <p><l>Ватзке<s n="np"/><s n="cog"/><s n="m"/></l>     <r>Ватзке<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Watzke"-->
+<e>       <p><l>Ватз<s n="np"/><s n="cog"/><s n="m"/></l>       <r>Ватз<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Watzke"-->
 
     <!-- Other toponyms-->
 <e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>             <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
