@@ -290,6 +290,7 @@
 <e>	  <p><l>жаттықтырушы<s n="n"/></l>     <r>машыктыруучу<s n="n"/></r></p></e> <!--"coach"-->
 <e>	  <p><l>мерәсім<s n="n"/></l>          <r>азем<s n="n"/></r></p></e> <!--"ceremony"-->
 <e>	  <p><l>басқарушы<s n="n"/></l>        <r>башкаруучу<s n="n"/></r></p></e> <!--"manager"-->
+<e>	  <p><l>серіктестік<s n="n"/></l>      <r>шериктештик<s n="n"/></r></p></e> <!--"partnership"-->
 
 
     <!-- Nationalities -->
@@ -362,6 +363,8 @@
 <e>       <p><l>техникалық<s n="adj"/></l>        <r>техникалык<s n="adj"/></r></p></e> <!--"technical"-->
 <e>       <p><l>жылдық<s n="adj"/></l>            <r>жылдык<s n="adj"/></r></p></e> <!--"yearly"-->
 <e>       <p><l>спонсорлық<s n="adj"/></l>        <r>спонсордук<s n="adj"/></r></p></e> <!--"sponsoring"-->
+<e>       <p><l>стратегиялық<s n="adj"/></l>      <r>стратегиялык<s n="adj"/></r></p></e> <!--"strategic"-->
+
 
 
 <!-- SECTION: Adverbs -->
@@ -448,6 +451,7 @@
 <e>       <p><l>арттыр<s n="v"/><s n="tv"/></l>   <r>арттыр<s n="v"/><s n="tv"/></r></p></e> <!--"to enlarge"  -->
 <e>       <p><l>ұйымдастыр<s n="v"/><s n="tv"/></l>   <r>уюштур<s n="v"/><s n="tv"/></r></p></e> <!--"to organize"  -->
 <e>       <p><l>қатыс<s n="v"/><s n="iv"/></l>      <r>катыш<s n="v"/><s n="iv"/></r></p></e> <!--"participate"  -->
+<e>       <p><l>жаса<s n="v"/><s n="tv"/></l>      <r>жаса<s n="v"/><s n="iv"/></r></p></e> <!--"do,make"  -->
 
 
 <!-- SECTION: Auxiliaries -->

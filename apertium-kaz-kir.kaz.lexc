@@ -1855,6 +1855,7 @@ XXI NUM-ROMAN ; ! ""
 өң:өң N1 ; ! "appearance"
 сағат:сағат N1 ; ! "hour"
 себеп:себеп N1 ; ! "reason"
+серіктестік:серіктестік N1 ; ! "partnership"
 сөз:сөз N1 ; ! "word"
 су:су N1 ; ! "water"
 сұрақ:сұрақ N1 ; ! "question"
@@ -1904,6 +1905,7 @@ XXI NUM-ROMAN ; ! ""
 
  LEXICON Adjectives
 
+стратегиялық:стратегиялық A4 ; ! ""
 техникалық:техникалық A4 ; ! ""
 бар:бар A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
@@ -1988,6 +1990,7 @@ XXI NUM-ROMAN ; ! ""
 де:делін V-TV-PASS ; ! "speak"
 есті:есті V-TV ; ! "hear"
 жап:жап V-TV ; ! "close"
+жаса:жаса V-TV ; ! "do,make"
 жасырын:жасырын V-IV ; ! "hide oneself" (kaz tat) refl
 жат:жат V-IV ; ! "lie"
 жат:жат V-IV ; ! "lie"
