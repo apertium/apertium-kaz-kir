@@ -307,7 +307,7 @@
     <!-- Cognoms -->
 <e>       <p><l>Котил<s n="np"/><s n="cog"/><s n="m"/></l>      <r>Котил<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Kotil"-->
 <e>       <p><l>Клоп<s n="np"/><s n="cog"/><s n="m"/></l>       <r>Клоп<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Kotil"-->
-<e>       <p><l>Ватз<s n="np"/><s n="cog"/><s n="m"/></l>       <r>Ватз<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Watzke"-->
+<e>       <p><l>Ватзке<s n="np"/><s n="cog"/><s n="m"/></l>     <r>Ватзке<s n="np"/><s n="cog"/><s n="m"/></r></p></e> <!--"Watzke"-->
 
     <!-- Other toponyms-->
 <e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>             <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
@@ -360,6 +360,8 @@
 <e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!--"a lot"-->
 <e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
 <e>       <p><l>техникалық<s n="adj"/></l>        <r>техникалык<s n="adj"/></r></p></e> <!--"technical"-->
+<e>       <p><l>жылдық<s n="adj"/></l>            <r>жылдык<s n="adj"/></r></p></e> <!--"yearly"-->
+<e>       <p><l>спонсорлық<s n="adj"/></l>        <r>спонсордук<s n="adj"/></r></p></e> <!--"sponsoring"-->
 
 
 <!-- SECTION: Adverbs -->

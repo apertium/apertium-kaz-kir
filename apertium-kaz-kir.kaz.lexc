@@ -1613,16 +1613,26 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
+!===================!
+
+
+%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1885,8 +1895,7 @@ XXI NUM-ROMAN ; ! ""
 Иохим:Иохим NP-ANT-M; ! "Joachim (German name)"
 Котил:Котил NP-COG-M ; ! "Kotil (Turkish surname)"
 Клоп:Клоп NP-COG-M ; ! "Klopp (German surmame)"
-Ватз:Ватз NP-COG-M; ! "Watts (German surname)"
-Ватз:Ватз%{э%}%{с%} NP-COG-M; ! "Watts (German surname)" ! Dir/LR
+Ватзке:Ватзке NP-COG-M; ! "Watzke (German surname)"
 Түрік% Әуежолдары:Түрік% Әуежолдар NP-ORG-COMPOUND ; ! "Turkish Airways"
 Боруссия% Дортмунд:Боруссия% Дортмунд%{☭%} NP-ORG ; ! "Borussia Dortmund"
 Барселона:Барселона NP-ORG; ! "Futbol Club Barcelona"
@@ -1899,6 +1908,8 @@ XXI NUM-ROMAN ; ! ""
 бар:бар A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
 жоқ:жоқ A3 ;
+жылдық:жылдық A3 ; ! "-летний,годовой,годичный"
+спонсорлық:спонсорлық A3 ; ! "спонсорский"
 мүмкін:мүмкін A1 ; ! "possible"  ! A1 not A3 because мүмкін can be used as adv ("possibly"), and can even be comparative -JNW
 ақырын:ақырын A1 ; ! "slow"
 анық:анық A1 ; ! "clear;clearly"
