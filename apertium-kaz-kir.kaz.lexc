@@ -1613,16 +1613,26 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
+!===================!
+
+
+%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1813,6 +1823,7 @@ XXI NUM-ROMAN ; ! ""
 дауыс:дауыс N1 ; ! "sound, voice"
 директор:директор N1 ; ! "director"
 дыбыс:дыбыс N1 ; ! "sound,noise"
+ел:ел N1 ; ! "country,nation"
 есік:есік N1 ; ! "door"
 ешкі:ешкі N1 ; ! "goat"
 жақ:жақ N1 ; ! "side,cheeck"
@@ -1845,6 +1856,7 @@ XXI NUM-ROMAN ; ! ""
 өң:өң N1 ; ! "appearance"
 сағат:сағат N1 ; ! "hour"
 себеп:себеп N1 ; ! "reason"
+серік:серік N1 ; ! "companion"
 серіктестік:серіктестік N1 ; ! "partnership"
 сөз:сөз N1 ; ! "word"
 су:су N1 ; ! "water"
@@ -1863,7 +1875,8 @@ XXI NUM-ROMAN ; ! ""
 ынтымақ:ынтымақ N1 ; ! "unity"
 жаттықтырушы:жаттықтырушы N1 ; ! "coach"
 мерәсім:мерәсім N1 ; ! "ceremony"
-басқарушы:басқарушы N1; ! "manager"
+басқарушы:басқарушы N1 ; ! "manager"
+лауазымды:лауазымды N1 ; ! "должностной"
 алд:ал%{д%} N1 ; ! "front"
 арт:арт N1 ; ! "back"
 аст:аст N1 ; ! "under"
@@ -1896,6 +1909,7 @@ XXI NUM-ROMAN ; ! ""
  LEXICON Adjectives
 
 стратегиялық:стратегиялық A4 ; ! ""
+сынды:сынды A4 ; ! ""
 техникалық:техникалық A4 ; ! ""
 бар:бар A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
@@ -1911,6 +1925,7 @@ XXI NUM-ROMAN ; ! ""
 жақын:жақын A1 ; ! "close"
 жаман:жаман A1 ; ! "bad"
 жаңа:жаңа A1 ; ! "new"
+жергілікті:жергілікті A1 ; ! "local"
 жылы:жылы A1 ; ! "warm"
 кәрі:кәрі A1 ; ! "old (person)"
 керек:керек A1 ; ! ""
@@ -1937,6 +1952,7 @@ XXI NUM-ROMAN ; ! ""
 әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
 әрдайым:әрдайым ADV ; ! "always"
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
+керісінше:керісінше ADV ; ! ""
 қайта:қайта ADV ; ! "again"
 өте:өте ADV ; ! "very"
 ертең:ертең ADV ; ! ""
@@ -1976,6 +1992,7 @@ XXI NUM-ROMAN ; ! ""
 бүйт:бүйт V-TV ; ! ""
 бүйт:бүйт V-TV ; ! "do that way"
 бүйт:бүйт V-TV ; ! "do that way"
+дәлелде:дәлелде V-TV ; ! "prove"
 де:де V-TV-NOPASS ; ! "speak"
 де:делін V-TV-PASS ; ! "speak"
 есті:есті V-TV ; ! "hear"

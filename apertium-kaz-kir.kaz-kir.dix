@@ -197,7 +197,8 @@
 <e>       <p><l>бір<s n="det"/><s n="ind"/></l>           <r>бир<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>өз<s n="det"/><s n="ref"/></l>            <r>өз<s n="det"/><s n="ref"/></r></p></e>
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>        <r>бардык<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>қай<s n="det"/><s n="itg"/></l>         <r>кай<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>қай<s n="det"/><s n="itg"/></l>           <r>кай<s n="det"/><s n="dem"/></r></p></e>
+<e>       <p><l>кейбір<s n="det"/><s n="ind"/></l>        <r>кээ<b/>бир<s n="det"/><s n="qnt"/></r></p></e>
 
 
 
@@ -291,6 +292,9 @@
 <e>	  <p><l>мерәсім<s n="n"/></l>          <r>азем<s n="n"/></r></p></e> <!--"ceremony"-->
 <e>	  <p><l>басқарушы<s n="n"/></l>        <r>башкаруучу<s n="n"/></r></p></e> <!--"manager"-->
 <e>	  <p><l>серіктестік<s n="n"/></l>      <r>шериктештик<s n="n"/></r></p></e> <!--"partnership"-->
+<e>	  <p><l>серік<s n="n"/></l>            <r>шерик<s n="n"/></r></p></e> <!--"partner"-->
+<e>	  <p><l>лауазымды<s n="n"/></l>        <r>кызматкер<s n="n"/></r></p></e> <!--"служащий"-->
+<e>	  <p><l>ел<s n="n"/></l>               <r>өлкө<s n="n"/></r></p></e> <!--"country,nation"-->
 
 
     <!-- Nationalities -->
@@ -364,7 +368,8 @@
 <e>       <p><l>жылдық<s n="adj"/></l>            <r>жылдык<s n="adj"/></r></p></e> <!--"yearly"-->
 <e>       <p><l>спонсорлық<s n="adj"/></l>        <r>спонсордук<s n="adj"/></r></p></e> <!--"sponsoring"-->
 <e>       <p><l>стратегиялық<s n="adj"/></l>      <r>стратегиялык<s n="adj"/></r></p></e> <!--"strategic"-->
-
+<e>       <p><l>сынды<s n="adj"/></l>             <r>сыяктуу<s n="part"/></r></p></e> <!--"like"-->
+<e>       <p><l>жергілікті<s n="adj"/></l>        <r>жергиликтүү<s n="adj"/></r></p></e> <!--"local"-->
 
 
 <!-- SECTION: Adverbs -->
@@ -387,6 +392,7 @@
 <e>       <p><l>әлі<s n="adv"/></l>                <r>али<s n="adv"/></r></p></e> <!--"still"-->
 <e>       <p><l>әлі<b/>де<b/>болса<s n="adv"/></l> <r>дагы<b/>эле<s n="adv"/></r></p></e> <!--"still"-->
 <e>       <p><l>енді<s n="adv"/></l>               <r>эми<s n="adv"/></r></p></e> <!--"теперь"-->
+<e>       <p><l>керісінше<s n="adv"/></l>          <r>тескерисинче<s n="adv"/></r></p></e> <!--"наоборот"-->
 
 
 <!-- SECTION: Verbs -->
@@ -452,6 +458,7 @@
 <e>       <p><l>ұйымдастыр<s n="v"/><s n="tv"/></l>   <r>уюштур<s n="v"/><s n="tv"/></r></p></e> <!--"to organize"  -->
 <e>       <p><l>қатыс<s n="v"/><s n="iv"/></l>      <r>катыш<s n="v"/><s n="iv"/></r></p></e> <!--"participate"  -->
 <e>       <p><l>жаса<s n="v"/><s n="tv"/></l>      <r>жаса<s n="v"/><s n="iv"/></r></p></e> <!--"do,make"  -->
+<e>       <p><l>дәлелде<s n="v"/><s n="tv"/></l>   <r>далилде<s n="v"/><s n="iv"/></r></p></e> <!--"prove"  -->
 
 
 <!-- SECTION: Auxiliaries -->
