@@ -1613,16 +1613,26 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
+!===================!
+
+
+%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1844,6 +1854,7 @@ XXI NUM-ROMAN ; ! ""
 құс:құс N1 ; ! "bird"
 қыз:қыз N1 ; ! "girl,daughter,virgin"
 лига:лига N1 ; ! "league"
+мамыр:мамыр N1 ; ! ""
 матч:матч N1 ; ! ""
 мысық:мысық N1 ; ! "cat,copper"
 ойын:ойын N1 ; ! "play, game"
@@ -1855,6 +1866,7 @@ XXI NUM-ROMAN ; ! ""
 серіктестік:серіктестік N1 ; ! "partnership"
 серіктес:серіктес N1 ; ! "partner"
 сөз:сөз N1 ; ! "word"
+стадион:стадион N1 ; ! "stadium"
 су:су N1 ; ! "water"
 сұрақ:сұрақ N1 ; ! "question"
 сыра:сыра N1 ; ! "beer"
@@ -1867,6 +1879,7 @@ XXI NUM-ROMAN ; ! ""
 үй:үй N1 ; ! "home,house"
 үн:үн N1 ; ! "voice,call"
 үстел:үстел N1 ; ! "table"
+ұшақ:ұшақ N1 ; ! ""
 финал:финал%{э%}%{л%} N1 ; ! "final" ! Dir/LR  ! Apparently this can take front-vowel endings 8-\
 финал:финал N1 ; ! "final"
 футбол:футбол N1 ; ! "football"
@@ -1890,10 +1903,12 @@ XXI NUM-ROMAN ; ! ""
  LEXICON ProperNouns
 
 Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
+Лондон:Лондон NP-TOP ; ! "London"
 Алмания:Алмания NP-TOP ; ! "Germany"
 Еуропа:Еуропа NP-TOP ; ! "Europe"
 Сигнал% Идуна% Парк:Сигнал% Идуна% Парк NP-TOP; ! "Signal Iduna Park football stadium"
 Сигнал% Идуна% Парк:Сигнал% Идуна% Парк%{ъ%} NP-TOP; ! "Signal Iduna Park football stadium" ! Dir/LR
+Вимблей:Вимблей NP-TOP; ! "Wembley Stadium"
 Азамат:Азамат NP-ANT-M; ! "Azamat" (Arabic)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 Темел:Темел NP-ANT-M ; ! "Temel (Turkish name)"
@@ -1925,6 +1940,7 @@ XXI NUM-ROMAN ; ! ""
 маңызды:маңызды A2 ; ! ""
 ақырын:ақырын A1 ; ! "slow"
 анық:анық A1 ; ! "clear;clearly"
+арнайы:арнайы A1 ; ! ""
 дұрыс:дұрыс A1 ; ! "correct"
 ескі:ескі A1 ; ! "old"
 жақсы:жақсы A1 ; ! "good"
@@ -1977,6 +1993,7 @@ XXI NUM-ROMAN ; ! ""
 айт:айт V-TV ; ! "say,tell/сказать,говорить,рассказывать"  ! basically TV...
 ал:ал V-TV ; ! "take,recieve,buy,collect,"
 ал:ал V-TV ; ! "take,recieve,buy,collect,"
+апар:апар V-TV ; ! "carry,take to,deliver to/отвезти,отнести,доставить"
 арттыр:арттыр V-TV ; ! "to enlarge" NOTE caus
 бар:бар V-IV ; ! ""
 бас:бас V-IV ; ! "вставать"
@@ -2011,6 +2028,7 @@ XXI NUM-ROMAN ; ! ""
 жат:жат V-IV ; ! "lie"
 же:же V-TV ; ! "eat"
 жең:жең V-TV ; ! "win,overcome"
+жобала:жобала V-TV ; ! "to plan"
 жүгір:жүгір V-IV ; ! "run"
 жүр:жүр V-IV ; ! "move"
 жүр:жүр V-IV ; ! "move"
@@ -2029,6 +2047,7 @@ XXI NUM-ROMAN ; ! ""
 қара:қара V-TV ; ! "look at"
 қатыс:қатыс V-IV ; ! "participate"
 қой:қой V-TV ; ! "release" put
+мәлімде:мәлімде V-TV ; ! "to inform"
 ойла:ойла V-TV ; ! "think"
 ойна:ойна V-TV ; ! "play"
 ойна:ойна V-TV ; ! "play"

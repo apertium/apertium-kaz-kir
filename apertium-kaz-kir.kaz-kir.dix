@@ -306,6 +306,9 @@
 <e>	  <p><l>тұрғы<s n="n"/></l>            <r>көз<b/>караш<s n="n"/></r></p></e> <!--"viewpoint"-->
 <e>	  <p><l>қолтаңба<s n="n"/></l>         <r>кол<b/>тамга<s n="n"/></r></p></e> <!--"autograph,signature"-->
 <e>	  <p><l>табыс<s n="n"/></l>            <r>жетишкендик<s n="n"/></r></p></e> <!--"success"-->
+<e>	  <p><l>мамыр<s n="n"/></l>            <r>май<s n="n"/></r></p></e> <!--"May(month)"-->
+<e>	  <p><l>стадион<s n="n"/></l>          <r>стадион<s n="n"/></r></p></e> <!--"stadium"-->
+<e>	  <p><l>ұшақ<s n="n"/></l>             <r>учак<s n="n"/></r></p></e> <!--"airplane"-->
 
 
     <!-- Nationalities -->
@@ -329,7 +332,9 @@
 <e>       <p><l>Иерусалим<s n="np"/><s n="top"/></l>             <r>Иерусалим<s n="np"/><s n="top"/></r></p></e> <!--"Jerusalem"-->
 <e>       <p><l>Алмания<s n="np"/><s n="top"/></l>               <r>Германия<s n="np"/><s n="top"/></r></p></e> <!--"Germany"-->
 <e>       <p><l>Еуропа<s n="np"/><s n="top"/></l>                <r>Европа<s n="np"/><s n="top"/></r></p></e> <!--"Europe"-->
+<e>       <p><l>Лондон<s n="np"/><s n="top"/></l>                <r>Лондон<s n="np"/><s n="top"/></r></p></e> <!--"London"-->
 <e>       <p><l>Сигнал<b/>Идуна<b/>Парк<s n="np"/><s n="top"/></l>  <r>Сигнал<b/>Идуна<b/>Парк<s n="np"/><s n="top"/></r></p></e> <!--"Signal Iduna Park"-->
+<e>       <p><l>Вимблей<s n="np"/><s n="top"/></l>                <r>Вимблей<s n="np"/><s n="top"/></r></p></e> <!--"Wembley Stadium"-->
     <!-- Organizations -->
 <e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>   <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
 <e>       <p><l>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></l>  <r>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></r></p></e> <!--"Borussia Dortmund"-->
@@ -386,6 +391,7 @@
 <e>       <p><l>жартылай<s n="adv"/></l>          <r>жарым<s n="adj"/></r></p></e> <!--"half,semi"-->
 <e>       <p><l>ұқсас<s n="adj"/></l>             <r>окшош<s n="adj"/></r></p></e> <!--"similar"-->
 <e>       <p><l>маңызды<s n="adj"/></l>           <r>маанилүү<s n="adj"/></r></p></e> <!--"meaningful"-->
+<e>       <p><l>арнайы<s n="adj"/></l>            <r>атайын<s n="adv"/></r></p></e> <!--"purposely"-->
 
 
 <!-- SECTION: Adverbs -->
@@ -478,6 +484,9 @@
 <e>       <p><l>дәлелде<s n="v"/><s n="tv"/></l>   <r>далилде<s n="v"/><s n="tv"/></r></p></e> <!--"prove"  -->
 <e>       <p><l>жең<s n="v"/><s n="tv"/></l>       <r>жең<s n="v"/><s n="tv"/></r></p></e> <!--"win,overcome"  -->
 <e>       <p><l>қал<s n="v"/><s n="iv"/></l>       <r>кал<s n="v"/><s n="iv"/></r></p></e> <!--"stay, remain"  -->
+<e>       <p><l>жобала<s n="v"/><s n="tv"/></l>    <r>планда<s n="v"/><s n="tv"/></r></p></e> <!--"to plan"  -->
+<e>       <p><l>апар<s n="v"/><s n="tv"/></l>      <r>алып<b/>бар<s n="v"/><s n="tv"/></r></p></e> <!-- "carry,take to,deliver to/отвезти,отнести,доставить" -->
+<e>       <p><l>мәлімде<s n="v"/><s n="tv"/></l>   <r>маалымда<s n="v"/><s n="tv"/></r></p></e> <!--"to inform"  -->
 
 
 <!-- SECTION: Auxiliaries -->
