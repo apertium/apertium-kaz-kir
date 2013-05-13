@@ -1613,16 +1613,26 @@ LEXICON ModalParticles
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 
  LEXICON Postadverbs
+!===================!
+
+
+%-ақ:%-ақ POSTADV ; ! ""
 
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1799,6 +1809,9 @@ XXI NUM-ROMAN ; ! ""
 аст:ас%{т%} N1 ; ! "down side"
 ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
 әке:әке N1 ; ! "father"
+әуе% жолы:әуе% жолы N1; ! "air line"
+әуежолы:әуежолы N1; ! "air line"
+бағыт:бағыт N1 ; ! ""
 бақша:бақша N1 ; ! "garden house"
 бақыт:бақыт N1 ; ! "luck"
 бала:бала N1 ; ! "child"
@@ -1812,6 +1825,7 @@ XXI NUM-ROMAN ; ! ""
 дауыс:дау%{y%}с N1 ; ! "sound, voice" (similar to халық) Dir/LR
 дауыс:дауыс N1 ; ! "sound, voice"
 директор:директор N1 ; ! "director"
+дүние:дүние N1 ; ! "world,possesions"
 дыбыс:дыбыс N1 ; ! "sound,noise"
 ел:ел N1 ; ! "country,nation"
 есік:есік N1 ; ! "door"
@@ -1848,17 +1862,21 @@ XXI NUM-ROMAN ; ! ""
 себеп:себеп N1 ; ! "reason"
 серік:серік N1 ; ! "companion"
 серіктестік:серіктестік N1 ; ! "partnership"
+серіктес:серіктес N1 ; ! "partner"
 сөз:сөз N1 ; ! "word"
 су:су N1 ; ! "water"
 сұрақ:сұрақ N1 ; ! "question"
 сыра:сыра N1 ; ! "beer"
+табыс:табыс N1 ; ! ""
 терезе:терезе N1 ; ! "window"
 түйе:түйе N1 ; ! "camel" FIXME CHECK
 түс:түс N1 ; ! "noon"
+тұрғы:тұрғы N1 ; ! "viewpoint"
 уақыт:уақыт N1 ; ! "time"
 үй:үй N1 ; ! "home,house"
 үн:үн N1 ; ! "voice,call"
 үстел:үстел N1 ; ! "table"
+финал:финал N1 ; ! "final"
 футбол:футбол N1 ; ! "football"
 шелек:шелек N1 ; ! "bucket"
 ынтымақтастық:ынтымақтастық N1 ; ! ""
@@ -1867,6 +1885,8 @@ XXI NUM-ROMAN ; ! ""
 мерәсім:мерәсім N1 ; ! "ceremony"
 басқарушы:басқарушы N1 ; ! "manager"
 лауазымды:лауазымды N1 ; ! "должностной"
+сюрприз:сюрприз N1 ; ! "surprise"
+қолтаңба:қолтаңба N1 ; ! "autograph,signature"
 алд:ал%{д%} N1 ; ! "front"
 арт:арт N1 ; ! "back"
 аст:аст N1 ; ! "under"
@@ -1895,6 +1915,8 @@ XXI NUM-ROMAN ; ! ""
 Барселона:Барселона NP-ORG; ! "Futbol Club Barcelona"
 Манчестер% Юнайтед:Манчестер% Юнайтед NP-ORG; ! "Manchester United Football Club"
 Бундеслига:Бундеслига NP-ORG; ! "Bundesliga"
+Чемпиондар% лигасы:Чемпиондар% лигасы NP-ORG ; ! "UEFA Champions League"
+Реал% Мадрид:Реал% Мадрид%{☭%} NP-ORG ; ! "Real Madrid Club de Fútbol"
 
  LEXICON Adjectives
 
@@ -1907,6 +1929,7 @@ XXI NUM-ROMAN ; ! ""
 жылдық:жылдық A3 ; ! "-летний,годовой,годичный"
 спонсорлық:спонсорлық A3 ; ! "спонсорский"
 мүмкін:мүмкін A1 ; ! "possible"  ! A1 not A3 because мүмкін can be used as adv ("possibly"), and can even be comparative -JNW
+маңызды:маңызды A2 ; ! ""
 ақырын:ақырын A1 ; ! "slow"
 анық:анық A1 ; ! "clear;clearly"
 дұрыс:дұрыс A1 ; ! "correct"
@@ -1930,6 +1953,7 @@ XXI NUM-ROMAN ; ! ""
 суық:суық A1 ; ! "cold"
 тура:тура A1 ; ! "straight"
 үлкен:үлкен A1 ; ! "big"
+ұқсас:ұқсас A1 ; ! "similar"
 ыссы:ыссы A1 ; ! "hot"
 ыстық:ыстық A1 ; ! "hot"
 
@@ -1942,6 +1966,7 @@ XXI NUM-ROMAN ; ! ""
 әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
 әрдайым:әрдайым ADV ; ! "always"
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
+жартылай:жартылай ADV ; ! ""
 керісінше:керісінше ADV ; ! ""
 қайта:қайта ADV ; ! "again"
 өте:өте ADV ; ! "very"
@@ -1992,6 +2017,7 @@ XXI NUM-ROMAN ; ! ""
 жат:жат V-IV ; ! "lie"
 жат:жат V-IV ; ! "lie"
 же:же V-TV ; ! "eat"
+жең:жең V-TV ; ! "win,overcome"
 жүгір:жүгір V-IV ; ! "run"
 жүр:жүр V-IV ; ! "move"
 жүр:жүр V-IV ; ! "move"
@@ -2006,6 +2032,7 @@ XXI NUM-ROMAN ; ! ""
 көр:көрін V-TV-PASS ; ! "be seen"
 көр:көр V-TV-NOPASS ; ! "see"
 күл:күл V-IV ; ! "laugh"
+қал:қал V-IV ; ! "remain"
 қара:қара V-TV ; ! "look at"
 қатыс:қатыс V-IV ; ! "participate"
 қой:қой V-TV ; ! "release" put
@@ -2059,6 +2086,7 @@ XXI NUM-ROMAN ; ! ""
 жүр:жүр Vinfl-AUX ; ! 
 кел:кел Vinfl-AUX ; !
 кет:кет Vinfl-AUX ; ! 
+қал:қал Vinfl-AUX ; ! 
 отыр:отыр Vinfl-AUX ; ! 
 отыр:отыр Vinfl-AUX ; ! 
 сал:сал Vinfl-AUX ; ! 
