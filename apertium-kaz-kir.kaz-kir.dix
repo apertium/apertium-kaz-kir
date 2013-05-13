@@ -309,6 +309,7 @@
 <e>	  <p><l>мамыр<s n="n"/></l>            <r>май<s n="n"/></r></p></e> <!--"May(month)"-->
 <e>	  <p><l>стадион<s n="n"/></l>          <r>стадион<s n="n"/></r></p></e> <!--"stadium"-->
 <e>	  <p><l>ұшақ<s n="n"/></l>             <r>учак<s n="n"/></r></p></e> <!--"airplane"-->
+<e>	  <p><l>түр<s n="n"/></l>              <r>түр<s n="n"/></r></p></e> <!--"form,variety"-->
 
 
     <!-- Nationalities -->
@@ -338,6 +339,7 @@
     <!-- Organizations -->
 <e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>   <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
 <e>       <p><l>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></l>  <r>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></r></p></e> <!--"Borussia Dortmund"-->
+<e>       <p><l>Байер<b/>Мюнхен<s n="np"/><s n="org"/></l>       <r>Байер<b/>Мюнхен<s n="np"/><s n="org"/></r></p></e> <!--"FC Bayern München"-->
 <e>       <p><l>Барселона<s n="np"/><s n="org"/></l>  		 <r>Барселона<s n="np"/><s n="org"/></r></p></e> <!--"Futbol Club Barcelona"-->
 <e>       <p><l>Манчестер<b/>Юнайтед<s n="np"/><s n="org"/></l>  <r>Манчестер<b/>Юнайтед<s n="np"/><s n="org"/></r></p></e> <!--"Manchester United Football Club"-->
 <e>       <p><l>Бундеслига<s n="np"/><s n="org"/></l>  		 <r>Бундеслига<s n="np"/><s n="org"/></r></p></e> <!--"Bundesliga"-->
@@ -392,6 +394,8 @@
 <e>       <p><l>ұқсас<s n="adj"/></l>             <r>окшош<s n="adj"/></r></p></e> <!--"similar"-->
 <e>       <p><l>маңызды<s n="adj"/></l>           <r>маанилүү<s n="adj"/></r></p></e> <!--"meaningful"-->
 <e>       <p><l>арнайы<s n="adj"/></l>            <r>атайын<s n="adv"/></r></p></e> <!--"purposely"-->
+<e>       <p><l>ерекше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!--"certain, special"-->
+<e>       <p><l>жарасатындай<s n="adj"/></l>      <r>жарашыктуу<s n="adj"/></r></p></e> <!--""-->
 
 
 <!-- SECTION: Adverbs -->
@@ -484,9 +488,13 @@
 <e>       <p><l>дәлелде<s n="v"/><s n="tv"/></l>   <r>далилде<s n="v"/><s n="tv"/></r></p></e> <!--"prove"  -->
 <e>       <p><l>жең<s n="v"/><s n="tv"/></l>       <r>жең<s n="v"/><s n="tv"/></r></p></e> <!--"win,overcome"  -->
 <e>       <p><l>қал<s n="v"/><s n="iv"/></l>       <r>кал<s n="v"/><s n="iv"/></r></p></e> <!--"stay, remain"  -->
-<e>       <p><l>жобала<s n="v"/><s n="tv"/></l>    <r>планда<s n="v"/><s n="tv"/></r></p></e> <!--"to plan"  -->
+<e>       <p><l>жобала<s n="v"/><s n="tv"/></l>    <r>проектиле<s n="v"/><s n="tv"/></r></p></e> <!--"to project"  -->
 <e>       <p><l>апар<s n="v"/><s n="tv"/></l>      <r>алып<b/>бар<s n="v"/><s n="tv"/></r></p></e> <!-- "carry,take to,deliver to/отвезти,отнести,доставить" -->
 <e>       <p><l>мәлімде<s n="v"/><s n="tv"/></l>   <r>маалымда<s n="v"/><s n="tv"/></r></p></e> <!--"to inform"  -->
+<e>       <p><l>боя<s n="v"/><s n="tv"/></l>       <r>боё<s n="v"/><s n="tv"/></r></p></e> <!--"to paint"  -->
+<e>       <p><l>сайыс<s n="v"/><s n="iv"/></l>     <r>кол<b/>кармаш<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
+<e>       <p><l>келтір<s n="v"/><s n="tv"/></l>    <r>келтир<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
+
 
 
 <!-- SECTION: Auxiliaries -->
