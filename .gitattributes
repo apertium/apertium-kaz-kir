@@ -23,6 +23,9 @@
 /apertium-view.sh -text
 /autogen.sh -text
 /configure.ac -text
+dev/countstems.sh -text
+dev/kaz-countstems.sh -text
+dev/kir-countstems.sh -text
 dev/lexical_selection_rules_needed.txt -text
 /kaz-kir.prob -text svneol=unset#unset
 /kir-kaz.prob -text svneol=unset#unset
