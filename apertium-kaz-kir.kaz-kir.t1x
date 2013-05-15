@@ -7,6 +7,14 @@
   <section-def-cats>
 
 <!-- POS categories -->
+    <def-cat n="қуанышты">
+      <cat-item lemma="қуанышты" tags="adj.subst.nom"/>
+    </def-cat>
+
+    <def-cat n="copula">
+      <cat-item lemma="е" tags="cop.*"/>
+    </def-cat>
+
     <def-cat n="екеуі">
       <cat-item lemma="екі" tags="num.coll.subst.px3sp.*"/>
     </def-cat>
@@ -672,6 +680,27 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: қуанышты.adj.subst.nom+cop → кубаныч.adj.subst.nom+cop → кубаныч.nom.loc+cop">
+      <pattern>
+        <pattern-item n="қуанышты"/>
+        <pattern-item n="copula"/>
+      </pattern>
+      <action>
+        <!-- let><clip pos="1" side="tl" part="subst"/><lit v="subst"/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let -->
+        <out>
+            <lu>
+              <!-- clip pos="1" side="tl" part="whole"/ -->
+              <lit v="кубаныч"/>
+              <lit-tag v="n.loc"/>
+            </lu>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+	 </rule>
 
     <rule comment="REGLA: Gerunds">
       <pattern>

@@ -310,6 +310,7 @@
 <e>	  <p><l>стадион<s n="n"/></l>          <r>стадион<s n="n"/></r></p></e> <!--"stadium"-->
 <e>	  <p><l>ұшақ<s n="n"/></l>             <r>учак<s n="n"/></r></p></e> <!--"airplane"-->
 <e>	  <p><l>түр<s n="n"/></l>              <r>түр<s n="n"/></r></p></e> <!--"form,variety"-->
+<e>      <p><l>қуаныш<s n="n"/></l>          <r>кубаныч<s n="n"/></r></p></e> <!-- "happiness"-->
 
 
     <!-- Nationalities -->
@@ -368,6 +369,7 @@
 <e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
 <e>       <p><l>кішкентай<s n="adj"/></l>         <r>кичинекей<s n="adj"/></r></p></e> <!-- "small"-->
 <e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "happy"-->
+<e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубаныч<s n="n"/></r></p></e> <!-- "happy (қуанышты+copula → кубанычта+copula, see lrx)"-->
 <e>       <p><l>бар<s n="adj"/></l>               <r>бар<s n="adj"/></r></p></e> <!-- "exists"-->
 <e>       <p><l>жоқ<s n="adj"/></l>               <r>жок<s n="adj"/></r></p></e> <!-- "doesn't exist"-->
 <e>       <p><l>ескі<s n="adj"/></l>              <r>эски<s n="adj"/></r></p></e> <!-- "old (things)"-->
