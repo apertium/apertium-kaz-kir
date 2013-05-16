@@ -1551,6 +1551,7 @@ LEXICON Nouns
 команда:команда N-INFL ;
 келишим:келишим N-INFL ;
 машыктыруучу:машыктыруучу N-INFL; ! "coach"
+демөөрчү:демөөрчү N-INFL ;
 сөз:сөз N-INFL ;
 ит:ит N-INFL ;
 терезе:терезе N-INFL ;
@@ -1645,6 +1646,7 @@ LEXICON Adjectives
 керек:керек ADJ ;
 чоң:чоң ADJ ;
 жарашыктуу:жарашыктуу ADJ ;
+жарашчудай:жарашчудай ADJ ;
 чоң:чоң ADJ ;
 тунук:тунук ADJ ;
 туура:туура ADJ ;
@@ -1656,6 +1658,7 @@ LEXICON Adjectives
 кубанычтуу:кубанычтуу ADJ ;
 жашаар:жашаар ADJ ; ! "X year-old"
 көңүлдүү:көңүлдүү ADJ ; ! "cheerful"
+демөөрчүлүк:демөөрчүлүк ADJ ; ! "sponsoring [e.g., organisation]"
 
 LEXICON Adverbs
 
