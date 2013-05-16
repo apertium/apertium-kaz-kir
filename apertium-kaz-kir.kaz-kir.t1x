@@ -7,6 +7,14 @@
   <section-def-cats>
 
 <!-- POS categories -->
+    <def-cat n="директоры">
+      <cat-item lemma="директор" tags="n.px3sp.*"/>
+    </def-cat>
+
+    <def-cat n="orgs">
+      <cat-item tags="np.org.*"/>
+    </def-cat>
+
     <def-cat n="қуанышты">
       <cat-item lemma="қуанышты" tags="adj.subst.nom"/>
     </def-cat>
@@ -84,6 +92,7 @@
 
     <def-cat n="adj">
       <cat-item tags="adj"/>
+      <cat-item tags="n.attr"/>
     </def-cat>
 
     <def-cat n="v">
@@ -698,6 +707,30 @@
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
+        </out>
+      </action>
+	 </rule>
+
+    <rule comment="REGLA: org.nom [adj] директор.n.px3sp.* → org.gen">
+      <pattern>
+        <pattern-item n="orgs"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="директоры"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
         </out>
       </action>
 	 </rule>
