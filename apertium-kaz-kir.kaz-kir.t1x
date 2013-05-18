@@ -748,7 +748,7 @@
           </lu>
           <b pos="1"/>
           <lu>
-            <clip pos="3" side="tl" part="whole"/>
+            <clip pos="2" side="tl" part="whole"/>
           </lu>
         </out>
       </action>
