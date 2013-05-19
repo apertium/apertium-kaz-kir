@@ -134,7 +134,32 @@
 
     <def-cat n="month">
       <!-- FIXME: add all monthes here -->
+      <cat-item lemma="ақпан" tags="n.*"/>
+      <cat-item lemma="қаңтар" tags="n.*"/>
+      <cat-item lemma="наурыз" tags="n.*"/>
+      <cat-item lemma="сәуір" tags="n.*"/>
+      <cat-item lemma="мамыр" tags="n.*"/>
+      <cat-item lemma="маусым" tags="n.*"/>
+      <cat-item lemma="шілде" tags="n.*"/>
       <cat-item lemma="тамыз" tags="n.*"/>
+      <cat-item lemma="қыркүйрек" tags="n.*"/>
+      <cat-item lemma="қазан" tags="n.*"/>
+      <cat-item lemma="қараша" tags="n.*"/>
+      <cat-item lemma="желтоқсан" tags="n.*"/>
+      <cat-item lemma="январь" tags="n.*"/>
+      <cat-item lemma="февраль" tags="n.*"/>
+      <cat-item lemma="март" tags="n.*"/>
+      <cat-item lemma="апрель" tags="n.*"/>
+      <cat-item lemma="май" tags="n.*"/>
+      <cat-item lemma="июнь" tags="n.*"/>
+      <cat-item lemma="июль" tags="n.*"/>
+      <cat-item lemma="август" tags="n.*"/>
+      <cat-item lemma="сентябрь" tags="n.*"/>
+      <cat-item lemma="октябрь" tags="n.*"/>
+      <cat-item lemma="нояабрь" tags="n.*"/>
+      <cat-item lemma="декябрь" tags="n.*"/>
+
+
     </def-cat>
 
     <def-cat n="day">
@@ -925,6 +950,30 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: NUM MONTH 
+                          NUM MONTH">
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="month"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <lu>
+            <lit v="-"/>
+            <lit-tag v="guio"/>
+          </lu>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
 
     <rule comment="REGLA: NUM MONTH күні
                           NUM MONTH көнне">
