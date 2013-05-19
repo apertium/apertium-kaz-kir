@@ -35,7 +35,6 @@
 		<match lemma="қуанышты" tags="adj.*"><select lemma="кубанычтуу" tags="adj.*"/></match>
 	</rule>
 	<rule>
-
 		<!-- қуанышты+copula → кубанычта+copula -->
 		<match lemma="қуанышты" tags="adj.subst.nom"><select lemma="кубаныч" tags="n.*" /></match>
 		<match lemma="е" tags="cop.*"/>

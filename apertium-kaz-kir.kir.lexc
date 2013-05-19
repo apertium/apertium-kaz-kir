@@ -1420,6 +1420,7 @@ LEXICON Nouns
 ара:ара N-INFL ; 
 аң:аң N-INFL ; 
 адам:адам N-INFL ; ! "man, human, person"
+август:август N-INFL ;  ! "August"
 бала:бала N-INFL-SG ; ! "child"
 бала:балдар N-INFL-PL ; ! "children"
 баш:баш N-INFL ; ! "head"
@@ -1428,6 +1429,8 @@ LEXICON Nouns
 дарак:дарак N-INFL ; 
 дүйнө:дүйнө N-INFL ;  ! "world" (?)
 жан:жан N-INFL ; ! "jan"
+июль:июль N-INFL ; ! "" 
+июнь:июнь N-INFL ;
 китеп:китеп N-INFL ; ! "book"
 кол:кол N-INFL ; ! "hand, arm; signature"
 кол% тамга:кол% тамга N-INFL ; ! "autograph"
@@ -1481,10 +1484,12 @@ LEXICON Nouns
 үн:үн N-INFL ; 
 шерик:шерик N-INFL ; 
 адам:адам N-INFL ; 
+август:август N-INFL ; 
 жер:жер N-INFL ; 
 ата:ата N-INFL ; 
 аң:аң N-INFL ; 
 жер:жер N-INFL ; ! "land"
+март:март N-INFL ; ! "March"
 нерсе:нерсе N-INFL ; ! "thing"
 бакча:бакча N-INFL ; 
 башчы:башчы N-INFL ; 
@@ -1508,13 +1513,24 @@ LEXICON Nouns
 үстөл:үстөл N-INFL ; ! "table"
 аба% ырайы:аба% ырай N-INFL-3PX-COMPOUND ; ! "weather"   ! FIXME: is ырай<px3>, so takes cases after <px3>
 аба% жолу:аба% жол N-INFL-3PX-COMPOUND ;
+январь:январь N-INFL ;
+февраль:февраль N-INFL ; 
+март:март N-INFL ;
+апрель:апрель N-INFL ;
 май:май N-INFL ;
+август:август N-INFL ;
+сентябрь:сентябрь N-INFL ;
+ноябрь:ноябрь N-INFL ;
 багыт:багыт N-INFL ;
 ара:ара N-INFL ;
 келишим:келишим N-INFL ;
 жүз:жүз N-INFL ;
 бет:бет N-INFL ;
 май:май N-INFL ;
+июнь:июнь N-INFL ;
+июль:июль N-INFL ;
+апрель:апрель N-INFL ;
+сентябрь:сентябрь N-INFL ;
 себеп:себеп N-INFL ;
 добуш:добуш N-INFL ;
 шериктештик:шериктештик N-INFL ;
