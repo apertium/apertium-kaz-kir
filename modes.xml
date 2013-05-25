@@ -244,6 +244,18 @@
     </pipeline>
   </mode>
 
+  <mode name="kaz-kir-disam" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="kaz-kir.automorf.hfst"/>
+      </program>
+      <program name="cg-conv -a -l"/>
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-kaz-kir.kaz-kir.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
   <mode name="kaz-kir-biltrans" install="no">
     <pipeline>
       <program name="hfst-proc -w">
