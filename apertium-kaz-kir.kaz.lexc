@@ -1035,7 +1035,7 @@ LEXICON PRON-DEM-INFL
 %<loc%>:нда CLIT-GENERAL ;
 %<px%>:нікі%{n%} CASE ;
 %<loc%>:ндагы ATTR/SUBST ;
-%<sim%>:ндай CASE ;
+%<sim%>:ндай CASE ;  ! FIXME: should have <det>, etc.
 %<adv%>:лай CLIT-GENERAL ;
 %<qnt%>:нша CLIT ;         !
 
@@ -1315,6 +1315,13 @@ LEXICON DET-REF
 
 !!!!!!!!!!!!!!!!!!!!!!     OTHER PART-OF-SPEECH LEXICONS
 
+LEXICON N1-ABBR
+
+%<n%>%<attr%>: # ;
+%<n%>:%- POSSESSION ;
+%<n%>:%- CASE-ETC ;
+
+
 LEXICON N1
 
 %<n%>%<attr%>: # ;
@@ -1559,6 +1566,7 @@ LEXICON ABBR
 
 %<abbr%>: # ;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1607,6 +1615,7 @@ LEXICON ModalParticles
 мен:бен POST ; ! "with" + NOM       ! Dir/LR
 мен:мен POST ; ! "with" + NOM       ! Dir/LR
 мен:пен POST ; ! "with" + NOM       ! Dir/LR
+сияқты:сияқты POST ; ! "like, как будто" + NOM     FIXME:CHECK: POS - "modal word"="бугай" ?
 үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
 шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
@@ -1789,7 +1798,9 @@ XXI NUM-ROMAN ; ! ""
 !=============!
  LEXICON Nouns
 
+аберрация:аберрация N1 ; ! "aberration"
 ағаш:ағаш N1 ; ! "tree"
+ағза:ағза N1 ; ! "organ"
 адам:адам N1 ; ! "man"
 айнала:айнала N1 ; ! "around"
 ақпан:ақпан N1 ; ! "february"
@@ -1800,6 +1811,7 @@ XXI NUM-ROMAN ; ! ""
 аст:ас%{т%} N1 ; ! "down side"
 ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
 әке:әке N1 ; ! "father"
+әсер:әсер N1 ; ! "impression,influence"
 әуежолы:әуе% жол N-COMPOUND-PX ; ! "air line" ! Dir/LR
 әуежолы:әуежол N-COMPOUND-PX ; ! "air line"
 бағыт:бағыт N1 ; ! ""
@@ -1825,19 +1837,24 @@ XXI NUM-ROMAN ; ! ""
 жан:жан N1 ; ! "soul"
 жануар:жануар N1 ; ! "biest"
 жас:жас N1 ; ! "age"
+жасуша:жасуша N1 ; ! "cell (biol.)"
 жауап:жауап N1 ; ! "answer"
 желтоқсан:желтоқсан N1 ; ! "december"
 жер:жер N1 ; ! "land,earth"
 жүз:жүз N1 ; ! "face"
 жыл:жыл N1 ; ! "year"
+зақымдалу:зақымдалу N1 ; ! "damage"
 заман:заман N1 ; ! "time,age"
 зат:зат N1 ; ! "thing"
 ит:ит N1 ; ! "dog"
+ісік:ісік N1 ; ! "tumour"
 іш:іш N1 ; ! "inside,stomach"
+кез:кез N1 ; ! "time,occurance"
 келісім:келісім N1 ; ! "agreement"
 кітап:кітап N1 ; ! "book"
 команда:команда N1 ; ! "sports team"
 көз:көз N1 ; ! "eye"
+күн:күн N1 ; ! "day,sun"
 күшік:күшік N1 ; ! "pup"
 қазан:қазан N1 ; ! "October,Pan"
 қаңтар:қаңтар N1 ; ! ""
@@ -1846,6 +1863,7 @@ XXI NUM-ROMAN ; ! ""
 қой:қой N1 ; ! "ram,sheep"
 қол:қол N1 ; ! "hand"
 қолтаңба:қолтаңба N1 ; ! "signature"
+құрылым:құрылым N1 ; ! "structure"
 құс:құс N1 ; ! "bird"
 қыз:қыз N1 ; ! "girl,daughter,virgin"
 қыркүйек:қыркүйек N1 ; ! ""
@@ -1853,11 +1871,15 @@ XXI NUM-ROMAN ; ! ""
 мамыр:мамыр N1 ; ! ""
 матч:матч N1 ; ! ""
 маусым:маусым N1 ; ! "June"
+мутация:мутация N1 ; ! "mutation"
 мысық:мысық N1 ; ! "cat,copper"
 наурыз:наурыз N1 ; ! "March,Navruz"
+нәтиже:нәтиже N1 ; ! "result"
 ойын:ойын N1 ; ! "play, game"
 орындық:орындық N1 ; ! "chair"
+өзгеріс:өзгеріс N1 ; ! ""
 өң:өң N1 ; ! "appearance"
+радиация:радиация N1 ; ! ""
 сағат:сағат N1 ; ! "hour"
 сәуір:сәуір N1 ; ! "april"
 себеп:себеп N1 ; ! "reason"
@@ -1894,6 +1916,7 @@ XXI NUM-ROMAN ; ! ""
 лауазымды:лауазымды N1 ; ! "должностной"
 сюрприз:сюрприз N1 ; ! "surprise"
 қолтаңба:қолтаңба N1 ; ! "autograph,signature"
+ДНҚ:ДНҚ%{а%} N1-ABBR ; ! "DNA"
 алд:ал%{д%} N1 ; ! "front"
 ара:ара N1 ; ! "among"
 арт:арт N1 ; ! "back"
@@ -1931,15 +1954,18 @@ XXI NUM-ROMAN ; ! ""
 
  LEXICON Adjectives
 
+биологиялық:биологиялық A4 ; ! "biological"
 стратегиялық:стратегиялық A4 ; ! ""
 сынды:сынды A4 ; ! ""
 техникалық:техникалық A4 ; ! ""
+хромосомалық:хромосомалық A4 ; ! "chromosomal"
 бар:бар A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
 жоқ:жоқ A3 ;
 жылдық:жылдық A3 ; ! "-летний,годовой,годичный"
 спонсорлық:спонсорлық A3 ; ! "спонсорский"
 мүмкін:мүмкін A1 ; ! "possible"  ! A1 not A3 because мүмкін can be used as adv ("possibly"), and can even be comparative -JNW
+қайтымсыз:қайтымсыз A2 ; ! "irreversible" CHECK Use/MT
 маңызды:маңызды A2 ; ! ""
 ақырын:ақырын A1 ; ! "slow"
 анық:анық A1 ; ! "clear;clearly"
@@ -1954,6 +1980,7 @@ XXI NUM-ROMAN ; ! ""
 жергілікті:жергілікті A1 ; ! "local"
 жылы:жылы A1 ; ! "warm"
 кәрі:кәрі A1 ; ! "old (person)"
+кері:кері A1 ; ! ""
 керек:керек A1 ; ! ""
 кішкентай:кішкентай A1 ; ! "small, little"
 көңілді:көңілді A1 ; ! "happy"
@@ -1986,6 +2013,7 @@ XXI NUM-ROMAN ; ! ""
 өте:өте ADV ; ! "very"
 ертең:ертең ADV ; ! ""
 қазір:қазір ADV ; ! ""
+алғаш:алғаш ADV-WITH-KI ; ! "at first > first/initial"
 бүгін:бүгін ADV-WITH-KI ; ! "today > today's"   FIXME: takes abl, dat, ...
 енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
 жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
@@ -2026,6 +2054,7 @@ XXI NUM-ROMAN ; ! ""
 дәлелде:дәлелде V-TV ; ! "prove"
 де:де V-TV-NOPASS ; ! "speak"
 де:делін V-TV-PASS ; ! "speak"
+есепте:есепте V-TV ; ! "to count"
 есті:есті V-TV ; ! "hear"
 жап:жап V-TV ; ! "close"
 жаса:жаса V-TV ; ! "do,make"
@@ -2039,6 +2068,7 @@ XXI NUM-ROMAN ; ! ""
 жүр:жүр V-IV ; ! "move"
 жүр:жүр V-IV ; ! "move"
 жыми:жыми V-IV ; ! "to smile"
+ионда:ионда V-TV ; ! "ionise"
 ізде:ізде V-TV ; ! "seek,look for"
 істе:істе V-TV ; ! "do,make"
 істе:істе V-TV ; ! "do,make"
@@ -2054,6 +2084,8 @@ XXI NUM-ROMAN ; ! ""
 қара:қара V-TV ; ! "look at"
 қатыс:қатыс V-IV ; ! "participate"
 қой:қой V-TV ; ! "release" put
+қыр:қыр V-TV ; ! "to ruin;скоблить"
+қырыл:қырыл V-IV ; ! "be destroyed" Use/MT
 мәлімде:мәлімде V-TV ; ! "to inform"
 ойла:ойла V-TV ; ! "think"
 ойна:ойна V-TV ; ! "play"
@@ -2064,9 +2096,11 @@ XXI NUM-ROMAN ; ! ""
 оқы:оқы V-TV ; ! "read"
 отыр:отыр V-IV ; ! "sit,board"
 отыр:отыр V-IV ; ! "sit,board"
+пайда% бол:пайда% бол V-IV ; ! "appear" Use/MT
 сайыс:сайыс V-IV ; ! "to joust"
 сал:сал V-TV ; ! ""
 сана:сана V-TV ; ! "count"
+сәлелендір:сәлелендір V-TV ; ! "expose"
 сөйле:сөйле V-TV ; ! "say,speak"
 сөйле:сөйле V-TV ; ! "say,speak"
 сөйт:сөйт V-IV ; ! ""
@@ -2080,6 +2114,8 @@ XXI NUM-ROMAN ; ! ""
 ұйымдастыр:ұйымдастыр V-TV ; ! "организовать"
 ұш:ұш V-IV ; ! "fly"
 шық:шық V-IV ; ! "leave"
+тасымалда:тасымалда V-TV-NOPASS ; ! "move, transfer"
+тасымалда:тасымалдан V-TV-PASS ; ! "move, transfer"
 ізде:ізде V-TV ; ! ""
 ұқ:ұқ V-TV ; ! ""
 әрекет% жаса:әрекет% жаса V-IV ; ! "to try"
@@ -2203,7 +2239,7 @@ kz:kz ABBR ; ! ""
 геол%.:геол%. ABBR ; ! ""
 Гленкор:Гленкор ABBR ; ! ""
 ГЭС:ГЭС ABBR ; ! ""
-ДНҚ:ДНҚ ABBR ; ! ""
+ДНҚ:ДНҚ%{а%} ABBR ; ! "DNA"
 ЕҚЫҰ:ЕҚЫҰ ABBR ; ! "eng. OSCE, rus. ОБСЕ"
 Ембімұнайгаз:Ембімұнайгаз ABBR ; ! ""
 ЕурАзЭҚ:ЕурАзЭҚ ABBR ; ! ""

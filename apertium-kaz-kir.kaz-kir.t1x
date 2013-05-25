@@ -861,6 +861,7 @@
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
               <clip pos="1" side="tl" part="a_trans"/>
+              <clip pos="1" side="tl" part="a_deriv"/>
               <lit-tag v="prc_perf"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>

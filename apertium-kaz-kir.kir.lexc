@@ -307,6 +307,12 @@ LEXICON SUBST-COMMON
 %<pl%>:%>%{L%}%{A%}р POSSESSION ;
 POSSESSION ;
 
+LEXICON N1-ABBR
+
+%<n%>%<attr%>: ATTR ;
+%<n%>:%- POSSESSION ;
+%<n%>%<gen%>:%-%>нын # ;  ! FIXME: needs rules and all
+
 !LEXICON N-INFL-COMMON
 !
 !!%<n%>:%>%{L%}%{U%}%{U%} ADJ ;  ! Any noun can be made into an adjective like this, though it's basically derivation
@@ -606,6 +612,10 @@ LEXICON DET-DEM
 
 %<det%>%<dem%>: # ;
 
+LEXICON DET-DEM-L
+
+%<det%>%<dem%>: # ;
+
 LEXICON DET-IND
 
 %<det%>%<ind%>: # ;
@@ -721,7 +731,7 @@ LEXICON PRON-DEM-USUL
 %<prn%>%<dem%>%<dat%>:га # ;
 %<prn%>%<dem%>%<loc%>:нда PRED ;
 %<prn%>%<dem%>%<abl%>:ндан PRED ;
-%<prn%>%<dem%>%<sim%>:ндай PRED ;
+%<prn%>%<dem%>%<sim%>:ндай SUBST-COMMON ;
 
 %<prn%>%<dem%>%<loc%>:ндагы DAGI ;
 %<prn%>%<dem%>%<reason%>%<abl%>:ндуктан PRED ;  ! FIXME: need better name
@@ -1230,18 +1240,19 @@ LEXICON Postpositions
 үчүн:үчүн POST-DECL ; ! "for" +nom
 аркылуу:аркылуу POST ; ! "through" +nom
 үчүн:үчүн POST ; ! "for" + nom
+сыяктуу:сыяктуу POST-DECL ;
 
 LEXICON Determiners
 
-бул:бул DET-DEM ; ! "this"
+бул:бул DET-DEM-L ; ! "this"
 бул:бу DET-DEM ; ! "this" ! Dir/LR
 мобу:мобу DET-DEM ; ! "this here"
-ошол:ошол DET-DEM ; ! "that"
+ошол:ошол DET-DEM-L ; ! "that"
 ошол:ошо DET-DEM ; ! "that" ! Dir/LR
-ушул:ушул DET-DEM ; ! "this (visible)"
+ушул:ушул DET-DEM-L ; ! "this (visible)"
 ушул:ушу DET-DEM ; ! "this (visible)" ! Dir/LR
 ал:ал DET-DEM ; ! "that"
-тиги:тигил DET-DEM ; ! "that (yonder)" ! Dir/LR
+тиги:тигил DET-DEM-L ; ! "that (yonder)" ! Dir/LR
 тиги:тиги DET-DEM ; ! "that (yonder)"
 кай:кай DET-DEM ; ! "which"
 
@@ -1416,6 +1427,7 @@ XIX NUM-ROMAN ; ! ""
 LEXICON Nouns
 
 спонсор:спонсор N-INFL ;
+аберрация:аберрация N-INFL ; ! "aberration"
 адам:адам N-INFL ; 
 ара:ара N-INFL ; 
 аң:аң N-INFL ; 
@@ -1432,10 +1444,12 @@ LEXICON Nouns
 июль:июль N-INFL ; ! "" 
 июнь:июнь N-INFL ;
 китеп:китеп N-INFL ; ! "book"
+клетка:клетка N-INFL ; ! "cell (biol.)"
 кол:кол N-INFL ; ! "hand, arm; signature"
 кол% тамга:кол% тамга N-INFL ; ! "autograph"
 кыз:кыз N-INFL ; ! "girl"
 көз:көз N-INFL ; ! "eye"
+мутация:мутация N-INFL ; ! "mutation"
 саат:саат N-INFL ; ! "watch"
 төө:төө N-INFL ; ! "camel" 
 челек:челек N-INFL ; ! "barrel"
@@ -1458,6 +1472,7 @@ LEXICON Nouns
 жаныбар:жаныбар N-INFL ; 
 жооп:жооп N-INFL ; 
 директор:директор N-INFL ; 
+таасир:таасир N-INFL ; 
 эшик:эшик N-INFL ; 
 финал:финал N-INFL ; 
 футбол:футбол N-INFL ; 
@@ -1469,6 +1484,9 @@ LEXICON Nouns
 убакыт:убакыт N-INFL ; 
 матч:матч N-INFL ; 
 директор:директор N-INFL ; 
+натыйжа:натыйжа N-INFL ; 
+орган:орган N-INFL ; 
+радиация:радиация N-INFL ; 
 саат:саат N-INFL ; 
 себеп:себеп N-INFL ; 
 суроо:суроо N-INFL ; 
@@ -1491,6 +1509,7 @@ LEXICON Nouns
 жер:жер N-INFL ; ! "land"
 март:март N-INFL ; ! "March"
 нерсе:нерсе N-INFL ; ! "thing"
+структура:структура N-INFL ; 
 бакча:бакча N-INFL ; 
 башчы:башчы N-INFL ; 
 булут:булут N-INFL ; 
@@ -1500,11 +1519,13 @@ LEXICON Nouns
 айлана:айлана N-INFL ; 
 жаш:жаш N-INFL ; 
 көз:көз N-INFL ; 
+күн:күн N-INFL ; ! "sun"
 кой:кой N-INFL ; ! "sheep"
 башчы:башчы N-INFL ; 
 терезе:терезе N-INFL ; 
 таала:таала N-INFL ;
 май:май N-INFL ;
+кез:кез N-INFL ;
 түр:түр N-INFL ;
 команда:команда N-INFL ; ! "team"
 мышык:мышык N-INFL ; ! "cat"
@@ -1530,6 +1551,7 @@ LEXICON Nouns
 июнь:июнь N-INFL ;
 июль:июль N-INFL ;
 апрель:апрель N-INFL ;
+натыйжа:натыйжа N-INFL ;
 сентябрь:сентябрь N-INFL ;
 себеп:себеп N-INFL ;
 добуш:добуш N-INFL ;
@@ -1539,10 +1561,12 @@ LEXICON Nouns
 азем:азем N-INFL ;
 команда:команда N-INFL ;
 кызматкер:кызматкер N-INFL ;
+күн:күн N-INFL ; ! "sun" (see күн N-INFL-KI for "day")
 зат:зат N-INFL ;
 жооп:жооп N-INFL ;
 оюн:оюн N-INFL ;
 отургуч:отургуч N-INFL ;
+таасир:таасир N-INFL ;
 команда:команда N-INFL ;
 оюн:оюн N-INFL ;
 келишим:келишим N-INFL ;
@@ -1561,19 +1585,23 @@ LEXICON Nouns
 багыт:багыт N-INFL ;
 айлана:айлана N-INFL ;
 себеп:себеп N-INFL ;
+шишик:шишик N-INFL ;
 команда:команда N-INFL ;
 бет:бет N-INFL ;
+өзгөрүш:өзгөрүш N-INFL ;
 баш:баш N-INFL ;
 команда:команда N-INFL ;
 келишим:келишим N-INFL ;
 машыктыруучу:машыктыруучу N-INFL; ! "coach"
 демөөрчү:демөөрчү N-INFL ;
+зыян:зыян N-INFL ;
 сөз:сөз N-INFL ;
 ит:ит N-INFL ;
 терезе:терезе N-INFL ;
 май:май N-INFL ;
 ит:ит N-INFL ;
 айлана:айлана N-INFL ;
+кез:кез N-INFL ;
 стадион:стадион N-INFL ;
 лига:лига N-INFL ;
 себеп:себеп N-INFL ;
@@ -1584,9 +1612,11 @@ LEXICON Nouns
 ынтымакташтык:ынтымакташтык N-INFL ; ! "commonweal"
 кызматкер:кызматкер N-INFL ; ! "служащий"
 жетишкендик:жетишкендик N-INFL ; ! "success"
+ДНК:ДНК N1-ABBR ; ! "DNA"
 немис:немис NAT ; ! "German"
 ич:ич N-INFL-KI ; ! "inside"/"inner"
 жыл:жыл N-INFL-KI ; ! "year"
+күн:күн N-INFL-KI ; ! "day"
 аст:аст N-INFL-NKI ; ! "bottom", "lower"
 алд:алд N-INFL-NKI ; ! "front/forward", "forward"
 арт:арт N-INFL-NKI ; ! "back", "rear"
@@ -1659,12 +1689,15 @@ LEXICON Adjectives
 ысык:ысык ADJ ;
 мүмкүн:мүмкүн ADJ ;
 мыкты:мыкты ADJ ;
+терс:терс ADJ ;
 керек:керек ADJ ;
 чоң:чоң ADJ ;
 жарашыктуу:жарашыктуу ADJ ;
 жарашчудай:жарашчудай ADJ ;
 чоң:чоң ADJ ;
 тунук:тунук ADJ ;
+биологиялык:биологиялык ADJ ; ! ""
+хромосомалык:хромосомалык ADJ ; ! ""
 туура:туура ADJ ;
 чоң:чоң ADJ ;
 кичинекей:кичинекей ADJ ;
@@ -1675,6 +1708,7 @@ LEXICON Adjectives
 жашаар:жашаар ADJ ; ! "X year-old"
 көңүлдүү:көңүлдүү ADJ ; ! "cheerful"
 демөөрчүлүк:демөөрчүлүк ADJ ; ! "sponsoring [e.g., organisation]"
+ордуна% тургус:ордуна% тургус ADJ ; ! "irreversible" Use/MT
 
 LEXICON Adverbs
 
@@ -1702,6 +1736,7 @@ LEXICON Adverbs
 дайыма:дайыма ADV ;
 эмнеге:эмнеге ADV ;
 бүгүн:бүгүн ADV-WITH-KI-ABL ; ! "today's"
+алгач:алгач ADV-WITH-KI-ABL ; ! KI: "first" ADV: "at first; first of all"
 азыр:азыр ADV-WITH-KI-ABL ; ! "present"
 эми:эми ADV-WITH-ABL ;
 эми:эм ADV-KI ; ! "next/soon-to-be"
@@ -1798,6 +1833,7 @@ LEXICON Verbs
 ук:ук V-INFL-TV ; ! "listen / hear"
 ук:угуз V-INFL-IV-IRREG-CAUS ; ! "make listen"
 укта:укта V-INFL-IV ; ! "sleep"
+эсепте:эсепте V-INFL-TV ; ! "consider/count"
 отур:отур V-INFL-IV-NO-CAUS ; ! "sit"
 отур:отур V-INFL-IV-NO-CAUS ; ! "sit"
 отур:отургуз V-INFL-IV-IRREG-CAUS ; ! "sit"
@@ -1809,6 +1845,7 @@ LEXICON Verbs
 же:же V-INFL-TV ; 
 жең:жең V-INFL-TV ; 
 жең:жең V-INFL-IV ;
+ионда:ионда V-INFL-TV ; ! "ionise"
 кал:кал V-INFL-IV-NO-CAUS ; ! "stay, remain"
 кал:калтыр V-INFL-IV-IRREG-CAUS ; ! "leave (behind)"
 кес:кес V-INFL-TV ; ! "cut"
@@ -1824,6 +1861,7 @@ LEXICON Verbs
 сүйлө:сүйлө V-INFL-TV ; ! "speak on [topic]"
 сүйлө:сүйлө V-INFL-TV ; ! "speak on [topic]"
 тап:тап V-INFL-TV ; ! "find"
+ташы:ташы V-INFL-TV ; ! "haul"
 түш:түш V-INFL-IV-NO-CAUS ; ! "fall"
 түш:түшүр V-INFL-IV-IRREG-CAUS ; ! "to make fall"
 чык:чык V-INFL-IV-NO-CAUS ; ! "to exit/leave"
@@ -1837,12 +1875,14 @@ LEXICON Verbs
 иште:иште V-INFL-TV ;  ! "conduct"
 жең:жең V-INFL-TV ;
 изде:изде V-INFL-TV ;
+ташы:ташы V-INFL-TV ;
 жап:жап V-INFL-TV ;
 алып% бар:алып% бар V-INFL-TV ;
 далилде:далилде V-INFL-TV ;
 чурка:чурка V-INFL-IV ;
 жашын:жашын V-INFL-IV ;
 жаса:жаса V-INFL-TV ;
+кыр:кыр V-INFL-TV ;
 сура:сура V-INFL-TV ;
 кара:кара V-INFL-TV ;
 же:же V-INFL-TV ; ! "eat"
@@ -1852,11 +1892,16 @@ LEXICON Verbs
 жап:жап V-INFL-TV ;
 укта:укта V-INFL-IV ;
 ойло:ойло V-INFL-IV ;
+пайда% бол:пайда% бол V-INFL-IV ;
 уч:уч V-INFL-TV ;
 кол% кармаш:кол% кармаш V-INFL-IV ;
 бас:бас V-INFL-TV ;
 бас:бас V-INFL-TV ;
 жашын:жашын V-INFL-IV ;
+пайда% бол:пайда% бол V-INFL-IV ;
+эсепте:эсепте V-INFL-TV ;
+душар% бол:душар% бол V-INFL-IV; ! "be exposed to"
+кыйра:кыйра V-INFL-IV ; ! "be destroyed"
 ошент:ошент V-INFL-IV ;
 ошент:ошент V-INFL-TV ;
 минт:минт V-INFL-IV ;
