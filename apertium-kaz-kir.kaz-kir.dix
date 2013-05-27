@@ -429,7 +429,8 @@
 <e>       <p><l>ерекше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!--"certain, special"-->
 <e>       <p><l>жарасатындай<s n="adj"/></l>      <r>жарашыктуу<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>жарасатындай<s n="adj"/></l>      <r>жарашчудай<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>қайтымсыз<s n="adj"/></l>         <r>ордуна<b/>тургус<s n="adj"/></r></p></e> <!--"irreversable"-->
+<e r="LR"><p><l>қайтымсыз<s n="adj"/></l>         <r>ордуна<b/>тургус<s n="adj"/></r></p></e> <!--"irreversible"-->
+<e>       <p><l>қайтымсыз<s n="adj"/></l>         <r>кутулгус<s n="adj"/></r></p></e> <!--"irreversible"-->
 <e>       <p><l>кері<s n="adj"/></l>              <r>терс<s n="adj"/></r></p></e> <!--"reverse/inverse"-->
 <e>       <p><l>биологиялық<s n="adj"/></l>       <r>биологиялык<s n="adj"/></r></p></e> <!--"biological"-->
 <e>       <p><l>хромосомалық<s n="adj"/></l>      <r>хромосомалык<s n="adj"/></r></p></e> <!--"chromosomal"-->
@@ -533,7 +534,7 @@
 <e>       <p><l>сайыс<s n="v"/><s n="iv"/></l>     <r>кол<b/>кармаш<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
 <e>       <p><l>келтір<s n="v"/><s n="tv"/></l>    <r>келтир<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
 <e>       <p><l>есепте<s n="v"/><s n="tv"/></l>    <r>эсепте<s n="v"/><s n="tv"/></r></p></e> <!-- "consider" -->
-<e>       <p><l>сәлелендір<s n="v"/><s n="tv"/></l>    <r>душар<b/>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "be exposed to" -->
+<e>       <p><l>сәлелендір<s n="v"/><s n="tv"/></l>    <r>дуушар<b/>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "be exposed to" -->
 <e>       <p><l>пайда<b/>бол<s n="v"/><s n="iv"/></l>  <r>пайда<b/>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "appear" -->
 <e>       <p><l>қыр<s n="v"/><s n="tv"/></l>       <r>кыр<s n="v"/><s n="tv"/></r></p></e> <!-- "scrape" -->
 <e>       <p><l>қырыл<s n="v"/><s n="iv"/></l>     <r>кыйра<s n="v"/><s n="iv"/></r></p></e> <!-- "be destroyed" -->

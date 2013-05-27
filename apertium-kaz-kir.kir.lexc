@@ -1709,6 +1709,7 @@ LEXICON Adjectives
 көңүлдүү:көңүлдүү ADJ ; ! "cheerful"
 демөөрчүлүк:демөөрчүлүк ADJ ; ! "sponsoring [e.g., organisation]"
 ордуна% тургус:ордуна% тургус ADJ ; ! "irreversible" Use/MT
+кутулгус:кутулгус ADJ ; ! "irreversible"
 
 LEXICON Adverbs
 
@@ -1900,7 +1901,7 @@ LEXICON Verbs
 жашын:жашын V-INFL-IV ;
 пайда% бол:пайда% бол V-INFL-IV ;
 эсепте:эсепте V-INFL-TV ;
-душар% бол:душар% бол V-INFL-IV; ! "be exposed to"
+дуушар% бол:дуушар% бол V-INFL-IV; ! "be exposed to"
 кыйра:кыйра V-INFL-IV ; ! "be destroyed"
 ошент:ошент V-INFL-IV ;
 ошент:ошент V-INFL-TV ;
