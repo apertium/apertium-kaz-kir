@@ -365,7 +365,9 @@
 <e>       <p><l>Еуропа<s n="np"/><s n="top"/></l>                <r>Европа<s n="np"/><s n="top"/></r></p></e> <!--"Europe"-->
 <e>       <p><l>Лондон<s n="np"/><s n="top"/></l>                <r>Лондон<s n="np"/><s n="top"/></r></p></e> <!--"London"-->
 <e>       <p><l>Сигнал<b/>Идуна<b/>Парк<s n="np"/><s n="top"/></l>  <r>Сигнал<b/>Идуна<b/>Парк<s n="np"/><s n="top"/></r></p></e> <!--"Signal Iduna Park"-->
-<e>       <p><l>Вимблей<s n="np"/><s n="top"/></l>                <r>Вимблей<s n="np"/><s n="top"/></r></p></e> <!--"Wembley Stadium"-->
+<e>       <p><l>Вимблей<s n="np"/><s n="top"/></l>               <r>Вимблей<s n="np"/><s n="top"/></r></p></e> <!--"Wembley Stadium"-->
+<e>       <p><l>Ош<s n="np"/><s n="top"/></l>                    <r>Ош<s n="np"/><s n="top"/></r></p></e> <!--"Osh"-->
+
     <!-- Organizations -->
 <e>       <p><l>Түрік<b/>Әуежолдары<s n="np"/><s n="org"/></l>   <r>Түрк<b/>Аба<b/>Жолдору<s n="np"/><s n="org"/></r></p></e> <!--"Turkish Airlines"-->
 <e>       <p><l>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></l>  <r>Боруссия<b/>Дортмунд<s n="np"/><s n="org"/></r></p></e> <!--"Borussia Dortmund"-->
@@ -434,6 +436,7 @@
 <e>       <p><l>кері<s n="adj"/></l>              <r>терс<s n="adj"/></r></p></e> <!--"reverse/inverse"-->
 <e>       <p><l>биологиялық<s n="adj"/></l>       <r>биологиялык<s n="adj"/></r></p></e> <!--"biological"-->
 <e>       <p><l>хромосомалық<s n="adj"/></l>      <r>хромосомалык<s n="adj"/></r></p></e> <!--"chromosomal"-->
+<e>       <p><l>атты<s n="adj"/></l>              <r>аттуу<s n="adj"/></r></p></e> <!--"named"-->
 
 
 <!-- SECTION: Adverbs -->

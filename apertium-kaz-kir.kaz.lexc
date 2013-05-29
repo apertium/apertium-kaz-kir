@@ -1929,6 +1929,7 @@ XXI NUM-ROMAN ; ! ""
 
 Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
 Лондон:Лондон NP-TOP ; ! "London"
+Ош:Ош NP-TOP ; ! ""
 Алмания:Алмания NP-TOP ; ! "Germany"
 Еуропа:Еуропа NP-TOP ; ! "Europe"
 Сигнал% Идуна% Парк:Сигнал% Идуна% Парк NP-TOP; ! "Signal Iduna Park football stadium"
@@ -1954,6 +1955,7 @@ XXI NUM-ROMAN ; ! ""
 
  LEXICON Adjectives
 
+атты:атты A4 ; ! ""
 биологиялық:биологиялық A4 ; ! "biological"
 стратегиялық:стратегиялық A4 ; ! ""
 сынды:сынды A4 ; ! ""
