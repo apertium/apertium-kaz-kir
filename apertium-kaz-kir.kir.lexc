@@ -417,6 +417,9 @@ LEXICON NP-TOP
 
 %<np%>%<top%>: NP-COMMON ;
 %<np%>%<top%>%<attr%>: # ;
+:%>%{L%}%{I%}%{K%} A4 ;
+%<n%>:%>%{L%}%{I%}%{K%} SUBST-COMMON ;
+
 
 ! %<np%>%<top%>:%>%{L%}%{I%}к ADJ-COMMON ;
 
