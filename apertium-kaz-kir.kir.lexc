@@ -184,6 +184,10 @@ Multichar_Symbols
 %{e%}       ! Realised as ''; only used to make vowel harmony come out right for things that normally break vowel harmony
 %{K%}       ! Realised as 'к' or 'г'; only used in attributive -{K}{I}
 
+%{а%}       ! Archiphoneme for back vowel numerals/abbreviation
+%{э%}       ! Archiphoneme for front vowel numerals/abbreviation
+%{й%}       ! Archiphoneme for й/р
+
 
 @P.NEG.0@   ! Set if -{I}š is not present
 @P.NEG.1@   ! Set if -{I}š is present
