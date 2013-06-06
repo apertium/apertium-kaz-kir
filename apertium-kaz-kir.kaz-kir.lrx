@@ -46,4 +46,11 @@
 		<match lemma="арнайы" tags="adj"><select lemma="айрыкча" tags="adj"/></match>
 		<match lemma="түр" tags="n.loc"/>
 	</rule>
+	<rule>
+		<match lemma="бас" tags="v.tv.*"><select lemma="бас" tags="v.tv.*"/></match>
+	</rule>
+	<rule>
+		<or><match lemma="қолтаңба" tags="n.nom"/><match lemma="қол" tags="n.nom"/></or>
+		<match lemma="бас" tags="v.tv"><select lemma="кой" tags="v.tv"/></match>
+	</rule>
 </rules>
