@@ -1,3 +1,3 @@
 #!/bin/bash
 
-wdiff story.kaz-kir.txt story.kaz-kir-postedited.txt | colordiff
+wdiff $1.kaz-kir.txt $1.kaz-kir-postedited.txt | colordiff
