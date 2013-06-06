@@ -1732,6 +1732,7 @@ LEXICON Adjectives
 биологиялык:биологиялык ADJ ; ! ""
 хромосомалык:хромосомалык ADJ ; ! ""
 туура:туура ADJ ;
+айрыкча:айрыкча A1 ; ! "especially"
 чоң:чоң ADJ ;
 кичинекей:кичинекей ADJ ;
 оң:оң ADJ ;
@@ -1743,6 +1744,7 @@ LEXICON Adjectives
 демөөрчүлүк:демөөрчүлүк ADJ ; ! "sponsoring [e.g., organisation]"
 ордуна% тургус:ордуна% тургус ADJ ; ! "irreversible" Use/MT
 кутулгус:кутулгус ADJ ; ! "irreversible"
+атайын:атайын A1 ; ! "purposely"
 
 LEXICON Adverbs
 
@@ -1761,7 +1763,6 @@ LEXICON Adverbs
 абдан:абдан ADV ; ! "really"
 чогуу:чогуу ADV ; ! "together"
 тескерисинче:тескерисинче ADV ; ! FIXME: compositional
-атайын:атайын ADV ; ! "purposely"
 ошондой:ошондой ADV ; ! FIXME: compositional
 дайыма:дайыма ADV ; ! "always"
 ошондой:ошондой ADV ; ! FIXME: compositional
