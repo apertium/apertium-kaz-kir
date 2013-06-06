@@ -39,5 +39,11 @@
 		<match lemma="қуанышты" tags="adj.subst.nom"><select lemma="кубаныч" tags="n.*" /></match>
 		<match lemma="е" tags="cop.*"/>
 	</rule>
-
+	<rule>
+		<match lemma="арнайы" tags="adv"><select lemma="атайын" tags="adv"/></match>
+	</rule>
+	<rule>
+		<match lemma="арнайы" tags="adv"><select lemma="айрыкча" tags="adv"/></match>
+		<match lemma="түр" tags="n.loc"/>
+	</rule>
 </rules>
