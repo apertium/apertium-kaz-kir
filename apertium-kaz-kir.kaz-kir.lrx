@@ -51,6 +51,6 @@
 	</rule>
 	<rule>
 		<or><match lemma="қолтаңба" tags="n.nom"/><match lemma="қол" tags="n.nom"/></or>
-		<match lemma="бас" tags="v.tv"><select lemma="кой" tags="v.tv"/></match>
+		<match lemma="бас" tags="v.tv.*"><select lemma="кой" tags="v.tv.*"/></match>
 	</rule>
 </rules>
