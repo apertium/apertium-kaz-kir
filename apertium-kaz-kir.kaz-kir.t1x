@@ -14,6 +14,11 @@
     <def-cat n="orgs">
       <cat-item tags="np.org.*"/>
     </def-cat>
+    
+    <def-cat n="names">
+      <cat-item tags="np.ant.*.nom"/>
+      <cat-item tags="np.cog.*.nom"/>
+    </def-cat>
 
     <def-cat n="қуанышты">
       <cat-item lemma="қуанышты" tags="adj.subst.nom"/>
@@ -31,6 +36,10 @@
       <cat-item lemma="да" tags="cnjcoo"/>
     </def-cat>
 
+    <def-cat n="мен-cnjcoo">
+      <cat-item lemma="мен" tags="cnjcoo"/>
+    </def-cat>
+    
     <def-cat n="v-қара">
       <cat-item lemma="қара" tags="v.tv.*"/>
     </def-cat>
@@ -69,6 +78,11 @@
     <def-cat n="noun_nominative">
       <cat-item tags="n.nom"/>
       <cat-item tags="n.pl.nom"/>
+    </def-cat>
+    
+    <def-cat n="plain_nouns">
+      <cat-item tags="n.*"/>
+      <cat-item tags="n.pl.*"/>
     </def-cat>
 
     <def-cat n="pron-dem-sim">
@@ -1041,6 +1055,30 @@
             </out>
           </otherwise>
         </choose>
+      </action>
+    </rule>
+    
+    <rule>
+      <pattern>
+	<pattern-item n="names"/>
+	<pattern-item n="мен-cnjcoo"/>
+	<pattern-item n="plain_nouns"/>
+      </pattern>
+      <action>
+	<out>
+	  <lu>
+	    <clip pos="1" side="tl" part="whole"/>
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <lit v="жана"/>
+	    <lit-tag v="cnjcoo"/>
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <clip pos="3" side="tl" part="whole"/>
+	  </lu>
+	</out>
       </action>
     </rule>
 
