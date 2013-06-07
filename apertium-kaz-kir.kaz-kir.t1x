@@ -36,8 +36,9 @@
       <cat-item lemma="да" tags="cnjcoo"/>
     </def-cat>
 
-    <def-cat n="мен-cnjcoo">
+    <def-cat n="мен-post_cnjcoo">
       <cat-item lemma="мен" tags="cnjcoo"/>
+      <cat-item lemma="мен" tags="post"/>
     </def-cat>
     
     <def-cat n="v-қара">
@@ -1061,7 +1062,7 @@
     <rule>
       <pattern>
 	<pattern-item n="names"/>
-	<pattern-item n="мен-cnjcoo"/>
+	<pattern-item n="мен-post_cnjcoo"/>
 	<pattern-item n="plain_nouns"/>
       </pattern>
       <action>
@@ -1072,7 +1073,7 @@
 	  <b pos="1"/>
 	  <lu>
 	    <lit v="жана"/>
-	    <lit-tag v="cnjcoo"/>
+	    <lit-tag v="cnjcoo"/>	    
 	  </lu>
 	  <b pos="1"/>
 	  <lu>
