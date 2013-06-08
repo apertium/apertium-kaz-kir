@@ -24,6 +24,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/countstems.sh -text
+dev/extract-same-entries.sh -text
 dev/kaz-countstems.sh -text
 dev/kir-countstems.sh -text
 dev/lexical_selection_rules_needed.txt -text
