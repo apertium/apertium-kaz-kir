@@ -1250,6 +1250,9 @@ LEXICON Postadverbs
 гана:гана POSTADV ; ! "only"
 эле:эле POSTADV ; ! "only"
 деле:деле POSTADV ; ! "even"
+дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
+ашуун:ашуун POSTADV ; ! "more than"
+ашык:ашык POSTADV ; ! "more than"
 тең:тең POSTADV ; ! "~both" e.g., экөө тең
 
 LEXICON Conjunctions 
@@ -1859,6 +1862,7 @@ LEXICON Verbs
 оку:оку V-INFL-TV ; ! "read"
 оку:оку V-INFL-TV ; ! "read"
 сал:сал V-INFL-TV ;
+салгылаш:салгылаш V-INFL-IV;
 сана:сана V-INFL-TV ; ! "count/consider"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"

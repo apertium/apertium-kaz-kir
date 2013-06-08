@@ -60,5 +60,12 @@
 		<match lemma="жарасатындай" tags="adj"><select lemma="жарашчудай" tags="adj"/></match>
 		<match lemma="түр" tags="n.dat"/>
 	</rule>
+	<rule>
+		<match lemma="сайыс" tags="v.iv.*"><select lemma="кол% кармаш" tags="v.iv"/></match>
+	</rule>
+	<rule>
+		<or><match lemma="команда" tags="n.*"/><match tags="np.org.*"/><match lemma="мен" tags="post.*"/></or>
+		<match lemma="сайыс" tags="v.iv.*"><select lemma="салгылаш" tags="v.iv.*"/></match>
+	</rule>
 
 </rules>

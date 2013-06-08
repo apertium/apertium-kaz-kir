@@ -1082,6 +1082,78 @@
 	</out>
       </action>
     </rule>
+    
+    <rule>
+      <pattern>
+	<pattern-item n="pron"/>
+	<pattern-item n="мен-post_cnjcoo"/>
+	<pattern-item n="plain_nouns"/>
+      </pattern>
+      <action>
+	<out>
+	  <lu>
+	    <clip pos="1" side="tl" part="whole"/>
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <lit v="жана"/>
+	    <lit-tag v="cnjcoo"/>	    
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <clip pos="3" side="tl" part="whole"/>
+	  </lu>
+	</out>
+      </action>
+    </rule>
+    
+    <rule>
+      <pattern>
+	<pattern-item n="pron"/>
+	<pattern-item n="мен-post_cnjcoo"/>
+	<pattern-item n="pron"/>
+      </pattern>
+      <action>
+	<out>
+	  <lu>
+	    <clip pos="1" side="tl" part="whole"/>
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <lit v="жана"/>
+	    <lit-tag v="cnjcoo"/>	    
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <clip pos="3" side="tl" part="whole"/>
+	  </lu>
+	</out>
+      </action>
+    </rule>
+    
+    <rule>
+      <pattern>
+	<pattern-item n="pron"/>
+	<pattern-item n="мен-post_cnjcoo"/>
+	<pattern-item n="names"/>
+      </pattern>
+      <action>
+	<out>
+	  <lu>
+	    <clip pos="1" side="tl" part="whole"/>
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <lit v="жана"/>
+	    <lit-tag v="cnjcoo"/>	    
+	  </lu>
+	  <b pos="1"/>
+	  <lu>
+	    <clip pos="3" side="tl" part="whole"/>
+	  </lu>
+	</out>
+      </action>
+    </rule>
 
   </section-rules>
 
