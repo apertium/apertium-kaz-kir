@@ -44,7 +44,7 @@
 	</rule>
 	<rule>
 		<match lemma="арнайы" tags="adj"><select lemma="айрыкча" tags="adj"/></match>
-		<match lemma="түр" tags="n.loc"/>
+		<match lemma="түр" tags="n.*"/>
 	</rule>
 	<rule>
 		<match lemma="бас" tags="v.tv.*"><select lemma="бас" tags="v.tv.*"/></match>
@@ -58,13 +58,13 @@
 	</rule>
 	<rule>
 		<match lemma="жарасатындай" tags="adj"><select lemma="жарашчудай" tags="adj"/></match>
-		<match lemma="түр" tags="n.dat"/>
+		<match lemma="түр" tags="n.*"/>
 	</rule>
 	<rule>
 		<match lemma="сайыс" tags="v.iv.*"><select lemma="кол% кармаш" tags="v.iv"/></match>
 	</rule>
 	<rule>
-		<or><match lemma="команда" tags="n.*"/><match tags="np.org.*"/><match lemma="мен" tags="post.*"/></or>
+		<or><match lemma="команда" tags="n.*"/><match tags="np.org.*"/><match lemma="мен" tags="post"/></or>
 		<match lemma="сайыс" tags="v.iv.*"><select lemma="салгылаш" tags="v.iv.*"/></match>
 	</rule>
 
