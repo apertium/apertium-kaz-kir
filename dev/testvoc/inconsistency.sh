@@ -9,7 +9,7 @@ hfst-fst2strings ../../kir-kaz.automorf.hfst | grep -v 'REGEX' | grep -v ':<:' |
 	lt-proc -b ../../kir-kaz.autobil.bin |  tee $TMPDIR/$DIR.tmp_testvoc2.txt |
         apertium-transfer -b ../../apertium-kaz-kir.kir-kaz.t1x  ../../kir-kaz.t1x.bin | tee $TMPDIR/$DIR.tmp_testvoc3.txt |
         hfst-proc -d ../../kir-kaz.autogen.hfst > $TMPDIR/$DIR.tmp_testvoc4.txt
-paste -d _ $TMPDIR/$DIR.tmp_testvoc1.txt $TMPDIR/$DIR.tmp_testvoc2.txt $TMPDIR/$DIR.tmp_testvoc3.txt $TMPDIR/$DIR.tmp_testvoc4.txt | sed 's/\^.<sent>\$//g' | sed 's/¶/   --------->  /g'
+paste -d ¶ $TMPDIR/$DIR.tmp_testvoc1.txt $TMPDIR/$DIR.tmp_testvoc2.txt $TMPDIR/$DIR.tmp_testvoc3.txt $TMPDIR/$DIR.tmp_testvoc4.txt | sed 's/\^.<sent>\$//g' | sed 's/¶/   --------->  /g'
 
 elif [[ $DIR = "kaz-kir" ]]; then
 
