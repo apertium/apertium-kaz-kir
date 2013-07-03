@@ -111,6 +111,7 @@
 <e>       <p><l>ал<s n="cnjcoo"/></l>               <r>а<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>да<s n="cnjcoo"/></l>               <r>да<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>да<s n="cnjcoo"/></l>               <r>тең<s n="postadv"/></r></p></e>
+<e>       <p><l>сондай<b/>-ақ<s n="cnjcoo"/></l>   <r>дагы<s n="adv"/></r></p></e>
 
     <!-- Subordinating conjunction -->
 
@@ -123,6 +124,7 @@
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>гана<s n="postadv"/></r></p></e>
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>эле<s n="postadv"/></r></p></e>
 <e>       <p><l>да<s n="postadv"/></l>            <r>деле<s n="postadv"/></r></p></e>
+<e>       <p><l>-ақ<s n="postadv"/></l>           <r>гана<s n="postadv"/></r></p></e>
 
 <!-- SECTION: Postpositions -->
 <e>       <p><l>мен<s n="post"/></l>              <r>менен<s n="post"/></r></p></e>
@@ -579,6 +581,7 @@
 <e>       <p><l>демек<s n="ij"/></l>              <r>демек<s n="ij"/></r></p></e>
 <e>       <p><l>әлбетте<s n="ij"/></l>            <r>албетте<s n="ij"/></r></p></e>
 <e>       <p><l>әрине<s n="ij"/></l>              <r>албетте<s n="ij"/></r></p></e>
+<e>       <p><l>әй<s n="ij"/></l>                 <r>эй<s n="ij"/></r></p></e>
 
 <!-- SECTION: Abbreviations -->
 
@@ -592,6 +595,7 @@
 <e>       <p><l>млн<s n="abbr"/></l>              <r>млн<s n="abbr"/></r></p></e> <!-- "million" -->
 <e>       <p><l>млрд<s n="abbr"/></l>             <r>млрд<s n="abbr"/></r></p></e> <!-- "billion" -->
 <e>       <p><l>мм<s n="abbr"/></l>               <r>мм<s n="abbr"/></r></p></e> <!-- "mm" -->
+<e>       <p><l>Ғ.С.<s n="abbr"/></l>             <r>с.а.в.<s n="abbr"/></r></p></e> <!-- "" -->
 
 <!-- SECTION: Punctuation -->
 
