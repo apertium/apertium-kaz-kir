@@ -1259,10 +1259,14 @@ LEXICON Conjunctions
 
 жана:жана CC ; ! "and"
 да:да CC ; ! <s>"and"</s> "also", "both ... and ..."
+же:же CC ; ! "or"
 а:а CC ; ! "but/and"
 бирок:бирок CC ; ! "but"
+анткени:анткени CA ; ! "because"
+ошондуктан:ошондуктан CA ;  ! "that's why"
 жана:жана CA ; ! Dir/RL "but"  ! Eh?? 
 да:да CA ;
+ошондуктан:ошондуктан CA ;
 
 LEXICON Postpositions
 
@@ -1472,6 +1476,7 @@ LEXICON Nouns
 адмирал:адмирал N-INFL ; 
 адым:адым N-INFL ; 
 азан:азан N-INFL ; 
+азап:азап N-INFL ; 
 ай:ай N-INFL ; 
 академик:академик N-INFL ; 
 академия:академия N-INFL ; 
@@ -1491,6 +1496,7 @@ LEXICON Nouns
 аудитория:аудитория N-INFL ; 
 аң:аң N-INFL ; 
 адам:адам N-INFL ; ! "man, human, person"
+азап:азап N-INFL ; 
 ай:ай N-INFL ; ! "month"
 академия:академия N-INFL ; 
 апа:апа N-INFL ; ! "mother"
@@ -1553,6 +1559,7 @@ LEXICON Nouns
 фабрика:фабрика N-INFL ; 
 чака:чака N-INFL ; ! "bucket"
 пиво:пиво N-INFL ; ! "beer"
+азап:азап N-INFL ; 
 аң:аң N-INFL ; ! "beast"
 бакыт:бакыт N-INFL ; ! "happiness"
 балта:балта N-INFL ; ! "axe"
@@ -1566,6 +1573,7 @@ LEXICON Nouns
 сан:сан N-INFL ; 
 полковник:полковник N-INFL ; ! "Captain"
 жаныбар:жаныбар N-INFL ; 
+азап:азап N-INFL ; 
 жооп:жооп N-INFL ; 
 география:география N-INFL ; 
 республика:республика N-INFL ; 
@@ -1575,6 +1583,7 @@ LEXICON Nouns
 демократия:демократия N-INFL ; 
 лекция:лекция N-INFL ; 
 аудитория:аудитория N-INFL ; 
+азап:азап N-INFL ; 
 директор:директор N-INFL ; 
 диалог:диалог N-INFL ; 
 доктор:доктор N-INFL ; 
@@ -1686,6 +1695,7 @@ LEXICON Nouns
 цивилизация:цивилизация N-INFL ; 
 металл:металл N-INFL ; 
 металлургия:металлургия N-INFL ; 
+азап:азап N-INFL ; 
 микроскоп:микроскоп N-INFL ; 
 митинг:митинг N-INFL ; 
 молекула:молекула N-INFL ; 
@@ -1798,6 +1808,7 @@ LEXICON Nouns
 зар:зар N-INFL ; 
 оюн:оюн N-INFL ;
 цемент:цемент N-INFL ; 
+чын:чын N-INFL ; 
 үн:үн N-INFL ; 
 университет:университет N-INFL ; 
 чемпион:чемпион N-INFL ; 
@@ -1814,12 +1825,15 @@ LEXICON Nouns
 алтын:алтын N-INFL ; 
 эмблема:эмблема N-INFL ; 
 операция:операция N-INFL ; 
+учур:учур N-INFL ; 
+маани:маани N-INFL ; 
 апа:апа N-INFL ; 
 ант:ант N-INFL ; 
 жер:жер N-INFL ; 
 лифт:лифт N-INFL ; 
 ата:ата N-INFL ; 
 аң:аң N-INFL ; 
+азап:азап N-INFL ; 
 жер:жер N-INFL ; ! "land"
 март:март N-INFL ; ! "March"
 базар:базар N-INFL ; ! "bazar"
@@ -1870,6 +1884,7 @@ LEXICON Nouns
 повесть:повесть N-INFL ;
 поэма:поэма N-INFL ;
 казак:казак N-INFL ;
+маани:маани N-INFL ;
 институт:институт N-INFL ;
 дан:дан N-INFL ;
 дан:дан N-INFL ;
@@ -1941,6 +1956,7 @@ LEXICON Nouns
 жаш:жаш N-INFL ;
 комитет:комитет N-INFL ;
 референдум:референдум N-INFL ;
+маани:маани N-INFL ;
 евро:евро N-INFL ;
 кабинет:кабинет N-INFL ;
 азем:азем N-INFL ;
@@ -1971,6 +1987,7 @@ LEXICON Nouns
 станция:станция N-INFL ;
 сан:сан N-INFL ;
 адвокат:адвокат N-INFL ;
+шек:шек N-INFL ;
 демократ:демократ N-INFL ;
 биржа:биржа N-INFL ;
 офицер:офицер N-INFL ;
@@ -2246,6 +2263,7 @@ LEXICON ProperNouns
 Александр:Александр NP-ANT-M ;
 Азамат:Азамат NP-ANT-M ;
 Асан:Асан NP-ANT-M ;
+Муса:Муса NP-ANT-M ;
 Иса:Иса NP-ANT-M ;
 Мухаммед:Мухаммед NP-ANT-M ;
 Абылай:Абылай NP-ANT-M ;
@@ -2312,9 +2330,11 @@ LEXICON Adjectives
 суук:суук ADJ ; 
 стратегиялык:стратегиялык ADJ ; 
 жаңы:жаңы ADJ ; 
+ачык:ачык ADJ ; 
 эски:эски ADJ ; 
 чоң:чоң ADJ ; 
 жакшы:жакшы ADJ ; 
+толук:толук ADJ ; 
 жакын:жакын ADJ ; 
 кичинекей:кичинекей ADJ ; 
 мүмкүн:мүмкүн ADJ ; 
@@ -2358,6 +2378,7 @@ LEXICON Adjectives
 чоң:чоң ADJ ;
 кичинекей:кичинекей ADJ ;
 тар:тар ADJ ;
+толук:толук ADJ ;
 оң:оң ADJ ;
 жылуу:жылуу ADJ ;
 акырын:акырын ADJ ;
@@ -2624,6 +2645,7 @@ ISBN:ISBN ABBR ;
 млн:млн ABBR ;
 англ:англ ABBR ;
 с%.а%.в%.:с%.а%.в%. ABBR ; ! ""
+Т%.:Т%. ABBR ; ! ""
 
 LEXICON Interjections 
 

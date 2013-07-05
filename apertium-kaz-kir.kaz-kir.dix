@@ -111,12 +111,19 @@
 <e>       <p><l>ал<s n="cnjcoo"/></l>               <r>а<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>да<s n="cnjcoo"/></l>               <r>да<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>да<s n="cnjcoo"/></l>               <r>тең<s n="postadv"/></r></p></e>
-<e>       <p><l>сондай<b/>-ақ<s n="cnjcoo"/></l>   <r>дагы<s n="adv"/></r></p></e>
+<e>       <p><l>сондай<b/>-ақ<s n="cnjcoo"/></l>    <r>дагы<s n="adv"/></r></p></e>
+<e>       <p><l>әрі<s n="cnjcoo"/></l>              <r>жана<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>немесе<s n="cnjcoo"/></l>           <r>же<s n="cnjcoo"/></r></p></e>
 
     <!-- Subordinating conjunction -->
 
 <e>       <p><l>егер<s n="cnjsub"/></l>             <r>эгер<s n="cnjsub"/></r></p></e>
 <e>       <p><l>егерде<s n="cnjsub"/></l>	    <r>эгерде<s n="cnjsub"/></r></p></e>
+<e>       <p><l>өйткені<s n="cnjsub"/></l>	    <r>анткени<s n="cnjadv"/></r></p></e>
+
+    <!-- Conjunctional adverb ~ Относительные слова -->
+
+<e>       <p><l>сондықтан<s n="cnjadv"/></l>	    <r>ошондуктан<s n="cnjadv"/></r></p></e>
 
 <!-- SECTION: Postadverbs -->
 
@@ -337,6 +344,11 @@
 <e>	 <p><l>Алла<s n="n"/></l>	     <r>Алла<s n="n"/></r></p></e>
 <e>	 <p><l>Аллаһ<s n="n"/></l>	     <r>Аллаһ<s n="n"/></r></p></e>
 <e>	 <p><l>иман<s n="n"/></l>	     <r>ыйман<s n="n"/></r></p></e>
+<e>	 <p><l>күдік<s n="n"/></l>	     <r>шек<s n="n"/></r></p></e>
+<e>	 <p><l>мән<s n="n"/></l>	     <r>маани<s n="n"/></r></p></e>
+<e>	 <p><l>азап<s n="n"/></l>	     <r>азап<s n="n"/></r></p></e>
+<e>	 <p><l>сәт<s n="n"/></l>	     <r>учур<s n="n"/></r></p></e>
+<e>	 <p><l>шын<s n="n"/></l>	     <r>чын<s n="n"/></r></p></e>
 
 
     <!--Months -->
@@ -358,6 +370,7 @@
     <!-- Languages -->
     <!-- Anthroponyms -->
 <e>	  <p><l>Мұхаммед<s n="np"/><s n="ant"/><s n="m"/></l>	<r>Мухаммед<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Mohammed"-->
+<e>	  <p><l>Мұса<s n="np"/><s n="ant"/><s n="m"/></l>	<r>Муса<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Musa"-->
 <e>       <p><l>Айгүл<s n="np"/><s n="ant"/><s n="f"/></l>      <r>Айгүл<s n="np"/><s n="ant"/><s n="f"/></r></p></e> <!--"Aygül"-->
 <e>       <p><l>Азамат<s n="np"/><s n="ant"/><s n="m"/></l>     <r>Азамат<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Azamat"-->
 <e>       <p><l>Темел<s n="np"/><s n="ant"/><s n="m"/></l>      <r>Темел<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!--"Темел"-->
@@ -452,6 +465,8 @@
 <e>       <p><l>хромосомалық<s n="adj"/></l>      <r>хромосомалык<s n="adj"/></r></p></e> <!--"chromosomal"-->
 <e>       <p><l>атты<s n="adj"/></l>              <r>аттуу<s n="adj"/></r></p></e> <!--"named"-->
 <e>       <p><l>қарсы<s n="adj"/></l>             <r>каршы<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>толық<s n="adj"/></l>             <r>толук<s n="adj"/></r></p></e> <!--"full"-->
+<e>       <p><l>ашық<s n="adj"/></l>              <r>ачык<s n="adj"/></r></p></e> <!--"open"-->
 
 
 <!-- SECTION: Adverbs -->
@@ -476,6 +491,7 @@
 <e>       <p><l>енді<s n="adv"/></l>               <r>эми<s n="adv"/></r></p></e> <!--"теперь"-->
 <e>       <p><l>керісінше<s n="adv"/></l>          <r>тескерисинче<s n="adv"/></r></p></e> <!--"наоборот"-->
 <e>       <p><l>алғаш<s n="adv"/></l>              <r>алгач<s n="adv"/></r></p></e> <!--"first"-->
+<e>       <p><l>аса<s n="adv"/></l>                <r>абдан<s n="adv"/></r></p></e> <!--""-->
 
 
 <!-- SECTION: Verbs -->
@@ -582,6 +598,7 @@
 <e>       <p><l>әлбетте<s n="ij"/></l>            <r>албетте<s n="ij"/></r></p></e>
 <e>       <p><l>әрине<s n="ij"/></l>              <r>албетте<s n="ij"/></r></p></e>
 <e>       <p><l>әй<s n="ij"/></l>                 <r>эй<s n="ij"/></r></p></e>
+<e>       <p><l>міне<s n="ij"/></l>               <r>мына<s n="ij"/></r></p></e>
 
 <!-- SECTION: Abbreviations -->
 
@@ -596,6 +613,7 @@
 <e>       <p><l>млрд<s n="abbr"/></l>             <r>млрд<s n="abbr"/></r></p></e> <!-- "billion" -->
 <e>       <p><l>мм<s n="abbr"/></l>               <r>мм<s n="abbr"/></r></p></e> <!-- "mm" -->
 <e>       <p><l>Ғ.С.<s n="abbr"/></l>             <r>с.а.в.<s n="abbr"/></r></p></e> <!-- "" -->
+<e>       <p><l>Т.<s n="abbr"/></l>               <r>Т.<s n="abbr"/></r></p></e> <!-- "" -->
 
 <!-- SECTION: Punctuation -->
 
