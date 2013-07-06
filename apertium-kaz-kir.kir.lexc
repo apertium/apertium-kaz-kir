@@ -1275,8 +1275,10 @@ LEXICON Postpositions
 кийин:кийин POST ; ! "with"
 үчүн:үчүн POST-DECL ; ! "for" +nom
 аркылуу:аркылуу POST ; ! "through" +nom
+боюнча:боюнча POST ; ! "according to" +nom
 соң:соң POST ;
 үчүн:үчүн POST ; ! "for" + nom
+боюнча:боюнча POST ;
 сыяктуу:сыяктуу POST-DECL ;
 
 LEXICON Determiners
@@ -1482,6 +1484,7 @@ LEXICON Nouns
 академия:академия N-INFL ; 
 акустика:акустика N-INFL ; 
 акушер:акушер N-INFL ; 
+акылдуулук:акылдуулук N-INFL ; 
 алтын:алтын N-INFL ; ! "gold"
 алфавит:алфавит N-INFL ; ! "alphabet"
 алюминий:алюминий N-INFL ; ! "aluminum"
@@ -1520,6 +1523,7 @@ LEXICON Nouns
 дарак:дарак N-INFL ; 
 дүйнө:дүйнө N-INFL ;  ! "world" (?)
 жан:жан N-INFL ; ! "jan"
+жол:жол N-INFL ; ! "way"
 индустрия:индустрия N-INFL ; 
 июль:июль N-INFL ; ! "" 
 июнь:июнь N-INFL ;
@@ -1638,6 +1642,7 @@ LEXICON Nouns
 гектар:гектар N-INFL ; 
 баян:баян N-INFL ; 
 кызматкер:кызматкер N-INFL ; 
+өкүм:өкүм N-INFL ; 
 идея:идея N-INFL ; 
 идеология:идеология N-INFL ; 
 император:император N-INFL ; 
@@ -1645,7 +1650,9 @@ LEXICON Nouns
 революция:революция N-INFL ; 
 станция:станция N-INFL ; 
 статистика:статистика N-INFL ; 
+ээ:ээ N-INFL ; 
 ион:ион N-INFL ; 
+иш:иш N-INFL ; 
 жанр:жанр N-INFL ; 
 генератор:генератор N-INFL ; 
 геодезия:геодезия N-INFL ; 
@@ -1676,9 +1683,11 @@ LEXICON Nouns
 король:король N-INFL ; 
 кредит:кредит N-INFL ; 
 кризис:кризис N-INFL ; 
+кулчулук:кулчулук N-INFL ; 
 клуб:клуб N-INFL ; 
 кварц:кварц N-INFL ; 
 куш:куш N-INFL ; 
+кыямат:кыямат N-INFL ; 
 лаборатория:лаборатория N-INFL ; 
 лига:лига N-INFL ; 
 лимон:лимон N-INFL ; 
@@ -1703,6 +1712,7 @@ LEXICON Nouns
 монография:монография N-INFL ; 
 монолог:монолог N-INFL ; 
 мораль:мораль N-INFL ; 
+момун:момун N-INFL ; 
 директор:директор N-INFL ; 
 музыка:музыка N-INFL ; 
 намаз:намаз N-INFL ; 
@@ -1720,6 +1730,7 @@ LEXICON Nouns
 авто:авто N-INFL ; 
 автобус:автобус N-INFL ; 
 автомобиль:автомобиль N-INFL ; 
+уул:уул N-INFL ; 
 пакет:пакет N-INFL ; 
 параллель:параллель N-INFL ; 
 парламент:парламент N-INFL ; 
@@ -1776,6 +1787,7 @@ LEXICON Nouns
 сөз:сөз N-INFL ; 
 тактика:тактика N-INFL ; 
 танк:танк N-INFL ; 
+тарап:тарап N-INFL ; 
 жак:жак N-INFL ; 
 техникум:техникум N-INFL ; 
 технология:технология N-INFL ; 
@@ -1797,6 +1809,7 @@ LEXICON Nouns
 этнос:этнос N-INFL ; ! ~"ethnicity"
 уран:уран N-INFL ; 
 учак:учак N-INFL ; 
+убада:убада N-INFL ; 
 вектор:вектор N-INFL ; 
 велосипед:велосипед N-INFL ; 
 веранда:веранда N-INFL ; 
@@ -1807,6 +1820,7 @@ LEXICON Nouns
 алтын:алтын N-INFL ; 
 зар:зар N-INFL ; 
 оюн:оюн N-INFL ;
+зулумдук:зулумдук N-INFL ; 
 цемент:цемент N-INFL ; 
 чын:чын N-INFL ; 
 үн:үн N-INFL ; 
@@ -1837,6 +1851,7 @@ LEXICON Nouns
 жер:жер N-INFL ; ! "land"
 март:март N-INFL ; ! "March"
 базар:базар N-INFL ; ! "bazar"
+кабыл:кабыл N-INFL ; 
 нерсе:нерсе N-INFL ; ! "thing"
 телефон:телефон N-INFL ; 
 структура:структура N-INFL ; 
@@ -1850,6 +1865,7 @@ LEXICON Nouns
 бюджет:бюджет N-INFL ; 
 диаметр:диаметр N-INFL ; 
 агент:агент N-INFL ; 
+тозок:тозок N-INFL ; 
 түр:түр N-INFL ; 
 фермер:фермер N-INFL ; 
 дүйнө:дүйнө N-INFL ; 
@@ -1876,7 +1892,9 @@ LEXICON Nouns
 таң:таң N-INFL ; 
 экспорт:экспорт N-INFL ; 
 климат:климат N-INFL ; 
+теңир:теңир N-INFL ; 
 имам:имам N-INFL ; 
+өкүм:өкүм N-INFL ; 
 ипотека:ипотека N-INFL ; 
 отставка:отставка N-INFL ; 
 кино:кино N-INFL ; 
@@ -1930,6 +1948,7 @@ LEXICON Nouns
 ара:ара N-INFL ;
 келишим:келишим N-INFL ;
 полиция:полиция N-INFL ;
+жол:жол N-INFL ;
 жүз:жүз N-INFL ;
 бет:бет N-INFL ;
 процесс:процесс N-INFL ;
@@ -1954,6 +1973,7 @@ LEXICON Nouns
 прокурор:прокурор N-INFL ;
 командир:командир N-INFL ;
 жаш:жаш N-INFL ;
+иш:иш N-INFL ;
 комитет:комитет N-INFL ;
 референдум:референдум N-INFL ;
 маани:маани N-INFL ;
@@ -1970,6 +1990,7 @@ LEXICON Nouns
 зат:зат N-INFL ;
 материал:материал N-INFL ;
 жооп:жооп N-INFL ;
+иш:иш N-INFL ;
 реакция:реакция N-INFL ;
 стратегия:стратегия N-INFL ;
 митинг:митинг N-INFL ;
@@ -1995,12 +2016,15 @@ LEXICON Nouns
 бал:бал N-INFL ;
 келишим:келишим N-INFL ;
 кол% тамга:кол% тамга N-INFL ;
+убада:убада N-INFL ;
 бюро:бюро N-INFL ;
 база:база N-INFL ;
 башкаруучу:башкаруучу N-INFL ;
 музей:музей N-INFL ;
 келишим:келишим N-INFL ;
+жол:жол N-INFL ;
 багыт:багыт N-INFL ;
+жол:жол N-INFL ;
 вирус:вирус N-INFL ;
 үн:үн N-INFL ;
 фонд:фонд N-INFL ;
@@ -2071,6 +2095,7 @@ LEXICON Nouns
 полковник:полковник N-INFL ;
 өзгөрүш:өзгөрүш N-INFL ;
 президент:президент N-INFL ;
+иш:иш N-INFL ;
 баш:баш N-INFL ;
 кит:кит N-INFL ;
 масса:масса N-INFL ;
@@ -2098,12 +2123,19 @@ LEXICON Nouns
 ит:ит N-INFL ;
 механизм:механизм N-INFL ;
 федерация:федерация N-INFL ;
+ээ:ээ N-INFL ;
 сан:сан N-INFL ;
 атом:атом N-INFL ;
+теңир:теңир N-INFL ;
 гигиена:гигиена N-INFL ;
 бал:бал N-INFL ;
 терезе:терезе N-INFL ;
+куран:куран N-INFL ; ! "qur'an"
+Куран:Куран N-INFL ; ! ""
 чат:чат N-INFL ; ! "crotch"
+пайгамбар:пайгамбар N-INFL ; ! "prophet"
+Пайгамбар:Пайгамбар N-INFL ; ! "prophet"
+пайгамбардык:пайгамбардык N-INFL ; ! "prophecy"
 канал:канал N-INFL ;
 май:май N-INFL ;
 меморандум:меморандум N-INFL ;
@@ -2113,6 +2145,7 @@ LEXICON Nouns
 кез:кез N-INFL ;
 стадион:стадион N-INFL ;
 лига:лига N-INFL ;
+жалган:жалган N-INFL ;
 цунами:цунами N-INFL ;
 алюминий:алюминий N-INFL ;
 себеп:себеп N-INFL ;
@@ -2122,11 +2155,16 @@ LEXICON Nouns
 температура:температура N-INFL ; ! "temperature"
 градус:градус N-INFL ; ! "degree"
 эчки:эчки N-INFL ; ! "goat"
+ээ:эге N-INFL ; ! Dir/RL dialectal form
 тыбыш:тыбыш N-INFL ; ! "speech sound"
 ынтымак:ынтымак N-INFL ; ! "unity"
 ынтымакташтык:ынтымакташтык N-INFL ; ! "commonweal"
 кызматкер:кызматкер N-INFL ; ! "служащий"
 жетишкендик:жетишкендик N-INFL ; ! "success"
+жакшылык:жакшылык N-INFL ; ! ""
+үгүт:үгүт N-INFL ; ! ""
+үгүттөөчү:үгүттөөчү N-INFL ; ! ""
+вахий:вахий N-INFL ; ! "пайгамбарга алланын кабары"
 ДНК:ДНК N1-ABBR ; ! "DNA"
 казак:казак NAT ;  ! "Kazakh"
 татар:татар NAT ;  ! "Tatar"
@@ -2258,6 +2296,7 @@ LEXICON ProperNouns
 Чемпиондор% лигасы:Чемпиондор% лига NP-ORG-COMPOUND ; ! "UEFA Champions League"
 Реал% Мадрид:Реал% Мадрид NP-ORG ; ! "Real Madrid Club de Fútbol"
 Мухаммед:Мухаммед NP-ANT-M ;
+Нух:Нух NP-ANT-M ;
 Манас:Манас NP-ANT-M ;
 Роза:Роза NP-ANT-M ;
 Александр:Александр NP-ANT-M ;
@@ -2323,6 +2362,7 @@ LEXICON Adjectives
 керектүү:керектүү ADJ ;
 таза:таза ADJ ; ! "clean"
 окшош:окшош ADJ ;
+көркөм:көркөм ADJ ; ! "fine" (as in "fine arts")
 маанилүү:маанилүү ADJ ; ! "meaningful 
 техникалык:техникалык ADJ ; ! "technical"
 ысык:ысык ADJ ; ! "hot"
@@ -2332,6 +2372,7 @@ LEXICON Adjectives
 жаңы:жаңы ADJ ; 
 ачык:ачык ADJ ; 
 эски:эски ADJ ; 
+башка:башка ADJ ; 
 чоң:чоң ADJ ; 
 жакшы:жакшы ADJ ; 
 толук:толук ADJ ; 
@@ -2367,12 +2408,14 @@ LEXICON Adjectives
 чоң:чоң ADJ ;
 жарашыктуу:жарашыктуу ADJ ;
 жарашчудай:жарашчудай ADJ ;
+көркөм:көркөм ADJ ;
 чоң:чоң ADJ ;
 тунук:тунук ADJ ;
 биологиялык:биологиялык ADJ ; ! ""
 хромосомалык:хромосомалык ADJ ; ! ""
 бай:бай ADJ ;
 аман:аман ADJ ;
+түбөлүк:түбөлүк ADJ ;
 туура:туура ADJ ;
 айрыкча:айрыкча A1 ; ! "especially"
 чоң:чоң ADJ ;
@@ -2389,10 +2432,13 @@ LEXICON Adjectives
 ордуна% тургус:ордуна% тургус ADJ ; ! "irreversible" Use/MT
 кутулгус:кутулгус ADJ ; ! "irreversible"
 атайын:атайын A1 ; ! "purposely"
+үстөм:үстөм ADJ ; ! "превосходящий, господствующий;"
 
 LEXICON Adverbs
 
 эмнеге:эмнеге ADV-ITG ; ! "why"
+качан:качан ADV-ITG ; ! "when"
+кандай:кандай ADV-ITG ; ! "how"
 кайда:кайда ADV-ITG ; ! "where"
 али:али ADV ; ! "still"
 дагы% эле:дагы% эле ADV ; ! "still"
@@ -2400,11 +2446,13 @@ LEXICON Adverbs
 эртең:эртең ADV ; ! "tomorrow"
 эми:эми ADV ; ! "now"
 эч% качан:эч% качан ADV ; ! Use/MT
+негизинде:негизинде ADV ; ! "basically, in general"
 дагы:дагы ADV ; 
 дагы:дагы ADV ; ! FIXME: oh?
 дагы% эле:дагы% эле ADV ; ! maybe this should be seen as compositional
 эми:эми ADV ; 
 дайыма:дайыма ADV ; 
+такыр:такыр ADV ; 
 дагы% эле:дагы% эле ADV ; ! FIXME: compositional
 абдан:абдан ADV ; ! "really"
 чогуу:чогуу ADV ; ! "together"
@@ -2413,9 +2461,12 @@ LEXICON Adverbs
 дайыма:дайыма ADV ; ! "always"
 ошондой:ошондой ADV ; ! FIXME: compositional
 кайра:кайра ADV ; 
+анан:анан ADV ; ! FIXME: compositional
 жакшы:жакшы ADV ;
 дайыма:дайыма ADV ;
 эмнеге:эмнеге ADV ;
+негизинен:негизинен ADV ;
+негизинен:негизинен ADV ; ! FIXME: compositional
 бүгүн:бүгүн ADV-WITH-KI-ABL ; ! "today's"
 алгач:алгач ADV-WITH-KI-ABL ; ! KI: "first" ADV: "at first; first of all"
 азыр:азыр ADV-WITH-KI-ABL ; ! "present"
@@ -2465,6 +2516,7 @@ LEXICON Verbs
 сат:сат V-INFL-TV ;
 арттыр:арттыр V-INFL-TV ; ! "to enlarge"
 бол:бол V-INFL-IV ; ! "be"
+жарат:жарат V-INFL-TV ;
 айт:айт V-INFL-IV ; ! "tell"
 айт:айт V-INFL-TV ; ! "tell"
 ал:ал V-INFL-TV ; ! "take"
@@ -2530,6 +2582,7 @@ LEXICON Verbs
 башта:башта V-INFL-TV ; 
 башта:башта V-INFL-TV ; 
 боё:боё V-INFL-TV ; 
+жибер:жибер V-INFL-TV ; ! "send"
 же:же V-INFL-TV ; 
 жең:жең V-INFL-TV ; 
 жең:жең V-INFL-IV ;
@@ -2561,6 +2614,7 @@ LEXICON Verbs
 катыш:катыш V-INFL-IV ;
 тый:тый V-INFL-IV ;
 уюштур:уюштур V-INFL-TV ;
+каала:каала V-INFL-TV ; ! "want"
 жылмай:жылмай V-INFL-IV ;
 ойло:ойло V-INFL-TV ;
 тапта:тапта V-INFL-TV ;
@@ -2609,10 +2663,13 @@ LEXICON Verbs
 эсепте:эсепте V-INFL-TV ;
 дуушар% бол:дуушар% бол V-INFL-IV; ! "be exposed to"
 кыйра:кыйра V-INFL-IV ; ! "be destroyed"
+үгүттө:үгүттө V-INFL-TV ; ! "to agitate"
+үгүттөн:үгүттөн V-INFL-IV ; ! "be agitated"
 ошент:ошент V-INFL-IV ;
 ошент:ошент V-INFL-TV ;
 минт:минт V-INFL-IV ;
 минт:минт V-INFL-TV ;
+моюн% сун:моюн% сун V-INFL-TV ; ! "повиноваться"
 
 LEXICON Abbreviations
 
