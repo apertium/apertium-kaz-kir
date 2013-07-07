@@ -1475,6 +1475,7 @@ LEXICON Nouns
 автобус:автобус N-INFL ; 
 автомобиль:автомобиль N-INFL ; 
 адам:адам N-INFL ; 
+адам% баласы:адам% баласы N-INFL ; 
 адмирал:адмирал N-INFL ; 
 адым:адым N-INFL ; 
 азан:азан N-INFL ; 
@@ -1637,6 +1638,7 @@ LEXICON Nouns
 гол:гол N-INFL ; 
 графит:графит N-INFL ; 
 гранит:гранит N-INFL ; 
+көк:көк N-INFL ; 
 көз:көз N-INFL ; 
 карта:карта N-INFL ; 
 гектар:гектар N-INFL ; 
@@ -1746,6 +1748,7 @@ LEXICON Nouns
 проблема:проблема N-INFL ; 
 программа:программа N-INFL ; 
 психология:психология N-INFL ; 
+Раббы:раббы N-INFL ; 
 радиация:радиация N-INFL ; 
 радио:радио N-INFL ; 
 радий:радий N-INFL ; 
@@ -1754,6 +1757,7 @@ LEXICON Nouns
 редактор:редактор N-INFL ; 
 реформа:реформа N-INFL ; 
 ректор:ректор N-INFL ; 
+ырайым:ырайым N-INFL ; 
 диссертация:диссертация N-INFL ; 
 экспозиция:экспозиция N-INFL ; 
 компания:компания N-INFL ; 
@@ -1944,6 +1948,7 @@ LEXICON Nouns
 декабрь:декабрь N-INFL ;
 очерк:очерк N-INFL ;
 багыт:багыт N-INFL ;
+сыйлык:сыйлык N-INFL ; 
 ыйман:ыйман N-INFL ;
 ара:ара N-INFL ;
 келишим:келишим N-INFL ;
@@ -1980,6 +1985,7 @@ LEXICON Nouns
 евро:евро N-INFL ;
 кабинет:кабинет N-INFL ;
 азем:азем N-INFL ;
+сыйлык:сыйлык N-INFL ;
 прогресс:прогресс N-INFL ;
 территория:территория N-INFL ;
 команда:команда N-INFL ;
@@ -2403,6 +2409,7 @@ LEXICON Adjectives
 ысык:ысык ADJ ;
 мүмкүн:мүмкүн ADJ ;
 мыкты:мыкты ADJ ;
+тең:тең ADJ ;
 терс:терс ADJ ;
 керек:керек ADJ ;
 чоң:чоң ADJ ;
@@ -2433,6 +2440,7 @@ LEXICON Adjectives
 кутулгус:кутулгус ADJ ; ! "irreversible"
 атайын:атайын A1 ; ! "purposely"
 үстөм:үстөм ADJ ; ! "превосходящий, господствующий;"
+мээримдүү:мээримдүү ADJ ; ! ""
 
 LEXICON Adverbs
 
@@ -2453,6 +2461,7 @@ LEXICON Adverbs
 эми:эми ADV ; 
 дайыма:дайыма ADV ; 
 такыр:такыр ADV ; 
+чынында:чынында ADV ; ! FIXME: not a lemma: "in truth"
 дагы% эле:дагы% эле ADV ; ! FIXME: compositional
 абдан:абдан ADV ; ! "really"
 чогуу:чогуу ADV ; ! "together"
@@ -2466,7 +2475,9 @@ LEXICON Adverbs
 дайыма:дайыма ADV ;
 эмнеге:эмнеге ADV ;
 негизинен:негизинен ADV ;
+чынында:чынында ADV ;
 негизинен:негизинен ADV ; ! FIXME: compositional
+мурун:мурун ADV-WITH-KI-ABL ; ! "old (former)"
 бүгүн:бүгүн ADV-WITH-KI-ABL ; ! "today's"
 алгач:алгач ADV-WITH-KI-ABL ; ! KI: "first" ADV: "at first; first of all"
 азыр:азыр ADV-WITH-KI-ABL ; ! "present"
