@@ -132,17 +132,54 @@
 <e>       <p><l>ғана<s n="postadv"/></l>          <r>эле<s n="postadv"/></r></p></e>
 <e>       <p><l>да<s n="postadv"/></l>            <r>деле<s n="postadv"/></r></p></e>
 <e>       <p><l>-ақ<s n="postadv"/></l>           <r>гана<s n="postadv"/></r></p></e>
+<e>       <p><l>тағы<s n="postadv"/></l>          <r>дагы<s n="postadv"/></r></p></e>
+
 
 <!-- SECTION: Postpositions -->
-<e>       <p><l>мен<s n="post"/></l>              <r>менен<s n="post"/></r></p></e>
-<e>       <p><l>үшін<s n="post"/></l>             <r>үчүн<s n="post"/></r></p></e> <!-- "through" -->
+
 <e>       <p><l>арқылы<s n="post"/></l>           <r>аркылуу<s n="post"/></r></p></e> <!-- "through" -->
-<e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
-<e>       <p><l>дейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
-<e>       <p><l>кейін<s n="post"/></l>            <r>кийин<s n="post"/></r></p></e> <!-- "through" -->
-<e r="RL"><p><l></l>                              <r>менен<s n="post"/></r></p></e> <!-- "with"  / ins-->
-<e>       <p><l>сияқты<s n="post"/></l>           <r>сыяктуу<s n="post"/></r></p></e> <!-- "similar to" -->
+<e>       <p><l>арналған<s n="post"/></l>         <r>арналган<s n="adj"/></r></p></e>
+<e>       <p><l>әрі<s n="post"/></l>              <r>ары<s n="post"/></r></p></e>
+<e>       <p><l>басқа<s n="post"/></l>            <r>башка<s n="post"/></r></p></e>
+<e>       <p><l>бері<s n="post"/></l>             <r>бери<s n="post"/></r></p></e>
+<e>       <p><l>бірге<s n="post"/></l>            <r>бирге<s n="adv"/></r></p></e>
+<e>       <p><l>бойы<s n="post"/></l>             <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>бойында<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e>
 <e>       <p><l>бойынша<s n="post"/></l>          <r>боюнча<s n="post"/></r></p></e> <!-- "by, per, according to" -->
+<e>       <p><l>бұрын<s n="post"/></l>            <r>элек<s n="post"/></r></p></e>
+<e>       <p><l>гөрі<s n="post"/></l>             <r><!--FIXME--><s n="post"/></r></p></e> 
+<e>       <p><l>дейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>жайында<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>жөнінде<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>жуық<s n="post"/></l>             <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>іспетті<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e> 
+<e>       <p><l>кейін<s n="post"/></l>            <r>кийин<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>қарағанда<s n="post"/></l>        <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>қарай<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>қарамағында<s n="post"/></l>      <r><!--FIXME--><s n="post"/></r></p></e> 
+<e>       <p><l>қарамағындағы<s n="post"/></l>    <r><!--FIXME--><s n="post"/></r></p></e> 
+<e>       <p><l>қарамай<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e> <!--"regardless, despite"-->
+<e>       <p><l>қарамастан<s n="post"/></l>       <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>қарсы<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>қоса<s n="post"/></l>             <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>мақсатында<s n="post"/></l>       <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>мен<s n="post"/></l>              <r>менен<s n="post"/></r></p></e>
+<e r="RL"><p><l></l>                              <r>менен<s n="post"/></r></p></e> <!-- "with"  / ins-->
+<e>       <p><l>сайын<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>сәйкес<s n="post"/></l>           <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>секілді<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>сияқты<s n="post"/></l>           <r>сыяктуу<s n="post"/></r></p></e> <!-- "similar to" -->
+<e>       <p><l>соң<s n="post"/></l>              <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>таман<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>тарта<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>туралы<s n="post"/></l>           <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>үшін<s n="post"/></l>             <r>үчүн<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>хақында<s n="post"/></l>          <r><!--FIXME--><s n="post"/></r></p></e>
+<e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
+
+<e>       <p><l>салым<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e> <!--""-->
+<e>       <p><l>құрлы<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e> <!--""-->
+<e>       <p><l>қатар<s n="post"/></l>            <r><!--FIXME--><s n="post"/></r></p></e> <!--""-->
 
 <!-- SECTION: Numerals -->
 
@@ -158,6 +195,54 @@
 <e>       <p><l>сегіз<s n="num"/></l>             <r>сегиз<s n="num"/></r></p></e>
 <e>       <p><l>тоғыз<s n="num"/></l>             <r>тогуз<s n="num"/></r></p></e>
 <e>       <p><l>он<s n="num"/></l>                <r>он<s n="num"/></r></p></e>
+
+<e>       <p><l>он<b/>бір<s n="num"/></l>         <r>он<b/>бир<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>екі<s n="num"/></l>         <r>он<b/>эки<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>үш<s n="num"/></l>          <r>он<b/>үч<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>төрт<s n="num"/></l>        <r>он<b/>төрт<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>бес<s n="num"/></l>         <r>он<b/>беш<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>алты<s n="num"/></l>        <r>он<b/>алты<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>жеті<s n="num"/></l>        <r>он<b/>жети<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>сегіз<s n="num"/></l>       <r>он<b/>сегиз<s n="num"/></r></p></e>
+<e>       <p><l>он<b/>тоғыз<s n="num"/></l>       <r>он<b/>тогуз<s n="num"/></r></p></e>
+
+<e>       <p><l>жиырма<s n="num"/></l>            <r>жыйырма<s n="num"/></r></p></e>
+<e>       <p><l>отыз<s n="num"/></l>              <r>отуз<s n="num"/></r></p></e>
+<e>       <p><l>қырық<s n="num"/></l>             <r>кырк<s n="num"/></r></p></e>
+<e>       <p><l>елу<s n="num"/></l>               <r>элүү<s n="num"/></r></p></e>
+<e>       <p><l>алпыс<s n="num"/></l>             <r>алтымыш<s n="num"/></r></p></e>
+<e>       <p><l>жетпіс<s n="num"/></l>            <r>жетимиш<s n="num"/></r></p></e>
+<e>       <p><l>сексен<s n="num"/></l>            <r>сексен<s n="num"/></r></p></e>
+<e>       <p><l>тоқсан<s n="num"/></l>            <r>токсон<s n="num"/></r></p></e>
+<e>       <p><l>жүз<s n="num"/></l>               <r>жүз<s n="num"/></r></p></e>
+
+<e>       <p><l>мың<s n="num"/></l>               <r>миң<s n="num"/></r></p></e> <!-- "thousand" -->
+<e>       <p><l>түмен<s n="num"/></l>             <r>он<b/>миң<s n="num"/></r></p></e> <!-- "archaic for 10 000" -->
+<e>       <p><l>миллион<s n="num"/></l>           <r>миллион<s n="num"/></r></p></e> <!-- "million" -->
+<e>       <p><l>миллиард<s n="num"/></l>          <r>миллиард<s n="num"/></r></p></e> <!-- "billion" -->
+<e>       <p><l>триллион<s n="num"/></l>          <r>триллион<s n="num"/></r></p></e> <!-- "thrillion" -->
+
+<e>       <p><l>I<s n="num"/></l>                 <r>I<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>II<s n="num"/></l>                <r>II<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>III<s n="num"/></l>               <r>III<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>IV<s n="num"/></l>                <r>IV<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>V<s n="num"/></l>                 <r>V<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>VI<s n="num"/></l>                <r>VI<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>VII<s n="num"/></l>               <r>VII<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>VIII<s n="num"/></l>              <r>VIII<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>IX<s n="num"/></l>                <r>IX<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>X<s n="num"/></l>                 <r>X<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XI<s n="num"/></l>                <r>XI<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XII<s n="num"/></l>               <r>XII<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XIII<s n="num"/></l>              <r>XIII<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XIV<s n="num"/></l>               <r>XIV<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XV<s n="num"/></l>                <r>XV<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XVI<s n="num"/></l>               <r>XVI<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XVII<s n="num"/></l>              <r>XVII<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XVIII<s n="num"/></l>             <r>XVIII<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XIX<s n="num"/></l>               <r>XIX<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XX<s n="num"/></l>                <r>XX<s n="num"/></r></p></e> <!-- "" -->
+<e>       <p><l>XXI<s n="num"/></l>               <r>XXI<s n="num"/></r></p></e> <!-- "" -->
 
 <e>       <p><l>неше<s n="num"/></l>              <r>нече<s n="num"/></r></p></e> <!-- "" -->
 <e>       <p><l>қанша<s n="num"/></l>             <r>канча<s n="num"/></r></p></e> <!-- "" -->
@@ -665,7 +750,35 @@
 <e>       <p><l>әлбетте<s n="ij"/></l>            <r>албетте<s n="ij"/></r></p></e>
 <e>       <p><l>әрине<s n="ij"/></l>              <r>албетте<s n="ij"/></r></p></e>
 <e>       <p><l>әй<s n="ij"/></l>                 <r>эй<s n="ij"/></r></p></e>
+<e>       <p><l>ау<s n="ij"/></l>                 <r>эй<s n="ij"/></r></p></e>
+<e>       <p><l>ә<s n="ij"/></l>                  <r>э<s n="ij"/></r></p></e>
 <e>       <p><l>міне<s n="ij"/></l>               <r>мына<s n="ij"/></r></p></e>
+<e>       <p><l>әйе<s n="ij"/></l>                <r>ооба<s n="ij"/></r></p></e>
+<e>       <p><l>әттең<s n="ij"/></l>              <r>аттиң<s n="ij"/></r></p></e>
+<e>       <p><l>бәрекелді<s n="ij"/></l>          <r>баракелде<s n="ij"/></r></p></e>
+<e>       <p><l>бәсе<s n="ij"/></l>               <r>баса<s n="ij"/></r></p></e>
+<e>       <p><l>болыпты<s n="ij"/></l>            <r>болуптур<s n="ij"/></r></p></e>
+<e>       <p><l>дариға<s n="ij"/></l>             <r>аттигинай<s n="ij"/></r></p></e>
+<e>       <p><l>демек<s n="ij"/></l>              <r>демек<s n="ij"/></r></p></e>
+<e>       <p><l>дұрыс<s n="ij"/></l>              <r>дурус<s n="ij"/></r></p></e>
+<e>       <p><l>ей<s n="ij"/></l>                 <r>эй<s n="ij"/></r></p></e>
+<e>       <p><l>жарайды<s n="ij"/></l>            <r>жарайт<s n="ij"/></r></p></e>
+<e>       <p><l>иә<s n="ij"/></l>                 <r>ооба<s n="ij"/></r></p></e>
+<e>       <p><l>қане<s n="ij"/></l>               <r>кана<s n="ij"/></r></p></e>
+<e>       <p><l>қош<s n="ij"/></l>                <r>кош<s n="ij"/></r></p></e>
+<e>       <p><l>Құдай<b/>-ай<s n="ij"/></l>       <r>Кудай<b/>-ай<s n="ij"/></r></p></e>
+<e>       <p><l>мақұл<s n="ij"/></l>              <r>макул<s n="ij"/></r></p></e>
+<e>       <p><l>мә<s n="ij"/></l>                 <r>ме<s n="ij"/></r></p></e>
+<e>       <p><l>мейлі<s n="ij"/></l>              <r>мейли<s n="ij"/></r></p></e>
+<e>       <p><l>міне<s n="ij"/></l>               <r>мына<s n="ij"/></r></p></e>
+<e>       <p><l>мына<s n="ij"/></l>               <r>мына<s n="ij"/></r></p></e>
+<e>       <p><l>ой<s n="ij"/></l>                 <r>ой<s n="ij"/></r></p></e>
+<e>       <p><l>өй<s n="ij"/></l>                 <r>ой<s n="ij"/></r></p></e>
+<e>       <p><l>түсінікті<s n="ij"/></l>          <r>түшүнүктүү<s n="ij"/></r></p></e>
+<e>       <p><l>уа<s n="ij"/></l>                 <r>о<s n="ij"/></r></p></e>
+<e>       <p><l>әу<s n="ij"/></l>                 <r>оу<s n="ij"/></r></p></e>
+<e>       <p><l>ойбай<s n="ij"/></l>              <r>ойбой<s n="ij"/></r></p></e>
+
 
 <!-- SECTION: Abbreviations -->
 
