@@ -40,6 +40,7 @@ dev/testvoc/testvoc.sh -text
 /test.txt -text
 /testcorpus_kaz-kir.sh -text
 texts/MANIFEST -text
+texts/azattyq_24455849.txt -text svneol=unset#application/octet-stream
 texts/diff.sh -text
 texts/eval.sh -text
 texts/story.eval.sh -text
