@@ -141,25 +141,25 @@
 <e>       <p><l>әйтпесе<s n="cnjadv"/></l>              <r>же<b/>болбосо<s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
 <e>       <p><l>әйтсе<b/>де<s n="cnjadv"/></l>          <r>ошондой<b/>болсо<b/>да<s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
 <e>       <p><l>басқаша<b/>айтканда<s n="cnjadv"/></l>  <r>башкача<b/>айтканда<s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>дегенмен<s n="cnjadv"/></l>             <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>жазуынша<s n="cnjadv"/></l>             <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>мәлімдеуінше<s n="cnjadv"/></l>         <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>осы<b/>себептен<s n="cnjadv"/></l>      <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>пікірінше<s n="cnjadv"/></l>            <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>сонда<b/>да<s n="cnjadv"/></l>          <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>сонда<s n="cnjadv"/></l>                <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>дегенмен<s n="cnjadv"/></l>             <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>жазуынша<s n="cnjadv"/></l>             <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>мәлімдеуінше<s n="cnjadv"/></l>         <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>осы<b/>себептен<s n="cnjadv"/></l>      <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>пікірінше<s n="cnjadv"/></l>            <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>сонда<b/>да<s n="cnjadv"/></l>          <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>сонда<s n="cnjadv"/></l>                <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
 <e>       <p><l>сондықтан<s n="cnjadv"/></l>	        <r>ошондуктан<s n="cnjadv"/></r></p></e>
-<e>       <p><l>сөздерінше<s n="cnjadv"/></l>           <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>сөзінше<s n="cnjadv"/></l>              <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>сөйтсе<b/>де<s n="cnjadv"/></l>         <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>сөйтсе<s n="cnjadv"/></l>               <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>хабарлауынша<s n="cnjadv"/></l>         <r>маалымдашынча<s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>сөздерінше<s n="cnjadv"/></l>           <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>сөзінше<s n="cnjadv"/></l>              <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>сөйтсе<b/>де<s n="cnjadv"/></l>         <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>сөйтсе<s n="cnjadv"/></l>               <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>хабарлауынша<s n="cnjadv"/></l>         <r>маалымдашынча<s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
 
-<e>       <p><l>әйткенмен<s n="cnjadv"/></l>            <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>айтуларынша<s n="cnjadv"/></l>          <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>ойынша<s n="cnjadv"/></l>               <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>мәліметінше<s n="cnjadv"/></l>          <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
-<e>       <p><l>пайымдауынша<s n="cnjadv"/></l>         <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>әйткенмен<s n="cnjadv"/></l>            <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>айтуларынша<s n="cnjadv"/></l>          <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>ойынша<s n="cnjadv"/></l>               <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>мәліметінше<s n="cnjadv"/></l>          <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
+<e i="yes">       <p><l>пайымдауынша<s n="cnjadv"/></l>         <r> <s n="cnjadv"/></r></p></e> <!--FIXME find translation-->
 
 
 <!-- SECTION: Postpositions -->
@@ -1723,7 +1723,7 @@
 <e>   <p><l>араб<s n="n"/></l>               <r>араб<s n="n"/></r></p></e> <!-- "Arab" -->
 <e>   <p><l>арамей<s n="n"/></l>             <r>арамей<s n="n"/></r></p></e>
 <e>   <p><l>ауған<s n="n"/></l>              <r>афган<s n="n"/></r></p></e> <!-- ""-->
-<e>       <p><l>әрмен<s n="n"/></l>               <r>   <s n="n"/></r></p></e> <!-- FIXME find translation-->
+<e i="yes">       <p><l>әрмен<s n="n"/></l>               <r>   <s n="n"/></r></p></e> <!-- FIXME find translation-->
 <e>   <p><l>башқұрт<s n="n"/></l>            <r>башкырт<s n="n"/></r></p></e> <!-- "" -->
 <e>   <p><l>белорус<s n="n"/></l>            <r>белорус<s n="n"/></r></p></e>
 <e>   <p><l>британ<s n="n"/></l>             <r>британ<s n="n"/></r></p></e>
@@ -1741,8 +1741,8 @@
 <e>   <p><l>қырғыз<s n="n"/></l>             <r>кыргыз<s n="n"/></r></p></e> <!-- "Kyrgyz" -->
 <e>   <p><l>қытай<s n="n"/></l>              <r>кытай<s n="n"/></r></p></e> <!-- "Chinese" -->
 <e>   <p><l>латын<s n="n"/></l>              <r>латын<s n="n"/></r></p></e> <!-- "Latin" -->
-<e>       <p><l>леуі<s n="n"/></l>                <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
-<e>       <p><l>леуілік<s n="n"/></l>             <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
+<e i="yes">       <p><l>леуі<s n="n"/></l>                <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
+<e i="yes">       <p><l>леуілік<s n="n"/></l>             <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
 <e>   <p><l>моңғол<s n="n"/></l>             <r>монгол<s n="n"/></r></p></e> <!-- "Mongol" -->
 <e>   <p><l>мордва<s n="n"/></l>             <r>мордва<s n="n"/></r></p></e>
 <e>   <p><l>неміс<s n="n"/></l>              <r>немис<s n="n"/></r></p></e> <!--"German"-->
