@@ -4,7 +4,10 @@
 
 ! See http://wiki.apertium.org/wiki/Turkic_lexicon
 
-Multichar_Symbols
+!=================!
+ Multichar_Symbols
+!=================!
+
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories = First-level tags
@@ -25,17 +28,16 @@ Multichar_Symbols
 %<ij%>        ! Interjection               ! Одағай
 %<abbr%>      ! Abbreviation               ! Қысқарған сөз
 %<cop%>       ! Copula                     ! Копула
-%<part%>      ! Particle                   ! Демеулік
 %<ideo%>      ! Ideophone                  ! Еліктеу сөз
 
 ! *1. Анықтаған сөздерінің артынан келетін үстеулер ("демеуліктер") !# ғана, -ақ
 
 ! Proper noun types
-%<top%>       ! Toponym
+%<top%>       ! Toponym      ! Топоним
 %<ant%>       ! Anthroponym  ! Кісі есімі
 %<cog%>       ! Cognomen     ! Фамилия
 %<pat%>       ! Patronym     ! Әке текті есім
-%<org%>       ! Organization
+%<org%>       ! Organization ! Ұйым есімі
 %<al%>        ! Other        ! Басқалар
 
 !! gender of anthroponyms and cognoms
@@ -71,21 +73,32 @@ Multichar_Symbols
 %<ins%>       ! Instrumental
 
 !! some additional ~cases
-%<sim%>       ! Similative (<apprx> in kymorph)
+%<sim%>       ! Similative
               !# DAй
 %<abe%>       ! Abessive=Privative ! Лишительный
               !# -сыз/-сез (not used after posessives and cases)
-%<reas%>      ! Reason
-!обладательный !# LI (-лы/-ле) (not used after posessives and cases)
+%<reas%>      ! not used rigth now, just in case for
+              !# LIKTAN
 
 ! Levels of comparison of adjectives
 %<comp%>      ! Comparative
-%<sup%>       ! Superlative
+
+! TODO
+!! Some adjecives have a "weakening" form, e.g. яшел>яшькелт, сары>саргылт; but
+!! also ак>аксыл, кара>карасу. Sometimes they take the comparative RAK affix,
+!! e.g. кызгылтрак.
+
+! TODO
+!! There is also what can be called a synthetic superlative form (as opposed
+!! to the /ең<adv>+X<adj>/ construction) -- кап-кара, тип-тигез, төп-төгәл etc.
+!! Probably easiest way would be just to lexicalize them, but make sure that
+!! they don't take the comparative affix.
 
 ! Pronoun types
 %<pers%>      ! Personal
 %<recip%>     ! Reciprocal
-! Pronoun&Determiner types
+
+!! Pronoun&Determiner types
 %<dem%>       ! Demonstrative
 %<ind%>       ! Indefinite
 %<itg%>       ! Interrogative
@@ -112,39 +125,41 @@ Multichar_Symbols
 
 !! Tense / finite forms
 %<pres%>      ! for "жатыр", "тұр", "отыр" and "жүр"
-%<aor%>       ! -{E}                    ! non-past (afaik /IS/)
-%<past%>      ! -{G}{A}н                ! past
-%<ifi%>       ! -{D}{I}                 ! eyewitness past
-%<ifi_evid%>  ! -{I}пт{I}               ! "reported past" (afaik /IS/)
-%<fut%>       ! -{I}р                   ! future
-%<fut_plan%>  ! -{M}{A}{K}              ! future plan
-
-%<evid%>      ! evidential
-              ! Was used for -ган екен and -ыпты. The former is not handled here
-              ! in lexc anymore, the latter was renamed from <ifi><evid> to
-              ! <ifi_evid>
+%<aor%>       ! -{E}
+%<past%>      ! -{G}{A}н
+%<ifi%>       ! -{D}{I}
+%<ifi_evid%>  ! -{I}пт{I}
+%<fut%>       ! -{I}р
+%<fut_plan%>  ! -{M}{A}{K}
 
 !! Non-Finite verb forms
 
 !!! Participles
-%<prc_perf%>  ! -{I}п                   ! perfect participle
+%<prc_perf%>  ! Perfect participle
+              ! -{I}п
               !# "Бірақ мысығы үйде, _ұйықтап_ жатыр.";
-%<prc_impf%>  ! -{E}                    ! imperfect participle
+%<prc_impf%>  ! Imperfect participle
+              ! -{E}
               !# "...олар далада _ойнай_ алмады...";
-%<prc_vol%>   ! -{G}{I}                 ! volition participle
+%<prc_vol%>   ! Volition participle
+              ! -{G}{I}
               !# барғым келмейді;
-%<prc_cond%>  ! -с{A}                   ! conditional participle
+%<prc_cond%>  ! Conditional participle
+              ! -с{A}
               !# ...жесең болады...;
-%<prc_fplan%> ! -{M}{A}{K},             ! future plan participle
+%<prc_fplan%> ! Future plan participle
+              ! -{M}{A}{K},
               ! -{M}{A}{K}ш{I} Dir/LR
               !# "Шал қазға бармақшы болады.";
-%<prc_plan%>  ! -{G}{A}л{I}             ! plan participle
+%<prc_plan%>  ! Plan participle
+              ! -{G}{A}л{I}
               !# мен сөйлескелі келдім;
-!%<prc_irre%> ! -{E}{T}{I}н             ! irrealis participle
+!%<prc_irre%> ! Irrealis participle
+              ! -{E}{T}{I}н
               ! (This form is analyzed as <grp_impf> and <ger_impf>)
               ! (FIXME this might be wrong)
 
-!!! Verbal adverbs - Глагольные наречия
+!!! Verbal adverbs ! Көсемшелер !Глагольные наречия
 %<gna_perf%>  ! -{I}п
               !# "...ул вакытта инде кояш _баеп_, йолдызлар күренә башлаган
               !# иде..." (Ф.Хөсни);
@@ -152,11 +167,12 @@ Multichar_Symbols
               !# ...қайда екенін _білсе_, маған бұл туралы айтыр еді...;
 %<gna_until%> ! -{G}{A}нш{A}
               !# "Мен кеткенше ол жауап бермейді.";
-%<gna_after%> ! -{G}{A}л{I}             (ambiguous with prc_plan)
+%<gna_after%> ! -{G}{A}л{I}
+              ! (NOTE: ambiguous with prc_plan)
               !# "Сабақ _біткелі_ екі сағат өтті."; Ол кеткелі біз жұмыс
               !# істемейдік;
 
-!!! Verbal adjectives - Глагольные причастия
+!!! Verbal adjectives ! Есімшелер ! Глагольные причастия
 %<gpr_past%>  ! -{G}{A}н               ! past verbal adjective
               !# келген адам; оқылмаған кітап;
 %<gpr_impf%>  ! -{E}{T}{I}н            ! imperfect verbal adjective
@@ -180,7 +196,7 @@ Multichar_Symbols
               !# "Мен айтарымды айттым";
 %<ger_impf%>  ! -{E}{T}{I}н
               !# "Ол бүгін кешкілік болатынын айтты";
-! FIXME cover -{E}{T}{I}нд{I}{K} form
+! TODO cover -{E}{T}{I}нд{I}{K} form
 
 !! Transitivity
 %<tv%>        ! Transitive
@@ -195,11 +211,11 @@ Multichar_Symbols
 
 ! Modal particles
 %<qst%>       ! Modal question particle
-%<emph%>      ! Emphasizing modal particle (for imperative and jussive/optative forms)
+%<emph%>      ! Emphasizing modal particle
               !# -шы/-ші
 %<mod_ass%>   ! Assertive modal particle
               !# -ғой/-қой
-%<mod%>       ! Modal verbs (шығар, сияқты etc)
+%<mod%>       ! Other modal words (шығар, сияқты etc)
 
 ! Punctuation
 %<sent%>      ! Sentence marker
@@ -210,6 +226,8 @@ Multichar_Symbols
 %<lquot%>     ! Quote marker (left hand side)
 %<rpar%>      ! Parenthetical marker (right hand side)
 %<lpar%>      ! Parenthetical marker (left hand side)
+
+! Archiphonemes
 
 %{L%}         ! Archiphoneme 'l': realised as л, д, т
 %{N%}         ! Archiphoneme 'n': realised as н, д, т
@@ -277,28 +295,27 @@ Ideophones ;
 Abbreviations ;
 Punctuation ;
 Digits ; ! Use/Circ
-!Guesser ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!
-!!!!                            N U M E R A L S 
+!!!!                            N U M E R A L S
 !!!!
-!!!! WARNING: This section should not be modified without consultation. 
+!!!! WARNING: This section should not be modified without consultation.
 !!!!          Test cases are in dev/numerals.
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON CASE-NONOM
 
 ! This continuation lexicon is a copy of the normal case lexicon,
-! only it does not include nominative 
-!   1<num><nom> = 1, 1<num><acc> = 1-{N}{I} 
+! only it does not include nominative
+!   1<num><nom> = 1, 1<num><acc> = 1-{N}{I}
 
-%<gen%>:%>%{N%}%{I%}ң CLIT ;
-%<dat%>:%>%{G%}%{A%} CLIT ;
-%<acc%>:%>%{N%}%{I%} CLIT ;
+%<gen%>:%>%{N%}%{I%}ң CLITICS ;
+%<dat%>:%>%{G%}%{A%} CLITICS ;
+%<acc%>:%>%{N%}%{I%} CLITICS ;
 %<abl%>:%>%{D%}%{A%}н # ;
 %<loc%>:%>%{D%}%{A%} # ;
-%<ins%>:%>%{M%}ен CLIT ;
+%<ins%>:%>%{M%}ен CLITICS ;
 
 LEXICON CASE-ETC-NONOM
 
@@ -320,9 +337,9 @@ LEXICON SQRD
 
 ²%<num%>:2 # ;  ! Dir/LR
 ³%<num%>:3 # ;  ! Dir/LR
-²%<num%>:² # ; 
-³%<num%>:³ # ; 
-%<num%>: # ; 
+²%<num%>:² # ;
+³%<num%>:³ # ;
+%<num%>: # ;
 
 LEXICON NUM-DIGIT
 
@@ -399,28 +416,28 @@ LEXICON LASTDIGIT-REST
 8%0:8%0%{э%}%{н%}       NUM-DIGIT ; ! "сексен"
 9%0:9%0%{а%}%{н%}       NUM-DIGIT ; ! "тоқсан"
 
-LEXICON POWERS 
+LEXICON POWERS
 %0%0:%0%0%{э%}%{з%}     NUM-DIGIT ; ! "жүз"
 %0%0%0:%0%0%0%{а%}%{н%} NUM-DIGIT ; ! "мың"
 
 LEXICON LOOP
 
-%,:%, DIGITLEX ; 
-%.:%. DIGITLEX ; 
-%,:%, LASTDIGIT ; 
-%.:%. LASTDIGIT ; 
-%,:%, LASTDIGIT-REST ; 
-%.:%. LASTDIGIT-REST ; 
-%,:%, POWERS ; 
-%.:%. POWERS ; 
-      DIGITLEX ; 
+%,:%, DIGITLEX ;
+%.:%. DIGITLEX ;
+%,:%, LASTDIGIT ;
+%.:%. LASTDIGIT ;
+%,:%, LASTDIGIT-REST ;
+%.:%. LASTDIGIT-REST ;
+%,:%, POWERS ;
+%.:%. POWERS ;
+      DIGITLEX ;
       LASTDIGIT ;
       LASTDIGIT-REST ;
-      POWERS ; 
+      POWERS ;
 
 LEXICON DIGITLEX
 
-%0:%0 LOOP ; 
+%0:%0 LOOP ;
 1:1   LOOP ;
 2:2   LOOP ;
 3:3   LOOP ;
@@ -431,10 +448,8 @@ LEXICON DIGITLEX
 8:8   LOOP ;
 9:9   LOOP ;
 
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!       N U M E R A L     L E X I C O N     E N D S     H E R E 
+!!!!       N U M E R A L     L E X I C O N     E N D S     H E R E
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON SUBST
@@ -472,8 +487,6 @@ LEXICON CLIT-QST
 
 CLIT-QST-MA ;
 %+мекен%<qst%>:% %{M%}екен # ;
-%+ма% не%<qst%>:%>% %{M%}%{A%}% не # ; ! FIXME CHECK
-!%+меді%<qst%>:% %{M%}еді # ;          ! FIXME CHECK
 # ;
 
 LEXICON CLIT-MODASS
@@ -485,25 +498,24 @@ LEXICON CLIT-GHANA-ETC
 
 %+%-ақ%<postadv%>:%-ақ # ; ! ""
 %+ғана%<postadv%>:% %{G%}ана # ; ! "only"
-%+да%<postadv%>:% %{D%}%{A%} # ; ! "1. even if"
 %+да%<cnjcoo%>:% %{D%}%{A%} # ; ! "also"
+%+да%<postadv%>:% %{D%}%{A%} # ; ! "1. even if"
 # ;
 
-LEXICON CLIT
+LEXICON CLIT-COPULA
+
+%+е%<cop%>: V-PERS-S1 ;
+
+LEXICON CLITICS
 
 CLIT-QST ;
 CLIT-MODASS ;
 CLIT-GHANA-ETC ;
 
-LEXICON V-PERS-COP ! P_3
-
-%+е%<cop%>: V-PERS-S1 ;
-
-LEXICON CLIT-GENERAL ! Includes personal copula suffixes, therefore appears only
-                     ! after nominal parts of speech (and only after some cases)
-                     ! FIXME: to be checked whether leads to any overgeneration
-CLIT ;
-V-PERS-COP ;
+LEXICON CLITICS-INCLUDING-COPULA ! Can appear only after nominal parts of speech (and only
+                                 ! after some cases).
+CLITICS ;
+CLIT-COPULA ;
 
 
 
@@ -538,17 +550,17 @@ V-PERS-COP ;
 
 LEXICON CASE-COMMON
 
-%<gen%>:%>%{N%}%{I%}ң CLIT ;
-%<dat%>:%>%{G%}%{A%} CLIT ;
-%<acc%>:%>%{N%}%{I%} CLIT ;
-%<ins%>:%>%{M%}ен CLIT ;
+%<gen%>:%>%{N%}%{I%}ң CLITICS ;
+%<dat%>:%>%{G%}%{A%} CLITICS ;
+%<acc%>:%>%{N%}%{I%} CLITICS ;
+%<ins%>:%>%{M%}ен CLITICS ;
 
 LEXICON CASE
 
 CASE-COMMON ;
-%<nom%>: CLIT-GENERAL ;
-%<abl%>:%>%{D%}%{A%}н CLIT-GENERAL ;
-%<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
+%<nom%>: CLITICS-INCLUDING-COPULA ;
+%<abl%>:%>%{D%}%{A%}н CLITICS-INCLUDING-COPULA ;
+%<loc%>:%>%{D%}%{A%} CLITICS-INCLUDING-COPULA ;
 
 
 LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
@@ -556,13 +568,13 @@ LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
                 ! thing /02082012, IS/
 
 CASE-COMMON ;
-%<nom%>: CLIT ;
-%<abl%>:%>%{D%}%{A%}н CLIT ;
-%<loc%>:%>%{D%}%{A%} CLIT ;
+%<nom%>: CLITICS ;
+%<abl%>:%>%{D%}%{A%}н CLITICS ;
+%<loc%>:%>%{D%}%{A%} CLITICS ;
 
 LEXICON ATTR/SUBST
 
-%<attr%>: CLIT ;
+%<attr%>: CLITICS ;
 %<subst%>: CASE ;
 %<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
 
@@ -576,8 +588,8 @@ LEXICON ABE-ATTR/ADVL/SUBST
 ! Note that allowing of the (scarcely existing) [X +<abe> +<pers.cop> (+ modalpcle)] sequence
 ! would require some additional rules in kaz-tat.t2x /02082012, IS/
 
-%<attr%>: CLIT ;
-%<advl%>: CLIT ;
+%<attr%>: CLITICS ;
+%<advl%>: CLITICS ;
 %<subst%>: CASE-2 ;
 %<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
 
@@ -592,13 +604,12 @@ LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR/SUBST ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
                                             ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
                                             ! I'll give some arguments in a mail to apertium-turkic</s>
-%<sim%>:%>%{D%}%{A%}й CLIT ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
+%<sim%>:%>%{D%}%{A%}й CLITICS ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
                                             ! no case endings after it. In Kazakh it should be the same /I.S./ 
 LEXICON CASE-ETC
 
 CASE ;
 GENPOSS-ETC ;
-!%<adv%>:ш%{A%} # ;          ! FIXME: might not be quite the right place
 
 LEXICON POSS-REAL
 
@@ -635,30 +646,30 @@ Abessive ; ! FIXME might lead to overgeneration:
 !! i.e. change <adj><comp><subst> to <adj><subst><comp>
 !! and make use of ADJ-LEVELS class
 
-LEXICON ADJ-LEVELS
+LEXICON COMPARATIVE
 
-%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
-CLIT ;
+%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS ;
+CLITICS ;
 
 LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
                           !# жақсы, тез
 
-%<adj%>: CLIT ;                                       !# жақсы адам
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# жақсырақ іс
+%<adj%>: CLITICS-INCLUDING-COPULA ;                             !# жақсы адам
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCLUDING-COPULA ;   !# жақсырақ іс
 
-%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым 
+%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# жақсырақты таптым
 
-%<adj%>%<advl%>: CLIT ;                               !# жақсы білемін
-%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+%<adj%>%<advl%>: CLITICS ;                               !# жақсы білемін
+%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLITICS ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
 
 LEXICON A2                 ! (derived/not fully lexicalised) adjectives without adverbial reading;
                            ! <adj> and <adj.subst> readings have comparison levels.
                            !# ескі
 
-%<adj%>: CLIT ;                                       !# ескі дос
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# ескірек заманда
+%<adj%>: CLITICS-INCLUDING-COPULA ;                             !# ескі дос
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCLUDING-COPULA ;   !# ескірек заманда
 
 %<adj%>%<subst%>: SUBST ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
@@ -668,9 +679,9 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
                            ! no comparison levels at all.
                            !# көктемгі, басты, бар, жоқ
 
-%<adj%>: CLIT ;                                       !# көктемгі су тасқыны
-%<adj%>%<subst%>: SUBST ;                             !# "...Самаранч ең бастыны түсінді..."
-                                                      !# "Аты бардың заты бар."
+%<adj%>: CLITICS-INCLUDING-COPULA ;   !# көктемгі су тасқыны
+%<adj%>%<subst%>: SUBST ;           !# "...Самаранч ең бастыны түсінді..."
+                                    !# "Аты бардың заты бар."
 
 ! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
 ! e.g. *язгыдагы
@@ -678,7 +689,7 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
 LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
                            !# ұлттық
 
-%<adj%>: CLIT ;                                       !# ұлттық тағам
+%<adj%>: CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
 LEXICON V-ADJ
 
@@ -690,35 +701,35 @@ LEXICON V-ADJ
 
 LEXICON V-PERS-S1-NO3PERSON
 
-%<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ;
-%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
-%<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ;
-%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;
+%<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS ;
+%<p2%>%<sg%>:%>с%{I%}ң CLITICS ;
+%<p1%>%<pl%>:%>%{M%}%{I%}з CLITICS ;
+%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLITICS ;
 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ;
-%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLITICS ;
 
 LEXICON V-PERS-S1
 
-! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>,
+! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>, copula
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>: CLIT ;
-%<p3%>%<pl%>: CLIT ;
+%<p3%>%<sg%>: CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
 
 LEXICON V-PERS-S2
 
 ! Used for: -DI-<ifi>, -sA-<prc_cond>, -sA-<gna_cond>
 
-%<p1%>%<sg%>:%>м CLIT ;
-%<p2%>%<sg%>:%>ң CLIT ;
-%<p3%>%<sg%>: CLIT ;
-%<p1%>%<pl%>:%>%{K%} CLIT ;
-%<p2%>%<pl%>:%>ңд%{A%}р CLIT ;
-%<p3%>%<pl%>: CLIT ;
+%<p1%>%<sg%>:%>м CLITICS ;
+%<p2%>%<sg%>:%>ң CLITICS ;
+%<p3%>%<sg%>: CLITICS ;
+%<p1%>%<pl%>:%>%{K%} CLITICS ;
+%<p2%>%<pl%>:%>ңд%{A%}р CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
 
-%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLIT ;
-%<p2%>%<frm%>%<pl%>:%>ң%{I%}зд%{A%}р CLIT ;
+%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>ң%{I%}зд%{A%}р CLITICS ;
 
 LEXICON V-PERS-AOR
 
@@ -726,17 +737,17 @@ LEXICON V-PERS-AOR
 ! NOTE that: Алма театрға бара<aor><p3><sg> ма? – Алма в театр идёт?
 
 V-PERS-S1-NO3PERSON ;
-%<p1%>%<sg%>:%>м CLIT ;                    ! Dir/LR
-%<p3%>%<sg%>:%>д%{I%} CLIT ;
+%<p1%>%<sg%>:%>м CLITICS ;                    ! Dir/LR
+%<p3%>%<sg%>:%>д%{I%} CLITICS ;
 %<p3%>%<sg%>: CLIT-QST-MA ;              ! Dir/LR
-%<p3%>%<pl%>:%>д%{I%} CLIT ;
+%<p3%>%<pl%>:%>д%{I%} CLITICS ;
 %<p3%>%<pl%>: CLIT-QST-MA ;              ! Dir/LR ;
 
 LEXICON V-PERS-IFI_EVID
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>:%>т%{I%} CLIT ;
-%<p3%>%<sg%>:%>т%{I%} CLIT ;
+%<p3%>%<sg%>:%>т%{I%} CLITICS ;
+%<p3%>%<sg%>:%>т%{I%} CLITICS ;
 
 LEXICON VOL-ENDINGS
 
@@ -761,20 +772,20 @@ LEXICON VOL-ENDINGS
 LEXICON GER-CASE-NO_COPULA
 
 CASE-COMMON ;
-%<nom%>: CLIT ;
-%<abl%>:%>%{D%}%{A%}н CLIT ;
-%<loc%>:%>%{D%}%{A%} CLIT ;
+%<nom%>: CLITICS ;
+%<abl%>:%>%{D%}%{A%}н CLITICS ;
+%<loc%>:%>%{D%}%{A%} CLITICS ;
 
 LEXICON GER-ATTR/SUBST
 
-%<attr%>: CLIT ;
+%<attr%>: CLITICS ;
 !%<subst%>: CASE ;
 !%<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
 
 LEXICON GER-ABE-ATTR/ADVL/SUBST
 
-!%<attr%>: CLIT ;
-%<advl%>: CLIT ;
+!%<attr%>: CLITICS ;
+%<advl%>: CLITICS ;
 !%<subst%>: CASE-2 ;
 !%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
 
@@ -784,9 +795,9 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
 LEXICON GER-GENPOSS-ETC      ! Stuff which can appear after possessives too
 
-%<px%>:%>%{N%}ікі%{n%} CLIT ;
+%<px%>:%>%{N%}ікі%{n%} CLITICS ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
-%<sim%>:%>%{D%}%{A%}й CLIT ;
+%<sim%>:%>%{D%}%{A%}й CLITICS ;
 
 LEXICON GER-CASE-ETC
 
@@ -834,16 +845,16 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<prc_perf%>:%>%{o%}%{I%}п CLIT-GHANA-ETC ;            ! Dir/LR
 %<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
 %<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;
-%<prc_fplan%>:%>%{M%}%{A%}%{K%} CLIT ;
-%<prc_fplan%>:%>%{M%}%{A%}%{K%}ш%{I%} CLIT ;           ! Dir/LR
+%<prc_fplan%>:%>%{M%}%{A%}%{K%} CLITICS ;
+%<prc_fplan%>:%>%{M%}%{A%}%{K%}ш%{I%} CLITICS ;           ! Dir/LR
 %<prc_plan%>:%>%{G%}%{A%}л%{I%} CLIT-GHANA-ETC ;
 
 ! Verbal adverbs
-%<gna_perf%>:%>%{I%}п CLIT ;
-%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLIT ;
+%<gna_perf%>:%>%{I%}п CLITICS ;
+%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLITICS ;
 
-%<gna_until%>:%>%{G%}%{A%}нш%{A%} CLIT ;
-%<gna_after%>:%>%{G%}%{A%}л%{I%} CLIT ;
+%<gna_until%>:%>%{G%}%{A%}нш%{A%} CLITICS ;
+%<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS ;
 
 ! Verbal Adjectives
 %<gpr_fut%>:%>%{A%}р V-ADJ ;
@@ -890,15 +901,15 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
-%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLIT ;
-!%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLIT ;              ! FIXME check
-%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLIT ;
-%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLIT ;
-!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT ;         ! FIXME check
-%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLIT ;
+%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLITICS ;
+!%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLITICS ;              ! FIXME check
+%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS ;
+%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLITICS ;
+!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLITICS ;         ! FIXME check
+%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLITICS ;
 
-!%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLIT ;  ! FIXME check
-!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLITICS ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLITICS ;  ! FIXME check
 
 LEXICON V-COMMON
 
@@ -925,7 +936,6 @@ LEXICON V-TV-PASS
 
 ! e.g. көрін
 %<v%>%<tv%>%<pass%>: V-COMMON ;
-%<v%>%<tv%>%<pass%>: V-DER;
 
 LEXICON V-TV
 
@@ -966,16 +976,16 @@ LEXICON Copula
 
 LEXICON PRON-12SG-CASES
 
-%<gen%>:енің CLIT ;
-%<dat%>:аған CLIT ;
-%<acc%>:ені CLIT ;
-%<abl%>:енен CLIT ;
-%<loc%>:енде CLIT ;
-%<ins%>:енімен CLIT ;
+%<gen%>:енің CLITICS ;
+%<dat%>:аған CLITICS ;
+%<acc%>:ені CLITICS ;
+%<abl%>:енен CLITICS ;
+%<loc%>:енде CLITICS ;
+%<ins%>:енімен CLITICS ;
 %<px%>:енікі%{n%} CASE ;
 %<loc%>:ендегі ATTR/SUBST ;
-%<sim%>:ендей CLIT ;
-%<adv%>:еніңше CLIT ;
+%<sim%>:ендей CLITICS ;
+%<adv%>:еніңше CLITICS ;
 
 LEXICON PRON-PERS-INFL
 
@@ -983,42 +993,42 @@ CASE-ETC ;
 
 LEXICON PersonalPronouns
 
-мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
+мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLITICS ;
 мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
 
-сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLIT ;
+сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLITICS ;
 сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о CLIT ; ! Dir/LR
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о CLITICS ; ! Dir/LR
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASE ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR/SUBST ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша CLITICS ;
 
 біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
-біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше CLIT ;
+біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше CLITICS ;
 
 сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
-сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше CLIT ;
+сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше CLITICS ;
 
 олар%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
-олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша CLIT ;
+олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша CLITICS ;
 
 сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLIT ;
+сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLITICS ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
-сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLIT ;
+сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLITICS ;
 
 !!!!!!!   D E M O N S T R A T I V E
 
-! FIXME CHECK (CLIT-GENERAL vs CLIT) I can't imagine forms like "бумын, бусың" etc.
+! FIXME CHECK (CLITICS-INCLUDING-COPULA vs CLIT) I can't imagine forms like "бумын, бусың" etc.
 ! in Tatar, but not sure how it works in Kazakh /I.S./
 !-----
 ! Good idea is to link prn.dem.sim forms alternatively to CLIT and CASE,
@@ -1027,23 +1037,23 @@ LEXICON PersonalPronouns
 
 LEXICON PRON-DEM-INFL
 
-%<gen%>:ның CLIT ;
-%<dat%>:ған CLIT ;
-%<acc%>:ны CLIT ;
-%<abl%>:дан CLIT-GENERAL ;
-%<abl%>:нан CLIT-GENERAL ; ! Dir/LR FIXME actually only "осы" seems to take this.
-%<loc%>:нда CLIT-GENERAL ;
+%<gen%>:ның CLITICS ;
+%<dat%>:ған CLITICS ;
+%<acc%>:ны CLITICS ;
+%<abl%>:дан CLITICS-INCLUDING-COPULA ;
+%<abl%>:нан CLITICS-INCLUDING-COPULA ; ! Dir/LR FIXME actually only "осы" seems to take this.
+%<loc%>:нда CLITICS-INCLUDING-COPULA ;
 %<px%>:нікі%{n%} CASE ;
 %<loc%>:ндагы ATTR/SUBST ;
 %<sim%>:ндай CASE ;  ! FIXME: should have <det>, etc.
-%<adv%>:лай CLIT-GENERAL ;
-%<qnt%>:нша CLIT ;         !
+%<adv%>:лай CLITICS-INCLUDING-COPULA ;
+%<qnt%>:нша CLITICS ;         !
 
 %<pl%>:%>%{L%}%{A%}р CASE-ETC ;
 %<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASE ;
 
 ! Commented out till these forms get implemented in tat.lexc too
-!%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
+!%<TD%>:шалық CLITICS ;        ! "that much"  ! FIXME: check cont lex
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 ! FIXME: 1) link the below to PRON-DEM-INFL if possible
@@ -1059,19 +1069,19 @@ LEXICON PRON-DEM-BUL
 ! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASE ;
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
 
-бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<nom%>:бұ CLIT-GENERAL ; ! Dir/LR
-бұл%<prn%>%<dem%>%<gen%>:бұның CLIT ;
-бұл%<prn%>%<dem%>%<gen%>:мұның CLIT ; ! Dir/LR
-бұл%<prn%>%<dem%>%<dat%>:бұған CLIT ;
-бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
-бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
-бұл%<prn%>%<dem%>%<abl%>:бұдан CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<abl%>:мұнан CLIT-GENERAL ; ! Dir/LR
-бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<loc%>:мұнда CLIT-GENERAL ; ! Dir/LR
-бұл%<prn%>%<dem%>%<ins%>:бұнымен CLIT ;
-бұл%<prn%>%<dem%>%<ins%>:мұнымен CLIT ; ! Dir/LR
+бұл%<prn%>%<dem%>%<nom%>:бұл CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<nom%>:бұ CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<gen%>:бұның CLITICS ;
+бұл%<prn%>%<dem%>%<gen%>:мұның CLITICS ; ! Dir/LR
+бұл%<prn%>%<dem%>%<dat%>:бұған CLITICS ;
+бұл%<prn%>%<dem%>%<acc%>:бұны CLITICS ;
+бұл%<prn%>%<dem%>%<acc%>:мұны CLITICS ; ! Dir/LR
+бұл%<prn%>%<dem%>%<abl%>:бұдан CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<abl%>:мұнан CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<loc%>:бұнда CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<ins%>:бұнымен CLITICS ;
+бұл%<prn%>%<dem%>%<ins%>:мұнымен CLITICS ; ! Dir/LR
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ;
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
@@ -1080,9 +1090,9 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASE ;
-бұл%<prn%>%<dem%>%<adv%>:былай CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<adv%>:бұлай CLIT-GENERAL ; ! Dir/LR
-бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
+бұл%<prn%>%<dem%>%<adv%>:былай CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<adv%>:бұлай CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<qnt%>:мұнша CLITICS ;
 бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASE ;
 
 бұл%<prn%>%<dem%>%<pl%>:бұлар CASE-ETC ;
@@ -1090,17 +1100,17 @@ LEXICON PRON-DEM-BUL
 
 LEXICON PRON-DEM-MINA
 
-мына%<prn%>%<dem%>%<nom%>:мына CLIT-GENERAL ;
-мына%<prn%>%<dem%>%<gen%>:мынаның CLIT ;
-мына%<prn%>%<dem%>%<dat%>:мынаған CLIT ;
-мына%<prn%>%<dem%>%<acc%>:мынаны CLIT ;
-мына%<prn%>%<dem%>%<abl%>:мынадан CLIT-GENERAL ;
-мына%<prn%>%<dem%>%<loc%>:мынада CLIT-GENERAL ;
-мына%<prn%>%<dem%>%<ins%>:мынамен CLIT ;
+мына%<prn%>%<dem%>%<nom%>:мына CLITICS-INCLUDING-COPULA ;
+мына%<prn%>%<dem%>%<gen%>:мынаның CLITICS ;
+мына%<prn%>%<dem%>%<dat%>:мынаған CLITICS ;
+мына%<prn%>%<dem%>%<acc%>:мынаны CLITICS ;
+мына%<prn%>%<dem%>%<abl%>:мынадан CLITICS-INCLUDING-COPULA ;
+мына%<prn%>%<dem%>%<loc%>:мынада CLITICS-INCLUDING-COPULA ;
+мына%<prn%>%<dem%>%<ins%>:мынамен CLITICS ;
 !мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASE ;
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR/SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASE ;
-мына%<prn%>%<dem%>%<adv%>:мыналай CLIT-GENERAL ;
+мына%<prn%>%<dem%>%<adv%>:мыналай CLITICS-INCLUDING-COPULA ;
 мына%<prn%>%<dem%>%<px3sp%>:мынасы%{n%} CASE ;
 
 мына%<prn%>%<dem%>%<pl%>:мыналар CASE-ETC ;
@@ -1108,17 +1118,17 @@ LEXICON PRON-DEM-MINA
 
 LEXICON PRON-DEM-ANA
 
-ана%<prn%>%<dem%>%<nom%>:ана CLIT-GENERAL ;
-ана%<prn%>%<dem%>%<gen%>:ананың CLIT ;
-ана%<prn%>%<dem%>%<dat%>:анаған CLIT ;
-ана%<prn%>%<dem%>%<acc%>:ананы CLIT ;
-ана%<prn%>%<dem%>%<abl%>:анадан CLIT-GENERAL ;
-ана%<prn%>%<dem%>%<loc%>:анада CLIT-GENERAL ;
-ана%<prn%>%<dem%>%<ins%>:анамен CLIT ;
-!ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASE ;
-!ана%<prn%>%<dem%>%<loc%>:анадағы ATTR/SUBST ;
+ана%<prn%>%<dem%>%<nom%>:ана CLITICS-INCLUDING-COPULA ;
+ана%<prn%>%<dem%>%<gen%>:ананың CLITICS ;
+ана%<prn%>%<dem%>%<dat%>:анаған CLITICS ;
+ана%<prn%>%<dem%>%<acc%>:ананы CLITICS ;
+ана%<prn%>%<dem%>%<abl%>:анадан CLITICS-INCLUDING-COPULA ;
+ана%<prn%>%<dem%>%<loc%>:анада CLITICS-INCLUDING-COPULA ;
+ана%<prn%>%<dem%>%<ins%>:анамен CLITICS ;
+ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASE ;
+ана%<prn%>%<dem%>%<loc%>:анадағы ATTR/SUBST ;
 ана%<prn%>%<dem%>%<sim%>:анадай CASE ;
-!ана%<prn%>%<dem%>%<adv%>:аналай CLIT-GENERAL ;
+!ана%<prn%>%<dem%>%<adv%>:аналай CLITICS-INCLUDING-COPULA ;
 !ана%<prn%>%<dem%>%<px3sp%>:анасы%{n%} CASE ;
 
 ана%<prn%>%<dem%>%<pl%>:аналар CASE-ETC ;
@@ -1130,19 +1140,19 @@ PRON-DEM-BUL ;
 PRON-DEM-MINA ;
 PRON-DEM-ANA ;
 
-сол%<prn%>%<dem%>%<nom%>:сол CLIT-GENERAL ;
+сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCLUDING-COPULA ;
 сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
-сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
+сол%<prn%>%<dem%>%<ins%>:сонымен CLITICS ;
 сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASE ;
 
-ол%<prn%>%<dem%>%<nom%>:ол CLIT ;
+ол%<prn%>%<dem%>%<nom%>:ол CLITICS-INCLUDING-COPULA ;
 ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
-ол%<prn%>%<dem%>%<ins%>:онымен CLIT ;
+ол%<prn%>%<dem%>%<ins%>:онымен CLITICS ;
 ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASE ;
 
-осы%<prn%>%<dem%>%<nom%>:осы CLIT ;
+осы%<prn%>%<dem%>%<nom%>:осы CLITICS ;
 осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
-осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
+осы%<prn%>%<dem%>%<ins%>:осымен CLITICS ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
 
 ! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
@@ -1179,26 +1189,19 @@ PRON-DEM-ANA ;
 
 LEXICON PRON-ITG-INFL
 
-%<prn%>%<itg%>: GER-INFL ;
-%<prn%>%<itg%>%<pl%>:%>%{L%}%{A%}р GER-INFL ;
+%<prn%>%<itg%>: SUBST ;
 
 LEXICON PRON-ITG-QAYSI
 
-қайсы%<prn%>%<itg%>%<nom%>:қайсы CLIT ;
-қайсы%<prn%>%<itg%>%<gen%>:қайсының CLIT ;
-қайсы%<prn%>%<itg%>%<dat%>:қайсыған CLIT ;
-қайсы%<prn%>%<itg%>%<acc%>:қайсыны CLIT ;
-қайсы%<prn%>%<itg%>%<abl%>:қайсыдан CLIT ;
-қайсы%<prn%>%<itg%>%<loc%>:қайсыда CLIT ;
-қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLIT ;
+қайсы%<prn%>%<itg%>%<nom%>:қайсы CLITICS ;
+қайсы%<prn%>%<itg%>%<gen%>:қайсының CLITICS ;
+қайсы%<prn%>%<itg%>%<dat%>:қайсыған CLITICS ;
+қайсы%<prn%>%<itg%>%<acc%>:қайсыны CLITICS ;
+қайсы%<prn%>%<itg%>%<abl%>:қайсыдан CLITICS ;
+қайсы%<prn%>%<itg%>%<loc%>:қайсыда CLITICS ;
+қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLITICS ;
 
-қайсы%<prn%>%<itg%>%<px%>:қайсынікі%{n%} CASE ;
-қайсы%<prn%>%<itg%>:қайсы GER-POSS-REAL ; ! қайсысы, қайсыбыз, қайсығыз
-
-қайсы%<prn%>%<itg%>%<pl%>:қайсылар GER-CASE-ETC ;
-қайсы%<prn%>%<itg%>%<pl%>%<px3sp%>:қайсылары%{n%} GER-CASE-NO_COPULA ;
-! ^ кайсылары(б/г)ыз are rare but possible in Tatar, so maybe these forms should
-! be included too /IS/
+қайсы%<prn%>%<itg%>:қайсы GER-POSS-REAL ;
 
 LEXICON PRON-ITG-QANSHA
 
@@ -1212,7 +1215,7 @@ LEXICON PRON-ITG-QANDAY
 
 ! Might be not complete (қандайларығыз? and possessive stuff in general)
 
-қандай%<prn%>%<itg%>%<sim%>:қандай CLIT ;
+қандай%<prn%>%<itg%>%<sim%>:қандай CLITICS ;
 ! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
 ! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
 ! it shouldn't receive <nom> tag I think /IS/
@@ -1230,17 +1233,18 @@ PRON-ITG-QANDAY ;
 не:не PRON-ITG-INFL ; ! "what"
 кім:кім PRON-ITG-INFL ; ! "who"
 
+LEXICON PRON-QNT-POSS
+
+%<prn%>%<qnt%>: GER-POSS-REAL ;
+
 LEXICON PRON-QNT
 
 %<prn%>%<qnt%>: GER-INFL ;
 
 LEXICON PRON-IND
 
-%<prn%>%<ind%>: GER-INFL ;
+%<prn%>%<ind%>: CASE ;
 
-LEXICON PRON-IND-POSS
-
-%<prn%>%<ind%>: POSSESSION ;
 
 LEXICON PRNNEG
 
@@ -1248,12 +1252,12 @@ LEXICON PRNNEG
 
 LEXICON PRON-RECIP
 
-%<prn%>%<recip%>: POSS-REAL ;
+%<prn%>%<recip%>: GER-POSS-REAL ;
 
 LEXICON PRON-REF-ADV
 
 CASE-ETC ;
-%<adv%>:ше CLIT ;
+%<adv%>:ше CLITICS ;
 
 LEXICON PRON-REF
 
@@ -1349,7 +1353,6 @@ LEXICON N3
 %<n%>: N-INFL-COMMON ;
 
 LEXICON N5
-! This is only really needed for Russian noun stems where the last vowel is и or у.
 
 :%{☭%} N1 ;
 
@@ -1385,23 +1388,20 @@ LEXICON NP-ANT-M
 
 LEXICON NP-ANT-F
 
-! This isn't used at the moment,
-! but e.g. ?Polish cognoms ending with -ска would take this cont.class
-
 %<np%>%<ant%>%<f%>: NP-COMMON ;
 %<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-M
- 
-%<np%>%<cog%>%<m%>: NP-COMMON ; 
+
+%<np%>%<cog%>%<m%>: NP-COMMON ;
 %<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-MF
 
 ! Dual-gender cognoms.
 ! Don't derive anything /I.S./
- 
-%<np%>%<cog%>%<mf%>: NP-COMMON ; 
+
+%<np%>%<cog%>%<mf%>: NP-COMMON ;
 %<np%>%<cog%>%<mf%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-OBIN-FEM
@@ -1436,6 +1436,10 @@ LEXICON NP-COG-IN
 
 NP-COG-OBIN-FEM ;
 
+LEXICON NPCOGFLEX
+
+! This isn't used at the moment,
+! but e.g. ?Polish cognoms ending with -ска would take this cont.class /I.S./ 
 
 LEXICON NP-PAT-VICH
 
@@ -1496,7 +1500,7 @@ LEXICON DIGITLEX
 
 LEXICON POST
 
-%<post%>: CLIT ;
+%<post%>: CLITICS ;
 
 LEXICON POSTADV
 
@@ -1506,11 +1510,11 @@ LEXICON POSTADV
 
 LEXICON KI
 
-%<attr%>:%>%{G%}%{I%} CLIT ;
+%<attr%>:%>%{G%}%{I%} CLITICS ;
 
 LEXICON ADV
 
-%<adv%>: CLIT ;
+%<adv%>: CLITICS ;
 
 LEXICON ADV-WITH-KI
 
@@ -1571,7 +1575,9 @@ LEXICON ABBR
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON ModalParticles
+!======================!
+ LEXICON ModalParticles
+!======================!
 
 ма:%~ма QST ; ! "" Dir/RL
 ма:ма QST ; ! "" Dir/LR
@@ -1580,6 +1586,9 @@ LEXICON ModalParticles
 ма:ме QST ; ! "" Dir/LR
 ма:бе QST ; ! "" Dir/LR
 ма:пе QST ; ! "" Dir/LR
+ма% не:%~ма% не QST ; ! "" Dir/RL
+ма% не:ма% не QST ; ! "" Dir/LR
+ма% не:ме% не QST ; ! "" Dir/LR
 ше:ше QST ; ! ""
 
 ғой:%~ғой MOD-ASS ; ! "" Dir/RL
@@ -1676,7 +1685,6 @@ LEXICON ModalParticles
 қарсы:қарсы POST ; ! "anti-, against, contra-" + DAT
 қоса:қоса POST ; ! "in addition to" + DAT
 құрлы:құрлы POST ; ! "like, similar to = ғұрлы" + DAT
-салым:салым POST ; ! ""
 сәйкес:сәйкес POST ; ! "in accordance with, conforming to" + DAT
 таман:таман POST ; ! "side, direction, toward(?)" + DAT  ! not sure /JNW/
 тарта:тарта POST ; ! "about, приблизительно" + DAT
@@ -1694,17 +1702,26 @@ LEXICON ModalParticles
 тарта:тарта POST ;
 
  LEXICON Postadverbs
+!===================!
+
 
 %-ақ:%-ақ POSTADV ; ! ""
+
 ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
+тегіс POSTADV ; ! "entirely/all/all together"
+
+
+!================!
  LEXICON Pronouns
 !================!
 
@@ -1714,14 +1731,14 @@ DemonstrativePronouns ;
 
 InterrogativePronouns ;
 
+басқа:басқа PRON-IND ; ! "other"
 бірдеме:бірдеме PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
-басқа:басқа PRON-IND ; ! "other"
-! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
-бәрі:бәр PRON-IND-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 кей:кей PRON-IND ; ! "some" FIXME CHECK
 
 барлық:барлық PRON-QNT ; ! ""
+бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 біреу:біреу PRON-QNT ; ! ""
 әркім:әркім PRON-QNT ; ! ""
 
@@ -1730,9 +1747,9 @@ InterrogativePronouns ;
 еш% нәрсе:еш% нәрсе PRNNEG ; ! "" Use/MT
 ештеңе:ештеңе PRNNEG ; ! ""
 
-өз:өз PRON-REF ; ! "self"
+бір%-бір:бір%-бір PRON-RECIP ; ! "each other, one another"
 
-бири%-бир:бири%-бир PRON-RECIP ; ! "each other, one another"
+өз:өз PRON-REF ; ! "self"
 
 
 !===================!
@@ -1743,7 +1760,7 @@ InterrogativePronouns ;
 анау:анау DET-DEM ;
 әлгі:әлгі DET-DEM ; ! "~этот"
 бұл:бұл DET-DEM ;
-ол:ол DET-DEM ; 
+ол:ол DET-DEM ;
 мынау:мынау DET-DEM ;
 ол:ол DET-DEM ;
 осы:осы DET-DEM ;
@@ -1871,8 +1888,8 @@ XXI NUM-ROMAN ; ! ""
 !=============!
  LEXICON Nouns
 
-абсолют:абсолют N1 ; ! ""
 аберрация:аберрация N1 ; ! "aberration"
+абсолют:абсолют N1 ; ! ""
 август:август N1 ; ! "August"
 авиация:авиация N1 ; ! ""
 авто:авто N1 ; ! ""
@@ -1888,8 +1905,9 @@ XXI NUM-ROMAN ; ! ""
 агенттік:агенттіқ N1 ; ! "" Dir/LR
 ағаш:ағаш N1 ; ! "tree"
 ағза:ағза N1 ; ! "organ"
+ағылу:ағылу N1 ; ! "" Use/MT
 адам:адам N1 ; ! "man"
-адвокат:адвокат N1 ; ! ""
+адам% баласы:адам% бала N-COMPOUND-PX ; ! ""
 адвокат:адвокат N1 ; ! ""
 адмирал:адмирал N1 ; ! ""
 адым:адым N1 ; ! "step"
@@ -1900,7 +1918,6 @@ XXI NUM-ROMAN ; ! ""
 аймақ:аймақ N1 ; ! "zone,region"
 айнала:айнала N1 ; ! "around"
 академик:академик N1 ; ! ""
-академик:академик N1 ; ! ""
 академия:академия N1 ; ! ""
 актер:актер N1 ; ! ""
 актив:актив N5 ; ! ""
@@ -1908,16 +1925,14 @@ XXI NUM-ROMAN ; ! ""
 акустика:акустика N1 ; ! ""
 акушер:акушер N1 ; ! ""
 акция:акция N1 ; ! ""
-ақпан:ақпан N1 ; ! "february"
-ақпарат:ақпарат N1 ; ! "media/press" FIXME: check
-алд:ал%{д%} N1 ; ! "front"
-Алла:алла N1 ; ! "" FIXME:NOTE: no plural
-Аллаһ:Аллаһ N3 ; ! ""
-алтын:алтын N1 ; ! ""
+ақпан:ақпан N1 ; ! "February"
+ақпарат:ақпарат N1 ; ! "information"
+Алла:алла N1 ; ! ""
+Аллаһ:аллаһ N1 ; ! ""
+алтын:алтын N1 ; ! "gold"
 алфавит:алфавит N1 ; ! ""
 альянс:альянс N1 ; ! ""
 алюминий:алюминий N1 ; ! ""
-американдық:американдық N1 ; ! ""
 аммиак:аммиак N1 ; ! ""
 амплитуда:амплитуда N1 ; ! ""
 ана:ана N1 ; ! "mother"
@@ -1930,24 +1945,20 @@ XXI NUM-ROMAN ; ! ""
 аппарат:аппарат N1 ; ! ""
 армия:армия N1 ; ! ""
 арпа:арпа N1 ; ! "barley"
-арт:арт N1 ; ! "back side"
 артиллерия:артиллерия N1 ; ! ""
 археолог:археолог N1 ; ! ""
 археология:археология N1 ; ! ""
 асбест:асбест N1 ; ! ""
 аспирантура:аспирантура N1 ; ! ""
 ассоциация:ассоциация N5 ; ! ""
-аст:ас%{т%} N1 ; ! "down side"
 астрономия:астрономия N1 ; ! ""
-асфальт:асфальт N1 ; ! ""
 асфальт:асфальт N1 ; ! ""
 ата:ата N1 ; ! "father"
 ата%-баба:ата%-баба N1 ; ! "forefather"
 атан:атан N1 ; ! "castrated camel"
-ат:ат N1 ; ! "riding horse,castrated male horse,name"
+ат:ат N1 ; ! "riding horse,castrated male horse;name"
 атлет:атлет N1 ; ! ""
 атлетика:атлетика N1 ; ! ""
-атмосфера:атмосфера N1 ; ! ""
 атмосфера:атмосфера N1 ; ! ""
 атом:атом N1 ; ! ""
 ауа% райы:ауа% рай N-COMPOUND-PX ; ! "weather,climate"
@@ -1957,8 +1968,8 @@ XXI NUM-ROMAN ; ! ""
 ауыл:ауыл N1 ; ! "village,settlement"
 әке:әке N1 ; ! "father"
 әсер:әсер N1 ; ! "impression,influence"
-әуежолы:әуе% жол N-COMPOUND-PX ; ! "air line" ! Dir/LR
 әуежолы:әуежол N-COMPOUND-PX ; ! "air line"
+әуежолы:әуе% жол N-COMPOUND-PX ; ! "air line" ! Dir/LR
 баба:баба N1 ; ! "father"
 бағдарлама:бағдарлама N1 ; ! ""
 бағыт:бағыт N1 ; ! ""
@@ -1981,6 +1992,8 @@ XXI NUM-ROMAN ; ! ""
 баритон:баритон N1 ; ! ""
 баррель:баррель N5 ; ! ""
 бас:бас N1 ; ! "head,begining,start"
+басқару:басқару N1 ; ! "management" Use/MT
+басқарушы:басқарушы N1 ; ! "manager"
 бассейн:бассейн N5 ; ! ""
 бастық:бастық N1 ; ! "head,chief"
 батыр:батыр N1 ; ! "hero"
@@ -1990,14 +2003,14 @@ XXI NUM-ROMAN ; ! ""
 бетон:бетон N1 ; ! ""
 бизнес:бизнес N1 ; ! ""
 бизнесмен:бизнесмен N5 ; ! ""
-билік:билік N1 ; ! "~wealth;власть"
+билік:билік N1 ; ! ""
 биология:биология N1 ; ! "biology"
 биржа:биржа N1 ; ! ""
 блог:блог N1 ; ! ""
 бомба:бомба N1 ; ! ""
-бөлік:бөлік N1 ; ! "division" FIXME: check
+бөлік:бөлік N1 ; ! "division"
 брифинг:брифинг N5 ; ! ""
-Будда:Будда N3 ; ! ""
+Будда:будда N3 ; ! ""
 буддизм:буддизм N5 ; ! "Buddhism"
 бұлт:бұлт N1 ; ! "cloud"
 бюджет:бюджет N1 ; ! ""
@@ -2005,7 +2018,9 @@ XXI NUM-ROMAN ; ! ""
 вакцина:вакцина N1 ; ! ""
 валюта:валюта N1 ; ! ""
 веб:веб N1 ; ! ""
-вебсайт:вебсайт N1 ; ! ""
+веб%-сайт:веб%-сайт N1 ; ! ""
+веб%-сайт:вебсайт N1 ; ! "" Dir/LR
+веб%-сайт:Web%-сайт N1 ; ! "" Dir/LR
 вектор:вектор N1 ; ! ""
 велосипед:велосипед N1 ; ! ""
 веранда:веранда N1 ; ! ""
@@ -2056,7 +2071,7 @@ XXI NUM-ROMAN ; ! ""
 дала:дала N1 ; ! "field"
 дан:дан N1 ; ! ""
 дастан:дастан N1 ; ! ""
-дауыс:дау%{y%}с N1 ; ! "sound, voice" (similar to халық) Dir/LR
+дауыс:дау%{y%}с N1 ; ! "sound, voice" Dir/LR
 дауыс:дауыс N1 ; ! "sound, voice"
 декабрь:декабрь N1 ; ! ""
 демография:демография N1 ; ! ""
@@ -2086,15 +2101,13 @@ XXI NUM-ROMAN ; ! ""
 дыбыс:дыбыс N1 ; ! "sound,noise"
 ел:ел N1 ; ! "country,nation"
 еңбек:еңбек N1 ; ! "labour,work"
-есе:есе N1 ; ! ""
+ереуіл:ереуіл N1 ; ! ""
 есе:есе N1 ; ! "time portion"
 есеп:есеп N1 ; ! "invoice,bill,account,math"
 есік:есік N1 ; ! "door"
 ешкі:ешкі N1 ; ! "goat"
 жағалау:жағалау N1 ; ! ""
-жағалау:жағалау N1 ; ! ""
 жағдай:жағдай  N1 ; ! "position,situation"
-жағдай:жағдай N1 ; ! "situation"
 жайт:жайт N1 ; ! ""
 жақ:жақ N1 ; ! "side,cheeck"
 жақсылық:жақсылық N1 ; ! ""
@@ -2105,13 +2118,14 @@ XXI NUM-ROMAN ; ! ""
 жануар:жануар N1 ; ! "biest"
 жас:жас N1 ; ! "age"
 жасуша:жасуша N1 ; ! "cell (biol.)"
+жаттықтырушы:жаттықтырушы N1 ; ! "coach"
 жауап:жауап N1 ; ! "answer"
 желетка:желетка N1 ; ! "vest"
-желтоқсан:желтоқсан N1 ; ! "december"
+желтоқсан:желтоқсан N1 ; ! "December"
 жер:жер N1 ; ! "land,earth"
 жол:жол N1 ; ! "road"
 журнал:журнал N1 ; ! ""
-журналист:журналис N5 ; ! "journalist"  ! Dir/LR
+журналист:журналис N5 ; ! "journalist" ! Dir/LR
 журналист:журналист N5 ; ! "journalist"
 журналистика:журналистика N1 ; ! ""
 жүз:жүз N1 ; ! "face"
@@ -2137,8 +2151,6 @@ XXI NUM-ROMAN ; ! ""
 иман:иман N1 ; ! ""
 иммунитет:иммунитет N1 ; ! ""
 император:император N1 ; ! ""
-император:император N1 ; ! ""
-империя:империя N1 ; ! ""
 империя:империя N1 ; ! ""
 инвестиция:инвестиция N1 ; ! ""
 инвестор:инвестор N1 ; ! ""
@@ -2150,16 +2162,16 @@ XXI NUM-ROMAN ; ! ""
 интеллигенция:интеллигенция N5 ; ! ""
 интернат:интернат N1 ; ! ""
 интернет:интернет N5 ; ! "internet"
+интернет%-кафе:интернет%-кафе N5 ; ! "internet-cafe"
 инфляция:инфляция N5 ; ! ""
 инь:инь N1 ; ! ""
 ион:ион N1 ; ! ""
 ипотека:ипотека N1 ; ! ""
-Ислам:Ислам N1 ; ! ""
-Ислам:ислам N1 ; ! "" Dir/LR
+Ислам:ислам N1 ; ! ""
 ит:ит N1 ; ! "dog"
 иудаизм:иудаизм N5 ; ! ""
-іс:іс N1 ; ! "work"
 ісік:ісік N1 ; ! "tumour"
+іс:іс N1 ; ! "work"
 іш:іш N1 ; ! "inside,stomach"
 кабинет:кабинет N5 ; ! ""
 кадр:кадр N1 ; ! ""
@@ -2202,9 +2214,7 @@ XXI NUM-ROMAN ; ! ""
 колония:колония N5 ; ! ""
 колонна:колонна N1 ; ! ""
 колхоз:колхоз N1 ; ! ""
-колхоз:колхоз N1 ; ! ""
 команда:команда N1 ; ! "sports team"
-командир:командир N1 ; ! ""
 командир:командир N5 ; ! ""
 комбинат:комбинат N1 ; ! ""
 комедия:комедия N1 ; ! ""
@@ -2231,15 +2241,15 @@ XXI NUM-ROMAN ; ! ""
 концерт:концерт N1 ; ! ""
 король:король N1 ; ! ""
 корпорация:корпорация N5 ; ! ""
+коррупция:коррупция N1 ; ! ""
 кофта:кофта N1 ; ! "blouse"
 коэффициент:коэффициент N1 ; ! ""
 көз:көз N1 ; ! "eye"
-көк:көк N1 ; ! "sky,heaven,blue"
+көк:көк N1 ; ! "sky,heaven"
 кран:кран N5 ; ! ""
 кратер:кратер N1 ; ! ""
 кредит:кредит N1 ; ! ""
 кремль:кремль N1 ; ! ""
-кризис:кризис N1 ; ! ""
 кризис:кризис N1 ; ! ""
 кристалл:кристалл N1 ; ! ""
 критерий:критерий N1 ; ! ""
@@ -2249,10 +2259,10 @@ XXI NUM-ROMAN ; ! ""
 күдік:күдік N1 ; ! ""
 күн:күн N1 ; ! "day,sun"
 күшік:күшік N1 ; ! "pup"
-қабыл:қабыл N1 ; ! "accept"
+қабыл:қабыл N1 ; ! "accept" FIXME no declension
 қажет:қажет N1 ; ! "need"
 қаза:қаза N1 ; ! "death,doom"
-қазан:қазан N1 ; ! "October,Pan"
+қазан:қазан N1 ; ! "October;pan"
 қала:қала N1 ; ! "city"
 қантар:қантар N1 ; ! "January"
 қараша:қараша N1 ; ! "November"
@@ -2261,6 +2271,7 @@ XXI NUM-ROMAN ; ! ""
 қиямет:қиямет N1 ; ! "resurrection"
 қой:қой N1 ; ! "ram,sheep"
 қол:қол N1 ; ! "hand"
+қолтаңба:қолтаңба N1 ; ! "autograph,signature"
 қолтаңба:қолтаңба N1 ; ! "signature"
 қоныс:қоныс N1 ; ! ""
 құлшылық:құлшылық N1 ; ! ""
@@ -2270,14 +2281,14 @@ XXI NUM-ROMAN ; ! ""
 қыз:қыз N1 ; ! "girl,daughter,virgin"
 қызмет:қызмет N1 ; ! "service"
 қыпшақ:қыпшақ N1 ; ! ""
-қырқұйек:қырқұйек N1 ; ! "september"
+қырқұйек:қырқұйек N1 ; ! "September"
+қырқұйек:қыпкүйек N1 ; ! "September" Dir/LR
 лаборатория:лаборатория N1 ; ! ""
 лавр:лавр N1 ; ! ""
 лат:лат N1 ; ! ""
 лауреат:лауреат N1 ; ! ""
 лейтенант:лейтенант N1 ; ! ""
 лексика:лексика N1 ; ! ""
-лекция:лекция N1 ; ! ""
 лекция:лекция N1 ; ! ""
 лига:лига N1 ; ! "league"
 лимон:лимон N1 ; ! ""
@@ -2300,7 +2311,6 @@ XXI NUM-ROMAN ; ! ""
 маршал:маршал N1 ; ! ""
 масса:масса N1 ; ! ""
 мастер:мастер N1 ; ! ""
-мастер:мастер N1 ; ! ""
 математика:математика N1 ; ! ""
 математик:математик N1 ; ! ""
 материал:материал N1 ; ! ""
@@ -2316,13 +2326,13 @@ XXI NUM-ROMAN ; ! ""
 мәрхамет:мәрхамет N1 ; ! ""
 мәселе:мәселе N1 ; ! "matter,question"
 медаль:медаль N1 ; ! ""
-медаль:медаль N1 ; ! ""
 медицина:медицина N1 ; ! ""
 мембрана:мембрана N1 ; ! ""
 мемлекет:мемлекет N1 ; ! "state,community"
 меморандум:меморандум N5 ; ! ""
 менеджер:менеджер N5 ; ! ""
 менеджмент:менеджмент N5 ; ! ""
+мерәсім:мерәсім N1 ; ! "ceremony"
 метаболизм:метаболизм N5 ; ! ""
 металл:металл N1 ; ! ""
 металлургия:металлургия N1 ; ! ""
@@ -2341,7 +2351,7 @@ XXI NUM-ROMAN ; ! ""
 миллиардер:миллиардер N5 ; ! ""
 миллионер:миллионер N1 ; ! ""
 ми:ми N1 ; ! ""
-мим:мим N1 ; ! "an Arabic letter"
+мим:мим N1 ; ! "(an Arabic letter)"
 минерал:минерал N1 ; ! ""
 министрлік:министрлік N1 ; ! "ministry"
 министр:министр N1 ; ! "minister/secretary"
@@ -2404,6 +2414,7 @@ XXI NUM-ROMAN ; ! ""
 өнеркәсіп:өнеркәсіп N1 ; ! "industry"
 өң:өң N1 ; ! "appearance"
 өтірік:өтірік N1 ; ! "lie"
+пайғамбарлық:пайғамбарлық N1 ; ! "prophecy"
 пайғамбар:пайғамбар N1 ; ! "prophet"
 пайыз:пайыз N1 ; ! "percent"
 пакет:пакет N5 ; ! ""
@@ -2426,7 +2437,6 @@ XXI NUM-ROMAN ; ! ""
 плацкарт:плацкарт N1 ; ! "ticket with reservation"
 плюс:плюс N5 ; ! ""
 повесть:повесть N1 ; ! ""
-повесть:повесть N1 ; ! ""
 подполковник:подполковник N1 ; ! ""
 полиметалл:полиметалл N1 ; ! ""
 полиция:полиция N1 ; ! "police"
@@ -2441,25 +2451,20 @@ XXI NUM-ROMAN ; ! ""
 православие:православие N1 ; ! ""
 президент:президент N1 ; ! "president"
 премия:премия N1 ; ! ""
-премия:премия N1 ; ! ""
 премьер%-министр:премьер%-министр N5 ; ! "prime minister"
 премьер:премьер N1 ; ! ""
 препарат:препарат N1 ; ! ""
 призма:призма N1 ; ! ""
 приказ:приказ N1 ; ! ""
-приказ:приказ N1 ; ! ""
 принцип:принцип N1 ; ! ""
-проблема:проблема N1 ; ! ""
 проблема:проблема N5 ; ! ""
 провинция:провинция N5 ; ! ""
 программа:программа N1 ; ! ""
 прогресс:прогресс N1 ; ! ""
 проект:проект N1 ; ! ""
 проза:проза N1 ; ! ""
-проза:проза N1 ; ! ""
 прокуратура:прокуратура N1 ; ! ""
 прокурор:прокурор N1 ; ! ""
-промышленность:промышленность N1 ; ! ""
 промышленность:промышленность N1 ; ! ""
 протестант:протестант N1 ; ! ""
 протон:протон N1 ; ! ""
@@ -2471,20 +2476,17 @@ XXI NUM-ROMAN ; ! ""
 публицист:публицист N1 ; ! ""
 пункт:пункт N1 ; ! ""
 пьеса:пьеса N1 ; ! ""
-пьеса:пьеса N1 ; ! ""
-Раббы:раббы N1 ; ! "" FIXME:NOTE: no plural
+Раббы:раббы N3 ; ! ""
 радиация:радиация N1 ; ! ""
 радий:радий N1 ; ! ""
 радио:радио N1 ; ! "radio"
 радиус:радиус N1 ; ! ""
 разряд:разряд N1 ; ! ""
 ракета:ракета N1 ; ! ""
-рамазан:рамазан N1 ; ! ""
 рас:рас N1 ; ! "truth"
 реактор:реактор N1 ; ! ""
 реакция:реакция N1 ; ! ""
 революция:революция N1 ; ! ""
-регион:регион N1 ; ! ""
 регион:регион N1 ; ! ""
 редактор:редактор N1 ; ! ""
 редакция:редакция N5 ; ! ""
@@ -2496,14 +2498,11 @@ XXI NUM-ROMAN ; ! ""
 рентген:рентген N1 ; ! ""
 репортер:репортер N1 ; ! ""
 республика:республика N1 ; ! "republic"
-ресурс:ресурс N1 ; ! ""
 ресурс:ресурс N5 ; ! ""
 рет:рет N1 ; ! "turn,order,time"
 референдум:референдум N1 ; ! ""
 реформа:реформа N1 ; ! ""
-реформа:реформа N1 ; ! ""
 рецензия:рецензия N1 ; ! ""
-род:род N1 ; ! ""
 род:род N1 ; ! ""
 роль:роль N1 ; ! ""
 роман:роман N1 ; ! ""
@@ -2518,7 +2517,6 @@ XXI NUM-ROMAN ; ! ""
 сайлау:сайлау N1 ; ! "elections"
 сайт:сайт N5 ; ! ""
 салық:салық N1 ; ! "tax"
-саммит:саммит N5 ; ! ""
 саммит:саммит N5 ; ! "summit"
 санақ:санақ N1 ; ! ""
 санкция:санкция N5 ; ! ""
@@ -2529,18 +2527,15 @@ XXI NUM-ROMAN ; ! ""
 сәуір:сәуір N1 ; ! "april"
 себеп:себеп N1 ; ! "reason"
 сезон:сезон N1 ; ! ""
-сезон:сезон N1 ; ! ""
 сектор:сектор N1 ; ! ""
 семинар:семинар N1 ; ! ""
 сенатор:сенатор N1 ; ! ""
 сенат:сенат N1 ; ! ""
 серік:серік N1 ; ! "companion"
-серіктестік:серіктестік N1 ; ! "partnership"
 серіктес:серіктес N1 ; ! "partner"
-сертификат:сертификат N1 ; ! ""
+серіктестік:серіктестік N1 ; ! "partnership"
 сертификат:сертификат N1 ; ! ""
 серт:серт N1 ; ! ""
-символ:символ N1 ; ! ""
 символ:символ N1 ; ! ""
 синоним:синоним N1 ; ! ""
 синтез:синтез N1 ; ! ""
@@ -2553,14 +2548,13 @@ XXI NUM-ROMAN ; ! ""
 социология:социология N1 ; ! ""
 сөз:сөз N1 ; ! "word"
 спикер:спикер N1 ; ! ""
+спонсор:спонсор N1 ;
 спорт:спорт N1 ; ! ""
 стадион:стадион N1 ; ! "stadium"
 стакан:стакан N1 ; ! ""
 стандарт:стандарт N1 ; ! ""
 станция:станция N1 ; ! ""
 статистика:статистика N1 ; ! "statistics"
-стиль:стиль N1 ; ! ""
-стиль:стиль N1 ; ! ""
 стиль:стиль N1 ; ! ""
 стратегия:стратегия N5 ; ! ""
 студент:студент N1 ; ! "student"
@@ -2578,7 +2572,7 @@ XXI NUM-ROMAN ; ! ""
 сырт:сырт N1 ; ! "outside"
 сэр:сэр N1 ; ! ""
 сюжет:сюжет N1 ; ! ""
-сюжет:сюжет N1 ; ! ""
+сюрприз:сюрприз N1 ; ! "surprise"
 табан:табан N1 ; ! "sole"
 табыс:табыс N1 ; ! ""
 тай:тай N1 ; ! "one year horse"
@@ -2593,7 +2587,6 @@ XXI NUM-ROMAN ; ! ""
 тауар:тауар N1 ; ! "commodity"
 тау:тау N1 ; ! "mountain"
 тән:тән N1 ; ! "body"
-тәңір:тәңір N1 ; ! "God"
 театр:театр N1 ; ! ""
 телеграф:телеграф N1 ; ! ""
 телескоп:телескоп N1 ; ! ""
@@ -2615,7 +2608,6 @@ XXI NUM-ROMAN ; ! ""
 тіршілік:тіршілік N1 ; ! ""
 товар:товар N1 ; ! "goods"
 тозақ:тозақ N1 ; ! "hell"
-ток:ток N1 ; ! ""
 ток:ток N1 ; ! ""
 томат:томат N1 ; ! ""
 том:том N1 ; ! ""
@@ -2641,9 +2633,9 @@ XXI NUM-ROMAN ; ! ""
 уахи:уахи N1 ; ! ""
 уәде:уәде N1 ; ! "promise"
 указ:указ N1 ; ! ""
-указ:указ N1 ; ! ""
 университет:университет N1 ; ! "university"
 уран:уран N1 ; ! ""
+үгіттеуші:үгіттеуші N1 ; ! ""
 үгіт:үгіт N1 ; ! ""
 үй:үй N1 ; ! "home,house"
 үкім:үкім N1 ; ! "government"
@@ -2652,7 +2644,7 @@ XXI NUM-ROMAN ; ! ""
 ұл:ұл N1 ; ! "son"
 ұшақ:ұшақ N1 ; ! ""
 фабрика:фабрика N1 ; ! ""
-фабрика:фабрика N1 ; ! ""
+фабрика%-зауыт:фабрика%-зауыт N1 ; ! ""
 фаза:фаза N1 ; ! ""
 фактор:фактор N1 ; ! ""
 факультет:факультет N1 ; ! "faculty"
@@ -2673,16 +2665,14 @@ XXI NUM-ROMAN ; ! ""
 философия:философия N1 ; ! "philosophy"
 философ:философ N1 ; ! ""
 фильм:фильм N1 ; ! ""
-финал:финал%{э%}%{л%} N1 ; ! "final" ! Dir/LR  ! Apparently this can take front-vowel endings 8-\
 финал:финал N1 ; ! "final"
+финал:финал%{э%}%{л%} N1 ; ! "final" ! Dir/LR  ! Apparently this can take front-vowel endings 8-\
 финанс:финанс N1 ; ! ""
 фирма:фирма N1 ; ! ""
 флора:флора N1 ; ! ""
 флот:флот N1 ; ! ""
-флот:флот N1 ; ! ""
 фольга:фольга N1 ; ! ""
 фольклор:фольклор N1 ; ! ""
-фонарь:фонарь N1 ; ! ""
 фонарь:фонарь N1 ; ! ""
 фонд:фонд N1 ; ! ""
 фонтан:фонтан N1 ; ! ""
@@ -2764,16 +2754,17 @@ XXI NUM-ROMAN ; ! ""
 юань:юань N1 ; ! ""
 юбка:юбка N1 ; ! "skirt"
 юмор:юмор N1 ; ! ""
-жаттықтырушы:жаттықтырушы N1 ; ! "coach"
-мерәсім:мерәсім N1 ; ! "ceremony"
-басқарушы:басқарушы N1 ; ! "manager"
-лауазымды:лауазымды N1 ; ! "должностной"
-сюрприз:сюрприз N1 ; ! "surprise"
-қолтаңба:қолтаңба N1 ; ! "autograph,signature"
+көші%-қон:көші%-қон N1 ; ! ""
+тұтынушы:тұтынушы N1 ; ! "потребитель"
+желі:желі N1 ; ! ""
+қолданушы:қолданушы N1 ; ! "пользователь"
+микроблогер:микроблогер N1 ; ! ""
+соң:соң N1 ; ! "end, final"
 ДНҚ:ДНҚ%{а%} N1-ABBR ; ! "DNA"
 алд:ал%{д%} N1 ; ! "front"
 ара:ара N1 ; ! "among"
 арт:арт N1 ; ! "back"
+аст:ас%{т%} N1 ; ! "down side"
 аст:аст N1 ; ! "under"
 жан:жан N1 ; ! "next to"
 тарап:тарап%{с%} N1 ; ! ""
@@ -2824,8 +2815,7 @@ XXI NUM-ROMAN ; ! ""
 якут:якут N1 ; ! ""
 яһуди:яһуди N1 ; ! "Jewish/Jew"
 славян:славян N1 ; ! ""
-славян:славян N1 ; ! ""
-спонсор:спонсор N1 ;
+американдық:американдық N1 ; ! ""
 
  LEXICON ProperNouns
 
@@ -2948,9 +2938,11 @@ XXI NUM-ROMAN ; ! ""
 Гаванна:Гаванна NP-TOP ; ! ""
 Газиантеп:Газиантеп NP-TOP ; ! ""
 Гданьск:Гданьск NP-TOP ; ! ""
+Гуйчжоу:Гуйчжоу NP-TOP ; ! "провинция на юго-западе Китая"
 Ғамман:Ғамман NP-TOP ; ! "" 
 Дакар:Дакар NP-TOP ; ! "" 
 Дакка:Дакка NP-TOP ; ! "" 
+Далянь:Далянь NP-TOP ; ! ""
 Дамаск:Дамаск NP-TOP ; ! ""
 Дамаск:Дамаск NP-TOP ; ! "" 
 Джакарта:Джакарта NP-TOP ; ! "" 
@@ -3042,12 +3034,16 @@ XXI NUM-ROMAN ; ! ""
 Чикаго:Чикаго NP-TOP ; ! "Chicago"
 Шанхай:Шанхай NP-TOP ; ! ""
 Шыңжаң:Шыңжаң NP-TOP ; ! ""
+Үрімжі:Үрімжі NP-TOP ; ! "Urumchi"
 Ыстанбұл:Ыстанбұл NP-TOP ; ! "Istanbul"
 Эр%-Рияд:Эр%-Рияд NP-TOP ; ! "" 
 Ямусукро:Ямусукро NP-TOP ; ! ""
 Бағдат:Бағдат NP-TOP ; ! ""
+Бағдат:Бағдат NP-TOP ; ! ""
 Бұхара:Бұхара NP-TOP ; ! ""
 Дубай:Дубай NP-TOP ; ! ""
+Сана:Сана NP-TOP ; ! ""
+Сана:Сана NP-TOP ; ! ""
 Сана:Сана NP-TOP ; ! ""
 Ұлан%-Батыр:Ұлан%-Батыр NP-TOP ; ! ""
 Дебир:Дебир NP-TOP ; ! ""
@@ -3166,6 +3162,7 @@ XXI NUM-ROMAN ; ! ""
 Мали:Мали NP-TOP ; ! ""
 Мальта:Мальта NP-TOP ; ! ""
 Марокко:Марокко NP-TOP ; ! ""
+Маршалл% Аралдары:Маршалл% Аралдары NP-TOP ; ! "" FIXME implement np-compound-px
 Мексика:Мексика NP-TOP ; ! "Mexico"
 Мианма:Мианма NP-TOP ; ! ""
 Моғолстан:Моғолстан NP-TOP ; ! ""
@@ -3198,6 +3195,7 @@ XXI NUM-ROMAN ; ! ""
 Румыния:Румыния NP-TOP ; ! "Romania"
 Сальвадор:Сальвадор NP-TOP ; ! ""
 Самоа:Самоа NP-TOP ; ! ""
+Сан%-Томе% және% Принсипи:Сан%-Томе% және% Принсипи NP-TOP ; ! ""
 Сауд% Арабиясы:Сауд% Арабия N-COMPOUND-PX ; ! ""
 Сәмүд:Сәмүд NP-TOP ; ! ""
 Сенегал:Сенегал NP-TOP ; ! ""
@@ -3217,6 +3215,7 @@ XXI NUM-ROMAN ; ! ""
 Татарстан:Татарстан NP-TOP ; ! "Tatarstan" 
 Тәжікстан:Тәжікстан NP-TOP ; ! "Tajikistan" 
 Тимор%-Лесте:Тимор%-Лесте NP-TOP ; ! ""
+Тринидад% және% Тобаго:Тринидад% және% Тобаго NP-TOP ; ! ""
 Тунис:Тунис NP-TOP ; ! ""
 Түрікменстан:Түрікменстан NP-TOP ; ! "Turkmenistan" 
 Түрікменстан:Түркіменстан NP-TOP ; ! "" Dir/LR
@@ -3337,20 +3336,38 @@ XXI NUM-ROMAN ; ! ""
 Айболат:Айболат NP-ANT-M; ! "Aybolat" (Kazakh)
 Айбын:Айбын NP-ANT-M; ! "Aybın" (Kazakh)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
+Айғыз:Айғыз NP-ANT-F ; ! "Ayğız"
+Айғыз:Айғыз NP-ANT-F; ! "Ayğız" (Kazakh)
 Айдана:Айдана NP-ANT-F; ! "Aydana" (Kazakh)
 Айдар:Айдар NP-ANT-M; ! "Aydar" (Kazakh)
 Айдарлы:Айдарлы NP-ANT-M; ! "Aydarlı" (Kazakh)
 Айдархан:Айдархан NP-ANT-M; ! "Aydarxan" (Kazakh)
 Айдос:Айдос NP-ANT-M; ! "Aydos" (Kazakh)
 Айжан:Айжан NP-ANT-F; ! "Ayjan" (Kazakh)
+Айзада:Айзада NP-ANT-F; ! "Ayzada" (Kazakh)
+Айкүміс:Айкүміс NP-ANT-F; ! "Aykümis" (Kazakh)
 Айман:Айман NP-ANT-F; ! "Ayman" (Kazakh)
 Айнагүл:Айнагүл NP-ANT-F; ! "Aynagül" (Persian)
+Айнұр:Айнұр NP-ANT-F; ! "Aynur" (Kazakh)
 Айрат:Айрат NP-ANT-M; ! "Ayrat" (Arabic)
 Айса:Айса NP-ANT-M; ! "Aysa" (Arabic)
+Айсұлу:Айсұлу NP-ANT-F; ! "Aysulıw" 
+Айтақын:Айтақын NP-ANT-M; ! "Aytaqın" (Arabic)
 Айтжан:Айтжан NP-ANT-M; ! "Aytjan" (Arabic)
+Айтқали:Айтқали NP-ANT-M; ! "Aytqalıy" (Arabic)
+Айша:Айша NP-ANT-F; ! "Aysha" (Arabic)
+Айшуақ:Айшуақ NP-ANT-M; ! "Ayshıwaq" (Kazakh)
 Ақан:Ақан NP-ANT-M ; ! ""
+Ақболат:Ақболат NP-ANT-M; ! "Aqbolat" (Kazakh)
+Ақеділ:Ақеділ NP-ANT-M; ! "Aqedil" (Kazakh)
+Ақжан:Ақжан NP-ANT-M; ! "Aqjan" (Kazakh)
 Ақжанат:Ақжанат NP-ANT-M ; ! ""
 Ақжелке:Ақжелке NP-ANT-M ; ! ""
+Ақжол:Ақжол NP-ANT-M; ! "Aqjol" (Kazakh)
+Ақмарал:Ақмарал NP-ANT-F; ! "Aqmaral" (Arabic)
+Ақтілек:Ақтілек NP-ANT-M; ! "Aqtilek" (Kazakh)
+Ақтоқты:Ақтоқты NP-ANT-F; ! "Aqtoqtı" 
+Ақылбек:Ақылбек NP-ANT-M; ! "Aqılbek" (Arabic)
 Алай:Алай NP-ANT-M; ! "Alay" (Old Turkic)
 Алау:Алау NP-ANT-M; ! "Alaw" (Kazakh)
 Алдар:Алдар NP-ANT-M; ! "Aldar" (Old Turkic)
@@ -3386,6 +3403,7 @@ XXI NUM-ROMAN ; ! ""
 Аня:Аня NP-ANT-F ; ! ""
 Аңсар:Аңсар NP-ANT-M; ! "Aŋsar" (Kazakh)
 Арай:Арай NP-ANT-M; ! "Aray" (Kazakh)
+Ардақ:Ардақ NP-ANT-F; ! "Ardaq" (Kazakh)
 Аристотель:Аристотель NP-ANT-M ; ! ""
 Арна:Арна NP-ANT-F; ! "Arna" (Kazakh)
 Арсений:Арсений NP-ANT-M ; ! ""
@@ -3402,6 +3420,8 @@ XXI NUM-ROMAN ; ! ""
 Асхат:Асхат NP-ANT-M; ! "Asxat" (Arabic)
 Асылбек:Асылбек NP-ANT-M ; ! "Asılbek"
 Асылхан:Асылхан NP-ANT-M ; ! "" 
+Атабек:Атабек NP-ANT-M; ! "Atabek" (Kazakh)
+Аталық:Аталық NP-ANT-M; ! "Atalıq" (Kazakh)
 Атымтай:Атымтай NP-ANT-M; ! "Atımtay" (Arabic)
 Ахаб:Ахаб NP-ANT-M ; ! ""
 Ахан:Ахан NP-ANT-M; ! "Axan" (Persian)
@@ -3409,62 +3429,128 @@ XXI NUM-ROMAN ; ! ""
 Ахмет:Ахмет NP-ANT-M; ! "Axmet" (Arabic)
 Ахрам:Ахрам NP-ANT-M; ! "Axram" (Arabic)
 Аян:Аян NP-ANT-M; ! "Ayan" (Kazakh)
+Әбдібақыт:Әбдібақыт NP-ANT-M; ! "Äbdibaqıt" (Arabic)
+Әбдібек:Әбдібек NP-ANT-M; ! "Äbdibek" (Kazakh)
+Әбдіжәміл:Әбдіжәміл NP-ANT-M; ! "Äbdijämil" (Arabic)
+Әбдімәлік:Әбдімәлік NP-ANT-M; ! "Äbdimälik" (Arabic)
+Әбдірахман:Әбдірахман NP-ANT-M; ! "Äbdiraxman" (Arabic)
+Әбдісалам:Әбдісалам NP-ANT-M; ! "Äbdisalam" (Arabic)
+Әбдісамат:Әбдісамат NP-ANT-M; ! "Äbdisamat" (Arabic)
+Әбдішүкір:Әбдішүкір NP-ANT-M; ! "Äbdishükir" (Arabic)
+Әбіл:Әбіл NP-ANT-M; ! "Äbil" (Arabic)
+Әбілқайыр:Әбілқайыр NP-ANT-M; ! "Äbilqayır" (Arabic)
 Әбу:Әбу NP-ANT-M; ! "Äbiw" (Arabic)
+Әбубәкір:Әбубәкір NP-ANT-M; ! "Äbiwbäkir" (Arabic)
+Әбутәліп:Әбутәліп NP-ANT-M; ! "Äbiwtälip" (Arabic)
 Әди:Әди NP-ANT-M; ! "Ädiy" (Arabic)
 Әділ:Әділ NP-ANT-M; ! "Ädil" (Arabic)
+Әділбек:Әділбек NP-ANT-M; ! "Ädilbek" (Arabic)
+Әділжан:Әділжан NP-ANT-M; ! "Ädiljan" (Arabic)
 Әділхан:Әділхан NP-ANT-M; ! "Ädilxan" (Arabic)
 Әзел:Әзел NP-ANT-M; ! "Äzel" (Arabic)
+Әзиза:Әзиза NP-ANT-F; ! "Äziyza" (Arabic)
+Әзіз:Әзіз NP-ANT-M; ! "Äziz" (Arabic)
 Әзімбек:Әзімбек NP-ANT-M ; ! "" 
+Әзімжан:Әзімжан NP-ANT-M; ! "Äzimjan" (Arabic)
+Әзімхан:Әзімхан NP-ANT-M; ! "Äzimxan" (Arabic)
+Әйгерім:Әйгерім NP-ANT-F; ! "Äygerim" (Kazakh)
 Әйүп:Әйүп NP-ANT-M ; ! ""
 Әкежан:Әкежан NP-ANT-M ; ! "" 
 Әли:Әли NP-ANT-M; ! "Äliy" (Arabic)
+Әлима:Әлима NP-ANT-F; ! "Äliyma" (Arabic)
 Әлихан:Әлихан NP-ANT-M; ! "Äliyxan" (Arabic)
+Әлишама:Әлишама NP-ANT-F; ! "" 
 Әлия:Әлия NP-ANT-F; ! "Älıya" 
+Әлімбай:Әлімбай NP-ANT-M; ! "Älimbay" (Arabic)
+Әлішер:Әлішер NP-ANT-M; ! "Älisher" (Arabic)
+Әлнұр:Әлнұр NP-ANT-M; ! "Älnur" (Arabic)
 Әлфия:Әлфия NP-ANT-F; ! "Älfiya" (Arabic)
+Әмина:Әмина NP-ANT-F; ! "Ämiyna" (Arabic)
 Әмин:Әмин NP-ANT-M; ! "Ämiyn" (Arabic)
+Әмірбек:Әмірбек NP-ANT-M; ! "Ämirbek" (Arabic)
 Әмір% Темір:Әмір% Темір NP-ANT-M; ! ""
+Әнес:Әнес NP-ANT-M; ! "Änes" (Arabic)
 Әнуар:Әнуар NP-ANT-M; ! "Äniwar" (Arabic)
+Әріп:Әріп NP-ANT-M; ! "Ärip" (Arabic)
 Әсел:Әсел NP-ANT-F; ! "Äsel" (Arabic)
 Әсем:Әсем NP-ANT-F; ! "Äsem" (Kazakh)
 Әсет:Әсет NP-ANT-M; ! "Äset" (Arabic)
 Әсия:Әсия NP-ANT-F; ! "Äsıya" (Persian)
 Әубәкір:Әубәкір NP-ANT-M ; ! ""
+Әуез:Әуез NP-ANT-M; ! "Äwez" (Arabic)
+Әуел:Әуел NP-ANT-M; ! "Äwel" (Arabic)
+Әуелбек:Әуелбек NP-ANT-M; ! "Äwelbek" (Arabic)
+Әшім:Әшім NP-ANT-M; ! "Äshim" (Arabic)
+Әшімхан:Әшімхан NP-ANT-M; ! "Äshimxan" (Arabic)
+Әшірбек:Әшірбек NP-ANT-M; ! "Äshirbek" (Arabic)
 Багул:Багул NP-ANT-F ; ! "" 
 Бағдат:Бағдат NP-ANT-M; ! "Bağdat" (Arabic)
+Бағдат:Бағдат NP-ANT-M; ! "Bağdat" (Arabic)
+Бағлан:Бағлан NP-ANT-M; ! "Bağlan" (Kazakh)
 Бағытқали:Бағытқали NP-ANT-M ; ! "" 
 Байбол:Байбол NP-ANT-M; ! "Baybol" (Kazakh)
 Байдалы:Байдалы NP-ANT-M ; ! ""
+Баймағамбет:Баймағамбет NP-ANT-M; ! "Baymağambet" (Kazakh)
 Байсал:Байсал NP-ANT-M ; ! "Baysal"
 Байсал:Байсал NP-ANT-M; ! "Baysal" (Kazakh)
+Байтақ:Байтақ NP-ANT-M; ! "Baytaq" (Kazakh)
 Байтас:Байтас NP-ANT-M; ! "Baytas" 
+Байтемір:Байтемір NP-ANT-M; ! "Baytemir" (Kazakh)
+Бақай:Бақай NP-ANT-M; ! "Baqay" (Arabic)
+Бақтыбай:Бақтыбай NP-ANT-M; ! "Baqtıbay" (Kazakh)
+Бақтығұл:Бақтығұл NP-ANT-M ; ! "Baqtığul"
+Бақытбек:Бақытбек NP-ANT-M; ! "Baqıtbek" 
 Бақытжан:Бақытжан NP-ANT-M; ! "Baqıtjan" (Arabic)
 Балауса:Балауса NP-ANT-F; ! "Balawsa" (Kazakh)
 Балжан:Балжан NP-ANT-F; ! "Baljan" 
 Балтабай:Балтабай NP-ANT-M; ! "Baltabay" (Kazakh)
+Балтабек:Балтабек NP-ANT-M; ! "Baltabek" (Kazakh)
 Барак:Барак NP-ANT-M ; ! "Barack"
+Барақ:Барақ NP-ANT-M; ! "Baraq" (Arabic)
 Бари:Бари NP-ANT-M; ! "Barıy" (Arabic)
 Барлас:Барлас NP-ANT-M ; ! ""
+Батырбек:Батырбек NP-ANT-M; ! "Batırbek" (Kazakh)
 Батырхан:Батырхан NP-ANT-M; ! "Batırxan" (Kazakh)
 Бауыржан:Бауыржан NP-ANT-M; ! "Bawırjan" (Kazakh)
 Бахтияр:Бахтияр NP-ANT-M; ! "Baxtıyar" (Persian)
 Баят:Баят NP-ANT-M; ! "Bayat" (Arabic)
+Бәкір:Бәкір NP-ANT-M; ! "Bäkir" (Arabic)
+Бәтес:Бәтес NP-ANT-F; ! "Bätes" (Russian)
+Бейімбет:Бейімбет NP-ANT-M; ! "Beyimbet" (Kazakh)
 Бек:Бек NP-ANT-M; ! "Bek" (Kazakh)
+Бек:Бек NP-ANT-M; ! "Bek" (Kazakh)
+Бекболат:Бекболат NP-ANT-M; ! "Bekbolat" (Kazakh)
 Бекер:Бекер NP-ANT-M; ! "Beker" (Old Turkic)
+Бекжан:Бекжан NP-ANT-M; ! "Bekjan" 
+Бексұлтан:Бексұлтан NP-ANT-M; ! "Beksultan" (Arabic)
+Бектұр:Бектұр NP-ANT-M; ! "Bektur" 
 Белла:Белла NP-ANT-F; ! "Bella" (Latin)
+Берікбай:Берікбай NP-ANT-M; ! "Berikbay" 
 Берік:Берік NP-ANT-M; ! "Berik" (Kazakh)
 Бернар:Бернар NP-ANT-M; ! "Bernar" (Kazakh)
 Бесир:Бесир NP-ANT-M ; ! ""
 Биби:Биби NP-ANT-F; ! "Biybiy" (Persian)
 Бисекен:Бисекен NP-ANT-M ; ! "" 
+Білгір:Білгір NP-ANT-M; ! "Bilgir" (Kazakh)
+Біржан:Біржан NP-ANT-M; ! "Birjan" (Kazakh)
+Болатбек:Болатбек NP-ANT-M; ! "Bolatbek" (Latin)
 Болат:Болат NP-ANT-M; ! "Bolat" (Latin)
 Болатхан:Болатхан NP-ANT-M; ! "Bolatxan" (Latin)
 Боранбай:Боранбай NP-ANT-M; ! "Boranbay" (Kazakh)
 Боран:Боран NP-ANT-M; ! "Boran" (Kazakh)
 Борис:Борис NP-ANT-M ; ! "" 
 Бота:Бота NP-ANT-F; ! "Bota" (Kazakh)
+Бөжей:Бөжей NP-ANT-M ; ! "Böjey"
+Бөжей:Бөжей NP-ANT-M; ! "Böjey" (Old Turkic)
+Бөкей:Бөкей NP-ANT-M; ! "Bökey" (Old Turkic)
 Бөкейхан:Бөкейхан NP-ANT-M ; ! "" 
 Бөкейхан:Бөкейхан NP-ANT-M ; ! "" 
+Бөрі:Бөрі NP-ANT-M; ! "Böri" (Kazakh)
+Бунямин:Бунямин NP-ANT-M ; ! "Benjamin"
 Бурабай:Бурабай NP-ANT-M; ! "Bıwrabay" (Kazakh)
+Бүлдіршін:Бүлдіршін NP-ANT-F; ! "Büldirshin" (Kazakh)
+Бүркітбай:Бүркітбай NP-ANT-M; ! "Bürkitbay" (Kazakh)
+Бүркіт:Бүркіт NP-ANT-M; ! "Bürkit" (Kazakh)
 Бұхара:Бұхара NP-ANT-M; ! "Buxara" (Arabic)
 Вадим:Вадим NP-ANT-M; ! ""
 Валентина:Валентина NP-ANT-F; ! "Valentina" (Latin)
@@ -3483,6 +3569,7 @@ XXI NUM-ROMAN ; ! ""
 Владислав:Владислав NP-ANT-M ; ! ""
 Вячеслав:Вячеслав NP-ANT-M ; ! ""
 Галина:Галина NP-ANT-F; ! "Galıyna" 
+Гаухар:Гаухар NP-ANT-F; ! "Gawxar" (Arabic)
 Геннадий:Геннадий NP-ANT-M ; ! "" 
 Георгий:Георгий NP-ANT-M ; ! "" 
 Геральд:Геральд NP-ANT-M ; ! ""
@@ -3492,15 +3579,37 @@ XXI NUM-ROMAN ; ! ""
 Григориан:Григориан NP-ANT-M ; ! ""
 Гурбангұлы:Гурбангұлы NP-ANT-M ; ! "" 
 Гүлбаршын:Гүлбаршын NP-ANT-F ; ! "" 
+Гүлбахрам:Гүлбахрам NP-ANT-F; ! "Gülbaxram" (Arabic)
+Гүлжамал:Гүлжамал NP-ANT-F; ! "Güljamal" (Arabic)
 Гүлжан:Гүлжан NP-ANT-F ; ! "" 
 Гүлзанат:Гүлзанат NP-ANT-F ; ! "" 
 Гүлмира:Гүлмира NP-ANT-F; ! "Gülmiyra" (Russian)
+Гүлназ:Гүлназ NP-ANT-F; ! "Gülnaz" (Greek)
 Гүлнара:Гүлнара NP-ANT-F; ! "Gülnara" (Arabic)
+Гүлнар:Гүлнар  NP-ANT-F; ! "Gülnar " (Arabic)
+Гүлнар:Гүлнар NP-ANT-F; ! "Gülnar" (Arabic)
 Гүлнәр:Гүлнәр NP-ANT-F ; ! "" 
+Гүлнұр:Гүлнұр NP-ANT-F; ! "Gülnur" (Arabic)
 Гүлсара:Гүлсара NP-ANT-F; ! "Gülsara" (Arabic)
+Гүлшара:Гүлшара NP-ANT-F; ! "Gülshara" (Arabic)
+Гүлшат:Гүлшат NP-ANT-F; ! "Gülshat" (Persian)
+Ғаббас:Ғаббас NP-ANT-M; ! "Ğabbas" 
+Ғабит:Ғабит NP-ANT-M; ! "Ğabıyt" (Arabic)
+Ғабитхан:Ғабитхан NP-ANT-M ; ! "Ğabıytxan"
+Ғабитхан:Ғабитхан NP-ANT-M; ! "Ğabıytxan" (Arabic)
 Ғад:Ғад NP-ANT-M ; ! ""
+Ғази:Ғази NP-ANT-M; ! "Ğazıy" (Arabic)
+Ғазиза:Ғазиза NP-ANT-F ; ! "Aziza"
+Ғазиза:Ғазиза NP-ANT-F; ! "Ğazıyza" (Arabic)
+Ғазиз:Ғазиз NP-ANT-M; ! "Ğazıyz" 
+Ғайса:Ғайса NP-ANT-M; ! "Ğaysa" 
+Ғайша:Ғайша NP-ANT-F ; ! "Aisha"
+Ғали:Ғали NP-ANT-M; ! "Ğalıy" 
 Ғалия:Ғалия NP-ANT-F; ! "Ğalıya" (Arabic)
 Ғалымжан:Ғалымжан NP-ANT-M; ! "Ğalımjan" (Persian)
+Ғани:Ғани NP-ANT-M; ! "Ğanıy" (Arabic)
+Ғарифолла:Ғарифолла NP-ANT-M; ! "Ğarifolla" (Arabic)
+Ғафу:Ғафу NP-ANT-M; ! "Ğafu" (Arabic)
 Ғиса:Ғиса NP-ANT-M ; ! ""
 Далай:Далай NP-ANT-M ; ! "" 
 Данил:Данил NP-ANT-M ; ! ""
@@ -3510,6 +3619,8 @@ XXI NUM-ROMAN ; ! ""
 Дархан:Дархан NP-ANT-M; ! "Darxan" (Arabic)
 Дарья:Дарья NP-ANT-F ; ! ""
 Дастан:Дастан NP-ANT-M; ! "Dastan" (Kazakh)
+Дәрмен:Дәрмен NP-ANT-M; ! "Därmen" (Persian)
+Дәуіт:Дәуіт NP-ANT-M; ! "Däwit" (Ancient Hebrew)
 Дәулет:Дәулет NP-ANT-M; ! "Däwlet" (Arabic)
 Дәурен:Дәурен NP-ANT-M; ! "Däwren" 
 Денис:Денис NP-ANT-M; ! "Deniys" (Greek)
@@ -3537,18 +3648,24 @@ XXI NUM-ROMAN ; ! ""
 Евгений:Евгений NP-ANT-M ; ! "Yevgeniy"
 Евгения:Евгения NP-ANT-F ; ! ""
 Егор:Егор NP-ANT-M; ! "Egor" (Greek)
+Едіге:Едіге NP-ANT-M; ! "Edige" (Arabic)
 Еділ:Еділ NP-ANT-M; ! "Edil" (Old Turkic)
+Езекия:Езекия NP-ANT-M ; ! "Ezekial"
 Екатерина:Екатерина NP-ANT-F ; ! ""
 Елазар:Елазар NP-ANT-M ; ! ""
 Еламан:Еламан NP-ANT-M; ! "Elaman" (Kazakh)
 Елдар:Елдар NP-ANT-M; ! "Eldar" (Kazakh)
+Елдес:Елдес NP-ANT-M; ! "Eldes" (Kazakh)
 Елена:Елена NP-ANT-F; ! "Elena" (Greek)
 Елжан:Елжан NP-ANT-M; ! "Eljan" (Kazakh)
 Елизавета:Елизавета NP-ANT-F; ! "Elizaveta" (Skandinavian)
+Еңлік:Еңлік NP-ANT-F; ! "Eŋlik" (Kazakh)
 Ералы:Ералы NP-ANT-M; ! "Eralı" (Kazakh)
 Ерболат:Ерболат NP-ANT-M; ! "Erbolat" (Kazakh)
 Ербол:Ербол NP-ANT-M ; ! "Erbol"
 Ербол:Ербол NP-ANT-M; ! "Erbol" (Kazakh)
+Ергеш:Ергеш NP-ANT-M; ! "Ergesh" (Kazakh)
+Ерғали:Ерғали NP-ANT-M; ! "Erğalıy" (Arabic)
 Ережеп:Ережеп NP-ANT-M; ! "Erejep" (Arabic)
 Еремия:Еремия NP-ANT-M ; ! ""
 Ерен:Ерен NP-ANT-M; ! "Eren" (Kazakh)
@@ -3558,33 +3675,53 @@ XXI NUM-ROMAN ; ! ""
 Ерлан:Ерлан NP-ANT-M ; ! "Erlan"
 Ерлан:Ерлан NP-ANT-M; ! "Erlan" (Kazakh)
 Ерман:Ерман NP-ANT-M; ! "Erman" (Kazakh)
+Ермек:Ермек NP-ANT-M; ! "Ermek" (Kazakh)
 Ермұхамет:Ермұхамет NP-ANT-M ; ! "" 
 Ернар:Ернар NP-ANT-M; ! "Ernar" (Kazakh)
 Ертай:Ертай NP-ANT-M; ! "Ertay" (Kazakh)
 Ертіс:Ертіс NP-ANT-M; ! "Ertis" (Old Turkic)
 Есберген:Есберген NP-ANT-M; ! "Esbergen" (Kazakh)
+Есдәулет:Есдәулет NP-ANT-M; ! "Esdäwlet" (Kazakh)
+Есей:Есей NP-ANT-M; ! "Esey" (Kazakh)
 Есенбек:Есенбек NP-ANT-M ; ! "" 
 Есет:Есет NP-ANT-M; ! "Eset" (Persian)
+Ескендір:Ескендір NP-ANT-M; ! "Eskendir" (Arabic)
+Есқали:Есқали NP-ANT-M; ! "Esqalıy" (Kazakh)
 Естай:Естай NP-ANT-M ; ! "" 
 Ефрем:Ефрем NP-ANT-M ; ! ""
 Ешуа:Ешуа NP-ANT-M ; ! ""
+Жағыпар:Жағыпар NP-ANT-M; ! "Jağıpar" (Arabic)
 Жадыра:Жадыра NP-ANT-M; ! "Jadıra" (Kazakh)
+Жазира:Жазира NP-ANT-F; ! "Jazıyra" (Arabic)
 Жайық:Жайық NP-ANT-M; ! "Jayıq" (Kazakh)
+Жақия:Жақия NP-ANT-M; ! "Jaqıya" (Arabic)
+Жақсыбай:Жақсыбай NP-ANT-M; ! "Jaqsıbay" (Kazakh)
 Жақсыбек:Жақсыбек NP-ANT-M ; ! "" 
+Жақыпбек:Жақыпбек NP-ANT-M; ! "Jaqıpbek" (Kazakh)
+Жақып:Жақып NP-ANT-M ; ! "Jacob"
+Жақып:Жақып NP-ANT-M ; ! "Jacob"
+Жақып:Жақып NP-ANT-M; ! "Jaqıp" (Kazakh)
 Жалал:Жалал NP-ANT-M ; ! ""
 Жамбыл:Жамбыл NP-ANT-M; ! "Jambıl" (Old Turkic)
 Жамбыл:Жамбыл NP-ANT-M; ! "Jambıl" (Old Turkic)
 Жанай:Жанай NP-ANT-M; ! "Janay" (Kazakh)
+Жанаргүл:Жанаргүл NP-ANT-F; ! "Janargül" (Kazakh)
 Жанат:Жанат NP-ANT-F; ! "Janat" (Kazakh)
 Жанат:Жанат NP-ANT-M; ! "Janat" (Kazakh)
+Жанахмет:Жанахмет NP-ANT-M; ! "Janaxmet" (Arabic)
 Жанбай:Жанбай NP-ANT-M; ! "Janbay" (Kazakh)
+Жанболат:Жанболат NP-ANT-M; ! "Janbolat" (Latin)
+Жандарбек:Жандарбек NP-ANT-M; ! "Jandarbek" (Kazakh)
 Жандос:Жандос NP-ANT-M; ! "Jandos" (Persian)
 Жанна:Жанна NP-ANT-F; ! "Janna" (Kazakh)
 Жаннат:Жаннат NP-ANT-F; ! "Jannat" (Arabic)
 Жансая:Жансая NP-ANT-F; ! "Jansaya" 
 Жансейіт:Жансейіт NP-ANT-M ; ! ""
+Жантас:Жантас NP-ANT-M; ! "Jantas" (Kazakh)
 Жарасбай:Жарасбай NP-ANT-M ; ! ""
 Жарас:Жарас NP-ANT-M; ! "Jaras" (Kazakh)
+Жарқынбек:Жарқынбек NP-ANT-M; ! "Jarqınbek" (Kazakh)
+Жарқын:Жарқын NP-ANT-M; ! "Jarqın" (Kazakh)
 Жармахан:Жармахан NP-ANT-M ; ! ""
 Жасталап:Жасталап NP-ANT-M; ! "Jastalap" (Kazakh)
 Жасұлан:Жасұлан NP-ANT-M; ! "Jasulan" (Kazakh)
@@ -3594,27 +3731,57 @@ XXI NUM-ROMAN ; ! ""
 Жәмшид:Жәмшид NP-ANT-M; ! "Jämshiyd" (Arabic)
 Жәнібек:Жәнібек NP-ANT-M; ! "Jänibek" (Kazakh)
 Жәсия:Жәсия NP-ANT-M ; ! ""
+Жексенбай:Жексенбай NP-ANT-M; ! "Jeksenbay" (Kazakh)
 Жексен:Жексен NP-ANT-M ; ! ""
 Женя:Женя NP-ANT-F ; ! ""
 Женя:Женя NP-ANT-F ; ! ""
 Женя:Женя NP-ANT-M ; ! ""
 Женя:Женя NP-ANT-M ; ! ""
+Жетібай:Жетібай NP-ANT-M; ! "Jetibay" (Kazakh)
+Жетіген:Жетіген NP-ANT-M; ! "Jetigen" (Kazakh)
 Жидебай:Жидебай NP-ANT-M ; ! "Jiydebay"
+Жиренше:Жиренше NP-ANT-M ; ! "Jiyrenşe"
+Жиренше:Жиренше NP-ANT-M; ! "Jiyrenshe" (Kazakh)
 Жігітек:Жігітек NP-ANT-M ; ! ""
 Жоғаб:Жоғаб NP-ANT-M ; ! ""
 Жоғас:Жоғас NP-ANT-M ; ! ""
 Жомарт:Жомарт NP-ANT-M; ! "Jomart" (Kazakh)
 Жонатан:Жонатан NP-ANT-M ; ! ""
+Жорам:Жорам NP-ANT-M; ! ""
 Жосапат:Жосапат NP-ANT-M ; ! ""
+Жүзбай:Жүзбай NP-ANT-M; ! "Jüzbay" (Kazakh)
+Жүніс:Жүніс NP-ANT-M; ! "Jünis" (Ancient Hebrew)
+Жүсіпбек:Жүсіпбек NP-ANT-M; ! "Jüsipbek" (Arabic)
+Жүсіп:Жүсіп NP-ANT-M; ! "Jüsip" (Arabic)
+Жұбан:Жұбан NP-ANT-M; ! "Juban" (Kazakh)
+Жұбаныш:Жұбаныш NP-ANT-M; ! "Jubanısh" (Kazakh)
+Жұлдызай:Жұлдызай NP-ANT-F; ! "Juldızay" (Kazakh)
 Жұмабай:Жұмабай NP-ANT-M ; ! "Jumabay"
 Жұмабай:Жұмабай NP-ANT-M; ! "Jumabay" (Arabic)
+Жұмабек:Жұмабек NP-ANT-M; ! "Jumabek" (Arabic)
+Жұмабике:Жұмабике NP-ANT-F; ! "Jumabıyke" (Arabic)
+Жұмағазы:Жұмағазы NP-ANT-M; ! "Jumağazı" (Arabic)
 Жұмаділ:Жұмаділ NP-ANT-M ; ! ""
+Жұмажан:Жұмажан NP-ANT-M; ! "Jumajan" (Arabic)
+Жұманбай:Жұманбай NP-ANT-M; ! "Jumanbay" (Kazakh)
+Жұпар:Жұпар NP-ANT-F; ! "Jupar" (Kazakh)
 Забур:Забур NP-ANT-M ; ! ""
+Зағипа:Зағипа NP-ANT-F; ! "Zağıypa" (Arabic)
+Заманбек:Заманбек NP-ANT-M; ! "Zamanbek" (Kazakh)
+Замира:Замира NP-ANT-F; ! "Zamıyra" (Arabic)
+Заңғар:Заңғар NP-ANT-M; ! "Zaŋğar" (Kazakh)
 Зарина:Зарина NP-ANT-F; ! "Zarıyna" (Arabic)
 Зәкәрия:Зәкәрия NP-ANT-M ; ! ""
 Зәки:Зәки NP-ANT-M; ! "Zäkiy" (Arabic)
+Зәкір:Зәкір NP-ANT-M; ! "Zäkir" (Arabic)
+Зәуре:Зәуре NP-ANT-F; ! "Zäwre" (Arabic)
+Зейнеп:Зейнеп NP-ANT-F; ! "Zeynep" (Arabic)
+Зере:Зере NP-ANT-F; ! "Zere" (Arabic)
+Зерек:Зерек NP-ANT-M; ! "Zerek" (Arabic)
 Зинаида:Зинаида NP-ANT-F; ! "Zıynaida" (Greek)
+Зия:Зия NP-ANT-F; ! "Zıya" (Arabic)
 Зоя:Зоя NP-ANT-F; ! "Zoya" (Greek)
+Зубайда:Зубайда NP-ANT-F; ! "Zıwbayda" (Arabic)
 Иба:Иба NP-ANT-F; ! "İyba" (Arabic)
 Ибрагим:Ибрагим NP-ANT-M; ! "İybragıym" (Arabic)
 Ибраһим:Ибраһим NP-ANT-M ; ! ""
@@ -3626,6 +3793,7 @@ XXI NUM-ROMAN ; ! ""
 Ильина:Ильина NP-ANT-F ; ! ""
 Илья:Илья NP-ANT-M ; ! ""
 Иманғали:Иманғали NP-ANT-M; ! "İymanğalıy" (Arabic)
+Иманқұл:Иманқұл NP-ANT-M; ! "İymanqul" (Arabic)
 Инаят:Инаят NP-ANT-M; ! "İynayat" 
 Индира:Индира NP-ANT-F; ! "İyndıyra" 
 Иосиф:Иосиф NP-ANT-M ; ! ""
@@ -3636,14 +3804,24 @@ XXI NUM-ROMAN ; ! ""
 Исатай:Исатай NP-ANT-M; ! "İysatay" (Arabic)
 Исраил:Исраил%{☭%} NP-ANT-M ; ! "Israel (as in Jacob)"
 Ишая:Ишая NP-ANT-M ; ! ""
+Ізбасар:Ізбасар NP-ANT-M; ! "İzbasar" (Kazakh)
+Ілияс:Ілияс NP-ANT-M; ! "İlıyas" (Hebrew)
+Інжу:Інжу NP-ANT-F; ! "İnjıw" 
+Кабир:Кабир NP-ANT-M; ! "Kabıyr" (Arabic)
 Камал:Камал NP-ANT-M; ! "Kamal" (Arabic)
 Карл:Карл NP-ANT-M ; ! ""
 Катерина:Катерина NP-ANT-F; ! "Katerıyna" 
 Катя:Катя NP-ANT-F ; ! ""
+Кәріпжан:Кәріпжан NP-ANT-M; ! "Käripjan" (Arabic)
+Келбет:Келбет NP-ANT-F; ! "Kelbet" (Kazakh)
+Кенен:Кенен NP-ANT-M; ! "Kenen" (Kazakh)
 Кенесары:Кенесары NP-ANT-M; ! "Kenesarı"
 Кенжалы:Кенжалы NP-ANT-M ; ! ""
+Кенжебай:Кенжебай NP-ANT-M; ! "Kenjebay" (Kazakh)
 Кенжебек:Кенжебек NP-ANT-M; ! "Kenjebek" (Kazakh)
+Кенжеғали:Кенжеғали NP-ANT-M; ! "Kenjeğalıy" (Kazakh)
 Керей:Керей NP-ANT-M ; ! ""
+Киікбай:Киікбай NP-ANT-M; ! "Kıyikbay" (Kazakh)
 Ким:Ким NP-ANT-M; ! "Kiym" (New word)
 Клара:Клара NP-ANT-F; ! "Klara" (Latin)
 Клаус:Клаус NP-ANT-M ; ! ""
@@ -3651,26 +3829,76 @@ XXI NUM-ROMAN ; ! ""
 Константин:Константин NP-ANT-M ; ! ""
 Костя:Костя NP-ANT-M ; ! ""
 Көкбай:Көкбай NP-ANT-M; ! "Kökbay" (Kazakh)
+Көксерек:Көксерек NP-ANT-M ; ! "Kökserek" (the name of a wolf that's a character in a story)
 Көтібақ:Көтібақ NP-ANT-M ; ! ""
 Кристина:Кристина NP-ANT-F ; ! ""
 Ксения:Ксения NP-ANT-F ; ! ""
 Күлән:Күлән NP-ANT-F; ! "Külän" (Kazakh)
 Күнке:Күнке NP-ANT-M ; ! ""
+Күнсұлу:Күнсұлу NP-ANT-F; ! "Künsulıw" (Kazakh)
+Қадырбек:Қадырбек NP-ANT-M; ! "Qadırbek" (Kazakh)
+Қадыржан:Қадыржан NP-ANT-M; ! "Qadırjan" (Arabic)
+Қадыр:Қадыр NP-ANT-M; ! "Qadır" (Arabic)
 Қажымқан:Қажымқан NP-ANT-M ; ! ""
+Қажымұрат:Қажымұрат NP-ANT-M; ! "Qajımurat" (Arabic)
+Қазыбек:Қазыбек NP-ANT-M; ! "Qazıbek" (Arabic)
+Қайдар:Қайдар NP-ANT-M; ! "Qaydar" (Arabic)
 Қайрат:Қайрат NP-ANT-M; ! "Qayrat" (Arabic)
+Қайсар:Қайсар NP-ANT-M; ! "Qaysar" (Arabic)
+Қайым:Қайым NP-ANT-M; ! "Qayım" (Arabic)
+Қайырбай:Қайырбай NP-ANT-M; ! "Qayırbay" (Arabic)
+Қайырбек:Қайырбек NP-ANT-M; ! "Qayırbek" (Arabic)
+Қайырболат:Қайырболат NP-ANT-M; ! "Qayırbolat" (Arabic)
 Қайыргелді:Қайыргелді NP-ANT-M ; ! ""
+Қайыржан:Қайыржан NP-ANT-M; ! "Qayırjan" (Arabic)
+Қаламқас:Қаламқас NP-ANT-F; ! "Qalamqas" (Kazakh)
+Қалдарбек:Қалдарбек NP-ANT-M; ! "Qaldarbek" (Arabic)
+Қалдыбай:Қалдыбай NP-ANT-M; ! "Qaldıbay" (Arabic)
+Қалдыбек:Қалдыбек NP-ANT-M; ! "Qaldıbek" (Arabic)
+Қалқа:Қалқа NP-ANT-M; ! "Qalqa" (Kazakh)
+Қалқаман:Қалқаман NP-ANT-M; ! "Qalqaman" (Kazakh)
 Қалтай:Қалтай NP-ANT-M ; ! ""
+Қалыбай:Қалыбай NP-ANT-M; ! "Qalıbay" (Arabic)
+Қамбар:Қамбар NP-ANT-M; ! "Qambar" (Arabic)
+Қамқа:Қамқа NP-ANT-F; ! "Qamqa" (Kazakh)
 Қамысбай:Қамысбай NP-ANT-M ; ! ""
+Қанағат:Қанағат NP-ANT-M; ! "Qanağat" (Arabic)
 Қанахан:Қанахан NP-ANT-M ; ! ""
+Қараман:Қараман NP-ANT-M; ! "Qaraman" (Kazakh)
+Қарасай:Қарасай NP-ANT-M; ! "Qarasay" (Kazakh)
+Қаратай:Қаратай NP-ANT-M; ! "Qaratay" (Kazakh)
+Қаршыға:Қаршыға NP-ANT-M; ! "Qarshığa" 
+Қасен:Қасен NP-ANT-M ; ! "Qasen"
+Қасымбек:Қасымбек NP-ANT-M; ! "Qasımbek" (Arabic)
 Қатша:Қатша NP-ANT-F ; ! ""
+Қаһарман:Қаһарман NP-ANT-M; ! "Qaharman" (Arabic)
+Қобыланды:Қобыланды NP-ANT-M; ! "Qobılandı" (Kazakh)
 Қодар:Қодар NP-ANT-M ; ! ""
+Қожабай:Қожабай NP-ANT-M; ! "Qojabay" (Arabic)
+Қожабек:Қожабек NP-ANT-M; ! "Qojabek" (Arabic)
+Қожахмет:Қожахмет NP-ANT-M; ! "Qojaxmet" (Arabic)
 Қозыбақ:Қозыбақ NP-ANT-M ; ! ""
+Қойлыбай:Қойлыбай NP-ANT-M; ! "Qoylıbay" (Kazakh)
 Қонақай:Қонақай NP-ANT-M ; ! ""
+Қосай:Қосай NP-ANT-M; ! "Qosay" (Kazakh)
+Қосын:Қосын NP-ANT-M; ! "Qosın" (Arabic)
+Қошқарбай:Қошқарбай NP-ANT-M; ! "Qoshqarbay" (Kazakh)
 Құдайберген:Құдайберген NP-ANT-M; ! "Qudaybergen" (Kazakh)
+Құдайберді:Құдайберді NP-ANT-M ; ! "Qudayberdi"
+Құлыншақ:Құлыншақ NP-ANT-M; ! "Qulınshaq" (Kazakh)
+Құнанбай:Құнанбай NP-ANT-M ; ! "Qunanbay"
 Құндыз:Құндыз NP-ANT-F; ! "Qundız" (Kazakh)
 Құныскерей:Құныскерей NP-ANT-M ; ! ""
+Құрманбай:Құрманбай NP-ANT-M; ! "Qurmanbay" (Arabic)
 Құрманбек:Құрманбек NP-ANT-M; ! "Qurmanbek" (Arabic)
+Құрманғазы:Құрманғазы NP-ANT-M; ! "Qurmanğazı" (Arabic)
+Құрман:Құрман NP-ANT-M; ! "Qurman" (Arabic)
+Құрмаш:Құрмаш NP-ANT-F ; ! "Qurmaş"  (sometimes M?)
+Құсайын:Құсайын NP-ANT-M; ! "Qusayın" (Arabic)
+Қыдыр:Қыдыр NP-ANT-M; ! "Qıdır" (Arabic)
 Лариса:Лариса NP-ANT-F; ! "Larıysa" (Greek)
+Ләззат:Ләззат NP-ANT-F; ! "Läzzat" (Arabic)
+Ләйла:Ләйла NP-ANT-F; ! "Läyla" (Arabic)
 Лев:Лев NP-ANT-M ; ! ""
 Лена:Лена NP-ANT-F ; ! ""
 Леонардо:Леонардо NP-ANT-M ; ! ""
@@ -3678,6 +3906,7 @@ XXI NUM-ROMAN ; ! ""
 Лех:Лех NP-ANT-M ; ! ""
 Лидия:Лидия NP-ANT-F ; ! ""
 Лилия:Лилия NP-ANT-F ; ! ""
+Лұқпан:Лұқпан NP-ANT-M; ! "Luqpan" (Arabic)
 Лұт:Лұт NP-ANT-M ; ! ""
 Люба:Люба NP-ANT-F ; ! ""
 Любовь:Любовь NP-ANT-F ; ! ""
@@ -3689,12 +3918,17 @@ XXI NUM-ROMAN ; ! ""
 Максим:Максим NP-ANT-M ; ! ""
 Макс:Макс NP-ANT-M ; ! ""
 Мақпал:Мақпал NP-ANT-F; ! "Maqpal" (Arabic)
+Мақсұд:Мақсұд NP-ANT-M ; ! ""
+Мақсұм:Мақсұм NP-ANT-M; ! "Maqsum" (Arabic)
 Мақыш:Мақыш NP-ANT-M ; ! ""
+Мамасадық:Мамасадық NP-ANT-M; ! "Mamasadıq" (Arabic)
 Мамуржон:Мамуржон NP-ANT-M ; ! ""
 Манаса:Манаса NP-ANT-M ; ! ""
 Манас:Манас NP-ANT-M ; ! ""
+Мансұр:Мансұр NP-ANT-M; ! "Mansur" (Arabic)
 Марат:Марат NP-ANT-M; ! "Marat" (Arabic)
 Маргарита:Маргарита NP-ANT-F; ! "Margarıyta" 
+Маржан:Маржан NP-ANT-F; ! "Marjan" (Kazakh)
 Марина:Марина NP-ANT-F; ! "Marıyna" (Latin)
 Мария:Мария NP-ANT-F; ! "Marıya" (Arabic)
 Марлен:Марлен NP-ANT-M; ! "Marlen" (Arabic)
@@ -3702,15 +3936,30 @@ XXI NUM-ROMAN ; ! ""
 Марсель:Марсель NP-ANT-M ; ! ""
 Марс:Марс NP-ANT-M; ! "Mars" (Arabic)
 Мартин:Мартин NP-ANT-M ; ! ""
+Маруф:Маруф NP-ANT-M ; ! ""
+Марфуға:Марфуға NP-ANT-F; ! "Marfuğa" (Arabic)
 Маршал:Маршал NP-ANT-M; ! "Marshal" (Arabic)
 Махамбет:Махамбет NP-ANT-M; ! "Maxambet" (Arabic)
 Махмуд:Махмуд NP-ANT-M ; ! ""
 Махмұд:Махмұд NP-ANT-M ; ! ""
+Махмұт:Махмұт NP-ANT-M; ! "Maxmut" (Arabic)
 Мәди:Мәди NP-ANT-M; ! "Mädiy" (Arabic)
+Мәдина:Мәдина NP-ANT-F; ! "Mädiyna" (Arabic)
 Мәжит:Мәжит NP-ANT-M; ! "Mäjiyt" (Arabic)
+Мәлік:Мәлік NP-ANT-M; ! "Mälik" (Arabic)
+Мәмбет:Мәмбет NP-ANT-M; ! "Mämbet" (Arabic)
 Мәншүк:Мәншүк NP-ANT-M ; ! ""
 Мәриям:Мәриям NP-ANT-F ; ! ""
+Мәсіх:Мәсіх NP-ANT-M ; ! "Moses"  ! FIXME: check
+Мәулен:Мәулен NP-ANT-M; ! "Mäwlen" (Arabic)
+Медет:Медет NP-ANT-M; ! "Medet" (Arabic)
 Медеу:Медеу NP-ANT-M; ! "Medew" (Arabic)
+Мейірбек:Мейірбек NP-ANT-M; ! "Meyirbek" (Kazakh)
+Мейірман:Мейірман NP-ANT-M; ! "Meyirman" (Arabic)
+Мейір:Мейір NP-ANT-M; ! "Meyir" (Persian)
+Мекемтас:Мекемтас NP-ANT-M; ! "Mekemtas" (Kazakh)
+Мерей:Мерей NP-ANT-M; ! "Merey" (Kazakh)
+Меруерт:Меруерт NP-ANT-F; ! "Merwert" (Greek)
 Минтимер:Минтимер NP-ANT-M ; ! ""
 Мира:Мира NP-ANT-F; ! "Mıyra" (New word)
 Мирас:Мирас NP-ANT-M; ! "Mıyras" (Arabic)
@@ -3721,11 +3970,18 @@ XXI NUM-ROMAN ; ! ""
 Мишель:Мишель NP-ANT-M ; ! ""
 Мишель:Мишель NP-ANT-M; ! ""
 Мохаммад:Мохаммад NP-ANT-M ; ! ""
+Мөңке:Мөңке NP-ANT-M; ! "Möŋke" (Old Turkic)
 Мухамет:Мухамет NP-ANT-M ; ! ""
+Мүбәрак:Мүбәрак NP-ANT-M; ! "Mübärak" (Arabic)
 Мүсілім:Мүсілім NP-ANT-M ; ! ""
+Мұзафар:Мұзафар NP-ANT-M; ! "Muzafar" (Arabic)
+Мұқағали:Мұқағали NP-ANT-M; ! "Muqağalıy" (Persian)
+Мұқамбет:Мұқамбет NP-ANT-M; ! "Muqambet" (Arabic)
 Мұратбек:Мұратбек NP-ANT-M; ! "Muratbek" (Arabic)
+Мұратберді:Мұратберді NP-ANT-M; ! "Muratberdi" (Arabic)
 Мұрат:Мұрат NP-ANT-M ; ! "Murat"
 Мұрат:Мұрат NP-ANT-M; ! "Murat" (Arabic)
+Мұсабек:Мұсабек NP-ANT-M; ! "Musabek" (Arabic)
 Мұса:Мұса NP-ANT-M; ! "Musa" (Arabic)
 Мұстафа:Мұстафа NP-ANT-M; ! "Mustafa" (Arabic)
 Мұфтолла:Мұфтолла NP-ANT-M ; ! ""
@@ -3735,8 +3991,10 @@ XXI NUM-ROMAN ; ! ""
 Мырзахан:Мырзахан NP-ANT-M ; ! "Mırzaqan"  (sometimes M?)
 Мырзахан:Мырзахан NP-ANT-M; ! "Mırzaxan" (Arabic)
 Набуходоносор:Набуходоносор NP-ANT-M ; ! ""
+Нағима:Нағима NP-ANT-F; ! "Nağıyma" (Arabic)
 Надежда:Надежда NP-ANT-F ; ! "" 
 Надя:Надя NP-ANT-F ; ! ""
+Назгүл:Назгүл NP-ANT-F; ! "Nazgül" 
 Найманбай:Найманбай NP-ANT-M; ! ""
 Нариман:Нариман NP-ANT-M; ! "Narıyman" (Persian)
 Насыр:Насыр NP-ANT-M; ! "Nasır" (Arabic)
@@ -3744,15 +4002,25 @@ XXI NUM-ROMAN ; ! ""
 Наталья:Наталья NP-ANT-F ; ! "" 
 Наташа:Наташа NP-ANT-F ; ! ""
 Нәби:Нәби NP-ANT-M; ! "Näbiy" (Arabic)
+Нәжіп:Нәжіп NP-ANT-M; ! "Näjip" (Arabic)
 Никита:Никита NP-ANT-M ; ! ""
 Николай:Николай NP-ANT-M ; ! ""
 Николя:Николя NP-ANT-M ; ! ""
 Нина:Нина NP-ANT-F ; ! "" 
 Нияз:Нияз NP-ANT-M; ! "Nıyaz" (Arabic)
+Нұрайша:Нұрайша NP-ANT-F; ! "Nuraysha" (Arabic)
+Нұрбек:Нұрбек NP-ANT-M; ! "Nurbek" (Kazakh)
+Нұрбол:Нұрбол NP-ANT-M; ! "Nurbol" (Kazakh)
+Нұрғазы:Нұрғазы NP-ANT-M; ! "Nurğazı" (Arabic)
+Нұрғалым:Нұрғалым NP-ANT-M; ! "Nurğalım" (Arabic)
 Нұржан:Нұржан NP-ANT-M; ! "Nurjan" (Persian)
+Нұри:Нұри NP-ANT-M; ! "Nurıy" (Arabic)
 Нұрлан:Нұрлан NP-ANT-M; ! "Nurlan" (Arabic)
+Нұрлыбай:Нұрлыбай NP-ANT-M; ! "Nurlıbay" (Arabic)
 Нұрсұлтан:Нұрсұлтан NP-ANT-M; ! "Nursultan" (Arabic)
 Нұртай:Нұртай NP-ANT-M ; ! ""
+Нұртас:Нұртас NP-ANT-M; ! "Nurtas" (Kazakh)
+Нұрым:Нұрым NP-ANT-M; ! "Nurım" (Arabic)
 Нұх:Нұх NP-ANT-M ; ! ""
 Ойлы:Ойлы NP-ANT-M; ! "Oylı" (Kazakh)
 Оксана:Оксана NP-ANT-F; ! "Oksana" (Greek)
@@ -3764,8 +4032,13 @@ XXI NUM-ROMAN ; ! ""
 Омар:Омар NP-ANT-M; ! "Omar" (Arabic)
 Омархан:Омархан NP-ANT-M; ! "Omarxan" (Arabic)
 Оңалбай:Оңалбай NP-ANT-M; ! "Oŋalbay" (Kazakh)
+Оңғар:Оңғар NP-ANT-M; ! "Oŋğar" (Kazakh)
+Оразақ:Оразақ NP-ANT-M; ! "Orazaq" (Arabic)
 Оразалы:Оразалы NP-ANT-M ; ! ""
+Оразбек:Оразбек NP-ANT-M; ! "Orazbek" (Kazakh)
+Оразгүл:Оразгүл NP-ANT-F; ! "Orazgül" (Persian)
 Ораз:Ораз NP-ANT-M; ! "Oraz" (Old Turkic)
+Орақ:Орақ NP-ANT-M; ! "Oraq" (Old Turkic)
 Оралбай:Оралбай NP-ANT-M; ! "Oralbay" (Kazakh)
 Орал:Орал NP-ANT-F; ! "Oral" (Kazakh)
 Орал:Орал NP-ANT-M; ! "Oral" (Kazakh)
@@ -3773,12 +4046,19 @@ XXI NUM-ROMAN ; ! ""
 Оралхан:Оралхан NP-ANT-M; ! "Oralxan" (Kazakh)
 Ордалы:Ордалы NP-ANT-M; ! "Ordalı" (Old Turkic)
 Орманшы:Орманшы NP-ANT-M; ! "Ormanshı" (Kazakh)
+Орынбек:Орынбек NP-ANT-M; ! "Orınbek" (Kazakh)
+Оспан:Оспан NP-ANT-M ; ! "Osman"
+Оспан:Оспан NP-ANT-M; ! "Ospan" (Arabic)
 Отар:Отар NP-ANT-M; ! "Otar" (Kazakh)
+Өжет:Өжет NP-ANT-M; ! "Öjet" (Kazakh)
+Өмірбай:Өмірбай NP-ANT-M; ! "Ömirbay" (Kazakh)
+Өмірзақ:Өмірзақ NP-ANT-M; ! "Ömirzaq" (Kazakh)
 Палуан:Палуан NP-ANT-M; ! "Palıwan" (Arabic)
 Пана:Пана NP-ANT-F; ! "Pana" (Persian)
 Пан:Пан NP-ANT-M; ! "Pan"
 Пауыл:Пауль NP-ANT-M ; ! "Paul" Dir/LR
 Пауыл:Пауыл NP-ANT-M ; ! "Paul"
+Петір:Петір NP-ANT-M ; ! "Peter"
 Петр:Петр NP-ANT-M ; ! ""
 Петя:Петя NP-ANT-M ; ! ""
 Пётр:Пётр NP-ANT-M ; ! ""
@@ -3787,7 +4067,11 @@ XXI NUM-ROMAN ; ! ""
 Рабат:Рабат NP-ANT-M; ! "Rabat" (Arabic)
 Рабия:Рабия NP-ANT-F; ! "Rabıya" (Arabic)
 Радий:Радий NP-ANT-M; ! "Radıy" (New word)
+Разақ:Разақ NP-ANT-M; ! "Razaq" (Arabic)
 Раиса:Раиса NP-ANT-F; ! "Raisa" 
+Райгүл:Райгүл NP-ANT-F; ! "Raygül" (Arabic)
+Райхан:Райхан NP-ANT-F; ! "Rayxan" (Arabic)
+Райымбек:Райымбек NP-ANT-M; ! "Rayımbek" (Arabic)
 Ранис:Ранис NP-ANT-M ; ! ""
 Расул:Расул NP-ANT-M; ! "Rasıwl" (Arabic)
 Рауза:Рауза NP-ANT-F; ! "Rawza" (Arabic)
@@ -3796,9 +4080,12 @@ XXI NUM-ROMAN ; ! ""
 Рафаэль:Рафаэль NP-ANT-M; ! "Rafaelʲ" (Ancient Hebrew)
 Рафик:Рафик NP-ANT-M; ! "Rafik" (Arabic)
 Рахат:Рахат NP-ANT-M; ! "Raxat" (Arabic)
+Рахила:Рахила NP-ANT-F; ! "Raxıyla" (Arabic)
 Рахия:Рахия NP-ANT-F; ! "Raxıya" (Arabic)
 Рахман:Рахман NP-ANT-M; ! "Raxman" (Arabic)
+Рахмет:Рахмет NP-ANT-M; ! "Raxmet" (Arabic)
 Рашид:Рашид NP-ANT-M ; ! ""
+Рашит:Рашит NP-ANT-M; ! "Rashıyt" (Arabic)
 Режеп:Режеп NP-ANT-M ; ! ""
 Ренат:Ренат NP-ANT-M; ! "Renat" (New word)
 Ричард:Ричард NP-ANT-M ; ! ""
@@ -3809,20 +4096,35 @@ XXI NUM-ROMAN ; ! ""
 Рөстәм:Рөстәм NP-ANT-M ; ! ""
 Руслан:Руслан NP-ANT-M; ! "Rıwslan" (Arabic)
 Рустам:Рустам NP-ANT-M ; ! ""
+Рүстем:Рүстем NP-ANT-M; ! "Rüstem" (Persian)
 Рысбек:Рысбек NP-ANT-M; ! "Rısbek" 
+Сабыржан:Сабыржан NP-ANT-M; ! "Sabırjan" (Arabic)
+Сағадат:Сағадат NP-ANT-M; ! "Sağadat" (Arabic)
+Сағи:Сағи NP-ANT-M; ! "Sağıy" (Arabic)
+Сағит:Сағит NP-ANT-M; ! "Sağıyt" (Arabic)
+Сағым:Сағым NP-ANT-M; ! "Sağım" (Old Turkic)
 Саддам:Саддам NP-ANT-M ; ! ""
+Садық:Садық NP-ANT-M; ! "Sadıq" (Arabic)
 Садыр:Садыр NP-ANT-M; ! "Sadır" (Arabic)
 Саида:Саида NP-ANT-F; ! "Saida" (Arabic)
 Сайран:Сайран NP-ANT-M; ! "Sayran" (Kazakh)
+Сайран:Сайран NP-ANT-M; ! "Sayran" (Kazakh)
 Сайра:Сайра NP-ANT-F; ! "Sayra" (Arabic)
+Сақып:Сақып NP-ANT-F; ! "Saqıp" (Arabic)
+Сақып:Сақып NP-ANT-M; ! "Saqıp" (Arabic)
 Саламат:Саламат NP-ANT-M; ! "Salamat" (Arabic)
+Салауат:Салауат NP-ANT-M; ! "Salawat" (Arabic)
 Салих:Салих NP-ANT-M ; ! ""
 Самат:Самат NP-ANT-M; ! "Samat" (Arabic)
 Самуил:Самуил NP-ANT-M ; ! "Samuel"
 Сана:Сана NP-ANT-M; ! "Sana" (Kazakh)
+Сана:Сана NP-ANT-M; ! "Sana" (Kazakh)
+Сана:Сана NP-ANT-M; ! "Sana" (Kazakh)
 Санат:Санат NP-ANT-M; ! "Sanat" (Arabic)
 Санжар:Санжар NP-ANT-M; ! "Sanjar" (Arabic)
 Сансызбай:Сансызбай NP-ANT-M; ! "Sansızbay" (Arabic)
+Сапабек:Сапабек NP-ANT-M; ! "Sapabek" (Arabic)
+Сапарбай:Сапарбай NP-ANT-M; ! "Saparbay" (Arabic)
 Сапарғали:Сапарғали NP-ANT-M ; ! ""
 Сапарғали:Сапарғали NP-ANT-M; ! "Saparğalıy" (Arabic)
 Сапармұрат:Сапармұрат NP-ANT-M ; ! ""
@@ -3840,47 +4142,101 @@ XXI NUM-ROMAN ; ! ""
 Саят%-Нова:Саят%-Нова NP-ANT-M ; ! ""
 Сәбира:Сәбира NP-ANT-F; ! "Säbiyra" (Arabic)
 Сәбит:Сәбит NP-ANT-M; ! "Säbiyt" (Arabic)
+Сәдуақас:Сәдуақас NP-ANT-M; ! "Sädiwaqas" (Arabic)
+Сәлім:Сәлім NP-ANT-M; ! "Sälim" (Arabic)
+Сәлмен:Сәлмен NP-ANT-M; ! "Sälmen" (Persian)
 Сәния:Сәния NP-ANT-F; ! "Sänıya" (Arabic)
 Сәрсенбай:Сәрсенбай NP-ANT-M; ! "Särsenbay" (Arabic)
 Сәтжан:Сәтжан NP-ANT-M; ! "Sätjan" (Arabic)
 Светлана:Светлана NP-ANT-F ; ! "" 
+Сейітбек:Сейітбек NP-ANT-M; ! "Seyitbek" (Arabic)
+Сейітжан:Сейітжан NP-ANT-M; ! "Seyitjan" (Arabic)
+Сейсенбай:Сейсенбай NP-ANT-M; ! "Seysenbay" (Arabic)
+Сексенбай:Сексенбай NP-ANT-M; ! "Seksenbay" (Kazakh)
 Сергей:Сергей NP-ANT-M ; ! "Sergey"
+Серғазы:Серғазы NP-ANT-M; ! "Serğazı" (Arabic)
+Серғали:Серғали NP-ANT-M; ! "Serğalıy" (Arabic)
+Серікбай:Серікбай NP-ANT-M ; ! "Serikbay"
+Серікбай:Серікбай NP-ANT-M; ! "Serikbay" (Arabic)
 Серікболсын:Серікболсын NP-ANT-M ; ! ""
+Серікқали:Серікқали NP-ANT-M; ! "Serikqalıy" (Arabic)
 Серік:Серік NP-ANT-M ; ! ""
 Серік:Серік NP-ANT-M; ! "Serik" (Arabic)
+Серке:Серке NP-ANT-M; ! "Serke" (Kazakh)
 Сильвия:Сильвия NP-ANT-F ; ! ""
+Сираж:Сираж NP-ANT-M; ! "Sıyraj" (Arabic)
+Смағұл:Смағұл NP-ANT-M ; ! "'Ismanqul'"
 Сократ:Сократ NP-ANT-M; ! "Sokrat" (Arabic)
 Спиридон:Спиридон NP-ANT-M ; ! ""
 Сталбек:Сталбек NP-ANT-M ; ! ""
 Станислав:Станислав NP-ANT-M ; ! ""
 Стас:Стас NP-ANT-M ; ! ""
 Степан:Степан NP-ANT-M ; ! ""
+Сүйінбай:Сүйінбай NP-ANT-M; ! "Süyinbay" (Kazakh)
+Сүйіндік:Сүйіндік NP-ANT-M ; ! "Süyindik"
+Сүлеймен:Сүлеймен NP-ANT-M ; ! "Solomon"
+Сұлтанбек:Сұлтанбек NP-ANT-M; ! "Sultanbek" (Arabic)
+Сұңқар:Сұңқар NP-ANT-M; ! "Suŋqar" (Kazakh)
+Сыдық:Сыдық NP-ANT-M; ! "Sıdıq" (Arabic)
 Таған:Таған NP-ANT-M; ! "Tağan" (Arabic)
+Тайбек:Тайбек NP-ANT-M; ! "Taybek" (Kazakh)
+Тақыр:Тақыр NP-ANT-M; ! "Taqır" (Arabic)
 Талғат:Талғат NP-ANT-M; ! "Talğat" (Arabic)
 Талмас:Талмас NP-ANT-M; ! "Talmas" (Kazakh)
 Тамара:Тамара NP-ANT-F; ! "Tamara" (Arabic)
+Таңшолпан:Таңшолпан NP-ANT-F; ! "Taŋsholpan" (Kazakh)
+Тарғын:Тарғын NP-ANT-M; ! "Tarğın" (Arabic)
 Татьяна:Татьяна NP-ANT-F ; ! "" 
 Тахиржан:Тахиржан NP-ANT-M ; ! ""
 Тахир:Тахир NP-ANT-M ; ! ""
 Тәкежан:Тәкежан NP-ANT-M ; ! ""
+Тәліп:Тәліп NP-ANT-M; ! "Tälip" (Arabic)
+Темірбек:Темірбек NP-ANT-M; ! "Temirbek" 
+Темірлан:Темірлан NP-ANT-M; ! "Temirlan" 
 Тимур:Тимур NP-ANT-M ; ! ""
+Тоғжан:Тоғжан NP-ANT-F; ! "Toğjan" (Kazakh)
 Тойкен:Тойкен NP-ANT-M ; ! ""
+Толғанай:Толғанай NP-ANT-F; ! "Tolğanay" (Kazakh)
 Томирис:Томирис NP-ANT-F; ! "Tomıyrıys" (Arabic)
 Тони:Тони NP-ANT-M ; ! ""
 Төлеген:Төлеген NP-ANT-M ; ! ""
+Уәлиахмет:Уәлиахмет NP-ANT-M; ! "Wäliyaxmet" (Arabic)
+Уәли:Уәли NP-ANT-M; ! "Wäliy" (Arabic)
+Уәлихан:Уәлихан NP-ANT-M; ! "Wäliyxan" (Arabic)
 Уильям:Уильям NP-ANT-M ; ! ""
 Уитнесс:Уитнесс NP-ANT-M ; ! ""
 Умида:Умида NP-ANT-F ; ! "" 
 Үкілай:Үкілай NP-ANT-F ; ! "" 
+Үркімбай:Үркімбай NP-ANT-M ; ! "Ürkimbay"
 Үрқыз:Үрқыз NP-ANT-F ; ! "" 
+Үсен:Үсен NP-ANT-M; ! "Üsen" (Arabic)
+Ұлан:Ұлан NP-ANT-M; ! "Ulan" (Arabic)
+Ұлбала:Ұлбала NP-ANT-F; ! "Ulbala" (Kazakh)
+Ұлжан:Ұлжан NP-ANT-F; ! "Uljan" (Persian)
+Ұлжан:Ұлжан NP-ANT-F ; ! "Uljan"  (sometimes M?)
+Ұлықбек:Ұлықбек NP-ANT-M; ! "Ulıqbek" (Kazakh)
 Фазыл:Фазыл NP-ANT-M; ! "Fazıl" 
+Фарида:Фарида NP-ANT-F; ! "Farida" (Arabic)
+Фариза:Фариза NP-ANT-F; ! "Fariza" (Arabic)
+Фатима:Фатима NP-ANT-F; ! "Fatima" (Arabic)
+Фаузия:Фаузия NP-ANT-F; ! "Fauziya" (Arabic)
 Фәрит:Фәрит NP-ANT-M ; ! ""
 Феликс:Феликс NP-ANT-M ; ! ""
 Фидель:Фидель NP-ANT-M ; ! ""
+Хадиша:Хадиша NP-ANT-F; ! "Xadıysha" (Arabic)
+Хайдар:Хайдар NP-ANT-M; ! "Xaydar" (Arabic)
+Хакім:Хакім NP-ANT-M; ! "Xakim" 
+Халел:Халел NP-ANT-M; ! "Xalel" (Arabic)
+Халил:Халил NP-ANT-M; ! "Xalıyl" (Arabic)
+Хамза:Хамза NP-ANT-M; ! "Xamza" (Arabic)
 Хамид:Хамид NP-ANT-M ; ! ""
 Хамит:Хамит NP-ANT-M ; ! ""
 Хамит:Хамит NP-ANT-M; ! "Xamıyt" (Arabic)
+Хангелді:Хангелді NP-ANT-M; ! "Xangeldi" (Kazakh)
+Ханифа:Ханифа NP-ANT-F; ! "Xanifa" (Arabic)
+Хасан:Хасан NP-ANT-M; ! "Xasan" (Arabic)
 Хасен:Хасен NP-ANT-M ; ! ""
+Хатифа:Хатифа NP-ANT-F; ! "Xatifa" (Arabic)
 Хафиз:Хафиз NP-ANT-M; ! "Xafiz" (Arabic)
 Хилал:Хилал NP-ANT-M ; ! ""
 Хиллари:Хиллари NP-ANT-F ; ! "" 
@@ -3888,16 +4244,21 @@ XXI NUM-ROMAN ; ! ""
 Һарон:Һарон NP-ANT-M ; ! ""
 Шавкат:Шавкат NP-ANT-M ; ! ""
 Шауқат:Шауқат NP-ANT-M ; ! ""
+Шәкәрім:Шәкәрім NP-ANT-M; ! "Shäkärim" (Arabic)
 Шәмші:Шәмші NP-ANT-M ; ! ""
 Шимон:Шимон NP-ANT-M ; ! "Simon"
+Шолпан:Шолпан NP-ANT-F; ! "Sholpan" (Kazakh)
 Шұғайып:Шұғайып NP-ANT-M ; ! ""
 Шынар:Шынар NP-ANT-F; ! "Shınar" (Kazakh)
 Шыңғысхан:Шыңғысхан NP-ANT-M ; ! "" Mosty it's written separately, but occures as one word also
 Шыңғыс:Шыңғыс NP-ANT-M ; ! "Shyngys"
 Шырын:Шырын NP-ANT-F; ! "Shırın" (Arabic)
 Ыбырай:Ыбырай NP-ANT-M; ! "Ibıray" (Arabic)
+Ыдырыс:Ыдырыс NP-ANT-M; ! "Idırıs" (Arabic)
 Ызғұтты:Ызғұтты NP-ANT-M ; ! ""
+Ықсан:Ықсан NP-ANT-M; ! "Iqsan" (Arabic)
 Ырғызбай:Ырғызбай NP-ANT-M ; ! ""
+Ысқақ:Ысқақ NP-ANT-M; ! "Isqaq" (Arabic)
 Эдуард:Эдуард NP-ANT-M ; ! ""
 Эдуард:Эдуард NP-ANT-M; ! "Eduard" (Old High German)
 Эктор:Эктор NP-ANT-M ; ! ""
@@ -3916,11 +4277,18 @@ XXI NUM-ROMAN ; ! ""
 Ержан:Ержан NP-ANT-M ; ! ""
 Мира:Мира NP-ANT-F ; ! ""
 Барабба:Барабба NP-ANT-M ; ! ""
+Месахаб:Месахаб NP-ANT-M ; ! ""
 Абайжан:Абайжан NP-ANT-M ; ! ""
+Жұмағұл:Жұмағұл NP-ANT-M ; ! ""
+Сәрсен:Сәрсен NP-ANT-M ; ! ""
+Тектіғұл:Тектіғұл NP-ANT-M ; ! ""
 Топай:Топай NP-ANT-M ; ! ""
+Тұңғатар:Тұңғатар NP-ANT-M ; ! ""
 Айжангүл:Айжангүл NP-ANT-F ; ! ""
+Сағынай:Сағынай NP-ANT-F ; ! ""
 Арон:Арон NP-ANT-M ; ! ""
 Башар:Башар NP-ANT-M ; ! ""
+Меделбек:Меделбек NP-ANT-M ; ! ""
 Темел:Темел NP-ANT-M ; ! "Temel (Turkish name)"
 Юрген:Юрген NP-ANT-M; ! "Jürgen (German name)"
 Ханс:Ханс NP-ANT-M; ! "Hans (German name)"
@@ -3940,10 +4308,6 @@ XXI NUM-ROMAN ; ! ""
 Антоненко:Антоненко NP-COG-MF ; ! ""
 Атрошенко:Атрошенко NP-COG-MF ; ! ""
 Ахмадинежад:Ахмадинежад NP-COG-MF ; ! ""
-Әл%-Истахри:Әл%-Истахри NP-COG-MF ; ! ""
-Әл%-Истахри:Әл%-Истахри NP-COG-MF ; ! ""
-Әл%-Масуди:Әл%-Масуди NP-COG-MF ; ! ""
-Әл%-Фараби:Әл%-Фараби NP-COG-MF ; ! ""
 Бабамкожа:Бабамкожа NP-COG-MF ; ! ""
 Бабенко:Бабенко NP-COG-MF ; ! ""
 Байден:Байден NP-COG-MF ; ! ""
@@ -4134,6 +4498,7 @@ XXI NUM-ROMAN ; ! ""
 Янко:Янко NP-COG-MF ; ! ""
 Янукович:Янукович NP-COG-MF ; ! ""
 Янукович:Янукович NP-COG-MF ; ! ""
+Ясауи:Ясауи NP-COG-MF ; ! ""
 Яценко:Яценко NP-COG-MF ; ! ""
 Ассанж:Ассанж NP-COG-MF ; ! ""
 Аталай:Аталай NP-COG-MF ; ! ""
@@ -4142,6 +4507,7 @@ XXI NUM-ROMAN ; ! ""
 Жовтис:Жовтис NP-COG-MF ; ! ""
 Жовтис:Жовтис NP-COG-MF ; ! ""
 Ни:Ни NP-COG-MF ; ! ""
+Бек:Бек NP-COG-MF ; ! ""
 Бек:Бек NP-COG-MF ; ! ""
 Бекер:Бекер NP-COG-MF ; ! ""
 Маршал:Маршал NP-COG-MF ; ! ""
@@ -4175,6 +4541,8 @@ XXI NUM-ROMAN ; ! ""
 Айдаров:Айдаров NP-COG-OB ; ! ""
 Айжанов:Айжанов NP-COG-OB ; ! ""
 Айманов:Айманов NP-COG-OB ; ! ""
+Аймауытов:Аймауытов NP-COG-OB ; ! ""
+Айнабеков:Айнабеков NP-COG-OB ; ! ""
 Айтбаев:Айтбаев NP-COG-OB ; ! ""
 Айтматов:Айтматов NP-COG-OB ; ! ""
 Аксаков:Аксаков NP-COG-OB ; ! ""
@@ -4233,6 +4601,8 @@ XXI NUM-ROMAN ; ! ""
 Арыстанов:Арыстанов NP-COG-OB ; ! ""
 Асанов:Асанов NP-COG-OB ; ! ""
 Асимов:Асимов NP-COG-OB ; ! ""
+Аспандиаров:Аспандиаров NP-COG-OB ; ! ""
+Асылбеков:Асылбеков NP-COG-OB ; ! ""
 Асылов:Асылов NP-COG-OB ; ! ""
 Атабаев:Атабаев NP-COG-OB ; ! ""
 Атабаев:Атабаев NP-COG-OB ; ! ""
@@ -4252,6 +4622,7 @@ XXI NUM-ROMAN ; ! ""
 Ахмедияров:Ахмедияров NP-COG-OB ; ! ""
 Ахмедов:Ахмедов NP-COG-OB ; ! ""
 Ахмеров:Ахмеров NP-COG-OB ; ! ""
+Ахметбеков:Ахметбеков NP-COG-OB ; ! ""
 Ахметжанов:Ахметжанов NP-COG-OB ; ! ""
 Ахметов:Ахметов NP-COG-OB ; ! ""
 Ахметов:Ахметов NP-COG-OB ; ! ""
@@ -4260,16 +4631,8 @@ XXI NUM-ROMAN ; ! ""
 Аширбаев:Аширбаев NP-COG-OB ; ! ""
 Ашкеров:Ашкеров NP-COG-OB ; ! ""
 Аюханов:Аюханов NP-COG-OB ; ! ""
-Әбдиев:Әбдиев NP-COG-OB ; ! ""
-Әбуталиев:Әбуталиев NP-COG-OB ; ! ""
-Әйтенов:Әйтенов NP-COG-OB ; ! ""
-Әлжанов:Әлжанов NP-COG-OB ; ! ""
-Әлиев:Әлиев NP-COG-OB ; ! ""
-Әлиев:Әлиев NP-COG-OB ; ! ""
-Әлиев:Әлиев NP-COG-OB ; ! ""
-Әуезов:Әуезов NP-COG-OB ; ! ""
-Әшекеев:Әшекеев NP-COG-OB ; ! ""
-Әшеккев:Әшеккев NP-COG-OB ; ! ""
+Амиров:Амиров NP-COG-OB ; ! ""
+Аширбаев:Аширбаев NP-COG-OB ; ! ""
 Бабажанов:Бабажанов NP-COG-OB ; ! ""
 Бавдинов:Бавдинов NP-COG-OB ; ! ""
 Базаев:Базаев NP-COG-OB ; ! ""
@@ -4288,6 +4651,7 @@ XXI NUM-ROMAN ; ! ""
 Бакчиев:Бакчиев NP-COG-OB ; ! ""
 Балажанов:Балажанов NP-COG-OB ; ! ""
 Балкашев:Балкашев NP-COG-OB ; ! ""
+Балтабеков:Балтабеков NP-COG-OB ; ! ""
 Балтаев:Балтаев NP-COG-OB ; ! ""
 Балтасов:Балтасов NP-COG-OB ; ! ""
 Балтиев:Балтиев NP-COG-OB ; ! ""
@@ -4306,13 +4670,13 @@ XXI NUM-ROMAN ; ! ""
 Бахмисов:Бахмисов NP-COG-OB ; ! ""
 Бачериков:Бачериков NP-COG-OB ; ! ""
 Башкиров:Башкиров NP-COG-OB ; ! ""
-Бәйтереков:Бәйтереков NP-COG-OB ; ! ""
-Бәкиев:Бәкиев NP-COG-OB ; ! ""
-Бәсенов:Бәсенов NP-COG-OB ; ! ""
+Бакиев:Бакиев NP-COG-OB ; ! ""
 Бегалиев:Бегалиев NP-COG-OB ; ! ""
 Бедарев:Бедарев NP-COG-OB ; ! ""
 Бедров:Бедров NP-COG-OB ; ! ""
 Безсонов:Безсонов NP-COG-OB ; ! ""
+Бейсбеков:Бейсбеков NP-COG-OB ; ! ""
+Бейсекеев:Бейсекеев NP-COG-OB ; ! ""
 Бейсеков:Бейсеков NP-COG-OB ; ! ""
 Бейсенов:Бейсенов NP-COG-OB ; ! ""
 Бекбаев:Бекбаев NP-COG-OB ; ! ""
@@ -4322,6 +4686,7 @@ XXI NUM-ROMAN ; ! ""
 Бекетов:Бекетов NP-COG-OB ; ! ""
 Бекмамбетов:Бекмамбетов NP-COG-OB ; ! ""
 Бекмаханов:Бекмаханов NP-COG-OB ; ! ""
+Бекназаров:Бекназаров NP-COG-OB ; ! ""
 Бектаев:Бектаев NP-COG-OB ; ! ""
 Бекшентаев:Бекшентаев NP-COG-OB ; ! ""
 Белков:Белков NP-COG-OB ; ! ""
@@ -4428,7 +4793,7 @@ XXI NUM-ROMAN ; ! ""
 Гдов:Гдов NP-COG-OB ; ! ""
 Георгиев:Георгиев NP-COG-OB ; ! ""
 Герасимов:Герасимов NP-COG-OB ; ! ""
-героев:героев NP-COG-OB ; ! ""
+Героев:Героев NP-COG-OB ; ! ""
 Гладков:Гладков NP-COG-OB ; ! ""
 Глазов:Глазов NP-COG-OB ; ! ""
 Глазунов:Глазунов NP-COG-OB ; ! ""
@@ -4475,7 +4840,7 @@ XXI NUM-ROMAN ; ! ""
 Данилов:Данилов NP-COG-OB ; ! ""
 Дарханов:Дарханов NP-COG-OB ; ! ""
 Даупбаев:Даупбаев NP-COG-OB ; ! ""
-Дәулетов:Дәулетов NP-COG-OB ; ! ""
+Дауылбеков:Дауылбеков NP-COG-OB ; ! ""
 Дегтярев:Дегтярев NP-COG-OB ; ! ""
 Дежнев:Дежнев NP-COG-OB ; ! ""
 Дементьев:Дементьев NP-COG-OB ; ! ""
@@ -4528,6 +4893,7 @@ XXI NUM-ROMAN ; ! ""
 Екимов:Екимов NP-COG-OB ; ! ""
 Елебаев:Елебаев NP-COG-OB ; ! ""
 Елебеков:Елебеков NP-COG-OB ; ! ""
+Елеуов:Елеуов NP-COG-OB ; ! ""
 Елимов:Елимов NP-COG-OB ; ! ""
 Елисеев:Елисеев NP-COG-OB ; ! ""
 Елубаев:Елубаев NP-COG-OB ; ! ""
@@ -4536,7 +4902,6 @@ XXI NUM-ROMAN ; ! ""
 Ендеров:Ендеров NP-COG-OB ; ! ""
 Еңсепов:Еңсепов NP-COG-OB ; ! ""
 Еразумов:Еразумов NP-COG-OB ; ! ""
-Ерәлиев:Ерәлиев NP-COG-OB ; ! ""
 Еремеев:Еремеев NP-COG-OB ; ! ""
 Ержанов:Ержанов NP-COG-OB ; ! ""
 Ерицов:Ерицов NP-COG-OB ; ! ""
@@ -4550,7 +4915,6 @@ XXI NUM-ROMAN ; ! ""
 Ерубаев:Ерубаев NP-COG-OB ; ! ""
 Ершов:Ершов NP-COG-OB ; ! ""
 Есболов:Есболов NP-COG-OB ; ! ""
-Есдәулетов:Есдәулетов NP-COG-OB ; ! ""
 Есенбаев:Есенбаев NP-COG-OB ; ! ""
 Есенов:Есенов NP-COG-OB ; ! ""
 Есжанов:Есжанов NP-COG-OB ; ! ""
@@ -4567,7 +4931,7 @@ XXI NUM-ROMAN ; ! ""
 Жаманов:Жаманов NP-COG-OB ; ! ""
 Жанайдаров:Жанайдаров NP-COG-OB ; ! ""
 Жанасаев:Жанасаев NP-COG-OB ; ! ""
-Жандәулетов:Жандәулетов NP-COG-OB ; ! ""
+Жандарбеков:Жандарбеков NP-COG-OB ; ! ""
 Жандосов:Жандосов NP-COG-OB ; ! ""
 Жаңабаев:Жаңабаев NP-COG-OB ; ! ""
 Жаппасбаев:Жаппасбаев NP-COG-OB ; ! ""
@@ -4575,8 +4939,8 @@ XXI NUM-ROMAN ; ! ""
 Жартыбаев:Жартыбаев NP-COG-OB ; ! ""
 Жафаров:Жафаров NP-COG-OB ; ! ""
 Жахаев:Жахаев NP-COG-OB ; ! ""
-Жәнекешев:Жәнекешев NP-COG-OB ; ! ""
 Жданов:Жданов NP-COG-OB ; ! ""
+Жексенбеков:Жексенбеков NP-COG-OB ; ! ""
 Желтов:Желтов NP-COG-OB ; ! ""
 Жеребятиев:Жеребятиев NP-COG-OB ; ! ""
 Жжёнов:Жжёнов NP-COG-OB ; ! ""
@@ -4586,6 +4950,7 @@ XXI NUM-ROMAN ; ! ""
 Жирнов:Жирнов NP-COG-OB ; ! ""
 Жиров:Жиров NP-COG-OB ; ! ""
 Житков:Житков NP-COG-OB ; ! ""
+Жолдасбеков:Жолдасбеков NP-COG-OB ; ! ""
 Жорабаев:Жорабаев NP-COG-OB ; ! ""
 Жуков:Жуков NP-COG-OB ; ! ""
 Журавлёв:Журавлёв NP-COG-OB ; ! ""
@@ -4692,7 +5057,6 @@ XXI NUM-ROMAN ; ! ""
 Катранов:Катранов NP-COG-OB ; ! ""
 Кафаров:Кафаров NP-COG-OB ; ! ""
 Каюров:Каюров NP-COG-OB ; ! ""
-Кәрменов:Кәрменов NP-COG-OB ; ! ""
 Кедров:Кедров NP-COG-OB ; ! ""
 Кельмаков:Кельмаков NP-COG-OB ; ! ""
 Кемелов:Кемелов NP-COG-OB ; ! ""
@@ -4766,6 +5130,7 @@ XXI NUM-ROMAN ; ! ""
 Кочкарев:Кочкарев NP-COG-OB ; ! ""
 Кошелев:Кошелев NP-COG-OB ; ! ""
 Көбеев:Көбеев NP-COG-OB ; ! ""
+Көжеков:Көжеков NP-COG-OB ; ! ""
 Көлбаев:Көлбаев NP-COG-OB ; ! ""
 Көмекбаев:Көмекбаев NP-COG-OB ; ! ""
 Көпеев:Көпеев NP-COG-OB ; ! ""
@@ -4774,6 +5139,7 @@ XXI NUM-ROMAN ; ! ""
 Кравков:Кравков NP-COG-OB ; ! ""
 Красильников:Красильников NP-COG-OB ; ! ""
 Краснов:Краснов NP-COG-OB ; ! ""
+Крашенинников:Крашенинников NP-COG-OB ; ! ""
 Крганов:Крганов NP-COG-OB ; ! ""
 Кривоносов:Кривоносов NP-COG-OB ; ! ""
 Криков:Криков NP-COG-OB ; ! ""
@@ -4808,7 +5174,10 @@ XXI NUM-ROMAN ; ! ""
 Кушаев:Кушаев NP-COG-OB ; ! ""
 Күзембаев:Күзембаев NP-COG-OB ; ! ""
 Күлеев:Күлеев NP-COG-OB ; ! ""
-Қойлышев:Қойлышев NP-COG-OB ; ! ""
+Казталов:Казталов NP-COG-OB ; ! ""
+Каратаев:Каратаев NP-COG-OB ; ! ""
+Кожанов:Кожанов NP-COG-OB ; ! ""
+Кулов:Кулов NP-COG-OB ; ! ""
 Лаврентьев:Лаврентьев NP-COG-OB ; ! ""
 Ладыков:Ладыков NP-COG-OB ; ! ""
 Лазарев:Лазарев NP-COG-OB ; ! ""
@@ -4881,6 +5250,7 @@ XXI NUM-ROMAN ; ! ""
 Мамонтов:Мамонтов NP-COG-OB ; ! ""
 Мамыраев:Мамыраев NP-COG-OB ; ! ""
 Мамырханов:Мамырханов NP-COG-OB ; ! ""
+Мамытбеков:Мамытбеков NP-COG-OB ; ! ""
 Манапов:Манапов NP-COG-OB ; ! ""
 Мансуров:Мансуров NP-COG-OB ; ! ""
 Маресьев:Маресьев NP-COG-OB ; ! ""
@@ -4896,13 +5266,11 @@ XXI NUM-ROMAN ; ! ""
 Матвеев:Матвеев NP-COG-OB ; ! ""
 Матросов:Матросов NP-COG-OB ; ! ""
 Махмутов:Махмутов NP-COG-OB ; ! ""
+Махмутов:Махмутов NP-COG-OB ; ! ""
 Машанов:Машанов NP-COG-OB ; ! ""
 Машеев:Машеев NP-COG-OB ; ! ""
 Машков:Машков NP-COG-OB ; ! ""
 Маяков:Маяков NP-COG-OB ; ! ""
-Мәмбетов:Мәмбетов NP-COG-OB ; ! ""
-Мәмбетов:Мәмбетов NP-COG-OB ; ! ""
-Мәрсеков:Мәрсеков NP-COG-OB ; ! ""
 Медведев:Медведев NP-COG-OB ; ! "Medvedev"
 Медведьев:Медведьев NP-COG-OB ; ! ""
 Мельников:Мельников NP-COG-OB ; ! ""
@@ -4943,6 +5311,7 @@ XXI NUM-ROMAN ; ! ""
 Могилев:Могилев NP-COG-OB ; ! ""
 Моисеев:Моисеев NP-COG-OB ; ! ""
 Мокеев:Мокеев NP-COG-OB ; ! ""
+Молдабеков:Молдабеков NP-COG-OB ; ! ""
 Молоков:Молоков NP-COG-OB ; ! ""
 Молотков:Молотков NP-COG-OB ; ! ""
 Молотов:Молотов NP-COG-OB ; ! ""
@@ -4953,7 +5322,6 @@ XXI NUM-ROMAN ; ! ""
 Мордяков:Мордяков NP-COG-OB ; ! ""
 Морозов:Морозов NP-COG-OB ; ! ""
 Мочалов:Мочалов NP-COG-OB ; ! ""
-Мөхәммәтшин:Мөхәммәтшин NP-COG-IN ; ! ""
 Муллаев:Муллаев NP-COG-OB ; ! ""
 Мулюков:Мулюков NP-COG-OB ; ! ""
 Мулянов:Мулянов NP-COG-OB ; ! ""
@@ -4972,10 +5340,12 @@ XXI NUM-ROMAN ; ! ""
 Мынбаев:Мынбаев NP-COG-OB ; ! ""
 Мыңбаев:Мыңбаев NP-COG-OB ; ! ""
 Мыңбаев:Мыңбаев NP-COG-OB ; ! ""
+Мырзабеков:Мырзабеков NP-COG-OB ; ! ""
 Мясищев:Мясищев NP-COG-OB ; ! ""
 Мясников:Мясников NP-COG-OB ; ! ""
 Нагорнов:Нагорнов NP-COG-OB ; ! ""
 Назарбаев:Назарбаев NP-COG-OB ; ! "Nazarbayev"
+Назарбеков:Назарбеков NP-COG-OB ; ! ""
 Назаров:Назаров NP-COG-OB ; ! ""
 Назырбаев:Назырбаев NP-COG-OB ; ! ""
 Нариманов:Нариманов NP-COG-OB ; ! ""
@@ -4986,7 +5356,6 @@ XXI NUM-ROMAN ; ! ""
 Насиров:Насиров NP-COG-OB ; ! ""
 Наумов:Наумов NP-COG-OB ; ! ""
 Наурызбаев:Наурызбаев NP-COG-OB ; ! ""
-Нәжимеденов:Нәжимеденов NP-COG-OB ; ! ""
 Некрасов:Некрасов NP-COG-OB ; ! ""
 Немилов:Немилов NP-COG-OB ; ! ""
 Немцев:Немцев NP-COG-OB ; ! ""
@@ -5002,6 +5371,7 @@ XXI NUM-ROMAN ; ! ""
 Никонов:Никонов NP-COG-OB ; ! ""
 Никоноров:Никоноров NP-COG-OB ; ! ""
 Ничиков:Ничиков NP-COG-OB ; ! ""
+Ниязбеков:Ниязбеков NP-COG-OB ; ! ""
 Ниязов:Ниязов NP-COG-OB ; ! ""
 Нобелев:Нобелев NP-COG-OB ; ! ""
 Новиков:Новиков NP-COG-OB ; ! ""
@@ -5014,6 +5384,7 @@ XXI NUM-ROMAN ; ! ""
 Нөсербаев:Нөсербаев NP-COG-OB ; ! ""
 Нургалиев:Нургалиев NP-COG-OB ; ! ""
 Нурутдинов:Нурутдинов NP-COG-OB ; ! ""
+Нургалиев:Нургалиев NP-COG-OB ; ! ""
 Нысанбаев:Нысанбаев NP-COG-OB ; ! ""
 Обаев:Обаев NP-COG-OB ; ! ""
 Обогрелов:Обогрелов NP-COG-OB ; ! ""
@@ -5042,6 +5413,7 @@ XXI NUM-ROMAN ; ! ""
 Орлов:Орлов NP-COG-OB ; ! ""
 Орымбаев:Орымбаев NP-COG-OB ; ! ""
 Орымбетов:Орымбетов NP-COG-OB ; ! ""
+Орынбеков:Орынбеков NP-COG-OB ; ! ""
 Осакаров:Осакаров NP-COG-OB ; ! ""
 Осипов:Осипов NP-COG-OB ; ! ""
 Оспанов:Оспанов NP-COG-OB ; ! ""
@@ -5134,7 +5506,6 @@ XXI NUM-ROMAN ; ! ""
 Рахманинов:Рахманинов NP-COG-OB ; ! ""
 Рахманов:Рахманов NP-COG-OB ; ! ""
 Рахов:Рахов NP-COG-OB ; ! ""
-Рәзиев:Рәзиев NP-COG-OB ; ! ""
 Рдюков:Рдюков NP-COG-OB ; ! ""
 Ребров:Ребров NP-COG-OB ; ! ""
 Резников:Резников NP-COG-OB ; ! ""
@@ -5215,18 +5586,8 @@ XXI NUM-ROMAN ; ! ""
 Сафонов:Сафонов NP-COG-OB ; ! ""
 Сафронов:Сафронов NP-COG-OB ; ! ""
 Сахаров:Сахаров NP-COG-OB ; ! ""
-Сәйденов:Сәйденов NP-COG-OB ; ! ""
-Сәкиев:Сәкиев NP-COG-OB ; ! ""
-Сәмединов:Сәмединов NP-COG-OB ; ! ""
-Сәпиев:Сәпиев NP-COG-OB ; ! ""
-Сәрсеков:Сәрсеков NP-COG-OB ; ! ""
-Сәрсембаев:Сәрсембаев NP-COG-OB ; ! ""
-Сәрсенбаев:Сәрсенбаев NP-COG-OB ; ! ""
-Сәрсенбаев:Сәрсенбаев NP-COG-OB ; ! ""
-Сәрсенов:Сәрсенов NP-COG-OB ; ! ""
-Сәтбаев:Сәтбаев NP-COG-OB ; ! ""
-Сәтбаев:Сәтбаев NP-COG-OB ; ! ""
-Сәтпаев:Сәтпаев NP-COG-OB ; ! ""
+Сайденов:Сайденов NP-COG-OB ; ! ""
+Сатпаев:Сатпаев NP-COG-OB ; ! ""
 Сваев:Сваев NP-COG-OB ; ! ""
 Свердлов:Свердлов NP-COG-OB ; ! ""
 Сверчков:Сверчков NP-COG-OB ; ! ""
@@ -5316,6 +5677,7 @@ XXI NUM-ROMAN ; ! ""
 Сычев:Сычев NP-COG-OB ; ! ""
 Табылдиев:Табылдиев NP-COG-OB ; ! ""
 Тагильцев:Тагильцев NP-COG-OB ; ! ""
+Тазабеков:Тазабеков NP-COG-OB ; ! ""
 Тайманов:Тайманов NP-COG-OB ; ! ""
 Таймасов:Таймасов NP-COG-OB ; ! ""
 Тайшапов:Тайшапов NP-COG-OB ; ! ""
@@ -5330,12 +5692,13 @@ XXI NUM-ROMAN ; ! ""
 Тарасов:Тарасов NP-COG-OB ; ! ""
 Тасболатов:Тасболатов NP-COG-OB ; ! ""
 Тастайбеков:Тастайбеков NP-COG-OB ; ! ""
+Тастанбеков:Тастанбеков NP-COG-OB ; ! ""
 Татанов:Татанов NP-COG-OB ; ! ""
 Татарханов:Татарханов NP-COG-OB ; ! ""
 Таукин:Таукин NP-COG-IN ; ! ""
 Тафаев:Тафаев NP-COG-OB ; ! ""
-Тәшенев:Тәшенев NP-COG-OB ; ! ""
 Тевкелев:Тевкелев NP-COG-OB ; ! ""
+Теменов:Теменов NP-COG-OB ; ! ""
 Тенюшев:Тенюшев NP-COG-OB ; ! ""
 Теплов:Теплов NP-COG-OB ; ! ""
 Теплоухов:Теплоухов NP-COG-OB ; ! ""
@@ -5373,8 +5736,13 @@ XXI NUM-ROMAN ; ! ""
 Тынышбаев:Тынышбаев NP-COG-OB ; ! ""
 Тынышпаев:Тынышпаев NP-COG-OB ; ! ""
 Тысыбаев:Тысыбаев NP-COG-OB ; ! ""
+Тышышбаев:Тышышбаев NP-COG-OB ; ! ""
 Тюленев:Тюленев NP-COG-OB ; ! ""
 Тячев:Тячев NP-COG-OB ; ! ""
+Уалиева:Уалиева NP-COG-OB ; ! ""
+Уалиханов:Уалиханов NP-COG-OB ; ! ""
+Уалиева:Уалиева NP-COG-OB ; ! ""
+Уалиханов:Уалиханов NP-COG-OB ; ! ""
 Уваров:Уваров NP-COG-OB ; ! ""
 Узелков:Узелков NP-COG-OB ; ! ""
 Уланов:Уланов NP-COG-OB ; ! ""
@@ -5445,10 +5813,12 @@ XXI NUM-ROMAN ; ! ""
 Чупоршнев:Чупоршнев NP-COG-OB ; ! ""
 Чуриков:Чуриков NP-COG-OB ; ! ""
 Шагаев:Шагаев NP-COG-OB ; ! ""
+Шаймиев:Шаймиев NP-COG-OB ; ! ""
 Шалаев:Шалаев NP-COG-OB ; ! ""
 Шалеев:Шалеев NP-COG-OB ; ! ""
 Шамаев:Шамаев NP-COG-OB ; ! ""
 Шамполов:Шамполов NP-COG-OB ; ! ""
+Шаңгереев:Шаңгереев NP-COG-OB ; ! ""
 Шапошников:Шапошников NP-COG-OB ; ! ""
 Шапталов:Шапталов NP-COG-OB ; ! ""
 Шарапов:Шарапов NP-COG-OB ; ! ""
@@ -5457,7 +5827,7 @@ XXI NUM-ROMAN ; ! ""
 Шашков:Шашков NP-COG-OB ; ! ""
 Шаяхметов:Шаяхметов NP-COG-OB ; ! ""
 Шаяхметов:Шаяхметов NP-COG-OB ; ! ""
-Шәймиев:Шәймиев NP-COG-OB ; ! ""
+Шаймиев:Шаймиев NP-COG-OB ; ! ""
 Шемекеев:Шемекеев NP-COG-OB ; ! ""
 Шерементьев:Шерементьев NP-COG-OB ; ! ""
 Шестаков:Шестаков NP-COG-OB ; ! ""
@@ -5498,11 +5868,11 @@ XXI NUM-ROMAN ; ! ""
 Ямышев:Ямышев NP-COG-OB ; ! ""
 Яранцев:Яранцев NP-COG-OB ; ! ""
 Ярославцев:Ярославцев NP-COG-OB ; ! ""
-Әминов:Әминов NP-COG-OB ; ! ""
 Плугов:Плугов NP-COG-OB ; ! ""
 Турчинов:Турчинов NP-COG-OB ; ! ""
 Усубакунов:Усубакунов NP-COG-OB ; ! ""
 Бекенов:Бекенов NP-COG-OB ; ! ""
+Бекмамбетов:Бекмамбетов NP-COG-OB ; ! ""
 Мадумаров:Мадумаров NP-COG-OB ; ! ""
 Макашарипов:Макашарипов NP-COG-OB ; ! ""
 Amnesty% International:Amnesty% International NP-ORG ; ! ""
@@ -5631,13 +6001,13 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 атты:атты A4 ; ! ""
 ауылдық:ауылдық A4 ; ! ""
 биологиялық:биологиялық A4 ; ! "biological"
-генетик:генетик A4 ; ! ""
 геофизик:геофизик A4 ; ! ""
 горизонталь:горизонталь A4 ; ! ""
 дейінгі:дейінгі A4 ; ! ""
 диалектик:диалектик A4 ; ! ""
 диэлектрик:диэлектрик A4 ; ! ""
 классик:классик A4 ; ! ""
+коррупциялық:коррупциялық A4 ; ! ""
 көрнекі:көрнекі A4 ; ! ""
 қаржылық:қаржылық A4 ; ! ""
 қытайлық:қытайлық A4 ; ! "" FIXME adj / n I guess (some other nationalities here in A4 too)
@@ -5671,6 +6041,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 айлы:айлы A4 ; ! ""
 ұлттық:ұлттық A4 ; ! "national"
 қатысты:қатысты A4 ; ! ""
+тән:тән A4 ; ! ""
 асыл:асыл A3 ; ! ""
 байланысты:байланысты A3 ; ! ""
 бар:бар A3 ; ! ""
@@ -5734,16 +6105,20 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 қалалық:қалалық A1 ; ! "city-level"
 қарсы:қарсы A1 ; ! ""
 қатты:қатты A1 ; ! "hard,fast"
+қамтамасыз:қамтамасыз A1 ; ! "обеспеченный"
 қоғамдық:қоғамдық A1 ; ! "communal"
 қуанышты:қуанышты A1 ; ! "glad"
 мәдени:мәдени A1 ; ! "cultural"
 мәңгі:мәңгі A1 ; ! "eternal"
 мемлекеттік:мемлекеттік A1 ; ! "governmental"
+мейірімді:мейірімді A1 ; ! ""
 мықты:мықты A1 ; ! "strong/fast"
 надан:надан A1 ; ! "ignorant"
 оң:оң A1 ; ! "right"
+орта:орта A1 ; ! "средний"
 өзара:өзара A1 ; ! "mutual"
 өзге:өзге A1 ; ! ""
+өткен:өткен A1 ; ! "прошлый"
 риза:риза A1 ; ! "pleased,согласный"
 сабыр:сабыр A1 ; ! ""
 сары:сары A1 ; ! "yellow"
@@ -5772,6 +6147,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 ыссы:ыссы A1 ; ! "hot"
 ыстық:ыстық A1 ; ! "hot"
 жарасатындай:жарасатындай A1 ; ! ""
+жаппай:жаппай A1 ; ! ""
+басым:басым A1 ; ! ""
 арзан:арзан A1 ; ! ""
 астыртын:астыртын A1 ; ! ""
 сау:сау A1 ; ! ""
@@ -5779,6 +6156,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
  LEXICON Adverbs
 
 қайда:қайда ADVITG ; ! "where (где;куда)"
+нендей:нендей ADVITG ; ! "how"
 қашан:қашан ADVITG ; ! "when"
 еш% қашан:еш% қашан ADV ; ! "never" Use/MT
 аса:аса ADV ; ! "very"
@@ -5796,6 +6174,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 күрт:күрт ADV ; ! ""
 қайта:қайта ADV ; ! "again"
 мүлде:мүлде ADV ; ! ""
+негізінде:негізінде ADV ; ! "in general, basically"
+негізінен:негізінен ADV ; ! "в основе, в основном"
 өте:өте ADV ; ! "very"
 сосын:сосын ADV ; ! ""
 тым:тым ADV ; ! ""
@@ -5817,8 +6197,6 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 
 абай% бол:абай% бол V-IV ; ! "cautious,attentive,beware"
 абайла:абайла V-TV ; ! "cautious,attentive,beware"
-аз:аз V-IV ; ! "lose weight"
-аз:аз V-IV ; ! "(перен.) сбиваться с пути;lose weiht"
 азай:азай V-IV ; ! "уменьшаться"
 азайт:азайт V-TV ; ! "уменьшать,убавлять" NOTE caus
 аздыр:аздыр V-TV ; ! "neglect,reduce to exshaustion,lead astray,seduce" NOTE caus
@@ -5845,6 +6223,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 аунат:аунат V-TV ; ! "to drag in" (kaz tat) caus
 ая:ая V-TV ; ! "жалеть,щадить,сжаливаться"
 байқал:байқал V-IV ; ! ""
+бақыла:бақыла V-TV ; ! "наблюдвать,контролировать,проверять"
 бар:бар V-IV ; ! ""
 баррикадала:баррикадала V-TV ; ! "to barricade"
 барымтала:барымтала V-TV ; ! "to plunder"
@@ -5864,9 +6243,11 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 біт:біт V-IV ; ! "terminate"
 біт:біт V-IV ; ! "кончаться,заканчиваться"
 біт:біт V-IV ; ! "кончаться,заканчиваться"
+бой% ұсын:бой% ұсын V-TV ; ! "повиноваться"
 бол:бол V-IV ; ! "1. быть"
 бол:бол V-IV ; ! "be/become"
 боя:боя V-TV ; ! "to paint"
+бөлін:бөлін V-TV ; ! ""
 бу:бу V-TV ; ! "evaporate"
 бу:бу V-TV ; ! "завязывать,связывать;упаковывать"
 бүйт:бүйт V-TV ; ! ""
@@ -5909,6 +6290,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 кес:кес V-TV ; ! "cut"
 кет:кет V-IV ; ! "leave"
 көбей:көбей V-IV ; ! ""
+көбейт:көбейт V-TV ; ! ""
 көр:көрін V-TV-PASS ; ! "be seen"
 көр:көр V-TV-NOPASS ; ! "see"
 көш:көш V-IV ; ! "lead a nomad's life,move to another place"
@@ -5945,9 +6327,9 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 сайра:сайра V-IV ; ! "to sing (of birds)"
 сайыс:сайыс V-IV ; ! "to joust"
 сал:сал V-TV ; ! ""
+салыстыр:салыстыр V-TV ; ! "" (kaz tat) caus
 сана:сана V-TV ; ! "count"
 сасы:сасы V-IV ; ! "stink"
-сат:сат V-TV ; ! ""
 сат:сат V-TV ; ! ""
 саттыр:саттыр V-TV ; ! "to offer for sale" (kaz tat) caus
 сау:сау V-TV ; ! "to milk"
@@ -5958,7 +6340,6 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 сөйт:сөйт V-IV ; ! ""
 сұра:сұра V-TV ; ! "request/ask for"
 сыдыр:сыдыр V-TV ; ! "to skin an animal"
-сыз:сыз V-TV ; ! "to write"
 сыйдыр:сыйдыр V-TV ; ! "to hold"
 сыйла:сыйла V-TV ; ! "to make a present"
 сый:сый V-IV ; ! "to go in"
@@ -5981,8 +6362,9 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 тара:тара V-IV ; ! ""
 тара:тара V-TV ; ! "расчесывать"
 тарат:тарат V-TV ; ! ""
-тартын:тартын V-IV ; ! "to resist"
 ти:ти V-IV ; ! ""
+тоқта:тоқта V-IV ; ! ""
+тоқтат:тоқтат V-TV ; ! "" caus
 ту:ту V-IV ; ! "be born"
 түс:түс V-IV ; ! ""
 тұр:тұр V-IV ; ! "rise,stand"
@@ -5993,6 +6375,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 тыңда:тыңда V-TV ; ! "listen"
 тырна:тырна V-TV ; ! "claw"
 үгітте:үгітте V-TV ; ! "to agitate"
+үгіттен:үгіттен V-IV ; ! "be agitated"
+үдет:үдет V-IV ; ! "наращивать"
 ұйықта:ұйықта V-IV ; ! "sleep"
 ұйымдастыр:ұйымдастыр V-TV ; ! "организовать"
 ұста:ұста V-TV ; ! "grasp,hold"
@@ -6002,6 +6386,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 шық:шық V-IV ; ! "leave"
 ту:ту V-IV ; ! ""
 ту:ту V-TV ; ! ""
+жекешелендір:жекешелендір V-TV ; ! "" caus?
 тасымалда:тасымалда V-TV-NOPASS ; ! "move, transfer"
 тасымалда:тасымалдан V-TV-PASS ; ! "move, transfer"
 тудыр:тудыр V-TV ; ! "" caus
@@ -6209,10 +6594,24 @@ kz:kz ABBR ; ! ""
 ФСБ:ФСБ ABBR ; ! ""
 хим%.:хим%. ABBR ; ! "chemical"
 ШЫҰ:ШЫҰ ABBR ; ! "Shanghai Cooperaton Organization"
+ШҰАР:ШҰАР ABBR ; ! "Xinjiang Uyghur Autonomous Region"
 экон%.:экон%. ABBR ; ! "economic"
 ЮНЕСКО:ЮНЕСКО ABBR ; ! ""
 EITI:EITI ABBR ; ! ""
 ЕО:ЕО ABBR ; ! ""
+янв%.:янв%. ABBR ; 
+февр%.:февр%. ABBR ; 
+апр%.:апр%. ABBR ;
+май%.:май%. ABBR ;
+авг%.:авг%. ABBR ;
+сент%.:сент%. ABBR ;
+окт%.:окт%. ABBR ;
+нояб%.:нояб%. ABBR ;
+дек%.:дек%. ABBR ;
+апр:апр ABBR ;
+англ:англ ABBR ;
+Ғ%.С%.:Ғ%.С%. ABBR ; ! ""
+Т%.:Т%. ABBR ; ! ""
 
 !===================!
  LEXICON Punctuation

@@ -404,6 +404,15 @@ LEXICON NP-ANT-F
 
 %<np%>%<ant%>%<f%>: POSSESSION ;
 
+LEXICON NP-PAT-VICH
+
+! For patronyms ending with -вич
+! Their feminine equivalets end with -вна /I.S./
+
+%<np%>%<pat%>%<m%>:вич%{☭%} NP-COMMON ;
+
+%<np%>%<pat%>%<f%>:вна NP-COMMON ;
+
 LEXICON NP-ORG
 
 %<np%>%<org%>: POSSESSION ;
@@ -1251,6 +1260,8 @@ LEXICON Postadverbs
 эле:эле POSTADV ; ! "only"
 деле:деле POSTADV ; ! "even"
 дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
+ашуун:ашуун POSTADV ; ! "more than"
+ашык:ашык POSTADV ; ! "more than"
 тең:тең POSTADV ; ! "~both" e.g., экөө тең
 
 LEXICON Conjunctions 
@@ -1583,7 +1594,7 @@ LEXICON Nouns
 балкон:балкон N-INFL ; 
 балта:балта N-INFL ; 
 бамбук:бамбук N-INFL ;
-барит:барит N-INFL ; "тяжёлый шпат — минерал бария из класса сульфатов, BaSO4." 
+барит:барит N-INFL ; ! "тяжёлый шпат — минерал бария из класса сульфатов, BaSO4." 
 баритон:баритон N-INFL ; 
 баррель:баррель N-INFL ; 
 бассейн:бассейн N-INFL ; 
@@ -1749,7 +1760,7 @@ LEXICON Nouns
 газ:газ N-INFL ; 
 газета:газета N-INFL ; 
 галл:галл N-INFL ; 
-гамета:гамета N1 ; ! "" 
+гамета:гамета N-INFL ; ! "" 
 ген:ген N-INFL ; 
 генерал:генерал N-INFL ; 
 генетика:генетика N-INFL ; 
@@ -1895,6 +1906,7 @@ LEXICON Nouns
 директор:директор N-INFL ; 
 музыка:музыка N-INFL ; 
 намаз:намаз N-INFL ; 
+нефть% жумушчу:нефть% жумушчу N-INFL ; 
 натыйжа:натыйжа N-INFL ; 
 никель:никель N-INFL ; 
 норма:норма N-INFL ; 
@@ -2438,12 +2450,11 @@ LEXICON Nouns
 семинар:семинар N-INFL ;
 конуш:конуш N-INFL ;
 чек:чек N-INFL ;
-көзөмөл:көзөмөл N-INFL ;
 норма:норма N-INFL ;
 валюта:валюта N-INFL ;
 веб:веб N-INFL ; 
 вебсайт:вебсайт N-INFL ; 
-веб%-сайт:веб%-сайт N1 ; 
+веб%-сайт:веб%-сайт N-INFL ; 
 штаб:штаб N-INFL ;
 филиал:филиал N-INFL ;
 ым:ым N-INFL ; 
@@ -2515,7 +2526,6 @@ LEXICON Nouns
 сүрөт:сүрөт N-INFL ;
 атмосфера:атмосфера N-INFL ;
 пост:пост N-INFL ;
-салыштыруу:салыштыруу N-INFL ;
 адмирал:адмирал N-INFL ;
 шишик:шишик N-INFL ;
 команда:команда N-INFL ;
@@ -2626,7 +2636,7 @@ LEXICON Nouns
 микроблогер:микроблогер N-INFL ; ! ""
 коррупция:коррупция N-INFL ; ! ""
 жаңжал:жаңжал N-INFL ; ! "скандал"
-менчиктештирүү:менчиктештирүү N-INFL ; ! "приватизация"
+стачка:стачка N-INFL ; ! ""
 ДНК:ДНК N1-ABBR ; ! "DNA"
 англичан:англичан NAT ; ! "English"
 албан:албан NAT ; ! ""
@@ -2761,6 +2771,8 @@ LEXICON ProperNouns
 Ямусукро:Ямусукро NP-TOP ; ! ""
 Бухара:Бухара NP-TOP ; ! ""
 Сана:Сана NP-TOP ; ! ""
+Сана:Сана NP-TOP ; ! ""
+Сана:Сана NP-TOP ; ! ""
 Улан%-Батор:Улан%-Батор NP-TOP ; ! ""
 Девир:Девир NP-TOP ; ! ""
 Пекин:Пекин NP-TOP ; ! ""
@@ -2780,7 +2792,7 @@ LEXICON ProperNouns
 Андорра%-ла%-Велья:Андорра%-ла%-Велья NP-TOP ; ! ""
 Англия:Англия NP-TOP ; ! ""
 Ангола:Ангола NP-TOP ; ! ""
-Андорра:Андорра NP-TOP ; ""
+Андорра:Андорра NP-TOP ; ! ""
 Анкара:Анкара NP-TOP ; ! ""
 Антананариву:Антананариву NP-TOP ; ! ""
 Антарктида:Антарктида NP-TOP ; ! ""
@@ -2795,7 +2807,7 @@ LEXICON ProperNouns
 Бангкок:Бангкок NP-TOP ; ! ""
 Бандар%-Сери%-Бегаван:Бандар%-Сери%-Бегаван NP-TOP ; ! "" 
 Бангладеш:Бангладеш NP-TOP ; ! ""
-Бенин:Бенин NP -TOP ; ! ""
+Бенин:Бенин NP-TOP ; ! ""
 Бахрейн:Бахрейн NP-TOP ; ! ""
 Белоруссия:Белоруссия NP-TOP ; ! ""
 Бельгия:Бельгия NP-TOP ; ! ""
@@ -2859,7 +2871,7 @@ LEXICON ProperNouns
 Камбоджа:Камбоджа NP-TOP ; ! ""
 Камерун:Камерун NP-TOP ; ! ""
 Канада:Канада NP-TOP ; ! ""
-Карабах:Карабах NP-TOP ; ""
+Карабах:Карабах NP-TOP ; ! ""
 Катар:Катар NP-TOP ; ! ""
 Кения:Кения NP-TOP ; ! ""
 Кирибати:Кирибати NP-TOP ; ! ""
@@ -3306,20 +3318,38 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Айболат:Айболат NP-ANT-M; ! "Aybolat" (Kazakh)
 Айбын:Айбын NP-ANT-M; ! "Aybın" (Kazakh)
 Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
+Айгыз:Айгыз NP-ANT-F ; ! "Ayğız"
+Айгыз:Айгыз NP-ANT-F; ! "Ayğız" (Kazakh)
 Айдана:Айдана NP-ANT-F; ! "Aydana" (Kazakh)
 Айдар:Айдар NP-ANT-M; ! "Aydar" (Kazakh)
 Айдарлы:Айдарлы NP-ANT-M; ! "Aydarlı" (Kazakh)
 Айдархан:Айдархан NP-ANT-M; ! "Aydarxan" (Kazakh)
 Айдос:Айдос NP-ANT-M; ! "Aydos" (Kazakh)
 Айжан:Айжан NP-ANT-F; ! "Ayjan" (Kazakh)
+Айзада:Айзада NP-ANT-F; ! "Ayzada" (Kazakh)
+Айкүмис:Айкүмис NP-ANT-F; ! "Aykümis" (Kazakh)
 Айман:Айман NP-ANT-F; ! "Ayman" (Kazakh)
 Айнагүл:Айнагүл NP-ANT-F; ! "Aynagül" (Persian)
+Айнур:Айнур NP-ANT-F; ! "Aynur" (Kazakh)
 Айрат:Айрат NP-ANT-M; ! "Ayrat" (Arabic)
 Айса:Айса NP-ANT-M; ! "Aysa" (Arabic)
+Айсулу:Айсулу NP-ANT-F; ! "Aysulıw" 
+Айтакын:Айтакын NP-ANT-M; ! "Aytaqın" (Arabic)
 Айтжан:Айтжан NP-ANT-M; ! "Aytjan" (Arabic)
+Айткали:Айткали NP-ANT-M; ! "Aytqalıy" (Arabic)
+Айша:Айша NP-ANT-F; ! "Aysha" (Arabic)
+Айшуак:Айшуак NP-ANT-M; ! "Ayshıwaq" (Kazakh)
 Акан:Акан NP-ANT-M ; ! ""
+Акболат:Акболат NP-ANT-M; ! "Aqbolat" (Kazakh)
+Акедил:Акедил NP-ANT-M; ! "Aqedil" (Kazakh)
+Акжан:Акжан NP-ANT-M; ! "Aqjan" (Kazakh)
 Акжанат:Акжанат NP-ANT-M ; ! ""
 Акжелке:Акжелке NP-ANT-M ; ! ""
+Акжол:Акжол NP-ANT-M; ! "Aqjol" (Kazakh)
+Акмарал:Акмарал NP-ANT-F; ! "Aqmaral" (Arabic)
+Актилек:Актилек NP-ANT-M; ! "Aqtilek" (Kazakh)
+Актокты:Актокты NP-ANT-F; ! "Aqtoqtı" 
+Акылбек:Акылбек NP-ANT-M; ! "Aqılbek" (Arabic)
 Алай:Алай NP-ANT-M; ! "Alay" (Old Turkic)
 Алау:Алау NP-ANT-M; ! "Alaw" (Kazakh)
 Алдар:Алдар NP-ANT-M; ! "Aldar" (Old Turkic)
@@ -3354,6 +3384,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Аня:Аня NP-ANT-F ; ! ""
 Аңсар:Аңсар NP-ANT-M; ! "Aŋsar" (Kazakh)
 Арай:Арай NP-ANT-M; ! "Aray" (Kazakh)
+Ардак:Ардак NP-ANT-F; ! "Ardaq" (Kazakh)
 Аристотель:Аристотель NP-ANT-M ; ! ""
 Арна:Арна NP-ANT-F; ! "Arna" (Kazakh)
 Арсений:Арсений NP-ANT-M ; ! ""
@@ -3364,12 +3395,15 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Асан:Асан NP-ANT-M; ! "Asan" (Arabic)
 Асанбай:Асанбай NP-ANT-M; ! "Asanbay" (Arabic)
 Асаутай:Асаутай NP-ANT-M ; ! "" 
+Асем:Асем NP-ANT-F ; ! "Assem"  see also "Әсем"
 Аскар:Аскар NP-ANT-M; ! "Asqar" (Kazakh)
 Аслан:Аслан NP-ANT-M ; ! "" 
 Ассур:Ассур NP-ANT-M ; ! ""
 Асхат:Асхат NP-ANT-M; ! "Asxat" (Arabic)
 Асылбек:Асылбек NP-ANT-M ; ! "Asılbek"
 Асылхан:Асылхан NP-ANT-M ; ! "" 
+Атабек:Атабек NP-ANT-M; ! "Atabek" (Kazakh)
+Аталык:Аталык NP-ANT-M; ! "Atalıq" (Kazakh)
 Атымтай:Атымтай NP-ANT-M; ! "Atımtay" (Arabic)
 Ахаб:Ахаб NP-ANT-M ; ! ""
 Ахан:Ахан NP-ANT-M; ! "Axan" (Persian)
@@ -3377,53 +3411,126 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Ахмет:Ахмет NP-ANT-M; ! "Axmet" (Arabic)
 Ахрам:Ахрам NP-ANT-M; ! "Axram" (Arabic)
 Аян:Аян NP-ANT-M; ! "Ayan" (Kazakh)
+Абдибакыт:Абдибакыт NP-ANT-M; ! "Äbdibaqıt" (Arabic)
+Абдибек:Абдибек NP-ANT-M; ! "Äbdibek" (Kazakh)
+Абдижамил:Абдижамил NP-ANT-M; ! "Äbdijämil" (Arabic)
+Абдималик:Абдималик NP-ANT-M; ! "Äbdimälik" (Arabic)
+Абдирахман:Абдирахман NP-ANT-M; ! "Äbdiraxman" (Arabic)
+Абдисалам:Абдисалам NP-ANT-M; ! "Äbdisalam" (Arabic)
+Абдисамат:Абдисамат NP-ANT-M; ! "Äbdisamat" (Arabic)
+Абдишүкир:Абдишүкир NP-ANT-M; ! "Äbdishükir" (Arabic)
+Абил:Абил NP-ANT-M; ! "Äbil" (Arabic)
+Абилкайыр:Абилкайыр NP-ANT-M; ! "Äbilqayır" (Arabic)
+Абу:Абу NP-ANT-M; ! "Äbiw" (Arabic)
 Абубакир:Абубакир NP-ANT-M; ! "Äbiwbäkir" (Arabic)
+Абуталип:Абуталип NP-ANT-M; ! "Äbiwtälip" (Arabic)
+Ади:Ади NP-ANT-M; ! "Ädiy" (Arabic)
 Адил:Адил NP-ANT-M; ! "Ädil" (Arabic)
+Адилбек:Адилбек NP-ANT-M; ! "Ädilbek" (Arabic)
+Адилжан:Адилжан NP-ANT-M; ! "Ädiljan" (Arabic)
 Адилхан:Адилхан NP-ANT-M; ! "Ädilxan" (Arabic)
+Азел:Азел NP-ANT-M; ! "Äzel" (Arabic)
+Азиза:Азиза NP-ANT-F; ! "Äziyza" (Arabic)
+Азиз:Азиз NP-ANT-M; ! "Äziz" (Arabic)
 Азимбек:Азимбек NP-ANT-M ; ! "" 
+Азимжан:Азимжан NP-ANT-M; ! "Äzimjan" (Arabic)
+Азимхан:Азимхан NP-ANT-M; ! "Äzimxan" (Arabic)
+Айгерим:Айгерим NP-ANT-F; ! "Äygerim" (Kazakh)
 Айүп:Айүп NP-ANT-M ; ! ""
 Акежан:Акежан NP-ANT-M ; ! "" 
 Али:Али NP-ANT-M; ! "Äliy" (Arabic)
+Алима:Алима NP-ANT-F; ! "Äliyma" (Arabic)
 Алихан:Алихан NP-ANT-M; ! "Äliyxan" (Arabic)
+Алишама:Алишама NP-ANT-F; ! ""
 Алия:Алия NP-ANT-F; ! "Älıya" 
+Алимбай:Алимбай NP-ANT-M; ! "Älimbay" (Arabic)
+Алишер:Алишер NP-ANT-M; ! "Älisher" (Arabic)
+Алнур:Алнур NP-ANT-M; ! "Älnur" (Arabic)
+Алфия:Алфия NP-ANT-F; ! "Älfiya" (Arabic)
+Амина:Амина NP-ANT-F; ! "Ämiyna" (Arabic)
+Амин:Амин NP-ANT-M; ! "Ämiyn" (Arabic)
+Амирбек:Амирбек NP-ANT-M; ! "Ämirbek" (Arabic)
 Амир% Темир:Амир% Темир NP-ANT-M; ! ""
+Анес:Анес NP-ANT-M; ! "Änes" (Arabic)
+Ануар:Ануар NP-ANT-M; ! "Äniwar" (Arabic)
+Арип:Арип NP-ANT-M; ! "Ärip" (Arabic)
+Асел:Асел NP-ANT-F; ! "Äsel" (Arabic)
+Асем:Асем NP-ANT-F; ! "Äsem" (Kazakh)
+Асет:Асет NP-ANT-M; ! "Äset" (Arabic)
 Асия:Асия NP-ANT-F; ! "Äsıya" (Persian)
 Аубакир:Аубакир NP-ANT-M ; ! ""
+Ауез:Ауез NP-ANT-M; ! "Äwez" (Arabic)
+Ауел:Ауел NP-ANT-M; ! "Äwel" (Arabic)
+Ауелбек:Ауелбек NP-ANT-M; ! "Äwelbek" (Arabic)
+Ашим:Ашим NP-ANT-M; ! "Äshim" (Arabic)
+Ашимхан:Ашимхан NP-ANT-M; ! "Äshimxan" (Arabic)
+Аширбек:Аширбек NP-ANT-M; ! "Äshirbek" (Arabic)
 Багул:Багул NP-ANT-F ; ! "" 
+Багдат:Багдат NP-ANT-M; ! "Bağdat" (Arabic)
+Баглан:Баглан NP-ANT-M; ! "Bağlan" (Kazakh)
 Багыткали:Багыткали NP-ANT-M ; ! "" 
 Байбол:Байбол NP-ANT-M; ! "Baybol" (Kazakh)
 Байдалы:Байдалы NP-ANT-M ; ! ""
+Баймагамбет:Баймагамбет NP-ANT-M; ! "Baymağambet" (Kazakh)
 Байсал:Байсал NP-ANT-M ; ! "Baysal"
 Байсал:Байсал NP-ANT-M; ! "Baysal" (Kazakh)
+Байтак:Байтак NP-ANT-M; ! "Baytaq" (Kazakh)
 Байтас:Байтас NP-ANT-M; ! "Baytas" 
+Байтемир:Байтемир NP-ANT-M; ! "Baytemir" (Kazakh)
+Бакай:Бакай NP-ANT-M; ! "Baqay" (Arabic)
+Бактыбай:Бактыбай NP-ANT-M; ! "Baqtıbay" (Kazakh)
+Бактыгул:Бактыгул NP-ANT-M ; ! "Baqtığul"
+Бакытбек:Бакытбек NP-ANT-M; ! "Baqıtbek" 
 Бакытжан:Бакытжан NP-ANT-M; ! "Baqıtjan" (Arabic)
 Балауса:Балауса NP-ANT-F; ! "Balawsa" (Kazakh)
 Балжан:Балжан NP-ANT-F; ! "Baljan" 
 Балтабай:Балтабай NP-ANT-M; ! "Baltabay" (Kazakh)
+Балтабек:Балтабек NP-ANT-M; ! "Baltabek" (Kazakh)
 Барак:Барак NP-ANT-M ; ! "Barack"
 Барак:Барак NP-ANT-M; ! "Baraq" (Arabic)
 Бари:Бари NP-ANT-M; ! "Barıy" (Arabic)
 Барлас:Барлас NP-ANT-M ; ! ""
+Батырбек:Батырбек NP-ANT-M; ! "Batırbek" (Kazakh)
 Батырхан:Батырхан NP-ANT-M; ! "Batırxan" (Kazakh)
 Бауыржан:Бауыржан NP-ANT-M; ! "Bawırjan" (Kazakh)
 Бахтияр:Бахтияр NP-ANT-M; ! "Baxtıyar" (Persian)
 Баят:Баят NP-ANT-M; ! "Bayat" (Arabic)
+Бакир:Бакир NP-ANT-M; ! "Bäkir" (Arabic)
+Батес:Батес NP-ANT-F; ! "Bätes" (Russian)
+Бейимбет:Бейимбет NP-ANT-M; ! "Beyimbet" (Kazakh)
 Бек:Бек NP-ANT-M; ! "Bek" (Kazakh)
+Бек:Бек NP-ANT-M; ! "Bek" (Kazakh)
+Бекболат:Бекболат NP-ANT-M; ! "Bekbolat" (Kazakh)
 Бекер:Бекер NP-ANT-M; ! "Beker" (Old Turkic)
+Бекжан:Бекжан NP-ANT-M; ! "Bekjan" 
+Бексултан:Бексултан NP-ANT-M; ! "Beksultan" (Arabic)
+Бектур:Бектур NP-ANT-M; ! "Bektur" 
 Белла:Белла NP-ANT-F; ! "Bella" (Latin)
+Берикбай:Берикбай NP-ANT-M; ! "Berikbay" 
 Берик:Берик NP-ANT-M; ! "Berik" (Kazakh)
 Бернар:Бернар NP-ANT-M; ! "Bernar" (Kazakh)
 Бесир:Бесир NP-ANT-M ; ! ""
 Биби:Биби NP-ANT-F; ! "Biybiy" (Persian)
 Бисекен:Бисекен NP-ANT-M ; ! "" 
+Билгир:Билгир NP-ANT-M; ! "Bilgir" (Kazakh)
+Биржан:Биржан NP-ANT-M; ! "Birjan" (Kazakh)
+Болатбек:Болатбек NP-ANT-M; ! "Bolatbek" (Latin)
 Болат:Болат NP-ANT-M; ! "Bolat" (Latin)
 Болатхан:Болатхан NP-ANT-M; ! "Bolatxan" (Latin)
 Боранбай:Боранбай NP-ANT-M; ! "Boranbay" (Kazakh)
 Боран:Боран NP-ANT-M; ! "Boran" (Kazakh)
 Борис:Борис NP-ANT-M ; ! "" 
 Бота:Бота NP-ANT-F; ! "Bota" (Kazakh)
+Бөжей:Бөжей NP-ANT-M ; ! "Böjey"
+Бөжей:Бөжей NP-ANT-M; ! "Böjey" (Old Turkic)
+Бөкей:Бөкей NP-ANT-M; ! "Bökey" (Old Turkic)
 Бөкейхан:Бөкейхан NP-ANT-M ; ! "" 
+Бөри:Бөри NP-ANT-M; ! "Böri" (Kazakh)
+Бунямин:Бунямин NP-ANT-M ; ! "Benjamin"
 Бурабай:Бурабай NP-ANT-M; ! "Bıwrabay" (Kazakh)
+Бүлдиршин:Бүлдиршин NP-ANT-F; ! "Büldirshin" (Kazakh)
+Бүркитбай:Бүркитбай NP-ANT-M; ! "Bürkitbay" (Kazakh)
+Бүркит:Бүркит NP-ANT-M; ! "Bürkit" (Kazakh)
 Бухара:Бухара NP-ANT-M; ! "Buxara" (Arabic)
 Вадим:Вадим NP-ANT-M; ! ""
 Валентина:Валентина NP-ANT-F; ! "Valentina" (Latin)
@@ -3442,6 +3549,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Владислав:Владислав NP-ANT-M ; ! ""
 Вячеслав:Вячеслав NP-ANT-M ; ! ""
 Галина:Галина NP-ANT-F; ! "Galıyna" 
+Гаухар:Гаухар NP-ANT-F; ! "Gawxar" (Arabic)
 Геннадий:Геннадий NP-ANT-M ; ! "" 
 Георгий:Георгий NP-ANT-M ; ! "" 
 Геральд:Геральд NP-ANT-M ; ! ""
@@ -3450,17 +3558,40 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Григориан:Григориан NP-ANT-M ; ! ""
 Гурбангулы:Гурбангулы NP-ANT-M ; ! "" 
 Гүлбаршын:Гүлбаршын NP-ANT-F ; ! "" 
+Гүлбахрам:Гүлбахрам NP-ANT-F; ! "Gülbaxram" (Arabic)
+Гүлжамал:Гүлжамал NP-ANT-F; ! "Güljamal" (Arabic)
 Гүлжан:Гүлжан NP-ANT-F ; ! "" 
 Гүлзанат:Гүлзанат NP-ANT-F ; ! "" 
 Гүлмира:Гүлмира NP-ANT-F; ! "Gülmiyra" (Russian)
+Гүлназ:Гүлназ NP-ANT-F; ! "Gülnaz" (Greek)
 Гүлнара:Гүлнара NP-ANT-F; ! "Gülnara" (Arabic)
 Гүлнар:Гүлнар  NP-ANT-F; ! "Gülnar " (Arabic)
+Гүлнар:Гүлнар  NP-ANT-F; ! "Gülnar " (Arabic)
+Гүлнар:Гүлнар NP-ANT-F; ! "Gülnar" (Arabic)
 Гүлнар:Гүлнар NP-ANT-F; ! "Gülnar" (Arabic)
 Гүлнар:Гүлнар NP-ANT-F ; ! "" 
+Гүлнар:Гүлнар NP-ANT-F ; ! "" 
+Гүлнур:Гүлнур NP-ANT-F; ! "Gülnur" (Arabic)
 Гүлсара:Гүлсара NP-ANT-F; ! "Gülsara" (Arabic)
+Гүлшара:Гүлшара NP-ANT-F; ! "Gülshara" (Arabic)
+Гүлшат:Гүлшат NP-ANT-F; ! "Gülshat" (Persian)
+Габбас:Габбас NP-ANT-M; ! "Ğabbas" 
+Габит:Габит NP-ANT-M; ! "Ğabıyt" (Arabic)
+Габитхан:Габитхан NP-ANT-M ; ! "Ğabıytxan"
+Габитхан:Габитхан NP-ANT-M; ! "Ğabıytxan" (Arabic)
 Гад:Гад NP-ANT-M ; ! ""
+Гази:Гази NP-ANT-M; ! "Ğazıy" (Arabic)
+Газиза:Газиза NP-ANT-F ; ! "Aziza"
+Газиза:Газиза NP-ANT-F; ! "Ğazıyza" (Arabic)
+Газиз:Газиз NP-ANT-M; ! "Ğazıyz" 
+Гайса:Гайса NP-ANT-M; ! "Ğaysa" 
+Гайша:Гайша NP-ANT-F ; ! "Aisha"
+Гали:Гали NP-ANT-M; ! "Ğalıy" 
 Галия:Галия NP-ANT-F; ! "Ğalıya" (Arabic)
 Галымжан:Галымжан NP-ANT-M; ! "Ğalımjan" (Persian)
+Гани:Гани NP-ANT-M; ! "Ğanıy" (Arabic)
+Гарифолла:Гарифолла NP-ANT-M; ! "Ğarifolla" (Arabic)
+Гафу:Гафу NP-ANT-M; ! "Ğafu" (Arabic)
 Далай:Далай NP-ANT-M ; ! "" 
 Данил:Данил NP-ANT-M ; ! ""
 Даниял:Даниял NP-ANT-M; ! "Danıyal" (Arabic)
@@ -3469,7 +3600,10 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Дархан:Дархан NP-ANT-M; ! "Darxan" (Arabic)
 Дарья:Дарья NP-ANT-F ; ! ""
 Дастан:Дастан NP-ANT-M; ! "Dastan" (Kazakh)
+Дармен:Дармен NP-ANT-M; ! "Därmen" (Persian)
+Дауит:Дауит NP-ANT-M; ! "Däwit" (Ancient Hebrew)
 Даулет:Даулет NP-ANT-M; ! "Däwlet" (Arabic)
+Даурен:Даурен NP-ANT-M; ! "Däwren" 
 Денис:Денис NP-ANT-M; ! "Deniys" (Greek)
 Джеймс:Джеймс NP-ANT-M; ! "James" (English)
 Джеффри:Джеффри NP-ANT-M ; ! "" 
@@ -3495,17 +3629,23 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Евгений:Евгений NP-ANT-M ; ! "Yevgeniy"
 Евгения:Евгения NP-ANT-F ; ! ""
 Егор:Егор NP-ANT-M; ! "Egor" (Greek)
+Едиге:Едиге NP-ANT-M; ! "Edige" (Arabic)
+Езекия:Езекия NP-ANT-M ; ! "Ezekial"
 Екатерина:Екатерина NP-ANT-F ; ! ""
 Елазар:Елазар NP-ANT-M ; ! ""
 Еламан:Еламан NP-ANT-M; ! "Elaman" (Kazakh)
 Елдар:Елдар NP-ANT-M; ! "Eldar" (Kazakh)
+Елдес:Елдес NP-ANT-M; ! "Eldes" (Kazakh)
 Елена:Елена NP-ANT-F; ! "Elena" (Greek)
 Елжан:Елжан NP-ANT-M; ! "Eljan" (Kazakh)
 Елизавета:Елизавета NP-ANT-F; ! "Elizaveta" (Skandinavian)
+Еңлик:Еңлик NP-ANT-F; ! "Eŋlik" (Kazakh)
 Ералы:Ералы NP-ANT-M; ! "Eralı" (Kazakh)
 Ерболат:Ерболат NP-ANT-M; ! "Erbolat" (Kazakh)
 Ербол:Ербол NP-ANT-M ; ! "Erbol"
 Ербол:Ербол NP-ANT-M; ! "Erbol" (Kazakh)
+Ергеш:Ергеш NP-ANT-M; ! "Ergesh" (Kazakh)
+Ергали:Ергали NP-ANT-M; ! "Erğalıy" (Arabic)
 Ережеп:Ережеп NP-ANT-M; ! "Erejep" (Arabic)
 Еремия:Еремия NP-ANT-M ; ! ""
 Ерен:Ерен NP-ANT-M; ! "Eren" (Kazakh)
@@ -3515,58 +3655,110 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Ерлан:Ерлан NP-ANT-M ; ! "Erlan"
 Ерлан:Ерлан NP-ANT-M; ! "Erlan" (Kazakh)
 Ерман:Ерман NP-ANT-M; ! "Erman" (Kazakh)
+Ермек:Ермек NP-ANT-M; ! "Ermek" (Kazakh)
 Ермухамет:Ермухамет NP-ANT-M ; ! "" 
 Ернар:Ернар NP-ANT-M; ! "Ernar" (Kazakh)
 Ертай:Ертай NP-ANT-M; ! "Ertay" (Kazakh)
 Есберген:Есберген NP-ANT-M; ! "Esbergen" (Kazakh)
+Есдаулет:Есдаулет NP-ANT-M; ! "Esdäwlet" (Kazakh)
+Есей:Есей NP-ANT-M; ! "Esey" (Kazakh)
 Есенбек:Есенбек NP-ANT-M ; ! "" 
 Есет:Есет NP-ANT-M; ! "Eset" (Persian)
+Ескендир:Ескендир NP-ANT-M; ! "Eskendir" (Arabic)
+Ескали:Ескали NP-ANT-M; ! "Esqalıy" (Kazakh)
 Естай:Естай NP-ANT-M ; ! "" 
 Ефрем:Ефрем NP-ANT-M ; ! ""
 Ешуа:Ешуа NP-ANT-M ; ! ""
+Жагыпар:Жагыпар NP-ANT-M; ! "Jağıpar" (Arabic)
 Жадыра:Жадыра NP-ANT-M; ! "Jadıra" (Kazakh)
+Жазира:Жазира NP-ANT-F; ! "Jazıyra" (Arabic)
+Жакия:Жакия NP-ANT-M; ! "Jaqıya" (Arabic)
+Жаксыбай:Жаксыбай NP-ANT-M; ! "Jaqsıbay" (Kazakh)
 Жаксыбек:Жаксыбек NP-ANT-M ; ! "" 
+Жакыпбек:Жакыпбек NP-ANT-M; ! "Jaqıpbek" (Kazakh)
+Жакып:Жакып NP-ANT-M ; ! "Jacob"
+Жакып:Жакып NP-ANT-M ; ! "Jacob"
+Жакып:Жакып NP-ANT-M; ! "Jaqıp" (Kazakh)
 Жалал:Жалал NP-ANT-M ; ! ""
 Жамбыл:Жамбыл NP-ANT-M; ! "Jambıl" (Old Turkic)
 Жамбыл:Жамбыл NP-ANT-M; ! "Jambıl" (Old Turkic)
 Жанай:Жанай NP-ANT-M; ! "Janay" (Kazakh)
+Жанаргүл:Жанаргүл NP-ANT-F; ! "Janargül" (Kazakh)
 Жанат:Жанат NP-ANT-F; ! "Janat" (Kazakh)
 Жанат:Жанат NP-ANT-M; ! "Janat" (Kazakh)
+Жанахмет:Жанахмет NP-ANT-M; ! "Janaxmet" (Arabic)
 Жанбай:Жанбай NP-ANT-M; ! "Janbay" (Kazakh)
+Жанболат:Жанболат NP-ANT-M; ! "Janbolat" (Latin)
+Жандарбек:Жандарбек NP-ANT-M; ! "Jandarbek" (Kazakh)
 Жандос:Жандос NP-ANT-M; ! "Jandos" (Persian)
 Жанна:Жанна NP-ANT-F; ! "Janna" (Kazakh)
 Жаннат:Жаннат NP-ANT-F; ! "Jannat" (Arabic)
 Жансая:Жансая NP-ANT-F; ! "Jansaya" 
 Жансейит:Жансейит NP-ANT-M ; ! ""
+Жантас:Жантас NP-ANT-M; ! "Jantas" (Kazakh)
 Жарасбай:Жарасбай NP-ANT-M ; ! ""
 Жарас:Жарас NP-ANT-M; ! "Jaras" (Kazakh)
+Жаркынбек:Жаркынбек NP-ANT-M; ! "Jarqınbek" (Kazakh)
+Жаркын:Жаркын NP-ANT-M; ! "Jarqın" (Kazakh)
 Жармахан:Жармахан NP-ANT-M ; ! ""
 Жасталап:Жасталап NP-ANT-M; ! "Jastalap" (Kazakh)
 Жасулан:Жасулан NP-ANT-M; ! "Jasulan" (Kazakh)
 Жасыбай:Жасыбай NP-ANT-M; ! "Jasıbay" (Kazakh)
 Жамеңке:Жамеңке NP-ANT-M ; ! ""
 Жамила:Жамила NP-ANT-F; ! "Jämiyla" (Arabic)
+Жамшид:Жамшид NP-ANT-M; ! "Jämshiyd" (Arabic)
 Жанибек:Жанибек NP-ANT-M; ! "Jänibek" (Kazakh)
 Жасия:Жасия NP-ANT-M ; ! ""
+Жексенбай:Жексенбай NP-ANT-M; ! "Jeksenbay" (Kazakh)
 Жексен:Жексен NP-ANT-M ; ! ""
 Женя:Женя NP-ANT-F ; ! ""
 Женя:Женя NP-ANT-F ; ! ""
 Женя:Женя NP-ANT-M ; ! ""
 Женя:Женя NP-ANT-M ; ! ""
+Жетибай:Жетибай NP-ANT-M; ! "Jetibay" (Kazakh)
+Жетиген:Жетиген NP-ANT-M; ! "Jetigen" (Kazakh)
 Жидебай:Жидебай NP-ANT-M ; ! "Jiydebay"
+Жиренше:Жиренше NP-ANT-M ; ! "Jiyrenşe"
+Жиренше:Жиренше NP-ANT-M; ! "Jiyrenshe" (Kazakh)
 Жигитек:Жигитек NP-ANT-M ; ! ""
 Жогаб:Жогаб NP-ANT-M ; ! ""
 Жогас:Жогас NP-ANT-M ; ! ""
 Жомарт:Жомарт NP-ANT-M; ! "Jomart" (Kazakh)
 Жонатан:Жонатан NP-ANT-M ; ! ""
+Жорам:Жорам NP-ANT-M; ! ""
 Жосапат:Жосапат NP-ANT-M ; ! ""
+Жүзбай:Жүзбай NP-ANT-M; ! "Jüzbay" (Kazakh)
+Жүнис:Жүнис NP-ANT-M; ! "Jünis" (Ancient Hebrew)
+Жүсипбек:Жүсипбек NP-ANT-M; ! "Jüsipbek" (Arabic)
+Жүсип:Жүсип NP-ANT-M; ! "Jüsip" (Arabic)
+Жубан:Жубан NP-ANT-M; ! "Juban" (Kazakh)
+Жубаныш:Жубаныш NP-ANT-M; ! "Jubanısh" (Kazakh)
+Жулдызай:Жулдызай NP-ANT-F; ! "Juldızay" (Kazakh)
 Жумабай:Жумабай NP-ANT-M; ! "Jumabay" (Arabic)
+Жумабек:Жумабек NP-ANT-M; ! "Jumabek" (Arabic)
+Жумабике:Жумабике NP-ANT-F; ! "Jumabıyke" (Arabic)
+Жумагазы:Жумагазы NP-ANT-M; ! "Jumağazı" (Arabic)
+Жумажан:Жумажан NP-ANT-M; ! "Jumajan" (Arabic)
+Жуманбай:Жуманбай NP-ANT-M; ! "Jumanbay" (Kazakh)
 Жумадил:Жумадил NP-ANT-M; ! "Jumädil" (Arabic)
+Жупар:Жупар NP-ANT-F; ! "Jupar" (Kazakh)
 Забур:Забур NP-ANT-M ; ! ""
+Загипа:Загипа NP-ANT-F; ! "Zağıypa" (Arabic)
+Заманбек:Заманбек NP-ANT-M; ! "Zamanbek" (Kazakh)
+Замира:Замира NP-ANT-F; ! "Zamıyra" (Arabic)
+Заңгар:Заңгар NP-ANT-M; ! "Zaŋğar" (Kazakh)
 Зарина:Зарина NP-ANT-F; ! "Zarıyna" (Arabic)
 Закария:Закария NP-ANT-M; ! "Zäkarıya" (Arabic)
+Заки:Заки NP-ANT-M; ! "Zäkiy" (Arabic)
+Закир:Закир NP-ANT-M; ! "Zäkir" (Arabic)
+Зауре:Зауре NP-ANT-F; ! "Zäwre" (Arabic)
+Зейнеп:Зейнеп NP-ANT-F; ! "Zeynep" (Arabic)
+Зере:Зере NP-ANT-F; ! "Zere" (Arabic)
+Зерек:Зерек NP-ANT-M; ! "Zerek" (Arabic)
 Зинаида:Зинаида NP-ANT-F; ! "Zıynaida" (Greek)
+Зия:Зия NP-ANT-F; ! "Zıya" (Arabic)
 Зоя:Зоя NP-ANT-F; ! "Zoya" (Greek)
+Зубайда:Зубайда NP-ANT-F; ! "Zıwbayda" (Arabic)
 Иба:Иба NP-ANT-F; ! "İyba" (Arabic)
 Ибрагим:Ибрагим NP-ANT-M; ! "İybragıym" (Arabic)
 Иван:Иван NP-ANT-M ; ! ""
@@ -3577,6 +3769,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Ильина:Ильина NP-ANT-F ; ! ""
 Илья:Илья NP-ANT-M ; ! ""
 Имангали:Имангали NP-ANT-M; ! "İymanğalıy" (Arabic)
+Иманкул:Иманкул NP-ANT-M; ! "İymanqul" (Arabic)
 Инаят:Инаят NP-ANT-M; ! "İynayat" 
 Индира:Индира NP-ANT-F; ! "İyndıyra" 
 Иосиф:Иосиф NP-ANT-M ; ! ""
@@ -3587,14 +3780,24 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Исатай:Исатай NP-ANT-M; ! "İysatay" (Arabic)
 Исраил:Исраил%{☭%} NP-ANT-M ; ! "Israel (as in Jacob)"
 Ишая:Ишая NP-ANT-M ; ! ""
+Избасар:Избасар NP-ANT-M; ! "İzbasar" (Kazakh)
+Илияс:Илияс NP-ANT-M; ! "İlıyas" (Hebrew)
+Инжу:Инжу NP-ANT-F; ! "İnjıw" 
+Кабир:Кабир NP-ANT-M; ! "Kabıyr" (Arabic)
 Камал:Камал NP-ANT-M; ! "Kamal" (Arabic)
 Карл:Карл NP-ANT-M ; ! ""
 Катерина:Катерина NP-ANT-F; ! "Katerıyna" 
 Катя:Катя NP-ANT-F ; ! ""
+Карипжан:Карипжан NP-ANT-M; ! "Käripjan" (Arabic)
+Келбет:Келбет NP-ANT-F; ! "Kelbet" (Kazakh)
+Кенен:Кенен NP-ANT-M; ! "Kenen" (Kazakh)
 Кенесары:Кенесары NP-ANT-M; ! "Kenesarı"
 Кенжалы:Кенжалы NP-ANT-M ; ! ""
+Кенжебай:Кенжебай NP-ANT-M; ! "Kenjebay" (Kazakh)
 Кенжебек:Кенжебек NP-ANT-M; ! "Kenjebek" (Kazakh)
+Кенжегали:Кенжегали NP-ANT-M; ! "Kenjeğalıy" (Kazakh)
 Керей:Керей NP-ANT-M ; ! ""
+Киикбай:Киикбай NP-ANT-M; ! "Kıyikbay" (Kazakh)
 Ким:Ким NP-ANT-M; ! "Kiym" (New word)
 Клара:Клара NP-ANT-F; ! "Klara" (Latin)
 Клаус:Клаус NP-ANT-M ; ! ""
@@ -3602,25 +3805,76 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Константин:Константин NP-ANT-M ; ! ""
 Костя:Костя NP-ANT-M ; ! ""
 Көкбай:Көкбай NP-ANT-M; ! "Kökbay" (Kazakh)
+Көксерек:Көксерек NP-ANT-M ; ! "Kökserek" (the name of a wolf that's a character in a story)
 Көтибак:Көтибак NP-ANT-M ; ! ""
 Кристина:Кристина NP-ANT-F ; ! ""
 Ксения:Ксения NP-ANT-F ; ! ""
+Күлан:Күлан NP-ANT-F; ! "Külän" (Kazakh)
 Күнке:Күнке NP-ANT-M ; ! ""
+Күнсулу:Күнсулу NP-ANT-F; ! "Künsulıw" (Kazakh)
+Кадырбек:Кадырбек NP-ANT-M; ! "Qadırbek" (Kazakh)
+Кадыржан:Кадыржан NP-ANT-M; ! "Qadırjan" (Arabic)
+Кадыр:Кадыр NP-ANT-M; ! "Qadır" (Arabic)
 Кажымкан:Кажымкан NP-ANT-M ; ! ""
+Кажымурат:Кажымурат NP-ANT-M; ! "Qajımurat" (Arabic)
+Казыбек:Казыбек NP-ANT-M; ! "Qazıbek" (Arabic)
+Кайдар:Кайдар NP-ANT-M; ! "Qaydar" (Arabic)
 Кайрат:Кайрат NP-ANT-M; ! "Qayrat" (Arabic)
+Кайсар:Кайсар NP-ANT-M; ! "Qaysar" (Arabic)
+Кайым:Кайым NP-ANT-M; ! "Qayım" (Arabic)
+Кайырбай:Кайырбай NP-ANT-M; ! "Qayırbay" (Arabic)
+Кайырбек:Кайырбек NP-ANT-M; ! "Qayırbek" (Arabic)
+Кайырболат:Кайырболат NP-ANT-M; ! "Qayırbolat" (Arabic)
 Кайыргелди:Кайыргелди NP-ANT-M ; ! ""
+Кайыржан:Кайыржан NP-ANT-M; ! "Qayırjan" (Arabic)
+Каламкас:Каламкас NP-ANT-F; ! "Qalamqas" (Kazakh)
+Калдарбек:Калдарбек NP-ANT-M; ! "Qaldarbek" (Arabic)
+Калдыбай:Калдыбай NP-ANT-M; ! "Qaldıbay" (Arabic)
+Калдыбек:Калдыбек NP-ANT-M; ! "Qaldıbek" (Arabic)
+Калка:Калка NP-ANT-M; ! "Qalqa" (Kazakh)
+Калкаман:Калкаман NP-ANT-M; ! "Qalqaman" (Kazakh)
 Калтай:Калтай NP-ANT-M ; ! ""
+Калыбай:Калыбай NP-ANT-M; ! "Qalıbay" (Arabic)
+Камбар:Камбар NP-ANT-M; ! "Qambar" (Arabic)
+Камка:Камка NP-ANT-F; ! "Qamqa" (Kazakh)
 Камысбай:Камысбай NP-ANT-M ; ! ""
+Канагат:Канагат NP-ANT-M; ! "Qanağat" (Arabic)
 Канахан:Канахан NP-ANT-M ; ! ""
+Караман:Караман NP-ANT-M; ! "Qaraman" (Kazakh)
+Карасай:Карасай NP-ANT-M; ! "Qarasay" (Kazakh)
+Каратай:Каратай NP-ANT-M; ! "Qaratay" (Kazakh)
+Каршыга:Каршыга NP-ANT-M; ! "Qarshığa" 
+Касен:Касен NP-ANT-M ; ! "Qasen"
+Касымбек:Касымбек NP-ANT-M; ! "Qasımbek" (Arabic)
 Катша:Катша NP-ANT-F ; ! ""
+Кахарман:Кахарман NP-ANT-M; ! "Qaharman" (Arabic)
+Кобыланды:Кобыланды NP-ANT-M; ! "Qobılandı" (Kazakh)
 Кодар:Кодар NP-ANT-M ; ! ""
+Кожабай:Кожабай NP-ANT-M; ! "Qojabay" (Arabic)
+Кожабек:Кожабек NP-ANT-M; ! "Qojabek" (Arabic)
+Кожахмет:Кожахмет NP-ANT-M; ! "Qojaxmet" (Arabic)
 Козыбак:Козыбак NP-ANT-M ; ! ""
+Койлыбай:Койлыбай NP-ANT-M; ! "Qoylıbay" (Kazakh)
 Конакай:Конакай NP-ANT-M ; ! ""
+Косай:Косай NP-ANT-M; ! "Qosay" (Kazakh)
+Косын:Косын NP-ANT-M; ! "Qosın" (Arabic)
+Кошкарбай:Кошкарбай NP-ANT-M; ! "Qoshqarbay" (Kazakh)
 Кудайберген:Кудайберген NP-ANT-M; ! "Qudaybergen" (Kazakh)
+Кудайберди:Кудайберди NP-ANT-M ; ! "Qudayberdi"
+Кулыншак:Кулыншак NP-ANT-M; ! "Qulınshaq" (Kazakh)
+Кунанбай:Кунанбай NP-ANT-M ; ! "Qunanbay"
 Кундыз:Кундыз NP-ANT-F; ! "Qundız" (Kazakh)
 Куныскерей:Куныскерей NP-ANT-M ; ! ""
+Курманбай:Курманбай NP-ANT-M; ! "Qurmanbay" (Arabic)
 Курманбек:Курманбек NP-ANT-M; ! "Qurmanbek" (Arabic)
+Курмангазы:Курмангазы NP-ANT-M; ! "Qurmanğazı" (Arabic)
+Курман:Курман NP-ANT-M; ! "Qurman" (Arabic)
+Курмаш:Курмаш NP-ANT-F ; ! "Qurmaş"  (sometimes M?)
+Кусайын:Кусайын NP-ANT-M; ! "Qusayın" (Arabic)
+Кыдыр:Кыдыр NP-ANT-M; ! "Qıdır" (Arabic)
 Лариса:Лариса NP-ANT-F; ! "Larıysa" (Greek)
+Лаззат:Лаззат NP-ANT-F; ! "Läzzat" (Arabic)
+Лайла:Лайла NP-ANT-F; ! "Läyla" (Arabic)
 Лев:Лев NP-ANT-M ; ! ""
 Лена:Лена NP-ANT-F ; ! ""
 Леонардо:Леонардо NP-ANT-M ; ! ""
@@ -3628,6 +3882,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Лех:Лех NP-ANT-M ; ! ""
 Лидия:Лидия NP-ANT-F ; ! ""
 Лилия:Лилия NP-ANT-F ; ! ""
+Лукпан:Лукпан NP-ANT-M; ! "Luqpan" (Arabic)
 Лут:Лут NP-ANT-M ; ! ""
 Люба:Люба NP-ANT-F ; ! ""
 Любовь:Любовь NP-ANT-F ; ! ""
@@ -3639,12 +3894,17 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Максим:Максим NP-ANT-M ; ! ""
 Макс:Макс NP-ANT-M ; ! ""
 Макпал:Макпал NP-ANT-F; ! "Maqpal" (Arabic)
+Максуд:Максуд NP-ANT-M ; ! ""
+Максум:Максум NP-ANT-M; ! "Maqsum" (Arabic)
 Макыш:Макыш NP-ANT-M ; ! ""
+Мамасадык:Мамасадык NP-ANT-M; ! "Mamasadıq" (Arabic)
 Мамуржон:Мамуржон NP-ANT-M ; ! ""
 Манаса:Манаса NP-ANT-M ; ! ""
 Манас:Манас NP-ANT-M ; ! ""
+Мансур:Мансур NP-ANT-M; ! "Mansur" (Arabic)
 Марат:Марат NP-ANT-M; ! "Marat" (Arabic)
 Маргарита:Маргарита NP-ANT-F; ! "Margarıyta" 
+Маржан:Маржан NP-ANT-F; ! "Marjan" (Kazakh)
 Марина:Марина NP-ANT-F; ! "Marıyna" (Latin)
 Мария:Мария NP-ANT-F; ! "Marıya" (Arabic)
 Марлен:Марлен NP-ANT-M; ! "Marlen" (Arabic)
@@ -3652,14 +3912,30 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Марсель:Марсель NP-ANT-M ; ! ""
 Марс:Марс NP-ANT-M; ! "Mars" (Arabic)
 Мартин:Мартин NP-ANT-M ; ! ""
+Маруф:Маруф NP-ANT-M ; ! ""
+Марфуга:Марфуга NP-ANT-F; ! "Marfuğa" (Arabic)
 Маршал:Маршал NP-ANT-M; ! "Marshal" (Arabic)
 Махамбет:Махамбет NP-ANT-M; ! "Maxambet" (Arabic)
 Махмуд:Махмуд NP-ANT-M ; ! ""
 Махмуд:Махмуд NP-ANT-M ; ! ""
+Махмут:Махмут NP-ANT-M; ! "Maxmut" (Arabic)
+Мади:Мади NP-ANT-M; ! "Mädiy" (Arabic)
+Мадина:Мадина NP-ANT-F; ! "Mädiyna" (Arabic)
 Мажит:Мажит NP-ANT-M; ! "Mäjiyt" (Arabic)
+Малик:Малик NP-ANT-M; ! "Mälik" (Arabic)
+Мамбет:Мамбет NP-ANT-M; ! "Mämbet" (Arabic)
 Маншүк:Маншүк NP-ANT-M ; ! ""
 Мариям:Мариям NP-ANT-F ; ! ""
+Масих:Масих NP-ANT-M ; ! "Moses"  ! FIXME: check
+Маулен:Маулен NP-ANT-M; ! "Mäwlen" (Arabic)
+Медет:Медет NP-ANT-M; ! "Medet" (Arabic)
 Медеу:Медеу NP-ANT-M; ! "Medew" (Arabic)
+Мейирбек:Мейирбек NP-ANT-M; ! "Meyirbek" (Kazakh)
+Мейирман:Мейирман NP-ANT-M; ! "Meyirman" (Arabic)
+Мейир:Мейир NP-ANT-M; ! "Meyir" (Persian)
+Мекемтас:Мекемтас NP-ANT-M; ! "Mekemtas" (Kazakh)
+Мерей:Мерей NP-ANT-M; ! "Merey" (Kazakh)
+Меруерт:Меруерт NP-ANT-F; ! "Merwert" (Greek)
 Минтимер:Минтимер NP-ANT-M ; ! ""
 Мира:Мира NP-ANT-F; ! "Mıyra" (New word)
 Мирас:Мирас NP-ANT-M; ! "Mıyras" (Arabic)
@@ -3670,11 +3946,18 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Мишель:Мишель NP-ANT-M ; ! ""
 Мишель:Мишель NP-ANT-M; ! ""
 Мохаммад:Мохаммад NP-ANT-M ; ! ""
+Мөңке:Мөңке NP-ANT-M; ! "Möŋke" (Old Turkic)
 Мухамет:Мухамет NP-ANT-M ; ! ""
+Мүбарак:Мүбарак NP-ANT-M; ! "Mübärak" (Arabic)
 Мүсилим:Мүсилим NP-ANT-M ; ! ""
+Музафар:Музафар NP-ANT-M; ! "Muzafar" (Arabic)
+Мукагали:Мукагали NP-ANT-M; ! "Muqağalıy" (Persian)
+Мукамбет:Мукамбет NP-ANT-M; ! "Muqambet" (Arabic)
 Муратбек:Муратбек NP-ANT-M; ! "Muratbek" (Arabic)
+Муратберди:Муратберди NP-ANT-M; ! "Muratberdi" (Arabic)
 Мурат:Мурат NP-ANT-M ; ! "Murat"
 Мурат:Мурат NP-ANT-M; ! "Murat" (Arabic)
+Мусабек:Мусабек NP-ANT-M; ! "Musabek" (Arabic)
 Муса:Муса NP-ANT-M; ! "Musa" (Arabic)
 Мустафа:Мустафа NP-ANT-M; ! "Mustafa" (Arabic)
 Муфтолла:Муфтолла NP-ANT-M ; ! ""
@@ -3684,23 +3967,36 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Мырзахан:Мырзахан NP-ANT-M ; ! "Mırzaqan"  (sometimes M?)
 Мырзахан:Мырзахан NP-ANT-M; ! "Mırzaxan" (Arabic)
 Набуходоносор:Набуходоносор NP-ANT-M ; ! ""
+Нагима:Нагима NP-ANT-F; ! "Nağıyma" (Arabic)
 Надежда:Надежда NP-ANT-F ; ! "" 
 Надя:Надя NP-ANT-F ; ! ""
+Назгүл:Назгүл NP-ANT-F; ! "Nazgül" 
 Найманбай:Найманбай NP-ANT-M; ! ""
 Нариман:Нариман NP-ANT-M; ! "Narıyman" (Persian)
 Насыр:Насыр NP-ANT-M; ! "Nasır" (Arabic)
 Наталия:Наталия NP-ANT-F ; ! ""
 Наталья:Наталья NP-ANT-F ; ! "" 
 Наташа:Наташа NP-ANT-F ; ! ""
+Наби:Наби NP-ANT-M; ! "Näbiy" (Arabic)
+Нажип:Нажип NP-ANT-M; ! "Näjip" (Arabic)
 Никита:Никита NP-ANT-M ; ! ""
 Николай:Николай NP-ANT-M ; ! ""
 Николя:Николя NP-ANT-M ; ! ""
 Нина:Нина NP-ANT-F ; ! "" 
 Нияз:Нияз NP-ANT-M; ! "Nıyaz" (Arabic)
+Нурайша:Нурайша NP-ANT-F; ! "Nuraysha" (Arabic)
+Нурбек:Нурбек NP-ANT-M; ! "Nurbek" (Kazakh)
+Нурбол:Нурбол NP-ANT-M; ! "Nurbol" (Kazakh)
+Нургазы:Нургазы NP-ANT-M; ! "Nurğazı" (Arabic)
+Нургалым:Нургалым NP-ANT-M; ! "Nurğalım" (Arabic)
 Нуржан:Нуржан NP-ANT-M; ! "Nurjan" (Persian)
+Нури:Нури NP-ANT-M; ! "Nurıy" (Arabic)
 Нурлан:Нурлан NP-ANT-M; ! "Nurlan" (Arabic)
+Нурлыбай:Нурлыбай NP-ANT-M; ! "Nurlıbay" (Arabic)
 Нурсултан:Нурсултан NP-ANT-M; ! "Nursultan" (Arabic)
 Нуртай:Нуртай NP-ANT-M ; ! ""
+Нуртас:Нуртас NP-ANT-M; ! "Nurtas" (Kazakh)
+Нурым:Нурым NP-ANT-M; ! "Nurım" (Arabic)
 Нух:Нух NP-ANT-M ; ! ""
 Ойлы:Ойлы NP-ANT-M; ! "Oylı" (Kazakh)
 Оксана:Оксана NP-ANT-F; ! "Oksana" (Greek)
@@ -3712,19 +4008,31 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Омар:Омар NP-ANT-M; ! "Omar" (Arabic)
 Омархан:Омархан NP-ANT-M; ! "Omarxan" (Arabic)
 Оңалбай:Оңалбай NP-ANT-M; ! "Oŋalbay" (Kazakh)
+Оңгар:Оңгар NP-ANT-M; ! "Oŋğar" (Kazakh)
+Оразак:Оразак NP-ANT-M; ! "Orazaq" (Arabic)
 Оразалы:Оразалы NP-ANT-M ; ! ""
+Оразбек:Оразбек NP-ANT-M; ! "Orazbek" (Kazakh)
+Оразгүл:Оразгүл NP-ANT-F; ! "Orazgül" (Persian)
 Ораз:Ораз NP-ANT-M; ! "Oraz" (Old Turkic)
+Орак:Орак NP-ANT-M; ! "Oraq" (Old Turkic)
 Оралбай:Оралбай NP-ANT-M; ! "Oralbay" (Kazakh)
 Оралтай:Оралтай NP-ANT-M; ! "Oraltay" (Kazakh)
 Оралхан:Оралхан NP-ANT-M; ! "Oralxan" (Kazakh)
 Ордалы:Ордалы NP-ANT-M; ! "Ordalı" (Old Turkic)
 Орманшы:Орманшы NP-ANT-M; ! "Ormanshı" (Kazakh)
+Орынбек:Орынбек NP-ANT-M; ! "Orınbek" (Kazakh)
+Оспан:Оспан NP-ANT-M ; ! "Osman"
+Оспан:Оспан NP-ANT-M; ! "Ospan" (Arabic)
 Отар:Отар NP-ANT-M; ! "Otar" (Kazakh)
+Өжет:Өжет NP-ANT-M; ! "Öjet" (Kazakh)
+Өмирбай:Өмирбай NP-ANT-M; ! "Ömirbay" (Kazakh)
+Өмирзак:Өмирзак NP-ANT-M; ! "Ömirzaq" (Kazakh)
 Палуан:Палуан NP-ANT-M; ! "Palıwan" (Arabic)
 Пана:Пана NP-ANT-F; ! "Pana" (Persian)
 Пан:Пан NP-ANT-M; ! "Pan"
 Пауыл:Пауль NP-ANT-M ; ! "Paul" Dir/LR
 Пауыл:Пауыл NP-ANT-M ; ! "Paul"
+Петир:Петир NP-ANT-M ; ! "Peter"
 Петр:Петр NP-ANT-M ; ! ""
 Петя:Петя NP-ANT-M ; ! ""
 Пётр:Пётр NP-ANT-M ; ! ""
@@ -3733,7 +4041,11 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Рабат:Рабат NP-ANT-M; ! "Rabat" (Arabic)
 Рабия:Рабия NP-ANT-F; ! "Rabıya" (Arabic)
 Радий:Радий NP-ANT-M; ! "Radıy" (New word)
+Разак:Разак NP-ANT-M; ! "Razaq" (Arabic)
 Раиса:Раиса NP-ANT-F; ! "Raisa" 
+Райгүл:Райгүл NP-ANT-F; ! "Raygül" (Arabic)
+Райхан:Райхан NP-ANT-F; ! "Rayxan" (Arabic)
+Райымбек:Райымбек NP-ANT-M; ! "Rayımbek" (Arabic)
 Ранис:Ранис NP-ANT-M ; ! ""
 Расул:Расул NP-ANT-M; ! "Rasıwl" (Arabic)
 Рауза:Рауза NP-ANT-F; ! "Rawza" (Arabic)
@@ -3742,9 +4054,12 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Рафаэль:Рафаэль NP-ANT-M; ! "Rafaelʲ" (Ancient Hebrew)
 Рафик:Рафик NP-ANT-M; ! "Rafik" (Arabic)
 Рахат:Рахат NP-ANT-M; ! "Raxat" (Arabic)
+Рахила:Рахила NP-ANT-F; ! "Raxıyla" (Arabic)
 Рахия:Рахия NP-ANT-F; ! "Raxıya" (Arabic)
 Рахман:Рахман NP-ANT-M; ! "Raxman" (Arabic)
+Рахмет:Рахмет NP-ANT-M; ! "Raxmet" (Arabic)
 Рашид:Рашид NP-ANT-M ; ! ""
+Рашит:Рашит NP-ANT-M; ! "Rashıyt" (Arabic)
 Режеп:Режеп NP-ANT-M ; ! ""
 Ренат:Ренат NP-ANT-M; ! "Renat" (New word)
 Ричард:Ричард NP-ANT-M ; ! ""
@@ -3755,20 +4070,35 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Рөстам:Рөстам NP-ANT-M ; ! ""
 Руслан:Руслан NP-ANT-M; ! "Rıwslan" (Arabic)
 Рустам:Рустам NP-ANT-M ; ! ""
+Рүстем:Рүстем NP-ANT-M; ! "Rüstem" (Persian)
 Рысбек:Рысбек NP-ANT-M; ! "Rısbek" 
+Сабыржан:Сабыржан NP-ANT-M; ! "Sabırjan" (Arabic)
+Сагадат:Сагадат NP-ANT-M; ! "Sağadat" (Arabic)
+Саги:Саги NP-ANT-M; ! "Sağıy" (Arabic)
+Сагит:Сагит NP-ANT-M; ! "Sağıyt" (Arabic)
+Сагым:Сагым NP-ANT-M; ! "Sağım" (Old Turkic)
 Саддам:Саддам NP-ANT-M ; ! ""
+Садык:Садык NP-ANT-M; ! "Sadıq" (Arabic)
 Садыр:Садыр NP-ANT-M; ! "Sadır" (Arabic)
 Саида:Саида NP-ANT-F; ! "Saida" (Arabic)
 Сайран:Сайран NP-ANT-M; ! "Sayran" (Kazakh)
+Сайран:Сайран NP-ANT-M; ! "Sayran" (Kazakh)
 Сайра:Сайра NP-ANT-F; ! "Sayra" (Arabic)
+Сакып:Сакып NP-ANT-F; ! "Saqıp" (Arabic)
+Сакып:Сакып NP-ANT-M; ! "Saqıp" (Arabic)
 Саламат:Саламат NP-ANT-M; ! "Salamat" (Arabic)
+Салауат:Салауат NP-ANT-M; ! "Salawat" (Arabic)
 Салих:Салих NP-ANT-M ; ! ""
 Самат:Самат NP-ANT-M; ! "Samat" (Arabic)
 Самуил:Самуил NP-ANT-M ; ! "Samuel"
 Сана:Сана NP-ANT-M; ! "Sana" (Kazakh)
+Сана:Сана NP-ANT-M; ! "Sana" (Kazakh)
+Сана:Сана NP-ANT-M; ! "Sana" (Kazakh)
 Санат:Санат NP-ANT-M; ! "Sanat" (Arabic)
 Санжар:Санжар NP-ANT-M; ! "Sanjar" (Arabic)
 Сансызбай:Сансызбай NP-ANT-M; ! "Sansızbay" (Arabic)
+Сапабек:Сапабек NP-ANT-M; ! "Sapabek" (Arabic)
+Сапарбай:Сапарбай NP-ANT-M; ! "Saparbay" (Arabic)
 Сапаргали:Сапаргали NP-ANT-M ; ! ""
 Сапаргали:Сапаргали NP-ANT-M; ! "Saparğalıy" (Arabic)
 Сапармурат:Сапармурат NP-ANT-M ; ! ""
@@ -3784,60 +4114,123 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Саян:Саян NP-ANT-M; ! "Sayan" (Kazakh)
 Сая:Сая NP-ANT-M; ! "Saya" (Persian)
 Саят%-Нова:Саят%-Нова NP-ANT-M ; ! ""
+Сабира:Сабира NP-ANT-F; ! "Säbiyra" (Arabic)
+Сабит:Сабит NP-ANT-M; ! "Säbiyt" (Arabic)
+Садуакас:Садуакас NP-ANT-M; ! "Sädiwaqas" (Arabic)
+Салим:Салим NP-ANT-M; ! "Sälim" (Arabic)
+Салмен:Салмен NP-ANT-M; ! "Sälmen" (Persian)
 Сания:Сания NP-ANT-F; ! "Sänıya" (Arabic)
 Сарсенбай:Сарсенбай NP-ANT-M; ! "Särsenbay" (Arabic)
+Сатжан:Сатжан NP-ANT-M; ! "Sätjan" (Arabic)
 Светлана:Светлана NP-ANT-F ; ! "" 
+Сейитбек:Сейитбек NP-ANT-M; ! "Seyitbek" (Arabic)
+Сейитжан:Сейитжан NP-ANT-M; ! "Seyitjan" (Arabic)
+Сейсенбай:Сейсенбай NP-ANT-M; ! "Seysenbay" (Arabic)
+Сексенбай:Сексенбай NP-ANT-M; ! "Seksenbay" (Kazakh)
 Сергей:Сергей NP-ANT-M ; ! "Sergey"
+Сергазы:Сергазы NP-ANT-M; ! "Serğazı" (Arabic)
+Сергали:Сергали NP-ANT-M; ! "Serğalıy" (Arabic)
+Серикбай:Серикбай NP-ANT-M ; ! "Serikbay"
+Серикбай:Серикбай NP-ANT-M; ! "Serikbay" (Arabic)
 Серикболсын:Серикболсын NP-ANT-M ; ! ""
+Сериккали:Сериккали NP-ANT-M; ! "Serikqalıy" (Arabic)
 Серик:Серик NP-ANT-M ; ! ""
 Серик:Серик NP-ANT-M; ! "Serik" (Arabic)
+Серке:Серке NP-ANT-M; ! "Serke" (Kazakh)
 Сильвия:Сильвия NP-ANT-F ; ! ""
+Сираж:Сираж NP-ANT-M; ! "Sıyraj" (Arabic)
+Смагул:Смагул NP-ANT-M ; ! "'Ismanqul'"
 Сократ:Сократ NP-ANT-M; ! "Sokrat" (Arabic)
 Спиридон:Спиридон NP-ANT-M ; ! ""
 Станислав:Станислав NP-ANT-M ; ! ""
 Стас:Стас NP-ANT-M ; ! ""
 Степан:Степан NP-ANT-M ; ! ""
+Сүйинбай:Сүйинбай NP-ANT-M; ! "Süyinbay" (Kazakh)
+Сүйиндик:Сүйиндик NP-ANT-M ; ! "Süyindik"
+Сүлеймен:Сүлеймен NP-ANT-M ; ! "Solomon"
+Султанбек:Султанбек NP-ANT-M; ! "Sultanbek" (Arabic)
+Суңкар:Суңкар NP-ANT-M; ! "Suŋqar" (Kazakh)
+Сыдык:Сыдык NP-ANT-M; ! "Sıdıq" (Arabic)
 Таган:Таган NP-ANT-M; ! "Tağan" (Arabic)
+Тайбек:Тайбек NP-ANT-M; ! "Taybek" (Kazakh)
+Такыр:Такыр NP-ANT-M; ! "Taqır" (Arabic)
 Талгат:Талгат NP-ANT-M; ! "Talğat" (Arabic)
 Талмас:Талмас NP-ANT-M; ! "Talmas" (Kazakh)
 Тамара:Тамара NP-ANT-F; ! "Tamara" (Arabic)
+Таңшолпан:Таңшолпан NP-ANT-F; ! "Taŋsholpan" (Kazakh)
+Таргын:Таргын NP-ANT-M; ! "Tarğın" (Arabic)
 Татьяна:Татьяна NP-ANT-F ; ! "" 
 Тахиржан:Тахиржан NP-ANT-M ; ! ""
 Тахир:Тахир NP-ANT-M ; ! ""
 Такежан:Такежан NP-ANT-M ; ! ""
+Талип:Талип NP-ANT-M; ! "Tälip" (Arabic)
+Темирбек:Темирбек NP-ANT-M; ! "Temirbek" 
+Темирлан:Темирлан NP-ANT-M; ! "Temirlan" 
 Тимур:Тимур NP-ANT-M ; ! ""
+Тогжан:Тогжан NP-ANT-F; ! "Toğjan" (Kazakh)
 Тойкен:Тойкен NP-ANT-M ; ! ""
+Толганай:Толганай NP-ANT-F; ! "Tolğanay" (Kazakh)
 Томирис:Томирис NP-ANT-F; ! "Tomıyrıys" (Arabic)
 Тони:Тони NP-ANT-M ; ! ""
 Төлеген:Төлеген NP-ANT-M ; ! ""
+Уалиахмет:Уалиахмет NP-ANT-M; ! "Wäliyaxmet" (Arabic)
+Уали:Уали NP-ANT-M; ! "Wäliy" (Arabic)
+Уалихан:Уалихан NP-ANT-M; ! "Wäliyxan" (Arabic)
 Уильям:Уильям NP-ANT-M ; ! ""
 Уитнесс:Уитнесс NP-ANT-M ; ! ""
 Умида:Умида NP-ANT-F ; ! "" 
 Үкилай:Үкилай NP-ANT-F ; ! "" 
+Үркимбай:Үркимбай NP-ANT-M ; ! "Ürkimbay"
 Үркыз:Үркыз NP-ANT-F ; ! "" 
+Үсен:Үсен NP-ANT-M; ! "Üsen" (Arabic)
+Улан:Улан NP-ANT-M; ! "Ulan" (Arabic)
+Улбала:Улбала NP-ANT-F; ! "Ulbala" (Kazakh)
+Улжан:Улжан NP-ANT-F; ! "Uljan" (Persian)
+Улжан:Улжан NP-ANT-F ; ! "Uljan"  (sometimes M?)
+Улыкбек:Улыкбек NP-ANT-M; ! "Ulıqbek" (Kazakh)
 Фазыл:Фазыл NP-ANT-M; ! "Fazıl" 
+Фарида:Фарида NP-ANT-F; ! "Farida" (Arabic)
+Фариза:Фариза NP-ANT-F; ! "Fariza" (Arabic)
+Фатима:Фатима NP-ANT-F; ! "Fatima" (Arabic)
+Фаузия:Фаузия NP-ANT-F; ! "Fauziya" (Arabic)
 Фарит:Фарит NP-ANT-M ; ! ""
 Феликс:Феликс NP-ANT-M ; ! ""
 Фидель:Фидель NP-ANT-M ; ! ""
+Хадиша:Хадиша NP-ANT-F; ! "Xadıysha" (Arabic)
+Хайдар:Хайдар NP-ANT-M; ! "Xaydar" (Arabic)
+Хаким:Хаким NP-ANT-M; ! "Xakim" 
+Халел:Халел NP-ANT-M; ! "Xalel" (Arabic)
+Халил:Халил NP-ANT-M; ! "Xalıyl" (Arabic)
+Хамза:Хамза NP-ANT-M; ! "Xamza" (Arabic)
 Хамид:Хамид NP-ANT-M ; ! ""
 Хамит:Хамит NP-ANT-M ; ! ""
 Хамит:Хамит NP-ANT-M; ! "Xamıyt" (Arabic)
+Хангелди:Хангелди NP-ANT-M; ! "Xangeldi" (Kazakh)
+Ханифа:Ханифа NP-ANT-F; ! "Xanifa" (Arabic)
+Хасан:Хасан NP-ANT-M; ! "Xasan" (Arabic)
 Хасен:Хасен NP-ANT-M ; ! ""
+Хатифа:Хатифа NP-ANT-F; ! "Xatifa" (Arabic)
 Хафиз:Хафиз NP-ANT-M; ! "Xafiz" (Arabic)
 Хилал:Хилал NP-ANT-M ; ! ""
 Хиллари:Хиллари NP-ANT-F ; ! "" 
 Хосе:Хосе NP-ANT-M ; ! ""
 Харон:Харон NP-ANT-M ; ! ""
 Шавкат:Шавкат NP-ANT-M ; ! ""
+Шакарим:Шакарим NP-ANT-M; ! "Shakarim" (Arabic)
 Шаукат:Шаукат NP-ANT-M ; ! ""
+Шакарим:Шакарим NP-ANT-M; ! "Shäkärim" (Arabic)
 Шамши:Шамши NP-ANT-M ; ! ""
 Шимон:Шимон NP-ANT-M ; ! "Simon"
+Шолпан:Шолпан NP-ANT-F; ! "Sholpan" (Kazakh)
 Шугайып:Шугайып NP-ANT-M ; ! ""
 Шынар:Шынар NP-ANT-F; ! "Shınar" (Kazakh)
 Шырын:Шырын NP-ANT-F; ! "Shırın" (Arabic)
 Ыбырай:Ыбырай NP-ANT-M; ! "Ibıray" (Arabic)
+Ыдырыс:Ыдырыс NP-ANT-M; ! "Idırıs" (Arabic)
 Ызгутты:Ызгутты NP-ANT-M ; ! ""
+Ыксан:Ыксан NP-ANT-M; ! "Iqsan" (Arabic)
 Ыргызбай:Ыргызбай NP-ANT-M ; ! ""
+Ыскак:Ыскак NP-ANT-M; ! "Isqaq" (Arabic)
 Эдуард:Эдуард NP-ANT-M ; ! ""
 Эдуард:Эдуард NP-ANT-M; ! "Eduard" (Old High German)
 Эктор:Эктор NP-ANT-M ; ! ""
@@ -3851,24 +4244,36 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Юрий:Юрий NP-ANT-M ; ! ""
 Юсып:Юсып NP-ANT-M ; ! ""
 Ягкуп:Ягкуп NP-ANT-M ; ! ""
+Яхуда:Яхуда NP-ANT-M ; ! "Yahuda"
+Даурен:Даурен NP-ANT-M ; ! ""
 Ержан:Ержан NP-ANT-M ; ! ""
 Мира:Мира NP-ANT-F ; ! ""
 Барабба:Барабба NP-ANT-M ; ! ""
+Месахаб:Месахаб NP-ANT-M ; ! ""
 Абайжан:Абайжан NP-ANT-M ; ! ""
+Жумагул:Жумагул NP-ANT-M ; ! ""
+Сарсен:Сарсен NP-ANT-M ; ! ""
+Тектигул:Тектигул NP-ANT-M ; ! ""
 Топай:Топай NP-ANT-M ; ! ""
+Туңгатар:Туңгатар NP-ANT-M ; ! ""
 Айжангүл:Айжангүл NP-ANT-F ; ! ""
+Сагынай:Сагынай NP-ANT-F ; ! ""
 Арон:Арон NP-ANT-M ; ! ""
 Башар:Башар NP-ANT-M ; ! ""
+Меделбек:Меделбек NP-ANT-M ; ! ""
 Ахмет:Ахмет NP-ANT-M ; ! "Axmet"
 Мухаммед:Мухаммед NP-ANT-M ;
 Нух:Нух NP-ANT-M ;
 Манас:Манас NP-ANT-M ;
+Ардак:Ардак NP-ANT-MF ;
 Мустафа:Мустафа NP-ANT-M ;
 Махмуд:Махмуд NP-ANT-M ;
 Чыңгыз:Чыңгыз NP-ANT-M ;
 Чыңгызхан:Чыңгызхан NP-ANT-M ;
 Роза:Роза NP-ANT-M ;
+Бакай:Бакай NP-ANT-M ;
 Александр:Александр NP-ANT-M ;
+Жакып:Жакып NP-ANT-M ;
 Азамат:Азамат NP-ANT-M ;
 Махмуд:Махмуд NP-ANT-M ;
 Курманбек:Курманбек NP-ANT-M ;
@@ -3880,6 +4285,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 Абылай:Абылай NP-ANT-M ;
 Мурат:Мурат NP-ANT-M ;
 Максим:Максим NP-ANT-M ;
+Петир:Петир NP-ANT-M ; ! "Peter"
+Илияс:Илияс NP-ANT-M ; !
 Темел:Темел NP-ANT-M ; ! "Temel (Turkish name)"
 Юрген:Юрген NP-ANT-M; ! "Jürgen (German name)"
 Ханс:Ханс NP-ANT-M; ! "Hans (German name)"
@@ -3889,35 +4296,1991 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 София:София NP-ANT-F ; ! "Sofija"
 Анна:Анна NP-ANT-F ;
 Аня:Аня NP-ANT-F ;
+Рахила:Рахила NP-ANT-F ; ! "Rachel"
 Айгүл:Айгүл NP-ANT-F ;
 Гүлнара:Гүлнара NP-ANT-F ;
+Айша:Айша NP-ANT-F ;
+Васильевич:Василье NP-PAT-VICH ; ! ""
+Иванович:Ивано NP-PAT-VICH ; ! ""
+Павлович:Павло NP-PAT-VICH ; ! ""
+Сергеевич:Сергее NP-PAT-VICH ; ! ""
+Янукович:Януко NP-PAT-VICH ; ! ""
+Янукович:Януко NP-PAT-VICH ; ! ""
+Толстой:Толстой NP-COG-M ; ! ""
 Котил:Котил NP-COG-M ; ! "Kotil (Turkish surname)"
 Клоп:Клоп NP-COG-M ; ! "Klopp (German surname)"
 Ватзке:Ватзке NP-COG-M; ! "Watzke (German surname)"
+Авраменко:Авраменко NP-COG-MF ; ! ""
+Аккулы:Аккулы NP-COG-MF ; ! ""
+Анищенко:Анищенко NP-COG-MF ; ! ""
+Антоненко:Антоненко NP-COG-MF ; ! ""
+Атрошенко:Атрошенко NP-COG-MF ; ! ""
+Ахмадинежад:Ахмадинежад NP-COG-MF ; ! ""
+Ал%-Истахри:Ал%-Истахри NP-COG-MF ; ! ""
+Ал%-Истахри:Ал%-Истахри NP-COG-MF ; ! ""
+Ал%-Масуди:Ал%-Масуди NP-COG-MF ; ! ""
+Ал%-Фараби:Ал%-Фараби NP-COG-MF ; ! ""
+Бабамкожа:Бабамкожа NP-COG-MF ; ! ""
+Бабенко:Бабенко NP-COG-MF ; ! ""
+Байден:Байден NP-COG-MF ; ! ""
+Банко:Банко NP-COG-MF ; ! ""
+Бартушка:Бартушка NP-COG-MF ; ! ""
+Бестай:Бестай NP-COG-MF ; ! ""
+Бланко:Бланко NP-COG-MF ; ! ""
+Бранко:Бранко NP-COG-MF ; ! ""
+Бурсик:Бурсик NP-COG-MF ; ! ""
+Бусленко:Бусленко NP-COG-MF ; ! ""
+Бутенко:Бутенко NP-COG-MF ; ! ""
+Буценко:Буценко NP-COG-MF ; ! ""
+Васенко:Васенко NP-COG-MF ; ! ""
+Василенко:Василенко NP-COG-MF ; ! ""
+Вдовиченко:Вдовиченко NP-COG-MF ; ! ""
+Веремеенко:Веремеенко NP-COG-MF ; ! ""
+Викторенко:Викторенко NP-COG-MF ; ! ""
+Витренко:Витренко NP-COG-MF ; ! ""
+Владыченко:Владыченко NP-COG-MF ; ! ""
+Выграненко:Выграненко NP-COG-MF ; ! ""
+Гедмин:Гедмин NP-COG-MF ; ! ""
+Гейтс:Гейтс NP-COG-MF ; ! ""
+Генко:Генко NP-COG-MF ; ! ""
+Герасименко:Герасименко NP-COG-MF ; ! ""
+Ги% Мун:Ги% Мун NP-COG-MF ; ! ""
+Гиффен:Гиффен NP-COG-MF ; ! ""
+Глущенко:Глущенко NP-COG-MF ; ! ""
+Гнеденко:Гнеденко NP-COG-MF ; ! ""
+Гоголь:Гоголь NP-COG-MF ; ! ""
+Голубченко:Голубченко NP-COG-MF ; ! ""
+Горленко:Горленко NP-COG-MF ; ! ""
+Григоренко:Григоренко NP-COG-MF ; ! ""
+Гриненко:Гриненко NP-COG-MF ; ! ""
+Гриценко:Гриценко NP-COG-MF ; ! ""
+Гузенко:Гузенко NP-COG-MF ; ! ""
+Гуленко:Гуленко NP-COG-MF ; ! ""
+Гурченко:Гурченко NP-COG-MF ; ! ""
+Данко:Данко NP-COG-MF ; ! ""
+Данченко:Данченко NP-COG-MF ; ! ""
+Дворяненко:Дворяненко NP-COG-MF ; ! ""
+Демченко:Демченко NP-COG-MF ; ! ""
+Денисенко:Денисенко NP-COG-MF ; ! ""
+Дзюнко:Дзюнко NP-COG-MF ; ! ""
+Дмитренко:Дмитренко NP-COG-MF ; ! ""
+Довженко:Довженко NP-COG-MF ; ! ""
+Донченко:Донченко NP-COG-MF ; ! ""
+Доренко:Доренко NP-COG-MF ; ! ""
+Доценко:Доценко NP-COG-MF ; ! ""
+Дубровченко:Дубровченко NP-COG-MF ; ! ""
+Думенко:Думенко NP-COG-MF ; ! ""
+Дыбенко:Дыбенко NP-COG-MF ; ! ""
+Дьяченко:Дьяченко NP-COG-MF ; ! ""
+Дяченко:Дяченко NP-COG-MF ; ! ""
+Жовтис:Жовтис%{☭%} NP-COG-MF ; ! ""
+Жовтис:Жовтис%{☭%} NP-COG-MF ; ! ""
+Захарченко:Захарченко NP-COG-MF ; ! ""
+Здоровенко:Здоровенко NP-COG-MF ; ! ""
+Зинченко:Зинченко NP-COG-MF ; ! ""
+Зощенко:Зощенко NP-COG-MF ; ! ""
+Ибн% Руста:Ибн% Руста NP-COG-MF ; ! ""
+Ибн% Хордадбех:Ибн% Хордадбех NP-COG-MF ; ! ""
+Иванко:Иванко NP-COG-MF ; ! ""
+Иванченко:Иванченко NP-COG-MF ; ! ""
+Иващенко:Иващенко NP-COG-MF ; ! ""
+Ивченко:Ивченко NP-COG-MF ; ! ""
+Ильющенко:Ильющенко NP-COG-MF ; ! ""
+Карзай:Карзай NP-COG-MF ; ! ""
+Карпенко:Карпенко NP-COG-MF ; ! ""
+Кастро:Кастро NP-COG-MF ; ! ""
+Китаенко:Китаенко NP-COG-MF ; ! ""
+Клименко:Клименко NP-COG-MF ; ! ""
+Клинтон:Клинтон NP-COG-MF ; ! ""
+Коваленко:Коваленко NP-COG-MF ; ! ""
+Колесниченко:Колесниченко NP-COG-MF ; ! ""
+Кондратенко:Кондратенко NP-COG-MF ; ! ""
+Кононенко:Кононенко NP-COG-MF ; ! ""
+Короленко:Короленко NP-COG-MF ; ! ""
+Кравченко:Кравченко NP-COG-MF ; ! ""
+Крамаренко:Крамаренко NP-COG-MF ; ! ""
+Крыленко:Крыленко NP-COG-MF ; ! ""
+Кузьменко:Кузьменко NP-COG-MF ; ! ""
+Курзенко:Курзенко NP-COG-MF ; ! ""
+Кучеренко:Кучеренко NP-COG-MF ; ! ""
+Кушнаренко:Кушнаренко NP-COG-MF ; ! ""
+Кэмерон:Кэмерон NP-COG-MF ; ! ""
+Кунанбай:Кунанбай NP-COG-MF ; ! "Qunanbay"
+Лавриненко:Лавриненко NP-COG-MF ; ! ""
+Лазаренко:Лазаренко NP-COG-MF ; ! ""
+Левченко:Левченко NP-COG-MF ; ! ""
+Лелюшенко:Лелюшенко NP-COG-MF ; ! ""
+Лещенко:Лещенко NP-COG-MF ; ! ""
+Ли:Ли NP-COG-MF ; ! ""
+Логвиненко:Логвиненко NP-COG-MF ; ! ""
+Лукашенко:Лукашенко NP-COG-MF ; ! ""
+Лукьяненко:Лукьяненко NP-COG-MF ; ! ""
+Луценко:Луценко NP-COG-MF ; ! ""
+Лысенко:Лысенко NP-COG-MF ; ! ""
+Лю:Лю NP-COG-MF ; ! ""
+Мавлоний:Мавлоний NP-COG-MF ; ! ""
+Макаренко:Макаренко NP-COG-MF ; ! ""
+Максименко:Максименко NP-COG-MF ; ! ""
+Манко:Манко NP-COG-MF ; ! ""
+Маргулан:Маргулан NP-COG-MF ; ! ""
+Маркс:Маркс NP-COG-MF ; ! ""
+Марченко:Марченко NP-COG-MF ; ! ""
+Матвеенко:Матвеенко NP-COG-MF ; ! ""
+Матвиенко:Матвиенко NP-COG-MF ; ! ""
+Машкевич:Машкевич NP-COG-MF ; ! ""
+Мендель:Мендель NP-COG-MF ; ! ""
+Меркель:Меркель NP-COG-MF ; ! ""
+Мирошниченко:Мирошниченко NP-COG-MF ; ! ""
+Михайленко:Михайленко NP-COG-MF ; ! ""
+Мокиенко:Мокиенко NP-COG-MF ; ! ""
+Москаленко:Москаленко NP-COG-MF ; ! ""
+Муравленко:Муравленко NP-COG-MF ; ! ""
+Нахименко:Нахименко NP-COG-MF ; ! ""
+Никитенко:Никитенко NP-COG-MF ; ! ""
+Никитченко:Никитченко NP-COG-MF ; ! ""
+Николаенко:Николаенко NP-COG-MF ; ! ""
+Нобель:Нобель NP-COG-MF ; ! ""
+Обама:Обама NP-COG-MF ; ! "Obama"
+Овсеенко:Овсеенко NP-COG-MF ; ! ""
+Онищенко:Онищенко NP-COG-MF ; ! ""
+Онуфриенко:Онуфриенко NP-COG-MF ; ! ""
+Основьяненко:Основьяненко NP-COG-MF ; ! ""
+Панеке:Панеке NP-COG-MF ; ! ""
+Пахоменко:Пахоменко NP-COG-MF ; ! ""
+Петреус:Петреус NP-COG-MF ; ! ""
+Платини:Платини NP-COG-MF ; ! "Platini"
+Полтавченко:Полтавченко NP-COG-MF ; ! ""
+Порошенко:Порошенко NP-COG-MF ; ! ""
+Пришепенко:Пришепенко NP-COG-MF ; ! ""
+Прохоренко:Прохоренко NP-COG-MF ; ! ""
+Пустовойтенко:Пустовойтенко NP-COG-MF ; ! ""
+Радченко:Радченко NP-COG-MF ; ! ""
+Ревенко:Ревенко NP-COG-MF ; ! ""
+Родзянко:Родзянко NP-COG-MF ; ! ""
+Родченко:Родченко NP-COG-MF ; ! ""
+Романенко:Романенко NP-COG-MF ; ! ""
+Ронко:Ронко NP-COG-MF ; ! ""
+Росковшенко:Росковшенко NP-COG-MF ; ! ""
+Руденко:Руденко NP-COG-MF ; ! ""
+Рыженко:Рыженко NP-COG-MF ; ! ""
+Савченко:Савченко NP-COG-MF ; ! ""
+Санко:Санко NP-COG-MF ; ! ""
+Саркози:Саркози NP-COG-MF ; ! ""
+Сатыбалды:Сатыбалды NP-COG-MF ; ! ""
+Сарсенбайулы:Сарсенбайулы NP-COG-MF ; ! ""
+Святенко:Святенко NP-COG-MF ; ! ""
+Семененко:Семененко NP-COG-MF ; ! ""
+Сиданко:Сиданко NP-COG-MF ; ! ""
+Сидоренко:Сидоренко NP-COG-MF ; ! ""
+Силенко:Силенко NP-COG-MF ; ! ""
+Сонко:Сонко NP-COG-MF ; ! ""
+Старченко:Старченко NP-COG-MF ; ! ""
+Сюй:Сюй NP-COG-MF ; ! ""
+Телесинко:Телесинко NP-COG-MF ; ! ""
+Теличенко:Теличенко NP-COG-MF ; ! ""
+Тимошенко:Тимошенко NP-COG-MF ; ! ""
+Титаренко:Титаренко NP-COG-MF ; ! ""
+Ткаченко:Ткаченко NP-COG-MF ; ! ""
+Туякбай:Туякбай NP-COG-MF ; ! ""
+Угоренко:Угоренко NP-COG-MF ; ! ""
+Федосеенко:Федосеенко NP-COG-MF ; ! ""
+Филиппенко:Филиппенко NP-COG-MF ; ! ""
+Фламенко:Фламенко NP-COG-MF ; ! ""
+Фоменко:Фоменко NP-COG-MF ; ! ""
+Франко:Франко NP-COG-MF ; ! ""
+Фурсенко:Фурсенко NP-COG-MF ; ! ""
+Ханко:Ханко NP-COG-MF ; ! ""
+Хоменко:Хоменко NP-COG-MF ; ! ""
+Христенко:Христенко NP-COG-MF ; ! ""
+Ху:Ху NP-COG-MF ; ! ""
+Хьюман:Хьюман NP-COG-MF ; ! ""
+Червиченко:Червиченко NP-COG-MF ; ! ""
+Червоненко:Червоненко NP-COG-MF ; ! ""
+Черевиченко:Черевиченко NP-COG-MF ; ! ""
+Черенко:Черенко NP-COG-MF ; ! ""
+Черненко:Черненко NP-COG-MF ; ! ""
+Шварценберг:Шварценберг NP-COG-MF ; ! ""
+Шевченко:Шевченко NP-COG-MF ; ! ""
+Шевченко:Шевченко NP-COG-MF ; ! ""
+Шекспир:Шекспир NP-COG-MF ; ! ""
+Шинкаренко:Шинкаренко NP-COG-MF ; ! ""
+Шинко:Шинко NP-COG-MF ; ! ""
+Шуляченко:Шуляченко NP-COG-MF ; ! ""
+Эванс:Эванс NP-COG-MF ; ! ""
+Ющенко:Ющенко NP-COG-MF ; ! ""
+Якеменко:Якеменко NP-COG-MF ; ! ""
+Яковенко:Яковенко NP-COG-MF ; ! ""
+Якубенко:Якубенко NP-COG-MF ; ! ""
+Янко:Янко NP-COG-MF ; ! ""
+Янукович:Янукович NP-COG-MF ; ! ""
+Янукович:Янукович NP-COG-MF ; ! ""
+Яценко:Яценко NP-COG-MF ; ! ""
+Ассанж:Ассанж NP-COG-MF ; ! ""
+Аталай:Аталай NP-COG-MF ; ! ""
+Кей:Кей NP-COG-MF ; ! ""
+Холбрук:Холбрук NP-COG-MF ; ! ""
+Жовтис:Жовтис NP-COG-MF ; ! ""
+Жовтис:Жовтис NP-COG-MF ; ! ""
+Ни:Ни NP-COG-MF ; ! ""
+Бек:Бек NP-COG-MF ; ! ""
+Бек:Бек NP-COG-MF ; ! ""
+Бекер:Бекер NP-COG-MF ; ! ""
+Максуди:Максуди NP-COG-MF ; ! ""
+Маршал:Маршал NP-COG-MF ; ! ""
+Фридман:Фридман NP-COG-MF ; ! ""
+Асад:Асад NP-COG-MF ; ! ""
+Блэр:Блэр NP-COG-MF ; ! ""
+Ромни:Ромни NP-COG-MF ; ! ""
+Челах:Челах NP-COG-MF ; ! ""
+Абайдилданов:Абайдилданов NP-COG-OB ; ! ""
+Абдолов:Абдолов NP-COG-OB ; ! ""
+Абдрахманов:Абдрахманов NP-COG-OB ; ! ""
+Абдужапаров:Абдужапаров NP-COG-OB ; ! ""
+Абдулатипов:Абдулатипов NP-COG-OB ; ! ""
+Абдуллаев:Абдуллаев NP-COG-OB ; ! ""
+Абильдинов:Абильдинов NP-COG-OB ; ! ""
+Аблякимов:Аблякимов NP-COG-OB ; ! ""
+Абрамов:Абрамов NP-COG-OB ; ! ""
+Абрумов:Абрумов NP-COG-OB ; ! ""
+Аваров:Аваров NP-COG-OB ; ! ""
+Авдеев:Авдеев NP-COG-OB ; ! ""
+Агаев:Агаев NP-COG-OB ; ! ""
+Агаков:Агаков NP-COG-OB ; ! ""
+Агафонов:Агафонов NP-COG-OB ; ! ""
+Агеев:Агеев NP-COG-OB ; ! ""
+Агуреев:Агуреев NP-COG-OB ; ! ""
+Агайсенов:Агайсенов NP-COG-OB ; ! ""
+Адюков:Адюков NP-COG-OB ; ! ""
+Азизов:Азизов NP-COG-OB ; ! ""
+Азимов:Азимов NP-COG-OB ; ! ""
+Азов:Азов NP-COG-OB ; ! ""
+Айвенов:Айвенов NP-COG-OB ; ! ""
+Айдарбаев:Айдарбаев NP-COG-OB ; ! ""
+Айдаров:Айдаров NP-COG-OB ; ! ""
+Айжанов:Айжанов NP-COG-OB ; ! ""
+Аймаганов:Аймаганов NP-COG-OB ; ! ""
+Айманов:Айманов NP-COG-OB ; ! ""
+Аймауытов:Аймауытов NP-COG-OB ; ! ""
+Айнабеков:Айнабеков NP-COG-OB ; ! ""
+Айнагулов:Айнагулов NP-COG-OB ; ! ""
+Айтбаев:Айтбаев NP-COG-OB ; ! ""
+Айткулов:Айткулов NP-COG-OB ; ! ""
+Айтматов:Айтматов NP-COG-OB ; ! ""
+Айшуаков:Айшуаков NP-COG-OB ; ! ""
+Аксаков:Аксаков NP-COG-OB ; ! ""
+Аксёнов:Аксёнов NP-COG-OB ; ! ""
+Акаев:Акаев NP-COG-OB ; ! ""
+Акаев:Акаев NP-COG-OB ; ! ""
+Аксакалов:Аксакалов NP-COG-OB ; ! ""
+Акынжанов:Акынжанов NP-COG-OB ; ! ""
+Акышев:Акышев NP-COG-OB ; ! ""
+Алангов:Алангов NP-COG-OB ; ! ""
+Аланов:Аланов NP-COG-OB ; ! ""
+Алгереев:Алгереев NP-COG-OB ; ! ""
+Алдажаров:Алдажаров NP-COG-OB ; ! ""
+Алдамуратов:Алдамуратов NP-COG-OB ; ! ""
+Александров:Александров NP-COG-OB ; ! ""
+Алексеев:Алексеев NP-COG-OB ; ! ""
+Алимасов:Алимасов NP-COG-OB ; ! ""
+Алипинов:Алипинов NP-COG-OB ; ! ""
+Алмабеков:Алмабеков NP-COG-OB ; ! ""
+Алматов:Алматов NP-COG-OB ; ! ""
+Алпысбаев:Алпысбаев NP-COG-OB ; ! ""
+Алтынбаев:Алтынбаев NP-COG-OB ; ! ""
+Алшымбаев:Алшымбаев NP-COG-OB ; ! ""
+Алымов:Алымов NP-COG-OB ; ! ""
+Альмяшев:Альмяшев NP-COG-OB ; ! ""
+Альтов:Альтов NP-COG-OB ; ! ""
+Аманбаев:Аманбаев NP-COG-OB ; ! ""
+Аманджулов:Аманджулов NP-COG-OB ; ! ""
+Амандосов:Амандосов NP-COG-OB ; ! ""
+Аманжолов:Аманжолов NP-COG-OB ; ! ""
+Аманиязов:Аманиязов NP-COG-OB ; ! ""
+Аманов:Аманов NP-COG-OB ; ! ""
+Аминев:Аминев NP-COG-OB ; ! ""
+Амиров:Амиров NP-COG-OB ; ! ""
+Ананьев:Ананьев NP-COG-OB ; ! ""
+Андреев:Андреев NP-COG-OB ; ! ""
+Андронов:Андронов NP-COG-OB ; ! ""
+Андропов:Андропов NP-COG-OB ; ! ""
+Анисимов:Анисимов NP-COG-OB ; ! ""
+Аннамурадов:Аннамурадов NP-COG-OB ; ! ""
+Анненков:Анненков NP-COG-OB ; ! ""
+Антипов:Антипов NP-COG-OB ; ! ""
+Антонов:Антонов NP-COG-OB ; ! ""
+Аппанов:Аппанов NP-COG-OB ; ! ""
+Аралбаев:Аралбаев NP-COG-OB ; ! ""
+Арамнов:Арамнов NP-COG-OB ; ! ""
+Арапов:Арапов NP-COG-OB ; ! ""
+Аргынбаев:Аргынбаев NP-COG-OB ; ! ""
+Ардатов:Ардатов NP-COG-OB ; ! ""
+Арипов:Арипов NP-COG-OB ; ! ""
+Аристов:Аристов NP-COG-OB ; ! ""
+Арсалиев:Арсалиев NP-COG-OB ; ! ""
+Арсентьев:Арсентьев NP-COG-OB ; ! ""
+Арсланов:Арсланов NP-COG-OB ; ! ""
+Артаев:Артаев NP-COG-OB ; ! ""
+Артамонов:Артамонов NP-COG-OB ; ! ""
+Артеев:Артеев NP-COG-OB ; ! ""
+Артемьев:Артемьев NP-COG-OB ; ! ""
+Архандеев:Архандеев NP-COG-OB ; ! ""
+Архипов:Архипов NP-COG-OB ; ! ""
+Арцыбышев:Арцыбышев NP-COG-OB ; ! ""
+Аршинов:Аршинов NP-COG-OB ; ! ""
+Арынов:Арынов NP-COG-OB ; ! ""
+Арыстанов:Арыстанов NP-COG-OB ; ! ""
+Асанов:Асанов NP-COG-OB ; ! ""
+Асимов:Асимов NP-COG-OB ; ! ""
+Аскаров:Аскаров NP-COG-OB ; ! ""
+Аспандиаров:Аспандиаров NP-COG-OB ; ! ""
+Асылбеков:Асылбеков NP-COG-OB ; ! ""
+Асылов:Асылов NP-COG-OB ; ! ""
+Атабаев:Атабаев NP-COG-OB ; ! ""
+Атабаев:Атабаев NP-COG-OB ; ! ""
+Атабеков:Атабеков NP-COG-OB ; ! ""
+Атагозиев:Атагозиев NP-COG-OB ; ! ""
+Атаманов:Атаманов NP-COG-OB ; ! ""
+Атанасов:Атанасов NP-COG-OB ; ! ""
+Атаниязов:Атаниязов NP-COG-OB ; ! ""
+Атласов:Атласов NP-COG-OB ; ! ""
+Атрохов:Атрохов NP-COG-OB ; ! ""
+Атшабаров:Атшабаров NP-COG-OB ; ! ""
+Атшыбаев:Атшыбаев NP-COG-OB ; ! ""
+Афанасьев:Афанасьев NP-COG-OB ; ! ""
+Аханов:Аханов NP-COG-OB ; ! ""
+Ахмадиев:Ахмадиев NP-COG-OB ; ! ""
+Ахматканов:Ахматканов NP-COG-OB ; ! ""
+Ахматов:Ахматов NP-COG-OB ; ! ""
+Ахмедияров:Ахмедияров NP-COG-OB ; ! ""
+Ахмедов:Ахмедов NP-COG-OB ; ! ""
+Ахмеров:Ахмеров NP-COG-OB ; ! ""
+Ахметбеков:Ахметбеков NP-COG-OB ; ! ""
+Ахметжанов:Ахметжанов NP-COG-OB ; ! ""
+Ахметов:Ахметов NP-COG-OB ; ! ""
+Ахметов:Ахметов NP-COG-OB ; ! ""
+Ахметов:Ахметов NP-COG-OB ; ! ""
+Ашимханов:Ашимханов NP-COG-OB ; ! ""
+Аширбаев:Аширбаев NP-COG-OB ; ! ""
+Ашкеров:Ашкеров NP-COG-OB ; ! ""
+Аюханов:Аюханов NP-COG-OB ; ! ""
+Абишев:Абишев NP-COG-OB ; ! ""
+Абдиев:Абдиев NP-COG-OB ; ! ""
+Абдиков:Абдиков NP-COG-OB ; ! ""
+Абдикалыков:Абдикалыков NP-COG-OB ; ! ""
+Абдилдин:Абдилдин NP-COG-IN ; ! ""
+Абдилманов:Абдилманов NP-COG-OB ; ! ""
+Абдирахманов:Абдирахманов NP-COG-OB ; ! ""
+Абдирахманов:Абдирахманов NP-COG-OB ; ! ""
+Абдирахманов:Абдирахманов NP-COG-OB ; ! ""
+Абдирашев:Абдирашев NP-COG-OB ; ! ""
+Абдиров:Абдиров NP-COG-OB ; ! ""
+Абикаев:Абикаев NP-COG-OB ; ! ""
+Абилдаев:Абилдаев NP-COG-OB ; ! ""
+Абилев:Абилев NP-COG-OB ; ! ""
+Абилкасымов:Абилкасымов NP-COG-OB ; ! ""
+Абилов:Абилов NP-COG-OB ; ! ""
+Абилов:Абилов NP-COG-OB ; ! ""
+Абилханов:Абилханов NP-COG-OB ; ! ""
+Абиров:Абиров NP-COG-OB ; ! ""
+Аблязов:Аблязов NP-COG-OB ; ! ""
+Абуталиев:Абуталиев NP-COG-OB ; ! ""
+Адилев:Адилев NP-COG-OB ; ! ""
+Ажигалиев:Ажигалиев NP-COG-OB ; ! ""
+Азимбаев:Азимбаев NP-COG-OB ; ! ""
+Азирбаев:Азирбаев NP-COG-OB ; ! ""
+Айтенов:Айтенов NP-COG-OB ; ! ""
+Алжанов:Алжанов NP-COG-OB ; ! ""
+Алиев:Алиев NP-COG-OB ; ! ""
+Алиев:Алиев NP-COG-OB ; ! ""
+Алиев:Алиев NP-COG-OB ; ! ""
+Алибеков:Алибеков NP-COG-OB ; ! ""
+Алимбаев:Алимбаев NP-COG-OB ; ! ""
+Алимбетов:Алимбетов NP-COG-OB ; ! ""
+Алимжанов:Алимжанов NP-COG-OB ; ! ""
+Амиров:Амиров NP-COG-OB ; ! ""
+Аубакиров:Аубакиров NP-COG-OB ; ! ""
+Аубөкиров:Аубөкиров NP-COG-OB ; ! ""
+Ауезов:Ауезов NP-COG-OB ; ! ""
+Ашекеев:Ашекеев NP-COG-OB ; ! ""
+Ашеккев:Ашеккев NP-COG-OB ; ! ""
+Ашимов:Ашимов NP-COG-OB ; ! ""
+Аширбаев:Аширбаев NP-COG-OB ; ! ""
+Бабажанов:Бабажанов NP-COG-OB ; ! ""
+Бавдинов:Бавдинов NP-COG-OB ; ! ""
+Багланов:Багланов NP-COG-OB ; ! ""
+Базаев:Базаев NP-COG-OB ; ! ""
+Базарбаев:Базарбаев NP-COG-OB ; ! ""
+Байбосынов:Байбосынов NP-COG-OB ; ! ""
+Байгелдиев:Байгелдиев NP-COG-OB ; ! ""
+Байдеряков:Байдеряков NP-COG-OB ; ! ""
+Байдуков:Байдуков NP-COG-OB ; ! ""
+Байжанов:Байжанов NP-COG-OB ; ! ""
+Байзаков:Байзаков NP-COG-OB ; ! ""
+Байков:Байков NP-COG-OB ; ! ""
+Байкадамов:Байкадамов NP-COG-OB ; ! ""
+Байкоңыров:Байкоңыров NP-COG-OB ; ! ""
+Баймагамбетов:Баймагамбетов NP-COG-OB ; ! ""
+Баймаганбетов:Баймаганбетов NP-COG-OB ; ! ""
+Байменов:Байменов NP-COG-OB ; ! ""
+Баймуратов:Баймуратов NP-COG-OB ; ! ""
+Баймырзаев:Баймырзаев NP-COG-OB ; ! ""
+Байпаков:Байпаков NP-COG-OB ; ! ""
+Байсаков:Байсаков NP-COG-OB ; ! ""
+Байсейитов:Байсейитов NP-COG-OB ; ! ""
+Байсейитов:Байсейитов NP-COG-OB ; ! ""
+Байтурсынов:Байтурсынов NP-COG-OB ; ! ""
+Байшулаков:Байшулаков NP-COG-OB ; ! ""
+Байысов:Байысов NP-COG-OB ; ! ""
+Бакиев:Бакиев NP-COG-OB ; ! "Bakiyev"
+Бакчиев:Бакчиев NP-COG-OB ; ! ""
+Бакбергенов:Бакбергенов NP-COG-OB ; ! ""
+Бактаев:Бактаев NP-COG-OB ; ! ""
+Бакыткереев:Бакыткереев NP-COG-OB ; ! ""
+Балажанов:Балажанов NP-COG-OB ; ! ""
+Балакаев:Балакаев NP-COG-OB ; ! ""
+Балгабаев:Балгабаев NP-COG-OB ; ! ""
+Балкашев:Балкашев NP-COG-OB ; ! ""
+Балмагамбетов:Балмагамбетов NP-COG-OB ; ! ""
+Балтабеков:Балтабеков NP-COG-OB ; ! ""
+Балтаев:Балтаев NP-COG-OB ; ! ""
+Балтасов:Балтасов NP-COG-OB ; ! ""
+Балтиев:Балтиев NP-COG-OB ; ! ""
+Бапов:Бапов NP-COG-OB ; ! ""
+Бараев:Бараев NP-COG-OB ; ! ""
+Баранов:Баранов NP-COG-OB ; ! ""
+Бардасов:Бардасов NP-COG-OB ; ! ""
+Барышников:Барышников NP-COG-OB ; ! ""
+Баскаков:Баскаков NP-COG-OB ; ! ""
+Баспаев:Баспаев NP-COG-OB ; ! ""
+Басымов:Басымов NP-COG-OB ; ! ""
+Баташов:Баташов NP-COG-OB ; ! ""
+Батраков:Батраков NP-COG-OB ; ! ""
+Батуров:Батуров NP-COG-OB ; ! ""
+Бафинов:Бафинов NP-COG-OB ; ! ""
+Бахмисов:Бахмисов NP-COG-OB ; ! ""
+Бачериков:Бачериков NP-COG-OB ; ! ""
+Башкиров:Башкиров NP-COG-OB ; ! ""
+Байимбетов:Байимбетов NP-COG-OB ; ! ""
+Байсейитов:Байсейитов NP-COG-OB ; ! ""
+Байтереков:Байтереков NP-COG-OB ; ! ""
+Бакиев:Бакиев NP-COG-OB ; ! ""
+Бакимбаев:Бакимбаев NP-COG-OB ; ! ""
+Басенов:Басенов NP-COG-OB ; ! ""
+Бегалиев:Бегалиев NP-COG-OB ; ! ""
+Бедарев:Бедарев NP-COG-OB ; ! ""
+Бедров:Бедров NP-COG-OB ; ! ""
+Безсонов:Безсонов NP-COG-OB ; ! ""
+Бейсбеков:Бейсбеков NP-COG-OB ; ! ""
+Бейсекеев:Бейсекеев NP-COG-OB ; ! ""
+Бейсеков:Бейсеков NP-COG-OB ; ! ""
+Бейсенов:Бейсенов NP-COG-OB ; ! ""
+Бекбаев:Бекбаев NP-COG-OB ; ! ""
+Бекбосынов:Бекбосынов NP-COG-OB ; ! ""
+Бекежанов:Бекежанов NP-COG-OB ; ! ""
+Бекетаев:Бекетаев NP-COG-OB ; ! ""
+Бекетов:Бекетов NP-COG-OB ; ! ""
+Бекимов:Бекимов NP-COG-OB ; ! ""
+Бекмамбетов:Бекмамбетов NP-COG-OB ; ! ""
+Бекмаханов:Бекмаханов NP-COG-OB ; ! ""
+Бекмуханбетов:Бекмуханбетов NP-COG-OB ; ! ""
+Бекназаров:Бекназаров NP-COG-OB ; ! ""
+Бектаев:Бектаев NP-COG-OB ; ! ""
+Бектурганов:Бектурганов NP-COG-OB ; ! ""
+Бекшентаев:Бекшентаев NP-COG-OB ; ! ""
+Белков:Белков NP-COG-OB ; ! ""
+Белов:Белов NP-COG-OB ; ! ""
+Беловощев:Беловощев NP-COG-OB ; ! ""
+Белоглазов:Белоглазов NP-COG-OB ; ! ""
+Белозёров:Белозёров NP-COG-OB ; ! ""
+Белоусов:Белоусов NP-COG-OB ; ! ""
+Бельтов:Бельтов NP-COG-OB ; ! ""
+Беляев:Беляев NP-COG-OB ; ! ""
+Беляков:Беляков NP-COG-OB ; ! ""
+Бергалиев:Бергалиев NP-COG-OB ; ! ""
+Бердичев:Бердичев NP-COG-OB ; ! ""
+Бердибаев:Бердибаев NP-COG-OB ; ! ""
+Бердимухаммедов:Бердимухаммедов NP-COG-OB ; ! ""
+Бердников:Бердников NP-COG-OB ; ! ""
+Бердыгалиев:Бердыгалиев NP-COG-OB ; ! ""
+Бердыев:Бердыев NP-COG-OB ; ! ""
+Березов:Березов NP-COG-OB ; ! ""
+Берсиев:Берсиев NP-COG-OB ; ! ""
+Беспалов:Беспалов NP-COG-OB ; ! ""
+Бестибаев:Бестибаев NP-COG-OB ; ! ""
+Бесчасов:Бесчасов NP-COG-OB ; ! ""
+Бигелдинов:Бигелдинов NP-COG-OB ; ! ""
+Бирюков:Бирюков NP-COG-OB ; ! ""
+Бисенгалиев:Бисенгалиев NP-COG-OB ; ! ""
+Биримжанов:Биримжанов NP-COG-OB ; ! ""
+Биримкулов:Биримкулов NP-COG-OB ; ! ""
+Блинов:Блинов NP-COG-OB ; ! ""
+Блохин:Блохин NP-COG-IN ; ! ""
+Блохинцев:Блохинцев NP-COG-OB ; ! ""
+Бобков:Бобков NP-COG-OB ; ! ""
+Бобров:Бобров NP-COG-OB ; ! ""
+Бобылёв:Бобылёв NP-COG-OB ; ! ""
+Богатов:Богатов NP-COG-OB ; ! ""
+Богданов:Богданов NP-COG-OB ; ! ""
+Боголюбов:Боголюбов NP-COG-OB ; ! ""
+Боков:Боков NP-COG-OB ; ! ""
+Бокаев:Бокаев NP-COG-OB ; ! ""
+Болдырев:Болдырев NP-COG-OB ; ! ""
+Болотов:Болотов NP-COG-OB ; ! ""
+Болтаев:Болтаев NP-COG-OB ; ! ""
+Большаков:Большаков NP-COG-OB ; ! ""
+Бондарев:Бондарев NP-COG-OB ; ! ""
+Борисов:Борисов NP-COG-OB ; ! ""
+Боронников:Боронников NP-COG-OB ; ! ""
+Борщов:Борщов NP-COG-OB ; ! ""
+Бочков:Бочков NP-COG-OB ; ! ""
+Бөкеев:Бөкеев NP-COG-OB ; ! ""
+Бөкейханов:Бөкейханов NP-COG-OB ; ! ""
+Бөкетов:Бөкетов NP-COG-OB ; ! ""
+Брагин:Брагин NP-COG-IN ; ! ""
+Брюллов:Брюллов NP-COG-OB ; ! ""
+Брянцев:Брянцев NP-COG-OB ; ! ""
+Букетов:Букетов NP-COG-OB ; ! ""
+Булаев:Булаев NP-COG-OB ; ! ""
+Булгаков:Булгаков NP-COG-OB ; ! ""
+Бурмистров:Бурмистров NP-COG-OB ; ! ""
+Буров:Буров NP-COG-OB ; ! ""
+Бурундуков:Бурундуков NP-COG-OB ; ! ""
+Буслаев:Буслаев NP-COG-OB ; ! ""
+Бутаков:Бутаков NP-COG-OB ; ! ""
+Булкышев:Булкышев NP-COG-OB ; ! ""
+Быков:Быков NP-COG-OB ; ! ""
+Быченков:Быченков NP-COG-OB ; ! ""
+Бычков:Бычков NP-COG-OB ; ! ""
+Вавилов:Вавилов NP-COG-OB ; ! ""
+Ваганов:Ваганов NP-COG-OB ; ! ""
+Важоров:Важоров NP-COG-OB ; ! ""
+Валеев:Валеев NP-COG-OB ; ! ""
+Ванеев:Ванеев NP-COG-OB ; ! ""
+Васильев:Васильев NP-COG-OB ; ! ""
+Вахитов:Вахитов NP-COG-OB ; ! ""
+Великанов:Великанов NP-COG-OB ; ! ""
+Венедиктов:Венедиктов NP-COG-OB ; ! ""
+Верендеев:Верендеев NP-COG-OB ; ! ""
+Вериялов:Вериялов NP-COG-OB ; ! ""
+Верликов:Верликов NP-COG-OB ; ! ""
+Веселов:Веселов NP-COG-OB ; ! ""
+Викторов:Викторов NP-COG-OB ; ! ""
+Вилинбахов:Вилинбахов NP-COG-OB ; ! ""
+Виноградов:Виноградов NP-COG-OB ; ! ""
+Винокуров:Винокуров NP-COG-OB ; ! ""
+Вирхов:Вирхов NP-COG-OB ; ! ""
+Вирьялов:Вирьялов NP-COG-OB ; ! ""
+Витлев:Витлев NP-COG-OB ; ! ""
+Вишнев:Вишнев NP-COG-OB ; ! ""
+Вишняков:Вишняков NP-COG-OB ; ! ""
+Владимиров:Владимиров NP-COG-OB ; ! ""
+Власов:Власов NP-COG-OB ; ! ""
+Волков:Волков NP-COG-OB ; ! ""
+Волхов:Волхов NP-COG-OB ; ! ""
+Волынов:Волынов NP-COG-OB ; ! ""
+Воробьёв:Воробьёв NP-COG-OB ; ! ""
+Воронов:Воронов NP-COG-OB ; ! ""
+Воронцов:Воронцов NP-COG-OB ; ! ""
+Ворошилов:Ворошилов NP-COG-OB ; ! ""
+Востриков:Востриков NP-COG-OB ; ! ""
+Востров:Востров NP-COG-OB ; ! ""
+Вуколов:Вуколов NP-COG-OB ; ! ""
+Гаврилов:Гаврилов NP-COG-OB ; ! ""
+Гайдебуров:Гайдебуров NP-COG-OB ; ! ""
+Гайнутдинов:Гайнутдинов NP-COG-OB ; ! ""
+Галимзянов:Галимзянов NP-COG-OB ; ! ""
+Галкин:Галкин NP-COG-IN ; ! ""
+Галлямов:Галлямов NP-COG-OB ; ! ""
+Галошев:Галошев NP-COG-OB ; ! ""
+Гамбурцев:Гамбурцев NP-COG-OB ; ! ""
+Гамов:Гамов NP-COG-OB ; ! ""
+Гапеев:Гапеев NP-COG-OB ; ! ""
+Гапликов:Гапликов NP-COG-OB ; ! ""
+Гафидов:Гафидов NP-COG-OB ; ! ""
+Гвоздев:Гвоздев NP-COG-OB ; ! ""
+Гдов:Гдов NP-COG-OB ; ! ""
+Георгиев:Георгиев NP-COG-OB ; ! ""
+Герасимов:Герасимов NP-COG-OB ; ! ""
+Героев:Героев NP-COG-OB ; ! ""
+Гладков:Гладков NP-COG-OB ; ! ""
+Глазов:Глазов NP-COG-OB ; ! ""
+Глазунов:Глазунов NP-COG-OB ; ! ""
+Глубоков:Глубоков NP-COG-OB ; ! ""
+Глухов:Глухов NP-COG-OB ; ! ""
+Гниломедов:Гниломедов NP-COG-OB ; ! ""
+Годунов:Годунов NP-COG-OB ; ! ""
+Голенков:Голенков NP-COG-OB ; ! ""
+Голоскоков:Голоскоков NP-COG-OB ; ! ""
+Голубев:Голубев NP-COG-OB ; ! ""
+Голубков:Голубков NP-COG-OB ; ! ""
+Гончаров:Гончаров NP-COG-OB ; ! ""
+Горбачев:Горбачев NP-COG-OB ; ! ""
+Горбачёв:Горбачёв NP-COG-OB ; ! ""
+Горбунов:Горбунов NP-COG-OB ; ! ""
+Гордеев:Гордеев NP-COG-OB ; ! ""
+Городовиков:Городовиков NP-COG-OB ; ! ""
+Городцов:Городцов NP-COG-OB ; ! ""
+Горшков:Горшков NP-COG-OB ; ! ""
+Градов:Градов NP-COG-OB ; ! ""
+Грачев:Грачев NP-COG-OB ; ! ""
+Гребенщиков:Гребенщиков NP-COG-OB ; ! ""
+Грибоедов:Грибоедов NP-COG-OB ; ! ""
+Григорьев:Григорьев NP-COG-OB ; ! ""
+Гризобудов:Гризобудов NP-COG-OB ; ! ""
+Гришин:Гришин NP-COG-IN ; ! ""
+Гродеков:Гродеков NP-COG-OB ; ! ""
+Громов:Громов NP-COG-OB ; ! ""
+Грызлов:Грызлов NP-COG-OB ; ! ""
+Грызов:Грызов NP-COG-OB ; ! ""
+Грязнов:Грязнов NP-COG-OB ; ! ""
+Губанов:Губанов NP-COG-OB ; ! ""
+Губарев:Губарев NP-COG-OB ; ! ""
+Гуляев:Гуляев NP-COG-OB ; ! ""
+Гумилев:Гумилев NP-COG-OB ; ! ""
+Гурцев:Гурцев NP-COG-OB ; ! ""
+Гуръев:Гуръев NP-COG-OB ; ! ""
+Гурьев:Гурьев NP-COG-OB ; ! ""
+Гусаров:Гусаров NP-COG-OB ; ! ""
+Гусев:Гусев NP-COG-OB ; ! ""
+Гущин:Гущин NP-COG-IN ; ! ""
+Габбасов:Габбасов NP-COG-OB ; ! ""
+Галиев:Галиев NP-COG-OB ; ! ""
+Гатауов:Гатауов NP-COG-OB ; ! ""
+Давыденов:Давыденов NP-COG-OB ; ! ""
+Давыдов:Давыдов NP-COG-OB ; ! ""
+Далбагаев:Далбагаев NP-COG-OB ; ! ""
+Данилов:Данилов NP-COG-OB ; ! ""
+Дарханов:Дарханов NP-COG-OB ; ! ""
+Даупбаев:Даупбаев NP-COG-OB ; ! ""
+Дауылбеков:Дауылбеков NP-COG-OB ; ! ""
+Даукенов:Даукенов NP-COG-OB ; ! ""
+Даулетбаков:Даулетбаков NP-COG-OB ; ! ""
+Даулетбеков:Даулетбеков NP-COG-OB ; ! ""
+Даулетов:Даулетов NP-COG-OB ; ! ""
+Дауренбеков:Дауренбеков NP-COG-OB ; ! ""
+Дегтярев:Дегтярев NP-COG-OB ; ! ""
+Дежнев:Дежнев NP-COG-OB ; ! ""
+Дементьев:Дементьев NP-COG-OB ; ! ""
+Демеуов:Демеуов NP-COG-OB ; ! ""
+Демидов:Демидов NP-COG-OB ; ! ""
+Демьянов:Демьянов NP-COG-OB ; ! ""
+Денисов:Денисов NP-COG-OB ; ! ""
+Дербисалиев:Дербисалиев NP-COG-OB ; ! ""
+Дешериев:Дешериев NP-COG-OB ; ! ""
+Джансугуров:Джансугуров NP-COG-OB ; ! ""
+Диваев:Диваев NP-COG-OB ; ! ""
+Димитриев:Димитриев NP-COG-OB ; ! ""
+Диомидов:Диомидов NP-COG-OB ; ! ""
+Динишев:Динишев NP-COG-OB ; ! ""
+Дмитриев:Дмитриев NP-COG-OB ; ! ""
+Дмитров:Дмитров NP-COG-OB ; ! ""
+Добродомов:Добродомов NP-COG-OB ; ! ""
+Добролюбов:Добролюбов NP-COG-OB ; ! ""
+Долгашев:Долгашев NP-COG-OB ; ! ""
+Долгов:Долгов NP-COG-OB ; ! ""
+Домбаров:Домбаров NP-COG-OB ; ! ""
+Домогаров:Домогаров NP-COG-OB ; ! ""
+Доронин:Доронин NP-COG-IN ; ! ""
+Дорофеев:Дорофеев NP-COG-OB ; ! ""
+Досжанов:Досжанов NP-COG-OB ; ! ""
+Доскалиев:Доскалиев NP-COG-OB ; ! ""
+Доскалиев:Доскалиев NP-COG-OB ; ! ""
+Досмүхамедов:Досмүхамедов NP-COG-OB ; ! ""
+Доспанов:Доспанов NP-COG-OB ; ! ""
+Досымжанов:Досымжанов NP-COG-OB ; ! ""
+Дөнентаев:Дөнентаев NP-COG-OB ; ! ""
+Дроздов:Дроздов NP-COG-OB ; ! ""
+Дубанов:Дубанов NP-COG-OB ; ! ""
+Дубов:Дубов NP-COG-OB ; ! ""
+Дубров:Дубров NP-COG-OB ; ! ""
+Дуванов:Дуванов NP-COG-OB ; ! ""
+Дулатов:Дулатов NP-COG-OB ; ! ""
+Дурасов:Дурасов NP-COG-OB ; ! ""
+Дурнев:Дурнев NP-COG-OB ; ! ""
+Дусматов:Дусматов NP-COG-OB ; ! ""
+Дутов:Дутов NP-COG-OB ; ! ""
+Дүзелханов:Дүзелханов NP-COG-OB ; ! ""
+Дүйсебаев:Дүйсебаев NP-COG-OB ; ! ""
+Дүйсембинов:Дүйсембинов NP-COG-OB ; ! ""
+Дъяков:Дъяков NP-COG-OB ; ! ""
+Дьячков:Дьячков NP-COG-OB ; ! ""
+Евдокимов:Евдокимов NP-COG-OB ; ! ""
+Евланов:Евланов NP-COG-OB ; ! ""
+Евсеев:Евсеев NP-COG-OB ; ! ""
+Евстафьев:Евстафьев NP-COG-OB ; ! ""
+Евстигнеев:Евстигнеев NP-COG-OB ; ! ""
+Егоров:Егоров NP-COG-OB ; ! ""
+Ежов:Ежов NP-COG-OB ; ! ""
+Екимов:Екимов NP-COG-OB ; ! ""
+Елебаев:Елебаев NP-COG-OB ; ! ""
+Елебеков:Елебеков NP-COG-OB ; ! ""
+Елеуов:Елеуов NP-COG-OB ; ! ""
+Елимов:Елимов NP-COG-OB ; ! ""
+Елисеев:Елисеев NP-COG-OB ; ! ""
+Елубаев:Елубаев NP-COG-OB ; ! ""
+Ельцов:Ельцов NP-COG-OB ; ! ""
+Емельянов:Емельянов NP-COG-OB ; ! ""
+Ендеров:Ендеров NP-COG-OB ; ! ""
+Еңсепов:Еңсепов NP-COG-OB ; ! ""
+Еразумов:Еразумов NP-COG-OB ; ! ""
+Ералиев:Ералиев NP-COG-OB ; ! ""
+Ергалиев:Ергалиев NP-COG-OB ; ! ""
+Ергалиев:Ергалиев NP-COG-OB ; ! ""
+Еремеев:Еремеев NP-COG-OB ; ! ""
+Ержанов:Ержанов NP-COG-OB ; ! ""
+Ерицов:Ерицов NP-COG-OB ; ! ""
+Ермаков:Ермаков NP-COG-OB ; ! ""
+Ермеков:Ермеков NP-COG-OB ; ! ""
+Ермилов:Ермилов NP-COG-OB ; ! ""
+Ермолаев:Ермолаев NP-COG-OB ; ! ""
+Ермолов:Ермолов NP-COG-OB ; ! ""
+Ерназаров:Ерназаров NP-COG-OB ; ! ""
+Ерофеев:Ерофеев NP-COG-OB ; ! ""
+Ерубаев:Ерубаев NP-COG-OB ; ! ""
+Ершов:Ершов NP-COG-OB ; ! ""
+Есболов:Есболов NP-COG-OB ; ! ""
+Есенбаев:Есенбаев NP-COG-OB ; ! ""
+Есенкулов:Есенкулов NP-COG-OB ; ! ""
+Есенов:Есенов NP-COG-OB ; ! ""
+Есжанов:Есжанов NP-COG-OB ; ! ""
+Есимов:Есимов NP-COG-OB ; ! ""
+Есиргепов:Есиргепов NP-COG-OB ; ! ""
+Ескалиев:Ескалиев NP-COG-OB ; ! ""
+Ескалиев:Ескалиев NP-COG-OB ; ! ""
+Ескараев:Ескараев NP-COG-OB ; ! ""
+Есмаганбетов:Есмаганбетов NP-COG-OB ; ! ""
+Есмамбетов:Есмамбетов NP-COG-OB ; ! ""
+Есов:Есов NP-COG-OB ; ! ""
+Есполов:Есполов NP-COG-OB ; ! ""
+Еултангуров:Еултангуров NP-COG-OB ; ! ""
+Ефатеров:Ефатеров NP-COG-OB ; ! ""
+Ефимов:Ефимов NP-COG-OB ; ! ""
+Ефремов:Ефремов NP-COG-OB ; ! ""
+Ешекеев:Ешекеев NP-COG-OB ; ! ""
+Жабаев:Жабаев NP-COG-OB ; ! ""
+Жагыпаров:Жагыпаров NP-COG-OB ; ! ""
+Жадов:Жадов NP-COG-OB ; ! ""
+Жайнаков:Жайнаков NP-COG-OB ; ! ""
+Жаксыбеков:Жаксыбеков NP-COG-OB ; ! ""
+Жакыпбаев:Жакыпбаев NP-COG-OB ; ! ""
+Жакыпов:Жакыпов NP-COG-OB ; ! ""
+Жаманмурынов:Жаманмурынов NP-COG-OB ; ! ""
+Жаманов:Жаманов NP-COG-OB ; ! ""
+Жанайдаров:Жанайдаров NP-COG-OB ; ! ""
+Жанасаев:Жанасаев NP-COG-OB ; ! ""
+Жангабылов:Жангабылов NP-COG-OB ; ! ""
+Жандарбеков:Жандарбеков NP-COG-OB ; ! ""
+Жандаулетов:Жандаулетов NP-COG-OB ; ! ""
+Жандосов:Жандосов NP-COG-OB ; ! ""
+Жанжигитов:Жанжигитов NP-COG-OB ; ! ""
+Жанзаков:Жанзаков NP-COG-OB ; ! ""
+Жануалиев:Жануалиев NP-COG-OB ; ! ""
+Жанузаков:Жанузаков NP-COG-OB ; ! ""
+Жаңабаев:Жаңабаев NP-COG-OB ; ! ""
+Жапаков:Жапаков NP-COG-OB ; ! ""
+Жаппасбаев:Жаппасбаев NP-COG-OB ; ! ""
+Жармагамбетов:Жармагамбетов NP-COG-OB ; ! ""
+Жармаганбетов:Жармаганбетов NP-COG-OB ; ! ""
+Жармухамедов:Жармухамедов NP-COG-OB ; ! ""
+Жармухамедов:Жармухамедов NP-COG-OB ; ! ""
+Жаров:Жаров NP-COG-OB ; ! ""
+Жартыбаев:Жартыбаев NP-COG-OB ; ! ""
+Жарыкбаев:Жарыкбаев NP-COG-OB ; ! ""
+Жарыкпаев:Жарыкпаев NP-COG-OB ; ! ""
+Жарылгапов:Жарылгапов NP-COG-OB ; ! ""
+Жафаров:Жафаров NP-COG-OB ; ! ""
+Жахаев:Жахаев NP-COG-OB ; ! ""
+Жакишев:Жакишев NP-COG-OB ; ! ""
+Жакишев:Жакишев NP-COG-OB ; ! ""
+Жанекешев:Жанекешев NP-COG-OB ; ! ""
+Жанибеков:Жанибеков NP-COG-OB ; ! ""
+Жаңгиров:Жаңгиров NP-COG-OB ; ! ""
+Жданов:Жданов NP-COG-OB ; ! ""
+Жейлитбаев:Жейлитбаев NP-COG-OB ; ! ""
+Жексенбеков:Жексенбеков NP-COG-OB ; ! ""
+Желтов:Желтов NP-COG-OB ; ! ""
+Жеребятиев:Жеребятиев NP-COG-OB ; ! ""
+Жжёнов:Жжёнов NP-COG-OB ; ! ""
+Живоев:Живоев NP-COG-OB ; ! ""
+Жигарев:Жигарев NP-COG-OB ; ! ""
+Жиекбаев:Жиекбаев NP-COG-OB ; ! ""
+Жиенкулов:Жиенкулов NP-COG-OB ; ! ""
+Жирнов:Жирнов NP-COG-OB ; ! ""
+Жиров:Жиров NP-COG-OB ; ! ""
+Житков:Житков NP-COG-OB ; ! ""
+Жолдасбеков:Жолдасбеков NP-COG-OB ; ! ""
+Жорабаев:Жорабаев NP-COG-OB ; ! ""
+Жуков:Жуков NP-COG-OB ; ! ""
+Журавлёв:Журавлёв NP-COG-OB ; ! ""
+Жүнисов:Жүнисов NP-COG-OB ; ! ""
+Жүнисов:Жүнисов NP-COG-OB ; ! ""
+Жүргенов:Жүргенов NP-COG-OB ; ! ""
+Жүсипов:Жүсипов NP-COG-OB ; ! ""
+Жубанов:Жубанов NP-COG-OB ; ! ""
+Жумабаев:Жумабаев NP-COG-OB ; ! ""
+Жумагалиев:Жумагалиев NP-COG-OB ; ! ""
+Жумадилов:Жумадилов NP-COG-OB ; ! ""
+Жумаев:Жумаев NP-COG-OB ; ! ""
+Жумаскалиев:Жумаскалиев NP-COG-OB ; ! ""
+Жылысбаев:Жылысбаев NP-COG-OB ; ! ""
+Завьялов:Завьялов NP-COG-OB ; ! ""
+Загаев:Загаев NP-COG-OB ; ! ""
+Задорнов:Задорнов NP-COG-OB ; ! ""
+Заев:Заев NP-COG-OB ; ! ""
+Зайкенов:Зайкенов NP-COG-OB ; ! ""
+Зайцев:Зайцев NP-COG-OB ; ! ""
+Закиров:Закиров NP-COG-OB ; ! ""
+Захаров:Захаров NP-COG-OB ; ! ""
+Заңгиров:Заңгиров NP-COG-OB ; ! ""
+Звонилов:Звонилов NP-COG-OB ; ! ""
+Зеленов:Зеленов NP-COG-OB ; ! ""
+Зенков:Зенков NP-COG-OB ; ! ""
+Зеньков:Зеньков NP-COG-OB ; ! ""
+Зиманов:Зиманов NP-COG-OB ; ! ""
+Зимин:Зимин NP-COG-IN ; ! ""
+Зиновьев:Зиновьев NP-COG-OB ; ! ""
+Зов:Зов NP-COG-OB ; ! ""
+Золотницкий:Золотницкий NP-COG-OB ; ! ""
+Золотов:Золотов NP-COG-OB ; ! ""
+Зотиков:Зотиков NP-COG-OB ; ! ""
+Зотов:Зотов NP-COG-OB ; ! ""
+Зубков:Зубков NP-COG-OB ; ! ""
+Зуев:Зуев NP-COG-OB ; ! ""
+Зулькарнаев:Зулькарнаев NP-COG-OB ; ! ""
+Зыков:Зыков NP-COG-OB ; ! ""
+Зындауитов:Зындауитов NP-COG-OB ; ! ""
+Зырянов:Зырянов NP-COG-OB ; ! ""
+Зюганов:Зюганов NP-COG-OB ; ! ""
+Ибрагимов:Ибрагимов NP-COG-OB ; ! ""
+Ибрагимов:Ибрагимов NP-COG-OB ; ! ""
+Ибраев:Ибраев NP-COG-OB ; ! ""
+Ибрашев:Ибрашев NP-COG-OB ; ! ""
+Ибятов:Ибятов NP-COG-OB ; ! ""
+Иванов:Иванов NP-COG-OB ; ! ""
+Ивашев:Ивашев NP-COG-OB ; ! ""
+Игнатов:Игнатов NP-COG-OB ; ! ""
+Игнатьев:Игнатьев NP-COG-OB ; ! ""
+Игратьев:Игратьев NP-COG-OB ; ! ""
+Игрнатьев:Игрнатьев NP-COG-OB ; ! ""
+Изатов:Изатов NP-COG-OB ; ! ""
+Изендеев:Изендеев NP-COG-OB ; ! ""
+Изотов:Изотов NP-COG-OB ; ! ""
+Илларионов:Илларионов NP-COG-OB ; ! ""
+Ильин:Ильин NP-COG-IN ; ! ""
+Имангазиев:Имангазиев NP-COG-OB ; ! ""
+Иманов:Иманов NP-COG-OB ; ! ""
+Имашев:Имашев NP-COG-OB ; ! ""
+Именнов:Именнов NP-COG-OB ; ! ""
+Индырчев:Индырчев NP-COG-OB ; ! ""
+Иноходов:Иноходов NP-COG-OB ; ! ""
+Иовлев:Иовлев NP-COG-OB ; ! ""
+Ирисметов:Ирисметов NP-COG-OB ; ! ""
+Иритков:Иритков NP-COG-OB ; ! ""
+Исаев:Исаев NP-COG-OB ; ! ""
+Исаков:Исаков NP-COG-OB ; ! ""
+Исалиев:Исалиев NP-COG-OB ; ! ""
+Исаханов:Исаханов NP-COG-OB ; ! ""
+Искаков:Искаков NP-COG-OB ; ! ""
+Искандеров:Искандеров NP-COG-OB ; ! ""
+Искеев:Искеев NP-COG-OB ; ! ""
+Искендиров:Искендиров NP-COG-OB ; ! ""
+Исметов:Исметов NP-COG-OB ; ! ""
+Итенов:Итенов NP-COG-OB ; ! ""
+Ишутов:Ишутов NP-COG-OB ; ! ""
+Ищанов:Ищанов NP-COG-OB ; ! ""
+Кабанов:Кабанов NP-COG-OB ; ! ""
+Кабулов:Кабулов NP-COG-OB ; ! ""
+Кадыков:Кадыков NP-COG-OB ; ! ""
+Кадышев:Кадышев NP-COG-OB ; ! ""
+Казаков:Казаков NP-COG-OB ; ! ""
+Казанов:Казанов NP-COG-OB ; ! ""
+Казанцев:Казанцев NP-COG-OB ; ! ""
+Казначеев:Казначеев NP-COG-OB ; ! ""
+Казталов:Казталов NP-COG-OB ; ! ""
+Калашников:Калашников NP-COG-OB ; ! ""
+Калимов:Калимов NP-COG-OB ; ! ""
+Калинин:Калинин NP-COG-IN ; ! ""
+Калкабаев:Калкабаев NP-COG-OB ; ! ""
+Калмыков:Калмыков NP-COG-OB ; ! ""
+Камалиев:Камалиев NP-COG-OB ; ! ""
+Камалов:Камалов NP-COG-OB ; ! ""
+Каменщиков:Каменщиков NP-COG-OB ; ! ""
+Капитонов:Капитонов NP-COG-OB ; ! ""
+Капсулов:Капсулов NP-COG-OB ; ! ""
+Капустин:Капустин NP-COG-IN ; ! ""
+Карасаев:Карасаев NP-COG-OB ; ! ""
+Каратаев:Каратаев NP-COG-OB ; ! ""
+Карачарсков:Карачарсков NP-COG-OB ; ! ""
+Карбышев:Карбышев NP-COG-OB ; ! ""
+Карев:Карев NP-COG-OB ; ! ""
+Каримов:Каримов NP-COG-OB ; ! ""
+Каримов:Каримов NP-COG-OB ; ! ""
+Карлов:Карлов NP-COG-OB ; ! ""
+Карпеев:Карпеев NP-COG-OB ; ! ""
+Карпов:Карпов NP-COG-OB ; ! ""
+Карычев:Карычев NP-COG-OB ; ! ""
+Касимов:Касимов NP-COG-OB ; ! ""
+Каспаров:Каспаров NP-COG-OB ; ! ""
+Катаев:Катаев NP-COG-OB ; ! ""
+Катанов:Катанов NP-COG-OB ; ! ""
+Катков:Катков NP-COG-OB ; ! ""
+Катранов:Катранов NP-COG-OB ; ! ""
+Кафаров:Кафаров NP-COG-OB ; ! ""
+Каюров:Каюров NP-COG-OB ; ! ""
+Карибаев:Карибаев NP-COG-OB ; ! ""
+Каримбаев:Каримбаев NP-COG-OB ; ! ""
+Каримбаев:Каримбаев NP-COG-OB ; ! ""
+Каримбаев:Каримбаев NP-COG-OB ; ! ""
+Карменов:Карменов NP-COG-OB ; ! ""
+Кебиспаев:Кебиспаев NP-COG-OB ; ! ""
+Кедров:Кедров NP-COG-OB ; ! ""
+Кельмаков:Кельмаков NP-COG-OB ; ! ""
+Кемелов:Кемелов NP-COG-OB ; ! ""
+Кемеров:Кемеров NP-COG-OB ; ! ""
+Кенбаев:Кенбаев NP-COG-OB ; ! ""
+Кенебаев:Кенебаев NP-COG-OB ; ! ""
+Кенешов:Кенешов NP-COG-OB ; ! ""
+Кенжебаев:Кенжебаев NP-COG-OB ; ! ""
+Кенжебеков:Кенжебеков NP-COG-OB ; ! ""
+Кенжетаев:Кенжетаев NP-COG-OB ; ! ""
+Кенжеханов:Кенжеханов NP-COG-OB ; ! ""
+Керимбеков:Керимбеков NP-COG-OB ; ! ""
+Керимкулов:Керимкулов NP-COG-OB ; ! ""
+Кесов:Кесов NP-COG-OB ; ! ""
+Кивилев:Кивилев NP-COG-OB ; ! ""
+Кинжалов:Кинжалов NP-COG-OB ; ! ""
+Кириллов:Кириллов NP-COG-OB ; ! ""
+Киров:Киров NP-COG-OB ; ! ""
+Кирпичников:Кирпичников NP-COG-OB ; ! ""
+Кирсанов:Кирсанов NP-COG-OB ; ! ""
+Киселёв:Киселёв NP-COG-OB ; ! ""
+Кишинев:Кишинев NP-COG-OB ; ! ""
+Клементьев:Клементьев NP-COG-OB ; ! ""
+Ключев:Ключев NP-COG-OB ; ! ""
+Кляжев:Кляжев NP-COG-OB ; ! ""
+Князев:Князев NP-COG-OB ; ! ""
+Ковалев:Ковалев NP-COG-OB ; ! ""
+Ковалёв:Ковалёв NP-COG-OB ; ! ""
+Ковров:Ковров NP-COG-OB ; ! ""
+Кожанов:Кожанов NP-COG-OB ; ! ""
+Кожевников:Кожевников NP-COG-OB ; ! ""
+Козаков:Козаков NP-COG-OB ; ! ""
+Козлов:Козлов NP-COG-OB ; ! ""
+Козлов:Козлов NP-COG-OB ; ! ""
+Козырев:Козырев NP-COG-OB ; ! ""
+Колесников:Колесников NP-COG-OB ; ! ""
+Колмогоров:Колмогоров NP-COG-OB ; ! ""
+Колобов:Колобов NP-COG-OB ; ! ""
+Колокольников:Колокольников NP-COG-OB ; ! ""
+Колосков:Колосков NP-COG-OB ; ! ""
+Колпаков:Колпаков NP-COG-OB ; ! ""
+Кольцов:Кольцов NP-COG-OB ; ! ""
+Комаров:Комаров NP-COG-OB ; ! ""
+Комиссаров:Комиссаров NP-COG-OB ; ! ""
+Композиторов:Композиторов NP-COG-OB ; ! ""
+Кондаков:Кондаков NP-COG-OB ; ! ""
+Кондратов:Кондратов NP-COG-OB ; ! ""
+Кондратьев:Кондратьев NP-COG-OB ; ! ""
+Кондрашов:Кондрашов NP-COG-OB ; ! ""
+Конев:Конев NP-COG-OB ; ! ""
+Коннов:Коннов NP-COG-OB ; ! ""
+Коновалов:Коновалов NP-COG-OB ; ! ""
+Кононов:Кононов NP-COG-OB ; ! ""
+Констанинов:Констанинов NP-COG-OB ; ! ""
+Константинов:Константинов NP-COG-OB ; ! ""
+Копылов:Копылов NP-COG-OB ; ! ""
+Корнеев:Корнеев NP-COG-OB ; ! ""
+Корнилов:Корнилов NP-COG-OB ; ! ""
+Королев:Королев NP-COG-OB ; ! ""
+Королев:Королев NP-COG-OB ; ! ""
+Королёв:Королёв NP-COG-OB ; ! ""
+Корсаков:Корсаков NP-COG-OB ; ! ""
+Корчаков:Корчаков NP-COG-OB ; ! ""
+Коршунов:Коршунов NP-COG-OB ; ! ""
+Корытников:Корытников NP-COG-OB ; ! ""
+Косарев:Косарев NP-COG-OB ; ! ""
+Косачев:Косачев NP-COG-OB ; ! ""
+Костин:Костин NP-COG-IN ; ! ""
+Косырев:Косырев NP-COG-OB ; ! ""
+Котельников:Котельников NP-COG-OB ; ! ""
+Котов:Котов NP-COG-OB ; ! ""
+Кочетков:Кочетков NP-COG-OB ; ! ""
+Кочкарев:Кочкарев NP-COG-OB ; ! ""
+Кошелев:Кошелев NP-COG-OB ; ! ""
+Көбдиков:Көбдиков NP-COG-OB ; ! ""
+Көбеев:Көбеев NP-COG-OB ; ! ""
+Көбенкулов:Көбенкулов NP-COG-OB ; ! ""
+Көжеков:Көжеков NP-COG-OB ; ! ""
+Көлбаев:Көлбаев NP-COG-OB ; ! ""
+Көмекбаев:Көмекбаев NP-COG-OB ; ! ""
+Көпеев:Көпеев NP-COG-OB ; ! ""
+Көпешов:Көпешов NP-COG-OB ; ! ""
+Көтибаров:Көтибаров NP-COG-OB ; ! ""
+Көшербаев:Көшербаев NP-COG-OB ; ! ""
+Кравков:Кравков NP-COG-OB ; ! ""
+Красильников:Красильников NP-COG-OB ; ! ""
+Краснов:Краснов NP-COG-OB ; ! ""
+Крганов:Крганов NP-COG-OB ; ! ""
+Кривоносов:Кривоносов NP-COG-OB ; ! ""
+Криков:Криков NP-COG-OB ; ! ""
+Крлыков:Крлыков NP-COG-OB ; ! ""
+Кротов:Кротов NP-COG-OB ; ! ""
+Крутов:Крутов NP-COG-OB ; ! ""
+Крылов:Крылов NP-COG-OB ; ! ""
+Крюков:Крюков NP-COG-OB ; ! ""
+Крючков:Крючков NP-COG-OB ; ! ""
+Ксенофонтов:Ксенофонтов NP-COG-OB ; ! ""
+Куваев:Куваев NP-COG-OB ; ! ""
+Кувшинов:Кувшинов NP-COG-OB ; ! ""
+Кудаков:Кудаков NP-COG-OB ; ! ""
+Кудрявцев:Кудрявцев NP-COG-OB ; ! ""
+Кудряшов:Кудряшов NP-COG-OB ; ! ""
+Кузнецов:Кузнецов NP-COG-OB ; ! ""
+Кузьменков:Кузьменков NP-COG-OB ; ! ""
+Кузьмин:Кузьмин NP-COG-IN ; ! ""
+Куйбышев:Куйбышев NP-COG-OB ; ! ""
+Кулагин:Кулагин NP-COG-IN ; ! ""
+Кулаков:Кулаков NP-COG-OB ; ! ""
+Куленов:Куленов NP-COG-OB ; ! ""
+Куликов:Куликов NP-COG-OB ; ! ""
+Кулов:Кулов NP-COG-OB ; ! ""
+Кульев:Кульев NP-COG-OB ; ! ""
+Куравлев:Куравлев NP-COG-OB ; ! ""
+Кураков:Кураков NP-COG-OB ; ! ""
+Курамшин:Курамшин NP-COG-IN ; ! ""
+Курбатов:Курбатов NP-COG-OB ; ! ""
+Курчатов:Курчатов NP-COG-OB ; ! ""
+Кустиков:Кустиков NP-COG-OB ; ! ""
+Кушаев:Кушаев NP-COG-OB ; ! ""
+Күзембаев:Күзембаев NP-COG-OB ; ! ""
+Күлеев:Күлеев NP-COG-OB ; ! ""
+Күмисбеков:Күмисбеков NP-COG-OB ; ! ""
+Кабашев:Кабашев NP-COG-OB ; ! ""
+Кабимолдаев:Кабимолдаев NP-COG-OB ; ! ""
+Кабылбаев:Кабылбаев NP-COG-OB ; ! ""
+Кабылдин:Кабылдин NP-COG-IN ; ! ""
+Кабылов:Кабылов NP-COG-OB ; ! ""
+Кадырбаев:Кадырбаев NP-COG-OB ; ! ""
+Кадырбеков:Кадырбеков NP-COG-OB ; ! ""
+Кажыгалиев:Кажыгалиев NP-COG-OB ; ! ""
+Казакбаев:Казакбаев NP-COG-OB ; ! ""
+Казансев:Казансев NP-COG-OB ; ! ""
+Казталов:Казталов NP-COG-OB ; ! ""
+Казыбаев:Казыбаев NP-COG-OB ; ! ""
+Кайдаров:Кайдаров NP-COG-OB ; ! ""
+Кайырбеков:Кайырбеков NP-COG-OB ; ! ""
+Каламбаев:Каламбаев NP-COG-OB ; ! ""
+Калауов:Калауов NP-COG-OB ; ! ""
+Калдаяков:Калдаяков NP-COG-OB ; ! ""
+Калиев:Калиев NP-COG-OB ; ! ""
+Калымбаев:Калымбаев NP-COG-OB ; ! ""
+Камбаров:Камбаров NP-COG-OB ; ! ""
+Камбышев:Камбышев NP-COG-OB ; ! ""
+Каражигитов:Каражигитов NP-COG-OB ; ! ""
+Каралаев:Каралаев NP-COG-OB ; ! ""
+Каратаев:Каратаев NP-COG-OB ; ! ""
+Карсакбаев:Карсакбаев NP-COG-OB ; ! ""
+Картбаев:Картбаев NP-COG-OB ; ! ""
+Касанов:Касанов NP-COG-OB ; ! ""
+Касиманов:Касиманов NP-COG-OB ; ! ""
+Кастеев:Кастеев NP-COG-OB ; ! ""
+Касымбеков:Касымбеков NP-COG-OB ; ! ""
+Касымов:Касымов NP-COG-OB ; ! ""
+Кашаубаев:Кашаубаев NP-COG-OB ; ! ""
+Кирабаев:Кирабаев NP-COG-OB ; ! ""
+Кожамкулов:Кожамкулов NP-COG-OB ; ! ""
+Кожанов:Кожанов NP-COG-OB ; ! ""
+Кожыков:Кожыков NP-COG-OB ; ! ""
+Козбагаров:Козбагаров NP-COG-OB ; ! ""
+Койгелдиев:Койгелдиев NP-COG-OB ; ! ""
+Конаев:Конаев NP-COG-OB ; ! ""
+Корабаев:Корабаев NP-COG-OB ; ! ""
+Косанов:Косанов NP-COG-OB ; ! ""
+Косанов:Косанов NP-COG-OB ; ! ""
+Косымбаев:Косымбаев NP-COG-OB ; ! ""
+Кошкарбаев:Кошкарбаев NP-COG-OB ; ! ""
+Куандыков:Куандыков NP-COG-OB ; ! ""
+Куанышбаев:Куанышбаев NP-COG-OB ; ! ""
+Кудабаев:Кудабаев NP-COG-OB ; ! ""
+Кудайбергенов:Кудайбергенов NP-COG-OB ; ! ""
+Кудайкулов:Кудайкулов NP-COG-OB ; ! ""
+Куланов:Куланов NP-COG-OB ; ! ""
+Кулманбаев:Кулманбаев NP-COG-OB ; ! ""
+Кулманов:Кулманов NP-COG-OB ; ! ""
+Кулов:Кулов NP-COG-OB ; ! ""
+Кулсариев:Кулсариев NP-COG-OB ; ! ""
+Кулыбаев:Кулыбаев NP-COG-OB ; ! ""
+Кулышев:Кулышев NP-COG-OB ; ! ""
+Кунанбаев:Кунанбаев NP-COG-OB ; ! ""
+Курманбаев:Курманбаев NP-COG-OB ; ! ""
+Курманбеков:Курманбеков NP-COG-OB ; ! ""
+Курмангалиев:Курмангалиев NP-COG-OB ; ! ""
+Курманкулов:Курманкулов NP-COG-OB ; ! ""
+Курышжанов:Курышжанов NP-COG-OB ; ! ""
+Кусаинов:Кусаинов NP-COG-OB ; ! ""
+Кусайынов:Кусайынов NP-COG-OB ; ! ""
+Кусайынов:Кусайынов NP-COG-OB ; ! ""
+Кыдырбеков:Кыдырбеков NP-COG-OB ; ! ""
+Кырыкбаев:Кырыкбаев NP-COG-OB ; ! ""
+Лаврентьев:Лаврентьев NP-COG-OB ; ! ""
+Ладыков:Ладыков NP-COG-OB ; ! ""
+Лазарев:Лазарев NP-COG-OB ; ! ""
+Лакачев:Лакачев NP-COG-OB ; ! ""
+Лакачов:Лакачов NP-COG-OB ; ! ""
+Ламаев:Ламаев NP-COG-OB ; ! ""
+Лапаев:Лапаев NP-COG-OB ; ! ""
+Лапин:Лапин NP-COG-IN ; ! ""
+Лаптев:Лаптев NP-COG-OB ; ! ""
+Ларионов:Ларионов NP-COG-OB ; ! ""
+Латыпов:Латыпов NP-COG-OB ; ! ""
+Лебедев:Лебедев NP-COG-OB ; ! ""
+Левин:Левин NP-COG-IN ; ! ""
+Левчаев:Левчаев NP-COG-OB ; ! ""
+Леканов:Леканов NP-COG-OB ; ! ""
+Лекеров:Лекеров NP-COG-OB ; ! ""
+Ленин:Ленин NP-COG-IN ; ! ""
+Леньков:Леньков NP-COG-OB ; ! ""
+Леонов:Леонов NP-COG-OB ; ! ""
+Леонтьев:Леонтьев NP-COG-OB ; ! ""
+Лермонтов:Лермонтов NP-COG-OB ; ! ""
+Лесков:Лесков NP-COG-OB ; ! ""
+Лисаков:Лисаков NP-COG-OB ; ! ""
+Литвинов:Литвинов NP-COG-OB ; ! ""
+Лихарев:Лихарев NP-COG-OB ; ! ""
+Лихачёв:Лихачёв NP-COG-OB ; ! ""
+Лобанов:Лобанов NP-COG-OB ; ! ""
+Лобачев:Лобачев NP-COG-OB ; ! ""
+Лобков:Лобков NP-COG-OB ; ! ""
+Лованов:Лованов NP-COG-OB ; ! ""
+Логинов:Логинов NP-COG-OB ; ! ""
+Логунов:Логунов NP-COG-OB ; ! ""
+Локтев:Локтев NP-COG-OB ; ! ""
+Ломов:Ломов NP-COG-OB ; ! ""
+Ломоносов:Ломоносов NP-COG-OB ; ! ""
+Лосманов:Лосманов NP-COG-OB ; ! ""
+Лотышев:Лотышев NP-COG-OB ; ! ""
+Лукианов:Лукианов NP-COG-OB ; ! ""
+Лукин:Лукин NP-COG-IN ; ! ""
+Лукиянов:Лукиянов NP-COG-OB ; ! ""
+Лукоянов:Лукоянов NP-COG-OB ; ! ""
+Лукьянов:Лукьянов NP-COG-OB ; ! ""
+Лупов:Лупов NP-COG-OB ; ! ""
+Луферов:Луферов NP-COG-OB ; ! ""
+Лыткин:Лыткин NP-COG-IN ; ! ""
+Льгов:Льгов NP-COG-OB ; ! ""
+Любезнов:Любезнов NP-COG-OB ; ! ""
+Любимов:Любимов NP-COG-OB ; ! ""
+Ляпунов:Ляпунов NP-COG-OB ; ! ""
+Ляхов:Ляхов NP-COG-OB ; ! ""
+Магдиев:Магдиев NP-COG-OB ; ! ""
+Магомаев:Магомаев NP-COG-OB ; ! ""
+Магомаев:Магомаев NP-COG-OB ; ! ""
+Мадов:Мадов NP-COG-OB ; ! ""
+Мадуров:Мадуров NP-COG-OB ; ! ""
+Майков:Майков NP-COG-OB ; ! ""
+Майлыбаев:Майлыбаев NP-COG-OB ; ! ""
+Макаров:Макаров NP-COG-OB ; ! ""
+Макеев:Макеев NP-COG-OB ; ! ""
+Максимов:Максимов NP-COG-OB ; ! ""
+Максутов:Максутов NP-COG-OB ; ! ""
+Макатаев:Макатаев NP-COG-OB ; ! ""
+Малахов:Малахов NP-COG-OB ; ! ""
+Малдыбаев:Малдыбаев NP-COG-OB ; ! ""
+Малеев:Малеев NP-COG-OB ; ! ""
+Малов:Малов NP-COG-OB ; ! ""
+Малышев:Малышев NP-COG-OB ; ! ""
+Мальцев:Мальцев NP-COG-OB ; ! ""
+Мамаев:Мамаев NP-COG-OB ; ! ""
+Мамедов:Мамедов NP-COG-OB ; ! ""
+Мамонтов:Мамонтов NP-COG-OB ; ! ""
+Мамыраев:Мамыраев NP-COG-OB ; ! ""
+Мамырказов:Мамырказов NP-COG-OB ; ! ""
+Мамырханов:Мамырханов NP-COG-OB ; ! ""
+Мамытбеков:Мамытбеков NP-COG-OB ; ! ""
+Манапов:Манапов NP-COG-OB ; ! ""
+Мансуров:Мансуров NP-COG-OB ; ! ""
+Маресьев:Маресьев NP-COG-OB ; ! ""
+Маркелов:Маркелов NP-COG-OB ; ! ""
+Маркиянов:Маркиянов NP-COG-OB ; ! ""
+Марков:Марков NP-COG-OB ; ! ""
+Мартов:Мартов NP-COG-OB ; ! ""
+Мартынов:Мартынов NP-COG-OB ; ! ""
+Масленников:Масленников NP-COG-OB ; ! ""
+Маслов:Маслов NP-COG-OB ; ! ""
+Масляков:Масляков NP-COG-OB ; ! ""
+Масудов:Масудов NP-COG-OB ; ! ""
+Матвеев:Матвеев NP-COG-OB ; ! ""
+Матросов:Матросов NP-COG-OB ; ! ""
+Махмутов:Махмутов NP-COG-OB ; ! ""
+Махмутов:Махмутов NP-COG-OB ; ! ""
+Машанов:Машанов NP-COG-OB ; ! ""
+Машеев:Машеев NP-COG-OB ; ! ""
+Машков:Машков NP-COG-OB ; ! ""
+Маяков:Маяков NP-COG-OB ; ! ""
+Мамбетов:Мамбетов NP-COG-OB ; ! ""
+Мамбетов:Мамбетов NP-COG-OB ; ! ""
+Марсеков:Марсеков NP-COG-OB ; ! ""
+Масимов:Масимов NP-COG-OB ; ! ""
+Медведев:Медведев NP-COG-OB ; ! "Medvedev"
+Медведьев:Медведьев NP-COG-OB ; ! ""
+Мельников:Мельников NP-COG-OB ; ! ""
+Менделеев:Менделеев NP-COG-OB ; ! ""
+Меңдалиев:Меңдалиев NP-COG-OB ; ! ""
+Меңешев:Меңешев NP-COG-OB ; ! ""
+Мергенбаев:Мергенбаев NP-COG-OB ; ! ""
+Мердеев:Мердеев NP-COG-OB ; ! ""
+Мерецков:Мерецков NP-COG-OB ; ! ""
+Мерзляков:Мерзляков NP-COG-OB ; ! ""
+Меркулов:Меркулов NP-COG-OB ; ! ""
+Меркурьев:Меркурьев NP-COG-OB ; ! ""
+Меркушев:Меркушев NP-COG-OB ; ! ""
+Метлов:Метлов NP-COG-OB ; ! ""
+Мефодьев:Мефодьев NP-COG-OB ; ! ""
+Меценатов:Меценатов NP-COG-OB ; ! ""
+Мечников:Мечников NP-COG-OB ; ! ""
+Мешков:Мешков NP-COG-OB ; ! ""
+Мидуков:Мидуков NP-COG-OB ; ! ""
+Миллионов:Миллионов NP-COG-OB ; ! ""
+Миллионщиков:Миллионщиков NP-COG-OB ; ! ""
+Миначев:Миначев NP-COG-OB ; ! ""
+Мингалев:Мингалев NP-COG-OB ; ! ""
+Миннегулов:Миннегулов NP-COG-OB ; ! ""
+Минниханов:Минниханов NP-COG-OB ; ! ""
+Миңнеханов:Миңнеханов NP-COG-OB ; ! ""
+Мироваев:Мироваев NP-COG-OB ; ! ""
+Миров:Миров NP-COG-OB ; ! ""
+Миронов:Миронов NP-COG-OB ; ! ""
+Миршанов:Миршанов NP-COG-OB ; ! ""
+Митрофанов:Митрофанов NP-COG-OB ; ! ""
+Миттов:Миттов NP-COG-OB ; ! ""
+Мифтахутдинов:Мифтахутдинов NP-COG-OB ; ! ""
+Михайлов:Михайлов NP-COG-OB ; ! ""
+Михалков:Михалков NP-COG-OB ; ! ""
+Михеев:Михеев NP-COG-OB ; ! ""
+Мишин:Мишин NP-COG-IN ; ! ""
+Минайдаров:Минайдаров NP-COG-OB ; ! ""
+Миркадыров:Миркадыров NP-COG-OB ; ! ""
+Могилев:Могилев NP-COG-OB ; ! ""
+Моисеев:Моисеев NP-COG-OB ; ! ""
+Мокеев:Мокеев NP-COG-OB ; ! ""
+Молдабеков:Молдабеков NP-COG-OB ; ! ""
+Молдагалиев:Молдагалиев NP-COG-OB ; ! ""
+Молдагулов:Молдагулов NP-COG-OB ; ! ""
+Молдакаримов:Молдакаримов NP-COG-OB ; ! ""
+Молдоков:Молдоков NP-COG-OB ; ! ""
+Молоков:Молоков NP-COG-OB ; ! ""
+Молотков:Молотков NP-COG-OB ; ! ""
+Молотов:Молотов NP-COG-OB ; ! ""
+Молчанов:Молчанов NP-COG-OB ; ! ""
+Моляков:Моляков NP-COG-OB ; ! ""
+Момбеков:Момбеков NP-COG-OB ; ! ""
+Мордвинцев:Мордвинцев NP-COG-OB ; ! ""
+Мордяков:Мордяков NP-COG-OB ; ! ""
+Морозов:Морозов NP-COG-OB ; ! ""
+Мочалов:Мочалов NP-COG-OB ; ! ""
+Мөхамматшин:Мөхамматшин NP-COG-IN ; ! ""
+Муллаев:Муллаев NP-COG-OB ; ! ""
+Мулюков:Мулюков NP-COG-OB ; ! ""
+Мулянов:Мулянов NP-COG-OB ; ! ""
+Муравьев:Муравьев NP-COG-OB ; ! ""
+Муравьёв:Муравьёв NP-COG-OB ; ! ""
+Мурауин:Мурауин NP-COG-IN ; ! ""
+Мурзуков:Мурзуков NP-COG-OB ; ! ""
+Мусатов:Мусатов NP-COG-OB ; ! ""
+Мусин:Мусин NP-COG-IN ; ! ""
+Мусинов:Мусинов NP-COG-OB ; ! ""
+Мустаев:Мустаев NP-COG-OB ; ! ""
+Мухин:Мухин NP-COG-IN ; ! ""
+Мушкетов:Мушкетов NP-COG-OB ; ! ""
+Мүсирепов:Мүсирепов NP-COG-OB ; ! ""
+Мүсабаев:Мүсабаев NP-COG-OB ; ! ""
+Мүсирепов:Мүсирепов NP-COG-OB ; ! ""
+Мүткенов:Мүткенов NP-COG-OB ; ! ""
+Муканов:Муканов NP-COG-OB ; ! ""
+Муңайтпасов:Муңайтпасов NP-COG-OB ; ! ""
+Муратбаев:Муратбаев NP-COG-OB ; ! ""
+Муратбеков:Муратбеков NP-COG-OB ; ! ""
+Мусабаев:Мусабаев NP-COG-OB ; ! ""
+Мусайынов:Мусайынов NP-COG-OB ; ! ""
+Мусакожаев:Мусакожаев NP-COG-OB ; ! ""
+Мусакожаев:Мусакожаев NP-COG-OB ; ! ""
+Мусаходжаев:Мусаходжаев NP-COG-OB ; ! ""
+Мустанбаев:Мустанбаев NP-COG-OB ; ! ""
+Мустапаев:Мустапаев NP-COG-OB ; ! ""
+Муфтахов:Муфтахов NP-COG-OB ; ! ""
+Мухамеджанов:Мухамеджанов NP-COG-OB ; ! ""
+Мухаметжанов:Мухаметжанов NP-COG-OB ; ! ""
+Мухаметкалиев:Мухаметкалиев NP-COG-OB ; ! ""
+Мыктыбаев:Мыктыбаев NP-COG-OB ; ! ""
+Мынбаев:Мынбаев NP-COG-OB ; ! ""
+Мыңбаев:Мыңбаев NP-COG-OB ; ! ""
+Мыңбаев:Мыңбаев NP-COG-OB ; ! ""
+Мырзабеков:Мырзабеков NP-COG-OB ; ! ""
+Мясищев:Мясищев NP-COG-OB ; ! ""
+Мясников:Мясников NP-COG-OB ; ! ""
+Нагорнов:Нагорнов NP-COG-OB ; ! ""
+Назарбаев:Назарбаев NP-COG-OB ; ! "Nazarbayev"
+Назарбеков:Назарбеков NP-COG-OB ; ! ""
+Назаров:Назаров NP-COG-OB ; ! ""
+Назырбаев:Назырбаев NP-COG-OB ; ! ""
+Нариманов:Нариманов NP-COG-OB ; ! ""
+Народецкий:Народецкий NP-COG-OB ; ! "" FIXME another ending for feminine
+Нарымбаев:Нарымбаев NP-COG-OB ; ! ""
+Нарымбетов:Нарымбетов NP-COG-OB ; ! ""
+Насимов:Насимов NP-COG-OB ; ! ""
+Насиров:Насиров NP-COG-OB ; ! ""
+Наумов:Наумов NP-COG-OB ; ! ""
+Наурызбаев:Наурызбаев NP-COG-OB ; ! ""
+Нажимеденов:Нажимеденов NP-COG-OB ; ! ""
+Нажимеденов:Нажимеденов NP-COG-OB ; ! ""
+Некрасов:Некрасов NP-COG-OB ; ! ""
+Немилов:Немилов NP-COG-OB ; ! ""
+Немцев:Немцев NP-COG-OB ; ! ""
+Неплюев:Неплюев NP-COG-OB ; ! ""
+Несипбаев:Несипбаев NP-COG-OB ; ! ""
+Нестеров:Нестеров NP-COG-OB ; ! ""
+Неуструев:Неуструев NP-COG-OB ; ! ""
+Нечаев:Нечаев NP-COG-OB ; ! ""
+Нижегородов:Нижегородов NP-COG-OB ; ! ""
+Никаноров:Никаноров NP-COG-OB ; ! ""
+Никитин:Никитин NP-COG-IN ; ! ""
+Никифоров:Никифоров NP-COG-OB ; ! ""
+Николаев:Николаев NP-COG-OB ; ! ""
+Никонов:Никонов NP-COG-OB ; ! ""
+Никоноров:Никоноров NP-COG-OB ; ! ""
+Ничиков:Ничиков NP-COG-OB ; ! ""
+Ниязбеков:Ниязбеков NP-COG-OB ; ! ""
+Ниязов:Ниязов NP-COG-OB ; ! ""
+Нобелев:Нобелев NP-COG-OB ; ! ""
+Новиков:Новиков NP-COG-OB ; ! ""
+Новозывков:Новозывков NP-COG-OB ; ! ""
+Новомихайлов:Новомихайлов NP-COG-OB ; ! ""
+Новоселов:Новоселов NP-COG-OB ; ! ""
+Ноздряков:Ноздряков NP-COG-OB ; ! ""
+Носков:Носков NP-COG-OB ; ! ""
+Носов:Носов NP-COG-OB ; ! ""
+Нөсербаев:Нөсербаев NP-COG-OB ; ! ""
+Нургалиев:Нургалиев NP-COG-OB ; ! ""
+Нурутдинов:Нурутдинов NP-COG-OB ; ! ""
+Нүсипжанов:Нүсипжанов NP-COG-OB ; ! ""
+Нурабаев:Нурабаев NP-COG-OB ; ! ""
+Нураков:Нураков NP-COG-OB ; ! ""
+Нурбаев:Нурбаев NP-COG-OB ; ! ""
+Нургалиев:Нургалиев NP-COG-OB ; ! ""
+Нуржанов:Нуржанов NP-COG-OB ; ! ""
+Нурлыбаев:Нурлыбаев NP-COG-OB ; ! ""
+Нурмаханбетов:Нурмаханбетов NP-COG-OB ; ! ""
+Нурмаханов:Нурмаханов NP-COG-OB ; ! ""
+Нурмухамедов:Нурмухамедов NP-COG-OB ; ! ""
+Нурмухаметов:Нурмухаметов NP-COG-OB ; ! ""
+Нурпейисов:Нурпейисов NP-COG-OB ; ! ""
+Нурышев:Нурышев NP-COG-OB ; ! ""
+Ныгметов:Ныгметов NP-COG-OB ; ! ""
+Нысанбаев:Нысанбаев NP-COG-OB ; ! ""
+Нысангалиев:Нысангалиев NP-COG-OB ; ! ""
+Обаев:Обаев NP-COG-OB ; ! ""
+Обогрелов:Обогрелов NP-COG-OB ; ! ""
+Образцов:Образцов NP-COG-OB ; ! ""
+Обручев:Обручев NP-COG-OB ; ! ""
+Обухов:Обухов NP-COG-OB ; ! ""
+Овельев:Овельев NP-COG-OB ; ! ""
+Овчинников:Овчинников NP-COG-OB ; ! ""
+Огишев:Огишев NP-COG-OB ; ! ""
+Огурцов:Огурцов NP-COG-OB ; ! ""
+Одинцов:Одинцов NP-COG-OB ; ! ""
+Одоев:Одоев NP-COG-OB ; ! ""
+Одюков:Одюков NP-COG-OB ; ! ""
+Окпаев:Окпаев NP-COG-OB ; ! ""
+Олзоев:Олзоев NP-COG-OB ; ! ""
+Оливанов:Оливанов NP-COG-OB ; ! ""
+Омарбаев:Омарбаев NP-COG-OB ; ! ""
+Омаров:Омаров NP-COG-OB ; ! ""
+Омаров:Омаров NP-COG-OB ; ! ""
+Оңдасынов:Оңдасынов NP-COG-OB ; ! ""
+Оразбаев:Оразбаев NP-COG-OB ; ! ""
+Оразбаков:Оразбаков NP-COG-OB ; ! ""
+Оралбаев:Оралбаев NP-COG-OB ; ! ""
+Орехов:Орехов NP-COG-OB ; ! ""
+Орешников:Орешников NP-COG-OB ; ! ""
+Оринов:Оринов NP-COG-OB ; ! ""
+Орков:Орков NP-COG-OB ; ! ""
+Орлов:Орлов NP-COG-OB ; ! ""
+Орымбаев:Орымбаев NP-COG-OB ; ! ""
+Орымбетов:Орымбетов NP-COG-OB ; ! ""
+Орынбеков:Орынбеков NP-COG-OB ; ! ""
+Осакаров:Осакаров NP-COG-OB ; ! ""
+Осипов:Осипов NP-COG-OB ; ! ""
+Оспанов:Оспанов NP-COG-OB ; ! ""
+Отарбеков:Отарбеков NP-COG-OB ; ! ""
+Отрыванов:Отрыванов NP-COG-OB ; ! ""
+Отунбаев:Отунбаев NP-COG-OB ; ! ""
+Отынбаев:Отынбаев NP-COG-OB ; ! ""
+Охотников:Охотников NP-COG-OB ; ! ""
+Өзбеков:Өзбеков NP-COG-OB ; ! ""
+Өмирбаев:Өмирбаев NP-COG-OB ; ! ""
+Өскенбаев:Өскенбаев NP-COG-OB ; ! ""
+Өтекешев:Өтекешев NP-COG-OB ; ! ""
+Өтемисов:Өтемисов NP-COG-OB ; ! ""
+Өтеулиев:Өтеулиев NP-COG-OB ; ! ""
+Өтешев:Өтешев NP-COG-OB ; ! ""
+Павлов:Павлов NP-COG-OB ; ! ""
+Павлов:Павлов NP-COG-OB ; ! ""
+Пайгусов:Пайгусов NP-COG-OB ; ! ""
+Палласов:Палласов NP-COG-OB ; ! ""
+Панев:Панев NP-COG-OB ; ! ""
+Панов:Панов NP-COG-OB ; ! ""
+Пантелеймонов:Пантелеймонов NP-COG-OB ; ! ""
+Панфилов:Панфилов NP-COG-OB ; ! ""
+Панюков:Панюков NP-COG-OB ; ! ""
+Папанов:Папанов NP-COG-OB ; ! ""
+Парфенов:Парфенов NP-COG-OB ; ! ""
+Пахомов:Пахомов NP-COG-OB ; ! ""
+Пелеев:Пелеев NP-COG-OB ; ! ""
+Передвижников:Передвижников NP-COG-OB ; ! ""
+Перов:Перов NP-COG-OB ; ! ""
+Перцев:Перцев NP-COG-OB ; ! ""
+Перцов:Перцов NP-COG-OB ; ! ""
+Пестов:Пестов NP-COG-OB ; ! ""
+Петляков:Петляков NP-COG-OB ; ! ""
+Петров:Петров NP-COG-OB ; ! ""
+Петроков:Петроков NP-COG-OB ; ! ""
+Петухов:Петухов NP-COG-OB ; ! ""
+Печников:Печников NP-COG-OB ; ! ""
+Пирогов:Пирогов NP-COG-OB ; ! ""
+Питлев:Питлев NP-COG-OB ; ! ""
+Пишенбаев:Пишенбаев NP-COG-OB ; ! ""
+Платонов:Платонов NP-COG-OB ; ! ""
+Плетнев:Плетнев NP-COG-OB ; ! ""
+Плеханов:Плеханов NP-COG-OB ; ! ""
+Плешаков:Плешаков NP-COG-OB ; ! ""
+Плотников:Плотников NP-COG-OB ; ! ""
+Победоносцев:Победоносцев NP-COG-OB ; ! ""
+Погодаев:Погодаев NP-COG-OB ; ! ""
+Подворков:Подворков NP-COG-OB ; ! ""
+Подосинов:Подосинов NP-COG-OB ; ! ""
+Поливанов:Поливанов NP-COG-OB ; ! ""
+Поликарпов:Поликарпов NP-COG-OB ; ! ""
+Полоруссов:Полоруссов NP-COG-OB ; ! ""
+Полугрудов:Полугрудов NP-COG-OB ; ! ""
+Поляков:Поляков NP-COG-OB ; ! ""
+Поминов:Поминов NP-COG-OB ; ! ""
+Пономарев:Пономарев NP-COG-OB ; ! ""
+Пономарёв:Пономарёв NP-COG-OB ; ! ""
+Попов:Попов NP-COG-OB ; ! ""
+Портнов:Портнов NP-COG-OB ; ! ""
+Поручиков:Поручиков NP-COG-OB ; ! ""
+Порфирьев:Порфирьев NP-COG-OB ; ! ""
+Потапов:Потапов NP-COG-OB ; ! ""
+Пояндаев:Пояндаев NP-COG-OB ; ! ""
+Преснов:Преснов NP-COG-OB ; ! ""
+Пресногорьков:Пресногорьков NP-COG-OB ; ! ""
+Прибылов:Прибылов NP-COG-OB ; ! ""
+Примаков:Примаков NP-COG-OB ; ! ""
+Прокопьев:Прокопьев NP-COG-OB ; ! ""
+Прокофьев:Прокофьев NP-COG-OB ; ! ""
+Прохоров:Прохоров NP-COG-OB ; ! ""
+Пугачев:Пугачев NP-COG-OB ; ! ""
+Пугачев:Пугачев NP-COG-OB ; ! ""
+Пулков:Пулков NP-COG-OB ; ! ""
+Пупорев:Пупорев NP-COG-OB ; ! ""
+Путеров:Путеров NP-COG-OB ; ! ""
+Путилов:Путилов NP-COG-OB ; ! ""
+Путин:Путин NP-COG-IN ; ! "Putin"
+Пушкин:Пушкин NP-COG-IN ; ! ""
+Пятиков:Пятиков NP-COG-OB ; ! ""
+Радаев:Радаев NP-COG-OB ; ! ""
+Радищев:Радищев NP-COG-OB ; ! ""
+Радлов:Радлов NP-COG-OB ; ! ""
+Разумов:Разумов NP-COG-OB ; ! ""
+Райбаев:Райбаев NP-COG-OB ; ! ""
+Раков:Раков NP-COG-OB ; ! ""
+Ракымов:Ракымов NP-COG-OB ; ! ""
+Рамазанов:Рамазанов NP-COG-OB ; ! ""
+Расков:Расков NP-COG-OB ; ! ""
+Ратьков:Ратьков NP-COG-OB ; ! ""
+Рафиков:Рафиков NP-COG-OB ; ! ""
+Рахимов:Рахимов NP-COG-OB ; ! ""
+Рахмадиев:Рахмадиев NP-COG-OB ; ! ""
+Рахманинов:Рахманинов NP-COG-OB ; ! ""
+Рахманов:Рахманов NP-COG-OB ; ! ""
+Рахов:Рахов NP-COG-OB ; ! ""
+Разиев:Разиев NP-COG-OB ; ! ""
+Рдюков:Рдюков NP-COG-OB ; ! ""
+Ребров:Ребров NP-COG-OB ; ! ""
+Резников:Резников NP-COG-OB ; ! ""
+Рекеев:Рекеев NP-COG-OB ; ! ""
+Ремезов:Ремезов NP-COG-OB ; ! ""
+Ремчуков:Ремчуков NP-COG-OB ; ! ""
+Реутов:Реутов NP-COG-OB ; ! ""
+Ржанов:Ржанов NP-COG-OB ; ! ""
+Ригов:Ригов NP-COG-OB ; ! ""
+Римов:Римов NP-COG-OB ; ! ""
+Рогов:Рогов NP-COG-OB ; ! ""
+Родионов:Родионов NP-COG-OB ; ! ""
+Рожков:Рожков NP-COG-OB ; ! ""
+Розов:Розов NP-COG-OB ; ! ""
+Романов:Романов NP-COG-OB ; ! ""
+Ростов:Ростов NP-COG-OB ; ! ""
+Рубцов:Рубцов NP-COG-OB ; ! ""
+Румянцев:Румянцев NP-COG-OB ; ! ""
+Русаков:Русаков NP-COG-OB ; ! ""
+Русанов:Русанов NP-COG-OB ; ! ""
+Русинов:Русинов NP-COG-OB ; ! ""
+Рүстемов:Рүстемов NP-COG-OB ; ! ""
+Рыбаков:Рыбаков NP-COG-OB ; ! ""
+Рыков:Рыков NP-COG-OB ; ! ""
+Рымбаев:Рымбаев NP-COG-OB ; ! ""
+Рынков:Рынков NP-COG-OB ; ! ""
+Рыскулов:Рыскулов NP-COG-OB ; ! ""
+Рычков:Рычков NP-COG-OB ; ! ""
+Рябов:Рябов NP-COG-OB ; ! ""
+Рябышев:Рябышев NP-COG-OB ; ! ""
+Рязанов:Рязанов NP-COG-OB ; ! ""
+Сабатаев:Сабатаев NP-COG-OB ; ! ""
+Сабдалин:Сабдалин NP-COG-IN ; ! ""
+Сабильянов:Сабильянов NP-COG-OB ; ! ""
+Савельев:Савельев NP-COG-OB ; ! ""
+Савёлов:Савёлов NP-COG-OB ; ! ""
+Савин:Савин NP-COG-IN ; ! ""
+Савуков:Савуков NP-COG-OB ; ! ""
+Сагындыков:Сагындыков NP-COG-OB ; ! ""
+Сагынтаев:Сагынтаев NP-COG-OB ; ! ""
+Сагырбаев:Сагырбаев NP-COG-OB ; ! ""
+Саданов:Саданов NP-COG-OB ; ! ""
+Садовников:Садовников NP-COG-OB ; ! ""
+Садыков:Садыков NP-COG-OB ; ! ""
+Садырбаев:Садырбаев NP-COG-OB ; ! ""
+Садюков:Садюков NP-COG-OB ; ! ""
+Саеров:Саеров NP-COG-OB ; ! ""
+Сазонов:Сазонов NP-COG-OB ; ! ""
+Сайдашев:Сайдашев NP-COG-OB ; ! ""
+Сайденов:Сайденов NP-COG-OB ; ! ""
+Сайтиев:Сайтиев NP-COG-OB ; ! ""
+Сакмаров:Сакмаров NP-COG-OB ; ! ""
+Сакабеков:Сакабеков NP-COG-OB ; ! ""
+Салимов:Салимов NP-COG-OB ; ! ""
+Салихов:Салихов NP-COG-OB ; ! ""
+Салтыков:Салтыков NP-COG-OB ; ! ""
+Сальников:Сальников NP-COG-OB ; ! ""
+Самашев:Самашев NP-COG-OB ; ! ""
+Самодуров:Самодуров NP-COG-OB ; ! ""
+Самойлов:Самойлов NP-COG-OB ; ! ""
+Самсонов:Самсонов NP-COG-OB ; ! ""
+Санбаев:Санбаев NP-COG-OB ; ! ""
+Сандимиров:Сандимиров NP-COG-OB ; ! ""
+Сандыбаев:Сандыбаев NP-COG-OB ; ! ""
+Сапожников:Сапожников NP-COG-OB ; ! ""
+Сараев:Сараев NP-COG-OB ; ! ""
+Сарасенбаев:Сарасенбаев NP-COG-OB ; ! ""
+Саратов:Саратов NP-COG-OB ; ! ""
+Сарбасов:Сарбасов NP-COG-OB ; ! ""
+Саркизов:Саркизов NP-COG-OB ; ! ""
+Саркулов:Саркулов NP-COG-OB ; ! ""
+Сарманов:Сарманов NP-COG-OB ; ! ""
+Сарханов:Сарханов NP-COG-OB ; ! ""
+Сарыбаев:Сарыбаев NP-COG-OB ; ! ""
+Сасыков:Сасыков NP-COG-OB ; ! ""
+Сатаев:Сатаев NP-COG-OB ; ! ""
+Сатпаев:Сатпаев NP-COG-OB ; ! ""
+Сатыбалдиев:Сатыбалдиев NP-COG-OB ; ! ""
+Сатыбалдинов:Сатыбалдинов NP-COG-OB ; ! ""
+Саудабаев:Саудабаев NP-COG-OB ; ! ""
+Саудабаев:Саудабаев NP-COG-OB ; ! ""
+Сауранбаев:Сауранбаев NP-COG-OB ; ! ""
+Сафаргалиев:Сафаргалиев NP-COG-OB ; ! ""
+Сафиев:Сафиев NP-COG-OB ; ! ""
+Сафонов:Сафонов NP-COG-OB ; ! ""
+Сафронов:Сафронов NP-COG-OB ; ! ""
+Сахаров:Сахаров NP-COG-OB ; ! ""
+Садуакасов:Садуакасов NP-COG-OB ; ! ""
+Сайденов:Сайденов NP-COG-OB ; ! ""
+Сакиев:Сакиев NP-COG-OB ; ! ""
+Самединов:Самединов NP-COG-OB ; ! ""
+Сапиев:Сапиев NP-COG-OB ; ! ""
+Сарсеков:Сарсеков NP-COG-OB ; ! ""
+Сарсембаев:Сарсембаев NP-COG-OB ; ! ""
+Сарсенбаев:Сарсенбаев NP-COG-OB ; ! ""
+Сарсенбаев:Сарсенбаев NP-COG-OB ; ! ""
+Сарсенов:Сарсенов NP-COG-OB ; ! ""
+Сатбаев:Сатбаев NP-COG-OB ; ! ""
+Сатбаев:Сатбаев NP-COG-OB ; ! ""
+Сатпаев:Сатпаев NP-COG-OB ; ! ""
+Сваев:Сваев NP-COG-OB ; ! ""
+Свердлов:Свердлов NP-COG-OB ; ! ""
+Сверчков:Сверчков NP-COG-OB ; ! ""
+Свиридов:Свиридов NP-COG-OB ; ! ""
+Свистков:Свистков NP-COG-OB ; ! ""
+Северцов:Северцов NP-COG-OB ; ! ""
+Сегизбаев:Сегизбаев NP-COG-OB ; ! ""
+Сеитов:Сеитов NP-COG-OB ; ! ""
+Сейитов:Сейитов NP-COG-OB ; ! ""
+Селезнев:Селезнев NP-COG-OB ; ! ""
+Селезнёв:Селезнёв NP-COG-OB ; ! ""
+Селиванов:Селиванов NP-COG-OB ; ! ""
+Селиверстов:Селиверстов NP-COG-OB ; ! ""
+Селивестров:Селивестров NP-COG-OB ; ! ""
+Сембаев:Сембаев NP-COG-OB ; ! ""
+Семенов:Семенов NP-COG-OB ; ! ""
+Семенов:Семенов NP-COG-OB ; ! ""
+Семёнов:Семёнов NP-COG-OB ; ! ""
+Сеңгирбаев:Сеңгирбаев NP-COG-OB ; ! ""
+Серафимов:Серафимов NP-COG-OB ; ! ""
+Сергачев:Сергачев NP-COG-OB ; ! ""
+Сергеев:Сергеев NP-COG-OB ; ! ""
+Сергазиев:Сергазиев NP-COG-OB ; ! ""
+Серебренников:Серебренников NP-COG-OB ; ! ""
+Серебряков:Серебряков NP-COG-OB ; ! ""
+Сериккалиев:Сериккалиев NP-COG-OB ; ! ""
+Серкебаев:Серкебаев NP-COG-OB ; ! ""
+Серов:Серов NP-COG-OB ; ! ""
+Серпухов:Серпухов NP-COG-OB ; ! ""
+Сетнеров:Сетнеров NP-COG-OB ; ! ""
+Сетов:Сетов NP-COG-OB ; ! ""
+Сеченев:Сеченев NP-COG-OB ; ! ""
+Сеченов:Сеченов NP-COG-OB ; ! ""
+Сидоров:Сидоров NP-COG-OB ; ! ""
+Сидорочев:Сидорочев NP-COG-OB ; ! ""
+Сидяков:Сидяков NP-COG-OB ; ! ""
+Силин:Силин NP-COG-IN ; ! ""
+Сильнов:Сильнов NP-COG-OB ; ! ""
+Симонов:Симонов NP-COG-OB ; ! ""
+Симьянов:Симьянов NP-COG-OB ; ! ""
+Синельников:Синельников NP-COG-OB ; ! ""
+Ситников:Ситников NP-COG-OB ; ! ""
+Скатов:Скатов NP-COG-OB ; ! ""
+Скворцов:Скворцов NP-COG-OB ; ! ""
+Сладков:Сладков NP-COG-OB ; ! ""
+Сланов:Сланов NP-COG-OB ; ! ""
+Слатнов:Слатнов NP-COG-OB ; ! ""
+Сламкулов:Сламкулов NP-COG-OB ; ! ""
+Слонов:Слонов NP-COG-OB ; ! ""
+Смаков:Смаков NP-COG-OB ; ! ""
+Смирнов:Смирнов NP-COG-OB ; ! ""
+Смолов:Смолов NP-COG-OB ; ! ""
+Смородинов:Смородинов NP-COG-OB ; ! ""
+Соболев:Соболев NP-COG-OB ; ! ""
+Созакбаев:Созакбаев NP-COG-OB ; ! ""
+Соколов:Соколов NP-COG-OB ; ! ""
+Сокпакбаев:Сокпакбаев NP-COG-OB ; ! ""
+Соловьёв:Соловьёв NP-COG-OB ; ! ""
+Сорокин:Сорокин NP-COG-IN ; ! ""
+Софронов:Софронов NP-COG-OB ; ! ""
+Сөмединов:Сөмединов NP-COG-OB ; ! ""
+Спамбетов:Спамбетов NP-COG-OB ; ! ""
+Спиридонов:Спиридонов NP-COG-OB ; ! ""
+Сталин:Сталин NP-COG-IN ; ! ""
+Стародубцев:Стародубцев NP-COG-OB ; ! ""
+Старшов:Старшов NP-COG-OB ; ! ""
+Стаханов:Стаханов NP-COG-OB ; ! ""
+Стеблов:Стеблов NP-COG-OB ; ! ""
+Степанов:Степанов NP-COG-OB ; ! ""
+Стифонов:Стифонов NP-COG-OB ; ! ""
+Столяров:Столяров NP-COG-OB ; ! ""
+Стратонов:Стратонов NP-COG-OB ; ! ""
+Страхов:Страхов NP-COG-OB ; ! ""
+Стрелков:Стрелков NP-COG-OB ; ! ""
+Строганов:Строганов NP-COG-OB ; ! ""
+Струнников:Струнников NP-COG-OB ; ! ""
+Стручков:Стручков NP-COG-OB ; ! ""
+Студенцов:Студенцов NP-COG-OB ; ! ""
+Субанов:Субанов NP-COG-OB ; ! ""
+Субботин:Субботин NP-COG-IN ; ! ""
+Суворов:Суворов NP-COG-OB ; ! ""
+Судаков:Судаков NP-COG-OB ; ! ""
+Сулиманов:Сулиманов NP-COG-OB ; ! ""
+Суриков:Суриков NP-COG-OB ; ! ""
+Суслов:Суслов NP-COG-OB ; ! ""
+Суханов:Суханов NP-COG-OB ; ! ""
+Суховерхов:Суховерхов NP-COG-OB ; ! ""
+Сүгирбаев:Сүгирбаев NP-COG-OB ; ! ""
+Сүйменбаев:Сүйменбаев NP-COG-OB ; ! ""
+Сүлеев:Сүлеев NP-COG-OB ; ! ""
+Сүлейменов:Сүлейменов NP-COG-OB ; ! ""
+Султанбаев:Султанбаев NP-COG-OB ; ! ""
+Султанбаев:Султанбаев NP-COG-OB ; ! ""
+Султанов:Султанов NP-COG-OB ; ! ""
+Сыздыков:Сыздыков NP-COG-OB ; ! ""
+Сыпатаев:Сыпатаев NP-COG-OB ; ! ""
+Сыромятников:Сыромятников NP-COG-OB ; ! ""
+Сырттанов:Сырттанов NP-COG-OB ; ! ""
+Сырымбетов:Сырымбетов NP-COG-OB ; ! ""
+Сысоев:Сысоев NP-COG-OB ; ! ""
+Сычев:Сычев NP-COG-OB ; ! ""
+Табылдиев:Табылдиев NP-COG-OB ; ! ""
+Тагильцев:Тагильцев NP-COG-OB ; ! ""
+Тазабеков:Тазабеков NP-COG-OB ; ! ""
+Таймагамбетов:Таймагамбетов NP-COG-OB ; ! ""
+Тайманов:Тайманов NP-COG-OB ; ! ""
+Таймасов:Таймасов NP-COG-OB ; ! ""
+Тайшапов:Тайшапов NP-COG-OB ; ! ""
+Таланцев:Таланцев NP-COG-OB ; ! ""
+Талжанов:Талжанов NP-COG-OB ; ! ""
+Талиев:Талиев NP-COG-OB ; ! ""
+Талов:Талов NP-COG-OB ; ! ""
+Тамабаев:Тамабаев NP-COG-OB ; ! ""
+Таңатаров:Таңатаров NP-COG-OB ; ! ""
+Тапцырев:Тапцырев NP-COG-OB ; ! ""
+Таранов:Таранов NP-COG-OB ; ! ""
+Тарасов:Тарасов NP-COG-OB ; ! ""
+Тасболатов:Тасболатов NP-COG-OB ; ! ""
+Тасмагамбетов:Тасмагамбетов NP-COG-OB ; ! ""
+Тастайбеков:Тастайбеков NP-COG-OB ; ! ""
+Тастанбеков:Тастанбеков NP-COG-OB ; ! ""
+Татанов:Татанов NP-COG-OB ; ! ""
+Татарханов:Татарханов NP-COG-OB ; ! ""
+Таукин:Таукин NP-COG-IN ; ! ""
+Тафаев:Тафаев NP-COG-OB ; ! ""
+Ташмухамедов:Ташмухамедов NP-COG-OB ; ! ""
+Тажибаев:Тажибаев NP-COG-OB ; ! ""
+Такибаев:Такибаев NP-COG-OB ; ! ""
+Таңирбергенов:Таңирбергенов NP-COG-OB ; ! ""
+Ташенев:Ташенев NP-COG-OB ; ! ""
+Тевкелев:Тевкелев NP-COG-OB ; ! ""
+Теменов:Теменов NP-COG-OB ; ! ""
+Темирбеков:Темирбеков NP-COG-OB ; ! ""
+Темиржанов:Темиржанов NP-COG-OB ; ! ""
+Темиров:Темиров NP-COG-OB ; ! ""
+Тенюшев:Тенюшев NP-COG-OB ; ! ""
+Теплов:Теплов NP-COG-OB ; ! ""
+Теплоухов:Теплоухов NP-COG-OB ; ! ""
+Терентьев:Терентьев NP-COG-OB ; ! ""
+Тереньтев:Тереньтев NP-COG-OB ; ! ""
+Тетерин:Тетерин NP-COG-IN ; ! ""
+Тиесов:Тиесов NP-COG-OB ; ! ""
+Тиесов:Тиесов NP-COG-OB ; ! ""
+Тимаев:Тимаев NP-COG-OB ; ! ""
+Тимирязев:Тимирязев NP-COG-OB ; ! ""
+Тимофеев:Тимофеев NP-COG-OB ; ! ""
+Титов:Титов NP-COG-OB ; ! ""
+Тихонов:Тихонов NP-COG-OB ; ! ""
+Тилендиев:Тилендиев NP-COG-OB ; ! ""
+Тиленшиев:Тиленшиев NP-COG-OB ; ! ""
+Тилеуханов:Тилеуханов NP-COG-OB ; ! ""
+Токарев:Токарев NP-COG-OB ; ! ""
+Токмаганбетов:Токмаганбетов NP-COG-OB ; ! ""
+Токомбаев:Токомбаев NP-COG-OB ; ! ""
+Токпанов:Токпанов NP-COG-OB ; ! ""
+Токсанбаев:Токсанбаев NP-COG-OB ; ! ""
+Токтабаев:Токтабаев NP-COG-OB ; ! ""
+Токтаров:Токтаров NP-COG-OB ; ! ""
+Толмачев:Толмачев NP-COG-OB ; ! ""
+Толстов:Толстов NP-COG-OB ; ! ""
+Торайгыров:Торайгыров NP-COG-OB ; ! ""
+Торопцев:Торопцев NP-COG-OB ; ! ""
+Тосов:Тосов NP-COG-OB ; ! ""
+Төлебаев:Төлебаев NP-COG-OB ; ! ""
+Төлегенов:Төлегенов NP-COG-OB ; ! ""
+Төлегенов:Төлегенов NP-COG-OB ; ! ""
+Төлепбаев:Төлепбаев NP-COG-OB ; ! ""
+Төребаев:Төребаев NP-COG-OB ; ! ""
+Төрежанов:Төрежанов NP-COG-OB ; ! ""
+Төржанов:Төржанов NP-COG-OB ; ! ""
+Третьяков:Третьяков NP-COG-OB ; ! ""
+Тронов:Тронов NP-COG-OB ; ! ""
+Трофимов:Трофимов NP-COG-OB ; ! ""
+Туполев:Туполев NP-COG-OB ; ! ""
+Тургенев:Тургенев NP-COG-OB ; ! ""
+Тургенов:Тургенов NP-COG-OB ; ! ""
+Туров:Туров NP-COG-OB ; ! ""
+Түгелбаев:Түгелбаев NP-COG-OB ; ! ""
+Түнтеков:Түнтеков NP-COG-OB ; ! ""
+Тунгушпаев:Тунгушпаев NP-COG-OB ; ! ""
+Турагулов:Турагулов NP-COG-OB ; ! ""
+Туржанов:Туржанов NP-COG-OB ; ! ""
+Турлыханов:Турлыханов NP-COG-OB ; ! ""
+Туяков:Туяков NP-COG-OB ; ! ""
+Тынышбаев:Тынышбаев NP-COG-OB ; ! ""
+Тынышпаев:Тынышпаев NP-COG-OB ; ! ""
+Тысыбаев:Тысыбаев NP-COG-OB ; ! ""
+Тюленев:Тюленев NP-COG-OB ; ! ""
+Тячев:Тячев NP-COG-OB ; ! ""
+Уалиева:Уалиева NP-COG-OB ; ! ""
+Уалиханов:Уалиханов NP-COG-OB ; ! ""
+Уалиева:Уалиева NP-COG-OB ; ! ""
+Уалиханов:Уалиханов NP-COG-OB ; ! ""
+Уваров:Уваров NP-COG-OB ; ! ""
+Узелков:Узелков NP-COG-OB ; ! ""
+Уланов:Уланов NP-COG-OB ; ! ""
+Уляшев:Уляшев NP-COG-OB ; ! ""
+Умов:Умов NP-COG-OB ; ! ""
+Уралеев:Уралеев NP-COG-OB ; ! ""
+Урмаев:Урмаев NP-COG-OB ; ! ""
+Устинов:Устинов NP-COG-OB ; ! ""
+Ушаков:Ушаков NP-COG-OB ; ! ""
+Үкибаев:Үкибаев NP-COG-OB ; ! ""
+Үмбеталиев:Үмбеталиев NP-COG-OB ; ! ""
+Үмбетбаев:Үмбетбаев NP-COG-OB ; ! ""
+Уйыкбаев:Уйыкбаев NP-COG-OB ; ! ""
+Уркымбаев:Уркымбаев NP-COG-OB ; ! ""
+Фадеев:Фадеев NP-COG-OB ; ! ""
+Фандеев:Фандеев NP-COG-OB ; ! ""
+Федоров:Федоров NP-COG-OB ; ! ""
+Федосеев:Федосеев NP-COG-OB ; ! ""
+Федотов:Федотов NP-COG-OB ; ! ""
+Фелимонов:Фелимонов NP-COG-OB ; ! ""
+Фёдоров:Фёдоров NP-COG-OB ; ! ""
+Филатов:Филатов NP-COG-OB ; ! ""
+Филиппов:Филиппов NP-COG-OB ; ! ""
+Фокин:Фокин NP-COG-IN ; ! ""
+Фомин:Фомин NP-COG-IN ; ! ""
+Фомичёв:Фомичёв NP-COG-OB ; ! ""
+Фролов:Фролов NP-COG-OB ; ! ""
+Фурманов:Фурманов NP-COG-OB ; ! ""
+Хабаров:Хабаров NP-COG-OB ; ! ""
+Хадеев:Хадеев NP-COG-OB ; ! ""
+Хакимжанов:Хакимжанов NP-COG-OB ; ! ""
+Хакимов:Хакимов NP-COG-OB ; ! ""
+Халкомсов:Халкомсов NP-COG-OB ; ! ""
+Хамдамов:Хамдамов NP-COG-OB ; ! ""
+Ханыков:Ханыков NP-COG-OB ; ! ""
+Харитонов:Харитонов NP-COG-OB ; ! ""
+Харламов:Харламов NP-COG-OB ; ! ""
+Харламов:Харламов NP-COG-OB ; ! ""
+Харлампьев:Харлампьев NP-COG-OB ; ! ""
+Хасангалиев:Хасангалиев NP-COG-OB ; ! ""
+Хасенов:Хасенов NP-COG-OB ; ! ""
+Хлестаков:Хлестаков NP-COG-OB ; ! ""
+Хлудов:Хлудов NP-COG-OB ; ! ""
+Хмелев:Хмелев NP-COG-OB ; ! ""
+Хомутов:Хомутов NP-COG-OB ; ! ""
+Хорасев:Хорасев NP-COG-OB ; ! ""
+Хохлов:Хохлов NP-COG-OB ; ! ""
+Храпунов:Храпунов NP-COG-OB ; ! ""
+Хрусталев:Хрусталев NP-COG-OB ; ! ""
+Хрущев:Хрущев NP-COG-OB ; ! ""
+Хумышев:Хумышев NP-COG-OB ; ! ""
+Царев:Царев NP-COG-OB ; ! ""
+Цветаев:Цветаев NP-COG-OB ; ! ""
+Цветков:Цветков NP-COG-OB ; ! ""
+Чагаев:Чагаев NP-COG-OB ; ! ""
+Чалабаев:Чалабаев NP-COG-OB ; ! ""
+Чапаев:Чапаев NP-COG-OB ; ! ""
+Чебышев:Чебышев NP-COG-OB ; ! ""
+Чердабаев:Чердабаев NP-COG-OB ; ! ""
+Черемухов:Черемухов NP-COG-OB ; ! ""
+Черенков:Черенков NP-COG-OB ; ! ""
+Чернов:Чернов NP-COG-OB ; ! ""
+Чернышев:Чернышев NP-COG-OB ; ! ""
+Черняев:Черняев NP-COG-OB ; ! ""
+Чесноков:Чесноков NP-COG-OB ; ! ""
+Чехов:Чехов NP-COG-OB ; ! ""
+Чехов:Чехов NP-COG-OB ; ! ""
+Чижиков:Чижиков NP-COG-OB ; ! ""
+Читнаев:Читнаев NP-COG-OB ; ! ""
+Чихачев:Чихачев NP-COG-OB ; ! ""
+Чкалов:Чкалов NP-COG-OB ; ! ""
+Чулков:Чулков NP-COG-OB ; ! ""
+Чулошников:Чулошников NP-COG-OB ; ! ""
+Чупоршнев:Чупоршнев NP-COG-OB ; ! ""
+Чуриков:Чуриков NP-COG-OB ; ! ""
+Шагаев:Шагаев NP-COG-OB ; ! ""
+Шайкысламов:Шайкысламов NP-COG-OB ; ! ""
+Шаймиев:Шаймиев NP-COG-OB ; ! ""
+Шалаев:Шалаев NP-COG-OB ; ! ""
+Шалеев:Шалеев NP-COG-OB ; ! ""
+Шамаев:Шамаев NP-COG-OB ; ! ""
+Шамполов:Шамполов NP-COG-OB ; ! ""
+Шаңгереев:Шаңгереев NP-COG-OB ; ! ""
+Шаңгутов:Шаңгутов NP-COG-OB ; ! ""
+Шаңгытбаев:Шаңгытбаев NP-COG-OB ; ! ""
+Шапошников:Шапошников NP-COG-OB ; ! ""
+Шапталов:Шапталов NP-COG-OB ; ! ""
+Шарапов:Шарапов NP-COG-OB ; ! ""
+Шаров:Шаров NP-COG-OB ; ! ""
+Шаханов:Шаханов NP-COG-OB ; ! ""
+Шашков:Шашков NP-COG-OB ; ! ""
+Шаяхметов:Шаяхметов NP-COG-OB ; ! ""
+Шаяхметов:Шаяхметов NP-COG-OB ; ! ""
+Шаймиев:Шаймиев NP-COG-OB ; ! ""
+Шарипов:Шарипов NP-COG-OB ; ! ""
+Шемекеев:Шемекеев NP-COG-OB ; ! ""
+Шергазиев:Шергазиев NP-COG-OB ; ! ""
+Шерементьев:Шерементьев NP-COG-OB ; ! ""
+Шестаков:Шестаков NP-COG-OB ; ! ""
+Шибаев:Шибаев NP-COG-OB ; ! ""
+Шилманов:Шилманов NP-COG-OB ; ! ""
+Шилов:Шилов NP-COG-OB ; ! ""
+Шингарев:Шингарев NP-COG-OB ; ! ""
+Ширяев:Ширяев NP-COG-OB ; ! ""
+Шнитников:Шнитников NP-COG-OB ; ! ""
+Шокаев:Шокаев NP-COG-OB ; ! ""
+Шонанов:Шонанов NP-COG-OB ; ! ""
+Шорманов:Шорманов NP-COG-OB ; ! ""
+Шостков:Шостков NP-COG-OB ; ! ""
+Шотаев:Шотаев NP-COG-OB ; ! ""
+Шпаков:Шпаков NP-COG-OB ; ! ""
+Шубин:Шубин NP-COG-IN ; ! ""
+Шувалов:Шувалов NP-COG-OB ; ! ""
+Шулаев:Шулаев NP-COG-OB ; ! ""
+Шустов:Шустов NP-COG-OB ; ! ""
+Шүменов:Шүменов NP-COG-OB ; ! ""
+Шылманов:Шылманов NP-COG-OB ; ! ""
+Шынасилов:Шынасилов NP-COG-OB ; ! ""
+Шырдабаев:Шырдабаев NP-COG-OB ; ! ""
+Щербаков:Щербаков NP-COG-OB ; ! ""
+Щукин:Щукин NP-COG-IN ; ! ""
+Ыбрайымов:Ыбрайымов NP-COG-OB ; ! ""
+Ыбыраев:Ыбыраев NP-COG-OB ; ! ""
+Ыдырысов:Ыдырысов NP-COG-OB ; ! ""
+Ыскаков:Ыскаков NP-COG-OB ; ! ""
+Ысмайылов:Ысмайылов NP-COG-OB ; ! ""
+Эдоков:Эдоков NP-COG-OB ; ! ""
+Ювенальев:Ювенальев NP-COG-OB ; ! ""
+Юдин:Юдин NP-COG-IN ; ! ""
+Юрьев:Юрьев NP-COG-OB ; ! ""
+Юсупов:Юсупов NP-COG-OB ; ! ""
+Яблочков:Яблочков NP-COG-OB ; ! ""
+Ядринцев:Ядринцев NP-COG-OB ; ! ""
+Яковлев:Яковлев NP-COG-OB ; ! ""
+Яколвев:Яколвев NP-COG-OB ; ! ""
+Якушев:Якушев NP-COG-OB ; ! ""
+Ямышев:Ямышев NP-COG-OB ; ! ""
+Яранцев:Яранцев NP-COG-OB ; ! ""
+Ярославцев:Ярославцев NP-COG-OB ; ! ""
+Аминов:Аминов NP-COG-OB ; ! ""
+Плугов:Плугов NP-COG-OB ; ! ""
+Турчинов:Турчинов NP-COG-OB ; ! ""
+Усубакунов:Усубакунов NP-COG-OB ; ! ""
+Масимов:Масимов NP-COG-OB ; ! ""
+Бекенов:Бекенов NP-COG-OB ; ! ""
+Бекмамбетов:Бекмамбетов NP-COG-OB ; ! ""
+Мадумаров:Мадумаров NP-COG-OB ; ! ""
+Макашарипов:Макашарипов NP-COG-OB ; ! ""
 Айтматов:Айтматов NP-COG-M ;
+Токомбаев:Токомбаев NP-COG-M ;
 Айтматов:Айтматов NP-COG-M ; ! ""
 Абдрахманов:Абдрахманов NP-COG-M ; ! ""
 Айдаров:Айдаров NP-COG-M ; ! ""
 Айтматов:Айтматов NP-COG-M ; ! ""
 Аристов:Аристов NP-COG-M ; ! ""
 Асанов:Асанов NP-COG-M ; ! ""
+Байзаков:Байзаков NP-COG-M ; ! ""
 Бакиев:Бакиев NP-COG-M ; ! ""
+Жакыпов:Жакыпов NP-COG-M ; ! ""
 Иванов:Иванов NP-COG-M ; ! ""
 Исаков:Исаков NP-COG-M ; ! ""
 Каримов:Каримов NP-COG-M ; ! ""
+Касымбеков:Касымбеков NP-COG-M ; ! ""
 Киров:Киров NP-COG-M ; ! ""
+Кудайбергенов:Кудайбергенов NP-COG-M ; ! ""
 Лермонтов:Лермонтов NP-COG-M ; ! ""
 Ломоносов:Ломоносов NP-COG-M ; ! ""
+Мамбетов:Мамбетов NP-COG-M ; ! ""
 Ниязов:Ниязов NP-COG-M ; ! ""
 Панфилов:Панфилов NP-COG-M ; ! ""
 Петров:Петров NP-COG-M ; ! ""
 Радлов:Радлов NP-COG-M ; ! ""
+Рыскулов:Рыскулов NP-COG-M ; ! ""
+Садыков:Садыков NP-COG-M ; ! ""
+Султанов:Султанов NP-COG-M ; ! ""
 Усубакунов:Усубакунов NP-COG-M ; ! ""
 Чехов:Чехов NP-COG-M ; ! ""
+Акаев:Акаев NP-COG-M ;
 Көлбаев:Көлбаев NP-COG-M ;
 Аскар:Аскар NP-COG-M ;
 Владимир:Владимир NP-COG-M ;
 Дмитрий:Дмитрий NP-COG-M ;
+Эрдоган:Эрдоган NP-COG-MF ; ! ""
 Пушкин:Пушкин NP-COG-MF ;
 Аббас:Аббас NP-COG-MF ; ! "Abbas"
 Ленин:Ленин NP-COG-MF ; ! "Lenin"
@@ -4053,6 +6416,7 @@ LEXICON Adjectives
 демөөрчүлүк:демөөрчүлүк ADJ ; ! "sponsoring [e.g., organisation]"
 ордуна% тургус:ордуна% тургус ADJ ; ! "irreversible" Use/MT
 кутулгус:кутулгус ADJ ; ! "irreversible"
+аттуу:аттуу A4 ; ! "named"
 атайын:атайын A1 ; ! "purposely"
 үстөм:үстөм ADJ ; ! "превосходящий, господствующий;"
 мээримдүү:мээримдүү ADJ ; ! ""
@@ -4158,7 +6522,7 @@ LEXICON Verbs
 кел:кел VAUX-INFL ; !
 өс:өс V-INFL-IV ;
 сат:сат V-INFL-TV ;
-сат:сат V-INFL-TV ;
+саттыр:саттыр V-INFL-TV ;
 арттыр:арттыр V-INFL-TV ; ! "to enlarge"
 арт:арт V-INFL-IV ; ! ""
 бол:бол V-INFL-IV ; ! "be"
@@ -4169,7 +6533,6 @@ LEXICON Verbs
 ал:ал V-INFL-TV ; ! "take"
 ал:ал V-INFL-IV ; ! "take"
 ал:ал V-INFL-IV ; ! "take"
-ас:ас V-INFL-TV ; ! "hang"
 ат:ат V-INFL-TV ; ! "shoot"
 ата:ата V-INFL-TV ;
 аш:аш V-INFL-IV-NO-CAUS ; ! "pass/exceed"
@@ -4215,7 +6578,11 @@ LEXICON Verbs
 сал:сал V-INFL-TV ;
 салгылаш:салгылаш V-INFL-IV;
 сана:сана V-INFL-TV ; ! "count/consider"
+сий:сий V-INFL-IV ; ! "pee"
 сыйла:сыйла V-INFL-TV ; 
+тааны:тааны V-INFL-TV ; ! "know (a person)"
+тий:тий V-INFL-TV ; ! "touch" (takes dative)
+тий:тийгиз V-INFL-IV-IRREG-CAUS ; ! "make touch"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"
 тур:тур V-INFL-IV-NO-CAUS ; ! "stand, live"
 тур:тургуз V-INFL-IV-IRREG-CAUS ; ! "stand up (trans)"
@@ -4234,6 +6601,12 @@ LEXICON Verbs
 башта:башта V-INFL-TV ; 
 боё:боё V-INFL-TV ; 
 бөлүн:бөлүн V-INFL-TV ; ! ""
+кий:кий V-INFL-TV ; ! "put on"
+кий:кий V-INFL-TV ; ! "put on"
+кий:кий V-INFL-IV-NO-CAUS ; ! "get dressed"
+кий:кий V-INFL-IV-NO-CAUS ; ! "get dressed"
+кий:кийгиз V-INFL-IV-IRREG-CAUS ; ! "dress"
+кий:кийгиз V-INFL-IV-IRREG-CAUS ; ! "dress"
 жибер:жибер V-INFL-TV ; ! "send"
 же:же V-INFL-TV ; 
 жең:жең V-INFL-TV ; 
@@ -4247,6 +6620,7 @@ LEXICON Verbs
 кир:киргиз V-INFL-IV-IRREG-CAUS ; ! "put in, enter (e.g. data)"
 кир:кир V-INFL-TV ;
 азайт:азайт V-INFL-TV ;
+азгыр:азгыр V-INFL-TV ;
 көбөйт:көбөйт V-INFL-TV ; 
 көч:көч V-INFL-IV-NO-CAUS ; ! "move"
 көч:көчүр V-INFL-IV-IRREG-CAUS ; ! "make move"
@@ -4263,13 +6637,16 @@ LEXICON Verbs
 сүйлө:сүйлө V-INFL-TV ; ! "speak on [topic]"
 сүйлө:сүйлө V-INFL-TV ; ! "speak on [topic]"
 тап:тап V-INFL-TV ; ! "find"
-тартын:тартын V-INFL-TV ; 
 ташы:ташы V-INFL-TV ; ! "haul"
+тик:тик V-INFL-TV ; 
+токто:токто V-INFL-IV ; ! "stop" 
+токтот:токтот V-INFL-TV ; ! "stop"  ! Regular causative
 түш:түш V-INFL-IV-NO-CAUS ; ! "fall"
 түш:түшүр V-INFL-IV-IRREG-CAUS ; ! "to make fall"
 чакыр:чакыр V-INFL-TV ; 
 чык:чык V-INFL-IV-NO-CAUS ; ! "to exit/leave"
 чык:чыгар V-INFL-IV-IRREG-CAUS ; ! "to take/put/move [object] out"
+шайла:шайла V-INFL-TV ; 
 уч:уч V-INFL-IV ;
 катыш:катыш V-INFL-IV ;
 тый:тый V-INFL-IV ;
@@ -4278,7 +6655,6 @@ LEXICON Verbs
 каала:каала V-INFL-TV ; ! "want"
 жылмай:жылмай V-INFL-IV ;
 ойло:ойло V-INFL-TV ;
-тапта:тапта V-INFL-TV ;
 камсыз% кыл:камсыз% кыл V-INFL-TV ;
 кабарла:кабарла V-INFL-TV ;
 жет:жет V-INFL-IV-NO-CAUS ; 
@@ -4290,35 +6666,46 @@ LEXICON Verbs
 кош:кош V-INFL-TV ;
 изде:изде V-INFL-TV ;
 сат:сат V-INFL-TV ;
-сат:сат V-INFL-TV ;
 ташы:ташы V-INFL-TV ;
 азай:азай V-INFL-IV ;
 жап:жап V-INFL-TV ;
 изилде:изилде V-INFL-TV ; ! "to research/investigate"
 котор:котор V-INFL-TV ; ! "translate/convert"
 тара:тара V-INFL-IV ;
+туу:туу V-INFL-TV ; ! "to bear young"
 алып% бар:алып% бар V-INFL-TV ;
-сыз:сыз V-INFL-IV ; 
 далилде:далилде V-INFL-TV ;
 айны:айны V-INFL-IV ;
+алалан:алалан V-INFL-IV ;
 чурка:чурка V-INFL-IV ;
 жашын:жашын V-INFL-IV ;
 жаса:жаса V-INFL-TV ;
 кыр:кыр V-INFL-TV ;
 сура:сура V-INFL-TV ;
+ий:ий V-INFL-TV ;
 кара:кара V-INFL-TV ;
 же:же V-INFL-TV ; ! "eat"
+буу:буу V-INFL-TV ; ! "tie tightly"
 ал:ал V-INFL-TV ;
 ал:ал V-INFL-TV ;
 маалымда:маалымда V-INFL-TV ; ! "to inform"
+уула:уула V-INFL-TV ; ! "to poison" 
+уула:уула V-INFL-TV ; ! "to hunt" 
 сын:сын V-INFL-IV ;
+тынчы:тынчы V-INFL-IV ;
 байкал:байкал V-INFL-IV ; ! "be noticed"
 сына:сына V-INFL-TV ;
+алдыр:алдыр V-INFL-TV ;
+арала:арала V-INFL-TV ;
+ары:ары V-INFL-TV ; ! "ары- III уставать, утомляться; изнуряться, худеть;"
+арыт:арыт V-INFL-TV ;
+салыштыр:салыштыр V-INFL-TV ;
 көбөй:көбөй V-INFL-IV ;
 жап:жап V-INFL-TV ;
 укта:укта V-INFL-IV ;
 жет:жет V-INFL-TV ;
-табын:табын V-INFL-IV ;
+тий:тий V-INFL-IV ;
+шыпыр:шыпыр V-INFL-TV ;
 ойло:ойло V-INFL-IV ;
 пайда% бол:пайда% бол V-INFL-IV ;
 уч:уч V-INFL-TV ;
@@ -4328,18 +6715,49 @@ LEXICON Verbs
 азай:азай V-INFL-TV ;
 бас:бас V-INFL-TV ;
 бас:бас V-INFL-TV ;
+сыйры:сыйры V-INFL-TV ;
 бат:бат V-INFL-IV ;
 жашын:жашын V-INFL-IV ;
 пайда% бол:пайда% бол V-INFL-IV ;
 кездеш:кездеш V-INFL-TV ;
-табын:табын V-INFL-IV ;
+тебеле:тебеле V-INFL-TV ;
+шайла:шайла V-INFL-TV ;
+шайлат:шайлат V-INFL-TV ;
 эсепте:эсепте V-INFL-TV ;
+ий:ий V-INFL-TV ;
+оона:оона V-INFL-IV ;
+оона:оона V-INFL-IV ;
+оонат:оонат V-INFL-TV ;
 дуушар% бол:дуушар% бол V-INFL-IV; ! "be exposed to"
 кыйра:кыйра V-INFL-IV ; ! "be destroyed"
 үгүттө:үгүттө V-INFL-TV ; ! "to agitate"
 үгүттөн:үгүттөн V-INFL-IV ; ! "be agitated"
 талкуула:талкуула V-INFL-IV ; ! ""
 күчөт:күчөт V-INFL-IV ; ! "наращивать"
+көзөмөлдө:көзөмөлдө V-INFL-TV ; ! "наблюдать,контролировать,проверять"
+менчиктештир:менчиктештир V-INFL-TV ; ! "to privatizate"
+абайла:абайла V-INFL-TV ; ! "cautious,attentive,beware"
+абайла:абайла V-INFL-TV ; ! "cautious,attentive,beware"
+ая:ая V-INFL-TV ;
+баррикадала:баррикадала V-INFL-TV ;
+барымтала:барымтала V-INFL-TV ;
+реформала:реформала V-INFL-TV ;
+саа:саа V-INFL-TV ;
+сый:сый V-INFL-IV ; ! "вмещаться"
+сыйдыр:сыйдыр V-INFL-TV ;
+сынат:сынат V-INFL-IV ;
+жүгүн:жүгүн V-INFL-IV ;
+тазар:тазар V-INFL-IV ;
+тала:тала V-INFL-TV ;
+талыт:талыт V-INFL-TV ;
+талпын:талпын V-INFL-IV ;
+тааныт:тааныт V-INFL-TV ;
+тара:тара V-INFL-TV ; ! "расчесывать"
+тарал:тарал V-INFL-IV ;
+тарат:тарат V-INFL-TV ;
+тырма:тырма V-INFL-TV ;
+туудур:туудур V-INFL-TV ;
+батыр:батыр V-INFL-TV ;
 ошент:ошент V-INFL-IV ;
 ошент:ошент V-INFL-TV ;
 минт:минт V-INFL-IV ;
@@ -4447,7 +6865,7 @@ ISBN:ISBN ABBR ;
 ФСБ:ФСБ ABBR ; ! ""
 хим%.:хим%. ABBR ; ! "chemical"
 ШКУ:ШКУ ABBR ; ! "Шанхай Кызматташтык Уюму же ШКУ/SCO"
-ШУАР:ШУАР ; ! "Шинжаң-Уйгур автоном району"
+ШУАР:ШУАР ABBR ; ! "Шинжаң-Уйгур автоном району"
 экон%.:экон%. ABBR ; ! "economic"
 ЮНЕСКО:ЮНЕСКО ABBR ; ! ""
 EITI:EITI ABBR ; ! ""
