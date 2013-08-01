@@ -541,7 +541,7 @@
 <e>      <p><l>құрылым<s n="n"/></l>         <r>структура<s n="n"/></r></p></e> <!-- "structure"-->
 <e>      <p><l>ДНҚ<s n="n"/></l>             <r>ДНК<s n="n"/></r></p></e> <!-- "DNA"-->
 <e>	 <p><l>Алла<s n="n"/></l>	     <r>Алла<s n="n"/></r></p></e>
-<e>	 <p><l>Аллаһ<s n="n"/></l>	     <r>Аллаһ<s n="n"/></r></p></e>
+<e>	 <p><l>Аллаһ<s n="n"/></l>	     <r>Аллах<s n="n"/></r></p></e>
 <e>	 <p><l>құран<s n="n"/></l>	     <r>куран<s n="n"/></r></p></e>
 <e>	 <p><l>иман<s n="n"/></l>	     <r>ыйман<s n="n"/></r></p></e>
 <e>	 <p><l>күдік<s n="n"/></l>	     <r>шек<s n="n"/></r></p></e>
@@ -5015,132 +5015,52 @@
 <e>       <p><l>асыл<s n="adj"/></l>              <r>асыл<s n="adj"/></r></p></e>
 <e>       <p><l>рухани<s n="adj"/></l>            <r>рухани<s n="adj"/></r></p></e>
 <e>       <p><l>таулы<s n="adj"/></l>             <r>таулы<s n="adj"/></r></p></e>
-<e>       <p><l>майлы<s n="adj"/></l>             <r>майлы<s n="adj"/></r></p></e>
-<e>       <p><l>аз<s n="adj"/></l>                <r>аз<s n="adj"/></r></p></e>
-<e>       <p><l>азат<s n="adj"/></l>              <r>азат<s n="adj"/></r></p></e>
-<e>       <p><l>аман<s n="adj"/></l>              <r>аман<s n="adj"/></r></p></e>
-<e>       <p><l>бай<s n="adj"/></l>               <r>бай<s n="adj"/></r></p></e>
-<e>       <p><l>надан<s n="adj"/></l>             <r>надан<s n="adj"/></r></p></e>
-<e>       <p><l>риза<s n="adj"/></l>              <r>риза<s n="adj"/></r></p></e>
-<e>       <p><l>сабыр<s n="adj"/></l>             <r>сабыр<s n="adj"/></r></p></e>
-<e>       <p><l>сары<s n="adj"/></l>              <r>сары<s n="adj"/></r></p></e>
-<e>       <p><l>соң<s n="adj"/></l>               <r>соң<s n="adj"/></r></p></e>
-<e>       <p><l>таза<s n="adj"/></l>              <r>таза<s n="adj"/></r></p></e>
-<e>       <p><l>тар<s n="adj"/></l>               <r>тар<s n="adj"/></r></p></e>
-<e>       <p><l>тарихи<s n="adj"/></l>            <r>тарихи<s n="adj"/></r></p></e>
-<e>       <p><l>тын<s n="adj"/></l>               <r>тын<s n="adj"/></r></p></e>
-<e>       <p><l>арзан<s n="adj"/></l>             <r>арзан<s n="adj"/></r></p></e>
-<e>       <p><l>астыртын<s n="adj"/></l>          <r>астыртын<s n="adj"/></r></p></e>
-<e>       <p><l>сау<s n="adj"/></l>               <r>сау<s n="adj"/></r></p></e-->
+<e>       <p><l>майлы<s n="adj"/></l>             <r>майлы<s n="adj"/></r></p></e-->
 
 <!-- <e>       <p><l>@<s n="n"/><s n="px"/></l><r>заманча<s n="adj"/><s n="advl"/></r></p></e> -->        <!-- is A1 3. (kaz) trimm                                                     -->
-<e>       <p><l>астам<s n="adj"/></l>             <r>артык<s n="adj"/></r></p></e> <!-- "" -->
-<e>       <p><l>жақсы<s n="adj"/></l>             <r>жакшы<s n="adj"/></r></p></e> <!-- "good"-->
 <e>       <p><l>ару<s n="adj"/></l>               <r>аруу<s n="adj"/></r></p></e> <!-- "pure"-->
-<e>       <p><l>жаман<s n="adj"/></l>             <r>жаман<s n="adj"/></r></p></e> <!-- "bad"-->
-<e>       <p><l>дұрыс<s n="adj"/></l>             <r>туура<s n="adj"/></r></p></e> <!-- "correct"-->
 <e>       <p><l>тура<s n="adj"/></l>              <r>туура<s n="adj"/></r></p></e> <!-- "straight"-->
-<e>       <p><l>керек<s n="adj"/></l>             <r>керек<s n="adj"/></r></p></e> <!-- "necessary"-->
 <e>       <p><l>керекті<s n="adj"/></l>           <r>керектүү<s n="adj"/></r></p></e> <!-- "~needed"-->
-<e>       <p><l>жаңа<s n="adj"/></l>              <r>жаңы<s n="adj"/></r></p></e> <!-- "~new"-->
-<e>       <p><l>суық<s n="adj"/></l>              <r>суук<s n="adj"/></r></p></e> <!-- "cold"-->
-<e>       <p><l>жылы<s n="adj"/></l>              <r>жылуу<s n="adj"/></r></p></e> <!-- "warm"-->
-<e>       <p><l>ыссы<s n="adj"/></l>              <r>ысык<s n="adj"/></r></p></e> <!-- "hot"-->
-<e>       <p><l>ыстық<s n="adj"/></l>             <r>ысык<s n="adj"/></r></p></e> <!-- "hot"-->
-<e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
-<e>       <p><l>кішкентай<s n="adj"/></l>         <r>кичинекей<s n="adj"/></r></p></e> <!-- "small"-->
-<e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "happy"-->
-<e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубаныч<s n="n"/></r></p></e> <!-- "happy (қуанышты+copula → кубанычта+copula, see lrx)"-->
 <e>       <p><l>бар<s n="adj"/></l>               <r>бар<s n="adj"/></r></p></e> <!-- "exists"-->
 <e>       <p><l>жоқ<s n="adj"/></l>               <r>жок<s n="adj"/></r></p></e> <!-- "doesn't exist"-->
-<e>       <p><l>ескі<s n="adj"/></l>              <r>эски<s n="adj"/></r></p></e> <!-- "old (things)"-->
-<e>       <p><l>кәрі<s n="adj"/></l>              <r>картаң<s n="adj"/></r></p></e> <!-- "old (people)"-->
 <e>       <p><l>жасар<s n="adj"/></l>             <r>жашаар<s n="adj"/></r></p></e> <!-- "X year-old"-->
-<e>       <p><l>қатты<s n="adj"/></l>             <r>катуу<s n="adj"/></r></p></e> <!--"hard, really [hard]"-->
-<e>       <p><l>анық<s n="adj"/></l>              <r>тунук<s n="adj"/></r></p></e> <!--"clear"-->
-<e>       <p><l>анық<s n="adj"/></l>              <r>анык<s n="adj"/></r></p></e> <!--"clear"-->
-<e>       <p><l>ақырын<s n="adj"/></l>            <r>акырын<s n="adj"/></r></p></e> <!--"quitely, carefully"-->
-<e>       <p><l>жақын<s n="adj"/></l>             <r>жакын<s n="adj"/></r></p></e> <!--"quitely, carefully"-->
-<e>       <p><l>көңілді<s n="adj"/></l>           <r>көңүлдүү<s n="adj"/></r></p></e> <!--"cheerful"-->
 <e>       <p><l>мүмкін<s n="adj"/></l>            <r>мүмкүн<s n="adj"/></r></p></e> <!--"possible, possibly"-->
-<e>       <p><l>оң<s n="adj"/></l>                <r>оң<s n="adj"/></r></p></e> <!-- "right"-->
 <e>       <p><l>сол<s n="adj"/></l>               <r>сол<s n="adj"/></r></p></e> <!-- "left"-->
-<e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!--"a lot"-->
-<e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
 <e>       <p><l>техникалық<s n="adj"/></l>        <r>техникалык<s n="adj"/></r></p></e> <!--"technical"-->
 <e>       <p><l>жылдық<s n="adj"/></l>            <r>жылдык<s n="adj"/></r></p></e> <!--"yearly"-->
 <e r="RL">       <p><l>спонсорлық<s n="adj"/></l>        <r>спонсордук<s n="adj"/></r></p></e> <!--"sponsoring"-->
 <e>       <p><l>спонсорлық<s n="adj"/></l>        <r>демөөрчүлүк<s n="adj"/></r></p></e> <!--"sponsoring"-->
 <e>       <p><l>стратегиялық<s n="adj"/></l>      <r>стратегиялык<s n="adj"/></r></p></e> <!--"strategic"-->
 <e>       <p><l>сынды<s n="adj"/></l>             <r>сыяктуу<s n="part"/></r></p></e> <!--"like"-->
-<e>       <p><l>жергілікті<s n="adj"/></l>        <r>жергиликтүү<s n="adj"/></r></p></e> <!--"local"-->
 <e>       <p><l>жартылай<s n="adv"/></l>          <r>жарым<s n="adj"/></r></p></e> <!--"half,semi"-->
-<e>       <p><l>ұқсас<s n="adj"/></l>             <r>окшош<s n="adj"/></r></p></e> <!--"similar"-->
 <e>       <p><l>маңызды<s n="adj"/></l>           <r>маанилүү<s n="adj"/></r></p></e> <!--"meaningful"-->
-<e>       <p><l>арнайы<s n="adj"/></l>            <r>атайын<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>арнайы<s n="adj"/></l>            <r>айрыкча<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>айрықша <s n="adj"/></l>          <r>айрыкча<s n="adj"/></r></p></e> <!--"purposely"-->
-<e>       <p><l>ерекше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!--"certain, special"-->
 <e>       <p><l>жарасатындай<s n="adj"/></l>      <r>жарашыктуу<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>жарасатындай<s n="adj"/></l>      <r>жарашчудай<s n="adj"/></r></p></e> <!--""-->
 <e r="LR"><p><l>қайтымсыз<s n="adj"/></l>         <r>ордуна<b/>тургус<s n="adj"/></r></p></e> <!--"irreversible"-->
 <e>       <p><l>қайтымсыз<s n="adj"/></l>         <r>кутулгус<s n="adj"/></r></p></e> <!--"irreversible"-->
-<e>       <p><l>кері<s n="adj"/></l>              <r>терс<s n="adj"/></r></p></e> <!--"reverse/inverse"-->
 <e>       <p><l>биологиялық<s n="adj"/></l>       <r>биологиялык<s n="adj"/></r></p></e> <!--"biological"-->
 <e>       <p><l>хромосомалық<s n="adj"/></l>      <r>хромосомалык<s n="adj"/></r></p></e> <!--"chromosomal"-->
 <e>       <p><l>атты<s n="adj"/></l>              <r>аттуу<s n="adj"/></r></p></e> <!--"named"-->
-<e>       <p><l>қарсы<s n="adj"/></l>             <r>каршы<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>толық<s n="adj"/></l>             <r>толук<s n="adj"/></r></p></e> <!--"full"-->
-<e>       <p><l>ашық<s n="adj"/></l>              <r>ачык<s n="adj"/></r></p></e> <!--"open"-->
 <e>       <p><l>үстем<s n="adj"/></l>             <r>үстөм<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>өзге<s n="adj"/></l>              <r>башка<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>зор<s n="adj"/></l>               <r>чоң<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>көркем<s n="adj"/></l>            <r>көркөм<s n="adj"/></r></p></e> <!--"beautiful"-->
-<e>       <p><l>мәңгі<s n="adj"/></l>             <r>түбөлүк<s n="adj"/></r></p></e> <!--"eternal"-->
-<e>       <p><l>ізгі<s n="adj"/></l>              <r>жакшы<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>тең<s n="adj"/></l>               <r>тең<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>тән<s n="adj"/></l>               <r>тең<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>мейірімді<s n="adj"/></l>         <r>мээримдүү<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>байланысты<s n="adj"/></l>        <r>байланыштуу<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>түрлі<s n="adj"/></l>             <r>түрдүү<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>мемлекеттік<s n="adj"/></l>       <r>мамлекеттик<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>негізгі<s n="adj"/></l>           <r>негизги<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>саяси<s n="adj"/></l>             <r>саясий<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>белгілі<s n="adj"/></l>           <r>белгилүү<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>жеке<s n="adj"/></l>              <r>жеке<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>экономикалық<s n="adj"/></l>      <r>экономикалык<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>әлеуметтік<s n="adj"/></l>        <r>коомдук<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>жалпы<s n="adj"/></l>             <r>жалпы<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>ірі<s n="adj"/></l>               <r>ири<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>ғылыми<s n="adj"/></l>            <r>илимий<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>ұлттық<s n="adj"/></l>            <r>улуттук<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>әскери<s n="adj"/></l>            <r>аскердик<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>қамтамасыз<s n="adj"/></l>        <r>камсыздандырылган<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>ішкі<s n="adj"/></l>              <r>ички<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>қоғамдық<s n="adj"/></l>          <r>коомдук<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>кең<s n="adj"/></l>               <r>кең<s n="adj"/></r></p></e> <!--"wide"-->
-<e>       <p><l>өзара<s n="adj"/></l>             <r>өз<b/>ара<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>тарихи<s n="adj"/></l>            <r>тарыхый<s n="adj"/></r></p></e> <!--"historical"-->
-<e>       <p><l>сыртқы<s n="adj"/></l>            <r>сырткы<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>табиғи<s n="adj"/></l>            <r>табигый<s n="adj"/></r></p></e> <!--"natural"-->
 <e>       <p><l>орта<s n="adj"/></l>              <r>орто<s n="adj"/></r></p></e> <!--"средний"-->
-<e>       <p><l>мәдени<s n="adj"/></l>            <r>маданий<s n="adj"/></r></p></e> <!--"cultural"-->
 <e>       <p><l>түркі<s n="adj"/></l>             <r>түрк<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>халықаралық<s n="adj"/></l>       <r>эларалык<s n="adj"/></r></p></e> <!--"international"-->
-<e>       <p><l>жарық<s n="adj"/></l>             <r>жарык<s n="adj"/></r></p></e> <!--"light, enlighted"-->
 <e>       <p><l>өткен<s n="adj"/></l>             <r>өткөн<s n="adj"/></r></p></e> <!--"прошлый"-->
 <e>       <p><l>тұрақты<s n="adj"/></l>           <r>туруктуу<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>орташа<s n="adj"/></l>            <r>орточо<s n="adj"/></r></p></e> <!--"средний"-->
-<e>       <p><l>тікелей<s n="adj"/></l>           <r>түз<s n="adj"/></r></p></e> <!--"прямой"-->
 <e>       <p><l>қаржылық<s n="adj"/></l>          <r>каржылык<s n="adj"/></r></p></e> <!--"финансовый"-->
 <e>       <p><l>дейінгі<s n="adj"/></l>           <r>чейинки<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>химиялық<s n="adj"/></l>          <r>химиялык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>төменгі<s n="adj"/></l>           <r>төмөнкү<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>жоғарғы<s n="adj"/></l>           <r>жогорку<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>күрделі<s n="adj"/></l>           <r>татаал<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>көне<s n="adj"/></l>              <r>байыркы<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>статистикалық<s n="adj"/></l>     <r>статистикалык<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>қалалық<s n="adj"/></l>           <r>шаардык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>ауылдық<s n="adj"/></l>           <r>айылдык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>жаппай<s n="adj"/></l>            <r>жалпы<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>кедей<s n="adj"/></l>             <r>кедей<s n="adj"/></r></p></e> <!--"poor"-->
@@ -5153,6 +5073,291 @@
 <e>       <p><l>көрнекі<s n="adj"/></l>           <r>көрүнүктүү<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>қытайлық<s n="adj"/></l>          <r>кытайлык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>басым<s n="adj"/></l>             <r>көп<s n="adj"/></r></p></e> <!--""-->
+
+    <!-- A1 adj.(comp), adj.(comp).advl, adj.(comp).subst,
+         and when not sure where exactly an adjective belongs -->
+
+<e>       <p><l>аз<s n="adj"/></l>                <r>аз<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>азаматтық<s n="adj"/></l>         <r>жарандык<s n="adj"/></r></p></e> <!-- "citizen" -->
+<e>       <p><l>азат<s n="adj"/></l>              <r>азат<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>айқын<s n="adj"/></l>             <r>айкын<s n="adj"/></r></p></e> <!-- "clear (understandable)" -->
+<e>       <p><l>аймақтық<s n="adj"/></l>          <r>аймактык<s n="adj"/></r></p></e> <!-- "regional" -->
+<e>       <p><l>айрықша <s n="adj"/></l>          <r>айрыкча<s n="adj"/></r></p></e> <!--"purposely"-->
+<e>       <p><l>айрықша<s n="adj"/><s n="advl"/></l><r>айрыкча<s n="adv"/></r></p></e> <!-- "" -->
+<e>       <p><l>ақ<s n="adj"/></l>                <r>ак<s n="adj"/></r></p></e> <!-- "white"-->
+<e>       <p><l>активті<s n="adj"/></l>           <r>активдүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ақырын<s n="adj"/></l>            <r>акырын<s n="adj"/></r></p></e> <!--"quitely, carefully"-->
+<e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e> <!-- "slowly -->
+<e>       <p><l>ала<s n="adj"/></l>               <r>ала<s n="adj"/></r></p></e> <!-- "~speckled/mottled"-->
+<e>       <p><l>аласа<s n="adj"/></l>             <r>жапыз<s n="adj"/></r></p></e> <!-- "low" -->
+<e>       <p><l>алуан<s n="adj"/></l>             <r>албан<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>алыс<s n="adj"/></l>              <r>алыс<s n="adj"/></r></p></e> <!-- "far, distant" -->
+<e>       <p><l>аман<s n="adj"/></l>              <r>аман<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>анық<s n="adj"/></l>              <r>анык<s n="adj"/></r></p></e> <!--"clear"-->
+<e>       <p><l>анық<s n="adj"/></l>              <r>тунук<s n="adj"/></r></p></e> <!--"clear"-->
+<e>       <p><l>арнайы<s n="adj"/></l>            <r>атайын<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>арнайы<s n="adj"/></l>            <r>айрыкча<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>артық<s n="adj"/></l>             <r>артык<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>арық<s n="adj"/></l>              <r>арык<s n="adj"/></r></p></e> <!-- "thin"-->
+<e>       <p><l>арық<s n="adj"/></l>              <r>нәзек<s n="adj"/></r></p></e> <!-- "thin"-->
+<e>       <p><l>астам<s n="adj"/></l>             <r>ашык<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>астам<s n="adj"/></l>             <r>кекирейген<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>аудандық<s n="adj"/></l>          <r>райондук<s n="adj"/></r></p></e> <!-- "district-level" -->
+<e>       <p><l>аулақ<s n="adj"/></l>             <r>ыраак<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ашық<s n="adj"/></l>              <r>ачык<s n="adj"/></r></p></e> <!--"open"-->
+<e>       <p><l>бай<s n="adj"/></l>               <r>бай<s n="adj"/></r></p></e> <!-- "rich"-->
+<e>       <p><l>басқа<s n="adj"/></l>             <r>башка<s n="adj"/></r></p></e>
+<e>       <p><l>бейбіт<s n="adj"/></l>            <r>тынч<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>белгілі<s n="adj"/></l>           <r>белгилүү<s n="adj"/></r></p></e> <!-- "famous" -->
+<e>       <p><l>белсенді<s n="adj"/></l>          <r>активдүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>биік<s n="adj"/></l>              <r>бийик<s n="adj"/></r></p></e> <!-- "high, tall" -->
+<e>       <p><l>боз<s n="adj"/></l>               <r>боз<s n="adj"/></r></p></e> <!-- "white-grey" -->
+<e>       <p><l>бос<s n="adj"/></l>               <r>бош<s n="adj"/></r></p></e> <!-- "empty, free, hollow" -->
+<e>       <p><l>бөтен<s n="adj"/></l>             <r>бөтөн<s n="adj"/></r></p></e> <!-- "other"-->
+<e>       <p><l>бүтін<s n="adj"/></l>             <r>бүтүн<s n="adj"/></r></p></e> <!-- "whole" -->
+<e>       <p><l>ғылыми<s n="adj"/></l>            <r>илимий<s n="adj"/></r></p></e> <!--"scientific"-->
+<e>       <p><l>дайым<s n="adj"/></l>             <r>дайым<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>дайын<s n="adj"/></l>             <r>даяр<s n="adj"/></r></p></e> <!-- "ready" -->
+<e>       <p><l>дара<s n="adj"/></l>              <r>айрым<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>дәмді<s n="adj"/></l>             <r>даамдуу<s n="adj"/></r></p></e> <!-- "yummy"-->
+<e>       <p><l>демократиялық<s n="adj"/></l>     <r>демократиялык<s n="adj"/></r></p></e> <!-- "democratic" --> 
+<e>       <p><l>дәу<s n="adj"/></l>               <r>килейген<s n="adj"/></r></p></e> <!-- "giant"-->
+<e>       <p><l>діни<s n="adj"/></l>              <r>диний<s n="adj"/></r></p></e> <!-- "religious"-->
+<e>       <p><l>дұрыс<s n="adj"/></l>             <r>дурус<s n="adj"/></r></p></e> <!-- "correct;correctly"-->
+<e>       <p><l>әдеби<s n="adj"/></l>             <r>адабий<s n="adj"/></r></p></e> <!-- "literary"-->
+<e>       <p><l>әдемі<s n="adj"/></l>             <r>адеми<s n="adj"/></r></p></e> <!-- "beautiful" -->
+<e>       <p><l>едәуір<s n="adj"/></l>            <r>бир<b/>кыйла<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>әділ<s n="adj"/></l>              <r>адил<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>әжептәуір<s n="adj"/></l>         <r>бир<b/>топ<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>әзір<s n="adj"/></l>              <r>даяр<s n="adj"/></r></p></e> <!-- "ready"-->
+<e>       <p><l>әлеуметтік<s n="adj"/></l>        <r>коомдук<s n="adj"/></r></p></e> <!-- "public, social"-->
+<e r="RL"><p><l>әлеуметтік<s n="adj"/></l>        <r>социалдык<s n="adj"/></r></p></e> <!-- "public, social"-->
+<e>       <p><l>ерекше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!--"certain, special"-->
+<e>       <p><l>еркін<s n="adj"/></l>             <r>эркин<s n="adj"/></r></p></e> <!-- "free"-->
+<e>       <p><l>ерте<s n="adj"/></l>              <r>эрте<s n="adj"/></r></p></e> <!-- "early" -->
+<e>       <p><l>есіл<s n="adj"/></l>              <r> <s n="adj"/></r></p></e> <!-- "FIXME find translation" -->
+<e>       <p><l>әскери<s n="adj"/></l>            <r>аскердик<s n="adj"/></r></p></e> <!-- "military"-->
+<e>       <p><l>ескі<s n="adj"/></l>              <r>эски<s n="adj"/></r></p></e> <!-- "old (things)"-->
+<e>       <p><l>жабық<s n="adj"/></l>             <r>жабык<s n="adj"/></r></p></e> <!-- "closed"-->
+<e>       <p><l>жайлы<s n="adj"/></l>             <r>жайлуу<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>жақсы<s n="adj"/></l>             <r>жакшы<s n="adj"/></r></p></e> <!-- "good"-->
+<e>       <p><l>жақын<s n="adj"/></l>             <r>жакын<s n="adj"/></r></p></e> <!--"close"-->
+<e>       <p><l>жалғыз<s n="adj"/></l>            <r>жалгыз<s n="adj"/></r></p></e> <!-- "lonely"-->
+<e>       <p><l>жалпы<s n="adj"/></l>             <r>жалпы<s n="adj"/></r></p></e> <!-- "common,general"-->
+<e>       <p><l>жалпы<s n="adj"/><s n="advl"/></l><r>жалпысынан<s n="adv"/></r></p></e> <!-- "in general"-->
+<e>       <p><l>жаман<s n="adj"/></l>             <r>жаман<s n="adj"/></r></p></e> <!-- "bad"-->
+<e>       <p><l>жаңа<s n="adj"/></l>              <r>жаңы<s n="adj"/></r></p></e> <!-- "~new"-->
+<e>       <p><l>жарлы<s n="adj"/></l>             <r>жарды<s n="adj"/></r></p></e> <!-- "poor"-->
+<e>       <p><l>жарық<s n="adj"/></l>             <r>жарык<s n="adj"/></r></p></e> <!--"light, enlighted"-->
+<e>       <p><l>жас<s n="adj"/></l>               <r>жаш<s n="adj"/></r></p></e> <!-- "young"-->
+<e>       <p><l>жасыл<s n="adj"/></l>             <r>жашыл<s n="adj"/></r></p></e> <!-- "green"-->
+<e>       <p><l>жеке<s n="adj"/></l>              <r>жеке<s n="adj"/></r></p></e> <!-- "separate" -->
+<e>       <p><l>жексұрын<s n="adj"/></l>          <r>жийиркеничтүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>жеңіл<s n="adj"/></l>             <r>жеңил<s n="adj"/></r></p></e> <!-- "light"-->
+<e>       <p><l>жергілікті<s n="adj"/></l>        <r>жергиликтүү<s n="adj"/></r></p></e> <!--"local"-->
+<e>       <p><l>жиі<s n="adj"/></l>               <r>жыш<s n="adj"/></r></p></e> <!-- "often" -->
+<e>       <p><l>жіңішке<s n="adj"/></l>           <r>ничке<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>жоғарғы<s n="adj"/></l>           <r>жогорку<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>жоғары<s n="adj"/></l>            <r>жогору<s n="adj"/></r></p></e> <!-- "high"-->
+<e>       <p><l>жуан<s n="adj"/></l>              <r>жоон<s n="adj"/></r></p></e> <!-- "thick"-->
+<e>       <p><l>жұқа<s n="adj"/></l>              <r>жука<s n="adj"/></r></p></e> <!-- "thin"-->
+<e>       <p><l>жұмсақ<s n="adj"/></l>            <r>жумшак<s n="adj"/></r></p></e> <!-- "soft"-->
+<e>       <p><l>жуық<s n="adj"/></l>              <r>жакын<s n="adj"/></r></p></e> <!-- "close=near" -->
+<e>       <p><l>жылы<s n="adj"/></l>              <r>жылуу<s n="adj"/></r></p></e> <!-- "warm"-->
+<e>       <p><l>зор<s n="adj"/></l>               <r>зор<s n="adj"/></r></p></e> <!-- "huge"-->
+<e>       <p><l>игі<s n="adj"/></l>               <r>изги<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>игі<s n="adj"/></l>               <r>жакшы<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ізгі<s n="adj"/></l>              <r>изги<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ірі<s n="adj"/></l>               <r>ири<s n="adj"/></r></p></e> <!-- "huge"-->
+<e>       <p><l>қадірлі<s n="adj"/></l>           <r>кадырлуу<s n="adj"/></r></p></e> <!-- "precious"-->
+<e>       <p><l>қалалық<s n="adj"/></l>           <r>шаардык<s n="adj"/></r></p></e> <!-- "city-level"-->
+<e>       <p><l>қалың<s n="adj"/></l>             <r>калың<s n="adj"/></r></p></e> <!-- "dark, deep"-->
+<e>       <p><l>қалың<s n="adj"/></l>             <r>коюу<s n="adj"/></r></p></e> <!-- "dark, deep"-->
+<e>       <p><l>қара<s n="adj"/></l>              <r>кара<s n="adj"/></r></p></e> <!-- "black"-->
+<e>       <p><l>қараңғы<s n="adj"/></l>           <r>караңгы<s n="adj"/></r></p></e> <!-- "dark"-->
+<e>       <p><l>қарапайым<s n="adj"/></l>         <r>карапайым<s n="adj"/></r></p></e> <!-- "simple/poor folk" -->
+<e>       <p><l>қарсы<s n="adj"/></l>             <r>каршы<s n="adj"/></r></p></e> <!--"" FIXME:CHECK-->
+<e>       <p><l>қатал<s n="adj"/></l>             <r>каардуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>қатты<s n="adj"/></l>             <r>катуу<s n="adj"/></r></p></e> <!--"hard, really [hard]"-->
+<e>       <p><l>қатты<s n="adj"/></l>             <r>ылдам<s n="adj"/></r></p></e> <!-- "fast"-->
+<e>       <p><l>қауқарсыз<s n="adj"/></l>         <r>алсыз<s n="adj"/></r></p></e> <!-- ""-->
+<e>       <p><l>қашық<s n="adj"/></l>             <r>узак<s n="adj"/></r></p></e> <!-- "far"-->
+<e>       <p><l>кем<s n="adj"/></l>               <r>кем<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>кең<s n="adj"/></l>               <r>кең<s n="adj"/></r></p></e> <!--"wide"-->
+<e>       <p><l>кәрі<s n="adj"/></l>              <r>картаң<s n="adj"/></r></p></e> <!-- "old (person)"-->
+<e>       <p><l>кері<s n="adj"/></l>              <r>кери<s n="adj"/></r></p></e> <!--"reverse/inverse"-->
+<e>       <p><l>керек<s n="adj"/></l>             <r>керек<s n="adj"/></r></p></e> <!-- "necessary"-->
+<e>       <p><l>кеш<s n="adj"/></l>               <r>кеч<s n="adj"/></r></p></e> <!-- "late, evening" ! FIXME: noun?-->
+<e>       <p><l>киелі<s n="adj"/></l>             <r>ыйык<s n="adj"/></r></p></e> <!-- "holy"-->
+<e>       <p><l>қиын<s n="adj"/></l>              <r>кыйын<s n="adj"/></r></p></e> <!-- "difficult"-->
+<e>       <p><l>кір<s n="adj"/></l>               <r>кир<s n="adj"/></r></p></e> <!-- "dirty"-->
+<e>       <p><l>кішкене<s n="adj"/></l>           <r>кичине<s n="adj"/></r></p></e> <!-- "little"-->
+<e>       <p><l>кішкентай<s n="adj"/></l>         <r>кичинекей<s n="adj"/></r></p></e> <!-- "small, little"-->
+<e>       <p><l>қоғамдық<s n="adj"/></l>          <r>коомдук<s n="adj"/></r></p></e> <!--"communal, societal"-->
+<e>       <p><l>көк<s n="adj"/></l>               <r>көк<s n="adj"/></r></p></e> <!-- "blue"-->
+<e>       <p><l>қолайлы<s n="adj"/></l>           <r>ыңгайлуу<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>көне<s n="adj"/></l>              <r>мурунку<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
+<e>       <p><l>көне<s n="adj"/></l>              <r>эзелки<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
+<e>       <p><l>көне<s n="adj"/></l>              <r>байыркы<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
+<e>       <p><l>көңілді<s n="adj"/></l>           <r>көңүлдүү<s n="adj"/></r></p></e> <!-- "happy, cheerful"-->
+<e>       <p><l>қоңыр<s n="adj"/></l>             <r>коңур<s n="adj"/></r></p></e> <!-- "dark brown?"-->
+<e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!-- "a lot" -->
+<e>       <p><l>көркем<s n="adj"/></l>            <r>көркөм<s n="adj"/></r></p></e> <!--"beautiful"-->
+
+<e>       <p><l>қош<s n="adj"/></l>               <r>кош<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>қою<s n="adj"/></l>               <r>коюу<s n="adj"/></r></p></e> <!-- "dark, deep, thick" -->
+<e>       <p><l>қу<s n="adj"/></l>                <r>куу<s n="adj"/></r></p></e> <!-- "?crafty,сухой,высохший" -->
+<e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "happy, glad"-->
+<!--e>       <p><l>қуанышты<s n="adj"/></l>          <r>кубаныч<s n="n"/></r></p></e--> <!-- "happy (қуанышты+copula → кубанычта+copula, see lrx)"-->
+<e>       <p><l>құр<s n="adj"/></l>               <r>кургак<s n="adj"/></r></p></e> <!-- "dry;empty;just/only" -->
+<e>       <p><l>құрама<s n="adj"/></l>            <r>курама<s n="adj"/></r></p></e> <!-- "united,collected"-->
+<e>       <p><l>құрғақ<s n="adj"/></l>            <r>кургак<s n="adj"/></r></p></e> <!-- "dry"-->
+<e>       <p><l>күрең<s n="adj"/></l>             <r>күрөң<s n="adj"/></r></p></e> <!-- "light brown?"-->
+<e>       <p><l>күшті<s n="adj"/></l>             <r>күчтүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>қызық<s n="adj"/></l>             <r>кызык<s n="adj"/></r></p></e> <!-- "fun,interesting"-->
+<e>       <p><l>қызықты<s n="adj"/></l>           <r>кызыктуу<s n="adj"/></r></p></e> <!-- "interesting"-->
+<e>       <p><l>қызыл<s n="adj"/></l>             <r>кызыл<s n="adj"/></r></p></e> <!-- "red"-->
+<e>       <p><l>қылмыстық<s n="adj"/></l>         <r>кылмыштуу<s n="adj"/></r></p></e> <!-- "criminal" -->
+<e>       <p><l>қылмыстық<s n="adj"/></l>         <r>криминалдуу<s n="adj"/></r></p></e> <!-- "criminal" -->
+<e>       <p><l>қымбат<s n="adj"/></l>            <r>кымбаттуу<s n="adj"/></r></p></e> <!--"expensive"-->
+<e>       <p><l>кымбат<s n="adj"/></l>            <r>кымбат<s n="adj"/></r></p></e> <!-- ""-->
+<e>       <p><l>қысқа<s n="adj"/></l>             <r>кыска<s n="adj"/></r></p></e> <!-- "short"-->
+<e>       <p><l>лайықты<s n="adj"/></l>           <r>ылайык<s n="adj"/></r></p></e> <!-- "suitable"-->
+<e>       <p><l>мәдени<s n="adj"/></l>            <r>маданий<s n="adj"/></r></p></e> <!--"cultural"-->
+<e>       <p><l>мемлекеттік<s n="adj"/></l>       <r>мамлекеттик<s n="adj"/></r></p></e> <!--"governmental"-->
+<e>       <p><l>мәңгі<s n="adj"/></l>             <r>түбөлүк<s n="adj"/></r></p></e> <!--"eternal"-->
+<e>       <p><l>мол<s n="adj"/></l>               <r>мол<s n="adj"/></r></p></e> <!-- "plentiful, rich" -->
+<e>       <p><l>мөлдір<s n="adj"/></l>            <r>мөлтүр<s n="adj"/></r></p></e> <!-- "clear (clean/transparent)" -->
+<e>       <p><l>мұқият<s n="adj"/></l>            <r>ыкыластуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
+<e>       <p><l>нағыз<s n="adj"/></l>             <r>нагыз<s n="adj"/></r></p></e> <!-- "real" -->
+<e>       <p><l>надан<s n="adj"/></l>             <r>наадан<s n="adj"/></r></p></e> <!-- "ignorant"-->
+<e>       <p><l>нақты<s n="adj"/></l>             <r>конкреттүү<s n="adj"/></r></p></e> <!-- "accurate,real" -->
+<e>       <p><l>нақты<s n="adj"/></l>             <r>реалдуу<s n="adj"/></r></p></e> <!-- "accurate,real" -->
+<e>       <p><l>нақты<s n="adj"/></l>             <r>чыныгы<s n="adj"/></r></p></e> <!-- "accurate,real" -->
+<e>       <p><l>нашар<s n="adj"/></l>             <r>начар<s n="adj"/></r></p></e> <!-- "weak, bad"-->
+<e>       <p><l>нық<s n="adj"/></l>               <r>ык<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>облыстық<s n="adj"/></l>          <r>областтык<s n="adj"/></r></p></e> <!-- "oblast-level" -->
+<e>       <p><l>өзара<s n="adj"/></l>             <r>өз<b/>ара<s n="adj"/></r></p></e> <!-- "mutual" -->
+<e>       <p><l>өзге<s n="adj"/></l>              <r>өзгө<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>өзгеше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!-- "special/particular" -->
+<e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="adj"/></r></p></e> <!--""-->                                                  <!--FIXME find translation-->
+<e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="v"/><s n="iv"/><s n="gpr_past"/></r></p></e> <!--"" TODO lrx оқшау сөздер-->  <!--FIXME find translation-->
+<e>       <p><l>оқшау<s n="adj"/><s n="advl"/></l><r> <s n="v"/><s n="iv"/><s n="prc_perf"/></r></p></e> <!--"" TODO lrx оқшау шығу-->    <!--FIXME find translation-->
+<e>       <p><l>оң<s n="adj"/></l>                <r>оң<s n="adj"/></r></p></e> <!-- "right"-->
+<e>       <p><l>оңай<s n="adj"/></l>              <r>жеңил<s n="adj"/></r></p></e> <!-- "light"-->
+<e>       <p><l>оңай<s n="adj"/></l>              <r>оңой<s n="adj"/></r></p></e> <!-- "light"-->
+<e>       <p><l>оңаша<s n="adj"/></l>             <r>түнт<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ортақ<s n="adj"/></l>             <r>орток<s n="adj"/></r></p></e> <!-- "general, common"-->
+<e>       <p><l>өткір<s n="adj"/></l>             <r>өткүр<s n="adj"/></r></p></e> <!-- "sharp, pointed"-->
+<e>       <p><l>риза<s n="adj"/></l>              <r>ыраазы<s n="adj"/></r></p></e> <!-- "pleased,согласный" -->
+<e>       <p><l>сабыр<s n="adj"/></l>             <r>сабырдуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>сары<s n="adj"/></l>              <r>сары<s n="adj"/></r></p></e> <!-- "yellow"-->
+<e>       <p><l>саяси<s n="adj"/></l>             <r>саясий<s n="adj"/></r></p></e> <!-- "political"-->
+<e>       <p><l>семіз<s n="adj"/></l>             <r>семиз<s n="adj"/></r></p></e> <!-- "fat"-->
+<e>       <p><l>сирек<s n="adj"/></l>             <r>сейрек<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>сол<s n="adj"/></l>               <r>сол<s n="adj"/></r></p></e> <!-- "left"-->
+<e>       <p><l>соң<s n="adj"/></l>               <r>соң<s n="adj"/></r></p></e> <!-- "last"--> <!--соңку should be generated? -->
+<e>       <p><l>сұйық<s n="adj"/></l>             <r>суюк<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>сұлу<s n="adj"/></l>              <r>сулуу<s n="adj"/></r></p></e> <!-- "beautiful"-->
+<e>       <p><l>сұр<s n="adj"/></l>               <r>сур<s n="adj"/></r></p></e> <!-- "grey"-->
+<e>       <p><l>суық<s n="adj"/></l>              <r>суук<s n="adj"/></r></p></e> <!-- "cold"-->
+<e>       <p><l>сыртқы<s n="adj"/></l>            <r>сырткы<s n="adj"/></r></p></e> <!-- "оutside" -->
+<e>       <p><l>табиғи<s n="adj"/></l>            <r>табигый<s n="adj"/></r></p></e> <!--"natural"-->
+<e>       <p><l>табысты<s n="adj"/></l>           <r>кирешелүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>таза<s n="adj"/></l>              <r>таза<s n="adj"/></r></p></e> <!-- "pure"-->
+<e>       <p><l>талай<s n="adj"/></l>             <r>далай<s n="adj"/></r></p></e> <!-- "~several" -->
+<e>       <p><l>тар<s n="adj"/></l>               <r>тар<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>тарихи<s n="adj"/></l>            <r>тарыхый<s n="adj"/></r></p></e> <!-- "historic"-->
+<e>       <p><l>тегін<s n="adj"/></l>             <r>бекер<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>тәжірибелі<s n="adj"/></l>        <r>тажрыйбалуу<s n="adj"/></r></p></e> <!-- "experienced"-->
+<e>       <p><l>тез<s n="adj"/></l>               <r>тез<s n="adj"/></r></p></e> <!-- "fast;quickly" -->
+<e>       <p><l>тең<s n="adj"/></l>               <r>тең<s n="adj"/></r></p></e> <!-- "равный" -->
+<e>       <p><l>терең<s n="adj"/></l>             <r>терең<s n="adj"/></r></p></e> <!-- "deep, profound"-->
+<e>       <p><l>теріс<s n="adj"/></l>             <r>терс<s n="adj"/></r></p></e> <!-- ""-->
+<e>       <p><l>тәуекел<s n="adj"/></l>           <r>тобокел<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>тәуелсіз<s n="adj"/></l>          <r>эгемендүү<s n="adj"/></r></p></e> <!-- "independent"-->
+<e>       <p><l>тиімді<s n="adj"/></l>            <r>пайдалуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>тік<s n="adj"/></l>               <r>тик<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>тікелей<s n="adj"/></l>           <r>тикелей<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>тірі<s n="adj"/></l>              <r>тирүү<s n="adj"/></r></p></e> <!-- "live"-->
+<e>       <p><l>толық<s n="adj"/></l>             <r>толук<s n="adj"/></r></p></e> <!--"full"-->
+<e>       <p><l>төмен<s n="adj"/></l>             <r>төмөн<s n="adj"/></r></p></e> <!-- "low"-->
+<e>       <p><l>төменгі<s n="adj"/></l>           <r>төмөнкү<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>түгел<s n="adj"/></l>             <r>түгөл<s n="adj"/></r></p></e> <!-- "all" -->
+<e>       <p><l>түзу<s n="adj"/></l>              <r>түз<s n="adj"/></r></p></e> <!-- "direct" -->
+<e>       <p><l>тұңғыш<s n="adj"/></l>            <r>туңгуч<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>тұнық<s n="adj"/></l>             <r>тунук<s n="adj"/></r></p></e> <!-- "clear (transparent/clean)" -->
+<e>       <p><l>тура<s n="adj"/></l>              <r>туура<s n="adj"/></r></p></e> <!-- "straight" -->
+<e>       <p><l>тұрақты<s n="adj"/></l>           <r>туруктуу<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>түркі<s n="adj"/></l>             <r>түрк<s n="adj"/></r></p></e> <!-- "Turkic"-->
+<e>       <p><l>түрлі<s n="adj"/></l>             <r>түрдүү<s n="adj"/></r></p></e> <!--""--> <!-- used with әр to mean "various"-->
+<e>       <p><l>тұщы<s n="adj"/></l>              <r> <s n="adj"/></r></p></e> <!-- "" --> <!--FIXME find translation-->
+<e>       <p><l>тығыз<s n="adj"/></l>             <r>тыгыз<s n="adj"/></r></p></e> <!-- "" -->
+<!--e>       <p><l>тын<s n="adj"/></l>               <r>тын<s n="adj"/></r></p></e--> <!-- "" --> <!--find translation not verb?-->
+<e>       <p><l>тыныш<s n="adj"/></l>             <r>тынч<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>уақ<s n="adj"/></l>               <r>майда<s n="adj"/></r></p></e> <!-- "small"-->
+<e>       <p><l>уақытша<s n="adj"/></l>           <r>убактылуу<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>ұзақ<s n="adj"/></l>              <r>узак<s n="adj"/></r></p></e> <!-- "long (as in time)"-->
+<e>       <p><l>ұзын<s n="adj"/></l>              <r>узун<s n="adj"/></r></p></e> <!-- "high, tall"-->
+<e>       <p><l>ұзынша<s n="adj"/></l>            <r>узунча<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>ұқсас<s n="adj"/></l>             <r>окшош<s n="adj"/></r></p></e> <!--"similar"-->
+<e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
+<e>       <p><l>үлкен<s n="adj"/></l>             <r>улуу<s n="adj"/></r></p></e> <!-- "old, elder (person)"-->
+<e>       <p><l>ұлттық<s n="adj"/></l>            <r>улуттук<s n="adj"/></r></p></e> <!-- "national"-->
+<e>       <p><l>ұнамды<s n="adj"/></l>            <r> <s n="adj"/></r></p></e> <!--""--> <!--FIXME find translation-->
+<e>       <p><l>үнемі<s n="adj"/></l>             <r>дайыма<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>ұсақ<s n="adj"/></l>              <r>ушак<s n="adj"/></r></p></e> <!-- "small" -->
+<e>       <p><l>хош<s n="adj"/></l>               <r>кош<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>шапшаң<s n="adj"/></l>            <r>шап<s n="adj"/></r></p></e> <!-- "fast, quick" -->
+<e>       <p><l>шешуші<s n="adj"/></l>            <r>чечүүчү<s n="adj"/></r></p></e> <!-- "decisice,deciding"-->
+<e>       <p><l>шірік<s n="adj"/></l>             <r>чирик<s n="adj"/></r></p></e> <!-- "rotten"-->
+<e>       <p><l>шолақ<s n="adj"/></l>             <r>кыска<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>шын<s n="adj"/></l>               <r>чын<s n="adj"/></r></p></e> <!-- "true"-->
+<e>       <p><l>шыншыл<s n="adj"/></l>            <r>чынчыл<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ыссы<s n="adj"/></l>              <r>ысык<s n="adj"/></r></p></e> <!-- "hot"-->
+<e>       <p><l>ыстық<s n="adj"/></l>             <r>ысык<s n="adj"/></r></p></e> <!-- "hot"-->
+
+<e>       <p><l>зайырлы<s n="adj"/></l>           <r>билимдүү<s n="adj"/></r></p></e> <!--""-->
+
+<e>       <p><l>арзан<s n="adj"/></l>             <r>арзан<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>астыртын<s n="adj"/></l>          <r>астыртан<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>батыл<s n="adj"/></l>             <r>чечкиндүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>біржақты<s n="adj"/></l>          <r>бир<b/>жактуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>бірыңғай<s n="adj"/></l>          <r>бир<b/>түрдүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>бірыңғай<s n="adj"/></l>          <r>бир<b/>өңчөй<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ғажап<s n="adj"/></l>             <r>ажайып<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>еркімен<s n="adj"/></l>           <r>эриктүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>қорқынышты<s n="adj"/></l>        <r>коркунучтуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>өрескел<s n="adj"/></l>           <r>орой<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>сенімді<s n="adj"/></l>           <r>ишенимдүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>түпкілікті<s n="adj"/></l>        <r>түпкүлүктүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>үрдіс<s n="adj"/></l>             <r>активдүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>үрдіс<s n="adj"/></l>             <r>жандуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ыңғайлы<s n="adj"/></l>           <r>ыңгайлуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>түпкілікті<s n="adj"/></l>        <r>туруктуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>кездейсоқ<s n="adj"/></l>         <r>кокустан<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>түбегейлі<s n="adj"/></l>         <r>негиздүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>түбегейлі<s n="adj"/><s n="advl"/></l><r>негиздеп<s n="adv"/></r></p></e> <!--""-->
+<e>       <p><l>түпкілікті<s n="adj"/></l>        <r>дайыма<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>кездейсоқ<s n="adj"/></l>         <r>ылайыксыз<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>кездейсоқ<s n="adj"/><s n="advl"/></l><r>кокустан<s n="adv"/></r></p></e> <!--""-->
+
+<e>       <p><l>сау<s n="adj"/></l>               <r>соо<s n="adj"/></r></p></e> <!--""-->
+
+<e>       <p><l>біртүрлі<s n="adj"/></l>          <r>бир<b/>түрдүү<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>жалпақ<s n="adj"/></l>            <r>жөнөкөй<s n="adj"/></r></p></e> <!--"" (lrx) жалпақ тіл-->
+<e>       <p><l>жалпақ<s n="adj"/></l>            <r>кең<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>жалпақ<s n="adj"/></l>            <r>жалпак<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>жылдам<s n="adj"/></l>            <r>ылдам<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>сақ<s n="adj"/></l>               <r>сак<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>тақау<s n="adj"/></l>             <r>жакын<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>торы<s n="adj"/></l>              <r>тору<s n="adj"/></r></p></e> <!--""-->
+
+   <!-- FIXME -->
+
+<e>       <p><l>жарты<s n="adj"/></l>             <r>жарты<s n="adj"/></r></p></e> <!-- "half" ! FIXME: check POS-->
+<e>       <p><l>жарым<s n="adj"/></l>             <r>жарым<s n="adj"/></r></p></e> <!-- "half" ! FIXME: check POS-->
 
 
 <!-- SECTION: Adverbs -->
