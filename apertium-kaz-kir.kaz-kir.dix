@@ -204,7 +204,7 @@
 <e>       <p><l>тарта<s n="post"/></l>            <r>чамасында<s n="post"/></r></p></e>
 <e>       <p><l>туралы<s n="post"/></l>           <r>тууралуу<s n="post"/></r></p></e>
 <e>       <p><l>үшін<s n="post"/></l>             <r>үчүн<s n="post"/></r></p></e> <!-- "through" -->
-<e>       <p><l>хақында<s n="post"/></l>          <r> <s n="post"/></r></p></e>               <!--FIXME find translation-->
+<!-- e>       <p><l>хақында<s n="post"/></l>          <r> <s n="post"/></r></p></e -->               <!--FIXME find translation-->
 <e>       <p><l>шейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
 
 <e>       <p><l>салым<s n="post"/></l>            <r>жакын<s n="post"/></r></p></e> <!--""-->
@@ -385,7 +385,7 @@
 <e>       <p><l>ондаған<s n="det"/><s n="qnt"/></l>       <r>ондогон<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>жүздеген<s n="det"/><s n="qnt"/></l>      <r>жүздөгөн<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>мыңдаған<s n="det"/><s n="qnt"/></l>      <r>миңдеген<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>түмендеген<s n="det"/><s n="qnt"/></l>    <r>он<b/> миңдеген<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>түмендеген<s n="det"/><s n="qnt"/></l>    <r>он<b/>миңдеген<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>миллиондаған<s n="det"/><s n="qnt"/></l>  <r>миллиондогон<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>миллиардтаған<s n="det"/><s n="qnt"/></l> <r>миллиарддаган<s n="det"/><s n="qnt"/></r></p></e>
 
@@ -1337,7 +1337,7 @@
 <e>   <p><l>араб<s n="n"/></l>               <r>араб<s n="n"/></r></p></e> <!-- "Arab" -->
 <e>   <p><l>арамей<s n="n"/></l>             <r>арамей<s n="n"/></r></p></e>
 <e>   <p><l>ауған<s n="n"/></l>              <r>афган<s n="n"/></r></p></e> <!-- ""-->
-<e i="yes">       <p><l>әрмен<s n="n"/></l>               <r>   <s n="n"/></r></p></e> <!-- FIXME find translation-->
+<!-- e i="yes">       <p><l>әрмен<s n="n"/></l>               <r>   <s n="n"/></r></p></e --> <!-- FIXME find translation-->
 <e>   <p><l>башқұрт<s n="n"/></l>            <r>башкырт<s n="n"/></r></p></e> <!-- "" -->
 <e>   <p><l>белорус<s n="n"/></l>            <r>белорус<s n="n"/></r></p></e>
 <e>   <p><l>британ<s n="n"/></l>             <r>британ<s n="n"/></r></p></e>
@@ -1355,7 +1355,7 @@
 <e>   <p><l>қырғыз<s n="n"/></l>             <r>кыргыз<s n="n"/></r></p></e> <!-- "Kyrgyz" -->
 <e>   <p><l>қытай<s n="n"/></l>              <r>кытай<s n="n"/></r></p></e> <!-- "Chinese" -->
 <e>   <p><l>латын<s n="n"/></l>              <r>латын<s n="n"/></r></p></e> <!-- "Latin" -->
-<e i="yes">       <p><l>леуі<s n="n"/></l>                <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
+<!-- e i="yes">       <p><l>леуі<s n="n"/></l>                <r>   <s n="n"/></r></p></e--> <!-- ""--> <!--FIXME find translation-->
 <e i="yes">       <p><l>леуілік<s n="n"/></l>             <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
 <e>   <p><l>моңғол<s n="n"/></l>             <r>монгол<s n="n"/></r></p></e> <!-- "Mongol" -->
 <e>   <p><l>мордва<s n="n"/></l>             <r>мордва<s n="n"/></r></p></e>
@@ -4779,7 +4779,7 @@
 <e>       <p><l>Шотландия<s n="np"/><s n="top"/></l><r>Шотландия<s n="np"/><s n="top"/></r></p></e> <!-- "Scotland" -->
 <e>       <p><l>Шри-Ланка<s n="np"/><s n="top"/></l><r>Шри-Ланка<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Эквадор<s n="np"/><s n="top"/></l><r>Эквадор<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Экваторлық<b/>Гвинея<s n="np"/><s n="top"/></l><r>Экватордук<b/> Гвинея<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Экваторлық<b/>Гвинея<s n="np"/><s n="top"/></l><r>Экватордук<b/>Гвинея<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Эритрея<s n="np"/><s n="top"/></l><r>Эритрея<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Эстония<s n="np"/><s n="top"/></l><r>Эстония<s n="np"/><s n="top"/></r></p></e> <!-- "Estonia" -->
 <e>       <p><l>Эфиопия<s n="np"/><s n="top"/></l><r>Эфиопия<s n="np"/><s n="top"/></r></p></e>
@@ -4939,7 +4939,7 @@
 <e>       <p><l>Глобал<s n="np"/><s n="al"/></l>  <r>Глобал<s n="np"/><s n="al"/></r></p></e> <!-- ""-->
 <e>       <p><l>Дейли<s n="np"/><s n="al"/></l>   <r>Дейли<s n="np"/><s n="al"/></r></p></e> <!-- ""-->
 <e>       <p><l>Еуро<s n="np"/><s n="al"/></l>    <r>Евро<s n="np"/><s n="al"/></r></p></e> <!-- "European Championship" -->
-<e>       <p><l>Жоңғар<s n="np"/><s n="al"/></l>  <r>Жунгар <s n="np"/><s n="al"/></r></p></e> <!-- "" FIXME:CHECK -->
+<e>       <p><l>Жоңғар<s n="np"/><s n="al"/></l>  <r>Жунгар<s n="np"/><s n="al"/></r></p></e> <!-- "" FIXME:CHECK -->
 <e>       <p><l>Заря<s n="np"/><s n="al"/></l>    <r>Заря<s n="np"/><s n="al"/></r></p></e> <!-- "" -->
 <e>       <p><l>Ил<s n="np"/><s n="al"/></l>      <r>Ил<s n="np"/><s n="al"/></r></p></e> <!-- ""-->
 <e>       <p><l>Кайнозой<s n="np"/><s n="al"/></l><r>Кайнозой<s n="np"/><s n="al"/></r></p></e> <!-- ""-->
@@ -5135,7 +5135,7 @@
 <e>       <p><l>ерекше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!--"certain, special"-->
 <e>       <p><l>еркін<s n="adj"/></l>             <r>эркин<s n="adj"/></r></p></e> <!-- "free"-->
 <e>       <p><l>ерте<s n="adj"/></l>              <r>эрте<s n="adj"/></r></p></e> <!-- "early" -->
-<e>       <p><l>есіл<s n="adj"/></l>              <r> <s n="adj"/></r></p></e> <!-- "FIXME find translation" -->
+<!-- e>       <p><l>есіл<s n="adj"/></l>              <r> <s n="adj"/></r></p></e --> <!-- "FIXME find translation" -->
 <e>       <p><l>әскери<s n="adj"/></l>            <r>аскердик<s n="adj"/></r></p></e> <!-- "military"-->
 <e>       <p><l>ескі<s n="adj"/></l>              <r>эски<s n="adj"/></r></p></e> <!-- "old (things)"-->
 <e>       <p><l>жабық<s n="adj"/></l>             <r>жабык<s n="adj"/></r></p></e> <!-- "closed"-->
@@ -5241,9 +5241,9 @@
 <e>       <p><l>өзара<s n="adj"/></l>             <r>өз<b/>ара<s n="adj"/></r></p></e> <!-- "mutual" -->
 <e>       <p><l>өзге<s n="adj"/></l>              <r>өзгө<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>өзгеше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!-- "special/particular" -->
-<e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="adj"/></r></p></e> <!--""-->                                                  <!--FIXME find translation-->
-<e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="v"/><s n="iv"/><s n="gpr_past"/></r></p></e> <!--"" TODO lrx оқшау сөздер-->  <!--FIXME find translation-->
-<e>       <p><l>оқшау<s n="adj"/><s n="advl"/></l><r> <s n="v"/><s n="iv"/><s n="prc_perf"/></r></p></e> <!--"" TODO lrx оқшау шығу-->    <!--FIXME find translation-->
+<!-- e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="adj"/></r></p></e -->                                                  <!--FIXME find translation-->
+<!-- e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="v"/><s n="iv"/><s n="gpr_past"/></r></p></e --> <!--"" TODO lrx оқшау сөздер-->  <!--FIXME find translation-->
+<!-- e>       <p><l>оқшау<s n="adj"/><s n="advl"/></l><r> <s n="v"/><s n="iv"/><s n="prc_perf"/></r></p></e --> <!--"" TODO lrx оқшау шығу-->    <!--FIXME find translation-->
 <e>       <p><l>оң<s n="adj"/></l>                <r>оң<s n="adj"/></r></p></e> <!-- "right"-->
 <e>       <p><l>оңай<s n="adj"/></l>              <r>жеңил<s n="adj"/></r></p></e> <!-- "light"-->
 <e>       <p><l>оңай<s n="adj"/></l>              <r>оңой<s n="adj"/></r></p></e> <!-- "light"-->
@@ -5292,7 +5292,7 @@
 <e>       <p><l>тұрақты<s n="adj"/></l>           <r>туруктуу<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>түркі<s n="adj"/></l>             <r>түрк<s n="adj"/></r></p></e> <!-- "Turkic"-->
 <e>       <p><l>түрлі<s n="adj"/></l>             <r>түрдүү<s n="adj"/></r></p></e> <!--""--> <!-- used with әр to mean "various"-->
-<e>       <p><l>тұщы<s n="adj"/></l>              <r> <s n="adj"/></r></p></e> <!-- "" --> <!--FIXME find translation-->
+<!-- e>       <p><l>тұщы<s n="adj"/></l>              <r> <s n="adj"/></r></p></e --> <!--FIXME find translation-->
 <e>       <p><l>тығыз<s n="adj"/></l>             <r>тыгыз<s n="adj"/></r></p></e> <!-- "" -->
 <!--e>       <p><l>тын<s n="adj"/></l>               <r>тын<s n="adj"/></r></p></e--> <!-- "" --> <!--find translation not verb?-->
 <e>       <p><l>тыныш<s n="adj"/></l>             <r>тынч<s n="adj"/></r></p></e> <!--""-->
@@ -5305,7 +5305,7 @@
 <e>       <p><l>үлкен<s n="adj"/></l>             <r>чоң<s n="adj"/></r></p></e> <!-- "big"-->
 <e>       <p><l>үлкен<s n="adj"/></l>             <r>улуу<s n="adj"/></r></p></e> <!-- "old, elder (person)"-->
 <e>       <p><l>ұлттық<s n="adj"/></l>            <r>улуттук<s n="adj"/></r></p></e> <!-- "national"-->
-<e>       <p><l>ұнамды<s n="adj"/></l>            <r> <s n="adj"/></r></p></e> <!--""--> <!--FIXME find translation-->
+<!-- e>       <p><l>ұнамды<s n="adj"/></l>            <r> <s n="adj"/></r></p></e --> <!--""--> <!--FIXME find translation-->
 <e>       <p><l>үнемі<s n="adj"/></l>             <r>дайыма<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>ұсақ<s n="adj"/></l>              <r>ушак<s n="adj"/></r></p></e> <!-- "small" -->
 <e>       <p><l>хош<s n="adj"/></l>               <r>кош<s n="adj"/></r></p></e> <!--""-->
@@ -5468,7 +5468,7 @@
 <e>       <p><l>тағы<s n="adv"/></l>              <r>дагы<s n="adv"/></r></p></e> <!-- "more,again" -->
 <e>       <p><l>таңертең<s n="adv"/></l>          <r>эртең<b/>менен<s n="adv"/></r></p></e> <!-- "morning" -->
 <e>       <p><l>таяуда<s n="adv"/></l>            <r>жакында<s n="adv"/></r></p></e> <!--""-->
-<e>       <p><l>тегі<s n="adv"/></l>              <r> <s n="adv"/></r></p></e> <!-- "FIXME find translation" -->
+<!-- e>       <p><l>тегі<s n="adv"/></l>              <r> <s n="adv"/></r></p></e --> <!-- "FIXME find translation" -->
 <e>       <p><l>тек<s n="adv"/></l>               <r>тек<s n="adv"/></r></p></e> <!-- "only" -->
 <e>       <p><l>тіпті<s n="adv"/></l>             <r>такыр<s n="adv"/></r></p></e> <!-- "even" -->
 <e>       <p><l>төмендегідей<s n="adv"/></l>      <r>төмөндөгүдөй<s n="adv"/></r></p></e> <!-- "as follows" -->
@@ -5495,7 +5495,7 @@
 
 <e>       <p><l>азғана<s n="adv"/></l>            <r>аз<b/>гана<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>азғантай<s n="adv"/></l>          <r>аз<b/>гана<s n="adv"/></r></p></e> <!--""-->
-<e>       <p><l>жағалап<s n="adv"/></l>           <r> <s n="adv"/></r></p></e> <!--"FIXME find translation"--> 
+<!-- e>       <p><l>жағалап<s n="adv"/></l>           <r> <s n="adv"/></r></p></e --> <!--"FIXME find translation"--> 
 
     <!-- Adverbs wich take -KI and become an attr/adj -->
 
