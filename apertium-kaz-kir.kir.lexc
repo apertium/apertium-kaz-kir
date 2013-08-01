@@ -1276,8 +1276,6 @@ LEXICON Postadverbs
 эле:эле POSTADV ; ! "only"
 деле:деле POSTADV ; ! "even"
 дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
-ашуун:ашуун POSTADV ; ! "more than"
-ашык:ашык POSTADV ; ! "more than"
 тең:тең POSTADV ; ! "~both" e.g., экөө тең
 
 LEXICON Conjunctions 
@@ -6545,8 +6543,8 @@ LEXICON Adjectives
 картаң:картаң A1 ; ! "old(person)"
 түрк:түрк A1 ; ! "Turkic" "FIXME is it A1?"
 жарандык:жарандык ADJ ; ! "FIXME should be A4" "alternative translation see граждандык"
-азат:азат A1 ; "free" 
-айкын:айкын A1 ; "clear" 
+азат:азат A1 ; ! "free" 
+айкын:айкын A1 ; ! "clear" 
 аймактык:аймактык A1 ; ! "" 
 ак:ак A1 ; ! "white" 
 жапыз:жапыз A1 ; ! "" 
@@ -6579,7 +6577,7 @@ LEXICON Adjectives
 куу:куу A1 ; ! "" 
 кызыктуу:кызыктуу A1 ; ! "" 
 кылмыштуу:кылмыштуу A1 ; ! "FIXME is it A1?" 
-криминалдуу:криминалдуу A1 ; "FIXME is it A1?" 
+криминалдуу:криминалдуу A1 ; ! "FIXME is it A1?" 
 кымбаттуу:кымбаттуу A1 ; ! "FIXME is it A1?" 
 мөлтүр:мөлтүр A1 ; ! "FIXME is it A1?" 
 ыкыластуу:ыкыластуу A1 ; 
