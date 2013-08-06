@@ -67,5 +67,12 @@
 		<or><match lemma="команда" tags="n.*"/><match tags="np.org.*"/><match lemma="мен" tags="post"/></or>
 		<match lemma="сайыс" tags="v.iv.*"><select lemma="салгылаш" tags="v.iv.*"/></match>
 	</rule>
+	<rule>
+		<match lemma="үлкен" tags="adj.*"><select lemma="улуу" tags="adj.*"/></match>
+	</rule>
+	<rule>
+		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
+		<match lemma="қала" tags="n.*"/>
+	</rule>
 
 </rules>
