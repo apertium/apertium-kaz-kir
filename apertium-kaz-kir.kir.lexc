@@ -435,8 +435,8 @@ LEXICON NP-TOP
 
 %<np%>%<top%>: NP-COMMON ;
 %<np%>%<top%>%<attr%>: # ;
-:%>%{L%}%{I%}%{K%} A4 ;
-%<n%>:%>%{L%}%{I%}%{K%} SUBST-COMMON ;
+! :%>%{L%}%{I%}%{K%} A4 ;
+! %<n%>:%>%{L%}%{I%}%{K%} SUBST-COMMON ;
 
 
 ! %<np%>%<top%>:%>%{L%}%{I%}к ADJ-COMMON ;
@@ -812,15 +812,15 @@ LEXICON PRON-DEM-TIGIL
 %<prn%>%<dem%>%<abl%>:нден PRED ;
 %<prn%>%<dem%>%<sim%>:нндей PRED ;
 
-LEXICON PRON-DEM-MINA
+! LEXICON PRON-DEM-MINA
 
-%<prn%>%<dem%>%<nom%>:мына PRED ;
-%<prn%>%<dem%>%<gen%>:мунун PRED ;
-%<prn%>%<dem%>%<acc%>:муну PRED ;
-%<prn%>%<dem%>%<dat%>:буга PRED ;
-%<prn%>%<dem%>%<loc%>:мында PRED ;
-%<prn%>%<dem%>%<abl%>:мындан PRED ;
-%<prn%>%<dem%>%<sim%>:мындай PRED ;
+! %<prn%>%<dem%>%<nom%>:мына PRED ;
+! %<prn%>%<dem%>%<gen%>:мунун PRED ;
+! %<prn%>%<dem%>%<acc%>:муну PRED ;
+! %<prn%>%<dem%>%<dat%>:буга PRED ;
+! %<prn%>%<dem%>%<loc%>:мында PRED ;
+! %<prn%>%<dem%>%<abl%>:мындан PRED ;
+! %<prn%>%<dem%>%<sim%>:мындай PRED ; ! "FIXME how this should be done?"
 
 
 %<prn%>%<dem%>:н DAGI ;
@@ -1276,6 +1276,8 @@ LEXICON Postadverbs
 эле:эле POSTADV ; ! "only"
 деле:деле POSTADV ; ! "even"
 дагы:дагы POSTADV ; ! "... дагы" = "and ... too"
+ашуун:ашуун POSTADV ; ! "more than"
+ашык:ашык POSTADV ; ! "more than"
 тең:тең POSTADV ; ! "~both" e.g., экөө тең
 
 LEXICON Conjunctions 
@@ -1439,12 +1441,12 @@ LEXICON Pronouns
 сиздер%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>:сиздер PRON-PERS-PLURALS ; 
 алар%<prn%>%<pers%>%<p3%>%<pl%>:алар PRON-PERS-PLURALS ; 
 
-бул: PRON-DEM-BUL ; ! "this"
+бул: PRON-DEM-BUL ; ! "this" 
 ошол:ошо PRON-DEM-OSOL ; ! "that"
 ушул:ушу PRON-DEM-USUL ; ! "this"
 ал:а PRON-DEM-AL ; ! "that"
 тигил:тиги PRON-DEM-TIGIL ; ! "that (yonder)
-мына:мына PRON-DEM-MINA ; ! ""
+! мына:мына PRON-DEM-MINA ; ! "" "FIXME how this shoulbe done?"
 
 эмне:эмне PRON-ITG ; ! "what?"
 кайсыны:кайсыны PRON-ITG ; ! "which one?"
@@ -2049,7 +2051,7 @@ LEXICON Nouns
 социализм:социализм N-INFL ; 
 социология:социология N-INFL ; 
 спикер:спикер N-INFL ; 
-адис:адис N1 ; 
+адис:адис N-INFL ; 
 спорт:спорт N-INFL ; 
 стадион:стадион N-INFL ; 
 стандарт:стандарт N-INFL ; 
@@ -2669,7 +2671,8 @@ LEXICON Nouns
 микроблогер:микроблогер N-INFL ; ! ""
 коррупция:коррупция N-INFL ; ! ""
 жаңжал:жаңжал N-INFL ; ! "скандал"
-стачка:стачка N-INFL ; ! ""
+стачка:стачка N-INFL ; ! "" 
+эсе:эсе N-INFL ; ! "" 
 ДНК:ДНК N1-ABBR ; ! "DNA"
 англичан:англичан N1 ; ! "English"
 албан:албан N1 ; ! ""
@@ -2706,8 +2709,9 @@ LEXICON Nouns
 кыргыз:кыргыз N1 ; ! "Kyrgyz"
 түрк:түрк N1 ; ! "Turkish"
 орус:орус N1 ; ! "Russian"
+өзбек:өзбек N1 ; ! "Uzbek"
 тажик:тажик N1 ; ! "Tajik"
-кытай:кытай N1 ; ! "Chinese"
+кытай:кытай N-INFL ; ! "Chinese"
 латын:латын N1 ; ! "Latin"
 немис:немис N1 ; ! "German"
 өзбек:өзбек N1 ; ! ""
@@ -3082,6 +3086,7 @@ LEXICON ProperNouns
 Катманду:Катманду NP-TOP ; ! ""
 Египет:Египет NP-TOP ; ! "Egypt"
 Эквадор:Эквадор NP-TOP ; ! ""
+Экватордук% Гвинея:Экватордук% Гвинея NP-TOP ;
 Эритрея:Эритрея NP-TOP ; ! ""
 Эстония:Эстония NP-TOP ; ! ""
 Ооганстан:Ооганстан NP-TOP ; ! "Afghanistan"
@@ -3289,6 +3294,7 @@ Witness:Witness NP-AL ; ! ""
 Глобал:Глобал NP-AL ; ! ""
 Дейли:Дейли NP-AL ; ! ""
 Евро:Евро NP-AL ; ! "European Championship"
+Жунгар:Жунгар NP-AL ; ! ""
 Заря:Заря NP-AL ; ! ""
 Ил:Ил NP-AL ; ! ""
 Кайнозой:кайнозой NP-AL ; ! ""
@@ -6343,7 +6349,7 @@ LEXICON Adjectives
 зор:зор A1 ;
 чейинки:чейинки ADJ ;
 ири:ири A1 ;
-расмий:расмий ADJ ;
+расмий:расмий A4 ;
 таза:таза A1 ; ! "clean"
 майда:майда ADJ ; ! "fine (i.e., small pieces)"
 ыйык:ыйык A1 ;
@@ -6463,7 +6469,6 @@ LEXICON Adjectives
 керек:керек A1 ;
 чечкиндүү:чечкиндүү A1 ;
 экономикалык:экономикалык ADJ ;
-расмий:расмий ADJ ;
 чоң:чоң ADJ ;
 күрөң:күрөң A1 ;
 жарашыктуу:жарашыктуу A1 ;
@@ -6517,7 +6522,7 @@ LEXICON Adjectives
 акырын:акырын A1 ;
 кубанычтуу:кубанычтуу A1 ;
 көрүнүктүү:көрүнүктүү ADJ ;
-кытайлык:кытайлык ADJ ; ! "Chinese" ! NAT
+кытайлык:кытайлык A4 ; ! "Chinese" ! NAT
 кир:кир A1 ; ! "dirty"
 тынч:тынч A1 ; ! "quiet, silent, still, peaceful"
 эгемендүү:эгемендүү A1 ; ! CHECK "FIXME is it A1?" 
@@ -6538,7 +6543,7 @@ LEXICON Adjectives
 төмөнкү:төмөнкү A1 ; ! "нижний"
 коррупциялык:коррупциялык ADJ ; ! ""
 базар:базар ADJ ; ! ""
-официалдуу% эмес:официалдуу% эмес ADJ ; ! ""
+расмий% эмес:расмий% эмес A4 ; ! ""
 катышкан:катышкан ADJ ; ! ""
 картаң:картаң A1 ; ! "old(person)"
 түрк:түрк A1 ; ! "Turkic" "FIXME is it A1?"
@@ -6618,10 +6623,9 @@ LEXICON Adjectives
 негиздүү:негиздүү A1 ; 
 тору:тору A1 ; 
 жарты:жарты A1 ; 
+басымдуу:басымдуу A1 ; 
 
 LEXICON Adverbs
-
-
 
 эмнеге:эмнеге ADVITG ; ! "why"
 качан:качан ADVITG ; ! "when"
@@ -6629,8 +6633,6 @@ LEXICON Adverbs
 кандайча:кандайча ADVITG ; ! "howso"
 канчалык:канчалык ADVITG ; ! ""
 кайда:кайда ADVITG ; ! "where"
-
-
 али:али ADV ; ! "still"
 дагы% эле:дагы% эле ADV ; ! "still"
 өтө:өтө ADV ; ! "very"
@@ -6643,8 +6645,6 @@ LEXICON Adverbs
 кээде:кээде ADV ; ! "sometimes"
 жакында:жакында ADV ; ! "soon"
 бирге:бирге ADV ; ! "together"
-
-
 эч% качан:эч% качан ADV ; ! Use/MT
 негизинде:негизинде ADV ; ! "basically, in general"
 ар% дайым:ар% дайым ADV ;
@@ -6677,14 +6677,11 @@ LEXICON Adverbs
 көбүнчө:көбүнчө ADV ; ! FIXME: compositional
 ошондой:ошондой ADV ; ! FIXME: compositional
 ошондой:ошондой ADV ; ! FIXME: compositional
-эсе:эсе ADV ; ! "_ times _-er" maybe N?  but fine for now
 кайра:кайра ADV ; 
 анан:анан ADV ; ! FIXME: compositional
 таптакыр:таптакыр ADV ;
 жалаң:жалаң ADV ;
 атайы:атайы ADV ; 
-
-
 жакшы:жакшы ADV ;
 шексиз:шексиз ADV ; ! FIXME: compositional
 көз% көрүнө:көз% көрүнө ADV ;
@@ -6742,12 +6739,6 @@ LEXICON Adverbs
 жаңы% эле:жаңы% эле ADV ; ! "" 
 жалпысынан:жалпысынан ADV ; ! "" 
 негиздеп:негиздеп ADV ; ! "" 
-
-
-
-
-
-
 мурун:мурун ADV-WITH-KI-ABL ; ! "old (former)"
 бүгүн:бүгүн ADV-WITH-KI-ABL ; ! "today's"
 алгач:алгач ADV-WITH-KI-ABL ; ! KI: "first" ADV: "at first; first of all"
@@ -6758,38 +6749,22 @@ LEXICON Adverbs
 былтыр:былтыр ADV-WITH-KI-ABL ; ! "last year's"
 соң:соң ADV-WITH-KI-ABL ; ! "" 
 күндүз:күндүз ADV-WITH-KI-ABL ; ! "" 
-
-
 илгери:илгери ADV ; !
 илгери:илгер ADV-WITH-KI ; ! "ancient"
 илгери:илгер ADV-WITH-ABL ; ! "ancient"
-
-
 эми:эми ADV-WITH-ABL ;
 эми:эм ADV-KI ; ! "next/soon-to-be"
 эми:эмди ADV-WITH-KI ; ! dialectal form    ! Dir/LR
 эми:эмди ADV-ABL-REG ; ! dialectal form    ! Dir/LR
-
-
 ары:ары ADV-ABL ; ! "further away"           ! Dir/LR
 ары:ары ADV-WITH-ABL-REG ; ! "further away"
 ары:ар ADV-KI ; ! "further away"
 бери:бери ADV-ABL ; ! "nearer"                ! Dir/LR
 бери:бери ADV-WITH-ABL-REG ; ! "nearer"
 бери:бер ADV-KI ; ! "nearer"
-
-
 эртең% менен:эртең% менен ADV-WITH-KI-ABL ; ! "morning
 эртең% менен:эртең% менен ADV-ABL-REG ; ! "morning      ! Dir/LR
-
-
 кечээ:кечээ ADV ; ! "yesterday"
-
-
-
-
-
-
 
 LEXICON Copula
 

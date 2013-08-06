@@ -1,7 +1,8 @@
 
-# ======================================================================================= #
-# A COMMENTARY ON FORMATTING OF MAJORITY OF RULES (read: a wannabe FORMATTING GUIDELINES) #
-# ======================================================================================= #
+# ============================================================================= #
+#            A COMMENTARY ON FORMATTING OF MAJORITY OF RULES
+#              (read: a wannabe FORMATTING GUIDELINES)
+# ============================================================================= #
 
 # How most of the rules look like?
 # ================================
@@ -13,13 +14,13 @@
 #                  (1 GHI)
 #          ;
 #          ## A sentence the rule was written for.
-#          ## (!) A corner-case-sentence: the rule mispredicted on it initially but was modified accordingly
-#          ## (additional constraints etc.); or the rule still mispredicts on it, but this kind of sentences
-#          ## are not that frequent.
+#          ## (!) A corner-case-sentence: the rule mispredicted on it initially but was
+#          ## modified accordingly (additional constraints etc.); or the rule still
+##         ## mispredicts on it, but this kind of sentences aren't that frequent.
 
 
-#          # Sometimes you can't disambiguate a form with only one rule. Several
-#          # rules dealing with the same thing can be grouped together.
+#          # Sometimes you can't disambiguate a form with only one rule. In that case,
+##         # several rules dealing with the same thing are grouped together
 #           SELECT ABC IF
 #                  (0 DEF)
 #                  (1 KLM)
@@ -33,7 +34,6 @@
 #          ## Another example sentence.
 #          ## (!) And another, on which the rule didn't/doesn't work.
 
-
 # ============================ #
 # END OF FORMATTING GUIDELINES #
 # ============================ #
@@ -45,7 +45,7 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 SOFT-DELIMITERS = "<,>" ;
 
-SUBREADINGS = LTR ; # Alternate, left-to-right
+SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
 
 # ============= #
 # Tags and sets #
@@ -105,8 +105,8 @@ LIST Abl = abl ;
 LIST Loc = loc ;
 LIST Ins = ins ;
 
-LIST P3 = p3 ;
 LIST P1 = p1 ;
+LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
@@ -138,28 +138,18 @@ SET NOT-ADV = WORDMARK - Adv ;
 # ==============
 
 LIST A/Advl = (adj advl) ;
-
 LIST A/Subst = (adj subst nom) ;
-
 SET A1 = A/Advl | A/Subst ;
 
 # Verb sets
 # =========
 
 LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
-
 LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
-
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
-
 SET V-NotGerund = V - Gerund ;
-
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
-
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
-
-LIST Copula = (cop p3 sg) (cop p3 pl) ;
-
 LIST FourAuxiliaries = "<тұр>" "<жүр>" "<отыр>" "<жатыр>" ;
 
 # Barriers
@@ -173,24 +163,19 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # ======= #
 
 
-# some of the rules having nouns as constraints didn't work when the noun has
-# personal copulas as subreadings, so the rule removing personal copulas is
-# placed into a separate section, before any other rules
-
 #
- REMOVE Copula IF
+ REMOVE Cop IF
         (NOT 1 EOS OR MARK)
 ;
-
- REMOVE SUB:1 Cop IF
-        (0 A OR N)
-        (NOT 1 EOS OR MARK) ;
-
 ##
 
 
-# TODO: Remove copula here
-## АРАЛ [0]ТЕҢІЗІ.
+#
+ SELECT Cop IF
+        (1 EOS OR MARK)
+;
+## TODO (!) 13 . [0]Жоқ, Айгүлдің күшігі жоқ, оның мысығы бар.
+## TODO (!) Дұрыс, оның мысығы бар.
 
 
 # ======= #
@@ -224,14 +209,70 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 #
  REMOVE Post IF
-        (NOT -1 N OR Prop OR Pron OR Subst OR Gerund)
-;
+        (NOT -1 N OR Prop OR Pron OR Subst OR Gerund) # FIXME What about referring to all
+;                                                     # these (referring *consistently*) as
+                                                      # 'Nominal's?
 ##
+
+
+# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
+# accusative, and 2) with  a verb in <ifi> form.
+ REMOVE Acc IF
+        (0 (n acc) OR (adj subst nom))
+        (0 A)
+        (NOT 1 V)
+;
+ REMOVE V IF
+        (0 A)
+        (0 (ifi))
+        (NOT 1 EOS OR Cm)
+;
+ SELECT A IF
+        (-1 ("аса"i) OR ("өте"i))
+        (0 A)
+        (0 (n acc))
+;
+ "<атты>" SELECT A IF
+                 (1 N)
+;
+## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
+## 91 . Өйткені, <...> Әл-Истахри келтірген мәліметтер аса [0]құнды саналады.
+## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
+
+
+ "<жаппай>" SELECT A IF
+                 (1 N)
+;
+## Қытай мамандары ауыл тұрғындарының қалаға жаппай ағылуын тоқтататын жаңа саясат жүргізуге шақырып отыр.
+
+
+# Proper noun vs noun
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:]+[:lower:]*"r))
+        (NOT -1 BOS)
+;
+## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:][:upper:]+"r))
+;
+## АЗАМАТ ҚАЙДА?
+ SELECT Prop IF
+        (0 Prop)
+        (0 N)
+        (1 ("мен") + Post)
+        (2 Prop)
+;
+## Азамат пен Айгүл бақшада.
 
 
 
 # Determiners
 # ===========
+
 
 
 #
@@ -331,22 +372,17 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  REMOVE Subst IF
         (0 A1)
         (1 EOS)
-        (NOT 0/1 Copula)
-##;
-
-
-# if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
- SELECT SUB:1 Cop IF
-        (0 (adj))
-        (1 EOS OR MARK) ;
-##
+        (NOT 0/1 Cop) ## FIXME CHECK
+;
+## TODO (!) Син әкренсең -- (adj+cop vs adj.subst+cop)?
 
 
 #
 REMOVE SUB:1 P3 IF
        (0/1 Cop)
-       (0/1 P1) ;
-##  "Біз қуаныштымыз."
+       (0/1 P1)
+;
+## "Біз [0]қуаныштымыз."
 
 
 
@@ -399,6 +435,13 @@ REMOVE SUB:1 P3 IF
 ##
 
 
+#
+ "<кейін>" SELECT Post IF
+                (-1 Abl)
+;
+## 23. Айгүл санап біткеннен кейін айналасына қарады.
+
+
 
 # Verbs
 # =====
@@ -412,11 +455,11 @@ REMOVE SUB:1 P3 IF
 ##
 
 
-# FIXME CHECK really needed?
 # <prc_cond> vs. <gna_cond>
  REMOVE (prc_cond) IF
         (NOT 1 ("бол") + V)
-##
+;
+## 34 . Ол Азаматтың қайда екенін [0]білсе де айтқысы келген жоқ.
 
 
 #
@@ -480,61 +523,25 @@ REMOVE SUB:1 P3 IF
 #
 # In Tatar, when the subject indicates the number, this LAR affix for the verbs
 # in 3 person is kind of optional too, so singular reading will work/is right for
-# the majority of the cases.
+# the majority of cases.
 #
 # Selecting plural reading might be a more productive approach.
  REMOVE Pl IF
-        (0 V OR Vaux)
+        (0 V OR Vaux OR Cop)
         (0 P3)
 ;
 ##
 
 
-#
+# Thought that the above rule should cover copulas, seems that sometimes it doesn't
  REMOVE SUB:1 Pl IF
         (0/1 Cop)
         (0/1 P3)
 ;
 ##
 
-
 ###################################### TO BE SORTED ############################
 
-
-# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
-# accusative, and 2) with  a verb in <ifi> form.
- REMOVE Acc IF
-        (0 (n acc) OR (adj subst acc))
-        (0 A)
-        (NOT 1 V)
-;
- REMOVE V IF
-        (0 A)
-        (0 (ifi))
-        (NOT 1 EOS OR Cm)
-;
- "<атты>" SELECT A IF
-                 (1 N)
-;
-## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
-## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
-
-
-#
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:]+[:lower:]*"r))
-        (NOT -1 BOS)  ;
-## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
-
-
-#
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:][:upper:]+"r))
-## АЗАМАТ ҚАЙДА?
 
 ################################################################################
 
@@ -550,13 +557,6 @@ REMOVE SUB:1 P3 IF
                 (1 A)
 ;
 ## Бірақ кеше _өте_ суық еді!
-
-
-#
- "<кейін>" SELECT Post IF
-                (-1 Abl)
-;
-## 23. Айгүл санап біткеннен кейін айналасына қарады.
 
 
 # ugly and RISKY
@@ -772,22 +772,22 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 REMOVE (pass) IF (0 ("қырыл"));
     ## жасушалардың қырылуы
 
-
 # ======= #
   SECTION     # experimental
 # ======= #   # The following rules are for _translating_, therefore shouldn't be here (i.e. in apertium-kaz.kaz.rlx)
 
 
 # FIXME
- SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger) + PersonalPossessives LINK 1 ("керек") BARRIER EOS) ;
+ SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger) + PersonalPossessives LINK 1 ("керек")) ;
 ## [0]Мен үйге қайтуым керек. >> [0]Миңа өйгә кайтырга кирәк.
 ## [0]Сен үйге қайтуың керек. >> [0]Сиңа өйгә кайтырга кирәк.
 
 
 #
- SUBSTITUTE (dat) (nom) TARGET (prn pers) IF (1* (ger_past) + Nom LINK 1 ("ұна") + (aor) BARRIER EOS) ;
+ SUBSTITUTE (dat) (nom) TARGET (prn pers) IF (1* (ger_past) + Nom LINK 1 ("ұна") + (aor)) ;
  SUBSTITUTE (ger_past) (inf) TARGET (ger_past nom) IF (1 ("ұна") + (aor)) ;
  SUBSTITUTE (nom) (*) TARGET (inf nom) IF (1 ("ұна") + (aor)) ;
  SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (prn p1)) ;
  SUBSTITUTE (p3) (p2) TARGET ("ұна") + (aor) IF (@1 (prn p2)) ; # FIXME take the tag from the first word
 ## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.
+

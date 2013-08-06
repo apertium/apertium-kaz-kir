@@ -586,7 +586,6 @@
 <e>	 <p><l>халық<s n="n"/></l>           <r>калк<s n="n"/></r></p></e>
 <e>	 <p><l>өмір<s n="n"/></l>            <r>өмүр<s n="n"/></r></p></e>
 <e>	 <p><l>бөлік<s n="n"/></l>           <r>бөлүк<s n="n"/></r></p></e>
-<e>	 <p><l>бөлік<s n="n"/></l>           <r>бөлүк<s n="n"/></r></p></e>
 <e>	 <p><l>жағдай<s n="n"/></l>          <r>жагдай<s n="n"/></r></p></e>
 <e>	 <p><l>рет<s n="n"/></l>             <r>жолу<s n="n"/></r></p></e>
 <e>	 <p><l>қызмет<s n="n"/></l>          <r>кызмат<s n="n"/></r></p></e>
@@ -635,7 +634,7 @@
 <e>	 <p><l>өнеркәсіп<s n="n"/></l>       <r>өнөр<b/>жай<s n="n"/></r></p></e> <!--industry-->
 <e>      <p><l>есеп<s n="n"/></l>            <r>эсеп<s n="n"/></r></p></e> <!--"счет; подсчет"-->
 <e>      <p><l>қатар<s n="n"/></l>           <r>катар<s n="n"/></r></p></e> <!--"row"-->
-<e>      <p><l>есе<s n="n"/></l>             <r>эсе<s n="adv"/></r></p></e> <!--"time portion"-->
+<e>      <p><l>есе<s n="n"/></l>             <r>эсе<s n="n"/></r></p></e> <!--"time portion"-->
 <e>      <p><l>тұтынушы<s n="n"/></l>        <r>алуучу<s n="n"/></r></p></e> <!--"потребитель"-->
 <e>      <p><l>желі<s n="n"/></l>            <r>желе<s n="n"/></r></p></e> <!--""-->
 <e>      <p><l>қолданушы<s n="n"/></l>       <r>колдонуучу<s n="n"/></r></p></e> <!--"user"-->
@@ -1356,7 +1355,7 @@
 <e>   <p><l>қытай<s n="n"/></l>              <r>кытай<s n="n"/></r></p></e> <!-- "Chinese" -->
 <e>   <p><l>латын<s n="n"/></l>              <r>латын<s n="n"/></r></p></e> <!-- "Latin" -->
 <!-- e i="yes">       <p><l>леуі<s n="n"/></l>                <r>   <s n="n"/></r></p></e--> <!-- ""--> <!--FIXME find translation-->
-<e i="yes">       <p><l>леуілік<s n="n"/></l>             <r>   <s n="n"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
+<!--e i="yes">       <p><l>леуілік<s n="n"/></l>             <r>   <s n="n"/></r></p></e--> <!-- ""--> <!--FIXME find translation-->
 <e>   <p><l>моңғол<s n="n"/></l>             <r>монгол<s n="n"/></r></p></e> <!-- "Mongol" -->
 <e>   <p><l>мордва<s n="n"/></l>             <r>мордва<s n="n"/></r></p></e>
 <e>   <p><l>неміс<s n="n"/></l>              <r>немис<s n="n"/></r></p></e> <!--"German"-->
@@ -5068,11 +5067,11 @@
 <e>       <p><l>коррупциялық<s n="adj"/></l>      <r>коррупциялык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>нарықтық<s n="adj"/></l>          <r>базар<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>ресми<s n="adj"/></l>             <r>расмий<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>бейресми<s n="adj"/></l>          <r>официалдуу<b/>эмес<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>бейресми<s n="adj"/></l>          <r>расмий<b/>эмес<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>қатысты<s n="adj"/></l>           <r>катышкан<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>көрнекі<s n="adj"/></l>           <r>көрүнүктүү<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>қытайлық<s n="adj"/></l>          <r>кытайлык<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>басым<s n="adj"/></l>             <r>көп<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>басым<s n="adj"/></l>             <r>басымдуу<s n="adj"/></r></p></e> <!--""-->
 
     <!-- A1 adj.(comp), adj.(comp).advl, adj.(comp).subst,
          and when not sure where exactly an adjective belongs -->
@@ -5375,7 +5374,7 @@
 <e>       <p><l>әрқашан<s n="adv"/></l>                <r>ар<b/>дайым<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>әлдеқайда<s n="adv"/></l>              <r>алда<b/>кайда<s n="adv"/></r></p></e> <!--""-->
 
-<e>       <p><l>қаншама<s n="adv"/><s n="itg"/></l>    <r><s n="adv"/><s n="itg"/></r></p></e> <!--""--> <!--FIXME find translation-->
+<!--e>       <p><l>қаншама<s n="adv"/><s n="itg"/></l>    <r><s n="adv"/><s n="itg"/></r></p></e--> <!--""--> <!--FIXME find translation-->
 <e>       <p><l>осылайша<s n="adv"/></l>               <r>ушундайча<s n="adv"/></r></p></e> <!--""-->
 
 <e>       <p><l>бұлайша<s n="adv"/></l>                <r>мындайча<s n="adv"/></r></p></e> <!--""-->
@@ -5392,7 +5391,7 @@
 <e>       <p><l>ақшалай<s n="adv"/></l>           <r>акчалай<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>алға<s n="adv"/></l>              <r>алга<s n="adv"/></r></p></e> <!-- "forward" -->
 <e>       <p><l>алғаш<s n="adv"/></l>              <r>алгач<s n="adv"/></r></p></e> <!-- "at first" -->
-<e>       <p><l>алғашында<s n="adv"/></l>         <r><s n="adv"/></r></p></e> <!--"" FIXME CHECK find translation-->
+<!--e>       <p><l>алғашында<s n="adv"/></l>         <r><s n="adv"/></r></p></e--> <!--"" FIXME CHECK find translation-->
 <e>       <p><l>аса<s n="adv"/></l>               <r>абдан<s n="adv"/></r></p></e> <!-- "very" -->
 <e>       <p><l>аса<s n="adv"/></l>               <r>өтө<s n="adv"/></r></p></e> <!-- "very" -->
 <e>       <p><l>бағана<s n="adv"/></l>            <r>эчак<s n="adv"/></r></p></e> <!-- "long ago" -->
@@ -5407,15 +5406,15 @@
 <e>       <p><l>бірталай<s n="adv"/></l>          <r>бир<b/>далай<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>бірте-бірте<s n="adv"/></l>       <r>бара-бара<s n="adv"/></r></p></e> <!-- ""-->
 <e>       <p><l>біртіндеп<s n="adv"/></l>         <r>бара-бара<s n="adv"/></r></p></e> <!-- ""-->
-<e>       <p><l>біршама<s n="adv"/></l>           <r><s n="adv"/></r></p></e> <!-- ""--> <!--FIXME find translation-->
+<!--e>       <p><l>біршама<s n="adv"/></l>           <r><s n="adv"/></r></p></e--> <!-- ""--> <!--FIXME find translation-->
 <e>       <p><l>бүгін<s n="adv"/></l>             <r>бүгүн<s n="adv"/></r></p></e> <!-- today -->
-<e>       <p><l>бүгінде<s n="adv"/></l>           <r><s n="adv"/></r></p></e> <!-- "" FIXME CHECK find translation-->
+<!--e>       <p><l>бүгінде<s n="adv"/></l>           <r><s n="adv"/></r></p></e--> <!-- "" FIXME CHECK find translation-->
 <e>       <p><l>бұрын<s n="adv"/></l>             <r>мурун<s n="adv"/></r></p></e> <!--"earlier"-->
 <e>       <p><l>былтыр<s n="adv"/></l>            <r>былтыр<s n="adv"/></r></p></e> <!-- "last year" -->
 <e>       <p><l>дәл<s n="adv"/></l>               <r>дал<s n="adv"/></r></p></e> <!-- "exactly" -->
 <e>       <p><l>дереу<s n="adv"/></l>             <r>дароо<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>әбден<s n="adv"/></l>             <r>абдан<s n="adv"/></r></p></e> <!--"rather"-->
-<e>       <p><l>егжей<s n="adv"/></l>             <r><s n="adv"/></r></p></e> <!--"FIXME find translation"-->
+<!--e>       <p><l>егжей<s n="adv"/></l>             <r><s n="adv"/></r></p></e--> <!--"FIXME find translation"-->
 <e>       <p><l>әдейі<s n="adv"/></l>             <r>атайы<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>ежелде<s n="adv"/></l>            <r>илгери<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>әзір<s n="adv"/></l>              <r>азыр<s n="adv"/></r></p></e> <!-- "now" -->
@@ -5457,7 +5456,7 @@
 <e>       <p><l>міне<s n="adv"/></l>              <r>мына<s n="adv"/></r></p></e> <!-- "" -->
 <e>       <p><l>мүлде<s n="adv"/></l>              <r>такыр<s n="adv"/></r></p></e> <!--"совершенно"-->
 <e>       <p><l>мүлдем<s n="adv"/></l>            <r>таптакыр<s n="adv"/></r></p></e> <!--""-->
-<e>       <p><l>неғұрлым<s n="adv"/></l>          <r><s n="adv"/></r></p></e> <!-- " --> <!--FIXME find translation-->
+<!--e>       <p><l>неғұрлым<s n="adv"/></l>          <r><s n="adv"/></r></p></e--> <!-- " --> <!--FIXME find translation-->
 <e>       <p><l>ойымша<s n="adv"/></l>            <r>оюмча<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>орасан<s n="adv"/></l>            <r>аябай<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>өте<s n="adv"/></l>               <r>өтө<s n="adv"/></r></p></e> <!--"very"-->
@@ -5743,6 +5742,8 @@
 <e>      <p><l>жекешелендір<s n="v"/><s n="tv"/></l><r>менчиктештир<s n="v"/><s n="tv"/></r></p></e> <!-- "to privatizate" -->
 <e>      <p><l>тоқта<s n="v"/><s n="iv"/></l>       <r>токто<s n="v"/><s n="iv"/></r></p></e> <!-- "stop" -->
 <e>      <p><l>тоқтат<s n="v"/><s n="tv"/></l>      <r>токтот<s n="v"/><s n="tv"/></r></p></e> <!-- "stop" -->
+<e>      <p><l>кір<s n="v"/><s n="iv"/></l>         <r>кир<s n="v"/><s n="iv"/></r></p></e> <!-- "enter" -->
+
 
 <!-- SECTION: Auxiliaries -->
 <e>       <p><l>ал<s n="vaux"/></l>               <r>ал<s n="vaux"/></r></p></e>

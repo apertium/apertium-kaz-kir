@@ -180,6 +180,10 @@
     <def-cat n="day">
       <cat-item lemma="күн" tags="n.px3sp.nom"/>
     </def-cat>
+
+    <def-cat n="жаппай">
+      <cat-item lemma="жаппай" tags="adj.*"/>
+    </def-cat>
   
   </section-def-cats>
   
@@ -1145,7 +1149,7 @@
 	  <b pos="1"/>
 	  <lu>
 	    <lit v="жана"/>
-	    <lit-tag v="cnjcoo"/>	    
+	    <lit-tag v="cnjcoo"/>
 	  </lu>
 	  <b pos="1"/>
 	  <lu>
@@ -1154,6 +1158,24 @@
 	</out>
       </action>
     </rule>
+
+    <!--rule comment="жаппай adj recognized as verb жап">
+      <pattern>
+        <pattern-item n="жаппай"/>
+        <pattern-item n="plain_nouns"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+              <lit v="жалпы"/>
+	      <lit-tag v="adj"/>
+          </lu>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule-->
 
   </section-rules>
 
