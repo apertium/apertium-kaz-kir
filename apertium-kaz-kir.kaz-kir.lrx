@@ -74,5 +74,16 @@
 		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
 		<match lemma="қала" tags="n.*"/>
 	</rule>
+	<rule>
+		<match lemma="қағида" tags="n.*"><select lemma="эреже" tags="n.*"/></match>
+	</rule>
+	<rule>
+		<match lemma="ғылыми" tags="adj.*"/>
+		<match lemma="қағида" tags="n"><select lemma="теория" tags="n"/></match>
+	</rule>
+	<rule>
+		<match lemma="данышпандық" tags="adj.*"/>
+		<match lemma="қағида" tags="n"><select lemma="теория" tags="n"/></match>
+	</rule>
 
 </rules>
