@@ -12,16 +12,12 @@
 /apertium-kaz-kir.kaz-kir.rlx -text
 /apertium-kaz-kir.kaz-kir.t1x -text
 /apertium-kaz-kir.kaz-kir.t2x -text
-/apertium-kaz-kir.kaz.lexc -text
-/apertium-kaz-kir.kaz.twol -text
 /apertium-kaz-kir.kir-kaz.LR.att.gz -text
 /apertium-kaz-kir.kir-kaz.RL.att.gz -text
 /apertium-kaz-kir.kir-kaz.lrx -text
 /apertium-kaz-kir.kir-kaz.rlx -text
 /apertium-kaz-kir.kir-kaz.t1x -text
 /apertium-kaz-kir.kir-kaz.t2x -text
-/apertium-kaz-kir.kir.lexc -text
-/apertium-kaz-kir.kir.twol -text
 /apertium-kaz-kir.post-kaz.dix -text
 /apertium-kaz-kir.post-kir.dix -text
 /apertium-view.sh -text
