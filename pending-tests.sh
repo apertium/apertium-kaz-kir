@@ -8,7 +8,7 @@ then
     GREP='WORKS'
 fi
 
-sh wiki-tests.sh Pending kaz tat update | grep -C $C "$GREP"
+sh wiki-tests.sh Pending kaz kir update | grep -C $C "$GREP"
 
-sh wiki-tests.sh Pending tat kaz update | grep -C $C "$GREP"
+sh wiki-tests.sh Pending kir kaz update | grep -C $C "$GREP"
 
