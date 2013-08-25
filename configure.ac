@@ -1,7 +1,7 @@
 AC_PREREQ(2.52)
 
-AC_INIT([apertium-khk-kaz], [0.1.0], [spectre360@users.sourceforge.net])
-AM_INIT_AUTOMAKE([apertium-khk-kaz], [0.1.0], no-define)
+AC_INIT([apertium-kaz-kir], [0.2.0], [spectre360@users.sourceforge.net])
+AM_INIT_AUTOMAKE([apertium-kaz-kir], [0.2.0], no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
 
@@ -87,6 +87,22 @@ if test x$ac_cv_path_LRXPROC = xno
 then
   AC_MSG_ERROR([You don't have lrx-proc installed.])
 fi
+
+AC_PATH_PROG(GZCAT, gzcat, no)
+AC_PATH_PROG(ZCAT, zcat, no)
+
+if test x$ac_cv_path_GZCAT = xno
+then
+  if test x$ac_cv_path_ZCAT = xno
+  then
+    AC_MSG_ERROR([No working zcat installed.])
+  else
+    AC_SUBST(ZCAT,[zcat])
+  fi
+else
+  AC_SUBST(ZCAT,[gzcat])
+fi
+
 
 
 AC_OUTPUT([Makefile])
