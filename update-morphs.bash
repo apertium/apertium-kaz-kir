@@ -21,6 +21,11 @@ cp ../../languages/apertium-kaz/apertium-kaz.kaz.rlx apertium-kaz-kir.kaz-kir.rl
 #cp ../apertium-kir/apertium-kir.kir.rlx apertium-kaz-kir.kir-kaz.rlx
 cp ../../languages/apertium-kir/apertium-kir.kir.rlx apertium-kaz-kir.kir-kaz.rlx
 
+cp ../../languages/apertium-kaz/kaz.automorf.att.gz apertium-kaz-kir.kaz-kir.LR.att.gz
+cp ../../languages/apertium-kaz/kaz.autogen.att.gz apertium-kaz-kir.kir-kaz.RL.att.gz
+cp ../../languages/apertium-kir/kir.automorf.att.gz apertium-kaz-kir.kir-kaz.LR.att.gz
+cp ../../languages/apertium-kir/kir.autogen.att.gz apertium-kaz-kir.kaz-kir.RL.att.gz
+
 exit 0
 
 
