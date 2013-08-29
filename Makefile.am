@@ -12,7 +12,7 @@ BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 	$(PREFIX1).automorf.bin $(PREFIX1).autopgen.bin $(PREFIX1).autogen.hfst $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin \
-	$(PREFIX2).automorf.bin $(PREFIX2).autopgen.bin $(PREFIX2).autogen.hfst $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin \
+	$(PREFIX2).automorf.hfst $(PREFIX2).autopgen.bin $(PREFIX2).autogen.hfst $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin \
         $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
         $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
 	$(PREFIX1).mode $(PREFIX2).mode modes 
@@ -50,11 +50,12 @@ $(PREFIX1).autogen.hfst: $(BASENAME).$(PREFIX1).RL.att.gz
 	echo " ?* " | hfst-regexp2fst > .deps/any-symbol.hfst
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.upper -2 .deps/any-symbol.hfst -o .deps/$(PREFIX2).autobil.prefixes
 
-$(PREFIX2).automorf.bin: $(BASENAME).$(PREFIX2).LR.att.gz .deps/$(PREFIX2).autobil.prefixes
+$(PREFIX2).automorf.hfst: $(BASENAME).$(PREFIX2).LR.att.gz .deps/$(PREFIX2).autobil.prefixes
 	$(ZCAT) $< | hfst-txt2fst > .deps/$(LANG1).automorf.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).automorf.hfst -2 .deps/$(PREFIX2).autobil.prefixes -o .deps/$(PREFIX2).automorf.trimmed
 	hfst-fst2txt -i .deps/$(PREFIX2).automorf.trimmed -o .deps/$(PREFIX2).automorf.trimmed.att
-	lt-comp lr .deps/$(PREFIX2).automorf.trimmed.att $@
+	hfst-txt2fst -i .deps/$(PREFIX2).automorf.trimmed.att | hfst-fst2fst -O -o $@
+#	lt-comp lr .deps/$(PREFIX2).automorf.trimmed.att $@
 
 $(PREFIX2).autogen.hfst: $(BASENAME).$(PREFIX2).RL.att.gz
 	$(ZCAT) $< | hfst-txt2fst | hfst-fst2fst -O -o $@
@@ -162,7 +163,7 @@ apertium_kaz_kirdir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_kaz_kir_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
                     $(PREFIX1).prob $(PREFIX2).prob \
 		    $(PREFIX1).autogen.hfst $(PREFIX2).autogen.hfst \
-		    $(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
+		    $(PREFIX1).automorf.bin $(PREFIX2).automorf.hfst \
 		    $(PREFIX1).autopgen.bin $(PREFIX2).autopgen.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 		    $(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \

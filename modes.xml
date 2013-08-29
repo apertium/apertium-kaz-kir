@@ -180,8 +180,8 @@
   
   <mode name="kir-kaz" install="yes">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc  -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
@@ -212,8 +212,8 @@
 
   <mode name="kir-kaz-debug" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc  -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
@@ -239,16 +239,16 @@
   
   <mode name="kir-kaz-morph" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
     </pipeline>
   </mode>
 
   <mode name="kir-kaz-disam" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-conv -a "/>
       <program name="vislcg3 --trace --grammar">
@@ -260,8 +260,8 @@
 
   <mode name="kir-kaz-tagger" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc  -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
@@ -272,8 +272,8 @@
 
   <mode name="kir-kaz-biltrans" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc  -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
@@ -287,8 +287,8 @@
 
   <mode name="kir-kaz-lex" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc  -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
@@ -306,8 +306,8 @@
 
   <mode name="kir-kaz-transfer" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
@@ -328,8 +328,8 @@
 
   <mode name="kir-kaz-transfer2" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kir-kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kir-kaz.automorf.hfst"/>
       </program>
       <program name="cg-proc -n -w -1">
         <file name="kir-kaz.rlx.bin"/>
