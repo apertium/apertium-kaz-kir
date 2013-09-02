@@ -23,6 +23,7 @@
 /apertium-view.sh -text
 /autogen.sh -text
 /configure.ac -text
+/countstemsdix.sh -text
 dev/countstems.sh -text
 dev/extract-same-entries.sh -text
 dev/kaz-countstems.sh -text
