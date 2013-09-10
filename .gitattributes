@@ -29,6 +29,7 @@ dev/extract-same-entries.sh -text
 dev/kaz-countstems.sh -text
 dev/kir-countstems.sh -text
 dev/lexical_selection_rules_needed.txt -text
+dev/test-prefix.sh -text
 dev/testvoc/inconsistency-summary.sh -text
 dev/testvoc/inconsistency.sh -text
 dev/testvoc/testvoc-summary.kaz-kir.txt -text
