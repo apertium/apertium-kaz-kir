@@ -7878,6 +7878,7 @@
 <e>       <p><l>өт<s n="v"/><s n="tv"/></l>       <r>өт<s n="v"/><s n="tv"/></r></p></e> <!-- "проходить" -->
 <e>       <p><l>қал<s n="v"/><s n="iv"/></l>      <r>кал<s n="v"/><s n="iv"/></r></p></e> <!-- "remain" -->
 <e>       <p><l>жылтыра<s n="v"/><s n="iv"/></l>  <r>жылтыра<s n="v"/><s n="iv"/></r></p></e> <!-- "to shine" -->
+<e>       <p><l>жылтырат<s n="v"/><s n="tv"/></l> <r>жылтырат<s n="v"/><s n="tv"/></r></p></e> <!--"to illuminate" (kaz tat) caus -->
 <e>       <p><l>тырыс<s n="v"/><s n="iv"/></l>    <r>тырыш<s n="v"/><s n="iv"/></r></p></e> <!--"to try"-->
 <e>       <p><l>көн<s n="v"/><s n="tv"/></l>      <r>көн<s n="v"/><s n="tv"/></r></p></e> <!-- "to agree" -->
 <e>       <p><l>іл<s n="v"/><s n="tv"/></l>       <r>ил<s n="v"/><s n="tv"/></r></p></e> <!--"hang"  -->
@@ -7885,6 +7886,7 @@
 <e>       <p><l>жақ<s n="v"/><s n="tv"/></l>      <r>жак<s n="v"/><s n="tv"/></r></p></e> <!-- "зажигать,жечь" -->
 <e>       <p><l>қайна<s n="v"/><s n="iv"/></l>    <r>кайна<s n="v"/><s n="iv"/></r></p></e> <!--"boil"  -->
 <e>       <p><l>ұял<s n="v"/><s n="iv"/></l>      <r>уял<s n="v"/><s n="iv"/></r></p></e> <!--"be ashamed,embarrassed"  -->
+<e>       <p><l>іші<b/>пыс<s n="v"/><s n="iv"/></l>      <r>ичи<b/>быш<s n="v"/><s n="iv"/></r></p></e> <!--"be bored"  -->
 
 
 <!-- SECTION: Auxiliaries -->
