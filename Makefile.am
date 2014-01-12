@@ -11,14 +11,21 @@ PREFIX2=$(LANG2)-$(LANG1)
 BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
-	$(PREFIX1).automorf.bin $(PREFIX1).autopgen.bin $(PREFIX1).autogen.hfst $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin \
-	$(PREFIX2).automorf.hfst $(PREFIX2).autopgen.bin $(PREFIX2).autogen.hfst $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin \
+	$(PREFIX1).automorf.bin $(PREFIX1).autopgen.bin $(PREFIX1).autogen.bin $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin \
+	$(PREFIX2).automorf.bin $(PREFIX2).autopgen.bin $(PREFIX2).autogen.bin $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin \
         $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
-        $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
-	$(PREFIX1).mode $(PREFIX2).mode modes 
+        $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin
+
+# Use this goal for creating .deps, otherwise make -j2 will give problems:
+.deps/.d:
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	touch $@
+
+# Prevent the .d file from being removed automatically:
+.PRECIOUS: .deps/.d
 
 ###############################################################################
-## Kazakh transducer
+## Kazakh→Kyrgyz monolingual transducers
 ###############################################################################
 
 .deps/$(PREFIX1).autobil.prefixes: $(PREFIX1).autobil.bin
@@ -29,17 +36,20 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 	echo " ?* " | hfst-regexp2fst > .deps/any-symbol.hfst
 	hfst-concatenate -1 .deps/$(PREFIX1).autobil.upper -2 .deps/any-symbol.hfst -o .deps/$(PREFIX1).autobil.prefixes
 
-$(PREFIX1).automorf.bin: $(BASENAME).$(PREFIX1).LR.att.gz .deps/$(PREFIX1).autobil.prefixes
+$(PREFIX1).automorf.bin: $(AP_LIB1)/$(LANG1).automorf.att.gz .deps/$(PREFIX1).autobil.prefixes .deps/.d
 	$(ZCAT) $< | hfst-txt2fst > .deps/$(LANG1).automorf.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).automorf.hfst -2 .deps/$(PREFIX1).autobil.prefixes -o .deps/$(PREFIX1).automorf.trimmed
 	hfst-fst2txt -i .deps/$(PREFIX1).automorf.trimmed -o .deps/$(PREFIX1).automorf.trimmed.att
 	lt-comp lr .deps/$(PREFIX1).automorf.trimmed.att $@
 
-$(PREFIX1).autogen.hfst: $(BASENAME).$(PREFIX1).RL.att.gz
-	$(ZCAT) $< | hfst-txt2fst | hfst-fst2fst -O -o $@
+$(PREFIX1).autogen.hfst: $(AP_LIB2)/$(LANG2).autogen.hfst
+	cp $< $@
+
+$(PREFIX1).autogen.bin: $(AP_LIB2)/$(LANG2).autogen.bin
+	cp $< $@
 
 ###############################################################################
-## Kyrgyz transducer
+## Kyrgyz→Kazakh monolingual transducers
 ###############################################################################
 
 .deps/$(PREFIX2).autobil.prefixes: $(PREFIX2).autobil.bin
@@ -50,15 +60,17 @@ $(PREFIX1).autogen.hfst: $(BASENAME).$(PREFIX1).RL.att.gz
 	echo " ?* " | hfst-regexp2fst > .deps/any-symbol.hfst
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.upper -2 .deps/any-symbol.hfst -o .deps/$(PREFIX2).autobil.prefixes
 
-$(PREFIX2).automorf.hfst: $(BASENAME).$(PREFIX2).LR.att.gz .deps/$(PREFIX2).autobil.prefixes
-	$(ZCAT) $< | hfst-txt2fst > .deps/$(LANG1).automorf.hfst
-	hfst-compose-intersect -1 .deps/$(LANG1).automorf.hfst -2 .deps/$(PREFIX2).autobil.prefixes -o .deps/$(PREFIX2).automorf.trimmed
+$(PREFIX2).automorf.bin: $(AP_LIB2)/$(LANG2).automorf.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/.d
+	$(ZCAT) $< | hfst-txt2fst > .deps/$(LANG2).automorf.hfst
+	hfst-compose-intersect -1 .deps/$(LANG2).automorf.hfst -2 .deps/$(PREFIX2).autobil.prefixes -o .deps/$(PREFIX2).automorf.trimmed
 	hfst-fst2txt -i .deps/$(PREFIX2).automorf.trimmed -o .deps/$(PREFIX2).automorf.trimmed.att
-	hfst-txt2fst -i .deps/$(PREFIX2).automorf.trimmed.att | hfst-fst2fst -O -o $@
-#	lt-comp lr .deps/$(PREFIX2).automorf.trimmed.att $@
+	lt-comp lr .deps/$(PREFIX2).automorf.trimmed.att $@
 
-$(PREFIX2).autogen.hfst: $(BASENAME).$(PREFIX2).RL.att.gz
-	$(ZCAT) $< | hfst-txt2fst | hfst-fst2fst -O -o $@
+$(PREFIX2).autogen.hfst: $(AP_LIB1)/$(LANG1).autogen.hfst
+	cp $< $@
+
+$(PREFIX2).autogen.bin: $(AP_LIB1)/$(LANG1).autogen.bin
+	cp $< $@
 
 ###############################################################################
 ## Bilingual dictionaries
@@ -76,10 +88,10 @@ $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 ## Disambiguation rules 
 ###############################################################################
 
-$(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
+$(PREFIX1).rlx.bin: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).rlx
 	cg-comp $< $@
 
-$(PREFIX2).rlx.bin: $(BASENAME).$(PREFIX2).rlx
+$(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 	cg-comp $< $@
 
 
@@ -129,26 +141,16 @@ $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 ## Translation modes
 ###############################################################################
 
+# All modes are created by this one goal
 modes/$(PREFIX1).mode: modes.xml
-	apertium-validate-modes modes.xml
-	apertium-gen-modes modes.xml
-	cp *.mode modes/
-
-modes/$(PREFIX2).mode: modes.xml
 	apertium-validate-modes modes.xml
 	apertium-gen-modes modes.xml
 	cp *.mode modes/
 
 EXTRA_DIST=$(PREFIX1).prob $(PREFIX2).prob \
            $(BASENAME).$(PREFIX1).rlx \
-           $(BASENAME).$(PREFIX1).lrx \
-           $(BASENAME).$(PREFIX1).LR.att.gz \
-           $(BASENAME).$(PREFIX1).RL.att.gz \
-           $(BASENAME).$(PREFIX2).LR.att.gz \
-           $(BASENAME).$(PREFIX2).RL.att.gz \
            $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix \
-           $(BASENAME).$(PREFIX2).rlx \
            $(BASENAME).$(PREFIX2).lrx \
            $(BASENAME).post-$(LANG2).dix \
            $(BASENAME).$(PREFIX1).t1x \
@@ -157,37 +159,31 @@ EXTRA_DIST=$(PREFIX1).prob $(PREFIX2).prob \
            $(BASENAME).$(PREFIX2).t2x \
            modes.xml
 
-apertium_kaz_kirmodesdir=$(prefix)/share/apertium/modes/
+apertium_modesdir=$(prefix)/share/apertium/modes/
 apertium_kaz_kirdir=$(prefix)/share/apertium/$(BASENAME)/
 
-apertium_kaz_kir_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
+apertium_kaz_kir_DATA=$(TARGETS_COMMON) \
                     $(PREFIX1).prob $(PREFIX2).prob \
-		    $(PREFIX1).autogen.hfst $(PREFIX2).autogen.hfst \
-		    $(PREFIX1).automorf.bin $(PREFIX2).automorf.hfst \
-		    $(PREFIX1).autopgen.bin $(PREFIX2).autopgen.bin \
-		    $(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
-		    $(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
-		    $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
-		    $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
-		    $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX2).t1x \
-		    $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX2).t2x \
 		    modes.xml
 
-noinst_DATA=modes/$(PREFIX1).mode modes/$(PREFIX2).mode
+# All modes are created by the same goal, listing several will just give problems with make -j2
+noinst_DATA=modes/$(PREFIX1).mode
 
 
 install-data-local:
-	mv modes modes~
+	mv modes modes.bak
 	$(prefix)/bin/apertium-gen-modes modes.xml $(BASENAME)
 	rm -rf modes
-	mv modes~ modes
-	test -d $(DESTDIR)$(apertium_kaz_kirmodesdir) || mkdir $(DESTDIR)$(apertium_kaz_kirmodesdir)
-	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_kaz_kirmodesdir)
-	rm $(PREFIX1).mode
-	rm $(PREFIX2).mode
+	mv modes.bak modes
+	test -d $(DESTDIR)$(apertium_modesdir) || mkdir $(DESTDIR)$(apertium_modesdir)
+	modes=`xmllint --xpath '//mode[@install="yes"]/@name' modes.xml | sed 's/ *name="\([^"]*\)"/\1.mode /g'`; \
+		$(INSTALL_DATA) $$modes $(DESTDIR)$(apertium_modesdir); \
+		rm $$modes
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(DESTDIR)$(apertium_kaz_kirdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_kaz_kirdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_kaz_kirdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(DESTDIR)$(apertium_kaz_kirdir)
 
-CLEANFILES = -r $(TARGETS_COMMON) .deps/
+CLEANFILES = $(TARGETS_COMMON)
+clean-local: 
+	-rm -rf .deps modes
