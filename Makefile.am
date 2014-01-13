@@ -28,8 +28,7 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 ## Kazakh→Kyrgyz monolingual transducers
 ###############################################################################
 
-.deps/$(PREFIX1).autobil.prefixes: $(PREFIX1).autobil.bin
-	if [ ! -d .deps ]; then mkdir .deps; fi
+.deps/$(PREFIX1).autobil.prefixes: $(PREFIX1).autobil.bin .deps/.d
 	lt-print $(PREFIX1).autobil.bin | sed 's/ /@_SPACE_@/g' > .deps/$(PREFIX1).autobil.att
 	hfst-txt2fst -e ε <  .deps/$(PREFIX1).autobil.att > .deps/$(PREFIX1).autobil.hfst
 	hfst-project -p upper .deps/$(PREFIX1).autobil.hfst > .deps/$(PREFIX1).autobil.upper
@@ -52,8 +51,7 @@ $(PREFIX1).autogen.bin: $(AP_LIB2)/$(LANG2).autogen.bin
 ## Kyrgyz→Kazakh monolingual transducers
 ###############################################################################
 
-.deps/$(PREFIX2).autobil.prefixes: $(PREFIX2).autobil.bin
-	if [ ! -d .deps ]; then mkdir .deps; fi
+.deps/$(PREFIX2).autobil.prefixes: $(PREFIX2).autobil.bin .deps/.d
 	lt-print $(PREFIX2).autobil.bin | sed 's/ /@_SPACE_@/g' > .deps/$(PREFIX2).autobil.att
 	hfst-txt2fst -e ε <  .deps/$(PREFIX2).autobil.att > .deps/$(PREFIX2).autobil.hfst
 	hfst-project -p upper .deps/$(PREFIX2).autobil.hfst > .deps/$(PREFIX2).autobil.upper
