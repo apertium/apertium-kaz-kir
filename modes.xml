@@ -201,8 +201,8 @@
         <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
       </program>
-      <program name="hfst-proc $1">
-        <file name="kir-kaz.autogen.hfst"/>
+      <program name="lt-proc $1">
+        <file name="kir-kaz.autogen.bin"/>
       </program>
       <program name="lt-proc -p">
         <file name="kir-kaz.autopgen.bin"/>
@@ -230,8 +230,8 @@
         <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
       </program>
-      <program name="hfst-proc -d">
-        <file name="kir-kaz.autogen.hfst"/>
+      <program name="lt-proc -d">
+        <file name="kir-kaz.autogen.bin"/>
       </program>
     </pipeline>
   </mode>
