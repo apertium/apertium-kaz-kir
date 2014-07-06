@@ -33,7 +33,6 @@ dev/testvoc/testvoc.sh -text
 /modes.xml -text
 /pending-tests.sh -text
 /regression-tests.sh -text
-/test.txt -text
 /testcorpus_kaz-kir.sh -text
 texts/MANIFEST -text
 texts/azattyq_24455849.kaz-kir-postedited.txt -text svneol=unset#application/octet-stream
