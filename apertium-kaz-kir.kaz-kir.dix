@@ -168,6 +168,9 @@
 
 <!-- SECTION: Postpositions -->
 
+    <e><p><l>сыз<s n="post"/></l><r>сыз<s n="post"/></r></p></e>
+    <e><p><l>лы<s n="post"/></l><r>лы<s n="post"/></r></p></e>
+
 <e>       <p><l>арқылы<s n="post"/></l>           <r>аркылуу<s n="post"/></r></p></e> <!-- "through" -->
 <e>       <p><l>арналған<s n="post"/></l>         <r>арналган<s n="adj"/></r></p></e>
 <e>       <p><l>әрі<s n="post"/></l>              <r>ары<s n="post"/></r></p></e>
@@ -7657,7 +7660,7 @@
 
     <!--Other adverbs-->
 
-<e>       <p><l>жақсы<s n="adv"/></l>              <r>жакшы<s n="adv"/></r></p></e> <!--"well"-->
+<!--<e>       <p><l>жақсы<s n="adv"/></l>              <r>жакшы<s n="adv"/></r></p></e>--> <!--"well"-->
 <e>       <p><l>неге<s n="adv"/></l>               <r>эмнеге<s n="adv"/></r></p></e> <!--"why"-->
 <e>       <p><l>солай<s n="adv"/></l>              <r>ошондой<s n="adv"/></r></p></e> <!--"in such a way"-->
 
@@ -8105,7 +8108,6 @@
 <section id="unchecked" type="standard">
 
     <e i="yes"><p><l>я<s n="cnjcoo"/></l><r>я<s n="cnjcoo"/></r></p></e>
-    <e i="yes"><p><l>сыз<s n="post"/></l><r>сыз<s n="post"/></r></p></e>
 
 </section>
 </dictionary>
