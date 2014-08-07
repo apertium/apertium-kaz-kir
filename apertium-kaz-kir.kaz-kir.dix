@@ -944,6 +944,8 @@
 <e>       <p><l>дұға<s n="n"/></l>                <r>дуба<s n="n"/></r></p></e> <!--"prayer"-->
 <e>       <p><l>дұшпан<s n="n"/></l>              <r>душман<s n="n"/></r></p></e> <!--"enemy"-->
 <e>       <p><l>дыбыс<s n="n"/></l>               <r>тыбыш<s n="n"/></r></p></e> <!--"sound, noice"-->
+<e c="  0"><p><l>дым<s n="n"/></l>                 <r>ным<s n="n"/></r></p></e> <!--"moisture"-->
+<e slr="1"><p><l>дым<s n="n"/></l>                 <r>дем<s n="n"/></r></p></e> <!--"strength"-->
 
 <e>       <p><l>егін<s n="n"/></l>                <r>эгин<s n="n"/></r></p></e> <!--"harvest"-->
 <e>       <p><l>егінші<s n="n"/></l>              <r>эгинчи<s n="n"/></r></p></e> <!--""-->
@@ -7776,6 +7778,7 @@
 <e>       <p><l>айт<s n="v"/><s n="tv"/></l>      <r>айт<s n="v"/><s n="tv"/></r></p></e> <!-- "say, tell" -->
 <e>       <p><l>ойла<s n="v"/><s n="tv"/></l>     <r>ойло<s n="v"/><s n="tv"/></r></p></e> <!-- "think (about)" -->
 <e>       <p><l>жыми<s n="v"/><s n="iv"/></l>     <r>жылмай<s n="v"/><s n="iv"/></r></p></e> <!-- "smile" -->
+<e>       <p><l>жылжы<s n="v"/><s n="iv"/></l>    <r>жыл<s n="v"/><s n="iv"/></r></p></e> <!-- "smile" -->
 <e>       <p><l>бер<s n="v"/><s n="tv"/></l>      <r>бер<s n="v"/><s n="tv"/></r></p></e> <!-- "give" -->
 <e>       <p><l>есті<s n="v"/><s n="tv"/></l>     <r>ук<s n="v"/><s n="tv"/></r></p></e> <!-- "hear" -->
 <e>       <p><l>тыңда<s n="v"/><s n="tv"/></l>    <r>ук<s n="v"/><s n="tv"/></r></p></e> <!-- "listen" -->
@@ -7908,6 +7911,7 @@
 <e>       <p><l>адас<s n="v"/><s n="iv"/></l>     <r>адаш<s n="v"/><s n="iv"/></r></p></e> <!-- "lose one's way" -->
 <e>       <p><l>өртен<s n="v"/><s n="iv"/></l>    <r>өрттөн<s n="v"/><s n="iv"/></r></p></e> <!-- "burn up / burn down" -->
 <e>       <p><l>қорық<s n="v"/><s n="iv"/></l>    <r>корк<s n="v"/><s n="iv"/></r></p></e> <!-- "be scared (of)" -->
+<e>       <p><l>құры<s n="v"/><s n="iv"/></l>     <r>куру<s n="v"/><s n="iv"/></r></p></e> <!-- "disappear" -->
 
 
 <!-- SECTION: Auxiliaries -->
