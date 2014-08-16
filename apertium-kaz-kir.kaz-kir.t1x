@@ -880,10 +880,22 @@
         <call-macro n="nonfin1">
           <with-param pos="1"/>
         </call-macro>
-        <let>
-          <clip pos="1" side="tl" part="a_fut"/>
-          <concat><lit-tag v="prc_plan"/><lit v="$ ^жат"/><lit-tag v="vaux.aor"/></concat>
-        </let> 
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_neg"/><lit-tag v="neg"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_neg"/><lit v=""/></let>
+            <let>
+              <clip pos="1" side="tl" part="a_fut"/>
+              <concat><lit-tag v="prc_plan"/><lit v="$ ^жат"/><lit-tag v="vaux.neg.aor"/></concat>
+            </let> 
+          </when>
+          <otherwise>
+            <let>
+              <clip pos="1" side="tl" part="a_fut"/>
+              <concat><lit-tag v="prc_plan"/><lit v="$ ^жат"/><lit-tag v="vaux.aor"/></concat>
+            </let> 
+          </otherwise>
+        </choose>
         <out>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
