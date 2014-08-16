@@ -4,7 +4,7 @@
 #
 # Assumes the pair is compiled.
 # Extracts lexical units from compressed text files in languages/apertium-kaz/
-# tests/morphotactics/ and languages/apertium-kaa/tests/morphotactics
+# tests/morphotactics/ and languages/apertium-kir/tests/morphotactics
 # and passes them through the translator (=INCONSISTENCY script).
 # Produces 'testvoc-summary' files using the INCONSISTENCY_SUMMARY script.
 #
@@ -27,24 +27,24 @@ function extract_lexical_units {
 }
 
 #-------------------------------------------------------------------------------
-# Kazakh->Karakalpak testvoc
+# Kazakh->Kyrgyz testvoc
 #-------------------------------------------------------------------------------
 
 PARDEF_FILES=../../../../languages/apertium-kaz/tests/morphotactics/*.txt.gz
 
-echo "==Kazakh->Karakalpak==========================="
+echo "==Kazakh->Kyrgyz==========================="
 
-echo "" > $TMPDIR/kaz-kaa.testvoc
+echo "" > $TMPDIR/kaz-kir.testvoc
 
 for file in $PARDEF_FILES; do
     zcat $file | extract_lexical_units |
-    $INCONSISTENCY kaz-kaa >> $TMPDIR/kaz-kaa.testvoc
+    $INCONSISTENCY kaz-kir >> $TMPDIR/kaz-kir.testvoc
 done
 
-$INCONSISTENCY_SUMMARY $TMPDIR/kaz-kaa.testvoc kaz-kaa
+$INCONSISTENCY_SUMMARY $TMPDIR/kaz-kir.testvoc kaz-kir
 
 #-------------------------------------------------------------------------------
-# Karakalpak->Kazakh testvoc
+# Kyrgyz->Kazakh testvoc
 #-------------------------------------------------------------------------------
 
 # TODO
