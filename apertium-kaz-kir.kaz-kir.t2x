@@ -46,7 +46,7 @@
   </section-def-vars>  
 
   <section-def-lists>
-    <def-list n="tat_clitics"> <!-- Tatar clitics -->
+    <def-list n="kir_clitics"> <!-- Kyrgyz clitics -->
       <list-item v="чы"/>
       <list-item v="сана"/>
       <list-item v="бы"/>
@@ -89,7 +89,7 @@
 	    <test>
 	      <in caseless="yes">
 		<clip pos="3" side="tl" part="lem"/>
-		<list n="tat_clitics"/>
+		<list n="kir_clitics"/>
 	      </in>
 	    </test>
 	    <out>
@@ -146,7 +146,7 @@
     </rule>
 
     <rule comment="REGLA:3;
-      makes stuff contained in list=tat_clitics to clitics">
+      makes stuff contained in list=kir_clitics to clitics">
       <pattern>
 	<pattern-item n="vse"/>
 	<pattern-item n="čast2"/>
@@ -157,7 +157,7 @@
 	    <test>
 	      <in caseless="yes">
 		<clip pos="2" side="tl" part="lem"/>
-		<list n="tat_clitics"/>
+		<list n="kir_clitics"/>
 	      </in>
 	    </test>
 	    <out>
