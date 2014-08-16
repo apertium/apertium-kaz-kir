@@ -34,6 +34,9 @@ dev/testvoc/testvoc.sh -text
 /pending-tests.sh -text
 /regression-tests.sh -text
 /testcorpus_kaz-kir.sh -text
+testvoc/lite/README -text
+testvoc/lite/testvoc-summary.kaz-kaa.txt -text
+testvoc/lite/testvoc.sh -text
 texts/MANIFEST -text
 texts/azattyq_24455849.kaz-kir-postedited.txt -text svneol=unset#application/octet-stream
 texts/azattyq_24455849.kaz-kir.txt -text svneol=unset#application/octet-stream
