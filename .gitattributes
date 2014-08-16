@@ -24,10 +24,6 @@ dev/kaz-countstems.sh -text
 dev/kir-countstems.sh -text
 dev/lexical_selection_rules_needed.txt -text
 dev/test-prefix.sh -text
-dev/testvoc/inconsistency-summary.sh -text
-dev/testvoc/inconsistency.sh -text
-dev/testvoc/testvoc-summary.kaz-kir.txt -text
-dev/testvoc/testvoc.sh -text
 /kaz-kir.prob -text svneol=unset#unset
 /kir-kaz.prob -text svneol=unset#unset
 /modes.xml -text
