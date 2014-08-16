@@ -881,7 +881,7 @@
               <clip pos="1" side="tl" part="a_verb"/>
               <clip pos="1" side="tl" part="a_trans"/>
               <clip pos="1" side="tl" part="a_deriv"/>
-              <lit-tag v="prc_perf"/>
+              <lit-tag v="prc_impf"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b/>
