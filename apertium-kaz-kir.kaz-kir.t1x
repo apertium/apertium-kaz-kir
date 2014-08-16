@@ -134,7 +134,7 @@
 
     <def-cat n="gpr-subst">
       <cat-item tags="v.*.*.gpr_past.subst.*"/>
-      <cat-item tags="v.*.*.gpr_impf.subst.*"/>
+<!--      <cat-item tags="v.*.*.gpr_impf.subst.*"/>-->
       <cat-item tags="v.*.*.gpr_pot.subst.*"/>
       <cat-item tags="v.*.*.gpr_ppot.subst.*"/>
       <cat-item tags="v.*.*.gpr_fut.subst.*"/>
