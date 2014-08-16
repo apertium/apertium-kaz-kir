@@ -12,8 +12,8 @@
       <program name="lt-proc -b">
         <file name="kaz-kir.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
-        <file name="kaz-kir.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="kaz-kir.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-kir.kaz-kir.t1x"/>
@@ -122,8 +122,8 @@
       <program name="lt-proc -b">
         <file name="kaz-kir.autobil.bin"/>
       </program>
-      <program name="lrx-proc -t">
-        <file name="kaz-kir.lrx.bin"/>
+      <program name="lrx-proc -m -t">
+        <file name="kaz-kir.autolex.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -141,8 +141,8 @@
       <program name="lt-proc -b">
         <file name="kaz-kir.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
-        <file name="kaz-kir.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="kaz-kir.autolex.bin"/>
       </program>
       <program name="apertium-transfer -t -b">
         <file name="apertium-kaz-kir.kaz-kir.t1x"/>
@@ -163,8 +163,8 @@
       <program name="lt-proc -b">
         <file name="kaz-kir.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
-        <file name="kaz-kir.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="kaz-kir.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-kir.kaz-kir.t1x"/>
@@ -190,8 +190,8 @@
       <program name="lt-proc -b">
         <file name="kir-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
-        <file name="kir-kaz.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="kir-kaz.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-kir.kir-kaz.t1x"/>
@@ -297,8 +297,8 @@
       <program name="lt-proc -b">
         <file name="kir-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc -t">
-        <file name="kir-kaz.lrx.bin"/>
+      <program name="lrx-proc -m -t">
+        <file name="kir-kaz.autolex.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -316,8 +316,8 @@
       <program name="lt-proc -b">
         <file name="kir-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
-        <file name="kir-kaz.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="kir-kaz.autolex.bin"/>
       </program>
       <program name="apertium-transfer -t -b">
         <file name="apertium-kaz-kir.kir-kaz.t1x"/>
@@ -338,8 +338,8 @@
       <program name="lt-proc -b">
         <file name="kir-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
-        <file name="kir-kaz.lrx.bin"/>
+      <program name="lrx-proc -m">
+        <file name="kir-kaz.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-kir.kir-kaz.t1x"/>
