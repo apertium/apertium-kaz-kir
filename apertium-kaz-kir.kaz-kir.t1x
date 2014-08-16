@@ -64,6 +64,10 @@
       <cat-item tags="v.*.ger.dat"/>
     </def-cat>
 
+    <def-cat n="fut-plan">
+      <cat-item tags="v.*.fut_plan.*"/>
+    </def-cat>
+
     <def-cat n="v-gpr-impf">
       <cat-item tags="v.*.gpr_impf"/>
       <cat-item tags="v.*.gpr_impf.*"/>
@@ -246,6 +250,10 @@
       <attr-item tags="v"/>
       <attr-item tags="vaux"/>
       <attr-item tags="cop"/>
+    </def-attr>
+
+    <def-attr n="a_fut">
+      <attr-item tags="fut_plan"/>
     </def-attr>
 
     <def-attr n="a_gpr">
@@ -860,6 +868,30 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: fut-plan">
+      <pattern>
+        <pattern-item n="fut-plan"/>
+      </pattern>
+      <action>
+        <call-macro n="tense1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="nonfin1">
+          <with-param pos="1"/>
+        </call-macro>
+        <let>
+          <clip pos="1" side="tl" part="a_fut"/>
+          <concat><lit-tag v="prc_plan"/><lit v="$ ^жат"/><lit-tag v="vaux.aor"/></concat>
+        </let> 
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: v-gpr-impf">
       <pattern>
