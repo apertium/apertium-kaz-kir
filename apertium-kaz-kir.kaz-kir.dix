@@ -288,8 +288,8 @@
 <e>       <p><l>XX<s n="num"/></l>                <r>XX<s n="num"/></r></p></e> <!-- "" -->
 <e>       <p><l>XXI<s n="num"/></l>               <r>XXI<s n="num"/></r></p></e> <!-- "" -->
 
-<e>       <p><l>неше<s n="num"/></l>              <r>нече<s n="num"/></r></p></e> <!-- "" -->
-<!-- e>       <p><l>қанша<s n="num"/></l>             <r>канча<s n="num"/></r></p></e> -->
+<e>       <p><l>неше<s n="num"/><s n="itg"/></l>              <r>нече<s n="num"/><s n="itg"/></r></p></e> <!-- "" -->
+<e>       <p><l>қанша<s n="num"/><s n="itg"/></l>             <r>канча<s n="num"/><s n="itg"/></r></p></e>
 <!-- e>       <p><l>біреу<s n="num"/><s n="coll"/></l>     <r>бирөө<s n="num"/><s n="coll"/></r></p></e -->
 <!-- e>       <p><l>екеу<s n="num"/><s n="coll"/></l>      <r>экөө<s n="num"/><s n="coll"/></r></p></e -->
 
