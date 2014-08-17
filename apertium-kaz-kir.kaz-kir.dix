@@ -316,7 +316,7 @@
 <e>       <p><l>осы<s n="prn"/><s n="dem"/></l>   <r>ушул<s n="prn"/><s n="dem"/></r></p></e>
 <e>       <p><l>сол<s n="prn"/><s n="dem"/></l>   <r>ошол<s n="prn"/><s n="dem"/></r></p></e>
 <e>       <p><l>сол<s n="prn"/><s n="dem"/></l>   <r>тиги<s n="prn"/><s n="dem"/></r></p></e>
-<e>       <p><l>мына<s n="prn"/><s n="dem"/></l>  <r>мына<s n="prn"/><s n="dem"/></r></p></e> <!--FIXME--> <!--Check the version in Kyrgyz transducer-->
+<e>       <p><l>мына<s n="prn"/><s n="dem"/></l>  <r>ушул<s n="prn"/><s n="dem"/></r></p></e>
 <e>       <p><l>ана<s n="prn"/><s n="dem"/></l>   <r>тиги<s n="prn"/><s n="dem"/></r></p></e>
 
     <!-- Interrogative pronouns -->
