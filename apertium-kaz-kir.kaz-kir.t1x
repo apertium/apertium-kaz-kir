@@ -480,7 +480,7 @@
               <equal><clip pos="1" side="tl" part="a_case_noloc"/><lit-tag v="ins"/></equal>
             </and>
           </test>
-          <let><var n="postposition"/><concat><lit v=" ^белән"/><lit-tag v="post"/><lit v="$"/></concat></let>
+          <let><var n="postposition"/><concat><lit v=" ^менен"/><lit-tag v="post"/><lit v="$"/></concat></let>
           <let><var n="case"/><lit-tag v="nom"/></let>
         </when>
       </choose>
