@@ -6518,6 +6518,7 @@
 <e>       <p><l>Google<s n="np"/><s n="org"/></l> <r>Google<s n="np"/><s n="org"/></r></p></e> <!--""-->
 <e>       <p><l>Twitter<s n="np"/><s n="org"/></l><r>Twitter<s n="np"/><s n="org"/></r></p></e> <!--""-->
 <e>       <p><l>YouTube<s n="np"/><s n="org"/></l><r>YouTube<s n="np"/><s n="org"/></r></p></e> <!--""-->
+<e>       <p><l>ӨИҚ<s n="np"/><s n="org"/></l>     <r>ӨИК<s n="np"/><s n="org"/></r></p></e> <!-- "IMU - Islamic Movement of Uzbekistan" -->
 
     <!-- Other proper names -->
 
@@ -8066,7 +8067,6 @@
 <e>       <p><l>ОГПУ<s n="abbr"/></l>             <r>ОГПУ<s n="abbr"/></r></p></e>
 <e>       <p><l>оңт.<s n="abbr"/></l>             <r>түш.<s n="abbr"/></r></p></e> <!-- "" -->
 <e>       <p><l>Өзенмұнайгаз<s n="abbr"/></l>     <r>Өзенмунайгаз<s n="abbr"/></r></p></e> <!-- "" -->
-<e>       <p><l>ӨИҚ<s n="abbr"/></l>              <r>ӨИК<s n="abbr"/></r></p></e> <!-- "Өзбекстан Ислам Кыймылы" -->
 <!--e>       <p><l>ӨФ<s n="abbr"/></l>               <r> <s n="abbr"/></r></p></e--> <!-- "" --> <!--FIXME-->
 <!--e>       <p><l>ПӘК<s n="abbr"/></l>              <r> <s n="abbr"/></r></p></e--> <!--FIXME-->
 <e>       <p><l>пед.<s n="abbr"/></l>             <r>пед.<s n="abbr"/></r></p></e> <!-- "" -->
