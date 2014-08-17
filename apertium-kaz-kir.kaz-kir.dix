@@ -394,8 +394,8 @@
 <e>       <p><l>миллиондаған<s n="det"/><s n="qnt"/></l>  <r>миллиондогон<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>миллиардтаған<s n="det"/><s n="qnt"/></l> <r>миллиарддаган<s n="det"/><s n="qnt"/></r></p></e>
 
-<e>       <p><l>күллі<s n="det"/><s n="qnt"/></l>         <r><s n="det"/><s n="qnt"/></r></p></e> <!--FIXME-->
-<e>       <p><l>исі<s n="det"/><s n="qnt"/></l>           <r><s n="det"/><s n="qnt"/></r></p></e> <!--FIXME-->
+<e>       <p><l>күллі<s n="det"/><s n="qnt"/></l>         <r>бүткүл<s n="det"/><s n="qnt"/></r></p></e> <!--FIXME:CHECK-->
+<e>       <p><l>исі<s n="det"/><s n="qnt"/></l>           <r>бүт<s n="det"/><s n="qnt"/></r></p></e> <!--FIXME:CHECK-->
 
     <!-- Indefinite determiners -->
 
