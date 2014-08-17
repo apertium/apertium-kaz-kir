@@ -289,7 +289,7 @@
 <e>       <p><l>XXI<s n="num"/></l>               <r>XXI<s n="num"/></r></p></e> <!-- "" -->
 
 <e>       <p><l>неше<s n="num"/></l>              <r>нече<s n="num"/></r></p></e> <!-- "" -->
-<e>       <p><l>қанша<s n="num"/></l>             <r>канча<s n="num"/></r></p></e> <!-- "" -->
+<!-- e>       <p><l>қанша<s n="num"/></l>             <r>канча<s n="num"/></r></p></e> -->
 <!-- e>       <p><l>біреу<s n="num"/><s n="coll"/></l>     <r>бирөө<s n="num"/><s n="coll"/></r></p></e -->
 <!-- e>       <p><l>екеу<s n="num"/><s n="coll"/></l>      <r>экөө<s n="num"/><s n="coll"/></r></p></e -->
 
@@ -326,7 +326,7 @@
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>           <r>ким<s n="prn"/><s n="itg"/></r></p></e> <!-- who -->
 <e>       <p><l>қайсы<s n="prn"/><s n="itg"/></l>         <r>кайсы<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>қандай<s n="prn"/><s n="itg"/></l>        <r>кандай<s n="adv"/><s n="itg"/></r></p></e>
-<e>       <p><l>қанша<s n="prn"/><s n="itg"/></l>         <r>канча<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>қанша<s n="prn"/><s n="itg"/></l>         <r>канча<s n="prn"/><s n="itg"/></r></p></e>
 
     <!-- Indefinite pronouns -->
 
