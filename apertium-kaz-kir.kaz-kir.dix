@@ -5946,7 +5946,7 @@
 
 <e>       <p><l>Ақеспе<s n="np"/><s n="top"/></l> <r>Акеспе<s n="np"/><s n="top"/></r></p></e> <!-- "" FIXME:CHECK  -->
 <e>       <p><l>Ақмола<s n="np"/><s n="top"/></l> <r>Акмола<s n="np"/><s n="top"/></r></p></e> <!-- "FIXME:CHECK" -->
-<e>       <p><l>Ақорда<s n="np"/><s n="top"/></l> <r>Акурда<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
+<e>       <p><l>Ақорда<s n="np"/><s n="top"/></l> <r>Акорда<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Ақтау<s n="np"/><s n="top"/></l>  <r>Актау<s n="np"/><s n="top"/></r></p></e> <!-- "Aqtaw"  -->
 <e>       <p><l>Ақтөбе<s n="np"/><s n="top"/></l> <r>Актөбө<s n="np"/><s n="top"/></r></p></e> <!-- "Aqtöbe" -->
 <e>       <p><l>Алатау<s n="np"/><s n="top"/></l> <r>Алатау<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
@@ -5963,15 +5963,14 @@
 <e>       <p><l>Жезқазған<s n="np"/><s n="top"/></l><r>Жезказган<s n="np"/><s n="top"/></r></p></e> <!-- "" FIXME CHECK  -->
 <e>       <p><l>Жылыой<s n="np"/><s n="top"/></l> <r>Жылыой<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Зайсан<s n="np"/><s n="top"/></l> <r>Зайсан<s n="np"/><s n="top"/></r></p></e> <!-- ""  -->
-<e>       <p><l>Карағанды<s n="np"/><s n="top"/></l><r>Караганды<s n="np"/><s n="top"/></r></p></e> <!-- "Qarağanda"  -->
+<e>       <p><l>Қарағанды<s n="np"/><s n="top"/></l><r>Караганда<s n="np"/><s n="top"/></r></p></e> <!-- "Qarağanda"  -->
 <e>       <p><l>Көкшетау<s n="np"/><s n="top"/></l><r>Көкшетау<s n="np"/><s n="top"/></r></p></e> <!-- ""  -->
 <e>       <p><l>Қазығұрт<s n="np"/><s n="top"/></l><r>Казыгүрт<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
-<e>       <p><l>Қарағанды<s n="np"/><s n="top"/></l><r>Караганды<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Қаратау<s n="np"/><s n="top"/></l><r>Каратау<s n="np"/><s n="top"/></r></p></e> <!-- ""  -->
 <e>       <p><l>Қарқаралы<s n="np"/><s n="top"/></l><r>Каркаралы<s n="np"/><s n="top"/></r></p></e> <!-- ""  -->
 <e>       <p><l>Қостанай<s n="np"/><s n="top"/></l><r>Костанай<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Қызылорда<s n="np"/><s n="top"/></l><r>Кызылорда<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
-<e>       <p><l>Мақат<s n="np"/><s n="top"/></l>  <r>Мақат<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
+<e>       <p><l>Мақат<s n="np"/><s n="top"/></l>  <r>Макат<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Маңғыстау<s n="np"/><s n="top"/></l><r>Маңгыстау<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Медеу<s n="np"/><s n="top"/></l>  <r>Медеу<s n="np"/><s n="top"/></r></p></e> <!-- "Medew" FIXME CHECK -->
 <e>       <p><l>Орал<s n="np"/><s n="top"/></l>   <r>Уральск<s n="np"/><s n="top"/></r></p></e> <!-- "city" FIXME:NOTE: lrx rule needed -->
@@ -6263,7 +6262,7 @@
 <e>       <p><l>Исландия<s n="np"/><s n="top"/></l><r>Исландия<s n="np"/><s n="top"/></r></p></e> <!-- "Iceland" -->
 <e>       <p><l>Испания<s n="np"/><s n="top"/></l><r>Испания<s n="np"/><s n="top"/></r></p></e> <!-- "Spain" -->
 <e>       <p><l>Италия<s n="np"/><s n="top"/></l> <r>Италия<s n="np"/><s n="top"/></r></p></e> <!-- "Italy" -->
-<e>       <p><l>Йемен<s n="np"/><s n="top"/></l>  <r>Йәмән<s n="np"/><s n="top"/></r></p></e> <!-- "Yemen" -->
+<e>       <p><l>Йемен<s n="np"/><s n="top"/></l>  <r>Йемен<s n="np"/><s n="top"/></r></p></e> <!-- "Yemen" -->
 <e>       <p><l>Кабо-Верде<s n="np"/><s n="top"/></l><r>Кабо-Верде<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Қазақстан<s n="np"/><s n="top"/></l><r>Казакстан<s n="np"/><s n="top"/></r></p></e> <!-- "Kazakhstan"  -->
 <e>       <p><l>Камбоджа<s n="np"/><s n="top"/></l><r>Камбоджа<s n="np"/><s n="top"/></r></p></e>
