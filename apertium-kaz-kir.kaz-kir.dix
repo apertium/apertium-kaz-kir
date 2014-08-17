@@ -306,8 +306,8 @@
 <e>       <p><l>сендер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>                   <r>силер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></r></p></e>
 <e>       <p><l>олар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l>                     <r>алар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></r></p></e>
 
-<e>       <p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="frm"/></l>          <r>сиз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></r></p></e>
-<e>       <p><l>сіздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="frm"/></l>       <r>сиздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="frm"/></r></p></e>
+<e>       <p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="sg"/></l>          <r>сиз<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="sg"/></r></p></e>
+<e>       <p><l>сіздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="pl"/></l>       <r>сиздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="pl"/></r></p></e>
 
     <!-- Demonstrative pronouns -->
 
@@ -405,7 +405,7 @@
 <e>       <p><l>кейбір<s n="det"/><s n="ind"/></l>        <r>кээбир<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>қайсыбір<s n="det"/><s n="ind"/></l>      <r>кайсы<b/>бир<s n="det"/><s n="ind"/></r></p></e> <!-- "some" -->
 
-<e>       <p><l>әлденеше<s n="det"/><s n="ind"/></l>      <r>бир<b/>нече<s n="det"/><s n="ind"/></r></p></e> <!--"some"-->
+<e>       <p><l>әлденеше<s n="det"/><s n="ind"/></l>      <r>бир<b/>нече<s n="det"/><s n="qnt"/></r></p></e> <!--"some"-->
 <e>       <p><l>бірер<s n="det"/><s n="ind"/></l>         <r>бирер<s n="det"/><s n="ind"/></r></p></e> <!--""-->
 
     <!-- Interrogative determiners -->
@@ -6277,7 +6277,7 @@
 <e>       <p><l>Косово<s n="np"/><s n="top"/></l> <r>Косово<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Коста-Рика<s n="np"/><s n="top"/></l><r>Коста-Рика<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Кот-д-Ивуар<s n="np"/><s n="top"/></l><r>Кот-д-Ивуар<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Кот-д’Ивуар<s n="np"/><s n="top"/></l><r>Кот-д’Ивуар<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
+<e>       <p><l>Кот-д’Ивуар<s n="np"/><s n="top"/></l><r>Кот-д'Ивуар<s n="np"/><s n="top"/></r></p></e> <!-- "" -->
 <e>       <p><l>Куба<s n="np"/><s n="top"/></l>   <r>Куба<s n="np"/><s n="top"/></r></p></e> <!-- "Cuba" -->
 <e>       <p><l>Кувейт<s n="np"/><s n="top"/></l> <r>Кувейт<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Қырғызстан<s n="np"/><s n="top"/></l><r>Кыргызстан<s n="np"/><s n="top"/></r></p></e> <!-- "Kyrgyzstan"  -->
