@@ -321,7 +321,7 @@
 
     <!-- Interrogative pronouns -->
 
-<e>       <p><l>нәрсе<s n="prn"/><s n="itg"/></l>         <r>нерсе<s n="prn"/><s n="itg"/></r></p></e>
+<!-- e>       <p><l>нәрсе<s n="prn"/><s n="itg"/></l>         <r>нерсе<s n="prn"/><s n="itg"/></r></p></e -->
 <e>       <p><l>не<s n="prn"/><s n="itg"/></l>            <r>эмне<s n="prn"/><s n="itg"/></r></p></e> <!-- "thing" FIXME: noun in Kazakh?-->
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>           <r>ким<s n="prn"/><s n="itg"/></r></p></e> <!-- who -->
 <e>       <p><l>қайсы<s n="prn"/><s n="itg"/></l>         <r>кайсы<s n="prn"/><s n="itg"/></r></p></e>
