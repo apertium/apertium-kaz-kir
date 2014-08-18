@@ -397,6 +397,8 @@
 <e>       <p><l>күллі<s n="det"/><s n="qnt"/></l>         <r>бүткүл<s n="det"/><s n="qnt"/></r></p></e> <!--FIXME:CHECK-->
 <e>       <p><l>исі<s n="det"/><s n="qnt"/></l>           <r>бүт<s n="det"/><s n="qnt"/></r></p></e> <!--FIXME:CHECK-->
 
+<e>       <p><l>жетерлік<s n="det"/><s n="qnt"/></l>      <r>жетерлик<s n="det"/><s n="qnt"/></r></p></e>
+
     <!-- Indefinite determiners -->
 
 <e>       <p><l>әлдебір<s n="det"/><s n="ind"/></l>       <r>кандайдыр<b/>бир<s n="det"/><s n="ind"/></r></p></e> 
@@ -7703,6 +7705,7 @@
 <e>       <p><l>ауна<s n="v"/><s n="iv"/></l>         <r>оона<s n="v"/><s n="iv"/></r></p></e>
 <e>       <p><l>аунат<s n="v"/><s n="tv"/></l>        <r>оонат<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>ая<s n="v"/><s n="tv"/></l>           <r>ая<s n="v"/><s n="tv"/></r></p></e>
+<e>       <p><l>аяқта<s n="v"/><s n="tv"/></l>        <r>аякта<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>баррикадала<s n="v"/><s n="tv"/></l>  <r>баррикадала<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>барымтала<s n="v"/><s n="tv"/></l>    <r>барымтала<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>бат<s n="v"/><s n="iv"/></l>          <r>бат<s n="v"/><s n="iv"/></r></p></e>
