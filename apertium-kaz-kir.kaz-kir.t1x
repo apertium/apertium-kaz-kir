@@ -1029,6 +1029,12 @@
       </pattern>
       <action>
         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+        <call-macro n="case1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="case2">
+          <with-param pos="2"/>
+        </call-macro>
         <out>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -1040,6 +1046,7 @@
             <clip pos="2" side="tl" part="a_nbr"/>
             <clip pos="2" side="tl" part="a_case"/>
           </lu>
+          <var n="postposition"/>
         </out>
       </action>
     </rule>
@@ -1051,6 +1058,12 @@
         <pattern-item n="month"/>
       </pattern>
       <action>
+        <call-macro n="case1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="case2">
+          <with-param pos="2"/>
+        </call-macro>
         <out>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -1062,6 +1075,7 @@
           <lu>
             <clip pos="2" side="tl" part="whole"/>
           </lu>
+          <var n="postposition"/>
         </out>
       </action>
     </rule>
@@ -1077,6 +1091,12 @@
       </pattern>
       <action>
         <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+        <call-macro n="case1">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="case2">
+          <with-param pos="3"/>
+        </call-macro>
         <out>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -1092,6 +1112,7 @@
             <clip pos="3" side="tl" part="a_nbr"/>
             <clip pos="3" side="tl" part="a_case"/>
           </lu>
+          <var n="postposition"/>
         </out>
       </action>
     </rule>
@@ -1102,6 +1123,12 @@
         <pattern-item n="noun_nominative"/>
       </pattern>
       <action>
+        <call-macro n="case1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="case2">
+          <with-param pos="2"/>
+        </call-macro>
         <choose>
           <when>
             <test>
@@ -1119,6 +1146,7 @@
                 <lit-tag v="px3sp"/>
                 <clip pos="2" side="tl" part="a_case"/>
               </lu>
+              <var n="postposition"/>
             </out>
           </when>
           <otherwise>
@@ -1130,6 +1158,7 @@
               <lu>
                 <clip pos="2" side="tl" part="whole"/>
               </lu>
+              <var n="postposition"/>
             </out>
           </otherwise>
         </choose>
