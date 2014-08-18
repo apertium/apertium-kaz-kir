@@ -138,10 +138,12 @@
       <cat-item tags="v.*.*.ger_fut.*"/>
       <cat-item tags="v.*.*.ger_impf.*"/>
 
+      <cat-item tags="vaux.ger_pres.*"/>
       <cat-item tags="vaux.ger_past.*"/>
       <cat-item tags="vaux.ger_perf.*"/>
       <cat-item tags="vaux.ger_pot.*"/>
 
+      <cat-item tags="vaux.*.ger_pres.*"/>
       <cat-item tags="vaux.*.ger_past.*"/>
       <cat-item tags="vaux.*.ger_perf.*"/>
       <cat-item tags="vaux.*.ger_pot.*"/>
