@@ -67,13 +67,18 @@
 		<or><match lemma="команда" tags="n.*"/><match tags="np.org.*"/><match lemma="мен" tags="post"/></or>
 		<match lemma="сайыс" tags="v.iv.*"><select lemma="салгылаш" tags="v.iv.*"/></match>
 	</rule>
-	<rule>
+	<rule><!-- for people -->
 		<match lemma="үлкен" tags="adj.*"><select lemma="улуу" tags="adj.*"/></match>
 	</rule>
-	<rule>
+	<rule><!-- for things -->
 		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
 		<match lemma="қала" tags="n.*"/>
 	</rule>
+	<rule>
+		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
+		<match lemma="үй" tags="n.*"/>
+	</rule>
+
 	<rule>
 		<match lemma="қағида" tags="n.*"><select lemma="эреже" tags="n.*"/></match>
 	</rule>
@@ -90,6 +95,34 @@
 			<select lemma="туура" tags="adj.*"/>
 		</match>
 	</rule>
+	<rule>
+		<match lemma="дала" tags="n.*">
+			<select lemma="талаа" tags="n.*"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="дала" tags="n.loc">
+			<select lemma="эшик" tags="n.loc"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="дала" tags="n.abl">
+			<select lemma="эшик" tags="n.abl"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="дала" tags="n.dat">
+			<select lemma="эшик" tags="n.dat"/>
+		</match>
+	</rule>
+
+	<rule>
+		<match lemma="бірге" tags="adv">
+			<select lemma="чогуу" tags="adv"/>
+		</match>
+	</rule>
+
+
 
 
 </rules>
