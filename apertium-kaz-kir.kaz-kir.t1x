@@ -562,6 +562,20 @@
   </section-def-macros>
 
   <section-rules>
+
+    <rule comment="REGLA: adj">
+      <pattern>
+        <pattern-item n="adj"/>
+      </pattern>
+      <action>
+            <out>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: nouns and quasi-nouns">
       <pattern>
         <pattern-item n="nom"/>
