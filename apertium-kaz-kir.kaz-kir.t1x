@@ -83,6 +83,7 @@
       <cat-item tags="adv.subst.*"/>
       <cat-item tags="adj.comp.subst.*"/>
       <cat-item tags="num.ord.subst.*"/>
+      <cat-item tags="num.coll.subst.*"/>
       <cat-item tags="num.subst.*"/> <!-- CHECK THIS-->
       <cat-item tags="post.subst.*.*"/>
     </def-cat>
@@ -226,6 +227,7 @@
       <attr-item tags="adv.subst"/>
       <attr-item tags="num.subst"/>
       <attr-item tags="num.ord.subst"/>
+      <attr-item tags="num.coll.subst"/>
       <attr-item tags="adj.comp.subst"/>
       <attr-item tags="post.subst"/>
       <attr-item tags="v.iv.ger"/>
