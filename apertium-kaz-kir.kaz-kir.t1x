@@ -81,6 +81,7 @@
       <cat-item tags="np.*"/>
       <cat-item tags="adj.subst.*"/>
       <cat-item tags="adj.comp.subst.*"/>
+      <cat-item tags="num.ord.subst.*"/>
       <cat-item tags="post.subst.*.*"/>
     </def-cat>
 
@@ -209,6 +210,7 @@
       <attr-item tags="np.org"/>
       <attr-item tags="np.al"/>
       <attr-item tags="adj.subst"/>
+      <attr-item tags="num.ord.subst"/>
       <attr-item tags="adj.comp.subst"/>
       <attr-item tags="post.subst"/>
       <attr-item tags="v.iv.ger"/>
