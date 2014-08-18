@@ -7202,7 +7202,8 @@
 <e>       <p><l>демократиялық<s n="adj"/></l>     <r>демократиялык<s n="adj"/></r></p></e> <!-- "democratic" --> 
 <e>       <p><l>дәу<s n="adj"/></l>               <r>килейген<s n="adj"/></r></p></e> <!-- "giant"-->
 <e>       <p><l>діни<s n="adj"/></l>              <r>диний<s n="adj"/></r></p></e> <!-- "religious"-->
-<e>       <p><l>дұрыс<s n="adj"/></l>             <r>дурус<s n="adj"/></r></p></e> <!-- "correct;correctly"-->
+<e slr="1"><p><l>дұрыс<s n="adj"/></l>            <r>дурус<s n="adj"/></r></p></e> <!-- "correct;correctly"-->
+<e c="  0"><p><l>дұрыс<s n="adj"/></l>            <r>туура<s n="adj"/></r></p></e> <!-- "correct;correctly"-->
 <e>       <p><l>әдеби<s n="adj"/></l>             <r>адабий<s n="adj"/></r></p></e> <!-- "literary"-->
 <e>       <p><l>әдемі<s n="adj"/></l>             <r>адеми<s n="adj"/></r></p></e> <!-- "beautiful" -->
 <e>       <p><l>едәуір<s n="adj"/></l>            <r>бир<b/>кыйла<s n="adj"/></r></p></e> <!--""-->

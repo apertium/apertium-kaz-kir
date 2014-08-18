@@ -85,5 +85,11 @@
 		<match lemma="данышпандық" tags="adj.*"/>
 		<match lemma="қағида" tags="n"><select lemma="теория" tags="n"/></match>
 	</rule>
+	<rule>
+		<match lemma="дұрыс" tags="adj.*">
+			<select lemma="туура" tags="adj.*"/>
+		</match>
+	</rule>
+
 
 </rules>
