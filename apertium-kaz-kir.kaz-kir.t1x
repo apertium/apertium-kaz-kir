@@ -80,8 +80,10 @@
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
       <cat-item tags="adj.subst.*"/>
+      <cat-item tags="adv.subst.*"/>
       <cat-item tags="adj.comp.subst.*"/>
       <cat-item tags="num.ord.subst.*"/>
+      <cat-item tags="num.subst.*"/> <!-- CHECK THIS-->
       <cat-item tags="post.subst.*.*"/>
     </def-cat>
 
@@ -135,8 +137,19 @@
       <cat-item tags="v.*.*.ger_fut.*"/>
       <cat-item tags="v.*.*.ger_impf.*"/>
 
+      <cat-item tags="vaux.ger_past.*"/>
+      <cat-item tags="vaux.ger_perf.*"/>
+      <cat-item tags="vaux.ger_pot.*"/>
+
+      <cat-item tags="vaux.*.ger_past.*"/>
+      <cat-item tags="vaux.*.ger_perf.*"/>
+      <cat-item tags="vaux.*.ger_pot.*"/>
+
       <cat-item tags="cop.ger_past.*"/>
       <cat-item tags="cop.ger_perf.*"/>
+
+      <cat-item tags="cop.*.ger_past.*"/>
+      <cat-item tags="cop.*.ger_perf.*"/>
 
     </def-cat>
 
@@ -210,6 +223,8 @@
       <attr-item tags="np.org"/>
       <attr-item tags="np.al"/>
       <attr-item tags="adj.subst"/>
+      <attr-item tags="adv.subst"/>
+      <attr-item tags="num.subst"/>
       <attr-item tags="num.ord.subst"/>
       <attr-item tags="adj.comp.subst"/>
       <attr-item tags="post.subst"/>
