@@ -69,6 +69,8 @@
     </def-cat>
 
     <def-cat n="v-gpr-impf">
+      <cat-item tags="vaux.gpr_impf"/>
+      <cat-item tags="vaux.gpr_impf.*"/>
       <cat-item tags="v.*.gpr_impf"/>
       <cat-item tags="v.*.gpr_impf.*"/>
     </def-cat>
