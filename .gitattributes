@@ -51,6 +51,7 @@ texts/story.kaz-kir.2.txt -text svneol=unset#application/octet-stream
 texts/story.kaz.2.txt -text svneol=unset#application/octet-stream
 texts/story.kaz.txt -text svneol=unset#application/octet-stream
 texts/story.kir.txt -text svneol=unset#application/octet-stream
+texts/translate.sh -text
 texts/trt_2013-04-05.kaz-kir-postedited.2.txt -text svneol=unset#application/octet-stream
 texts/trt_2013-04-05.kaz-kir-postedited.txt -text svneol=unset#application/octet-stream
 texts/trt_2013-04-05.kaz.txt -text svneol=unset#application/octet-stream
