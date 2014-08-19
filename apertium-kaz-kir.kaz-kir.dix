@@ -68,6 +68,7 @@
     <sdef n="sp" 	c=""/> 
     <sdef n="guio" 	c=""/> 
     <sdef n="cm" 	c=""/> 
+    <sdef n="comp" 	c=""/> 
     <sdef n="sent" 	c=""/> 
     <sdef n="quot" 	c=""/> 
     <sdef n="lpar" 	c=""/> 
@@ -7050,6 +7051,7 @@
 <e>       <p><l>лауазымды<s n="adj"/></l>         <r>кызматтык<s n="adj"/></r></p></e> <!-- "" -->
 <!--e>       <p><l>лауазымды<s n="adj"/><s n="subst"/></l><r> <s n="n"/><s n="loc"/><s n="subst"/></r></p></e--> <!-- "" --> <!--FIXME find translation-->
 <e>       <p><l>мүмкін<s n="adj"/></l>            <r>мүмкүн<s n="adj"/></r></p></e> <!--"possible, possibly"-->
+<e>       <p><l>мүмкін<s n="adj"/><s n="comp"/></l>            <r>мүмкүн<s n="adj"/></r></p></e> <!-- CHECK -->
 <e>       <p><l>негізгі<s n="adj"/></l>           <r>негизги<s n="adj"/></r></p></e> <!-- "basic,fundamental" -->
 <e r="RL"><p><l>рухани<s n="adj"/></l>            <r>руханий<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>рухани<s n="adj"/></l>            <r>рухий<s n="adj"/></r></p></e> <!-- "" -->
