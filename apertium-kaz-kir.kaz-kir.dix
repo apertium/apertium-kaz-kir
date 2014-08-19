@@ -7772,6 +7772,8 @@
 <e>       <p><l>бүйт<s n="v"/><s n="iv"/></l>     <r>минт<s n="v"/><s n="iv"/></r></p></e> <!--"do like this"  -->
 <!--<e>       <p><l>бүйт<s n="v"/><s n="tv"/></l>     <r>минт<s n="v"/><s n="iv"/></r></p></e>--> <!--"do like this"  -->  <!--FIXME: should be iv??-->
 <e>       <p><l>сөйт<s n="v"/><s n="iv"/></l>     <r>ошент<s n="v"/><s n="iv"/></r></p></e> <!--"do like that"  -->
+<e>       <p><l>өйт<s n="v"/><s n="iv"/></l>      <r>ант<s n="v"/><s n="iv"/></r></p></e> <!--"do like that"  -->
+<e>       <p><l>қайт<s n="v"/><s n="iv"/></l>     <r>кант<s n="v"/><s n="iv"/></r></p></e> <!--"do how"  -->
 <e>       <p><l>жүгір<s n="v"/><s n="iv"/></l>    <r>чурка<s n="v"/><s n="iv"/></r></p></e> <!--"run"  -->
 <e>       <p><l>сана<s n="v"/><s n="tv"/></l>     <r>сана<s n="v"/><s n="tv"/></r></p></e> <!--"count"  -->
 <e>       <p><l>істе<s n="v"/><s n="tv"/></l>     <r>кыл<s n="v"/><s n="tv"/></r></p></e> <!--"do [something]"  -->
