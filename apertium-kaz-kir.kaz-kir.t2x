@@ -2,6 +2,17 @@
 
 <transfer>
   <section-def-cats>
+    <def-cat n="punct">
+      <cat-item tags="num"/> <!-- ciphers -->
+      <cat-item tags="apos"/>
+      <cat-item tags="cm"/>
+      <cat-item tags="guio"/>
+      <cat-item tags="lpar"/>
+      <cat-item tags="lquot"/>
+      <cat-item tags="rpar"/>
+      <cat-item tags="rquot"/>
+      <cat-item tags="sent"/>
+    </def-cat>
     
     <def-cat n="vse">
       <cat-item tags="*"/>
@@ -61,7 +72,7 @@
   </section-def-lists>
 
   <section-rules>
-    
+   
     <rule comment="REGLA: 1;">
       <pattern>
         <pattern-item n="vse"/>
@@ -126,6 +137,25 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: 2b; we don't want clitics after punctuation">
+      <pattern>
+        <pattern-item n="punct"/>
+        <pattern-item n="čast1"/> <!-- Personal copulas/Abessive -->
+      </pattern>
+      <action>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: 2b; makes personal copulas/abessive to clitics">
       <pattern>
         <pattern-item n="vse"/>
@@ -144,6 +174,25 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: 2b; we don't want clitics after punctuation">
+      <pattern>
+        <pattern-item n="punct"/>
+        <pattern-item n="čast2"/> 
+      </pattern>
+      <action>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA:3;
       makes stuff contained in list=kir_clitics to clitics">

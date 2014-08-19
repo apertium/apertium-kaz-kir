@@ -140,11 +140,13 @@
       <cat-item tags="v.*.*.ger_fut.*"/>
       <cat-item tags="v.*.*.ger_impf.*"/>
 
+      <cat-item tags="vaux.ger.*"/>
       <cat-item tags="vaux.ger_pres.*"/>
       <cat-item tags="vaux.ger_past.*"/>
       <cat-item tags="vaux.ger_perf.*"/>
       <cat-item tags="vaux.ger_pot.*"/>
 
+      <cat-item tags="vaux.*.ger.*"/>
       <cat-item tags="vaux.*.ger_pres.*"/>
       <cat-item tags="vaux.*.ger_past.*"/>
       <cat-item tags="vaux.*.ger_perf.*"/>
@@ -262,6 +264,7 @@
       <attr-item tags="num.itg.subst"/>
       <attr-item tags="prn.qnt"/>
       <attr-item tags="prn.neg"/>
+      <attr-item tags="adv.itg"/> <!-- for кандай -->
     </def-attr>
 
     <def-attr n="a_num">
