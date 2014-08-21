@@ -2,4 +2,11 @@
   <rule>
     <match lemma="эт"><select lemma="эт"/></match>
   </rule>
+	<rule>
+		<match lemma="даяр" tags="adj">
+			<select lemma="дайын" tags="adj"/>
+		</match>
+	</rule>
+
+
 </rules>
