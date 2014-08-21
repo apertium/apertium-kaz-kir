@@ -12,6 +12,11 @@
       <cat-item tags="rpar"/>
       <cat-item tags="rquot"/>
       <cat-item tags="sent"/>
+
+      <cat-item tags="det.dem"/>
+      <cat-item tags="det.qnt"/>
+      <cat-item tags="cnjcoo"/>
+      <cat-item tags="abbr"/>
     </def-cat>
     
     <def-cat n="vse">
