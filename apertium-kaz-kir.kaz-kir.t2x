@@ -11,6 +11,7 @@
       <cat-item tags="lquot"/>
       <cat-item tags="rpar"/>
       <cat-item tags="rquot"/>
+      <cat-item tags="quot"/>
       <cat-item tags="sent"/>
 
       <cat-item tags="det.dem"/>
