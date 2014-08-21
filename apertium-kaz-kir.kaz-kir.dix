@@ -6743,6 +6743,9 @@
 <e>       <p><l>континенттік<s n="adj"/></l>      <r>континенталдуу<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>концерттік<s n="adj"/></l>        <r>концерттик<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>көлденең<s n="adj"/></l>          <r>күтүүсүз<s n="adj"/></r></p></e> <!--"unexpected.  FIXME: other meanings: diagonal; incidental"-->
+<e>       <p><l>көлденең<s n="adj"/><s n="advl"/></l><r>көлдөлөң<s n="adj"/></r></p></e> <!--"~diagonal"-->
+<e>       <p><l>көлденең<s n="adj"/><s n="comp"/></l><r>көлдөлөң<s n="adj"/></r></p></e> <!--"~diagonal"-->
+<e>       <p><l>көлденең<s n="adj"/><s n="subst"/></l><r>көлдөлөң<s n="adj"/></r></p></e> <!--"~diagonal"-->
 <e>       <p><l>көрнекі<s n="adj"/></l>           <r>көрүнүктүү<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>кристалдық<s n="adj"/></l>        <r>кристаллдык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>күнгі<s n="adj"/></l>             <r>күнкү<s n="adj"/></r></p></e> <!-- "" FIXME CHECK-->
