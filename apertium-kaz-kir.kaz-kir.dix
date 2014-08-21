@@ -65,6 +65,7 @@
     <sdef n="frm" 	c=""/> 
     <sdef n="sg" 	c=""/> 
     <sdef n="pl" 	c=""/> 
+    <sdef n="dat" 	c="Dative case"/> 
     <sdef n="sp" 	c=""/> 
     <sdef n="guio" 	c=""/> 
     <sdef n="cm" 	c=""/> 
@@ -326,7 +327,7 @@
 <e>       <p><l>не<s n="prn"/><s n="itg"/></l>            <r>эмне<s n="prn"/><s n="itg"/></r></p></e> <!-- "thing" FIXME: noun in Kazakh?-->
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>           <r>ким<s n="prn"/><s n="itg"/></r></p></e> <!-- who -->
 <e>       <p><l>қайсы<s n="prn"/><s n="itg"/></l>         <r>кайсы<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>қандай<s n="prn"/><s n="itg"/></l>        <r>кандай<s n="adv"/><s n="itg"/></r></p></e>
+<e>       <p><l>қандай<s n="prn"/><s n="itg"/></l>        <r>кандай<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>қанша<s n="prn"/><s n="itg"/></l>         <r>канча<s n="prn"/><s n="itg"/></r></p></e>
 
     <!-- Indefinite pronouns -->
@@ -7067,6 +7068,7 @@
 <e>       <p><l>тұрғын<s n="adj"/></l>            <r>жергиликтүү<s n="adj"/></r></p></e> <!-- "" -->
 <!--e>       <p><l>турындағы<s n="adj"/></l>         <r> <s n="adj"/></r></p></e--> <!-- ""  --> <!--FIXME find translation-->
 <e>       <p><l>тұтас<s n="adj"/></l>             <r>туташ<s n="adj"/></r></p></e> <!-- ""  -->
+<e>       <p><l>тұтас<s n="adj"/><s n="comp"/></l><r>туташ<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>туыс<s n="adj"/></l>              <r>тууган<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>тыс<s n="adj"/></l>               <r>тыш<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>үздік<s n="adj"/></l>             <r>залкар<s n="adj"/></r></p></e> <!-- "" -->
@@ -7135,7 +7137,8 @@
 <e>       <p><l>тиесілі<s n="adj"/></l>           <r>тиешелүү<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>тиісті<s n="adj"/></l>            <r>тийиштүү<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>төзімді<s n="adj"/></l>           <r>сабырдуу<s n="adj"/></r></p></e> <!-- "" -->
-<e>       <p><l>төзімді<s n="adj"/></l>           <r>чыдамдуу<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>төзімді<s n="adj"/></l>           <r>чыдамдуу<s n="adj"/></r></p></e> <!-- "patient, steadfast" -->
+<e>       <p><l>шыдамды<s n="adj"/></l>           <r>чыдамдуу<s n="adj"/></r></p></e> <!-- "patient, steadfast" -->
 <e>       <p><l>толы<s n="adj"/></l>              <r>толо<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>үстем<s n="adj"/></l>             <r>үстөм<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>шағын<s n="adj"/></l>             <r>кичинекей<s n="adj"/></r></p></e> <!-- ""  -->
@@ -7310,6 +7313,7 @@
 <e>       <p><l>мәдени<s n="adj"/></l>            <r>маданий<s n="adj"/></r></p></e> <!--"cultural"-->
 <e>       <p><l>мемлекеттік<s n="adj"/></l>       <r>мамлекеттик<s n="adj"/></r></p></e> <!--"governmental"-->
 <e>       <p><l>мәңгі<s n="adj"/></l>             <r>түбөлүк<s n="adj"/></r></p></e> <!--"eternal"-->
+<e>       <p><l>мәңгі<s n="adj"/><s n="advl"/></l><r>түбөлүк<s n="adj"/><s n="subst"/><s n="dat"/></r></p></e> <!--"eternally"-->
 <e>       <p><l>мол<s n="adj"/></l>               <r>мол<s n="adj"/></r></p></e> <!-- "plentiful, rich" -->
 <e>       <p><l>мөлдір<s n="adj"/></l>            <r>мөлтүр<s n="adj"/></r></p></e> <!-- "clear (clean/transparent)" -->
 <e>       <p><l>мұқият<s n="adj"/></l>            <r>ыкыластуу<s n="adj"/></r></p></e> <!--""-->
