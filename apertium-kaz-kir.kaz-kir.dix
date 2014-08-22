@@ -1319,7 +1319,6 @@
 <e>       <p><l>кеуде<s n="n"/></l>               <r>көөдөн<s n="n"/></r></p></e> <!--"chest"-->
 <e>       <p><l>кеуде<s n="n"/></l>               <r>көкүрөк<s n="n"/></r></p></e> <!--"chest"-->
 <e>       <p><l>кеудеше<s n="n"/></l>             <r>күрмө<s n="n"/></r></p></e> <!--""-->
-<e>       <p><l>кеш<s n="n"/></l>                 <r>кеч<s n="n"/></r></p></e> <!--"late,evening"-->
 <e>       <p><l>кешен<s n="n"/></l>               <r>комплекс<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>кешірім<s n="n"/></l>             <r>кечирим<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>киіз<s n="n"/></l>                <r>кийиз<s n="n"/></r></p></e> <!--""-->
@@ -7283,6 +7282,7 @@
 <e>       <p><l>кәрі<s n="adj"/></l>              <r>картаң<s n="adj"/></r></p></e> <!-- "old (person)"-->
 <e>       <p><l>кері<s n="adj"/></l>              <r>кери<s n="adj"/></r></p></e> <!--"reverse/inverse"-->
 <e>       <p><l>керек<s n="adj"/></l>             <r>керек<s n="adj"/></r></p></e> <!-- "necessary"-->
+<e>       <p><l>кеш<s n="n"/></l>                 <r>кеч<s n="n"/></r></p></e> <!--"late,evening"-->
 <e>       <p><l>кеш<s n="adj"/></l>               <r>кеч<s n="adj"/></r></p></e> <!-- "late, evening" ! FIXME: noun?-->
 <e>       <p><l>киелі<s n="adj"/></l>             <r>ыйык<s n="adj"/></r></p></e> <!-- "holy"-->
 <e>       <p><l>қиын<s n="adj"/></l>              <r>кыйын<s n="adj"/></r></p></e> <!-- "difficult"-->
@@ -7648,6 +7648,7 @@
 <e>       <p><l>соң<s n="adv"/></l>               <r>соң<s n="adv"/></r></p></e> <!-- "" -->
 <e>       <p><l>кеш<s n="adv"/></l>               <r>кечинде<s n="adv"/></r></p></e> <!-- "in evening" -->
 <e r="LR"><p><l>кеш<s n="adv"/></l>               <r>кеч<s n="adj"/><s n="advl"/></r></p></e> <!-- "late" -->
+<e>       <p><l>кеш<s n="adv"/><s n="subst"/></l>  <r>кеч<s n="n"/></r></p></e> <!-- "late" -->
 <e>       <p><l>кеш<s n="adv"/><s n="attr"/></l>  <r>кеч<s n="adj"/></r></p></e> <!-- "late" -->
 <e>       <p><l>кеше<s n="adv"/></l>               <r>кечээ<s n="adv"/></r></p></e> <!-- "yesterday > yesterday's" -->
 <e>       <p><l>күндіз<s n="adv"/></l>            <r>күндүз<s n="adv"/></r></p></e> <!-- "during the day" -->
