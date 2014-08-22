@@ -275,6 +275,7 @@
     <def-attr n="a_adj">
       <attr-item tags="adj"/>
       <attr-item tags="n.attr"/>
+      <attr-item tags="adv.attr"/>
     </def-attr>
 
     <def-attr n="a_verb">
@@ -304,6 +305,7 @@
 
     <def-attr n="a_adv">
       <attr-item tags="adv"/>
+      <attr-item tags="adj.advl"/>
     </def-attr>
 
     <def-attr n="a_gen">
