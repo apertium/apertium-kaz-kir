@@ -308,8 +308,8 @@
 <e>       <p><l>сендер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>                   <r>силер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></r></p></e>
 <e>       <p><l>олар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l>                     <r>алар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></r></p></e>
 
-<e>       <p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="sg"/></l>          <r>сиз<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="sg"/></r></p></e>
-<e>       <p><l>сіздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="pl"/></l>       <r>сиздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="frm"/><s n="pl"/></r></p></e>
+<e>       <p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="frm"/></l>          <r>сиз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="frm"/></r></p></e>
+<e>       <p><l>сіздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="frm"/></l>       <r>сиздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="frm"/></r></p></e>
 
     <!-- Demonstrative pronouns -->
 
