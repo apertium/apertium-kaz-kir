@@ -121,6 +121,12 @@
 			<select lemma="чогуу" tags="adv"/>
 		</match>
 	</rule>
+	<rule>
+		<match lemma="көне" tags="adj">
+			<select lemma="көөнө" tags="adj"/>
+		</match>
+	</rule>
+
 
 
 
