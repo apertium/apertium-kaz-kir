@@ -7106,7 +7106,8 @@
 <e>       <p><l>дербес<s n="adj"/></l>            <r>жеке<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>дербес<s n="adj"/></l>            <r>өздүк<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>дөңгелек<s n="adj"/></l>          <r>тегерек<s n="adj"/></r></p></e> <!-- "round, circular" -->
-<e>       <p><l>ежелгі<s n="adj"/></l>            <r>эзелки<s n="adj"/></r></p></e> <!-- ""  -->
+<e>       <p><l>ежелгі<s n="adj"/></l>            <r>эзелки<s n="adj"/></r></p></e> <!-- "ancient"  -->
+<e>       <p><l>ежелгі<s n="adj"/><s n="comp"/></l><r>эзелки<s n="adj"/></r></p></e> <!-- "ancient"  -->
 <e>       <p><l>әйгілі<s n="adj"/></l>            <r>белгилүү<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>елеулі<s n="adj"/></l>            <r>маанилүү<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>есен<s n="adj"/></l>              <r>эсен<s n="adj"/></r></p></e> <!-- "" -->
@@ -7294,6 +7295,7 @@
 <e>       <p><l>көне<s n="adj"/></l>              <r>мурунку<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
 <e>       <p><l>көне<s n="adj"/></l>              <r>эзелки<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
 <e>       <p><l>көне<s n="adj"/></l>              <r>байыркы<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
+<e>       <p><l>көне<s n="adj"/></l>              <r>көөнө<s n="adj"/></r></p></e> <!-- "old/ancient (thing)" -->
 <e>       <p><l>көңілді<s n="adj"/></l>           <r>көңүлдүү<s n="adj"/></r></p></e> <!-- "happy, cheerful"-->
 <e>       <p><l>қоңыр<s n="adj"/></l>             <r>коңур<s n="adj"/></r></p></e> <!-- "dark brown?"-->
 <e>       <p><l>көп<s n="adj"/></l>               <r>көп<s n="adj"/></r></p></e> <!-- "a lot" -->
