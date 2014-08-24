@@ -7645,17 +7645,20 @@
 
     <!-- Adverbs wich take -KI and become an attr/adj -->
 
-<e>       <p><l>соң<s n="adv"/></l>               <r>соң<s n="adv"/></r></p></e> <!-- "" -->
-<e>       <p><l>кеш<s n="adv"/></l>               <r>кечинде<s n="adv"/></r></p></e> <!-- "in evening" -->
-<e r="LR"><p><l>кеш<s n="adv"/></l>               <r>кеч<s n="adj"/><s n="advl"/></r></p></e> <!-- "late" -->
-<e>       <p><l>кеш<s n="adv"/><s n="subst"/></l>  <r>кеч<s n="n"/></r></p></e> <!-- "late" -->
-<e>       <p><l>кеш<s n="adv"/><s n="attr"/></l>  <r>кеч<s n="adj"/></r></p></e> <!-- "late" -->
+<e>       <p><l>соң<s n="adv"/></l>                <r>соң<s n="adv"/></r></p></e> <!-- "" -->
+<e>       <p><l>кеш<s n="adv"/></l>                <r>кечинде<s n="adv"/></r></p></e> <!-- "in evening" -->
+<e>       <p><l>кеш<s n="adv"/></l>                <r>кеч<s n="adv"/></r></p></e> <!-- "evening/late" -->
+<e>       <p><l>кеш<s n="adv"/><s n="attr"/></l>   <r>кеч<s n="adv"/><s n="attr"/></r></p></e> <!-- "evening-time" -->
+<e>       <p><l>кеш<s n="adv"/><s n="subst"/></l>  <r>кеч<s n="adv"/><s n="subst"/></r></p></e> <!-- "evening-time one" -->
+<!-- e r="LR"><p><l>кеш<s n="adv"/></l>               <r>кеч<s n="adj"/><s n="advl"/></r></p></e --> <!-- "late" -->
+<!-- e>       <p><l>кеш<s n="adv"/><s n="subst"/></l>  <r>кеч<s n="n"/></r></p></e --> <!-- "late" -->
+<!-- e>       <p><l>кеш<s n="adv"/><s n="attr"/></l>  <r>кеч<s n="adj"/></r></p></e --> <!-- "late" -->
 <e>       <p><l>кеше<s n="adv"/></l>               <r>кечээ<s n="adv"/></r></p></e> <!-- "yesterday > yesterday's" -->
-<e>       <p><l>күндіз<s n="adv"/></l>            <r>күндүз<s n="adv"/></r></p></e> <!-- "during the day" -->
+<e>       <p><l>күндіз<s n="adv"/></l>             <r>күндүз<s n="adv"/></r></p></e> <!-- "during the day" -->
 <e>       <p><l>жаңа<s n="adv"/></l>               <r>жаңы<b/>эле<s n="adv"/></r></p></e> <!--"just now"-->
 <e>       <p><l>қазір<s n="adv"/></l>              <r>азыр<s n="adv"/></r></p></e> <!--""-->
 
-<e>       <p><l>таңертең<s n="adv"/></l>          <r>эртең<b/>менен<s n="adv"/></r></p></e> <!--""-->
+<e>       <p><l>таңертең<s n="adv"/></l>           <r>эртең<b/>менен<s n="adv"/></r></p></e> <!--""-->
 
     <!-- Languages -->
 
