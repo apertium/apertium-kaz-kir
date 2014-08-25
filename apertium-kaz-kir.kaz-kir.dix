@@ -7037,7 +7037,9 @@
 <e>       <p><l>бірік<s n="adj"/></l>             <r>бириккен<s n="adj"/></r></p></e> <!-- "" -->
 <!-- e>       <p><l>бүгінгі<s n="adj"/></l>           <r>бүгүнкү<s n="adj"/></r></p></e --> <!-- "today's" -->
 <e>       <p><l>дәстүрлі<s n="adj"/></l>          <r>традициялык<s n="adj"/></r></p></e> <!-- "" -->
-<e>       <p><l>жазғы<s n="adj"/></l>             <r>жайкы<s n="adj"/></r></p></e>
+<!-- e>       <p><l>жазғы<s n="adj"/></l>             <r>жайкы<s n="adj"/></r></p></e --> <!-- "summer-time" -->
+<e>       <p><l>жазғы<s n="adj"/></l>             <r>жай<s n="n"/><s n="attr"/></r></p></e> <!-- "summer-time" -->
+<e>       <p><l>жазғы<s n="adj"/><s n="subst"/></l><r>жай<s n="n"/><s n="subst"/></r></p></e> <!-- "summer-time" -->
 <e>       <p><l>жасар<s n="adj"/></l>             <r>жашар<s n="adj"/></r></p></e> <!-- "X year-old"-->
 <e>       <p><l>жеке<s n="adj"/></l>              <r>жеке<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>жоқ<s n="adj"/></l>               <r>жок<s n="adj"/></r></p></e> <!-- "doesn't exist"-->
@@ -7047,12 +7049,18 @@
 <e>       <p><l>келесі<s n="adj"/></l>            <r>кийинки<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>кәсіби<s n="adj"/></l>            <r>кесиптик<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>кібісе<s n="adj"/></l>            <r>толук<s n="adj"/></r></p></e> <!-- "" -->
-<e>       <p><l>көктемгі<s n="adj"/></l>          <r>жазгы<s n="adj"/></r></p></e>
+<!-- e>       <p><l>көктемгі<s n="adj"/></l>          <r>жазгы<s n="adj"/></r></p></e -->
+<e>       <p><l>көктемгі<s n="adj"/></l>          <r>жаз<s n="n"/><s n="attr"/></r></p></e>
+<e>       <p><l>көктемгі<s n="adj"/><s n="subst"/></l><r>жаз<s n="n"/><s n="subst"/></r></p></e>
 <e>       <p><l>қор<s n="adj"/></l>               <r>кор<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>көрнекті<s n="adj"/></l>          <r>көрүнүктүү<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>қос<s n="adj"/></l>               <r>кош<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>қосымша<s n="adj"/></l>           <r>кошумча<s n="adj"/></r></p></e> <!-- ""  -->
+<e>       <p><l>қысқы<s n="adj"/></l>             <r>кыш<s n="n"/><s n="attr"/></r></p></e>
+<e>       <p><l>қысқы<s n="adj"/><s n="subst"/></l><r>кыш<s n="n"/><s n="subst"/></r></p></e>
 <e>       <p><l>көшпелі<s n="adj"/></l>           <r>көчмөн<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>күзгі<s n="adj"/></l>             <r>күз<s n="n"/><s n="attr"/></r></p></e>
+<e>       <p><l>күзгі<s n="adj"/><s n="subst"/></l><r>күз<s n="n"/><s n="subst"/></r></p></e>
 <e>       <p><l>лауазымды<s n="adj"/></l>         <r>кызматтык<s n="adj"/></r></p></e> <!-- "" -->
 <!--e>       <p><l>лауазымды<s n="adj"/><s n="subst"/></l><r> <s n="n"/><s n="loc"/><s n="subst"/></r></p></e--> <!-- "" --> <!--FIXME find translation-->
 <e>       <p><l>мүмкін<s n="adj"/></l>            <r>мүмкүн<s n="adj"/></r></p></e> <!--"possible, possibly"-->
