@@ -131,7 +131,7 @@
 			<select lemma="сейрек" tags="adj.advl"/>
 		</match>
 	</rule>
-	<rule>
+	<rule weight="2.0">
 		<match lemma="сирек" tags="adj">
 			<select lemma="сейрек кедешүүчү" tags="adj"/>
 		</match>
