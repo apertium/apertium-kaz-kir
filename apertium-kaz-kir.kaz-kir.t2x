@@ -33,9 +33,9 @@
            укытучы-мын/cop.p1.sg/ and укытучы идем/cop.ifi.p1.sg/. Maybe
            the latter should be added as modal or something. Absolutely
            not sure, just some ideas, /I.S./ -->
-      <cat-item tags="cop.p1.*"/>
-      <cat-item tags="cop.p2.*"/>
-      <cat-item tags="cop.p3.*"/>
+      <cat-item tags="cop.aor.p1.*"/>
+      <cat-item tags="cop.aor.p2.*"/>
+      <cat-item tags="cop.aor.p3.*"/>
       <cat-item lemma="сыз" tags="post"/>
       <cat-item lemma="луу" tags="post"/>
     </def-cat>
