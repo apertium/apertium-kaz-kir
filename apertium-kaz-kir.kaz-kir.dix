@@ -575,6 +575,7 @@
 <e>       <p><l>археолог<s n="n"/></l>            <r>археолог<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>археология<s n="n"/></l>          <r>археология<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>арыз<s n="n"/></l>                <r>арыз<s n="n"/></r></p></e> <!--"petition"-->
+<e>       <p><l>арық<s n="n"/></l>                <r>арык<s n="n"/></r></p></e> <!-- "ditch"-->
 <e>       <p><l>арыстан<s n="n"/></l>             <r>арстан<s n="n"/></r></p></e> <!--"lion"-->
 <e>       <p><l>ас<s n="n"/></l>                  <r>аш<s n="n"/></r></p></e> <!--"food"-->
 <e>       <p><l>асбест<s n="n"/></l>              <r>асбест<s n="n"/></r></p></e> <!--""-->
@@ -7371,7 +7372,13 @@
 <e>       <p><l>сары<s n="adj"/></l>              <r>сары<s n="adj"/></r></p></e> <!-- "yellow"-->
 <e>       <p><l>саяси<s n="adj"/></l>             <r>саясий<s n="adj"/></r></p></e> <!-- "political"-->
 <e>       <p><l>семіз<s n="adj"/></l>             <r>семиз<s n="adj"/></r></p></e> <!-- "fat"-->
-<e>       <p><l>сирек<s n="adj"/></l>             <r>сейрек<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>сирек<s n="adj"/></l>             <r>суюк<s n="adj"/></r></p></e> <!-- "sparse (hair)" -->
+<e>       <p><l>сирек<s n="adj"/></l>             <r>сейрек<b/>кездешүүчү<s n="adj"/></r></p></e> <!-- "rare" -->
+<e>       <p><l>сирек<s n="adj"/><s n="comp"/></l><r>сейрек<b/>кездешүүчү<s n="adj"/></r></p></e> <!-- "rarer" -->
+<e>       <p><l>сирек<s n="adj"/><s n="subst"/></l><r>сейрек<s n="adj"/><s n="subst"/></r></p></e> <!-- "rare" -->
+<e>       <p><l>сирек<s n="adj"/><s n="comp"/><s n="subst"/></l><r>сейрек<s n="adj"/><s n="comp"/><s n="subst"/></r></p></e> <!-- "rare" -->
+<e>       <p><l>сирек<s n="adj"/><s n="advl"/></l><r>сейрек<s n="adj"/><s n="advl"/></r></p></e> <!-- "rarely" -->
+<e>       <p><l>сирек<s n="adj"/><s n="comp"/><s n="advl"/></l><r>сейрек<s n="adj"/><s n="comp"/><s n="advl"/></r></p></e> <!-- "more rarely" -->
 <e>       <p><l>сол<s n="adj"/></l>               <r>сол<s n="adj"/></r></p></e> <!-- "left"-->
 <e>       <p><l>соң<s n="adj"/></l>               <r>соң<s n="adj"/></r></p></e> <!-- "last"--> <!--соңку should be generated? -->
 <e>       <p><l>сұйық<s n="adj"/></l>             <r>суюк<s n="adj"/></r></p></e> <!-- "" -->

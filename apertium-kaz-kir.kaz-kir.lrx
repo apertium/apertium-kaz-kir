@@ -126,6 +126,24 @@
 			<select lemma="көөнө" tags="adj"/>
 		</match>
 	</rule>
+	<rule>
+		<match lemma="сирек" tags="adj.advl">
+			<select lemma="сейрек" tags="adj.advl"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="сирек" tags="adj">
+			<select lemma="сейрек кедешүүчү" tags="adj"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="сирек" tags="adj">
+			<select lemma="суюк" tags="adj"/>
+		</match>
+		<match lemma="шаш" tags="n.*"/>
+	</rule>
+
+
 
 
 
