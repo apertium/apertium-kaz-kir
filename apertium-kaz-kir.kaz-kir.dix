@@ -7005,7 +7005,7 @@
 <e>       <p><l>саңырау<s n="adj"/></l>           <r>дүлөй<s n="adj"/></r></p></e> <!--"deaf"-->
 <e>       <p><l>керең<s n="adj"/></l>             <r>дүлөй<s n="adj"/></r></p></e> <!--"deaf"-->
 <e>       <p><l>айлы<s n="adj"/></l>              <r>айлуу<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>ақырғы<s n="adj"/></l>            <r>акыркы<s n="adj"/></r></p></e> <!--""-->
+<!-- e>       <p><l>ақырғы<s n="adj"/></l>            <r>акыркы<s n="adj"/></r></p></e --> <!--""-->
 <e>       <p><l>араз<s n="adj"/></l>              <r>араз<s n="adj"/></r></p></e> <!--""-->
 <!--e>       <p><l>атаулы<s n="adj"/></l>            <r> <s n="adj"/></r></p></e--> <!--""-->
 <!--e>       <p><l>атаулы<s n="adj"/></l>            <r> <s n="adj"/></r></p></e--> <!--""-->
@@ -7141,7 +7141,7 @@
 <e>       <p><l>қызғылт<s n="adj"/></l>           <r>кызгылтым<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>лайық<s n="adj"/></l>             <r>ылайык<s n="adj"/></r></p></e> <!-- ""  -->
 <e>       <p><l>маңызды<s n="adj"/></l>           <r>маанилүү<s n="adj"/></r></p></e> <!--"meaningful"-->
-<e>       <p><l>мәз<s n="adj"/></l>               <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>мәз<s n="adj"/></l>               <r>кубанычтуу<s n="adj"/></r></p></e> <!-- "happy" -->
 <e>       <p><l>момын<s n="adj"/></l>             <r>момун<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>момын<s n="adj"/></l>             <r>жоош<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>нәзік<s n="adj"/></l>             <r>назик<s n="adj"/></r></p></e> <!-- "" -->
@@ -7559,6 +7559,7 @@
 
     <!-- More or less regular stuff -->
 
+<e>       <p><l>ақыры<s n="adv"/></l>             <r>акыры<s n="adj"/></r></p></e> <!--"at last; finally - also includes ақырғы≈акыркы: previous, last, final"-->
 <e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e> <!-- "slowly -->
 <e>       <p><l>ақшалай<s n="adv"/></l>           <r>акчалай<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>алға<s n="adv"/></l>              <r>алга<s n="adv"/></r></p></e> <!-- "forward" -->
@@ -7987,6 +7988,7 @@
 <e>       <p><l>тұт<s n="v"/><s n="tv"/></l>      <r>тут<s n="v"/><s n="tv"/></r></p></e> <!-- "pull, hold" -->
 <e>       <p><l>иіске<s n="v"/><s n="tv"/></l>    <r>жытта<s n="v"/><s n="tv"/></r></p></e> <!-- "smell" -->
 <e>       <p><l>шеш<s n="v"/><s n="tv"/></l>      <r>чеч<s n="v"/><s n="tv"/></r></p></e> <!-- "decide, solve, untie, etc." -->
+<e>       <p><l>мәз<b/>бол<s n="v"/><s n="iv"/></l><r>мез<b/>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "be astounded" -->
 
 
 <!-- SECTION: Auxiliaries -->
