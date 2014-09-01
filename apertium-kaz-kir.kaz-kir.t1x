@@ -107,8 +107,13 @@
 
     <def-cat n="pron-pers_ref">
       <cat-item tags="prn.pers.*"/>
+<!--      <cat-item tags="prn.ref.*"/>-->
+    </def-cat>
+
+    <def-cat n="pron-ref">
       <cat-item tags="prn.ref.*"/>
     </def-cat>
+
 
     <def-cat n="pron">
       <cat-item tags="prn.*"/>
@@ -336,6 +341,10 @@
       <attr-item tags="sim"/>
     </def-attr>
 
+    <def-attr n="a_ins">
+      <attr-item tags="ins"/>
+    </def-attr>
+
     <def-attr n="a_case_noloc">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
@@ -448,10 +457,9 @@
       <choose> <!-- Converts instrumental case to nominative+менен<post> -->
         <when>
           <test>
-            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal>
+            <equal><clip pos="1" side="sl" part="a_ins"/><lit-tag v="ins"/></equal>
           </test>
-          <let><var n="postposition"/><concat><lit v=" ^менен"/><lit-tag v="post"/><lit v="$"/></concat></let>
-          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+          <let><clip pos="1" side="tl" part="a_ins"/><concat><lit-tag v="nom"/><lit v="$ ^менен"/><lit-tag v="post"/><lit v="$"/></concat></let>
         </when>
       </choose>
     </def-macro> 
@@ -627,7 +635,7 @@
             <var n="case"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -654,7 +662,7 @@
             <clip pos="1" side="tl" part="a_poss"/>
             <var n="case"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -685,10 +693,29 @@
             <clip pos="1" side="tl" part="a_genposs"/>
             <var n="case"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: reflexive pronoun">
+      <pattern>
+        <pattern-item n="pron-ref"/>
+      </pattern>
+      <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+менен -->
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <!--<var n="postposition"/>-->
+        </out>
+      </action>
+    </rule>
+
+
 
     <rule comment="REGLA: other pronouns">
       <pattern>
@@ -712,7 +739,7 @@
             <var n="case"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -885,7 +912,7 @@
             <var n="case"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -918,7 +945,7 @@
             <var n="case"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -1004,39 +1031,6 @@
       </action>
     </rule>
 
-    <!-- rule comment="REGLA: Numerals">
-      <pattern>
-        <pattern-item n="num"/>
-      </pattern>
-      <action -->
-        <!-- Both Kazakh and Tatar have collective numerals, but in Tatar they
-        don't take case endings. So there is no *дүртәве in Tatar. >>
-        Kaz. num.coll.subst is translated with tat. num.subst -->
-        <!-- call-macro n="numtype1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="case1" -->   <!-- translate kaz. <inst> with <nom>+менен -->
-          <!-- with-param pos="1"/>
-        </call-macro>
-        <call-macro n="case2" -->   <!-- take care of loc.subst thing -->
-          <!-- with-param pos="1"/>
-        </call-macro>
-        <out>
-          <lu>
-            <clip pos="1" side="tl" part="lem"/>
-            <clip pos="1" side="tl" part="a_num"/>
-            <clip pos="1" side="tl" part="a_numtype"/>
-            <clip pos="1" side="tl" part="a_nbr"/>
-            <clip pos="1" side="tl" part="a_poss"/>
-            <clip pos="1" side="tl" part="a_genposs"/>
-            <var n="case"/>
-            <clip pos="1" side="tl" part="lemq"/>
-          </lu>
-          <var n="postposition"/>
-        </out>
-      </action>
-    </rule -->
-
     <rule comment="REGLA: NUM жылы/жылдары/күні">
                      <!--NUM елны/елларны/көнне-->
       <pattern>
@@ -1062,7 +1056,7 @@
             <clip pos="2" side="tl" part="a_nbr"/>
             <clip pos="2" side="tl" part="a_case"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -1091,7 +1085,7 @@
           <lu>
             <clip pos="2" side="tl" part="whole"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -1128,7 +1122,7 @@
             <clip pos="3" side="tl" part="a_nbr"/>
             <clip pos="3" side="tl" part="a_case"/>
           </lu>
-          <var n="postposition"/>
+          <!--<var n="postposition"/>-->
         </out>
       </action>
     </rule>
@@ -1162,7 +1156,7 @@
                 <lit-tag v="px3sp"/>
                 <clip pos="2" side="tl" part="a_case"/>
               </lu>
-              <var n="postposition"/>
+              <!--<var n="postposition"/>-->
             </out>
           </when>
           <otherwise>
@@ -1174,7 +1168,7 @@
               <lu>
                 <clip pos="2" side="tl" part="whole"/>
               </lu>
-              <var n="postposition"/>
+              <!--<var n="postposition"/>-->
             </out>
           </otherwise>
         </choose>
