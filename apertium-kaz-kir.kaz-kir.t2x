@@ -17,6 +17,8 @@
       <cat-item tags="det.dem"/>
       <cat-item tags="det.qnt"/>
       <cat-item tags="cnjcoo"/>
+      <cat-item tags="cnjadv"/>
+      <cat-item tags="cnjsub"/>
       <cat-item tags="abbr"/>
       <cat-item tags="ij"/>
     </def-cat>
