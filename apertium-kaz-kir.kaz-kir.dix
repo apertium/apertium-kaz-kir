@@ -7155,7 +7155,9 @@
 <e>       <p><l>төзімді<s n="adj"/></l>           <r>сабырдуу<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>төзімді<s n="adj"/></l>           <r>чыдамдуу<s n="adj"/></r></p></e> <!-- "patient, steadfast" -->
 <e>       <p><l>шыдамды<s n="adj"/></l>           <r>чыдамдуу<s n="adj"/></r></p></e> <!-- "patient, steadfast" -->
-<e>       <p><l>толы<s n="adj"/></l>              <r>толо<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>толы<s n="adj"/></l>              <r>толо<s n="adj"/></r></p></e> <!-- "full (of)" -->
+<e>       <p><l>толы<s n="adj"/><s n="advl"/></l> <r>толук<s n="adj"/><s n="advl"/></r></p></e> <!-- "fully" -->
+<e>       <p><l>толы<s n="adj"/><s n="subst"/></l><r>толук<s n="adj"/><s n="subst"/></r></p></e> <!-- "full" -->
 <e>       <p><l>үстем<s n="adj"/></l>             <r>үстөм<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>үстем<s n="adj"/><s n="comp"/></l><r>үстөм<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>шағын<s n="adj"/></l>             <r>кичинекей<s n="adj"/></r></p></e> <!-- ""  -->
@@ -7279,7 +7281,7 @@
 <e>       <p><l>қадірлі<s n="adj"/></l>           <r>кадырлуу<s n="adj"/></r></p></e> <!-- "precious"-->
 <e>       <p><l>қалалық<s n="adj"/></l>           <r>шаардык<s n="adj"/></r></p></e> <!-- "city-level"-->
 <e>       <p><l>қалың<s n="adj"/></l>             <r>калың<s n="adj"/></r></p></e> <!-- "dark, deep"-->
-<e>       <p><l>қалың<s n="adj"/></l>             <r>коюу<s n="adj"/></r></p></e> <!-- "dark, deep"-->
+<!-- e>       <p><l>қалың<s n="adj"/></l>             <r>коюу<s n="adj"/></r></p></e --> <!-- "dark, deep" probably not a good translation -->
 <e>       <p><l>қара<s n="adj"/></l>              <r>кара<s n="adj"/></r></p></e> <!-- "black"-->
 <e>       <p><l>қараңғы<s n="adj"/></l>           <r>караңгы<s n="adj"/></r></p></e> <!-- "dark"-->
 <e>       <p><l>қарапайым<s n="adj"/></l>         <r>карапайым<s n="adj"/></r></p></e> <!-- "simple/poor folk" -->
