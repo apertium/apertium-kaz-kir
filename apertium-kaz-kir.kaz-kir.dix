@@ -7557,6 +7557,9 @@
 <e>       <p><l>аса<s n="adv"/></l>               <r>абдан<s n="adv"/></r></p></e> <!-- "very" -->
 <e>       <p><l>аса<s n="adv"/></l>               <r>өтө<s n="adv"/></r></p></e> <!-- "very" -->
 <e>       <p><l>бағана<s n="adv"/></l>            <r>эчак<s n="adv"/></r></p></e> <!-- "long ago" -->
+<e>       <p><l>бағана<s n="adv"/></l>            <r>мурда<s n="adv"/></r></p></e> <!-- "long ago" -->
+<e>       <p><l>бағана<s n="adv"/><s n="attr"/></l><r>мурда<s n="adv"/><s n="attr"/></r></p></e> <!-- "long ago" -->
+<e>       <p><l>бағана<s n="adv"/><s n="subst"/></l><r>мурда<s n="adv"/><s n="subst"/></r></p></e> <!-- "long ago" -->
 <e>       <p><l>барынша<s n="adv"/></l>           <r>барынча<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>бері<s n="adv"/></l>              <r>бери<s n="adv"/></r></p></e> <!-- "nearside" -->
 <e>       <p><l>бәрібір<s n="adv"/></l>           <r>баары<b/>бир<s n="adv"/></r></p></e> <!--""-->
