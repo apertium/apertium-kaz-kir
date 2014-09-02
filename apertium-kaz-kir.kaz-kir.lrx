@@ -131,7 +131,7 @@
 			<select lemma="сейрек" tags="adj.advl"/>
 		</match>
 	</rule>
-	<rule>
+	<rule><!-- FIXME -->
 		<match lemma="сирек" tags="adj">
 			<select lemma="сейрек кедешүүчү" tags="adj"/>
 		</match>
@@ -141,6 +141,17 @@
 			<select lemma="суюк" tags="adj"/>
 		</match>
 		<match lemma="шаш" tags="n.*"/>
+	</rule>
+
+	<rule>
+		<match lemma="қас" tags="n.px3sp.loc">
+			<select lemma="жан" tags="n.px3sp.loc"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="қас" tags="n.*">
+			<select lemma="каш" tags="n.*"/>
+		</match>
 	</rule>
 
 
