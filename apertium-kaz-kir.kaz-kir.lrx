@@ -155,6 +155,23 @@
 	</rule>
 
 
+	<rule>
+		<match lemma="ағаш" tags="n.*">
+			<select lemma="дарак" tags="n.*"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="ағаш" tags="n.abl">
+			<select lemma="жыгач" tags="n.abl"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="ағаш" tags="n.attr">
+			<select lemma="жыгач" tags="n.attr"/>
+		</match>
+	</rule>
+
+
 
 
 
