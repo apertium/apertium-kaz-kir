@@ -174,12 +174,12 @@
 
 	<rule>
 		<match lemma="салқын" tags="adj.*">
-			<select lemma="муздак" tags="n.*"/>
+			<select lemma="муздак" tags="adj.*"/>
 		</match>
 	</rule>
 	<rule>
 		<match lemma="салқын" tags="adj.*">
-			<select lemma="салкын" tags="n.*"/>
+			<select lemma="салкын" tags="adj.*"/>
 		</match>
 		<match lemma="ауа" tags="n.*"/>
 	</rule>
