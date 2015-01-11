@@ -172,6 +172,18 @@
 	</rule>
 
 
+	<rule>
+		<match lemma="салқын" tags="adj.*">
+			<select lemma="муздак" tags="n.*"/>
+		</match>
+	</rule>
+	<rule>
+		<match lemma="салқын" tags="adj.*">
+			<select lemma="салкын" tags="n.*"/>
+		</match>
+		<match lemma="ауа" tags="n.*"/>
+	</rule>
+
 
 
 
