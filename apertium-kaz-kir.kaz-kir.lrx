@@ -83,11 +83,11 @@
 		<match lemma="қағида" tags="n.*"><select lemma="эреже" tags="n.*"/></match>
 	</rule>
 	<rule>
-		<match lemma="ғылыми" tags="adj.*"/>
+		<or><match lemma="ғылыми" tags="adj.*"/><match lemma="ғылыми" tags="adj"/></or>
 		<match lemma="қағида" tags="n"><select lemma="теория" tags="n"/></match>
 	</rule>
 	<rule>
-		<match lemma="данышпандық" tags="adj.*"/>
+		<or><match lemma="данышпандық" tags="adj.*"/><match lemma="данышпандық" tags="adj"/></or>
 		<match lemma="қағида" tags="n"><select lemma="теория" tags="n"/></match>
 	</rule>
 	<rule>
@@ -178,11 +178,36 @@
 		</match>
 	</rule>
 	<rule>
+		<match lemma="салқын" tags="adj">
+			<select lemma="муздак" tags="adj"/>
+		</match>
+	</rule>
+
+	<rule>
 		<match lemma="салқын" tags="adj.*">
 			<select lemma="салкын" tags="adj.*"/>
 		</match>
-		<match lemma="ауа" tags="n.*"/>
+		<or><match lemma="ауа" tags="n.*"/><match lemma="ауа" tags="n"/></or>
 	</rule>
+	<rule>
+		<match lemma="салқын" tags="adj">
+			<select lemma="салкын" tags="adj"/>
+		</match>
+		<or><match lemma="ауа" tags="n.*"/><match lemma="ауа" tags="n"/></or>
+	</rule>
+	<rule>
+		<or><match lemma="ауа" tags="n.*"/><match lemma="ауа" tags="n"/></or>
+		<match lemma="салқын" tags="adj.*">
+			<select lemma="салкын" tags="adj.*"/>
+		</match>
+	</rule>
+	<rule>
+		<or><match lemma="ауа" tags="n.*"/><match lemma="ауа" tags="n"/></or>
+		<match lemma="салқын" tags="adj">
+			<select lemma="салкын" tags="adj"/>
+		</match>
+	</rule>
+
 
 
 
