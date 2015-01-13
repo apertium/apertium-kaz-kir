@@ -385,6 +385,7 @@
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>        <r>бардык<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>бірқатар<s n="det"/><s n="qnt"/></l>      <r>бир<b/>катар<s n="det"/><s n="qnt"/></r></p></e> <!-- FIXME:CHECK -->
 <e>       <p><l>бірнеше<s n="det"/><s n="qnt"/></l>       <r>бир<b/>нече<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>бір<b/>топ<s n="det"/><n="qnt"></l>       <r>бир<b/>топ<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>бүкіл<s n="det"/><s n="qnt"/></l>         <r>бүткүл<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>көптеген<s n="det"/><s n="qnt"/></l>      <r>көптөгөн<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>қанша<s n="det"/><s n="qnt"/></l>         <r>канча<s n="det"/><s n="qnt"/></r></p></e>
@@ -7216,7 +7217,7 @@
 <e>       <p><l>ақ<s n="adj"/></l>                <r>ак<s n="adj"/></r></p></e> <!-- "white"-->
 <e>       <p><l>активті<s n="adj"/></l>           <r>активдүү<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>ақырын<s n="adj"/></l>            <r>акырын<s n="adj"/></r></p></e> <!--"quitely, carefully"-->
-<e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e> <!-- "slowly -->
+<!-- e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e--> <!-- "slowly --><!-- No longer needed?  CHECK -->
 <e>       <p><l>ала<s n="adj"/></l>               <r>ала<s n="adj"/></r></p></e> <!-- "~speckled/mottled"-->
 <e>       <p><l>аласа<s n="adj"/></l>             <r>жапыз<s n="adj"/></r></p></e> <!-- "low" -->
 <e>       <p><l>алуан<s n="adj"/></l>             <r>албан<s n="adj"/></r></p></e> <!-- "" -->
@@ -7258,7 +7259,7 @@
 <e>       <p><l>әдемі<s n="adj"/></l>             <r>адеми<s n="adj"/></r></p></e> <!-- "beautiful" -->
 <e>       <p><l>едәуір<s n="adj"/></l>            <r>бир<b/>кыйла<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>әділ<s n="adj"/></l>              <r>адил<s n="adj"/></r></p></e> <!--""-->
-<e>       <p><l>әжептәуір<s n="adj"/></l>         <r>бир<b/>топ<s n="adj"/></r></p></e> <!--""-->
+<!-- e>       <p><l>әжептәуір<s n="adj"/></l>         <r>бир<b/>топ<s n="adj"/></r></p></e --> <!--"FIXME: this can't be the right translation"-->
 <e>       <p><l>әзір<s n="adj"/></l>              <r>даяр<s n="adj"/></r></p></e> <!-- "ready"-->
 <e>       <p><l>әлеуметтік<s n="adj"/></l>        <r>коомдук<s n="adj"/></r></p></e> <!-- "public, social"-->
 <e r="RL"><p><l>әлеуметтік<s n="adj"/></l>        <r>социалдык<s n="adj"/></r></p></e> <!-- "public, social"-->
