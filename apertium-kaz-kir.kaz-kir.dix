@@ -385,7 +385,7 @@
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>        <r>бардык<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>бірқатар<s n="det"/><s n="qnt"/></l>      <r>бир<b/>катар<s n="det"/><s n="qnt"/></r></p></e> <!-- FIXME:CHECK -->
 <e>       <p><l>бірнеше<s n="det"/><s n="qnt"/></l>       <r>бир<b/>нече<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>бір<b/>топ<s n="det"/><n="qnt"></l>       <r>бир<b/>топ<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>бір<b/>топ<s n="det"/><s n="qnt"/></l>    <r>бир<b/>топ<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>бүкіл<s n="det"/><s n="qnt"/></l>         <r>бүткүл<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>көптеген<s n="det"/><s n="qnt"/></l>      <r>көптөгөн<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>қанша<s n="det"/><s n="qnt"/></l>         <r>канча<s n="det"/><s n="qnt"/></r></p></e>
