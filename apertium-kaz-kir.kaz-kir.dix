@@ -7757,7 +7757,7 @@
 <e>       <p><l>негізінде<s n="adv"/></l>          <r>негизинде<s n="adv"/></r></p></e> <!--"in general, basically"-->
 <e>       <p><l>нендей<s n="adv"/><s n="itg"/></l> <r>кандай<s n="adv"/><s n="itg"/></r></p></e> <!--"how"-->
 <e>       <p><l>негізінен<s n="adv"/></l>          <r>негизинен<s n="adv"/></r></p></e> <!--"в основе, в основном"-->
-<e>       <p><l>жиі<s n="adv"/></l>                <r>көп<s n="adv"/></r></p></e> <!-- "often" -->
+<e>       <p><l>жиі<s n="adv"/></l>                <r>көп<s n="adj"/><s n="advl"/></r></p></e> <!-- "often" -->
 
 
 <!-- SECTION: Verbs -->
