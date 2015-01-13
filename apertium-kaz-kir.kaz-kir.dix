@@ -7286,7 +7286,7 @@
 <e>       <p><l>жеңіл<s n="adj"/></l>             <r>жеңил<s n="adj"/></r></p></e> <!-- "light"-->
 <e>       <p><l>жергілікті<s n="adj"/></l>        <r>жергиликтүү<s n="adj"/></r></p></e> <!--"local"-->
 <!-- e>       <p><l>жиі<s n="adj"/></l>               <r>жыш<s n="adj"/></r></p></e --> <!-- "often" FIXME: this is valid Kazakh, check the Kyrgyz -->
-<e>       <p><l>жіңішке<s n="adj"/></l>           <r>ничке<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>жіңішке<s n="adj"/></l>           <r>ичке<s n="adj"/></r></p></e> <!-- "thin" -->
 <e>       <p><l>жоғарғы<s n="adj"/></l>           <r>жогорку<s n="adj"/></r></p></e> <!--"high"-->
 <e>       <p><l>жоғары<s n="adj"/></l>            <r>жогору<s n="adj"/></r></p></e> <!-- "high" FIXME: check -->
 <e>       <p><l>жуан<s n="adj"/></l>              <r>жоон<s n="adj"/></r></p></e> <!-- "thick"-->
