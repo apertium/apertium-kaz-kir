@@ -998,6 +998,9 @@
         <call-macro n="nonfin1">
           <with-param pos="1"/>
         </call-macro>
+        <call-macro n="case1">
+          <with-param pos="1"/>
+        </call-macro>
         <let>
           <clip pos="1" side="tl" part="a_gpr"/>
           <concat><lit-tag v="prc_impf"/><lit v="$ ^тур"/><lit-tag v="vaux.gpr_past"/></concat>
