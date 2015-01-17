@@ -7246,7 +7246,6 @@
 <e>       <p><l>бөтен<s n="adj"/></l>             <r>бөтөн<s n="adj"/></r></p></e> <!-- "other"-->
 <e>       <p><l>бүтін<s n="adj"/></l>             <r>бүтүн<s n="adj"/></r></p></e> <!-- "whole" -->
 <e>       <p><l>ғылыми<s n="adj"/></l>            <r>илимий<s n="adj"/></r></p></e> <!--"scientific"-->
-<e>       <p><l>дайым<s n="adj"/></l>             <r>дайым<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>дайын<s n="adj"/></l>             <r>даяр<s n="adj"/></r></p></e> <!-- "ready" -->
 <e r="LR"><p><l>даяр<s n="adj"/></l>              <r>даяр<s n="adj"/></r></p></e> <!-- "ready" -->
 <e>       <p><l>дара<s n="adj"/></l>              <r>айрым<s n="adj"/></r></p></e> <!-- "" -->
@@ -7585,11 +7584,12 @@
     <!-- More or less regular stuff -->
 
 <e>       <p><l>ақыры<s n="adv"/></l>             <r>акыры<s n="adv"/></r></p></e> <!--"at last; finally - also includes ақырғы≈акыркы: previous, last, final"-->
-<e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e> <!-- "slowly -->
+<!-- e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e --> <!-- "slowly --><!-- No longer needed?  CHECK -->
 <e>       <p><l>ақшалай<s n="adv"/></l>           <r>акчалай<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>алға<s n="adv"/></l>              <r>алга<s n="adv"/></r></p></e> <!-- "forward" -->
 <e>       <p><l>алғаш<s n="adv"/></l>              <r>алгач<s n="adv"/></r></p></e> <!-- "at first" -->
 <!--e>       <p><l>алғашында<s n="adv"/></l>         <r><s n="adv"/></r></p></e--> <!--"" FIXME CHECK find translation-->
+<e>       <p><l>әрең<s n="adv"/></l>              <r>араң<s n="adv"/></r></p></e> <!-- "barely" -->
 <e>       <p><l>аса<s n="adv"/></l>               <r>абдан<s n="adv"/></r></p></e> <!-- "very" -->
 <e>       <p><l>аса<s n="adv"/></l>               <r>өтө<s n="adv"/></r></p></e> <!-- "very" -->
 <e>       <p><l>бағана<s n="adv"/></l>            <r>эчак<s n="adv"/></r></p></e> <!-- "long ago" -->
