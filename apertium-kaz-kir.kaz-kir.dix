@@ -49,7 +49,8 @@
     <sdef n="pat" 	c="Patronym"/> 
     <sdef n="cog" 	c="Cognomen"/> 
     <sdef n="org" 	c="Organization name"/> 
-    <sdef n="al" 	c="Other"/> 
+    <sdef n="al" 	   c="Other"/> 
+    <sdef n="unk" 	c="Unknown"/> 
     <sdef n="m" 	c="Мужской род"/> 
     <sdef n="mf" 	c="Мужской или женский род"/> 
     <sdef n="f" 	c="Женский род"/> 
@@ -6609,6 +6610,7 @@
 <e>       <p><l>Чемпиондар<b/>лигасы<s n="np"/><s n="org"/></l>  <r>Чемпиондор<b/>лигасы<s n="np"/><s n="org"/></r></p></e> <!--"UEFA Champions League"-->
 <e>       <p><l>Реал<b/>Мадрид<s n="np"/><s n="org"/></l>        <r>Реал<b/>Мадрид<s n="np"/><s n="org"/></r></p></e> <!--"Real Madrid Club de Fútbol"-->
 
+<e><re>[A-Za-z]+</re><p><l><s n="np"/><s n="unk"/></l><r><s n="np"/><s n="unk"/></r></p></e>
 
 <!--SECTION: Adjectives -->
 
