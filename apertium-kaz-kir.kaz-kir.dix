@@ -87,7 +87,6 @@
     <sdef n="gpr_past" 	c=""/> 
     <sdef n="prc_perf" 	c=""/> 
     <sdef n="recip"     c="Reciprocal"/>
-    <sdef n="unk" 	c="Unknown"/> 
   </sdefs>
   <section id="main" type="standard">
 
