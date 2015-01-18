@@ -229,6 +229,7 @@
       <attr-item tags="n.attr"/>
       <attr-item tags="np"/>
       <attr-item tags="np.ant"/>
+      <attr-item tags="np.unk"/>
       <attr-item tags="np.cog"/>
       <attr-item tags="np.pat"/>
       <attr-item tags="np.top"/>
