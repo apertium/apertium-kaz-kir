@@ -66,6 +66,7 @@
 
     <def-cat n="fut-plan">
       <cat-item tags="v.*.fut_plan.*"/>
+      <cat-item tags="vaux.*.fut_plan.*"/>
     </def-cat>
 
     <def-cat n="v-gpr-impf">
