@@ -82,6 +82,7 @@
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
       <cat-item tags="adj.subst.*"/>
+      <cat-item tags="n.gen.subst.*"/>
       <cat-item tags="adv.subst.*"/>
       <cat-item tags="adj.comp.subst.*"/>
       <cat-item tags="num.ord.subst.*"/>
@@ -338,10 +339,20 @@
       <attr-item tags="px"/>
 <!--      <attr-item tags="loc.attr"/> -->
       <attr-item tags="loc.subst"/>
+      <attr-item tags="gen.subst"/>
       <attr-item tags="sim"/>
     </def-attr>
 
     <def-attr n="a_ins">
+      <attr-item tags="ins"/>
+    </def-attr>
+
+    <def-attr n="a_case_nogen">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="loc"/>
       <attr-item tags="ins"/>
     </def-attr>
 
@@ -524,7 +535,66 @@
           <let><var n="case"/><lit-tag v="nom"/></let>
         </when>
       </choose>
+
+      <choose> <!-- Takes care of gen.subst thing -->
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="gen.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_nogen"/><lit-tag v="nom"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="gen.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_nogen"/><lit-tag v="loc"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="loc"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="gen.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_nogen"/><lit-tag v="dat"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="dat"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="gen.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_nogen"/><lit-tag v="acc"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="acc"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="gen.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_nogen"/><lit-tag v="abl"/></equal>
+            </and>
+          </test>
+          <let><var n="case"/><lit-tag v="abl"/></let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="tl" part="a_genposs"/><lit-tag v="gen.subst"/></equal>
+              <equal><clip pos="1" side="tl" part="a_case_nogen"/><lit-tag v="ins"/></equal>
+            </and>
+          </test>
+          <let><var n="postposition"/><concat><lit v=" ^менен"/><lit-tag v="post"/><lit v="$"/></concat></let>
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+      </choose>
     </def-macro>
+
 
     <def-macro n="tense1" npar="1">
       <choose>
