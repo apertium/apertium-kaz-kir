@@ -368,6 +368,7 @@
     </def-attr>
 
     <def-attr n="a_case">
+      <attr-item tags="attr"/>
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
       <attr-item tags="dat"/>
