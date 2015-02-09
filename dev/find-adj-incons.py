@@ -88,3 +88,23 @@ for line in bd.readlines(): #{
 		#}
 	#}	
 #}
+
+# apertium-kaz:
+
+# A1: adj, adj.comp, adj.subst, adj.comp.subst, adj.advl, adj.comp.advl
+# A2: adj, adj.comp, adj.subst, adj.comp.subst
+# A3: adj, adj.subst
+# A4: adj
+# A5: -
+# A6: adj, adj.subst, adj.advl
+
+# apertium-kir:
+
+# A1: adj, adj.comp, adj.subst, adj.comp.subst, adj.advl, adj.comp.advl
+# A2: adj, adj.comp, adj.subst, adj.comp.subst
+# A3: adj, adj.subst
+# A4: adj
+# A5: adj, adj.comp
+# A6: adj, adj.subst, adj.advl
+
+
