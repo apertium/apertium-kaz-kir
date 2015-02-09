@@ -20,6 +20,7 @@
 dev/countstems.sh -text
 dev/countstemsdix.sh -text
 dev/extract-same-entries.sh -text
+dev/find-adj-incons.py -text
 dev/kaz-countstems.sh -text
 dev/kir-countstems.sh -text
 dev/lexical_selection_rules_needed.txt -text
