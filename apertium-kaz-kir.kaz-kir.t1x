@@ -227,14 +227,12 @@
   
     <def-attr n="a_nom">
       <attr-item tags="n"/>
-      <attr-item tags="n.attr"/>
       <attr-item tags="np"/>
       <attr-item tags="np.ant"/>
       <attr-item tags="np.unk"/>
       <attr-item tags="np.cog"/>
       <attr-item tags="np.pat"/>
       <attr-item tags="np.top"/>
-      <attr-item tags="np.top.attr"/>
       <attr-item tags="np.org"/>
       <attr-item tags="np.al"/>
       <attr-item tags="adj.subst"/>
@@ -246,6 +244,10 @@
       <attr-item tags="post.subst"/>
       <attr-item tags="v.iv.ger"/>
       <attr-item tags="v.tv.ger"/>
+<!--
+      <attr-item tags="n.attr"/>
+      <attr-item tags="np.top.attr"/>
+-->
     </def-attr>
 
     <def-attr n="a_pron-dem-sim">
@@ -1262,6 +1264,9 @@
 	<pattern-item n="plain_nouns"/>
       </pattern>
       <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+менен -->
+          <with-param pos="3"/>
+        </call-macro>
 	<out>
 	  <lu>
 	    <clip pos="1" side="tl" part="whole"/>
@@ -1286,6 +1291,9 @@
 	<pattern-item n="plain_nouns"/>
       </pattern>
       <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+менен -->
+          <with-param pos="3"/>
+        </call-macro>
 	<out>
 	  <lu>
 	    <clip pos="1" side="tl" part="whole"/>
@@ -1334,6 +1342,9 @@
 	<pattern-item n="names"/>
       </pattern>
       <action>
+        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+менен -->
+          <with-param pos="3"/>
+        </call-macro>
 	<out>
 	  <lu>
 	    <clip pos="1" side="tl" part="whole"/>
