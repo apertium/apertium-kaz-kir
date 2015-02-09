@@ -2314,6 +2314,8 @@
 <e>       <p><l>сұлтан<s n="n"/></l>              <r>султан<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>сұмдық<s n="n"/></l>              <r>шумдук<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>сұңқар<s n="n"/></l>              <r>шумкар<s n="n"/></r></p></e> <!--""-->
+<e>       <p><l>сұр<s n="n"/></l>                 <r>сырткы<b/>түр<s n="n"/></r></p></e> <!--"appearance"-->
+<e>       <p><l>сұры<s n="n"/></l>                <r>келбет<s n="n"/></r></p></e> <!--"appearance FIXME: check"-->
 <e>       <p><l>сұрақ<s n="n"/></l>               <r>суроо<s n="n"/></r></p></e> <!--"question"-->
 <e>       <p><l>сұраным<s n="n"/></l>             <r>сурам<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>сұраныс<s n="n"/></l>             <r>сурам<s n="n"/></r></p></e> <!--""-->
@@ -7365,7 +7367,10 @@
 <e>       <p><l>мәңгі<s n="adj"/><s n="advl"/></l><r>түбөлүк<s n="adj"/><s n="subst"/><s n="dat"/></r></p></e> <!--"eternally"-->
 <e>       <p><l>мол<s n="adj"/></l>               <r>мол<s n="adj"/></r></p></e> <!-- "plentiful, rich" -->
 <e>       <p><l>мөлдір<s n="adj"/></l>            <r>мөлтүр<s n="adj"/></r></p></e> <!-- "clear (clean/transparent)" -->
-<e>       <p><l>мұқият<s n="adj"/></l>            <r>ыкластуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>мұқият<s n="adj"/></l>            <r>ыкластуу<s n="adj"/></r></p></e> <!--"careful"-->
+<e>       <p><l>мұқият<s n="adj"/><s n="advl"/></l><r>ыкылас<b/>коюп<s n="adv"/></r></p></e> <!--"carefully"-->
+<e>       <p><l>мұқият<s n="adj"/><s n="comp"/><s n="advl"/></l><r>көбүрөөк<b/>ыкылас<b/>коюп<s n="adv"/></r></p></e> <!--"more carefully"-->
+<e>       <p><l>мұқият<s n="adj"/><s n="comp"/></l><r>ыкластуу<s n="adj"/></r></p></e> <!--"carefuller"-->
 <e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
 <e>       <p><l>нағыз<s n="adj"/></l>             <r>нагыз<s n="adj"/></r></p></e> <!-- "real" -->
 <e>       <p><l>надан<s n="adj"/></l>             <r>наадан<s n="adj"/></r></p></e> <!-- "ignorant"-->
