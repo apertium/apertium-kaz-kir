@@ -23,7 +23,7 @@ l1 = open(sys.argv[1]);
 l2 = open(sys.argv[2]); 
 bd = open(sys.argv[3]);
 
-adj = re.compile(' (A[0-9]+) ;');
+adj = re.compile(' ([AN][0-9]+) ;');
 
 l1adj = {};
 
@@ -50,7 +50,7 @@ for line in l2.readlines(): #{
 		lem = clean(line.split(':')[0]);
 		cont = adj.findall(line)[0];
 		l2adj[lem] = cont;
-#		print('2:', lem, cont);
+		print('2:', lem, cont);
 	#}
 #}
 
@@ -62,8 +62,12 @@ adj = re.compile('<s n="adj"/>');
 llem = re.compile('<l>(.+)</l>');
 rlem = re.compile('<r>(.+)</r>');
 
-for line in bd.readlines(): #{
+combos = {};
 
+for line in bd.readlines(): #{
+	if line.count('<e') < 1: #{
+		continue;
+	#}
 	if adj.search(line): #{
 		bdl = cleanxml(llem.findall(line)[0]);
 		bdr = cleanxml(rlem.findall(line)[0]);
@@ -81,10 +85,15 @@ for line in bd.readlines(): #{
 			contr = l2adj[bdr];
 		#}
 
+		if (contl, contr) not in combos: #{
+			combos[(contl, contr)] = 0;
+		#}
+		combos[(contl, contr)] = combos[(contl, contr)] + 1;
+
 		if contl != contr: #{
-			print('C:\t%s\t%s\t%s ||| \t%s\t%s\t%s' % ( bdr, contl, bdlt, bdl, contr, bdrt));
+			print('C:\t%s\t%s\t%s ||| \t%s\t%s\t%s' % ( bdl, contl, bdlt, bdr, contr, bdrt));
 		else: #{
-			print('B:\t%s\t%s\t%s ||| \t%s\t%s\t%s' % ( bdr, contl, bdlt, bdl, contr, bdrt));
+			print('B:\t%s\t%s\t%s ||| \t%s\t%s\t%s' % ( bdl, contl, bdlt, bdr, contr, bdrt));
 		#}
 	#}	
 #}
@@ -107,4 +116,43 @@ for line in bd.readlines(): #{
 # A5: adj, adj.comp
 # A6: adj, adj.subst, adj.advl
 
+for p in combos: #{
+	print('%s\t%s %s' % (combos[p], p[0], p[1]));
+#}
 
+templ = {
+	'A4:A4':'', # 275
+	'A1:A1':'', # 181
+	'A2:A2':'', # 81
+	'A3:A3':'', # 75
+	'A4:A3':'', # 71
+	'A1:A4':'', # 25
+	'A2:A3':'', # 24
+	'A1:A3':'', # 22
+	'A1:@@':'', # 13
+	'A4:A2':'', # 12
+	'A1:A2':'', # 12
+	'A3:A2':'', # 7
+	'A2:A1':'', # 7
+	'A4:A1':'', # 6
+	'A3:A4':'', # 6
+	'@@:A3':'', # 6
+	'A1:A6':'', # 6
+	'A6:A6':'', # 5
+	'A3:@@':'', # 5
+	'@@:@@':'', # 5
+	'A2:A4':'', # 4
+	'A2:@@':'', # 4
+	'@@:A2':'', # 3
+	'@@:A1':'', # 3
+	'A6:A3':'', # 2
+	'A6:A1':'', # 2
+	'A3:A1':'', # 2
+	'A6:A4':'', # 1
+	'A6:@@':'', # 1
+	'A4:A6':'', # 1
+	'A4:A5':'', # 1
+	'A4:@@':'', # 1
+	'@@:A4':'', # 1
+	'A1:A5':'' # 1
+};
