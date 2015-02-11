@@ -121,6 +121,10 @@
       <cat-item tags="prn.*"/>
     </def-cat>
 
+    <def-cat n="num-attr">
+      <cat-item tags="num"/>
+    </def-cat>
+
     <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
@@ -629,7 +633,10 @@
                Белгәнегез дөрес.           Минем белмәгәнем күп.   Синең беркемне дә кисәтмәгәнеңне белмәдем.
                (То, что вы знаете, верно.) (Я много чего не знаю.) (Я не знал, что ты никого не предупредишь.) -->
           <test>
-              <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger_impf"/></equal>
+              <or>
+                <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_impf"/></equal> <!-- This is probably massively broken -FMT -->
+                <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger_impf"/></equal>
+              </or>
           </test>
           <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_past"/></let>
           <!-- This won't work in some cases (e.g. in "Менің айтатыным жоқ" it will even lead to
@@ -1116,7 +1123,7 @@
     <rule comment="REGLA: NUM жылы/жылдары/күні">
                      <!--NUM елны/елларны/көнне-->
       <pattern>
-        <pattern-item n="num"/>
+        <pattern-item n="num-attr"/>
         <pattern-item n="day-or-year"/>
       </pattern>
       <action>
@@ -1146,7 +1153,7 @@
     <rule comment="REGLA: NUM MONTH 
                           NUM MONTH">
       <pattern>
-        <pattern-item n="num"/>
+        <pattern-item n="num-attr"/>
         <pattern-item n="month"/>
       </pattern>
       <action>
@@ -1177,7 +1184,7 @@
     <rule comment="REGLA: NUM MONTH күні
                           NUM MONTH көнне">
       <pattern>
-        <pattern-item n="num"/>
+        <pattern-item n="num-attr"/>
         <pattern-item n="month"/>
         <pattern-item n="day"/>
       </pattern>
