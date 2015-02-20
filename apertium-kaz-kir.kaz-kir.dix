@@ -8010,7 +8010,7 @@
 <e>       <p><l>іл<s n="v"/><s n="tv"/></l>       <r>ил<s n="v"/><s n="tv"/></r></p></e> <!--"hang"  -->
 <e>       <p><l>жақ<s n="v"/><s n="iv"/></l>      <r>жак<s n="v"/><s n="iv"/></r></p></e> <!--"нравиться"  -->
 <e>       <p><l>ұна<s n="v"/><s n="iv"/></l>      <r>жак<s n="v"/><s n="iv"/></r></p></e> <!-- "like" -->
-<e>       <p><l>ұнат<s n="v"/><s n="tv"/></l>     <r>жак<s n="v"/><s n="iv"/><s n="caus"/></r></p></e> <!-- "like" -->
+<e>       <p><l>ұнат<s n="v"/><s n="tv"/></l>     <r>жак<s n="v"/><s n="iv"/><s n="caus"/></r></p></e> <!-- "like" --><!--FIXME: missing something? -->
 <e>       <p><l>жақ<s n="v"/><s n="tv"/></l>      <r>жак<s n="v"/><s n="tv"/></r></p></e> <!-- "зажигать,жечь" -->
 <e>       <p><l>қайна<s n="v"/><s n="iv"/></l>    <r>кайна<s n="v"/><s n="iv"/></r></p></e> <!--"boil"  -->
 <e>       <p><l>ұял<s n="v"/><s n="iv"/></l>      <r>уял<s n="v"/><s n="iv"/></r></p></e> <!--"be ashamed,embarrassed"  -->
@@ -8039,6 +8039,8 @@
 <e>       <p><l>қаз<s n="v"/><s n="tv"/></l>      <r>каз<s n="v"/><s n="tv"/></r></p></e> <!-- "dig" -->
 <e>       <p><l>лақтыр<s n="v"/><s n="tv"/></l>   <r>ыргыт<s n="v"/><s n="tv"/></r></p></e> <!-- "chuck" -->
 <e>       <p><l>жолда<s n="v"/><s n="tv"/></l>    <r>жөнөт<s n="v"/><s n="tv"/></r></p></e> <!-- "send" -->
+<e>       <p><l>төле<s n="v"/><s n="tv"/></l>     <r>төлө<s n="v"/><s n="tv"/></r></p></e> <!-- "pay" -->
+<e>       <p><l>бітір<s n="v"/><s n="tv"/></l>    <r>бүт<s n="v"/><s n="iv"/><s n="caus"/></r></p></e> <!-- "finish" --><!-- FIXME: missing something? -->
 
 
 <!-- SECTION: Auxiliaries -->
