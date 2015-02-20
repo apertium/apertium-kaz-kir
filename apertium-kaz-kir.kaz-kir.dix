@@ -7803,6 +7803,7 @@
 <e>       <p><l>барымтала<s n="v"/><s n="tv"/></l>    <r>барымтала<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>бат<s n="v"/><s n="iv"/></l>          <r>бат<s n="v"/><s n="iv"/></r></p></e>
 <e>       <p><l>бу<s n="v"/><s n="tv"/></l>           <r>буу<s n="v"/><s n="tv"/></r></p></e>
+<e>       <p><l>бұз<s n="v"/><s n="tv"/></l>          <r>буз<s n="v"/><s n="tv"/></r></p></e><!-- "to mess something up, spoil something" -->
 <e>       <p><l>и<s n="v"/><s n="tv"/></l>            <r>ий<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>майла<s n="v"/><s n="tv"/></l>        <r>майла<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>рамкала<s n="v"/><s n="tv"/></l>      <r>рамкала<s n="v"/><s n="tv"/></r></p></e>
@@ -7811,6 +7812,7 @@
 <e>       <p><l>сайлат<s n="v"/><s n="tv"/></l>       <r>шайлат<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>сайра<s n="v"/><s n="iv"/></l>        <r>сайра<s n="v"/><s n="iv"/></r></p></e>
 <e>       <p><l>сасы<s n="v"/><s n="iv"/></l>         <r>сасы<s n="v"/><s n="iv"/></r></p></e>
+<e>       <p><l>сақта<s n="v"/><s n="tv"/></l>        <r>сакта<s n="v"/><s n="tv"/></r></p></e><!-- "to save" -->
 <!--e>       <p><l>сат<s n="v"/><s n="iv"/></l>          <r>сат<s n="v"/><s n="iv"/></r></p></e--> <!--FIXME did not find the IV version-->
 <e>       <p><l>сат<s n="v"/><s n="tv"/></l>          <r>сат<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>саттыр<s n="v"/><s n="tv"/></l>       <r>саттыр<s n="v"/><s n="tv"/></r></p></e>
