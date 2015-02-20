@@ -626,6 +626,7 @@
       </choose>
     </def-macro>
 
+
     <def-macro n="nonfin1" npar="1">
       <choose>
         <when>
@@ -633,10 +634,7 @@
                Белгәнегез дөрес.           Минем белмәгәнем күп.   Синең беркемне дә кисәтмәгәнеңне белмәдем.
                (То, что вы знаете, верно.) (Я много чего не знаю.) (Я не знал, что ты никого не предупредишь.) -->
           <test>
-              <or>
-                <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_impf"/></equal> <!-- This is probably massively broken -FMT -->
                 <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger_impf"/></equal>
-              </or>
           </test>
           <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_past"/></let>
           <!-- This won't work in some cases (e.g. in "Менің айтатыным жоқ" it will even lead to
@@ -646,10 +644,17 @@
         </when>
         <when>
           <test>
+             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_impf"/></equal> <!-- This is probably massively broken -FMT -->
+          </test>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="gpr_perf"/></let>
+        </when>
+        <when>
+          <test>
               <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_pres"/></let>
         </when>
+
 
         <when>
           <!-- ...бірақ белгісіз  заң  _бұзушылықтарға_ байланысты тергеу ісі жүріп жатқандықтан...
