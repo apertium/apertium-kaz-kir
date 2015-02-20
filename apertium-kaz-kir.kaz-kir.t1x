@@ -646,7 +646,7 @@
           <test>
              <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_impf"/></equal> <!-- This is probably massively broken -FMT -->
           </test>
-          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="gpr_perf"/></let>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="gpr_past"/></let>
         </when>
         <when>
           <test>
@@ -972,6 +972,35 @@
       </action>
 	 </rule>
 
+
+    <rule comment="REGLA: v-gpr-impf">
+      <pattern>
+        <pattern-item n="v-gpr-impf"/>
+      </pattern>
+      <action>
+        <let>
+          <clip pos="1" side="tl" part="a_gpr"/>
+          <concat><lit-tag v="prc_impf"/><lit v="$ ^тур"/><lit-tag v="vaux.gpr_past"/></concat>
+        </let> 
+        <call-macro n="tense1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="nonfin1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+        </out>
+      </action>
+    </rule>
+
+
+
     <rule comment="REGLA: Gerunds">
       <pattern>
         <pattern-item n="gerund"/>
@@ -1072,35 +1101,6 @@
         </out>
       </action>
     </rule>
-
-
-    <rule comment="REGLA: v-gpr-impf">
-      <pattern>
-        <pattern-item n="v-gpr-impf"/>
-      </pattern>
-      <action>
-        <call-macro n="tense1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="nonfin1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="case1">
-          <with-param pos="1"/>
-        </call-macro>
-        <let>
-          <clip pos="1" side="tl" part="a_gpr"/>
-          <concat><lit-tag v="prc_impf"/><lit v="$ ^тур"/><lit-tag v="vaux.gpr_past"/></concat>
-        </let> 
-        <out>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-        </out>
-      </action>
-    </rule>
-
-
 
 
     <rule comment="REGLA: Match verb's tenses and non-finite forms">
