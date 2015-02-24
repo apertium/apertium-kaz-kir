@@ -212,6 +212,17 @@
 	<rule> 
 		<match lemma="ми" tags="n.*"><select lemma="мээ" tags="n.*"/></match>
 	</rule>
+	<rule> 
+		<match lemma="революциялық" tags="adj"><select lemma="төңкөрүштүк" tags="adj"/></match>
+	</rule>
+	<rule> 
+		<match lemma="революциялық" tags="adj.*"><select lemma="төңкөрүштүк" tags="adj.*"/></match>
+	</rule>
+	<rule> 
+		<match lemma="революция" tags="n.*"><select lemma="төңкөрүш" tags="n.*"/></match>
+	</rule>
+
+
 
 
 </rules>
