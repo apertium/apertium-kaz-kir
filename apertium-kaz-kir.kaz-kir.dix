@@ -6650,6 +6650,8 @@
         <!-- FIXME there is a better way of handling them, find it!
              (note that they all are ambigious between adj/n) -->
 
+<e>   <p><l>ағылшын<s n="adj"/></l>          <r>англис<s n="adj"/></r></p></e> <!-- "English" -->
+
 <e>       <p><l>пәкістандық<s n="adj"/></l>       <r>пакистандык<s n="adj"/></r></p></e> <!--""-->
 <!--e>       <p><l>пәкістандық<s n="adj"/></l>       <r>Пакистан<s n="n"/><s n="attr"/></r></p></e--> <!--""-->
 <e>       <p><l>кубалық<s n="adj"/></l>           <r>кубалык<s n="adj"/></r></p></e> <!--""-->

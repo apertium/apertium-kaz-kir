@@ -13,6 +13,7 @@
 
     <def-cat n="ž">
       <cat-item lemma="ж." tags="abbr"/>
+      <cat-item lemma="жж." tags="abbr"/>
     </def-cat>
 
      <def-cat n="orgs">
