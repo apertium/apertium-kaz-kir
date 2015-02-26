@@ -222,6 +222,11 @@
 		<match lemma="революция" tags="n.*"><select lemma="төңкөрүш" tags="n.*"/></match>
 	</rule>
 
+	<rule>
+		<match lemma="жұмыс" tags="n.*"/>
+		<match lemma="істе" tags="v.*"><select lemma="кыл" tags="v.tv.*"/></match>
+	</rule>
+
 
 
 
