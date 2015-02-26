@@ -15,6 +15,9 @@
       <cat-item lemma="ж." tags="abbr"/>
       <cat-item lemma="жж." tags="abbr"/>
     </def-cat>
+    <def-cat n="žyl">
+      <cat-item lemma="жыл" tags="n.*"/>
+    </def-cat>
 
      <def-cat n="orgs">
       <cat-item tags="np.org.*"/>
@@ -1130,6 +1133,30 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: NUM жыл">
+      <pattern>
+        <pattern-item n="num-attr"/>
+        <pattern-item n="žyl"/>
+      </pattern>
+      <action>
+        <call-macro n="case1">
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <lu>
+            <lit v="-"/><lit-tag v="guio"/>
+          </lu>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: NUM ж.">
       <pattern>
