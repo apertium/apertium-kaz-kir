@@ -7849,6 +7849,7 @@
 <e>       <p><l>азай<s n="v"/><s n="iv"/></l>         <r>азай<s n="v"/><s n="iv"/></r></p></e> <!--""уменьшаться""-->
 <e>       <p><l>азайт<s n="v"/><s n="tv"/></l>        <r>азайт<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>аздыр<s n="v"/><s n="tv"/></l>        <r>азгыр<s n="v"/><s n="tv"/></r></p></e>
+<e>       <p><l>айда<s n="v"/><s n="tv"/></l>      <r>айда<s n="v"/><s n="tv"/></r></p></e> <!-- "drive" -->
 <e>       <p><l>айны<s n="v"/><s n="iv"/></l>         <r>айны<s n="v"/><s n="iv"/></r></p></e>
 <e>       <p><l>айт<s n="v"/><s n="tv"/></l>      <r>айт<s n="v"/><s n="tv"/></r></p></e> <!-- "say, tell" -->
 <e>       <p><l>ал<s n="v"/><s n="tv"/></l>       <r>ал<s n="v"/><s n="tv"/></r></p></e> <!--"take"  -->
@@ -8014,6 +8015,7 @@
 <e>       <p><l>сыр<s n="v"/><s n="tv"/></l>          <r>тик<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>сің<s n="v"/><s n="iv"/></l>        <r>сиң<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
 <e>       <p><l>сұра<s n="v"/><s n="tv"/></l>     <r>сура<s n="v"/><s n="tv"/></r></p></e> <!--"ask (for)"  -->
+<e>       <p><l>соқ<s n="v"/><s n="tv"/></l>      <r>сок<s n="v"/><s n="tv"/></r></p></e> <!-- "hit" -->
 <e>       <p><l>сөйле<s n="v"/><s n="iv"/></l>    <r>сүйлө<s n="v"/><s n="iv"/></r></p></e> <!--"speak"  -->
 <e>       <p><l>сөйле<s n="v"/><s n="tv"/></l>    <r>сүйлө<s n="v"/><s n="tv"/></r></p></e> <!--"speak"  -->
 <e>       <p><l>сөйт<s n="v"/><s n="iv"/></l>     <r>ошент<s n="v"/><s n="iv"/></r></p></e> <!--"do like that"  -->
@@ -8027,6 +8029,7 @@
 <e>       <p><l>таныт<s n="v"/><s n="tv"/></l>        <r>тааныт<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>тап<s n="v"/><s n="tv"/></l>      <r>тап<s n="v"/><s n="tv"/></r></p></e> <!-- "find" -->
 <e>       <p><l>тапта<s n="v"/><s n="tv"/></l>        <r>тебеле<s n="v"/><s n="tv"/></r></p></e> <!--trample-->
+<e>       <p><l>тапсыр<s n="v"/><s n="tv"/></l>       <r>тапшыр<s n="v"/><s n="tv"/></r></p></e> <!-- "hand over" -->
 <e>       <p><l>тара<s n="v"/><s n="tv"/></l>         <r>тара<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>тарал<s n="v"/><s n="iv"/></l>        <r>тарал<s n="v"/><s n="iv"/></r></p></e>
 <e>       <p><l>тарат<s n="v"/><s n="tv"/></l>        <r>тарат<s n="v"/><s n="tv"/></r></p></e>
@@ -8039,18 +8042,23 @@
 <e>       <p><l>тоқтат<s n="v"/><s n="tv"/></l>      <r>токтот<s n="v"/><s n="tv"/></r></p></e> <!-- "stop" -->
 <e>       <p><l>ту<s n="v"/><s n="iv"/></l>           <r>туу<s n="v"/><s n="tv"/></r></p></e> <!--FIXME check for IV and TV-->
 <e>       <p><l>тудыр<s n="v"/><s n="tv"/></l>        <r>туудур<s n="v"/><s n="tv"/></r></p></e> 
+<e>       <p><l>тық<s n="v"/><s n="tv"/></l>        <r>кат<s n="v"/><s n="tv"/></r></p></e> <!--"hide"  -->
+<e>       <p><l>тық<s n="v"/><s n="tv"/></l>        <r>тык<s n="v"/><s n="tv"/></r></p></e> <!--"stuff something in somewhere"  -->
 <e>       <p><l>тын<s n="v"/><s n="iv"/></l>          <r>тынчы<s n="v"/><s n="iv"/></r></p></e>
-<e>       <p><l>тырна<s n="v"/><s n="tv"/></l>        <r>тырма<s n="v"/><s n="tv"/></r></p></e>
+<e>       <p><l>тырна<s n="v"/><s n="tv"/></l>        <r>тырма<s n="v"/><s n="tv"/></r></p></e><!-- "scratch" -->
 <e>       <p><l>тырыс<s n="v"/><s n="iv"/></l>    <r>тырыш<s n="v"/><s n="iv"/></r></p></e> <!--"to try"-->
 <e>       <p><l>тыңда<s n="v"/><s n="tv"/></l>    <r>ук<s n="v"/><s n="tv"/></r></p></e> <!-- "listen" -->
+<e>       <p><l>тіл<b />қат<s n="v"/><s n="iv"/></l><r>унчук<s n="v"/><s n="iv"/></r></p></e><!-- "utter" -->
 <e>       <p><l>түс<s n="v"/><s n="iv"/></l>      <r>түш<s n="v"/><s n="iv"/></r></p></e> <!--"fall"  -->
 <e>       <p><l>тұр<s n="v"/><s n="iv"/></l>      <r>тур<s n="v"/><s n="iv"/></r></p></e><!-- "stand" -->
 <e>       <p><l>тұт<s n="v"/><s n="tv"/></l>      <r>тут<s n="v"/><s n="tv"/></r></p></e> <!-- "pull, hold" -->
+<e>       <p><l>төк<s n="v"/><s n="tv"/></l>      <r>төк<s n="v"/><s n="tv"/></r></p></e> <!--"pour"  -->
 <e>       <p><l>төле<s n="v"/><s n="tv"/></l>     <r>төлө<s n="v"/><s n="tv"/></r></p></e> <!-- "pay" -->
 <e>       <p><l>төсе<s n="v"/><s n="tv"/></l>     <r>төшө<s n="v"/><s n="tv"/></r></p></e> <!--"стелить"  -->
 <e>       <p><l>хабарла<s n="v"/><s n="tv"/></l>     <r>кабарла<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
-<e>       <p><l>шал<s n="v"/><s n="iv"/></l>      <r>чал<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
 <e>       <p><l>шақыр<s n="v"/><s n="tv"/></l>       <r>чакыр<s n="v"/><s n="tv"/></r></p></e> <!-- "call,invite" -->
+<e>       <p><l>шал<s n="v"/><s n="tv"/></l>      <r>чал<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
+<e>       <p><l>шап<s n="v"/><s n="tv"/></l>      <r>чап<s n="v"/><s n="tv"/></r></p></e> <!-- "hit" -->
 <e>       <p><l>шеш<s n="v"/><s n="tv"/></l>      <r>чеч<s n="v"/><s n="tv"/></r></p></e> <!-- "decide, solve, untie, etc." -->
 <e>       <p><l>шула<s n="v"/><s n="iv"/></l>       <r>шуулда<s n="v"/><s n="iv"/></r></p></e> <!--""  -->
 <e>       <p><l>шық<s n="v"/><s n="iv"/></l>      <r>чык<s n="v"/><s n="iv"/></r></p></e> <!--"go out"  -->
@@ -8065,10 +8073,10 @@
 <e>       <p><l>қайт<s n="v"/><s n="iv"/></l>       <r>кайт<s n="v"/><s n="iv"/></r></p></e> <!--"return"  -->
 <e>       <p><l>қайт<s n="v"/><s n="tv"/></l>     <r>кант<s n="v"/><s n="tv"/></r></p></e> <!--"do how"  -->
 <e>       <p><l>қал<s n="v"/><s n="iv"/></l>       <r>кал<s n="v"/><s n="iv"/></r></p></e> <!--"stay, remain"  -->
-<e>       <p><l>қал<s n="v"/><s n="iv"/></l>      <r>кал<s n="v"/><s n="iv"/></r></p></e> <!-- "remain" -->
 <e>       <p><l>қала<s n="v"/><s n="tv"/></l>       <r>каала<s n="v"/><s n="tv"/></r></p></e> <!-- "desire, want"-->
 <e>       <p><l>қамтамасыз<b/>ет<s n="v"/><s n="tv"/></l>       <r>камсыз<b/>кыл<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
 <e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
+<e>       <p><l>қат<s n="v"/><s n="iv"/></l>        <r>кат<s n="v"/><s n="iv"/></r></p></e> <!--"get hard"  -->
 <e>       <p><l>қатыс<s n="v"/><s n="iv"/></l>      <r>катыш<s n="v"/><s n="iv"/></r></p></e> <!--"participate"  -->
 <e>       <p><l>қой<s n="v"/><s n="tv"/></l>      <r>кой<s n="v"/><s n="tv"/></r></p></e> <!--"put"  -->
 <e>       <p><l>қолдан<s n="v"/><s n="tv"/></l>      <r>колдон<s n="v"/><s n="tv"/></r></p></e> <!-- "употреблять"-->
@@ -8100,6 +8108,9 @@
 <e>       <p><l>ұшыра<s n="v"/><s n="iv"/></l>    <r>учура<s n="v"/><s n="tv"/></r></p></e> <!--"befell,meet unexpectedly"  -->
 <e>       <p><l>ұял<s n="v"/><s n="iv"/></l>      <r>уял<s n="v"/><s n="iv"/></r></p></e> <!--"be ashamed,embarrassed"  -->
 <e>       <p><l>ұқ<s n="v"/><s n="tv"/></l>       <r>ук<s n="v"/><s n="tv"/></r></p></e> <!-- "listen and understand" -->
+<e>       <p><l>ұр<s n="v"/><s n="tv"/></l>       <r>ур<s n="v"/><s n="tv"/></r></p></e> <!-- "beat" -->
+<e>       <p><l>ұрсы<s n="v"/><s n="tv"/></l>    <r>уруш<s n="v"/><s n="tv"/></r></p></e> <!-- "yell at" -->
+<e>       <p><l>ұрсы<s n="v"/><s n="tv"/><s n="coop"/></l><r>уруш<s n="v"/><s n="iv"/></r></p></e> <!-- "fight, argue" -->
 <e>       <p><l>әлсіре<s n="v"/><s n="iv"/></l>   <r>алсыра<s n="v"/><s n="iv"/></r></p></e> <!-- "lose strength" -->
 <e>       <p><l>әрекет<b/>ет<s n="v"/><s n="iv"/></l>      <r>аракет<b/>кыл<s n="v"/><s n="iv"/></r></p></e> <!-- "try, attempt to" -->
 <e>       <p><l>әрекет<b/>жаса<s n="v"/><s n="iv"/></l>    <r>аракет<b/>кыл<s n="v"/><s n="iv"/></r></p></e> <!-- "try, attempt to" -->
@@ -8250,6 +8261,8 @@
 <!-- e>      <p><l>өндір<s n="v"/><s n="tv"/></l><r>өндір<s n="v"/><s n="tv"/></r></p></e -->
 <!-- e>      <p><l>сіңір<s n="v"/><s n="tv"/></l><r>сіңір<s n="v"/><s n="tv"/></r></p></e -->
 <e>      <p><l>түсір<s n="v"/><s n="tv"/></l><r>түш<s n="v"/><s n="iv"/><s n="caus"/></r></p></e><!-- "let down, make fall" -->
+<e>      <p><l>шомыл<s n="v"/><s n="tv"/></l><r>суу<s n="n"/><s n="dat"/><b/>түш<s n="v"/><s n="iv"/></r></p></e><!-- "bathe" -->
+<e>      <p><l>шомылдыр<s n="v"/><s n="tv"/></l><r>суу<s n="n"/><s n="dat"/><b/>түш<s n="v"/><s n="iv"/><s n="caus"/></r></p></e><!-- "bathe" -->
 <!-- e>      <p><l>орналастыр<s n="v"/><s n="tv"/></l><r>орналастыр<s n="v"/><s n="tv"/></r></p></e -->
 <!-- e>      <p><l>қарастыр<s n="v"/><s n="tv"/></l><r>қарастыр<s n="v"/><s n="tv"/></r></p></e -->
 <!-- e>      <p><l>құрастыр<s n="v"/><s n="tv"/></l><r>құрастыр<s n="v"/><s n="tv"/></r></p></e -->
@@ -8262,6 +8275,7 @@
 <!-- e>      <p><l>жүзеге асыр<s n="v"/><s n="tv"/></l><r>жүзеге асыр<s n="v"/><s n="tv"/></r></p></e -->
 <e>      <p><l>ескер<s n="v"/><s n="iv"/></l><r>эскер<s n="v"/><s n="iv"/></r></p></e>
 <e>      <p><l>ескерт<s n="v"/><s n="tv"/></l><r>эскер<s n="v"/><s n="iv"/><s n="caus"/></r></p></e><!-- "remind" -->
+<e>      <p><l>қалдыр<s n="v"/><s n="tv"/></l><r>кал<s n="v"/><s n="iv"/><s n="caus"/></r></p></e><!-- "leave behind" -->
 
 
 
