@@ -2784,6 +2784,7 @@
 <e>       <p><l>шұлық<s n="n"/></l>               <r>байпак<s n="n"/></r></p></e> <!--""-->
 <!--e>       <p><l>шыбақ<s n="n"/></l>               <r> <s n="n"/></r></p></e--> <!--""--> <!--FIXME find translation-->
 <e>       <p><l>шыбын<s n="n"/></l>               <r>чымын<s n="n"/></r></p></e> <!--"fly"-->
+<e>       <p><l>шық<s n="n"/></l>                 <r>шүүдүрүм<s n="n"/></r></p></e> <!--"dew"-->
 <e>       <p><l>шығанақ<s n="n"/></l>             <r>булуң<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>шығарма<s n="n"/></l>             <r>чыгарма<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>шығармашылық<s n="n"/></l>        <r>чыгармачылык<s n="n"/></r></p></e> <!--""-->
@@ -3373,6 +3374,7 @@
 <e>       <p><l>Сапармұрат<s n="np"/><s n="ant"/><s n="m"/></l><r>Сапармурат<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- "" -->
 <e>       <p><l>Сара<s n="np"/><s n="ant"/><s n="f"/></l><r>Сара<s n="np"/><s n="ant"/><s n="f"/></r></p></e> <!-- "" -->
 <e>       <p><l>Сауат<s n="np"/><s n="ant"/><s n="m"/></l><r>Сауат<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- "" -->
+<e>       <p><l>Саул<s n="np"/><s n="ant"/><s n="m"/></l><r>Саул<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- "" -->
 <e>       <p><l>Саша<s n="np"/><s n="ant"/><s n="f"/></l><r>Саша<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
 <e>       <p><l>Саша<s n="np"/><s n="ant"/><s n="m"/></l><r>Саша<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- "" -->
 <e>       <p><l>Саят-Нова<s n="np"/><s n="ant"/><s n="m"/></l><r>Саят-Нова<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- "" -->
@@ -7420,7 +7422,8 @@
 <e>       <p><l>мұқият<s n="adj"/><s n="comp"/><s n="advl"/></l><r>көбүрөөк<b/>ыкылас<b/>коюп<s n="adv"/></r></p></e> <!--"more carefully"-->
 <e>       <p><l>мұқият<s n="adj"/><s n="comp"/></l><r>ыкластуу<s n="adj"/></r></p></e> <!--"carefuller"-->
 <e>       <p><l>мықты<s n="adj"/></l>             <r>мыкты<s n="adj"/></r></p></e> <!--"strong/fast"-->
-<!--e>       <p><l>нағыз<s n="adj"/></l>             <r>нагыз<s n="adj"/></r></p></e>--> <!-- "real" -->
+<e>       <p><l>нағыз<s n="adj"/></l>             <r>накта<s n="adj"/></r></p></e> <!-- "real" -->
+<e r="RL"><p><l>нағыз<s n="adj"/></l>             <r>нагыз<s n="adj"/></r></p></e> <!-- "real" -->
 <!--e>       <p><l>надан<s n="adj"/></l>             <r>наадан<s n="adj"/></r></p></e>--> <!-- "ignorant"-->
 <e>       <p><l>нақты<s n="adj"/></l>             <r>конкреттүү<s n="adj"/></r></p></e> <!-- "accurate,real" -->
 <e>       <p><l>нақты<s n="adj"/></l>             <r>реалдуу<s n="adj"/></r></p></e> <!-- "accurate,real" -->
@@ -7433,7 +7436,7 @@
 <e>       <p><l>нық<s n="adj"/></l>               <r>ык<s n="adj"/></r></p></e> <!--""-->
 <!--e>       <p><l>облыстық<s n="adj"/></l>          <r>областтык<s n="adj"/></r></p></e>--> <!-- "oblast-level" -->
 <e>       <p><l>өзара<s n="adj"/></l>             <r>өз<b/>ара<s n="adj"/></r></p></e> <!-- "mutual" -->
-<!--e>       <p><l>өзге<s n="adj"/></l>              <r>өзгө<s n="adj"/></r></p></e>--> <!--""-->
+<e>       <p><l>өзге<s n="adj"/></l>              <r>өзгө<s n="adj"/></r></p></e> <!--"" -->
 <e>       <p><l>өзгеше<s n="adj"/></l>            <r>өзгөчө<s n="adj"/></r></p></e> <!-- "special/particular" -->
 <!-- e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="adj"/></r></p></e -->                                                  <!--FIXME find translation-->
 <!-- e>       <p><l>оқшау<s n="adj"/></l>             <r> <s n="v"/><s n="iv"/><s n="gpr_past"/></r></p></e --> <!--"" TODO lrx оқшау сөздер-->  <!--FIXME find translation-->
@@ -7831,7 +7834,7 @@
 
 <!-- e>       <p><l>жаса<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e--> <!--"live, to be __ years old"  -->
 <!--<e>       <p><l>бүйт<s n="v"/><s n="tv"/></l>     <r>минт<s n="v"/><s n="iv"/></r></p></e>--> <!--"do like this"  -->  <!--FIXME: should be iv??-->
-<!--<e>       <p><l>бұйыр<s n="v"/><s n="tv"/></l>    <r>буйру<s n="v"/><s n="iv"/></r></p></e>--> <!--"order"  -->
+<e>       <p><l>бұйыр<s n="v"/><s n="tv"/></l>    <r>буйру<s n="v"/><s n="tv"/></r></p></e> <!--"order/command" -->
 <!--<e>       <p><l>сәлелендір<s n="v"/><s n="tv"/></l>    <r>дуушар<b/>бол<s n="v"/><s n="iv"/></r></p></e>--> <!-- "be exposed to" -->
 <!--<e>       <p><l>тый<s n="v"/><s n="tv"/></l>          <r>тый<s n="v"/><s n="iv"/></r></p></e>--> <!--FIXME check for IV and TV-->
 <!--e>       <p><l>аз<s n="v"/><s n="iv"/></l>           <r>аз<s n="v"/><s n="iv"/></r></p></e--> <!--FIXME find translation-->
@@ -7872,6 +7875,7 @@
 <e>       <p><l>ағыл<s n="v"/><s n="iv"/></l>     <r>агыл<s n="v"/><s n="iv"/></r></p></e> <!-- "1. быть" -->
 <e>       <p><l>ақ<s n="v"/><s n="iv"/></l>         <r>ак<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
 <e>       <p><l>байқал<s n="v"/><s n="iv"/></l>      <r>байкал<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
+<e>       <p><l>байла<s n="v"/><s n="tv"/></l>       <r>байла<s n="v"/><s n="tv"/></r></p></e> <!-- "tie" -->
 <e>       <p><l>бар<s n="v"/><s n="iv"/></l>      <r>бар<s n="v"/><s n="iv"/></r></p></e> <!--"hide"  -->
 <e>       <p><l>баррикадала<s n="v"/><s n="tv"/></l>  <r>баррикадала<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>барымтала<s n="v"/><s n="tv"/></l>    <r>барымтала<s n="v"/><s n="tv"/></r></p></e>
@@ -7893,6 +7897,7 @@
 <e>       <p><l>бітір<s n="v"/><s n="tv"/></l>    <r>бүт<s n="v"/><s n="iv"/><s n="caus"/></r></p></e> <!-- "finish" --><!-- FIXME: missing something? -->
 <e>       <p><l>бүйт<s n="v"/><s n="iv"/></l>     <r>минт<s n="v"/><s n="iv"/></r></p></e> <!--"do like this"  -->
 <e>       <p><l>бұз<s n="v"/><s n="tv"/></l>          <r>буз<s n="v"/><s n="tv"/></r></p></e><!-- "to mess something up, spoil something" -->
+<e>       <p><l>бұр<s n="v"/><s n="tv"/></l>          <r>бур<s n="v"/><s n="tv"/></r></p></e><!-- "twist, turn" -->
 <e>       <p><l>бөлін<s n="v"/><s n="tv"/></l>       <r>бөлүн<s n="v"/><s n="tv"/></r></p></e> <!-- ""-->
 <e>       <p><l>бөліс<s n="v"/><s n="tv"/></l>    <r>бөлүш<s n="v"/><s n="tv"/></r></p></e> <!-- "share" -->
 <e>       <p><l>даярла<s n="v"/><s n="tv"/></l>       <r>даярда<s n="v"/><s n="tv"/></r></p></e><!-- "prepare" -->
@@ -7907,6 +7912,7 @@
 <e>       <p><l>жай<s n="v"/><s n="tv"/></l>        <r>жай<s n="v"/><s n="tv"/></r></p></e> <!--"to pasture"  -->
 <e>       <p><l>жайла<s n="v"/><s n="iv"/></l>    <r>жайла<s n="v"/><s n="iv"/></r></p></e> <!--"to set up a summer camp"  -->
 <e>       <p><l>жайқал<s n="v"/><s n="iv"/></l>     <r>жайкал<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
+<e>       <p><l>жақында<s n="v"/><s n="iv"/></l>    <r>жакында<s n="v"/><s n="iv"/></r></p></e> <!--"get close to"  -->
 <e>       <p><l>жамыл<s n="v"/><s n="tv"/></l>    <r>жамын<s n="v"/><s n="tv"/></r></p></e> <!--"to cover oneself up"  -->
 <e>       <p><l>жап<s n="v"/><s n="tv"/></l>      <r>жап<s n="v"/><s n="tv"/></r></p></e> <!--"hide"  -->
 <e>       <p><l>жарат<s n="v"/><s n="tv"/></l>       <r>жарат<s n="v"/><s n="tv"/></r></p></e> <!-- "create"-->
@@ -7918,13 +7924,15 @@
 <e>       <p><l>жақ<s n="v"/><s n="tv"/></l>      <r>жак<s n="v"/><s n="tv"/></r></p></e> <!-- "зажигать,жечь" -->
 <e>       <p><l>жаура<s n="v"/><s n="iv"/></l>    <r>тоң<s n="v"/><s n="tv"/></r></p></e> <!-- "freeze" -->
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>       <r>же<s n="v"/><s n="tv"/></r></p></e> <!-- "eat" -->
+<e>       <p><l>жек<b/>көр<s n="v"/><s n="tv"/></l> <r>жек<b/>көр<s n="v"/><s n="tv"/></r></p></e> <!-- "hate" -->
 <e>       <p><l>жекешелендір<s n="v"/><s n="tv"/></l><r>менчиктештир<s n="v"/><s n="tv"/></r></p></e> <!-- "to privatizate" -->
 <e>       <p><l>жет<s n="v"/><s n="iv"/></l>         <r>жет<s n="v"/><s n="iv"/></r></p></e> <!-- "reach" -->
 <e>       <p><l>жең<s n="v"/><s n="tv"/></l>       <r>жең<s n="v"/><s n="tv"/></r></p></e> <!--"win,overcome"  -->
 <e>       <p><l>жина<s n="v"/><s n="tv"/></l>       <r>жыйна<s n="v"/><s n="tv"/></r></p></e> <!-- "собирать,убирать,копить" -->
 <e>       <p><l>жобала<s n="v"/><s n="tv"/></l>    <r>проектиле<s n="v"/><s n="tv"/></r></p></e> <!--"to project"  -->
 <e>       <p><l>жолда<s n="v"/><s n="tv"/></l>    <r>жөнөт<s n="v"/><s n="tv"/></r></p></e> <!-- "send" -->
-<e>       <p><l>жылжы<s n="v"/><s n="iv"/></l>    <r>жыл<s n="v"/><s n="iv"/></r></p></e> <!-- "smile" -->
+<e>       <p><l>жыла<s n="v"/><s n="iv"/></l>     <r>ыйла<s n="v"/><s n="iv"/></r></p></e> <!-- "cry" -->
+<e>       <p><l>жылжы<s n="v"/><s n="iv"/></l>    <r>жыл<s n="v"/><s n="iv"/></r></p></e> <!-- "move" -->
 <e>       <p><l>жылтыра<s n="v"/><s n="iv"/></l>  <r>жылтыра<s n="v"/><s n="iv"/></r></p></e> <!-- "to shine" -->
 <e>       <p><l>жылтырат<s n="v"/><s n="tv"/></l> <r>жылтырат<s n="v"/><s n="tv"/></r></p></e> <!--"to illuminate" (kaz tat) caus -->
 <e>       <p><l>жыми<s n="v"/><s n="iv"/></l>     <r>жылмай<s n="v"/><s n="iv"/></r></p></e> <!-- "smile" -->
@@ -7934,6 +7942,7 @@
 <e>       <p><l>жүргіз<s n="v"/><s n="tv"/></l>      <r>жүргүз<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
 <e>       <p><l>жұмыртқала<s n="v"/><s n="iv"/></l>  <r>жумурткала<s n="v"/><s n="iv"/></r></p></e> <!--"to lay eggs"-->
 <e>       <p><l>жұта<s n="v"/><s n="iv"/></l>     <r>жута<s n="v"/><s n="iv"/></r></p></e> <!-- "лишиться скота во время джута" -->
+<e>       <p><l>жу<s n="v"/><s n="tv"/></l>       <r>жуу<s n="v"/><s n="tv"/></r></p></e> <!-- "wash" -->
 <e>       <p><l>зертте<s n="v"/><s n="tv"/></l>      <r>изилде<s n="v"/><s n="tv"/></r></p></e> <!-- "research"-->
 <e>       <p><l>и<s n="v"/><s n="tv"/></l>            <r>ий<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>ионда<s n="v"/><s n="tv"/></l>      <r>ионда<s n="v"/><s n="tv"/></r></p></e> <!-- "ionise"-->
@@ -8040,6 +8049,7 @@
 <e>       <p><l>төле<s n="v"/><s n="tv"/></l>     <r>төлө<s n="v"/><s n="tv"/></r></p></e> <!-- "pay" -->
 <e>       <p><l>төсе<s n="v"/><s n="tv"/></l>     <r>төшө<s n="v"/><s n="tv"/></r></p></e> <!--"стелить"  -->
 <e>       <p><l>хабарла<s n="v"/><s n="tv"/></l>     <r>кабарла<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
+<e>       <p><l>шал<s n="v"/><s n="iv"/></l>      <r>чал<s n="v"/><s n="iv"/></r></p></e> <!-- "" -->
 <e>       <p><l>шақыр<s n="v"/><s n="tv"/></l>       <r>чакыр<s n="v"/><s n="tv"/></r></p></e> <!-- "call,invite" -->
 <e>       <p><l>шеш<s n="v"/><s n="tv"/></l>      <r>чеч<s n="v"/><s n="tv"/></r></p></e> <!-- "decide, solve, untie, etc." -->
 <e>       <p><l>шула<s n="v"/><s n="iv"/></l>       <r>шуулда<s n="v"/><s n="iv"/></r></p></e> <!--""  -->
@@ -8072,6 +8082,7 @@
 <e>       <p><l>қыр<s n="v"/><s n="tv"/></l>       <r>кыр<s n="v"/><s n="tv"/></r></p></e> <!-- "scrape" -->
 <e>       <p><l>қырыл<s n="v"/><s n="iv"/></l>     <r>кыйра<s n="v"/><s n="iv"/></r></p></e> <!-- "be destroyed" -->
 <e>       <p><l>қыста<s n="v"/><s n="iv"/></l>    <r>кышта<s n="v"/><s n="iv"/></r></p></e> <!--"to pass the winter"  -->
+<e>       <p><l>құла<s n="v"/><s n="iv"/></l>     <r>кула<s n="v"/><s n="iv"/></r></p></e> <!-- "fall" -->
 <e>       <p><l>құр<s n="v"/><s n="tv"/></l>      <r>кур<s n="v"/><s n="tv"/></r></p></e> <!-- "build" -->
 <e>       <p><l>құры<s n="v"/><s n="iv"/></l>     <r>куру<s n="v"/><s n="iv"/></r></p></e> <!-- "disappear" -->
 <e>       <p><l>үгітте<s n="v"/><s n="tv"/></l>      <r>үгүттө<s n="v"/><s n="tv"/></r></p></e> <!-- "to agitate"-->
@@ -8094,7 +8105,8 @@
 <e>       <p><l>әрекет<b/>жаса<s n="v"/><s n="iv"/></l>    <r>аракет<b/>кыл<s n="v"/><s n="iv"/></r></p></e> <!-- "try, attempt to" -->
 <e>       <p><l>өзгер<s n="v"/><s n="iv"/></l>    <r>өзгөр<s n="v"/><s n="iv"/></r></p></e> <!-- "change" -->
 <e>       <p><l>өйт<s n="v"/><s n="iv"/></l>      <r>ант<s n="v"/><s n="iv"/></r></p></e> <!--"do like that"  -->
-<e>       <p><l>өл<s n="v"/><s n="iv"/></l>          <r>өл<s n="v"/><s n="iv"/></r></p></e> <!--"to lay eggs"-->
+<e>       <p><l>өл<s n="v"/><s n="iv"/></l>          <r>өл<s n="v"/><s n="iv"/></r></p></e> <!--"to die"-->
+<e>       <p><l>өлтір<s n="v"/><s n="tv"/></l>       <r>өл<s n="v"/><s n="iv"/><s n="caus"/></r></p></e> <!--"to kill"-->
 <e>       <p><l>өртен<s n="v"/><s n="iv"/></l>    <r>өрттөн<s n="v"/><s n="iv"/></r></p></e> <!-- "burn up / burn down" -->
 <e>       <p><l>өс<s n="v"/><s n="iv"/></l>          <r>өс<s n="v"/><s n="iv"/></r></p></e> <!-- "grow" -->
 <e>       <p><l>өсір<s n="v"/><s n="tv"/></l>       <r>өстүр<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
