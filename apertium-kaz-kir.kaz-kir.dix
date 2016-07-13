@@ -7834,7 +7834,6 @@
 <!--"i=yes part"-->
 
 <!-- e>       <p><l>жаса<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e--> <!--"live, to be __ years old"  -->
-<!--<e>       <p><l>бүйт<s n="v"/><s n="tv"/></l>     <r>минт<s n="v"/><s n="iv"/></r></p></e>--> <!--"do like this"  -->  <!--FIXME: should be iv??-->
 <e>       <p><l>бұйыр<s n="v"/><s n="tv"/></l>    <r>буйру<s n="v"/><s n="tv"/></r></p></e> <!--"order/command" -->
 <!--<e>       <p><l>сәлелендір<s n="v"/><s n="tv"/></l>    <r>дуушар<b/>бол<s n="v"/><s n="iv"/></r></p></e>--> <!-- "be exposed to" -->
 <!--<e>       <p><l>тый<s n="v"/><s n="tv"/></l>          <r>тый<s n="v"/><s n="iv"/></r></p></e>--> <!--FIXME check for IV and TV-->
@@ -7846,7 +7845,8 @@
 <e r="LR"><p><l>бақ<s n="v"/><s n="tv"/></l>        <r>кара<s n="v"/><s n="tv"/></r></p></e> <!-- "воспитывать,пасти,присматриваться" -->
 <e>       <p><l>абай<b/>бол<s n="v"/><s n="iv"/></l>       <r>абайла<s n="v"/><s n="iv"/></r></p></e> <!-- "be careful" -->
 <e>       <p><l>абайла<s n="v"/><s n="tv"/></l>       <r>абайла<s n="v"/><s n="tv"/></r></p></e> <!--"cautious,attentive,beware"-->
-<e>       <p><l>адас<s n="v"/><s n="iv"/></l>     <r>адаш<s n="v"/><s n="iv"/></r></p></e> <!-- "lose one's way" -->
+<e r="LR"><p><l>адас<s n="v"/><s n="iv"/></l>     <r>адаш<s n="v"/><s n="iv"/></r></p></e> <!-- "lose one's way" -->
+<e>       <p><l>шатыс<s n="v"/><s n="iv"/></l>     <r>адаш<s n="v"/><s n="iv"/></r></p></e> <!-- "get confused" -->
 <e>       <p><l>азай<s n="v"/><s n="iv"/></l>         <r>азай<s n="v"/><s n="iv"/></r></p></e> <!--""уменьшаться""-->
 <e>       <p><l>азайт<s n="v"/><s n="tv"/></l>        <r>азайт<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>аздыр<s n="v"/><s n="tv"/></l>        <r>азгыр<s n="v"/><s n="tv"/></r></p></e>
@@ -7855,6 +7855,7 @@
 <e>       <p><l>айт<s n="v"/><s n="tv"/></l>      <r>айт<s n="v"/><s n="tv"/></r></p></e> <!-- "say, tell" -->
 <e>       <p><l>ал<s n="v"/><s n="tv"/></l>       <r>ал<s n="v"/><s n="tv"/></r></p></e> <!--"take"  -->
 <e>       <p><l>алалан<s n="v"/><s n="iv"/></l>       <r>алалан<s n="v"/><s n="iv"/></r></p></e>
+<e>       <p><l>алда<s n="v"/><s n="tv"/></l>        <r>алда<s n="v"/><s n="tv"/></r></p></e><!-- "deceive" -->
 <e>       <p><l>алдыр<s n="v"/><s n="tv"/></l>        <r>алдыр<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>аныкта<s n="v"/><s n="tv"/></l>   <r>аныкта<s n="v"/><s n="tv"/></r></p></e> <!-- "clarify" -->
 <e>       <p><l>апар<s n="v"/><s n="tv"/></l>      <r>алып<b/>бар<s n="v"/><s n="tv"/></r></p></e> <!-- "carry,take to,deliver to/отвезти,отнести,доставить" -->
@@ -7907,6 +7908,7 @@
 <e>       <p><l>де<s n="v"/><s n="tv"/></l>       <r>де<s n="v"/><s n="tv"/></r></p></e> <!--"work"  -->
 <e>       <p><l>дәлелде<s n="v"/><s n="tv"/></l>   <r>далилде<s n="v"/><s n="tv"/></r></p></e> <!--"prove"  -->
 <e>       <p><l>елікте<s n="v"/><s n="tv"/></l>   <r>туура<s n="v"/><s n="tv"/></r></p></e> <!--"подражать"  -->
+<e>       <p><l>емде<s n="v"/><s n="tv"/></l>       <r>эмде<s n="v"/><s n="tv"/></r></p></e> <!-- "heal" -->
 <e>       <p><l>ерік<s n="v"/><s n="iv"/></l>       <r>эрик<s n="v"/><s n="iv"/></r></p></e> <!--"be bored"  -->
 <e>       <p><l>есепте<s n="v"/><s n="tv"/></l>    <r>эсепте<s n="v"/><s n="tv"/></r></p></e> <!-- "consider" -->
 <e>       <p><l>есті<s n="v"/><s n="tv"/></l>     <r>ук<s n="v"/><s n="tv"/></r></p></e> <!-- "hear" -->
@@ -8202,7 +8204,6 @@
 
 
 <!-- double check -->
-<!-- e>      <p><l>емде<s n="v"/><s n="tv"/></l>        <r>эмде<s n="v"/><s n="tv"/></r></p></e -->
 <!-- e>      <p><l>ерекшеле<s n="v"/><s n="tv"/></l>    <r>обочолот<s n="v"/><s n="tv"/></r></p></e -->
 <!-- e>      <p><l>қызмет көрсет<s n="v"/><s n="tv"/></l><r>кызмат көрсөт<s n="v"/><s n="iv"/></r></p></e -->
 
