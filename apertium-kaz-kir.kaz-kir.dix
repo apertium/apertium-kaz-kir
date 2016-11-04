@@ -549,7 +549,8 @@
 <e>       <p><l>антропология<s n="n"/></l>        <r>антропология<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>анықтамалық<s n="n"/></l>         <r>маалымдама<s n="n"/></r></p></e> <!--"directory"-->
 <e>       <p><l>аң<s n="n"/></l>                  <r>жаныбар<s n="n"/></r></p></e> <!--"animal, beast"-->
-<e>       <p><l>аң<s n="n"/></l>                  <r>аң<s n="n"/></r></p></e> <!--"animal, beast"-->
+<e>       <p><l>аң<s n="n"/></l>                  <r>аң<s n="n"/></r></p></e> <!--"animal, beast -->
+<e>       <p><l>аңғар<s n="n"/></l>               <r>өрөөн<s n="n"/></r></p></e> <!--"valley"-->
 <e>       <p><l>аңыз<b/>әңгіме<s n="n"/></l>      <r>уламыш<s n="n"/></r></p></e> <!--"legend"-->
 <e>       <p><l>аңыз<s n="n"/></l>                <r>уламыш<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>апа<s n="n"/></l>                 <r>апа<s n="n"/></r></p></e> <!--"older female relative"-->
@@ -7837,6 +7838,7 @@
 <!--"i=yes part"-->
 
 <!-- e>       <p><l>жаса<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e--> <!--"live, to be __ years old"  -->
+<e r="RL"> <p><l>тұр<s n="v"/><s n="iv"/></l>     <r>жаша<s n="v"/><s n="iv"/></r></p></e> <!--"live, to be __ years old"  -->
 <e>       <p><l>бұйыр<s n="v"/><s n="tv"/></l>    <r>буйру<s n="v"/><s n="tv"/></r></p></e> <!--"order/command" -->
 <!--<e>       <p><l>сәлелендір<s n="v"/><s n="tv"/></l>    <r>дуушар<b/>бол<s n="v"/><s n="iv"/></r></p></e>--> <!-- "be exposed to" -->
 <!--<e>       <p><l>тый<s n="v"/><s n="tv"/></l>          <r>тый<s n="v"/><s n="iv"/></r></p></e>--> <!--FIXME check for IV and TV-->
