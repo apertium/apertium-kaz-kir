@@ -55,6 +55,7 @@ texts/kazakhadebieti_6599.kir.txt -text svneol=unset#application/octet-stream
 texts/kazakhadebieti_6606.kaz.txt -text svneol=unset#application/octet-stream
 texts/kazakhadebieti_6606.kir.txt -text svneol=unset#application/octet-stream
 texts/misc_sentences.kaz.txt -text svneol=unset#application/octet-stream
+texts/misc_sentences.kir.txt -text svneol=unset#application/octet-stream
 texts/sauytty_poezd.kaz.txt -text svneol=unset#application/octet-stream
 texts/sauytty_poezd.kir.txt -text svneol=unset#application/octet-stream
 texts/spektr.kaz.txt -text svneol=unset#application/octet-stream
