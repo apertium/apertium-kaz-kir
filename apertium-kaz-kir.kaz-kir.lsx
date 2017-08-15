@@ -1,4 +1,4 @@
-<dictionary type="separable">
+<dictionary type="sequential">
 	<alphabet>АӘБВГҒДЕЁЖЗИІЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЬЫЪЭЮЯаәбвгғдеёжзиійкқлмнңоөпрстуұүфхһцчшщьыъэюя</alphabet>
 	<sdefs>
 		<sdef n="adj"/>
