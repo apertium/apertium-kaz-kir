@@ -88,6 +88,15 @@ $(PREFIX1).rlx.bin: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).rlx
 $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 	cg-comp $< $@
 
+###############################################################################
+## Lexical sequences
+###############################################################################
+
+$(PREFIX1).autoseq.bin: $(BASENAME).$(PREFIX1).lsx
+	lsx-comp $< $@
+
+$(PREFIX2).autoseq.bin: $(BASENAME).$(PREFIX2).lsx
+	lsx-comp $< $@
 
 ###############################################################################
 ## Lexical selection rules

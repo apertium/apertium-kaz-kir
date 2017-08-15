@@ -6942,6 +6942,7 @@
              (note that they all are ambigious between adj/n) -->
 
 <e>   <p><l>ағылшын<s n="adj"/></l>          <r>англис<s n="adj"/></r></p></e> <!-- "English" -->
+<e>   <p><l>абай<s n="adj"/></l>          <r>абайлаган<s n="adj"/></r></p></e> <!-- "English" -->
 
 <e>       <p><l>пәкістандық<s n="adj"/></l>       <r>пакистандык<s n="adj"/></r></p></e> <!--""-->
 <!--e>       <p><l>пәкістандық<s n="adj"/></l>       <r>Пакистан<s n="n"/><s n="attr"/></r></p></e--> <!--""-->
@@ -8123,7 +8124,7 @@
 <!--e>       <p><l>тартын<s n="v"/><s n="iv"/></l>       <r>тартын<s n="v"/><s n="iv"/></r></p></e--> <!--FIXME check for IV and TV-->
 <!--e>      <p><l>ас<s n="v"/><s n="iv"/></l>          <r>ас<s n="v"/><s n="iv"/></r></p></e--> <!-- "вешать" -->
 <e r="LR"><p><l>бақ<s n="v"/><s n="tv"/></l>        <r>кара<s n="v"/><s n="tv"/></r></p></e> <!-- "воспитывать,пасти,присматриваться" -->
-<e>       <p><l>абай<b/>бол<s n="v"/><s n="iv"/></l>       <r>абайла<s n="v"/><s n="iv"/></r></p></e> <!-- "be careful" -->
+<!-- e>       <p><l>абай<b/>бол<s n="v"/><s n="iv"/></l>       <r>абайла<s n="v"/><s n="iv"/></r></p></e --> <!-- "be careful" -->
 <e>       <p><l>абайла<s n="v"/><s n="tv"/></l>       <r>абайла<s n="v"/><s n="tv"/></r></p></e> <!--"cautious,attentive,beware"-->
 <e r="LR"><p><l>адас<s n="v"/><s n="iv"/></l>     <r>адаш<s n="v"/><s n="iv"/></r></p></e> <!-- "lose one's way" -->
 <e>       <p><l>шатыс<s n="v"/><s n="iv"/></l>     <r>адаш<s n="v"/><s n="iv"/></r></p></e> <!-- "get confused" -->
