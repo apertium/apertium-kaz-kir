@@ -18,6 +18,7 @@
 /apertium-view.sh -text
 /autogen.sh -text
 /configure.ac -text
+dev/bidix-sanity.sh -text
 dev/countstems.sh -text
 dev/countstemsdix.sh -text
 dev/extract-same-entries.sh -text
