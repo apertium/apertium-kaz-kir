@@ -5,6 +5,7 @@
 		<sdef n="adv"/>
 		<sdef n="n"/>
 		<sdef n="nom"/>
+		<sdef n="dat"/>
 		<sdef n="v"/>
 	</sdefs>
 	<pardefs>

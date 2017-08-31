@@ -23,12 +23,12 @@
 	</pardefs>
 	<section id="main" type="standard">
 		<e lm="абай бол" c="абайла">
-	    <p><l>абай<s n="adj"/><j/>бол<s n="v"/></l>
-	       <r>абай<b/>бол<s n="v"/></r></p><i><t/></i>
-	  </e>
-	  <e lm="хабар ет" c="">
-	    <p><l>хабар<s n="n"/><s n="nom"/><j/>ет<s n="v"/></l>
-	       <r>хабар<b/>ет<s n="v"/></r></p><i><t/></i>
-	  </e>
+			<p><l>абай<s n="adj"/><j/>бол<s n="v"/></l>
+			<r>абай<b/>бол<s n="v"/></r></p><i><t/><j/></i>
+		</e>
+		<e lm="хабар ет" c="">
+			<p><l>хабар<s n="n"/><s n="nom"/><j/>ет<s n="v"/></l>
+			<r>хабар<b/>ет<s n="v"/></r></p><i><t/><j/></i>
+		</e>
 	</section>
 </dictionary>
