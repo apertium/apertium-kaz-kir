@@ -142,6 +142,30 @@
     </pipeline>
   </mode>
 
+  <mode name="kaz-kir-transfer" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="kaz-kir.automorf.bin"/>
+      </program>
+      <program name="cg-proc -n -w -1">
+        <file name="kaz-kir.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-kir.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="kaz-kir.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kaz-kir.kaz-kir.t1x"/>
+        <file name="kaz-kir.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
   <mode name="kaz-kir-transfer2" install="no">
     <pipeline>
       <program name="lt-proc -w">
