@@ -23,6 +23,9 @@
         <file name="apertium-kaz-kir.kaz-kir.t2x"/>
         <file name="kaz-kir.t2x.bin"/>
       </program>
+      <program name="lsx-proc">
+        <file name="kir-kaz.revautoseq.bin"/>
+      </program>
       <program name="lt-proc $1">
         <file name="kaz-kir.autogen.bin"/>
       </program>
@@ -51,6 +54,9 @@
       <program name="apertium-transfer -n">
         <file name="apertium-kaz-kir.kaz-kir.t2x"/>
         <file name="kaz-kir.t2x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="kir-kaz.revautoseq.bin"/>
       </program>
       <program name="lt-proc -d">
         <file name="kaz-kir.autogen.bin"/>
@@ -216,6 +222,9 @@
         <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
       </program>
+      <program name="lsx-proc">
+        <file name="kaz-kir.revautoseq.bin"/>
+      </program>
       <program name="lt-proc $1">
         <file name="kir-kaz.autogen.bin"/>
       </program>
@@ -244,6 +253,9 @@
       <program name="apertium-transfer -n">
         <file name="apertium-kaz-kir.kir-kaz.t2x"/>
         <file name="kir-kaz.t2x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="kaz-kir.revautoseq.bin"/>
       </program>
       <program name="lt-proc -d">
         <file name="kir-kaz.autogen.bin"/>
@@ -326,7 +338,7 @@
         <file name="kir-kaz.t2x.bin"/>
       </program>
       <program name="lsx-proc">
-        <file name="kir-kaz.revautoseq.bin"/>
+        <file name="kaz-kir.revautoseq.bin"/>
       </program>
       <!-- program name="lt-proc $1">
         <file name="kir-kaz.autogen.bin"/>

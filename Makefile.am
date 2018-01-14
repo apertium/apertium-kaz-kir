@@ -95,29 +95,34 @@ $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 ###############################################################################
 
 $(PREFIX1).autoseq.bin: $(BASENAME).$(PREFIX1).lsx
-	lsx-comp $< $@
+	lsx-comp lr $< $@
 
 $(PREFIX2).autoseq.bin: $(BASENAME).$(PREFIX2).lsx
-	lsx-comp $< $@
+	lsx-comp lr $< $@
 
 $(PREFIX1).revautoseq.bin: $(BASENAME).$(PREFIX1).lsx
-	lt-print $(PREFIX1).autoseq.bin |  sed 's/ /@_SPACE_@/g' > $(PREFIX1).autoseq.att
-	hfst-txt2fst -e ε < $(PREFIX1).autoseq.att > $(PREFIX1).autoseq.hfst
-	hfst-invert $(PREFIX1).autoseq.hfst | hfst-minimise > $(PREFIX1).revautoseq.hfst
-	hfst-fst2txt $(PREFIX1).revautoseq.hfst | gzip -9 -c -n > $(PREFIX1).revautoseq.att.gz
-	zcat < $(PREFIX1).revautoseq.att.gz > $(PREFIX1).revautoseq.att
-	sed 's/@0@/ε/g' $(PREFIX1).revautoseq.att > $(PREFIX1).revautoseq.1.att
-	lt-comp lr $(PREFIX1).revautoseq.1.att $@
-
+	lsx-comp rl $< $@
 
 $(PREFIX2).revautoseq.bin: $(BASENAME).$(PREFIX2).lsx
-	lt-print $(PREFIX2).autoseq.bin |  sed 's/ /@_SPACE_@/g' > $(PREFIX2).autoseq.att
-	hfst-txt2fst -e ε < $(PREFIX2).autoseq.att > $(PREFIX2).autoseq.hfst
-	hfst-invert $(PREFIX2).autoseq.hfst | hfst-minimise > $(PREFIX2).revautoseq.hfst
-	hfst-fst2txt $(PREFIX2).revautoseq.hfst | gzip -9 -c -n > $(PREFIX2).revautoseq.att.gz
-	zcat < $(PREFIX2).revautoseq.att.gz > $(PREFIX2).revautoseq.att
-	sed 's/@0@/ε/g' $(PREFIX2).revautoseq.att > $(PREFIX2).revautoseq.1.att
-	lt-comp lr $(PREFIX2).revautoseq.1.att $@
+	lsx-comp rl $< $@
+
+#	lt-print $(PREFIX1).autoseq.bin |  sed 's/ /@_SPACE_@/g' > $(PREFIX1).autoseq.att
+#	hfst-txt2fst -e ε < $(PREFIX1).autoseq.att > $(PREFIX1).autoseq.hfst
+#	hfst-invert $(PREFIX1).autoseq.hfst | hfst-minimise > $(PREFIX1).revautoseq.hfst
+#	hfst-fst2txt $(PREFIX1).revautoseq.hfst | gzip -9 -c -n > $(PREFIX1).revautoseq.att.gz
+#	zcat < $(PREFIX1).revautoseq.att.gz > $(PREFIX1).revautoseq.att
+#	sed 's/@0@/ε/g' $(PREFIX1).revautoseq.att > $(PREFIX1).revautoseq.1.att
+#	lt-comp lr $(PREFIX1).revautoseq.1.att $@
+
+
+#$(PREFIX2).revautoseq.bin: $(BASENAME).$(PREFIX2).lsx
+#	lt-print $(PREFIX2).autoseq.bin |  sed 's/ /@_SPACE_@/g' > $(PREFIX2).autoseq.att
+#	hfst-txt2fst -e ε < $(PREFIX2).autoseq.att > $(PREFIX2).autoseq.hfst
+#	hfst-invert $(PREFIX2).autoseq.hfst | hfst-minimise > $(PREFIX2).revautoseq.hfst
+#	hfst-fst2txt $(PREFIX2).revautoseq.hfst | gzip -9 -c -n > $(PREFIX2).revautoseq.att.gz
+#	zcat < $(PREFIX2).revautoseq.att.gz > $(PREFIX2).revautoseq.att
+#	sed 's/@0@/ε/g' $(PREFIX2).revautoseq.att > $(PREFIX2).revautoseq.1.att
+#	lt-comp lr $(PREFIX2).revautoseq.1.att $@
 
 ###############################################################################
 ## Lexical selection rules
