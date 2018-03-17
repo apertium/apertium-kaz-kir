@@ -77,3 +77,8 @@ texts/trt_2013-04-05.kir.txt -text svneol=unset#application/octet-stream
 texts/udhr.kaz.txt -text svneol=unset#application/octet-stream
 texts/udhr.kir.txt -text svneol=unset#application/octet-stream
 /wiki-tests.sh -text
+*.dix linguist-language=XML linguist-detectable=true
+*.lrx linguist-language=XML linguist-detectable=true
+*.lsx linguist-language=XML linguist-detectable=true
+*.tsx linguist-language=XML linguist-detectable=true
+*.t[[:digit:]]x linguist-language=XML linguist-detectable=true
