@@ -67,10 +67,30 @@
 		<or><match lemma="команда" tags="n.*"/><match tags="np.org.*"/><match lemma="мен" tags="post"/></or>
 		<match lemma="сайыс" tags="v.iv.*"><select lemma="салгылаш" tags="v.iv.*"/></match>
 	</rule>
-	<rule><!-- for people -->
-		<match lemma="үлкен" tags="adj.*"><select lemma="улуу" tags="adj.*"/></match>
+	<!-- үлкен = улуу, as in "older" (age) -->
+	<!-- rule>
+		<match lemma="үлкен" tags="adj.*"><select lemma="улуу" tags="adj"/></match>
+	</rule -->
+	<rule>
+		<match lemma="үлкен" tags="adj"><select lemma="улуу" tags="adj"/></match>
+		<match lemma="ұл" tags="n.*"/>
 	</rule>
-	<rule><!-- for things -->
+	<rule>
+		<match lemma="үлкен" tags="adj"><select lemma="улуу" tags="adj"/></match>
+		<match lemma="қыз" tags="n.*"/>
+	</rule>
+	<rule>
+		<match lemma="үлкен" tags="adj"><select lemma="улуу" tags="adj"/></match>
+		<match lemma="күйеу" tags="n.*"/>
+	</rule>
+	<!-- үлкен = чоң, as in "big, important" (size) -->
+	<rule>
+		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
+	</rule>
+	<rule>
+		<match lemma="үлкен" tags="adj.*"><select lemma="чоң" tags="adj"/></match>
+	</rule>
+	<rule>
 		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
 		<match lemma="қала" tags="n.*"/>
 	</rule>

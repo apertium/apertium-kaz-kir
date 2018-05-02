@@ -114,6 +114,8 @@
 <e>       <p><l>да<s n="cnjcoo"/></l>             <r>да<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>да<s n="cnjcoo"/></l>             <r>тең<s n="postadv"/></r></p></e>
 <e>       <p><l>және<s n="cnjcoo"/></l>           <r>жана<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>әлде<s n="cnjcoo"/></l>           <r>же<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>әлде<s n="cnjcoo"/></l>           <r>же<b />болбосо<s n="cnjadv"/></r></p></e>
 <e>       <p><l>не<s n="cnjcoo"/></l>             <r>эмне<s n="cnjcoo"/></r></p></e> 
 <e>       <p><l>сондай-ақ<s n="cnjcoo"/></l>      <r>дагы<s n="adv"/></r></p></e>
 <e>       <p><l>түгіл<s n="cnjcoo"/></l>          <r>гана<b/>эмес<s n="cnjcoo"/></r></p></e> 
@@ -1934,6 +1936,7 @@
 <e>       <p><l>насихат<s n="n"/></l>             <r>насыят<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>науқан<s n="n"/></l>              <r>кампания<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>наурыз<s n="n"/></l>              <r>март<s n="n"/></r></p></e> <!--"March"-->
+<e>       <p><l>нашарлық<s n="n"/></l>            <r>начарлык<s n="n"/></r></p></e> <!--"badness"-->
 <e>       <p><l>Наурыз<s n="n"/></l>              <r>Нооруз<s n="np"/><s n="al"/></r></p></e> <!--"Nooruz mayram"-->
 <e>       <p><l>нәр<s n="n"/></l>                 <r>тамак<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>нәресте<s n="n"/></l>             <r>наристе<s n="n"/></r></p></e> <!--""-->
@@ -2559,6 +2562,7 @@
 <e>       <p><l>тұлға<s n="n"/></l>               <r>фигура<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>тұлпар<s n="n"/></l>              <r>тулпар<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>тұман<s n="n"/></l>               <r>туман<s n="n"/></r></p></e> <!--"fog"-->
+<e>       <p><l>тұрақтылық<s n="n"/></l>          <r>туруктуулук<s n="n"/></r></p></e> <!-- "" -->
 <e>       <p><l>тұрғы<s n="n"/></l>               <r>көз<b/>караш<s n="n"/></r></p></e> <!--"viewpoint, точка зрения"-->
 <!--e>       <p><l>тұрғы<s n="n"/></l>               <r>чөйрө<s n="n"/></r></p></e--> <!--"круг, среда"-->
 <!--e>       <p><l>тұрғы<s n="n"/></l>               <r>жашоочу<s n="n"/></r></p></e--> <!--""--> <!--colloquialism, разговорное слово-->
@@ -7000,6 +7004,7 @@
 <e>       <p><l>атмосфералық<s n="adj"/></l>      <r>атмосфералык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>атомдық<s n="adj"/></l>           <r>атомдук<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>атты<s n="adj"/></l>              <r>аттуу<s n="adj"/></r></p></e> <!--""-->
+<e>       <p><l>ауданаралық<s n="adj"/></l>       <r>район<b />ортолук<s n="adj"/></r></p></e> <!--"inter-district"-->
 <e>       <p><l>ауылдық<s n="adj"/></l>           <r>айылдык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>аумақтық<s n="adj"/></l>          <r>аймактык<s n="adj"/></r></p></e> <!--""-->
 <e>       <p><l>аян<s n="adj"/></l>               <r>маалым<s n="adj"/></r></p></e> <!--""-->
@@ -7444,7 +7449,7 @@
 <e>       <p><l>танымал<s n="adj"/></l>           <r>белгилүү<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>таулы<s n="adj"/></l>             <r>тоолуу<s n="adj"/></r></p></e> <!-- "" Maybe we could derive this stuff, I don't know /I.S./ -->
 <e>       <p><l>тәуелді<s n="adj"/></l>           <r>көз<b/>каранды<s n="adj"/></r></p></e> <!-- "" -->
-<e>       <p><l>тиіс<s n="adj"/></l>              <r>тийиш<s n="adj"/></r></p></e> <!-- "" -->
+<e>       <p><l>тиіс<s n="adj"/></l>              <r>тийиш<s n="adj"/></r></p></e> <!-- "necessary" -->
 <e>       <p><l>туған<s n="adj"/></l>             <r>тууган<s n="adj"/></r></p></e> <!-- "родной" -->
 <e>       <p><l>тұйық<s n="adj"/></l>             <r>туюк<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>тұрғын<s n="adj"/></l>            <r>жергиликтүү<s n="adj"/></r></p></e> <!-- "local" -->
@@ -7941,6 +7946,7 @@
 <e>       <p><l>ақыры<s n="adv"/></l>             <r>акыры<s n="adv"/></r></p></e> <!--"at last; finally - also includes ақырғы≈акыркы: previous, last, final"-->
 <!-- e>       <p><l>ақырын<s n="adj"/><s n="advl"/></l><r>акырын<s n="adv"/></r></p></e --> <!-- "slowly --><!-- No longer needed?  CHECK -->
 <e>       <p><l>ақшалай<s n="adv"/></l>           <r>акчалай<s n="adv"/></r></p></e> <!--""-->
+<e>       <p><l>алдын<b/>ала<s n="adv"/></l>      <r>алдын<b/>ала<s n="adv"/></r></p></e> <!-- "forward" -->
 <e>       <p><l>алға<s n="adv"/></l>              <r>алга<s n="adv"/></r></p></e> <!-- "forward" -->
 <e>       <p><l>алғаш<s n="adv"/></l>              <r>алгач<s n="adv"/></r></p></e> <!-- "at first" -->
 <!--e>       <p><l>алғашында<s n="adv"/></l>         <r><s n="adv"/></r></p></e--> <!--"" FIXME CHECK find translation-->
@@ -8205,6 +8211,7 @@
 <e>       <p><l>емде<s n="v"/><s n="tv"/></l>       <r>эмде<s n="v"/><s n="tv"/></r></p></e> <!-- "heal" -->
 <e>       <p><l>ерік<s n="v"/><s n="iv"/></l>       <r>эрик<s n="v"/><s n="iv"/></r></p></e> <!--"be bored"  -->
 <e>       <p><l>есепте<s n="v"/><s n="tv"/></l>    <r>эсепте<s n="v"/><s n="tv"/></r></p></e> <!-- "consider" -->
+<e>       <p><l>ескер<s n="v"/><s n="tv"/></l>    <r>эскер<s n="v"/><s n="tv"/></r></p></e> <!-- "" -->
 <e>       <p><l>есті<s n="v"/><s n="tv"/></l>     <r>ук<s n="v"/><s n="tv"/></r></p></e> <!-- "hear" -->
 <e>       <p><l>ет<s n="v"/><s n="tv"/></l>         <r>кыл<s n="v"/><s n="tv"/></r></p></e> <!-- "do, make"-->
 <e>       <p><l>жай<s n="v"/><s n="tv"/></l>        <r>жай<s n="v"/><s n="tv"/></r></p></e> <!--"to pasture"  -->
@@ -8269,11 +8276,16 @@
 <e>       <p><l>көш<s n="v"/><s n="iv"/></l>         <r>көч<s n="v"/><s n="iv"/></r></p></e> <!-- "lead a nomad's life,move to another place" -->
 <e>       <p><l>көшір<s n="v"/><s n="tv"/></l>         <r>көчүр<s n="v"/><s n="tv"/></r></p></e> <!-- "move to another place" -->
 <e>       <p><l>лақтыр<s n="v"/><s n="tv"/></l>   <r>ыргыт<s n="v"/><s n="tv"/></r></p></e> <!-- "chuck" -->
+<e>       <p><l>мамандан<s n="v"/><s n="tv"/></l>     <r>специализациялаш<s n="v"/><s n="iv"/></r></p></e><!-- "specialise" -->
+<e>       <p><l>мамандандыр<s n="v"/><s n="tv"/></l>  <r>специализациялаш<s n="v"/><s n="iv"/><s n="caus"/></r></p></e><!-- "make specialised" -->
+<e>       <p><l>мамандандырыл<s n="v"/><s n="iv"/></l><r>специализациялаш<s n="v"/><s n="iv"/><s n="caus"/><s n="pass"/></r></p></e><!-- "be specialised" -->
 <e>       <p><l>майла<s n="v"/><s n="tv"/></l>        <r>майла<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>мін<s n="v"/><s n="iv"/></l>         <r>мин<s n="v"/><s n="tv"/></r></p></e> <!--"ride"-->
 <e>       <p><l>мәз<b/>бол<s n="v"/><s n="iv"/></l><r>мез<b/>бол<s n="v"/><s n="iv"/></r></p></e> <!-- "be astounded" -->
 <e>       <p><l>мәлімде<s n="v"/><s n="tv"/></l>   <r>маалымда<s n="v"/><s n="tv"/></r></p></e> <!--"to inform"  -->
 <e>       <p><l>ойла<s n="v"/><s n="tv"/></l>     <r>ойло<s n="v"/><s n="tv"/></r></p></e> <!-- "think (about)" -->
+<e>       <p><l>ойлан<s n="v"/><s n="iv"/></l>    <r>ойлон<s n="v"/><s n="tv"/></r></p></e> <!-- "think (on)" -->
+<e>       <p><l>ойландыр<s n="v"/><s n="tv"/></l> <r>ойлон<s n="v"/><s n="tv"/><s n="caus"/></r></p></e> <!-- "make think (on)" -->
 <e>       <p><l>ойна<s n="v"/><s n="iv"/></l>     <r>ойно<s n="v"/><s n="iv"/></r></p></e> <!-- "play" -->
 <e>       <p><l>ойна<s n="v"/><s n="tv"/></l>     <r>ойно<s n="v"/><s n="tv"/></r></p></e> <!-- "play" -->
 <e>       <p><l>орал<s n="v"/><s n="iv"/></l>     <r>кайт<s n="v"/><s n="iv"/></r></p></e> <!-- "return" -->
@@ -8288,6 +8300,7 @@
 <e>       <p><l>пайдалан<s n="v"/><s n="tv"/></l>  <r>пайдалан<s n="v"/><s n="tv"/></r></p></e> <!-- "use" -->
 <e>       <p><l>рамкала<s n="v"/><s n="tv"/></l>      <r>рамкала<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>реформала<s n="v"/><s n="tv"/></l>    <r>реформала<s n="v"/><s n="tv"/></r></p></e>
+<e>       <p><l>сай<s n="v"/><s n="tv"/></l>          <r>сай<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>сайла<s n="v"/><s n="tv"/></l>        <r>шайла<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>сайлат<s n="v"/><s n="tv"/></l>       <r>шайлат<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>сайра<s n="v"/><s n="iv"/></l>        <r>сайра<s n="v"/><s n="iv"/></r></p></e>
@@ -8373,6 +8386,7 @@
 <e>       <p><l>іш<s n="v"/><s n="tv"/></l>       <r>ич<s n="v"/><s n="tv"/></r></p></e> <!--"drink"  -->
 <e>       <p><l>іші<b/>пыс<s n="v"/><s n="iv"/></l>      <r>ичи<b/>быш<s n="v"/><s n="iv"/></r></p></e> <!--"be bored"  -->
 <e>       <p><l>қаз<s n="v"/><s n="tv"/></l>      <r>каз<s n="v"/><s n="tv"/></r></p></e> <!-- "dig" -->
+<e>       <p><l>қада<s n="v"/><s n="tv"/></l>     <r>сай<s n="v"/><s n="tv"/></r></p></e>
 <e>       <p><l>қайна<s n="v"/><s n="iv"/></l>    <r>кайна<s n="v"/><s n="iv"/></r></p></e> <!--"boil"  -->
 <e>       <p><l>қайт<s n="v"/><s n="iv"/></l>       <r>кайт<s n="v"/><s n="iv"/></r></p></e> <!--"return"  -->
 <e>       <p><l>қайт<s n="v"/><s n="tv"/></l>     <r>кант<s n="v"/><s n="tv"/></r></p></e> <!--"do how"  -->
@@ -8382,6 +8396,8 @@
 <e>       <p><l>қара<s n="v"/><s n="tv"/></l>     <r>кара<s n="v"/><s n="tv"/></r></p></e> <!--"look at"  -->
 <e>       <p><l>қат<s n="v"/><s n="iv"/></l>        <r>кат<s n="v"/><s n="iv"/></r></p></e> <!--"get hard"  -->
 <e>       <p><l>қатыс<s n="v"/><s n="iv"/></l>      <r>катыш<s n="v"/><s n="iv"/></r></p></e> <!--"participate"  -->
+<e>       <p><l>қина<s n="v"/><s n="tv"/></l>       <r>кыйна<s n="v"/><s n="tv"/></r></p></e> <!--"make suffer, give a hard time"  -->
+<e>       <p><l>қинал<s n="v"/><s n="iv"/></l>      <r>кыйна<s n="v"/><s n="tv"/><s n="caus"/></r></p></e> <!--"suffer, have a hard time"  -->
 <e>       <p><l>қой<s n="v"/><s n="tv"/></l>      <r>кой<s n="v"/><s n="tv"/></r></p></e> <!--"put"  -->
 <e>       <p><l>қолдан<s n="v"/><s n="tv"/></l>      <r>колдон<s n="v"/><s n="tv"/></r></p></e> <!-- "употреблять"-->
 <e>       <p><l>қон<s n="v"/><s n="iv"/></l>        <r>кон<s n="v"/><s n="iv"/></r></p></e> <!--"land; stay over"  -->
@@ -8393,12 +8409,15 @@
 <e>       <p><l>қыл<s n="v"/><s n="tv"/></l>         <r>кыл<s n="v"/><s n="tv"/></r></p></e> <!-- "do, make"-->
 <e>       <p><l>қыр<s n="v"/><s n="tv"/></l>       <r>кыр<s n="v"/><s n="tv"/></r></p></e> <!-- "scrape" -->
 <e>       <p><l>қырыл<s n="v"/><s n="iv"/></l>     <r>кыйра<s n="v"/><s n="iv"/></r></p></e> <!-- "be destroyed" -->
+<e>       <p><l>қысқар<s n="v"/><s n="iv"/></l>    <r>кыскар<s n="v"/><s n="iv"/></r></p></e> <!-- "shorten" -->
+<e>       <p><l>қысқарт<s n="v"/><s n="tv"/></l>   <r>кыскар<s n="v"/><s n="iv"/><s n="caus"/></r></p></e> <!-- "shorten" -->
 <e>       <p><l>қыста<s n="v"/><s n="iv"/></l>    <r>кышта<s n="v"/><s n="iv"/></r></p></e> <!--"to pass the winter"  -->
 <e>       <p><l>құла<s n="v"/><s n="iv"/></l>     <r>кула<s n="v"/><s n="iv"/></r></p></e> <!-- "fall" -->
 <e>       <p><l>құр<s n="v"/><s n="tv"/></l>      <r>кур<s n="v"/><s n="tv"/></r></p></e> <!-- "build" -->
 <e>       <p><l>құры<s n="v"/><s n="iv"/></l>     <r>куру<s n="v"/><s n="iv"/></r></p></e> <!-- "disappear" -->
 <e>       <p><l>үгітте<s n="v"/><s n="tv"/></l>      <r>үгүттө<s n="v"/><s n="tv"/></r></p></e> <!-- "to agitate"-->
 <e>       <p><l>үгіттен<s n="v"/><s n="iv"/></l>     <r>үгүттөн<s n="v"/><s n="iv"/></r></p></e> <!-- "be agitated"-->
+<e>       <p><l>үйрет<s n="v"/><s n="tv"/></l>       <r>үйрөт<s n="v"/><s n="tv"/></r></p></e> <!-- "teach"-->
 <e>       <p><l>үдет<s n="v"/><s n="iv"/></l>        <r>күчөт<s n="v"/><s n="iv"/></r></p></e> <!-- "наращивать" -->
 <e>       <p><l>үсі<s n="v"/><s n="iv"/></l>        <r>үшү<s n="v"/><s n="iv"/></r></p></e> <!--"to be cold"-->
 <e>       <p><l>үсік<b/>шал<s n="v"/><s n="iv"/></l> <r>үшүк<b/>ал<s n="v"/><s n="iv"/></r></p></e> <!--"to freeze"-->

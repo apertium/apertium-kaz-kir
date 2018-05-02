@@ -660,12 +660,15 @@
           <test>
               <and>
                   <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="ger"/></equal>
-                  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal>
+                  <!-- equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal -->
+                  <or>
+	                  <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
+                     <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal>
+                  </or>
               </and>
           </test>
           <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger_pres"/></let>
         </when>
-
 
         <when>
           <!-- ...бірақ белгісіз  заң  _бұзушылықтарға_ байланысты тергеу ісі жүріп жатқандықтан...
