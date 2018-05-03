@@ -327,6 +327,7 @@
 
     <def-attr n="a_adv">
       <attr-item tags="adv"/>
+      <attr-item tags="advl"/>
       <attr-item tags="adj.advl"/>
     </def-attr>
 
@@ -438,6 +439,9 @@
       <attr-item tags="ger_fut3"/>
       <attr-item tags="ger_impf"/>
       <attr-item tags="ger_abs"/>
+
+		<attr-item tags="gna_perf"/>
+		<attr-item tags="gna_impf"/>
     </def-attr>
            
     <def-attr n="a_deriv">
@@ -650,11 +654,17 @@
                independent" gerund in Tatar (it's actual meaning depends on the tense of the main
                verb, so it is a good choise atm -->
         </when>
+        <!-- when>
+          <test>
+             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_impf"/></equal--> <!-- This is probably massively broken -FMT -->
+          <!-- /test>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="gpr_past"/></let>
+        </when -->
         <when>
           <test>
-             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_impf"/></equal> <!-- This is probably massively broken -FMT -->
+             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gna_impf"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="gpr_past"/></let>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="gna_perf"/></let>
         </when>
         <when>
           <test>
@@ -694,6 +704,18 @@
               <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="coll.advl"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_numtype"/><lit-tag v="coll"/></let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_gpr-subst"/><lit-tag v="gpr_fut.subst"/></equal>
+			 	<!-- and >
+             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_fut"/></equal>
+             <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="subst"/></equal>
+				</and-->
+          </test>
+          <let><clip pos="1" side="sl" part="a_gpr-subst"/><lit-tag v="ger"/></let>
+          <!-- let><clip pos="1" side="tl" part="a_gpr-subst"/><lit v=""/></let -->
+          <!-- let><clip pos="1" side="sl" part="a_numtype"/><lit v=""/></let -->
         </when>
       </choose>
     </def-macro>
