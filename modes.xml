@@ -163,7 +163,7 @@
       <program name="lrx-proc -m">
         <file name="kaz-kir.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
+      <program name="apertium-transfer -b -t">
         <file name="apertium-kaz-kir.kaz-kir.t1x"/>
         <file name="kaz-kir.t1x.bin"/>
       </program>
