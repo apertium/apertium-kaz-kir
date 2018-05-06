@@ -713,7 +713,7 @@
              <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="subst"/></equal>
 				</and-->
           </test>
-          <let><clip pos="1" side="sl" part="a_gpr-subst"/><lit-tag v="ger"/></let>
+          <let><clip pos="1" side="tl" part="a_gpr-subst"/><lit-tag v="ger"/></let>
           <!-- let><clip pos="1" side="tl" part="a_gpr-subst"/><lit v=""/></let -->
           <!-- let><clip pos="1" side="sl" part="a_numtype"/><lit v=""/></let -->
         </when>
