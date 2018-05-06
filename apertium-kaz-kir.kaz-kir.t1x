@@ -325,6 +325,18 @@
       <attr-item tags="gpr_fut3.subst"/>
     </def-attr>
 
+    <def-attr n="a_gpr-subst_ger">
+      <attr-item tags="gpr_past.subst"/>
+      <attr-item tags="gpr_impf.subst"/>
+      <attr-item tags="gpr_pot.subst"/>
+      <attr-item tags="gpr_ppot.subst"/>
+      <attr-item tags="gpr_fut.subst"/>
+      <attr-item tags="gpr_fut2.subst"/>
+      <attr-item tags="gpr_fut2.subst"/>
+      <attr-item tags="gpr_fut3.subst"/>
+      <attr-item tags="ger"/>
+    </def-attr>
+
     <def-attr n="a_adv">
       <attr-item tags="adv"/>
       <attr-item tags="advl"/>
@@ -688,6 +700,19 @@
           </test>
           <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="ger"/></let>
         </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_gpr-subst"/><lit-tag v="gpr_fut.subst"/></equal>
+			 	<!-- and >
+             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_fut"/></equal>
+             <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="subst"/></equal>
+				</and-->
+          </test>
+          <let><clip pos="1" side="tl" part="a_gpr-subst_ger"/><lit-tag v="ger"/></let>
+          <!-- let><clip pos="1" side="tl" part="a_gpr-subst"/><lit v=""/></let -->
+          <!-- let><clip pos="1" side="sl" part="a_numtype"/><lit v=""/></let -->
+        </when>
+
       </choose>
     </def-macro>
 
@@ -704,18 +729,6 @@
               <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="coll.advl"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_numtype"/><lit-tag v="coll"/></let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_gpr-subst"/><lit-tag v="gpr_fut.subst"/></equal>
-			 	<!-- and >
-             <equal><clip pos="1" side="sl" part="a_nonfin"/><lit-tag v="gpr_fut"/></equal>
-             <equal><clip pos="1" side="sl" part="a_numtype"/><lit-tag v="subst"/></equal>
-				</and-->
-          </test>
-          <let><clip pos="1" side="tl" part="a_gpr-subst"/><lit-tag v="ger"/></let>
-          <!-- let><clip pos="1" side="tl" part="a_gpr-subst"/><lit v=""/></let -->
-          <!-- let><clip pos="1" side="sl" part="a_numtype"/><lit v=""/></let -->
         </when>
       </choose>
     </def-macro>
