@@ -6,6 +6,8 @@
 		<sdef n="n"/>
 		<sdef n="nom"/>
 		<sdef n="v"/>
+		<sdef n="tv"/>
+		<sdef n="iv"/>
 	</sdefs>
 	<pardefs>
 		<pardef n="adj">
@@ -29,6 +31,13 @@
 		<e lm="хабар ет" c="">
 			<p><l>хабар<s n="n"/><s n="nom"/><j/>ет<s n="v"/></l>
 			<r>хабар<b/>ет<s n="v"/></r></p><i><t/><j/></i>
+		</e>
+		<e lm="жұмыс істе" c="жумуш жаса">
+			<p>
+				<l>жұмыс<s n="n"/><s n="nom"/><j/>істе<s n="v"/><s n="tv"/></l>
+				<r>жұмыс<b/>істе<s n="v"/><s n="iv"/></r>
+			</p>
+			<i><t/><j/></i>
 		</e>
 	</section>
 </dictionary>

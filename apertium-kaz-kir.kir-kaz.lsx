@@ -7,6 +7,8 @@
 		<sdef n="nom"/>
 		<sdef n="dat"/>
 		<sdef n="v"/>
+		<sdef n="tv"/>
+		<sdef n="iv"/>
 	</sdefs>
 	<pardefs>
 		<pardef n="adj">
@@ -41,6 +43,12 @@
 			<p><l>сууга<b/>түш<s n="v"/></l>
 				<r>суу<s n="n"/><s n="dat"/><j/>түш<s n="v"/></r></p><i><t/><j/></i>
 		</e>
-
+		<e lm="жумуш жаса" c="жұмыс істе">
+			<p>
+				<l>жумуш<s n="n"/><s n="nom"/><j/>жаса<s n="v"/><s n="tv"/></l>
+				<r>жумуш<b/>жаса<s n="v"/><s n="iv"/></r>
+			</p>
+			<i><t/><j/></i>
+		</e>
 	</section>
 </dictionary>
