@@ -38,8 +38,12 @@
     </def-cat>
 
     <def-cat n="екеуі">
-      <cat-item lemma="екі" tags="num.coll.subst.px3sp.*"/>
+      <cat-item lemma="екеу" tags="num.coll.subst.px3sp.*"/>
     </def-cat>
+
+    <!-- def-cat n="num-coll-px">
+      <cat-item tags="num.coll.subst.px3sp.nom"/>
+    </def-cat -->
 
     <def-cat n="да-cnjcoo">
       <cat-item lemma="да" tags="cnjcoo"/>
@@ -129,6 +133,10 @@
     <def-cat n="pron">
       <cat-item tags="prn.*"/>
     </def-cat>
+
+	 <def-cat n="pron-pl-nom">
+      <cat-item tags="prn.*.pl.nom"/>
+	 </def-cat>
 
     <def-cat n="num-attr">
       <cat-item tags="num"/>
@@ -276,7 +284,7 @@
       <attr-item tags="prn.pers"/>
       <attr-item tags="prn.ref"/>
     </def-attr>
-
+    
     <def-attr n="a_pron">
       <attr-item tags="prn.pers"/>
       <attr-item tags="prn.ref"/>
@@ -1519,6 +1527,24 @@
 				</out>
 			</action>
 		</rule>
+
+		<!-- rule comment="олар екеуі → алар экөө">
+			<pattern>
+				<pattern-item n="pron-pl-nom"/>
+				<pattern-item n="num-coll-px"/>
+			</pattern>
+			<action>
+				<out>
+					<lu>
+						<clip pos="1" side="tl" part="whole"/>
+					</lu>
+					<b pos="1"/>
+					<lu>
+						<clip pos="2" side="tl" part=""/>
+					</lu>
+				</out>
+			</action>
+		</rule -->
 
 	</section-rules>
 

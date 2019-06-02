@@ -14,3 +14,4 @@ for i in *.kaz.txt; do
 	done
 done
 
+apertium-eval-translator-line -t $TMPDIR/story.kaz-kir.txt -r story.kaz-kir-postedited.2.txt
