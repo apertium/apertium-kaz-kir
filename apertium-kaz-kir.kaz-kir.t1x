@@ -498,6 +498,18 @@
 
   <section-def-macros>
 
+		<def-macro n="verb-inflection" npar="1">
+			<call-macro n="tense1">
+				<with-param pos="1"/>
+			</call-macro>
+			<call-macro n="nonfin1">
+				<with-param pos="1"/>
+			</call-macro>
+			<call-macro n="case1">
+				<with-param pos="1"/>
+			</call-macro>
+		</def-macro>
+
     <def-macro n="case1" npar="1">
       <let><var n="case"/><lit v=""/></let>
       <let><var n="postposition"/><lit v=""/></let>
@@ -1164,13 +1176,7 @@
         <pattern-item n="v"/>
       </pattern>
       <action>
-        <call-macro n="tense1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="nonfin1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="case1">
+        <call-macro n="verb-inflection">
           <with-param pos="1"/>
         </call-macro>
         <out>
