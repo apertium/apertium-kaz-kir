@@ -30,6 +30,7 @@
 
     <def-cat n="қуанышты">
       <cat-item lemma="қуанышты" tags="adj.subst.nom"/>
+      <cat-item lemma="қуанышты" tags="adj"/>
     </def-cat>
 
     <def-cat n="copula">
