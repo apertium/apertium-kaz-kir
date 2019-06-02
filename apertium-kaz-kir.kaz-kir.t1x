@@ -233,6 +233,10 @@
       <cat-item lemma="жаппай" tags="adj.*"/>
     </def-cat>
   
+	<def-cat n="post-qaray">
+		<cat-item lemma="қарай" tags="post"/>
+	</def-cat>
+
   </section-def-cats>
   
   <section-def-attrs>
@@ -365,7 +369,6 @@
     </def-attr>
 
     <def-attr n="a_genposs">
-      <attr-item tags="px"/>
 <!--      <attr-item tags="loc.attr"/> -->
       <attr-item tags="loc.subst"/>
       <attr-item tags="gen.subst"/>
@@ -1442,32 +1445,32 @@
       </action>
     </rule>
     
-    <rule>
-      <pattern>
-	<pattern-item n="pron"/>
-	<pattern-item n="мен-post_cnjcoo"/>
-	<pattern-item n="names"/>
-      </pattern>
-      <action>
-        <call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+менен -->
-          <with-param pos="3"/>
-        </call-macro>
-	<out>
-	  <lu>
-	    <clip pos="1" side="tl" part="whole"/>
-	  </lu>
-	  <b pos="1"/>
-	  <lu>
-	    <lit v="жана"/>
-	    <lit-tag v="cnjcoo"/>
-	  </lu>
-	  <b pos="1"/>
-	  <lu>
-	    <clip pos="3" side="tl" part="whole"/>
-	  </lu>
-	</out>
-      </action>
-    </rule>
+	<rule>
+		<pattern>
+			<pattern-item n="pron"/>
+			<pattern-item n="мен-post_cnjcoo"/>
+			<pattern-item n="names"/>
+		</pattern>
+		<action>
+			<call-macro n="case1">   <!-- translate kaz. <inst> with <nom>+менен -->
+				<with-param pos="3"/>
+			</call-macro>
+			<out>
+				<lu>
+					<clip pos="1" side="tl" part="whole"/>
+				</lu>
+				<b pos="1"/>
+				<lu>
+					<lit v="жана"/>
+					<lit-tag v="cnjcoo"/>
+				</lu>
+				<b pos="1"/>
+				<lu>
+					<clip pos="3" side="tl" part="whole"/>
+				</lu>
+			</out>
+		</action>
+	</rule>
 
     <!--rule comment="жаппай adj recognized as verb жап">
       <pattern>
@@ -1487,6 +1490,26 @@
       </action>
     </rule-->
 
-  </section-rules>
+		<rule>
+			<pattern>
+				<pattern-item n="subst-dat"/>
+				<pattern-item n="post-qaray"/>
+			</pattern>
+			<action>
+				<out>
+					<lu>
+						<clip pos="1" side="tl" part="lem"/>
+						<clip pos="1" side="tl" part="a_nom"/>
+						<lit-tag v="acc"/>
+					</lu>
+					<b pos="1"/>
+					<lu>
+						<clip pos="2" side="tl" part="whole"/>
+					</lu>
+				</out>
+			</action>
+		</rule>
+
+	</section-rules>
 
 </transfer>

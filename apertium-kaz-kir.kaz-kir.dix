@@ -187,14 +187,15 @@
 <e>       <p><l>бойынша<s n="post"/></l>          <r>боюнча<s n="post"/></r></p></e> <!-- "by, per, according to" -->
 <e>       <p><l>бұрын<s n="post"/></l>            <r>мурун<s n="post"/></r></p></e> 
 <e>       <p><l>гөрі<s n="post"/></l>             <r>көрү<s n="post"/></r></p></e> 
-<e>       <p><l>дейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>дейін<s n="post"/></l>            <r>чейин<s n="post"/></r></p></e> <!-- "before, until, up to" -->
 <e>       <p><l>жайында<s n="post"/></l>          <r>жөнүндө<s n="post"/></r></p></e> 
 <e>       <p><l>жөнінде<s n="post"/></l>          <r>жөнүндө<s n="post"/></r></p></e> 
 <e>       <p><l>жуық<s n="post"/></l>             <r>жакын<s n="post"/></r></p></e> 
 <e>       <p><l>іспетті<s n="post"/></l>          <r>сыяктуу<s n="post"/></r></p></e> 
-<e>       <p><l>кейін<s n="post"/></l>            <r>кийин<s n="post"/></r></p></e> <!-- "through" -->
+<e>       <p><l>кейін<s n="post"/></l>            <r>кийин<s n="post"/></r></p></e> <!-- "after" -->
 <e>       <p><l>қарағанда<s n="post"/></l>        <r>караганда<s n="post"/></r></p></e> 
 <e>       <p><l>қарай<s n="post"/></l>            <r>карата<s n="post"/></r></p></e> 
+<e>       <p><l>қарай<s n="post"/></l>            <r>карай<s n="post"/></r></p></e> <!-- "towards" -->
 <e>       <p><l>қарамағында<s n="post"/></l>      <r>карамагында<s n="post"/></r></p></e> 
 <e>       <p><l>қарамағындағы<s n="post"/></l>    <r>карамагындагы<s n="post"/></r></p></e> 
 <e>       <p><l>қарамай<s n="post"/></l>          <r>карабай<s n="post"/></r></p></e> <!--"regardless, despite"-->
@@ -2015,9 +2016,9 @@
 <e>       <p><l>орталық<s n="n"/></l>             <r>өзөк<s n="n"/></r></p></e> <!--""-->
 <e>       <p><l>орын<s n="n"/></l>                <r>орун<s n="n"/></r></p></e> <!--"place,seat"-->
 <e>       <p><l>орынбасар<s n="n"/></l>           <r>орун<b/>басар<s n="n"/></r></p></e> <!--"representative"-->
-<e r="RL"><p><l>орында<s n="v"/><s n="tv"/><s n="ger"/></l><r>орундоо<s n="n"/></r></p></e> <!--""-->
-<e>       <p><l>орындық<s n="n"/></l>             <r>орундук<s n="n"/></r></p></e> <!--"chair"-->
-<e r="RL"><p><l>орындық<s n="n"/></l>             <r>отургуч<s n="n"/></r></p></e> <!--"chair"-->
+<e r="RL"><p><l>орында<s n="v"/><s n="tv"/><s n="ger"/></l><r>орундоо<s n="n"/></r></p></e> <!--""--><!-- FIXME: CHECK -->
+<e r="RL"><p><l>орындық<s n="n"/></l>             <r>орундук<s n="n"/></r></p></e> <!--"chair"-->
+<e>       <p><l>орындық<s n="n"/></l>             <r>отургуч<s n="n"/></r></p></e> <!--"chair"-->
 <e>       <p><l>осақ<s n="n"/></l>                <r>борбор<s n="n"/></r></p></e> <!--"center"-->
 <e>       <p><l>от<s n="n"/></l>                  <r>от<s n="n"/></r></p></e> <!--"fire"-->
 <e>       <p><l>отан<s n="n"/></l>                <r>мекен<s n="n"/></r></p></e> <!--"homeland"-->

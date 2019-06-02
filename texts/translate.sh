@@ -9,7 +9,7 @@ for i in *.kaz.txt; do
 	cat $i | apertium -d ../ kaz-kir > $TMPDIR/$prefix.kaz-kir.txt
 	for j in $prefix.kir.*; do
 		echo -ne "$prefix\t$j\t";
-		apertium-eval-translator.pl -t $TMPDIR/$prefix.kaz-kir.txt -r $j | grep -e WER -e PER | head -2 | tr '\n' '\t' | sed 's/Word error rate//g' | sed 's/Position-independent word error rate//g'
+		apertium-eval-translator-line -t $TMPDIR/$prefix.kaz-kir.txt -r $j | grep -e WER -e PER | head -2 | tr '\n' '\t' | sed 's/Word error rate//g' | sed 's/Position-independent word error rate//g'
 		echo ""
 	done
 done
