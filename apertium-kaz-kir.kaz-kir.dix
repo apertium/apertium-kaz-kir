@@ -59,6 +59,7 @@
     <sdef n="TD" 	c="Not defined in kaz.lexc"/> 
     <sdef n="caus" 	c=""/> 
     <sdef n="coop" 	c=""/> 
+    <sdef n="coll" 	c="Collective (numbers)"/> 
     <sdef n="pass" 	c=""/> 
     <sdef n="p1" 	c=""/> 
     <sdef n="p2" 	c=""/> 
@@ -297,6 +298,7 @@
 <e>       <p><l>қанша<s n="num"/><s n="itg"/></l>             <r>канча<s n="num"/><s n="itg"/></r></p></e>
 <!-- e>       <p><l>біреу<s n="num"/><s n="coll"/></l>     <r>бирөө<s n="num"/><s n="coll"/></r></p></e -->
 <!-- e>       <p><l>екеу<s n="num"/><s n="coll"/></l>      <r>экөө<s n="num"/><s n="coll"/></r></p></e -->
+<e>       <p><l>екеу<s n="num"/><s n="coll"/></l>      <r>эки<s n="num"/><s n="coll"/></r></p></e>
 
 
 <!-- SECTION: Pronouns -->
