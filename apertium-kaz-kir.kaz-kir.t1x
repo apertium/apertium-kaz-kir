@@ -1241,9 +1241,10 @@
     </rule>
 
 
-    <rule comment="REGLA: NUM жылы/жылдары/күні">
+	<!-- maybe works for kaz-tat, but not kaz-kir! -->
+    <!-- rule comment="REGLA: NUM жылы/жылдары/күні" -->
                      <!--NUM елны/елларны/көнне-->
-      <pattern>
+      <!-- pattern>
         <pattern-item n="num-attr"/>
         <pattern-item n="day-or-year"/>
       </pattern>
@@ -1265,11 +1266,11 @@
             <clip pos="2" side="tl" part="a_nom"/>
             <clip pos="2" side="tl" part="a_nbr"/>
             <clip pos="2" side="tl" part="a_case"/>
-          </lu>
+          </lu-->
           <!--<var n="postposition"/>-->
-        </out>
+        <!-- /out>
       </action>
-    </rule>
+    </rule -->
 
     <rule comment="REGLA: NUM MONTH 
                           NUM MONTH">

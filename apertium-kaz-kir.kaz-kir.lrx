@@ -14,6 +14,15 @@
 		<match lemma="уақыт бол" tags="v.iv.*"><select lemma="маал кел" tags="v.iv.*"/></match>
 	</rule>
 
+	<rule comment="can also translate to киши">
+		<match lemma="адам" tags="n.*"><select lemma="адам" tags="n.*"/></match>
+	</rule>
+
+	<!-- rule>
+		<match tags="*.dat"/>
+		<match lemma="қайт" tags="v.*"><select lemma="кайт" tags="v.*"/></match>
+	</rule -->
+
 	<rule> 
 		<match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
 	</rule>
