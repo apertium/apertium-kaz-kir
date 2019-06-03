@@ -1,8 +1,20 @@
 <rules>
 
-	<rule> 
+	<rule>
 		<match lemma="уақыт" tags="n.*"><select lemma="убакыт" tags="n.*"/></match>
 	</rule>
+	<rule>
+		<match lemma="уақыт бол" tags="v.iv.*"><select lemma="убакыт кел" tags="v.iv.*"/></match>
+	</rule>
+	<rule comment="it's time to">
+		<or>
+			<match tags="v.*.gpr_impf"/>
+			<match tags="v.*.dat"/><!-- dative gerund forms -->
+		</or>
+		<match lemma="уақыт бол" tags="v.iv.*"><select lemma="маал кел" tags="v.iv.*"/></match>
+		<match lemma="бол" tags="v.iv.*"><select lemma="кел" tags="v.iv.*"/></match>
+	</rule>
+
 	<rule> 
 		<match lemma="анық" tags="adj"><select lemma="анык" tags="adj"/></match>
 	</rule>
