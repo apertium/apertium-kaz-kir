@@ -395,6 +395,7 @@
       <attr-item tags="abl"/>
       <attr-item tags="loc"/>
       <attr-item tags="ins"/>
+      <attr-item tags="equ"/>
     </def-attr>
 
     <def-attr n="a_case_noloc">
@@ -404,6 +405,8 @@
       <attr-item tags="gen"/>
       <attr-item tags="abl"/>
       <attr-item tags="ins"/>
+      <attr-item tags="equ"/>
+
     </def-attr>
 
     <def-attr n="a_case">
@@ -416,6 +419,7 @@
       <attr-item tags="loc"/>
       <attr-item tags="loc.attr"/>
       <attr-item tags="ins"/>
+      <attr-item tags="equ"/>
     </def-attr>
 
     <def-attr n="a_trans">
