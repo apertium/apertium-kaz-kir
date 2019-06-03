@@ -12,7 +12,6 @@
 			<match tags="v.*.dat"/><!-- dative gerund forms -->
 		</or>
 		<match lemma="уақыт бол" tags="v.iv.*"><select lemma="маал кел" tags="v.iv.*"/></match>
-		<match lemma="бол" tags="v.iv.*"><select lemma="кел" tags="v.iv.*"/></match>
 	</rule>
 
 	<rule> 
