@@ -89,5 +89,13 @@
 			</p>
 			<i><t/><j/></i>
 		</e>
+		<e lm="гана эмес" c="түгіл">
+			<p>
+				<l>гана<s n="postadv"/><j/>эмес<s n="postadv"/></l>
+				<r>гана<b/>эмес<s n="cnjcoo"/></r>
+			</p>
+			<i><t/><j/></i>
+		</e>
+
 	</section>
 </dictionary>
