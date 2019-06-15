@@ -9,6 +9,8 @@
 		<sdef n="v"/>
 		<sdef n="tv"/>
 		<sdef n="iv"/>
+		<sdef n="postadv"/>
+		<sdef n="cnjcoo"/>
 	</sdefs>
 	<pardefs>
 		<pardef n="adj">
