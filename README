@@ -1,93 +1,92 @@
-Kazakh and Kyrgyz
-
-                            apertium-kaz-kir
+Kazakh and Kyrgyz: `apertium-kaz-kir`
 ===============================================================================
 
-This is an Apertium language pair for translating between Kazakh and 
+This is an Apertium language pair for translating between Kazakh and
 Kyrgyz. What you can use this language package for:
 
 * Translating between Kazakh and Kyrgyz
 * Morphological analysis of Kazakh and Kyrgyz
 * Part-of-speech tagging of Kazakh and Kyrgyz
 
-For information on the latter two points, see subheading "For more 
-information" below
+For information on the latter two points, see subheading "For more
+information" below.
 
 Requirements
-===============================================================================
+-------------------------------------------------------------------------------
 
 You will need the following software installed:
 
-* lttoolbox (>= 3.1.2)
-* apertium (>= 3.1.1)
-* vislcg3 (>= 0.9.7.5129)
+* lttoolbox (>= 3.3.0)
+* apertium (>= 3.3.0)
+* vislcg3 (>= 0.9.9.10297)
+* hfst (>= 3.8.2)
+* apertium-kaz
+* apertium-kir
 
-If this does not make any sense, we recommend you look at: www.apertium.org
+If this does not make any sense, we recommend you look at: www.apertium.org.
 
 Compiling
-===============================================================================
+-------------------------------------------------------------------------------
 
 Given the requirements being installed, you should be able to just run:
 
+```console
 $ ./configure
 $ make
 # make install
+```
 
-You can use ./autogen.sh instead of ./configure you're compiling from
-SVN. If you're using a --prefix to ./configure, make sure it's the
-same one you used to install apertium itself.
+You can use `./autogen.sh` instead of `./configure` in case you're compiling
+from source. If you installed any prerequisite language packages using a
+`--prefix` with `./configure`, make sure to use the same `--prefix` when running
+`./configure` here.
 
 Testing
-===============================================================================
+-------------------------------------------------------------------------------
 
 If you are in the source directory after running make, the following
 commands should work:
 
-$  echo "Қазақшадан татаршаға аударам." | apertium -d . kaz-kir
-Казакъчадан татарчага аударам.
+```console
+$ echo "TODO test sentence 1" | apertium -d . kaz-kir
+TODO test translated sentence 1
 
-After installing somewhere in $PATH, you should be able to do eg.
+$ echo "TODO test sentence 2" | apertium -d . kir-kaz
+TODO test translated sentence 2
+```
 
-$  echo "Қазақшадан татаршаға аударам." | apertium kaz-kir
-Казакъчадан татарчага аударам.
+After installing somewhere in `$PATH`, you should be able to do e.g.
 
-The following command runs tests which are on the Apertium wiki page:
-
-$ ./regression-tests.sh 
+```console
+$ echo "TODO test sentence 1" | apertium kaz-kir
+TODO test translated sentence 1
+```
 
 Files and data
-===============================================================================
+-------------------------------------------------------------------------------
 
-* apertium-kaz-kir.kaz.lexc            - Monolingual dictionary for Kazakh
-* apertium-kaz-kir.kaz-kir.rlx         - Constraint Grammar for Kazakh
-* apertium-kaz-kir.kaz-kir.lrx         - Lexical selection rules for translating into Kyrgyz
-* apertium-kaz-kir.kaz-kir.t1x         - Transfer rules for translating into Kyrgyz (first pass)
-* apertium-kaz-kir.kaz-kir.t2x         - Transfer rules for  translating into Kyrgyz (second pass)
-
-* apertium-kaz-kir.kaz-kir.dix         - Bilingual dictionary 
-
-* apertium-kaz-kir.kir.lexc            - Monolingual dictionary for Kyrgyz
-* apertium-kaz-kir.kir-kaz.rlx         - Constraint Grammar for Kyrgyz
-* apertium-kaz-kir.kir-kaz.lrx         - Lexical selection rules for translating into Kazakh
-* apertium-kaz-kir.kir-kaz.t1x         - Transfer rules for translating into Kazakh (first pass)
-* apertium-kaz-kir.kir-kaz.t2x         - Transfer rules for  translating into Kazakh (second pass)
-
-* modes.xml                            - Translation modes
+* [`apertium-kaz-kir.kaz-kir.dix`](apertium-kaz-kir.kaz-kir.dix) - Bilingual dictionary
+* [`apertium-kaz-kir.kaz-kir.rtx`](apertium-kaz-kir.kaz-kir.rtx) - Structural transfer rules for translating into Kyrgyz
+* [`apertium-kaz-kir.kir-kaz.rtx`](apertium-kaz-kir.kir-kaz.rtx) - Structural transfer rules for translating into Kazakh
+* [`apertium-kaz-kir.kaz-kir.lrx`](apertium-kaz-kir.kaz-kir.lrx) - Lexical selection rules for translating into Kyrgyz
+* [`apertium-kaz-kir.kir-kaz.lrx`](apertium-kaz-kir.kir-kaz.lrx) - Lexical selection rules for translating into Kazakh
+* [`apertium-kaz-kir.kaz-kir.lsx`](apertium-kaz-kir.kaz-kir.lsx) - Discontiguous multiword rules for translating into Kyrgyz
+* [`apertium-kaz-kir.kir-kaz.lsx`](apertium-kaz-kir.kir-kaz.lsx) - Discontiguous multiword rules for translating into Kazakh
+* [`modes.xml`](modes.xml) - Translation modes
 
 For more information
-===============================================================================
+-------------------------------------------------------------------------------
 
 * http://wiki.apertium.org/wiki/Installation
-* http://wiki.apertium.org/wiki/Kazakh_and_Kyrgyz
+* http://wiki.apertium.org/wiki/apertium-kaz-kir
 * http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
-* http://wiki.apertium.org/wiki/Constraint_Grammar
 
 Help and support
-===============================================================================
+-------------------------------------------------------------------------------
 
 If you need help using this language pair or data, you can contact:
 
-* Mailing list: apertium-turkic@lists.sourceforge.net
-* IRC: #apertium on irc.freenode.net
+* Mailing list: apertium-stuff@lists.sourceforge.net
+* IRC: `#apertium` on irc.freenode.net (irc://irc.freenode.net/#apertium)
 
-See also the file AUTHORS included in this distribution.
+See also the file [`AUTHORS`](AUTHORS), included in this distribution.
