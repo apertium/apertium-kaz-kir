@@ -8,7 +8,6 @@
       <program name="lt-proc -w">
         <file name="kaz-kir.automorf.bin"/>
       </program>
-
       <program name="cg-proc -w -1 -n">
         <file name="kaz-kir.rlx.bin"/>
       </program>
@@ -22,18 +21,15 @@
       <program name="lrx-proc -m">
         <file name="kaz-kir.autolex.bin"/>
       </program>
-
-
       <program name="rtx-proc">
         <file name="kaz-kir.rtx.bin"/>
       </program>
       <program name="lsx-proc" debug-suff="revautoseq">
-        <file name="kaz-kir.revautoseq.bin"/>
+        <file name="kir-kaz.revautoseq.bin"/>
       </program>
       <program name="lt-proc $1">
         <file name="kaz-kir.autogen.bin"/>
       </program>
-
       <program name="lt-proc -p">
         <file name="kaz-kir.autopgen.bin"/>
       </program>
@@ -47,11 +43,9 @@
       <program name="lt-proc -w">
         <file name="kir-kaz.automorf.bin"/>
       </program>
-
       <program name="cg-proc -w -1 -n">
         <file name="kir-kaz.rlx.bin"/>
       </program>
-
       <program name="lsx-proc">
         <file name="kir-kaz.autoseq.bin"/>
       </program>
@@ -62,18 +56,15 @@
       <program name="lrx-proc -m">
         <file name="kir-kaz.autolex.bin"/>
       </program>
-
-
       <program name="rtx-proc">
         <file name="kir-kaz.rtx.bin"/>
       </program>
       <program name="lsx-proc" debug-suff="revautoseq">
-        <file name="kir-kaz.revautoseq.bin"/>
+        <file name="kaz-kir.revautoseq.bin"/>
       </program>
       <program name="lt-proc $1">
         <file name="kir-kaz.autogen.bin"/>
       </program>
-
       <program name="lt-proc -p">
         <file name="kir-kaz.autopgen.bin"/>
       </program>
