@@ -2,27 +2,75 @@
 !! ATTRIBUTE CATEGORIES
 !!!!!!!!!!!!!!!
 
-number = (ND sg) sg pl sp ND;
+n_number = (ND "") sg pl sp ND;
+v_number = (ND sg) sg pl sp ND;
 gender = (GD m) m f mf GD;
-det_type = def ind dem itg;
-tense = pres past fut ifi pri fti;
+
+det_type = def ind dem itg qnt;
+prn_type = dem ind pers ;
+
+tense = pres past fut ifi fut aor ;
+vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot;
+vadv = gna_perf gna_impf ;
+ger = ger_past ger_fut ;
+inf = prc_perf prc_impf prc_vol prc_cond prc_fplan prc_plan ;
+nonfin = [vadj] [vadv] [ger] [inf] ;
+fin_nonfin = [tense] [vadj] [vadv] [ger] [inf] ;
+
+polarity = neg ;
+
+possession = px1sg px1pl px2sg px2pl px3sp ;
+
+case = nom acc gen dat loc abl ins ;
+
+n_person = (PD p3) p1 p2 p3 PD ;
+v_person = (PD "") p1 p2 p3 PD ;
+formality = frm ;
+
+transitivity = (TD iv) tv iv ;
+voice = caus pass coop ;
+voice_a = [voice] ;
+voice_b = [voice] ;
+voice_c = [voice] ;
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-n: _.gender.number;
-adj: _.gender.number;
+n: _.n_number.possession.case ;
 det_default: _.det_type;
-det_def: _.det_type.number;
+det_def: _.det_type.n_number;
 
-NP: _.number;
+adj: _ ;
+AP: _ ;
+aP: _ ;
+
+adv: _ ;
+
+vaux_fin: _.tense.polarity.v_person.formality.v_number ;
+vaux_vadj: _.polarity.vadj ;  ! FIXME: allow for subst
+vaux_inf: _.polarity.inf ;
+
+v_fin: _.transitivity.tense.polarity.v_person.formality.v_number ;
+v_vadj: _.transitivity.polarity.vadj ;  ! FIXME: allow for subst
+v_vadv: _.transitivity.polarity.vadv ;
+v_inf: _.transitivity.polarity.inf ;
+v_ger: _.transitivity.polarity.ger.n_number.possession.formality.case ;
+
+
+VP: _.transitivity.voice_a.voice_b.voice_c.tense.polarity.v_person.formality.v_number ;
+
+NP: _.n_number.n_person.case ;
+nP: _.n_number.n_person.case ;
+
+prn_pers: _.prn_type.v_person.formality.n_number.case ;
+prn_dem: _.prn_type.n_number.case ;
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
 !!!!!!!!!!!!!!!
 
-tense > tense : ifi past, pri pres, fti fut;
+tense > tense : pres aor ;  ! ifi past, pri pres, fti fut;
 
 !!!!!!!!!!!!!!!
 !! MACROS
@@ -33,11 +81,60 @@ det: (if (1.det_type = def or 1.det_type = ind)
       else
          1(det_default));
 
+prn: (if (1.prn_type = pers)
+			1(prn_pers)
+		else
+			1(prn_dem)
+		);
+
+vaux: (if (1.fin_nonfin in tense)
+			1(vaux_fin)
+		elseif (1.fin_nonfin in vadj)
+			1(vaux_vadj)
+		elseif (1.fin_nonfin in inf)
+			1(vaux_inf)
+		);
+
+v: (if (1.fin_nonfin in tense)
+			1(v_fin)
+		elseif (1.fin_nonfin in vadj)
+			1(v_vadj)
+		elseif (1.fin_nonfin in vadv)
+			1(v_vadv)
+		elseif (1.fin_nonfin in inf)
+			1(v_inf)
+		elseif (1.fin_nonfin in ger)
+			1(v_ger)
+		);
+
+
+
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
-NP -> n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
+NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
+		%nP { 1 } |
+		AP %nP { 1 _1 2 } |
+		det %nP { 1 _1 2 } |
+		det AP %nP { 1 _1 2 _2 3 } |
+		%prn { 1 } ;
+
+nP ->
+		%n { 1 } |
+		n %n { 1 _1 2 } ;
+
+aP ->
+		adj { 1 } |
+		adv adj { 1 _1 2 } ;
+
+AP ->
+		aP { 1 } ;
+
+VP ->
+		%vaux { 1 } |
+		1: %v { 1 } |
+		2: %v ?(1.vadj/sl=gpr_impf) [$fin_nonfin=prc_impf] { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } ;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Apertium-recursive
