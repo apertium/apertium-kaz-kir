@@ -47,7 +47,7 @@ aP: _ ;
 
 adv: _ ;
 
-vaux_fin: _.tense.polarity.v_person.formality.v_number ;
+vaux_fin: _.polarity.tense.v_person.formality.v_number ;
 vaux_vadj: _.polarity.vadj ;  ! FIXME: allow for subst
 vaux_inf: _.polarity.inf ;
 
