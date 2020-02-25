@@ -37,9 +37,6 @@ voice_c = [voice] ;
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-n: _.n_number.possession.case ;
-det_default: _.det_type;
-det_def: _.det_type.n_number;
 
 adj: _ ;
 AP: _ ;
@@ -51,7 +48,7 @@ vaux_fin: _.polarity.tense.v_person.formality.v_number ;
 vaux_vadj: _.polarity.vadj ;  ! FIXME: allow for subst
 vaux_inf: _.polarity.inf ;
 
-v_fin: _.transitivity.tense.polarity.v_person.formality.v_number ;
+v_fin: _.transitivity.polarity.tense.v_person.formality.v_number ;
 v_vadj: _.transitivity.polarity.vadj ;  ! FIXME: allow for subst
 v_vadv: _.transitivity.polarity.vadv ;
 v_inf: _.transitivity.polarity.fin_nonfin ;
@@ -64,11 +61,17 @@ cop_fin: _.tense.polarity.v_person.formality.v_number ;
 vP: _.transitivity.voice_a.voice_b.voice_c.tense.polarity.v_person.formality.v_number ;
 VP: _.transitivity.voice_a.voice_b.voice_c.tense.polarity.v_person.formality.v_number ;
 
-NP: _.n_number.n_person.case ;
-nP: _.n_number.n_person.case ;
+n: _.n_number.possession.case ;
+nP: _.n_number.possession.case ;
+NP: _.n_number.possession.case ;
 
 prn_pers: _.prn_type.v_person.formality.n_number.case ;
 prn_dem: _.prn_type.n_number.case ;
+
+det_default: _.det_type;
+det_def: _.det_type.n_number;
+
+PP: _ ;
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -122,17 +125,20 @@ cop: (if (1.fin_nonfin in tense)
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
+PP ->
+		NP ?(1.case=ins) { 1[case=nom] _ менен@post } ;
+
 NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
-		%nP { 1 } |
+		%nP { %1 } |
 		AP %nP { 1 _1 2 } |
 		det %nP { 1 _1 2 } |
 		det AP %nP { 1 _1 2 _2 3 } |
-		%prn { 1 } ;
+		%prn { 1 } |
+		NP.gen %NP.px3sp { 1 2 } ;
 
 nP ->
-		1: %n { 1 } |
-		2: %n ?(1.case/sl=ins) { 1[case=nom] _ менен@post } |
-		n %n.px3sp { 1 _1 2 } ;
+		%n { 1 } |
+		n %n.px3sp ?(1.possession = "") { 1 _1 2 } ;
 
 aP ->
 		adj { 1 } |
