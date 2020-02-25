@@ -54,7 +54,7 @@ vaux_inf: _.polarity.inf ;
 v_fin: _.transitivity.tense.polarity.v_person.formality.v_number ;
 v_vadj: _.transitivity.polarity.vadj ;  ! FIXME: allow for subst
 v_vadv: _.transitivity.polarity.vadv ;
-v_inf: _.transitivity.polarity.inf ;
+v_inf: _.transitivity.polarity.fin_nonfin ;
 v_ger: _.transitivity.polarity.ger.n_number.possession.formality.case ;
 
 
@@ -134,7 +134,7 @@ AP ->
 VP ->
 		%vaux { 1 } |
 		1: %v { 1 } |
-		2: %v ?(1.vadj/sl=gpr_impf) [$fin_nonfin=prc_impf] { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } ;
+		2: %v ?(1.vadj/sl=gpr_impf) { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } ;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Apertium-recursive
