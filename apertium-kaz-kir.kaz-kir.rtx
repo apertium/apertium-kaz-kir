@@ -7,7 +7,9 @@ v_number = (ND sg) sg pl sp ND;
 gender = (GD m) m f mf GD;
 
 det_type = def ind dem itg qnt;
-prn_type = dem ind pers ;
+prn_type = dem ind pers itg ;
+
+v_type = iv tv vaux cop ;
 
 tense = pres past fut ifi fut aor ;
 vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot;
@@ -56,22 +58,25 @@ v_inf_vol: _.transitivity.polarity.fin_nonfin.v_person.formality.v_number ;
 v_ger: _.transitivity.polarity.ger.n_number.possession.formality.case ;
 
 cop_fin: _.tense.polarity.v_person.formality.v_number ;
+cop_ger: _.ger.n_number.possession.formality.case ;
 
 
-vP: _.transitivity.voice_a.voice_b.voice_c.tense.polarity.v_person.formality.v_number ;
-VP: _.transitivity.voice_a.voice_b.voice_c.tense.polarity.v_person.formality.v_number ;
+vP: _.v_type.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
+VP: _.transitivity.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
 
 n: _.n_number.possession.case ;
 nP: _.n_number.possession.case ;
 NP: _.n_number.possession.case ;
 
 prn_pers: _.prn_type.v_person.formality.n_number.case ;
-prn_dem: _.prn_type.n_number.case ;
+prn_dem: _.prn_type.n_number.case ;  ! also for itg
 
 det_default: _.det_type;
 det_def: _.det_type.n_number;
 
 PP: _ ;
+
+S: _ ;
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -91,7 +96,7 @@ det: (if (1.det_type = def or 1.det_type = ind)
 prn: (if (1.prn_type = pers)
 			1(prn_pers)
 		else
-			1(prn_dem)
+			1(prn_dem) ! also for itg
 		);
 
 vaux: (if (1.fin_nonfin in tense)
@@ -118,6 +123,8 @@ v: (if (1.fin_nonfin in tense)
 
 cop: (if (1.fin_nonfin in tense)
 			1(cop_fin)
+		elseif (1.fin_nonfin in ger)
+			1(cop_ger)
 		);
 
 
@@ -151,12 +158,16 @@ vP ->
 		%vaux { 1 } |
 		1: %v { 1 } |
 		2: %v ?(1.vadj/sl=gpr_impf) { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } |
-		%cop { 1 } ;
+		%cop { 1 } |
+		vP.inf %vP ?(2.v_type=vaux) [$lemh=1.lemh] { 1 _1 2 } ;
 
 VP ->
 		NP %э@vP { 1 + 2 } |
-		AP %э@vP { 1 + 2 } ;
+		AP %э@vP { 1 + 2 } |
+		NP.acc %vP { 1 _1 2 } ;
 
+S ->
+		NP VP { 1 _1 2 } ;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Apertium-recursive
