@@ -137,7 +137,7 @@ NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
 		NP.gen %NP.px3sp { 1 2 } ;
 
 nP ->
-		%n { 1 } |
+		%n { %1 } |
 		n %n.px3sp ?(1.possession = "") { 1 _1 2 } ;
 
 aP ->
