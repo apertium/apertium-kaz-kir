@@ -46,22 +46,33 @@ aP: _ ;
 
 adv: _ ;
 
-vaux_fin: _.polarity.tense.v_person.formality.v_number ;
-vaux_vadj: _.polarity.vadj ;  ! FIXME: allow for subst
-vaux_inf: _.polarity.inf ;
+vaux_fin: _.polarity.fin_nonfin.v_person.formality.v_number ;
+vaux_vadj: _.polarity.fin_nonfin ;  ! FIXME: allow for subst
+vaux_inf: _.polarity.fin_nonfin ;
+v_inf_vol: _.polarity.fin_nonfin.v_person.formality.v_number ;
+v_vadv: _.polarity.fin_nonfin ;
+v_ger: _.polarity.fin_nonfin.n_number.possession.formality.case ;
 
-v_fin: _.transitivity.polarity.tense.v_person.formality.v_number ;
-v_vadj: _.transitivity.polarity.vadj ;  ! FIXME: allow for subst
-v_vadv: _.transitivity.polarity.vadv ;
-v_inf: _.transitivity.polarity.fin_nonfin ;
-v_inf_vol: _.transitivity.polarity.fin_nonfin.v_person.formality.v_number ;
-v_ger: _.transitivity.polarity.ger.n_number.possession.formality.case ;
+
+v_fin: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+v_vadj: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;  ! FIXME: allow for subst
+v_vadv: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+v_inf: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+v_inf_vol: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+v_ger: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.n_number.possession.formality.case ;
+
+!vP: _.v_type.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
+vP_fin: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+vP_vadj: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;  ! FIXME: allow for subst
+vP_vadv: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+vP_inf: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+vP_inf_vol: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+vP_ger: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.n_number.possession.formality.case ;
 
 cop_fin: _.tense.polarity.v_person.formality.v_number ;
 cop_ger: _.ger.n_number.possession.formality.case ;
 
 
-vP: _.v_type.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
 VP: _.transitivity.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
 
 n: _.n_number.possession.case ;
@@ -103,8 +114,14 @@ vaux: (if (1.fin_nonfin in tense)
 			1(vaux_fin)
 		elseif (1.fin_nonfin in vadj)
 			1(vaux_vadj)
+		elseif (1.fin_nonfin in vadv)
+			1(vaux_vadv)
+		elseif ((1.fin_nonfin in inf) and (1.fin_nonfin = prc_vol))
+			1(vaux_inf_vol)
 		elseif (1.fin_nonfin in inf)
 			1(vaux_inf)
+		elseif (1.fin_nonfin in ger)
+			1(vaux_ger)
 		);
 
 v: (if (1.fin_nonfin in tense)
@@ -121,6 +138,20 @@ v: (if (1.fin_nonfin in tense)
 			1(v_ger)
 		);
 
+vP: (if (1.fin_nonfin in tense)
+			1(vP_fin)
+		elseif (1.fin_nonfin in vadj)
+			1(vP_vadj)
+		elseif (1.fin_nonfin in vadv)
+			1(vP_vadv)
+		elseif ((1.fin_nonfin in inf) and (1.fin_nonfin = prc_vol))
+			1(vP_inf_vol)
+		elseif (1.fin_nonfin in inf)
+			1(vP_inf)
+		elseif (1.fin_nonfin in ger)
+			1(vP_ger)
+		);
+
 cop: (if (1.fin_nonfin in tense)
 			1(cop_fin)
 		elseif (1.fin_nonfin in ger)
@@ -133,7 +164,7 @@ cop: (if (1.fin_nonfin in tense)
 !!!!!!!!!!!!!!!
 
 PP ->
-		NP ?(1.case=ins) { 1[case=nom] _ менен@post } ;
+		NP ?(1.case=ins) [$lemh=менен] { 1[case=nom] _ менен@post } ;
 
 NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
 		%nP { %1 } |
@@ -145,7 +176,7 @@ NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
 
 nP ->
 		%n { %1 } |
-		n %n.px3sp ?(1.possession = "") { 1 _1 2 } ;
+		n %n ?((1.possession = "") and (2.possession = px3sp)) { 1 _1 2 } ;
 
 aP ->
 		adj { 1 } |
@@ -159,12 +190,14 @@ vP ->
 		1: %v { 1 } |
 		2: %v ?(1.vadj/sl=gpr_impf) { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } |
 		%cop { 1 } |
-		vP.inf %vP ?(2.v_type=vaux) [$lemh=1.lemh] { 1 _1 2 } ;
+		vP %vP ?((1.fin_nonfin in inf) and (2.v_type=vaux)) [$lemh=1.lemh] { 1 _1 2 } ;
 
 VP ->
 		NP %э@vP { 1 + 2 } |
 		AP %э@vP { 1 + 2 } |
-		NP.acc %vP { 1 _1 2 } ;
+		NP.acc %vP { 1 _1 2 } |
+		PP %vP { 1 _1 2 } |
+		PP NP %vP { 1 _1 2 _2 3 } ;
 
 S ->
 		NP VP { 1 _1 2 } ;
