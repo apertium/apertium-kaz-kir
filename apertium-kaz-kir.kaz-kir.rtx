@@ -49,9 +49,9 @@ adv: _ ;
 vaux_fin: _.polarity.fin_nonfin.v_person.formality.v_number ;
 vaux_vadj: _.polarity.fin_nonfin ;  ! FIXME: allow for subst
 vaux_inf: _.polarity.fin_nonfin ;
-v_inf_vol: _.polarity.fin_nonfin.v_person.formality.v_number ;
-v_vadv: _.polarity.fin_nonfin ;
-v_ger: _.polarity.fin_nonfin.n_number.possession.formality.case ;
+vaux_inf_vol: _.polarity.fin_nonfin.v_person.formality.v_number ;
+vaux_vadv: _.polarity.fin_nonfin ;
+vaux_ger: _.polarity.fin_nonfin.n_number.possession.formality.case ;
 
 
 v_fin: _.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
@@ -186,11 +186,12 @@ AP ->
 		aP { 1 } ;
 
 vP ->
-		%vaux { 1 } |
-		1: %v { 1 } |
-		2: %v ?(1.vadj/sl=gpr_impf) { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } |
-		%cop { 1 } |
-		vP %vP ?((1.fin_nonfin in inf) and (2.v_type=vaux)) [$lemh=1.lemh] { 1 _1 2 } ;
+		! all [$fin_nonfin=1.fin_nonfin] can be removed when apertium-recursive supports % checking for macros
+		%vaux [$fin_nonfin=1.fin_nonfin] { 1 } |
+		1: %v [$fin_nonfin=1.fin_nonfin] { 1 } |
+		2: %v ?(1.vadj/sl=gpr_impf) [$fin_nonfin=1.fin_nonfin] { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } |
+		%cop [$fin_nonfin=1.fin_nonfin] { 1 } |
+		vP %vP ?((1.fin_nonfin in inf) and (2.v_type=vaux)) [$lemh=1.lemh,$fin_nonfin=2.fin_nonfin] { 1 _1 2 } ;
 
 VP ->
 		NP %э@vP { 1 + 2 } |
