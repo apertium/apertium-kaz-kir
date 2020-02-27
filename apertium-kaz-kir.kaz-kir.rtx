@@ -164,7 +164,7 @@ cop: (if (1.fin_nonfin in tense)
 !!!!!!!!!!!!!!!
 
 PP ->
-		NP ?(1.case=ins) [$lemh=менен] { 1[case=nom] _ менен@post } ;
+		20: NP ?(1.case=ins) [$lemh=менен] { 1[case=nom] _ менен@post } ;
 
 NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
 		%nP { %1 } |
