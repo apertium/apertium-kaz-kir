@@ -31,9 +31,11 @@ formality = frm ;
 
 transitivity = (TD iv) tv iv ;
 voice = caus pass coop ;
-voice_a = [voice] ;
-voice_b = [voice] ;
-voice_c = [voice] ;
+voice_a = coop ;
+voice_b = caus ;
+voice_c = pass ;
+! caus.pass is loads more common than pass.caus
+! technically caus.caus is also possible
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
