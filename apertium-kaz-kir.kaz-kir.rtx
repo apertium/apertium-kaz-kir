@@ -48,31 +48,31 @@ aP: _ ;
 
 adv: _ ;
 
-vaux_fin: lemh.<vaux>.polarity.fin_nonfin.v_person.formality.v_number ;
-vaux_vadj: lemh.<vaux>.polarity.fin_nonfin ;  ! FIXME: allow for subst
-vaux_inf: lemh.<vaux>.polarity.fin_nonfin ;
-vaux_inf_vol: lemh.<vaux>.polarity.fin_nonfin.v_person.formality.v_number ;
-vaux_vadv: lemh.<vaux>.polarity.fin_nonfin ;
-vaux_ger: lemh.<vaux>.polarity.fin_nonfin.n_number.possession.formality.case ;
+vaux_fin: <vaux>.polarity.fin_nonfin.v_person.formality.v_number ;
+vaux_vadj: <vaux>.polarity.fin_nonfin ;  ! FIXME: allow for subst
+vaux_inf: <vaux>.polarity.fin_nonfin ;
+vaux_inf_vol: <vaux>.polarity.fin_nonfin.v_person.formality.v_number ;
+vaux_vadv: <vaux>.polarity.fin_nonfin ;
+vaux_ger: <vaux>.polarity.fin_nonfin.n_number.possession.formality.case ;
 
 
-v_fin: lemh.<v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
-v_vadj: lemh.<v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;  ! FIXME: allow for subst
-v_vadv: lemh.<v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
-v_inf: lemh.<v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
-v_inf_vol: lemh.<v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
-v_ger: lemh.<v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.n_number.possession.formality.case ;
+v_fin: <v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+v_vadj: <v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;  ! FIXME: allow for subst
+v_vadv: <v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+v_inf: <v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+v_inf_vol: <v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+v_ger: <v>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.n_number.possession.formality.case ;
 
 !vP: _.v_type.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
-vP_fin: lemh.<vP>.v_type.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
-vP_vadj: lemh.<vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;  ! FIXME: allow for subst
-vP_vadv: lemh.<vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
-vP_inf: lemh.<vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
-vP_inf_vol: lemh.<vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
-vP_ger: lemh.<vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.n_number.possession.formality.case ;
+vP_fin: <vP>.v_type.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+vP_vadj: <vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;  ! FIXME: allow for subst
+vP_vadv: <vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+vP_inf: <vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin ;
+vP_inf_vol: <vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.v_person.formality.v_number ;
+vP_ger: <vP>.transitivity.voice_a.voice_b.voice_c.polarity.fin_nonfin.n_number.possession.formality.case ;
 
-cop_fin: lemh.<cop>.tense.polarity.v_person.formality.v_number ;
-cop_ger: lemh.<cop>.ger.n_number.possession.formality.case ;
+cop_fin: <cop>.tense.polarity.v_person.formality.v_number ;
+cop_ger: <cop>.ger.n_number.possession.formality.case ;
 
 qst: _ ;
 
@@ -182,12 +182,12 @@ nP ->
 		n %n ?((1.possession = "") and (2.possession = px3sp)) { 1 _1 2 } ;
 
 aP ->
-		adj { 1 } |
-		adv adj { 1 _1 2 } |
-		aP qst { 1 + 2 } ;
+		%adj { 1 } |
+		adv %adj { 1 _1 2 } |
+		%aP qst { 1 + 2 } ;
 
 AP ->
-		aP { 1 } ;
+		%aP { 1 } ;
 
 vP ->
 		! all [$fin_nonfin=1.fin_nonfin] can be removed when apertium-recursive supports % checking for macros
