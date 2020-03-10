@@ -10,6 +10,11 @@
 		<sdef n="tv"/>
 		<sdef n="iv"/>
 		<sdef n="cop"/>
+		<sdef n="num"/>
+		<sdef n="coll"/>
+		<sdef n="subst"/>
+		<sdef n="px3sp"/>
+		<sdef n="cnjcoo"/>
 	</sdefs>
 	<pardefs>
 		<pardef n="adj">
@@ -23,6 +28,9 @@
 			<e><par n="n"/></e>
 			<e><par n="adj"/><par n="n"/></e>
 			<e><par n="adj"/><par n="adj"/><par n="n"/></e>
+		</pardef>
+		<pardef n="PLUS">
+			<e><i>+<w/><t/><j/></i></e>
 		</pardef>
 	</pardefs>
 	<section id="main" type="standard">
@@ -55,6 +63,13 @@
 			</p>
 			<i>+е<s n="cop"/><t/><j/></i>
 		</e>
-
+		<e lm="екеуі тең" c="экөө тең">
+			<i><w/><s n="num"/><s n="coll"/><s n="subst"/></i>
+			<p>
+				<l><s n="px3sp"/></l>
+				<r></r>
+			</p>
+			<i><t/>+да<s n="cnjcoo"/><j/></i>
+		</e>
 	</section>
 </dictionary>

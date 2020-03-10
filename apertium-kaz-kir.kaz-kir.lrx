@@ -37,7 +37,7 @@
 		<match lemma="да" tags="cnjcoo"><select lemma="да" tags="cnjcoo"/></match>
 	</rule>
 	<rule weight="1.2"> 
-		<match lemma="екеу" tags="num.coll.subst.px3sp.*"/>
+		<match tags="num.coll.subst.*"/>
 		<match lemma="да" tags="cnjcoo"><select lemma="тең" tags="postadv"/></match>
 	</rule>
 	<rule> 
