@@ -7,7 +7,7 @@ v_number = (ND sg) sg pl sp ND;
 gender = (GD m) m f mf GD;
 
 det_type = def ind dem itg qnt;
-prn_type = dem ind pers itg ;
+prn_type = dem ind pers itg neg ;
 
 v_type = iv tv vaux cop ;
 
