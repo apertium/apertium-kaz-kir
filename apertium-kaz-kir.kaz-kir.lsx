@@ -5,9 +5,11 @@
 		<sdef n="adv"/>
 		<sdef n="n"/>
 		<sdef n="nom"/>
+		<sdef n="loc"/>
 		<sdef n="v"/>
 		<sdef n="tv"/>
 		<sdef n="iv"/>
+		<sdef n="cop"/>
 	</sdefs>
 	<pardefs>
 		<pardef n="adj">
@@ -45,6 +47,13 @@
 				<r>уақыт<b/>бол<s n="v"/><s n="iv"/></r>
 			</p>
 			<i><t/><j/></i>
+		</e>
+		<e lm="қуанышты бол" c="кубанычта бол">
+			<p>
+				<l>қуанышты<s n="adj"/></l>
+				<r>қуаныш<s n="n"/><s n="loc"/></r>
+			</p>
+			<i>+е<s n="cop"/><t/><j/></i>
 		</e>
 
 	</section>
