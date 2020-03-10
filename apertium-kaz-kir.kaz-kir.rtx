@@ -18,12 +18,13 @@ ger = ger_past ger_fut ger ;
 inf = prc_perf prc_impf prc_vol prc_cond prc_fplan prc_plan ;
 nonfin = [vadj] [vadv] [ger] [inf] ;
 fin_nonfin = [tense] [vadj] [vadv] [ger] [inf] ;
+comp = comp ;
 
 polarity = neg ;
 
 possession = px1sg px1pl px2sg px2pl px3sp ;
 
-case = (CD nom) nom acc gen dat loc abl ins CD ;
+case = nom acc gen dat loc abl ins CD ; ! (CD nom)
 attr = attr ;
 
 n_person = (PD p3) p1 p2 p3 PD ;
@@ -46,7 +47,7 @@ post_acc = карай ;
 !!!!!!!!!!!!!!!
 
 
-adj: _ ;
+adj: _.comp ;
 AP: _ ;
 aP: _ ;
 
@@ -136,8 +137,10 @@ vaux: (if (1.fin_nonfin in tense)
 			1(vaux_inf_vol)
 		elseif (1.fin_nonfin in inf)
 			1(vaux_inf)
-		elseif ((1.fin_nonfin in ger) and (1.fin_nonfin=ger) and ((1.possession="") or (1.case=nom)))
+		elseif ((1.fin_nonfin in ger) and (1.fin_nonfin=ger) and ((1.possession="") and (1.case=nom)))
 			1(vaux_ger)[fin_nonfin=ger_pres]
+		elseif ((1.fin_nonfin in ger) and (1.fin_nonfin=ger))
+			1(vaux_ger)[fin_nonfin=ger_past]
 		elseif (1.fin_nonfin in ger)
 			1(vaux_ger)
 		);
@@ -154,8 +157,10 @@ v: (if (1.fin_nonfin in tense)
 			1(v_inf_vol)
 		elseif (1.fin_nonfin in inf)
 			1(v_inf)
-		elseif ((1.fin_nonfin in ger) and (1.fin_nonfin=ger) and ((1.possession="") or (1.case=nom)))
+		elseif ((1.fin_nonfin in ger) and (1.fin_nonfin=ger) and ((1.possession="") and (1.case=nom)))
 			1(v_ger)[fin_nonfin=ger_pres]
+		elseif ((1.fin_nonfin in ger) and (1.fin_nonfin=ger))
+			1(v_ger)[fin_nonfin=ger_past]
 		elseif (1.fin_nonfin in ger)
 			1(v_ger)
 		);
