@@ -48,6 +48,12 @@
 		<!-- жат- will be a more frequent translation of жүр- than жүр- -->
 		<match lemma="жүр" tags="vaux.*"><select lemma="жат" tags="vaux.*"/></match>
 	</rule>
+	<rule weight="1.2"> 
+		<!-- keep жүр- as translation of жүр- if after бас- -->
+		<match lemma="бас" tags="v.*"/>
+		<match lemma="жүр" tags="vaux.*"><select lemma="жүр" tags="vaux.*"/></match>
+	</rule>
+
 	<rule>
 		<match lemma="қуанышты" tags="adj"><select lemma="кубанычтуу" tags="adj"/></match>
 	</rule>
