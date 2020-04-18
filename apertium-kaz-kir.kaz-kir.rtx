@@ -11,10 +11,10 @@ prn_type = dem ind pers itg neg ;
 
 v_type = iv tv vaux cop ;
 
-tense = pres past fut ifi fut aor imp ;
-vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot;
+tense = pres past fut ifi fut aor imp unac ;
+vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot gpr_unac ;
 vadv = gna_perf gna_impf gna_cond ;
-ger = ger_past ger_fut ger ;
+ger = ger_past ger_fut ger ger_unac ;
 inf = prc_perf prc_impf prc_vol prc_cond prc_fplan prc_plan ;
 nonfin = [vadj] [vadv] [ger] [inf] ;
 fin_nonfin = [tense] [vadj] [vadv] [ger] [inf] ;
@@ -41,17 +41,21 @@ voice_c = pass ;
 
 verbs_acc = кара ;
 post_acc = карай ;
+post_dat = карата ;
+
+advl = advl ;
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
 
-adj: _.comp ;
+adj: _.advl.comp ;
 AP: _ ;
 aP: _ ;
 
 adv: _ ;
+postadv: _ ;
 
 post: _ ;
 
@@ -100,6 +104,8 @@ det_default: _.det_type;
 det_def: _.det_type.n_number;
 
 PP: _ ;
+AdvP: _ ;
+PPorAdvP: _ ;
 
 S: _ ;
 
@@ -195,7 +201,26 @@ cop: (if (1.fin_nonfin in tense)
 
 PP ->
 		20: NP ?(1.case=ins) [$lemh=менен] { 1[case=nom] _ менен@post } |
-		NP %post { 1[case=(if (2.lemh in post_acc) acc else 1.case)] _1 2 } ;
+		NP %post {
+			1[case=(
+				if (2.lemh in post_acc)
+					acc
+				elseif (2.lemh in post_dat)
+					dat
+				else
+					1.case
+			)]
+			_1 2 } ;
+
+AdvP ->
+		%adj ?(1.advl=advl) { 1 } |
+		%adv { 1 } |
+		%AdvP postadv { 1 _1 2 }
+		;
+
+PPorAdvP ->
+		%PP { 1 } |
+		%AdvP { 1 } ;
 
 NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
 		%nP { %1 } |
@@ -213,7 +238,8 @@ aP ->
 		%adj { 1 } |
 		adv %adj { 1 _1 2 } |
 		%aP qst { 1 + 2 } |
-		%aP emph { 1 + 2 } ;
+		%aP emph { 1 + 2 } |
+		%aP postadv { 1 _1 2 } ;
 
 AP ->
 		%aP { 1 } ;
@@ -221,7 +247,7 @@ AP ->
 vP ->
 		! all [$fin_nonfin=1.fin_nonfin] can be removed when apertium-recursive supports % checking for macros
 		%vaux [$fin_nonfin=1.fin_nonfin] { 1 } |
-		1: %v [$fin_nonfin=1.fin_nonfin] { 1 } |
+		1: %v [$fin_nonfin=1.fin_nonfin] { %1[fin_nonfin=$fin_nonfin,polarity=$polarity] } |
 		2: %v ?(1.vadj/sl=gpr_impf) [$fin_nonfin=1.fin_nonfin] { 1[fin_nonfin=prc_impf] _ тур@vaux.gpr_past } |
 		%cop [$fin_nonfin=1.fin_nonfin] { 1 } |
 		vP %vP ?((1.fin_nonfin in inf) and (2.v_type=vaux)) [$lemh=1.lemh,$fin_nonfin=2.fin_nonfin] { 1 _1 2 } |
@@ -233,8 +259,13 @@ VP ->
 		AP %э@vP (if (2.tense = ifi) { 1 _1 2 } else { 1 + 2 } ) |
 		NP %vP ?(1.case = acc) { 1 _1 2 } |
 		NP %vP ?(1.case = dat) { 1[case=(if (2.lemh in verbs_acc) acc else 1.case)] _1 2 } |
-		PP %vP { 1 _1 2 } |
-		PP NP %vP { 1 _1 2 _2 3 } !|
+		PPorAdvP %vP { (
+				if ((1.lemh="али") and (2.polarity=neg))
+					[ %2[fin_nonfin=unac,polarity=_] ]
+				else
+					[ 1 _1 %2 ]
+			) } |
+		PPorAdvP NP %vP { 1 _1 2 _2 3 } !|
 		!1: AP %vP ?(2.v_type=cop) { 1 _1 2 } |
 		!2: AP %vP ?(2.v_type=cop & 2.tense=aor) { 1 + 2 } ;
 		;
