@@ -24,13 +24,14 @@ if [[ $DIR = "kaz-kir" ]]; then
     PRETRANSFER="apertium-pretransfer"
     LEXTRANSFER="lt-proc -b ../../kaz-kir.autobil.bin"
     LEXSELECTION="lrx-proc -m ../../kaz-kir.lrx.bin"
-    TRANSFER_1="apertium-transfer -b ../../apertium-kaz-kir.kaz-kir.t1x ../../kaz-kir.t1x.bin"
-    TRANSFER_2="apertium-transfer -n ../../apertium-kaz-kir.kaz-kir.t2x ../../kaz-kir.t2x.bin"
+    TRANSFER="rtx-proc ../../uzb-kaa.rtx.bin"
+    #TRANSFER_1="apertium-transfer -b ../../apertium-kaz-kir.kaz-kir.t1x ../../kaz-kir.t1x.bin"
+    #TRANSFER_2="apertium-transfer -n ../../apertium-kaz-kir.kaz-kir.t2x ../../kaz-kir.t2x.bin"
     GENERATOR="lt-proc -d ../../kaz-kir.autogen.bin"
 
     tee $INPUT |
     $PRETRANSFER | $LEXTRANSFER | $LEXSELECTION |
-    $TRANSFER_1 | $TRANSFER_2 | tee $TRANSFOUT |
+    $TRANSFER | tee $TRANSFOUT |
     $GENERATOR > $GENOUT
     paste -d % $INPUT $TRANSFOUT $GENOUT |
     sed 's/\^.<sent>\$//g' | sed 's/%/   -->  /g'
