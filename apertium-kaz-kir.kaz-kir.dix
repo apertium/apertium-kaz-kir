@@ -7838,7 +7838,8 @@
 <e>       <p><l>төмен<s n="adj"/></l>             <r>төмөн<s n="adj"/></r></p></e> <!-- "low"-->
 <e>       <p><l>төменгі<s n="adj"/></l>           <r>төмөнкү<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>түгел<s n="adj"/></l>             <r>түгөл<s n="adj"/></r></p></e> <!-- "all" -->
-<e>       <p><l>түгел<s n="prn"/><s n="qnt"/></l> <r>толук<s n="prn"/><s n="qnt"/></r></p></e> <!-- "entirety" -->
+<e>       <p><l>түгел<s n="adj"/></l>             <r>толук<s n="adj"/></r></p></e> <!-- "all" -->
+<!-- e>       <p><l>түгел<s n="prn"/><s n="qnt"/></l> <r>толук<s n="prn"/><s n="qnt"/></r></p></e --> <!-- "entirety" -->
 <e>       <p><l>түзу<s n="adj"/></l>              <r>түз<s n="adj"/></r></p></e> <!-- "direct" -->
 <e>       <p><l>тұңғыш<s n="adj"/></l>            <r>туңгуч<s n="adj"/></r></p></e> <!-- "" -->
 <e>       <p><l>тұнық<s n="adj"/></l>             <r>тунук<s n="adj"/></r></p></e> <!-- "clear (transparent/clean)" -->
