@@ -11,6 +11,8 @@ prn_type = dem ind pers itg neg ;
 
 v_type = iv tv vaux cop ;
 
+np_type = cog ant pat org top hyd al ;
+
 tense = pres past fut ifi fut aor imp unac ;
 vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot gpr_unac ;
 vadv = gna_perf gna_impf gna_cond ;
@@ -97,6 +99,9 @@ n: _.n_number.possession.case.attr ;
 nP: _.n_number.possession.case ;
 NP: _.n_number.possession.case ;
 
+np_other: _.np_type.n_number.possession.case ;
+np_names: _.np_type.gender.n_number.possession.case ;
+
 prn_pers: _.prn_type.v_person.formality.n_number.case ;
 prn_dem: _.prn_type.n_number.case ;  ! also for itg
 
@@ -131,6 +136,11 @@ prn: (if (1.prn_type = pers)
 		else
 			1(prn_dem) ! also for itg
 		);
+
+np: (if (1.np_type = cog or 1.np_type = ant or 1.np_type = pat)
+			1(np_names)
+		else
+			1(np_other));
 
 vaux: (if (1.fin_nonfin in tense)
 			1(vaux_fin)
