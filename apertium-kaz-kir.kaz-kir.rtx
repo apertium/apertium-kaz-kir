@@ -7,7 +7,7 @@ v_number = (ND sg) sg pl sp ND;
 gender = (GD m) m f mf GD;
 
 det_type = def ind dem itg qnt ref ;
-prn_type = dem ind pers itg neg ;
+prn_type = dem ind pers itg qnt neg ;
 
 v_type = iv tv vaux cop ;
 
@@ -21,6 +21,7 @@ inf = prc_perf prc_impf prc_vol prc_cond prc_fplan prc_plan ;
 nonfin = [vadj] [vadv] [ger] [inf] ;
 fin_nonfin = [tense] [vadj] [vadv] [ger] [inf] ;
 comp = comp ;
+subst = subst ;
 
 polarity = neg ;
 
@@ -52,7 +53,8 @@ advl = advl ;
 !!!!!!!!!!!!!!!
 
 
-adj: _.advl.comp ;
+adj_other: _.advl.comp ;
+adj_subst: _.comp.subst.n_number.possession.case ;
 AP: _ ;
 aP: _ ;
 
@@ -141,6 +143,11 @@ np: (if (1.np_type = cog or 1.np_type = ant or 1.np_type = pat)
 			1(np_names)
 		else
 			1(np_other));
+
+adj: (if (1.subst = subst)
+			1(adj_subst)
+		else
+			1(adj_other));
 
 vaux: (if (1.fin_nonfin in tense)
 			1(vaux_fin)
@@ -233,6 +240,7 @@ PPorAdvP ->
 		%AdvP { 1 } ;
 
 NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
+		20: %adj.subst { %1 } |
 		%nP { %1 } |
 		AP %nP { 1 _1 %2 } |
 		det %nP { 1 _1 %2 } |
