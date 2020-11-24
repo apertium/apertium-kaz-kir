@@ -13,10 +13,10 @@ v_type = iv tv vaux cop ;
 
 np_type = cog ant pat org top hyd al ;
 
-tense = pres past fut ifi fut aor imp unac ;
+tense = pres past fut ifi fut aor imp unac pih opt fut_plan ;
 vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot gpr_unac ;
-vadv = gna_perf gna_impf gna_cond ;
-ger = ger_past ger_fut ger ger_unac ;
+vadv = gna_perf gna_impf gna_cond gna_after gna_until ;
+ger = ger_past ger_fut ger ger_unac ger_perf ger_obs ger_impf ger_abs ;
 inf = prc_perf prc_impf prc_vol prc_cond prc_fplan prc_plan ;
 nonfin = [vadj] [vadv] [ger] [inf] ;
 fin_nonfin = [tense] [vadj] [vadv] [ger] [inf] ;
@@ -27,7 +27,7 @@ polarity = neg ;
 
 possession = px1sg px1pl px2sg px2pl px3sp ;
 
-case = nom acc gen dat loc abl ins CD ; ! (CD nom)
+case = nom acc gen dat loc abl ins sim equ CD ; ! (CD nom)
 attr = attr ;
 
 n_person = (PD p3) p1 p2 p3 PD ;
