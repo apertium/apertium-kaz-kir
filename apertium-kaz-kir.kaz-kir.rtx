@@ -11,7 +11,7 @@ prn_type = dem ind pers itg qnt neg ;
 
 v_type = iv tv vaux cop ;
 
-np_type = cog ant pat org top hyd al ;
+np_type = cog ant pat org top hyd al unk ;
 
 tense = pres past fut ifi fut aor imp unac pih opt fut_plan ;
 vadj = gpr_past gpr_impf gpr_fut gpr_hab gpr_pot gpr_ppot gpr_unac ;
@@ -97,6 +97,8 @@ qst: _ ;
 emph: _ ;
 
 VP: _.transitivity.voice_a.voice_b.voice_c.fin_nonfin.polarity.v_person.formality.v_number ;
+
+gerP: _.transitivity.voice_a.voice_b.voice_c.fin_nonfin.polarity.possession.case ;
 
 n: _.n_number.possession.case.attr ;
 nP: _.n_number.possession.case ;
@@ -247,12 +249,15 @@ PPorAdvP ->
 
 NP -> ! n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
 		20: %adj.subst { %1 } |
-		%nP { %1 } |
-		AP %nP { 1 _1 %2 } |
-		det %nP { 1 _1 %2 } |
-		det AP %nP { 1 _1 2 _2 %3 } |
-		%prn { %1 } |
-		NP.gen %NP.px3sp { 1 %2 } ;
+		5: %nP { %1 } |
+		5: AP %nP { 1 _1 %2 } |
+		5: det %nP { 1 _1 %2 } |
+		5: det AP %nP { 1 _1 2 _2 %3 } |
+		5: %prn { %1 } |
+		5: NP.gen %NP.px3sp { 1 %2 } ;
+
+gerP ->
+		1: %VP ?(1.fin_nonfin in ger) { %1 };
 
 nP ->
 		%n { %1 } |
@@ -280,23 +285,31 @@ vP ->
 		%vP emph [$fin_nonfin=1.fin_nonfin] { 1 + 2 } ;
 
 VP ->
-		NP %э@vP (if (2.tense = ifi) { 1 _1 2 } else { 1 + 2 } ) |
-		AP %э@vP (if (2.tense = ifi) { 1 _1 2 } else { 1 + 2 } ) |
-		NP %vP ?(1.case = acc) { 1 _1 2 } |
-		NP %vP ?(1.case = dat) { 1[case=(if (2.lemh in verbs_acc) acc else 1.case)] _1 2 } |
-		PPorAdvP %vP { (
+		5: NP %э@vP [$lemh=1.lemh] (if (2.tense = ifi or 2.fin_nonfin = ger_past) { 1 _1 2 } else { 1 + 2 } ) |
+		5: AP %э@vP [$lemh=1.lemh] (if (2.tense = ifi or 2.fin_nonfin = ger_past) { 1 _1 2 } else { 1 + 2 } ) |
+		5: NP %vP ?(1.case = acc) { 1 _1 2 } |
+		5: NP %vP ?(1.case = dat) { 1[case=(if (2.lemh in verbs_acc) acc else 1.case)] _1 2 } |
+		5: PPorAdvP %vP { (
 				if ((1.lemh="али") and (2.polarity=neg))
 					[ %2[fin_nonfin=unac,polarity=_] ]
 				else
 					[ 1 _1 %2 ]
 			) } |
-		PPorAdvP NP %vP { 1 _1 2 _2 3 } !|
+		5: PPorAdvP NP %vP { 1 _1 2 _2 3 } |
+		1: %vP { %1 }
 		!1: AP %vP ?(2.v_type=cop) { 1 _1 2 } |
 		!2: AP %vP ?(2.v_type=cop & 2.tense=aor) { 1 + 2 } ;
 		;
 
 S ->
-		NP VP { 1 _1 2 } ;
+		NP VP { 1 _1 2 } |
+		gerP VP { (
+				if ((2.lemh="керек"))
+					[ 1[fin_nonfin=ger] _ 2 ]
+				else
+					[ 1 _ 2 ]
+			) }
+	;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Apertium-recursive

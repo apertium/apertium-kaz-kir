@@ -8011,7 +8011,7 @@
 <e>       <p><l>бәрібір<s n="adv"/></l>           <r>баары<b/>бир<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>биыл<s n="adv"/></l>              <r>быйыл<s n="adv"/></r></p></e> <!-- "this year" -->
 <e>       <p><l>біраз<s n="adv"/></l>             <r>бираз<s n="adv"/></r></p></e> <!-- "a little" FIXME:NOTE: also a quantifier -->
-<e r="LR"><p><l>бірге<s n="adv"/></l>             <r>бирге<s n="adv"/></r></p></e> <!-- together" FIXME:NOTE: also a <post> -->
+<e r="RL"><p><l>бірге<s n="adv"/></l>             <r>бирге<s n="adv"/></r></p></e> <!-- together" FIXME:NOTE: also a <post> -->
 <e>       <p><l>бірге<s n="adv"/></l>             <r>чогуу<s n="adv"/></r></p></e>
 <e>       <p><l>бірен-саран<s n="adv"/></l>       <r>бирин-серин<s n="adv"/></r></p></e> <!--""-->
 <e>       <p><l>біржолата<s n="adv"/></l>         <r>биротоло<s n="adv"/></r></p></e> <!--""-->

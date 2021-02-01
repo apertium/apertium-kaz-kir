@@ -1,6 +1,6 @@
 <rules>
 
-	<rule>
+	<rule weight="1.2">
 		<match lemma="уақыт" tags="n.*"><select lemma="убакыт" tags="n.*"/></match>
 	</rule>
 	<rule>
@@ -40,15 +40,15 @@
 		<match tags="num.coll.subst.*"/>
 		<match lemma="да" tags="cnjcoo"><select lemma="тең" tags="postadv"/></match>
 	</rule>
-	<rule> 
+	<rule weight="1.2"> 
 		<!-- жат- will be a more frequent translation of отыр- than отур- -->
 		<match lemma="отыр" tags="vaux.*"><select lemma="жат" tags="vaux.*"/></match>
 	</rule>
-	<rule> 
+	<rule weight="1.2"> 
 		<!-- жат- will be a more frequent translation of жүр- than жүр- -->
 		<match lemma="жүр" tags="vaux.*"><select lemma="жат" tags="vaux.*"/></match>
 	</rule>
-	<rule weight="1.2"> 
+	<rule weight="1.5"> 
 		<!-- keep жүр- as translation of жүр- if after бас- -->
 		<match lemma="бас" tags="v.*"/>
 		<match lemma="жүр" tags="vaux.*"><select lemma="жүр" tags="vaux.*"/></match>
@@ -110,10 +110,10 @@
 		<match lemma="күйеу" tags="n.*"/>
 	</rule>
 	<!-- үлкен = чоң, as in "big, important" (size) -->
-	<rule>
+	<rule weight="1.2">
 		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
 	</rule>
-	<rule>
+	<rule weight="1.2">
 		<match lemma="үлкен" tags="adj.*"><select lemma="чоң" tags="adj"/></match>
 	</rule>
 	<rule>
@@ -136,12 +136,12 @@
 		<or><match lemma="данышпандық" tags="adj.*"/><match lemma="данышпандық" tags="adj"/></or>
 		<match lemma="қағида" tags="n"><select lemma="теория" tags="n"/></match>
 	</rule>
-	<rule>
+	<rule weight="1.2">
 		<match lemma="дұрыс" tags="adj.*">
 			<select lemma="туура" tags="adj.*"/>
 		</match>
 	</rule>
-	<rule>
+	<rule weight="1.2">
 		<match lemma="дала" tags="n.*">
 			<select lemma="талаа" tags="n.*"/>
 		</match>
@@ -162,7 +162,7 @@
 		</match>
 	</rule>
 
-	<rule>
+	<rule weight="1.2">
 		<match lemma="бірге" tags="adv">
 			<select lemma="чогуу" tags="adv"/>
 		</match>
