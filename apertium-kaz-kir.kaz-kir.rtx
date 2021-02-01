@@ -58,7 +58,8 @@ adj_subst: _.comp.subst.n_number.possession.case ;
 AP: _ ;
 aP: _ ;
 
-adv: _ ;
+adv_other: _.attr ;
+adv_subst: _.subst.n_number.possession.case ;
 postadv: _ ;
 
 post: _ ;
@@ -148,6 +149,11 @@ adj: (if (1.subst = subst)
 			1(adj_subst)
 		else
 			1(adj_other));
+
+adv: (if (1.subst = subst)
+			1(adv_subst)
+		else
+			1(adv_other));
 
 vaux: (if (1.fin_nonfin in tense)
 			1(vaux_fin)
