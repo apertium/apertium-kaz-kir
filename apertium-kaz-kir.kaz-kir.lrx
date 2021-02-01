@@ -110,10 +110,10 @@
 		<match lemma="күйеу" tags="n.*"/>
 	</rule>
 	<!-- үлкен = чоң, as in "big, important" (size) -->
-	<rule weight="1.2">
+	<rule>
 		<match lemma="үлкен" tags="adj"><select lemma="чоң" tags="adj"/></match>
 	</rule>
-	<rule weight="1.2">
+	<rule>
 		<match lemma="үлкен" tags="adj.*"><select lemma="чоң" tags="adj"/></match>
 	</rule>
 	<rule>
@@ -141,12 +141,12 @@
 			<select lemma="туура" tags="adj.*"/>
 		</match>
 	</rule>
-	<rule weight="1.2">
+	<rule>
 		<match lemma="дала" tags="n.*">
 			<select lemma="талаа" tags="n.*"/>
 		</match>
 	</rule>
-	<rule>
+	<rule weight="1.2">
 		<match lemma="дала" tags="n.loc">
 			<select lemma="эшик" tags="n.loc"/>
 		</match>
