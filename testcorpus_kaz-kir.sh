@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# See http://wiki.apertium.org/wiki/Corpus_test
+# See https://wiki.apertium.org/wiki/Corpus_test
 #
 # To make 'original' translation, type this
 #make && cat corpa/kaz.crp.txt | apertium -d . kaz-tat > corpa/origina_traduko.txt &&
