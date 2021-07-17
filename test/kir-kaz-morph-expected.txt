@@ -1,0 +1,2 @@
+[_4DBXR9HfFYK#0] ^Бир/бир<num>/бир<adv>/бир<det><ind>/бир<num><subst><nom>/бир<num><subst><nom>+э<cop><aor><p3><pl>/бир<num><subst><nom>+э<cop><aor><p3><sg>$ ^текст/текст<n><attr>/текст<n><nom>/текст<n><nom>+э<cop><aor><p3><pl>/текст<n><nom>+э<cop><aor><p3><sg>$ ^чогуу/чогуу<adv>$ ^окуйлу/оку<v><tv><opt><p1><pl>/оку<v><iv><opt><p1><pl>/оку<v><tv><opt><p1><pl>/оку<v><iv><opt><p1><pl>$
+[/_4DBXR9HfFYK]

@@ -225,11 +225,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "Бір мәтін бірге оқыйық" | apertium -d . kaz-kir | tee .test-mt
-	@echo "Бир текст чогуу окуйлу" > .test-ref
-	@diff .test-ref .test-mt
-	echo "Бир текст чогуу окуйлу" | apertium -d . kir-kaz | tee .test-mt
-	@echo "Бір мәтін бірге оқыйық" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
-
+	apertium-regtest test

@@ -1,0 +1,2 @@
+[vf0Gv8gt3tlX#0] ^Бір/бір<num>/бір<det><ind>/бір<num><subst><nom>/бір<num><subst><nom>+е<cop><aor><p3><pl>/бір<num><subst><nom>+е<cop><aor><p3><sg>$ ^мәтін/мәтін<n><attr>/мәтін<n><nom>/мәтін<n><nom>+е<cop><aor><p3><pl>/мәтін<n><nom>+е<cop><aor><p3><sg>$ ^бірге/бір<num><subst><dat>/бірге<adv>$ ^оқыйық/оқы<v><tv><opt><p1><pl>/оқы<v><iv><opt><p1><pl>$
+[/vf0Gv8gt3tlX]

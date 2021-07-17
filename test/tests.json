@@ -1,0 +1,14 @@
+{
+    "kir-kaz-pending": {
+        "input": "kir-kaz-pending-input.txt",
+        "mode": "kir-kaz"
+    },
+    "kir-kaz": {
+        "input": "kir-kaz-input.txt",
+        "mode": "kir-kaz"
+    },
+    "kaz-kir": {
+        "input": "kaz-kir-input.txt",
+        "mode": "kaz-kir"
+    }
+}
