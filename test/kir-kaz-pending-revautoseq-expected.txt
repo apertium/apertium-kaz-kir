@@ -1,0 +1,4 @@
+[4Q2NDQ5-pa3U#0] ^Сен<prn><pers><p2><sg><acc>$ ^тамақ<n><nom>$ ^іш<v><tv><prc_perf>$ ^@кет<vaux><opt><p3><sg>$ ^де<v><tv><prc_perf>$ ^үй<n><dat>$ ^шақыр<v><tv><ifi><p1><sg>$^.<sent>$
+[/4Q2NDQ5-pa3U]
+[VdzpdDfCB6ik#0] ^Ал<v><tv><gpr_ppot><nom>$ ^кішкентай<adj>$ ^бақша<n><loc>$ ^е<cop><aor><p3><pl>$ ^@беле<qst>$^?<sent>$
+[/VdzpdDfCB6ik]

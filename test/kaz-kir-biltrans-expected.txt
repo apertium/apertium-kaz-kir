@@ -1,0 +1,2 @@
+[vf0Gv8gt3tlX#0] ^Бір<num>/Бир<num>$ ^мәтін<n><nom>/текст<n><nom>$ ^бірге<adv>/чогуу<adv>$ ^оқы<v><tv><opt><p1><pl>/оку<v><tv><opt><p1><pl>$
+[/vf0Gv8gt3tlX]
