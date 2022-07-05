@@ -2,7 +2,6 @@
 ## Makefile for Kazakh--Kyrgyz
 ###############################################################################
 
-VERSION=0.2.0
 LANG1=kaz
 LANG2=kir
 PREFIX1=$(LANG1)-$(LANG2)
@@ -129,9 +128,11 @@ $(PREFIX2).revautoseq.bin: $(BASENAME).$(PREFIX2).lsx
 ###############################################################################
 
 $(PREFIX1).autolex.bin: $(BASENAME).$(PREFIX1).lrx
+	apertium-validate-lrx $<
 	lrx-comp $< $@
 
 $(PREFIX2).autolex.bin: $(BASENAME).$(PREFIX2).lrx
+	apertium-validate-lrx $<
 	lrx-comp $< $@
 
 ###############################################################################

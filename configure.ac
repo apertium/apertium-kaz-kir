@@ -9,65 +9,9 @@ m4_define([required_apertium_version], [3.3.0])
 PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium-3.2 >= required_apertium_version)])
                           
 
-AC_PATH_PROG(HFSTLEXC, hfst-lexc, no)
-if test x$ac_cv_path_HFSTLEXC = x
-then
-  AC_MSG_ERROR([You don't have hfst-lexc installed.])
-fi
-if test x$ac_cv_path_HFSTLEXC = xno
-then
-  AC_MSG_ERROR([You don't have hfst-lexc installed.])
-fi
-
-AC_PATH_PROG(HFSTTWOLC, hfst-twolc, no)
-if test x$ac_cv_path_HFSTTWOLC = x
-then
-  AC_MSG_ERROR([You don't have hfst-twolc installed.])
-fi
-if test x$ac_cv_path_HFSTTWOLC = xno
-then
-  AC_MSG_ERROR([You don't have hfst-twolc installed.])
-fi
-
-AC_PATH_PROG(CGCOMP, cg-comp, no)
-if test x$ac_cv_path_CGCOMP = x
-then
-  AC_MSG_ERROR([You don't have cg-comp installed.])
-fi
-if test x$ac_cv_path_CGCOMP = xno
-then
-  AC_MSG_ERROR([You don't have cg-comp installed.])
-fi
-
-AC_PATH_PROG(CGPROC, cg-proc, no)
-if test x$ac_cv_path_CGPROC = x
-then
-  AC_MSG_ERROR([You don't have cg-proc installed.])
-fi
-if test x$ac_cv_path_CGPROC = xno
-then
-  AC_MSG_ERROR([You don't have cg-proc installed.])
-fi
-
-AC_PATH_PROG(LRXCOMP, lrx-comp, no)
-if test x$ac_cv_path_LRXCOMP = x
-then
-  AC_MSG_ERROR([You don't have lrx-comp installed.])
-fi
-if test x$ac_cv_path_LRXCOMP = xno
-then
-  AC_MSG_ERROR([You don't have lrx-comp installed.])
-fi
-
-AC_PATH_PROG(LRXPROC, lrx-proc, no)
-if test x$ac_cv_path_LRXPROC = x
-then
-  AC_MSG_ERROR([You don't have lrx-proc installed.])
-fi
-if test x$ac_cv_path_LRXPROC = xno
-then
-  AC_MSG_ERROR([You don't have lrx-proc installed.])
-fi
+PKG_CHECK_MODULES(HFST, hfst >= 3.16.0)
+PKG_CHECK_MODULES(CG3, cg3 >= 1.3.6)
+PKG_CHECK_MODULES(APERTIUM_LEX_TOOLS, apertium-lex-tools >= 0.4.0)
 
 AC_PATH_PROG(GZCAT, gzcat, no)
 AC_PATH_PROG(ZCAT, zcat, no)
@@ -89,6 +33,9 @@ m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertiu
 
 AP_CHECK_LING([1], [apertium-kaz])
 AP_CHECK_LING([2], [apertium-kir])
+
+PKG_CHECK_MODULES(REGTEST, apertium-regtest >= 0.0.1, [],
+                  [AC_MSG_WARN([Running tests requires apertium-regtest])])
 
 PKG_CHECK_MODULES(REGTEST, apertium-regtest >= 0.0.1, [],
                   [AC_MSG_WARN([Running tests requires apertium-regtest])])

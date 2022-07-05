@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <rules>
 
 	<rule>
@@ -6,7 +7,7 @@
 	<rule>
 		<match lemma="уақыт бол" tags="v.iv.*"><select lemma="убакыт кел" tags="v.iv.*"/></match>
 	</rule>
-	<rule comment="it's time to">
+	<rule c="it's time to">
 		<or>
 			<match tags="v.*.gpr_impf"/>
 			<match tags="v.*.dat"/><!-- dative gerund forms -->
@@ -14,7 +15,7 @@
 		<match lemma="уақыт бол" tags="v.iv.*"><select lemma="маал кел" tags="v.iv.*"/></match>
 	</rule>
 
-	<rule comment="can also translate to киши">
+	<rule c="can also translate to киши">
 		<match lemma="адам" tags="n.*"><select lemma="адам" tags="n.*"/></match>
 	</rule>
 
